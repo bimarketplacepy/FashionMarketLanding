@@ -1,0 +1,167 @@
+Build Phenomenon III (Crystalline) Three.js scene inside the existing 
+section 3 placeholder. Do not touch any other section.
+
+CONCEPT
+
+A cluster of glass-like octahedral crystals growing into existence as 
+the user scrolls. Atom-by-atom assembly. Prismatic light from coloured 
+sources orbits the cluster, throwing rainbow glints across the facets. 
+Slow majestic rotation. Background is the upgraded starfield component.
+
+CANVAS SETUP
+
+Mount inside canvas-crystalline div. Same renderer config as previous 
+phenomena:
+- WebGL2, antialias true, alpha false
+- Pixel ratio capped at 2
+- Output encoding sRGB
+- Pause RAF when out of viewport
+
+SCENE COMPOSITION
+
+1. STARFIELD BACKGROUND
+Use the shared createStarfield() utility from the Singularity upgrade. 
+Same configuration.
+
+2. CRYSTAL CLUSTER (the centrepiece)
+
+Build approximately 80 octahedron crystals in four tiers:
+
+TIER 1 — HERO CRYSTAL (1 crystal)
+- OctahedronGeometry, scale 1.6
+- Position: origin (0, 0, 0)
+- Random rotation on all three axes (set once on creation)
+
+TIER 2 — INNER RING (6 crystals)
+- OctahedronGeometry, scale 0.8 to 1.1 (random per crystal)
+- Distributed around hero crystal at radius 1.8 to 2.4
+- Spread across a roughly spherical shell (not coplanar)
+- Random rotation per crystal
+
+TIER 3 — MID CLOUD (20 crystals)
+- OctahedronGeometry, scale 0.4 to 0.7
+- Distributed in a shell between radius 2.8 and 4.0
+- Random position on shell with slight clustering toward equator
+- Random rotation per crystal
+
+TIER 4 — OUTER DUST (50 crystals)
+- OctahedronGeometry, scale 0.15 to 0.35
+- Distributed in a thicker shell between radius 4.2 and 6.5
+- Random position on shell
+- Random rotation per crystal
+
+MATERIAL
+
+Use MeshPhysicalMaterial for all crystals with these settings:
+- color: very pale violet-white #f4ecff
+- roughness: 0.05
+- metalness: 0.0
+- clearcoat: 1.0
+- clearcoatRoughness: 0.0
+- transmission: 0.0 (do not enable — too expensive at this count)
+- transparent: true
+- opacity: 0.85
+- side: THREE.DoubleSide
+- emissive: per-crystal subtle hue (see below)
+- emissiveIntensity: 0.4
+
+PER-CRYSTAL EMISSIVE TINT
+
+Each crystal gets a subtle emissive hue assigned based on its position 
+in space (or a per-crystal seed). Hues cycle through a soft palette:
+- Pale pink #ffd0e8
+- Pale cyan #c8f0ff
+- Pale gold #fff0c8
+- Pale violet #d8c8ff
+- Pale mint #c8ffe0
+
+This means when light hits each crystal it picks up a slightly 
+different colour cast, like real prismatic crystals.
+
+LIGHTING
+
+Three coloured point lights orbiting the cluster slowly:
+- Light A: colour cyan #40e0ff, intensity 5, position orbiting in 
+  horizontal circle radius 8, period 12 seconds
+- Light B: colour magenta #ff40c0, intensity 5, position orbiting in 
+  vertical circle radius 8, period 10 seconds
+- Light C: colour warm gold #ffc060, intensity 4, position orbiting in 
+  diagonal circle radius 9, period 14 seconds
+
+Plus a soft ambient light (colour off-white, intensity 0.15) so 
+crystals don't go totally black on shadowed sides.
+
+The orbital motion of the three coloured lights creates ever-changing 
+rainbow glints across the crystal facets as they rotate.
+
+GROWTH ANIMATION
+
+Each crystal has a "growthThreshold" value between 0 and 1 assigned 
+based on its tier:
+- Hero crystal: 0.0 (visible from the start)
+- Inner ring: 0.05 to 0.20
+- Mid cloud: 0.20 to 0.55
+- Outer dust: 0.55 to 0.95
+
+As scroll progress through this section advances, each crystal scales 
+in from 0 to its target size once scroll progress exceeds its growth 
+threshold. Use a smooth easing curve (easeOutCubic).
+
+When growing in, also fade the opacity from 0 to 0.85 over the same 
+threshold-to-threshold+0.05 range.
+
+The cluster as a whole also slowly rotates on the Y axis (period 30 
+seconds) regardless of scroll.
+
+CAMERA
+
+PerspectiveCamera, FOV 45.
+Initial position: x=0, y=1.5, z=9
+LookAt: origin
+
+SCROLL-DRIVEN CAMERA
+
+As scroll progresses through section 3:
+- 0% progress: z=9, y=1.5
+- 100% progress: z=5.5, y=0.5 (closer and lower, looking up slightly 
+  through the cluster)
+- Use GSAP ScrollTrigger pinned to section 3, scrubbing camera 
+  position with progress
+
+The cluster rotation, growth, and light orbits run independently of 
+scroll position.
+
+POST-PROCESSING
+
+EffectComposer with:
+- RenderPass
+- UnrealBloomPass:
+  - threshold: 0.7
+  - strength: 0.45
+  - radius: 0.5
+- OutputPass
+
+Bloom creates the prismatic glint highlights on crystal facets. If 
+crystals blow out and lose definition, reduce strength to 0.35.
+
+OPTIONAL ATMOSPHERIC EXTRA
+
+If frame rate stays comfortable, add a few large soft glowing sprites 
+behind the cluster at z=-5 to -10, tinted with the same palette colours 
+(pale pink, pale cyan, pale violet), very low opacity (alpha 0.06), 
+additive blend. Creates a sense of crystalline mist.
+
+PERFORMANCE TARGETS
+
+- 60fps on M4 in Chrome
+- ~80 crystals + 4 lights + starfield = manageable
+- If frame rate drops, halve the outer dust count to 25
+
+DO NOT
+
+- Do not enable MeshPhysicalMaterial.transmission (kills performance)
+- Do not add OrbitControls
+- Do not increase bloom strength above 0.5
+- Do not change anything outside section 3
+
+UK English throughout. No commit, no push.
