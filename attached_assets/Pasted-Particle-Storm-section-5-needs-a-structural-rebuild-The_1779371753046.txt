@@ -1,0 +1,76 @@
+Particle Storm (section 5) needs a structural rebuild. The current 
+additive-blended approach at low alpha never accumulates enough density 
+to read visibly. Switch to normal alpha blending with brighter 
+per-particle colour and larger point sizes. Quality over quantity.
+
+Do not touch any other section.
+
+PARTICLE COUNT
+Reduce from 200,000 to 80,000. Fewer particles each more visible beats 
+many invisible ones.
+
+BLENDING MODE
+Switch from THREE.AdditiveBlending to THREE.NormalBlending.
+Set depthWrite to false (still needed for transparent rendering order).
+
+PARTICLE DISTRIBUTION
+Change from uniform sphere to gaussian-weighted: more density toward 
+the centre, falling off outward. For each particle:
+- Generate three gaussian random numbers (use Box-Muller transform)
+- Multiply by 4.0 to get position
+- Clamp magnitude to radius 12 maximum
+This creates a swarm that's dense in the middle and sparse at edges, 
+like a real flock.
+
+POINT SIZE
+In vertex shader, increase point size:
+gl_PointSize = (3.5 + aSeed * 3.0) * uPixelRatio * (300.0 / -mvPosition.z);
+(was 1.6 + aSeed * 1.4)
+
+FRAGMENT SHADER COLOUR
+Use brighter saturated colours since we're no longer relying on 
+accumulation:
+
+vec3 colSlow = vec3(0.65, 0.35, 0.95);     // brighter violet
+vec3 colMid = vec3(0.35, 0.92, 1.0);       // brighter cyan
+vec3 colFast = vec3(1.0, 0.92, 0.55);      // brighter gold
+
+Remove the 0.85 colour clamp (no longer needed with normal blending).
+
+Change the final alpha:
+gl_FragColor = vec4(colour, alpha * 0.85 * distFalloff);
+(was alpha * 0.08, now 0.85 per particle is fine because each is a 
+single visible dot, no accumulation)
+
+CURL NOISE MOTION
+Keep the curl noise displacement but increase the oscillation amplitude 
+for more dramatic motion:
+float oscillation = sin(t * 1.5) * 1.4 + 2.0;
+(was sin(t * 1.5) * 1.0 + 1.6)
+
+CAMERA
+Keep the simplified scroll-driven dolly from the previous fix:
+- 0%: x=0, y=2, z=15
+- 50%: x=0, y=1, z=11
+- 100%: x=0, y=-1, z=7
+
+POST-PROCESSING
+- UnrealBloomPass threshold: 0.85
+- UnrealBloomPass strength: 0.25
+- UnrealBloomPass radius: 0.4
+
+Bloom is light because particles are already visible on their own now. 
+Bloom just adds sparkle to the brightest gold particles.
+
+ATMOSPHERIC EXTRAS
+Keep the 3 large soft glowing sprites behind the swarm. Increase their 
+alpha to 0.10 to 0.15 each so they read more clearly as background haze.
+
+EXPECTED RESULT
+A swarm of 80,000 distinct violet-cyan-gold particles filling the 
+canvas, with density concentrated toward the centre, each particle 
+clearly visible as a coloured dot rather than relying on additive 
+accumulation. The swarm has visible texture and movement, not a hazy 
+glow.
+
+UK English throughout. No commit, no push.

@@ -101,17 +101,11 @@ export default function Wormhole({ canvasId }: WormholeProps) {
     camera.position.set(0, 0, 20);
     camera.lookAt(0, 0, -10);
 
-    // Force a WebGL2 context (renderer would otherwise be free to fall
-    // back to WebGL1 on certain environments).
-    const glCanvas = document.createElement('canvas');
-    const gl2 = glCanvas.getContext('webgl2', {
-      antialias: true,
-      alpha: false,
-      powerPreference: 'high-performance'
-    }) as WebGL2RenderingContext | null;
+    // Let Three.js create and manage its own WebGL2 context. Manually
+    // pre-allocating a context AND constructing the renderer with it
+    // double-counts against the browser's per-page WebGL context cap
+    // (~8-16), starving sibling scenes and leaving their canvases blank.
     const renderer = new THREE.WebGLRenderer({
-      canvas: glCanvas,
-      context: gl2 ?? undefined,
       antialias: true,
       alpha: false,
       powerPreference: 'high-performance'

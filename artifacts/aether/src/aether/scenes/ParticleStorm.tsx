@@ -153,21 +153,11 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
     camera.position.set(0, 2, 15);
     camera.lookAt(0, 0, 0);
 
-    // Force a WebGL2 context (default WebGLRenderer may fall back).
-    const glCanvas = document.createElement('canvas');
-    const gl2 = glCanvas.getContext('webgl2', {
-      antialias: true,
-      alpha: false,
-      powerPreference: 'high-performance'
-    }) as WebGL2RenderingContext | null;
-    if (!gl2) {
-      // eslint-disable-next-line no-console
-      console.error('Particle Storm: WebGL2 unavailable; aborting scene setup.');
-      return;
-    }
+    // Let Three.js create and manage its own WebGL2 context. Manually
+    // pre-allocating a context AND constructing the renderer with it
+    // double-counts against the browser's per-page WebGL context cap
+    // (~8-16), starving sibling scenes and leaving their canvases blank.
     const renderer = new THREE.WebGLRenderer({
-      canvas: glCanvas,
-      context: gl2,
       antialias: true,
       alpha: false,
       powerPreference: 'high-performance'

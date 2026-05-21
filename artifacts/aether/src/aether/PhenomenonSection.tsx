@@ -1,6 +1,7 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { phenomena } from './phenomena';
 import TextLegibilityOverlay from './TextLegibilityOverlay';
+import SceneErrorBoundary from './SceneErrorBoundary';
 
 const PhenomenonCanvas = React.lazy(() => import('./PhenomenonCanvas'));
 const Singularity = React.lazy(() => import('./scenes/Singularity'));
@@ -35,11 +36,44 @@ interface PhenomenonSectionProps {
 }
 
 export default function PhenomenonSection({ phenomenon, index }: PhenomenonSectionProps) {
+  // Lazy-mount the WebGL scene only when its section is actually on
+  // screen (with a small ~20vh pre-roll so it has time to initialise
+  // before the user scrolls onto it). Sandboxed iframes — including
+  // the Replit preview — cap simultaneous WebGL contexts well below
+  // the desktop browser default, so holding all six at once leaves
+  // some canvases blank. Aggressive lazy mounting keeps the live
+  // count to ~1-2 without touching scene code.
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') {
+      setActive(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) setActive(e.isIntersecting);
+      },
+      { rootMargin: '20% 0px 20% 0px', threshold: 0 }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
   return (
-    <section className="h-[100vh] relative overflow-hidden bg-black">
-      <Suspense fallback={null}>
-        {sceneFor(phenomenon.id, phenomenon.canvasId)}
-      </Suspense>
+    <section
+      ref={sectionRef}
+      className="h-[100vh] relative overflow-hidden bg-black"
+    >
+      {active && (
+        <SceneErrorBoundary>
+          <Suspense fallback={null}>
+            {sceneFor(phenomenon.id, phenomenon.canvasId)}
+          </Suspense>
+        </SceneErrorBoundary>
+      )}
 
       <TextLegibilityOverlay />
 
