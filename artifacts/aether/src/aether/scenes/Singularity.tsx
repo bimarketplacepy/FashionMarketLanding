@@ -51,7 +51,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
     // the gold disk highlights still glow but the thin photon ring is
     // no longer swallowed by the wash.
     // Args: (resolution, strength, radius, threshold)
-    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.35, 0.4, 0.85);
+    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.35, 0.4, 0.92);
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
 
@@ -203,7 +203,9 @@ export default function Singularity({ canvasId }: SingularityProps) {
           vec4 mv = modelViewMatrix * vec4(pos, 1.0);
           gl_Position = projectionMatrix * mv;
           float dist = -mv.z;
-          gl_PointSize = uPixelRatio * (90.0 / max(dist, 0.1)) * 0.45;
+          // Halo point size reduced 25% (0.45 → 0.3375) to tighten the
+          // inner edge ring instead of bleeding into a fuzzy white band.
+          gl_PointSize = uPixelRatio * (90.0 / max(dist, 0.1)) * 0.3375;
         }
       `,
       fragmentShader: /* glsl */ `
@@ -213,7 +215,9 @@ export default function Singularity({ canvasId }: SingularityProps) {
           if (d > 0.5) discard;
           float soft = smoothstep(0.5, 0.0, d);
           vec3 col = mix(vec3(1.0, 1.0, 0.85), vec3(1.0, 0.95, 0.7), 0.5);
-          gl_FragColor = vec4(col, soft * 0.55);
+          // Halo alpha multiplier halved (0.55 → 0.275): hot plasma ring
+          // at radius 1.4..1.7 contributes half as much to the bloom wash.
+          gl_FragColor = vec4(col, soft * 0.275);
         }
       `,
       transparent: true,
