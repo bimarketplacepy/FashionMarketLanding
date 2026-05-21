@@ -6,6 +6,7 @@ const PhenomenonCanvas = React.lazy(() => import('./PhenomenonCanvas'));
 const Singularity = React.lazy(() => import('./scenes/Singularity'));
 const Aurora = React.lazy(() => import('./scenes/Aurora'));
 const Crystalline = React.lazy(() => import('./scenes/Crystalline'));
+const Caustics = React.lazy(() => import('./scenes/Caustics'));
 
 const sceneFor = (id: string, canvasId: string) => {
   switch (id) {
@@ -15,6 +16,8 @@ const sceneFor = (id: string, canvasId: string) => {
       return <Aurora canvasId={canvasId} />;
     case 'crystalline':
       return <Crystalline canvasId={canvasId} />;
+    case 'caustics':
+      return <Caustics canvasId={canvasId} />;
     default:
       return <PhenomenonCanvas canvasId={canvasId} />;
   }

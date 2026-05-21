@@ -1,0 +1,164 @@
+Build Phenomenon IV (Caustics) Three.js scene inside the existing 
+section 4 placeholder. Do not touch any other section.
+
+CONCEPT
+
+Underwater scene viewed from just below the water surface. The seabed 
+below shows the classic rippling caustic light patterns that water 
+projects when sunlight refracts through a moving surface. God rays 
+descend through the water. Drifting plankton particles float through 
+the volume. The water surface is visible above, rippling silver.
+
+CANVAS SETUP
+
+Mount inside canvas-caustics div. Same renderer config:
+- WebGL2, antialias true, alpha false
+- Pixel ratio capped at 2
+- Output encoding sRGB
+- Pause RAF when out of viewport
+
+SCENE COMPOSITION
+
+1. ENVIRONMENT
+- Scene background colour: deep teal #02363f
+- Scene fog: FogExp2, colour #02363f, density 0.04
+  (creates underwater depth fade)
+
+2. SEABED (the caustic surface)
+
+A large plane below the camera receiving the caustic light projection:
+
+- PlaneGeometry, size 60 x 60 units, 128 x 128 segments
+- Positioned at y = -5, rotated -90 degrees on X axis to lie flat
+- Custom ShaderMaterial with caustic light projection
+
+CAUSTIC SHADER (the centrepiece)
+
+Use a classic iteration-based caustic algorithm. This is a known 
+ShaderToy pattern that produces the network-of-light-lines look:
+
+In the fragment shader:
+
+vec2 uv = vUv * 8.0;  // tile the pattern across the seabed
+float time = uTime * 0.4;
+vec2 i = uv;
+vec2 c = vec2(0.0);
+
+for (int n = 0; n < 4; n++) {
+  float t = time * (1.0 - (3.5 / float(n + 1)));
+  i = uv + vec2(cos(t - i.x) + sin(t + i.y), sin(t - i.y) + cos(t + i.x));
+  c = vec2(uv.x / (sin(i.x + t) * 0.1 + 0.5), uv.y / (cos(i.y + t) * 0.1 + 0.5));
+}
+
+float intensity = pow(length(c) * 0.005, 2.0);
+intensity = clamp(intensity, 0.0, 1.0);
+
+Then composite:
+- Base seabed colour: dark sand-teal #1a4f5a
+- Caustic colour: pale cyan-white #b8f0ff
+- finalColor = baseColor + causticColor * intensity * 1.4
+- Apply slight vertex displacement on the seabed (low-amplitude noise) 
+  for subtle dune undulation
+
+3. WATER SURFACE (viewed from below)
+
+A second plane above the camera showing the underside of the water:
+
+- PlaneGeometry, size 80 x 80 units, 64 x 64 segments
+- Positioned at y = 5, rotated 90 degrees on X axis (facing down toward 
+  the camera)
+- Material with custom shader:
+  - Sample multiple octaves of simplex noise scrolling at different 
+    speeds for water surface ripples
+  - Use the noise to perturb a base colour
+  - Base colour: silver-cyan #8be0f0
+  - Highlights where noise peaks: near-white #ffffff
+  - Subtle vertex displacement on Z (downward, toward camera) for 
+    surface waves: amplitude 0.15 units
+  - Side: THREE.BackSide (so we see the underside)
+  - opacity 0.85, transparent true
+
+4. GOD RAYS (light shafts descending)
+
+Eight to twelve volumetric light shafts cutting through the water:
+
+- For each: CylinderGeometry, radius top 0.05, radius bottom 0.8, 
+  height 12, 12 radial segments, 1 height segment
+- Positioned vertically, top at y = 5, bottom at y = -5
+- Distributed across X range -15 to +15 and Z range -15 to +5 with 
+  random gentle offsets
+- Custom ShaderMaterial:
+  - Soft cyan-white emissive colour #c8f0ff
+  - Alpha falls off from top (0.15) to bottom (0.02)
+  - Alpha also falls off radially from centre of cylinder (1.0 at axis) 
+    to edge (0.0)
+  - Additive blending
+  - Depth write false
+  - Side: THREE.DoubleSide
+- Subtle horizontal sway: each shaft drifts back and forth on X by 
+  ±0.3 units over 6-10 seconds, random phase per shaft
+
+5. DRIFTING PARTICLES (plankton)
+
+5000 particles floating in the water column:
+
+- BufferGeometry, 5000 positions distributed in a volume:
+  - X: -20 to +20
+  - Y: -4 to +4
+  - Z: -15 to +5
+- Each particle slowly drifts upward at 0.05 to 0.2 units per second 
+  (random per particle)
+- When a particle reaches Y = +5, wrap it back to Y = -5
+- Each also has slight horizontal jitter (sinusoidal sway)
+- Size: 1.5 to 3 pixels
+- Colour: pale cyan-white with varying brightness
+- Soft circular sprite, additive blending
+- Slight twinkle (alpha modulation over time, per particle)
+
+CAMERA
+
+PerspectiveCamera, FOV 55.
+Initial position: x=0, y=2, z=8
+LookAt: x=0, y=-2, z=0
+
+SCROLL-DRIVEN CAMERA
+
+As scroll progresses through section 4:
+- 0% progress: position z=8, y=2, lookAt y=-2
+- 100% progress: position z=4, y=1.2, lookAt y=-4
+  (dollies forward and tilts down toward the caustic floor)
+- Use GSAP ScrollTrigger pinned to section 4, scrubbing camera position 
+  and look target
+
+The caustic animation, god ray sway, and particle drift continue 
+independently of scroll.
+
+POST-PROCESSING
+
+EffectComposer with:
+- RenderPass
+- UnrealBloomPass:
+  - threshold: 0.7
+  - strength: 0.35
+  - radius: 0.55
+- OutputPass
+
+Bloom adds soft glow on the bright caustic peaks and god rays. Should 
+never overwhelm the scene. Auroras taught us: low and slow on bloom.
+
+PERFORMANCE TARGETS
+
+- 60fps on M4 in Chrome
+- 5000 particles + caustic shader + water surface + ~10 god rays = 
+  comfortable
+- If frame rate drops, reduce particle count to 3000
+
+DO NOT
+
+- Do not add OrbitControls
+- Do not increase bloom strength above 0.5
+- Do not change anything outside section 4
+- Do not use the shared starfield in this section (we're underwater, 
+  not in space)
+
+UK English throughout. No commit, no push.
