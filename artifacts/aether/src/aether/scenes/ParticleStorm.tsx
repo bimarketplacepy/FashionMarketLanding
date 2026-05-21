@@ -93,7 +93,7 @@ void main() {
 
   vec3 curl = vec3(a1 - a2, b1 - b2, c1 - c2) / (2.0 * eps);
 
-  float oscillation = sin(t * 1.5) * 1.0 + 1.6;
+  float oscillation = sin(t * 1.5) * 1.4 + 2.0;
   vec3 currentPos = basePos + curl * oscillation;
 
   vVelocity = length(curl);
@@ -102,7 +102,7 @@ void main() {
   vec4 mvPosition = modelViewMatrix * vec4(currentPos, 1.0);
   gl_Position = projectionMatrix * mvPosition;
 
-  gl_PointSize = (1.6 + aSeed * 1.4) * uPixelRatio * (280.0 / -mvPosition.z);
+  gl_PointSize = (3.5 + aSeed * 3.0) * uPixelRatio * (300.0 / -mvPosition.z);
 }
 `;
 
@@ -116,9 +116,9 @@ void main() {
   if (dist > 0.5) discard;
   float alpha = smoothstep(0.5, 0.0, dist);
 
-  vec3 colSlow = vec3(0.42, 0.18, 0.75);
-  vec3 colMid  = vec3(0.18, 0.82, 1.00);
-  vec3 colFast = vec3(1.00, 0.82, 0.38);
+  vec3 colSlow = vec3(0.65, 0.35, 0.95);   // brighter violet
+  vec3 colMid  = vec3(0.35, 0.92, 1.00);   // brighter cyan
+  vec3 colFast = vec3(1.00, 0.92, 0.55);   // brighter gold
 
   float v = clamp(vVelocity / 3.0, 0.0, 1.0);
   vec3 colour;
@@ -128,11 +128,10 @@ void main() {
     colour = mix(colMid, colFast, (v - 0.5) * 2.0);
   }
 
-  colour = min(colour, vec3(0.85));
+  // Distance falloff scaled to the new MAX_RADIUS = 12 envelope.
+  float distFalloff = 1.0 - smoothstep(9.0, 12.0, vDistFromCentre);
 
-  float distFalloff = 1.0 - smoothstep(6.0, 9.0, vDistFromCentre);
-
-  gl_FragColor = vec4(colour, alpha * 0.08 * distFalloff);
+  gl_FragColor = vec4(colour, alpha * 0.85 * distFalloff);
 }
 `;
 
@@ -178,28 +177,51 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
     composer.setSize(width, height);
     const renderPass = new RenderPass(scene, camera);
     composer.addPass(renderPass);
-    // Conservative bloom: with 150k additive particles, headroom is tight.
-    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.2, 0.4, 0.75);
+    // Light bloom: particles are now visible on their own (normal blend +
+    // bright colours), so bloom only adds a sparkle to the brightest gold
+    // particles. Args: (resolution, strength, radius, threshold).
+    const bloom = new UnrealBloomPass(
+      new THREE.Vector2(width, height),
+      0.25, // strength
+      0.4,  // radius
+      0.85  // threshold
+    );
     composer.addPass(bloom);
     const outputPass = new OutputPass();
     composer.addPass(outputPass);
 
     // ───────────────── PARTICLE BUFFER ─────────────────
+    // Box-Muller transform: turns two uniforms in (0,1] into one standard
+    // normal sample. Three independent normals give an isotropic 3D
+    // gaussian — density concentrated at the centre, soft edges, no hard
+    // sphere shell. We scale by 4.0 and clamp magnitude to MAX_RADIUS so
+    // the swarm has a deterministic outer bound for the distance falloff.
+    const gaussian = (): number => {
+      let u = Math.random();
+      // Math.random() can return 0 but never 1, so log(0) is the only edge
+      // case to guard against.
+      while (u === 0) u = Math.random();
+      const v = Math.random();
+      return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+    };
+
     const positions = new Float32Array(PARTICLE_COUNT * 3);
     const seeds = new Float32Array(PARTICLE_COUNT);
     const phases = new Float32Array(PARTICLE_COUNT);
     for (let i = 0; i < PARTICLE_COUNT; i++) {
-      // Uniform-volume sphere sampling: r = R * cbrt(u).
-      const u = Math.random();
-      const v = Math.random();
-      const w = Math.random();
-      const r = SPHERE_R * Math.cbrt(u);
-      const theta = 2 * Math.PI * v;
-      const phi = Math.acos(2 * w - 1);
-      const sinPhi = Math.sin(phi);
-      positions[i * 3 + 0] = r * sinPhi * Math.cos(theta);
-      positions[i * 3 + 1] = r * sinPhi * Math.sin(theta);
-      positions[i * 3 + 2] = r * Math.cos(phi);
+      let x = gaussian() * 4.0;
+      let y = gaussian() * 4.0;
+      let z = gaussian() * 4.0;
+      const mag = Math.sqrt(x * x + y * y + z * z);
+      if (mag > MAX_RADIUS) {
+        const k = MAX_RADIUS / mag;
+        x *= k;
+        y *= k;
+        z *= k;
+      }
+      positions[i * 3 + 0] = x;
+      positions[i * 3 + 1] = y;
+      positions[i * 3 + 2] = z;
       seeds[i] = Math.random();
       phases[i] = Math.random() * Math.PI * 2;
     }
@@ -220,13 +242,71 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
       vertexShader: VERTEX_SHADER,
       fragmentShader: FRAGMENT_SHADER,
       transparent: true,
+      // depthWrite still false: the points are alpha-blended and would
+      // otherwise occlude each other in arbitrary draw order.
       depthWrite: false,
-      blending: THREE.AdditiveBlending
+      blending: THREE.NormalBlending
     });
 
     const particles = new THREE.Points(geometry, material);
     particles.frustumCulled = false;
     scene.add(particles);
+
+    // ───────────────── ATMOSPHERIC HAZE SPRITES ─────────────────
+    // Three large soft coloured planes drifting behind the swarm. They
+    // add a sense of depth and tint the deep background without competing
+    // with the particles for legibility. Per-sprite alpha 0.10–0.15.
+    const hazeMeshes: THREE.Mesh[] = [];
+    const hazeGeoms: THREE.BufferGeometry[] = [];
+    const hazeMats: THREE.Material[] = [];
+    const hazePalette = [
+      { color: 0x6c4cff, alpha: 0.12 }, // violet
+      { color: 0x4cd0ff, alpha: 0.10 }, // cyan
+      { color: 0xffd47a, alpha: 0.14 }  // warm gold
+    ];
+    for (let i = 0; i < hazePalette.length; i++) {
+      const spec = hazePalette[i];
+      const geom = new THREE.PlaneGeometry(26, 26);
+      const mat = new THREE.ShaderMaterial({
+        uniforms: {
+          uColor: { value: new THREE.Color(spec.color) },
+          uAlpha: { value: spec.alpha }
+        },
+        vertexShader: /* glsl */ `
+          varying vec2 vUv;
+          void main(){
+            vUv = uv;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+          }
+        `,
+        fragmentShader: /* glsl */ `
+          uniform vec3 uColor;
+          uniform float uAlpha;
+          varying vec2 vUv;
+          void main(){
+            float d = distance(vUv, vec2(0.5));
+            float a = smoothstep(0.5, 0.0, d) * uAlpha;
+            gl_FragColor = vec4(uColor, a);
+          }
+        `,
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+        side: THREE.DoubleSide
+      });
+      const mesh = new THREE.Mesh(geom, mat);
+      // Park each haze sprite well behind the swarm so it never crosses
+      // the camera path (camera ends at z = 7).
+      mesh.position.set(
+        (Math.random() * 2 - 1) * 6,
+        (Math.random() * 2 - 1) * 4,
+        -12 - Math.random() * 6
+      );
+      scene.add(mesh);
+      hazeMeshes.push(mesh);
+      hazeGeoms.push(geom);
+      hazeMats.push(mat);
+    }
 
     // Verification log requested by spec — confirms buffer was built.
     // eslint-disable-next-line no-console
@@ -257,7 +337,14 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
         end: '+=100%',
         scrub: true,
         onUpdate: (self) => {
-          const [x, y, z] = lerp3(self.progress, [0, 2, 15], [8, 0, 10], [0, -3, 6]);
+          // Simplified scroll-driven dolly straight along the swarm's
+          // central axis: starts wide, ends inside the cloud.
+          const [x, y, z] = lerp3(
+            self.progress,
+            [0, 2, 15],
+            [0, 1, 11],
+            [0, -1, 7]
+          );
           camState.x = x;
           camState.y = y;
           camState.z = z;
@@ -324,6 +411,9 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
       if (scrollTrigger) scrollTrigger.kill();
       geometry.dispose();
       material.dispose();
+      for (const m of hazeMeshes) scene.remove(m);
+      for (const g of hazeGeoms) g.dispose();
+      for (const m of hazeMats) m.dispose();
       renderPass.dispose?.();
       bloom.dispose?.();
       outputPass.dispose?.();

@@ -1,0 +1,88 @@
+Caustics (section 4) needs a shader rewrite for the seabed pattern. 
+The current iteration-based formula produces dappled blobs, not the 
+network-of-bright-thin-lines that defines real caustics. Replace the 
+seabed shader.
+
+Do not touch any other section.
+
+NEW SEABED FRAGMENT SHADER
+
+Replace the existing caustic computation with this voronoi-based 
+approach that explicitly creates thin bright lines:
+
+In the fragment shader:
+
+vec2 uv = vUv * 6.0;
+float time = uTime * 0.3;
+
+// Add slow drift so caustics move organically
+uv += vec2(sin(time * 0.3), cos(time * 0.2)) * 0.3;
+
+// Voronoi caustics: sample multiple noise layers and take the difference
+vec2 i = floor(uv);
+vec2 f = fract(uv);
+
+float minDist1 = 1.0;
+float minDist2 = 1.0;
+
+for (int y = -1; y <= 1; y++) {
+  for (int x = -1; x <= 1; x++) {
+    vec2 neighbour = vec2(float(x), float(y));
+    vec2 point = hash2(i + neighbour);
+    // Animate each voronoi point
+    point = 0.5 + 0.5 * sin(time + 6.2831 * point);
+    vec2 diff = neighbour + point - f;
+    float dist = length(diff);
+    if (dist < minDist1) {
+      minDist2 = minDist1;
+      minDist1 = dist;
+    } else if (dist < minDist2) {
+      minDist2 = dist;
+    }
+  }
+}
+
+// The difference between first and second closest creates thin bright lines
+float caustic = minDist2 - minDist1;
+
+// Sharpen the lines
+caustic = pow(caustic, 0.4);
+caustic = smoothstep(0.0, 0.8, caustic);
+
+// Add a second layer at different scale for richness
+vec2 uv2 = vUv * 12.0 + vec2(time * 0.2);
+// Repeat the same voronoi calculation for uv2, store in caustic2
+// (Implement second pass identically to first, but using uv2 and 
+// adding 50.0 offset to hash inputs for variation)
+
+float finalCaustic = caustic * 0.7 + caustic2 * 0.4;
+finalCaustic = clamp(finalCaustic, 0.0, 1.5);
+
+Add the hash function:
+vec2 hash2(vec2 p) {
+  p = vec2(dot(p, vec2(127.1, 311.7)), dot(p, vec2(269.5, 183.3)));
+  return fract(sin(p) * 43758.5453);
+}
+
+Then composite onto the seabed:
+- Base colour: dark sand-teal #1a4f5a
+- Caustic colour: pale cyan-white #b8f0ff (slightly brighter than 
+  before: #d8f8ff for more pop)
+- finalColor = baseColor + causticColor * finalCaustic * 1.8
+
+DON'T CHANGE
+- The seabed geometry, position, or vertex displacement
+- The water surface shader
+- The god rays
+- The particle system
+- Camera settings
+- Post-processing
+
+EXPECTED RESULT
+The seabed displays a moving network of thin bright cyan-white lines 
+forming irregular cells, exactly like real caustics on a swimming 
+pool bottom. The lines dance and shift over time as the voronoi points 
+animate. The pattern reads clearly as light filtering through moving 
+water.
+
+UK English throughout. No commit, no push.

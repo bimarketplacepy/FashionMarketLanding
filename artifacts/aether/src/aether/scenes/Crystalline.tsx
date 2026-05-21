@@ -81,22 +81,99 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
     composer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     composer.setSize(width, height);
     composer.addPass(new RenderPass(scene, camera));
-    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.45, 0.5, 0.7);
+    // Slightly stronger bloom now that the crystals have proper reflective
+    // highlights to bloom off. Args: (resolution, strength, radius, threshold).
+    const bloom = new UnrealBloomPass(
+      new THREE.Vector2(width, height),
+      0.55, // strength
+      0.55, // radius
+      0.65  // threshold
+    );
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
+
+    // ───────────────── PROCEDURAL ENVIRONMENT MAP ─────────────────
+    // Without an environment map MeshPhysicalMaterial cannot reflect
+    // anything, so the crystals read as flat coloured cardboard. We build
+    // a tiny throwaway scene — a large inward-facing sphere with a
+    // gradient + three warm spots — and PMREM-pre-filter it into an
+    // env map. All materials in the visible scene pick it up via
+    // scene.environment.
+    const pmremGen = new THREE.PMREMGenerator(renderer);
+    pmremGen.compileEquirectangularShader();
+    const envScene = new THREE.Scene();
+    const envSphereGeom = new THREE.SphereGeometry(50, 32, 32);
+    const envSphereMat = new THREE.ShaderMaterial({
+      side: THREE.BackSide,
+      depthWrite: false,
+      uniforms: {
+        uTopColor:    { value: new THREE.Color(0xd8c8ff) }, // pale violet
+        uBottomColor: { value: new THREE.Color(0x081230) }, // deep blue
+        uHotColor:    { value: new THREE.Color(0xffb070) }, // warm orange
+        // Three normalised hot spots, deterministically placed (varied
+        // azimuth + elevation) so the reflections look intentional
+        // rather than randomly clustered.
+        uHotA: { value: new THREE.Vector3( 0.85,  0.20,  0.50).normalize() },
+        uHotB: { value: new THREE.Vector3(-0.70,  0.40, -0.60).normalize() },
+        uHotC: { value: new THREE.Vector3( 0.10, -0.80,  0.60).normalize() }
+      },
+      vertexShader: /* glsl */ `
+        varying vec3 vDir;
+        void main(){
+          vDir = normalize(position);
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: /* glsl */ `
+        uniform vec3 uTopColor;
+        uniform vec3 uBottomColor;
+        uniform vec3 uHotColor;
+        uniform vec3 uHotA;
+        uniform vec3 uHotB;
+        uniform vec3 uHotC;
+        varying vec3 vDir;
+        void main(){
+          float t = clamp(vDir.y * 0.5 + 0.5, 0.0, 1.0);
+          vec3 base = mix(uBottomColor, uTopColor, t);
+          float hot =
+            pow(max(dot(vDir, uHotA), 0.0), 16.0) +
+            pow(max(dot(vDir, uHotB), 0.0), 16.0) +
+            pow(max(dot(vDir, uHotC), 0.0), 16.0);
+          vec3 col = base + uHotColor * hot * 0.8;
+          gl_FragColor = vec4(col, 1.0);
+        }
+      `
+    });
+    const envSphere = new THREE.Mesh(envSphereGeom, envSphereMat);
+    envScene.add(envSphere);
+    const envRT = pmremGen.fromScene(envScene, 0.04);
+    scene.environment = envRT.texture;
+    // The source sphere and the PMREM helper aren't needed once the
+    // env map texture is generated.
+    envSphereGeom.dispose();
+    envSphereMat.dispose();
+    pmremGen.dispose();
 
     // ───────────────── SHARED STARFIELD ─────────────────
     const starfield = createStarfield();
     scene.add(starfield.group);
 
     // ───────────────── LIGHTING ─────────────────
-    const ambient = new THREE.AmbientLight(0xfff4e8, 0.15);
+    // Lower ambient so the directional rim + coloured point lights
+    // shape the crystals with stronger contrast.
+    const ambient = new THREE.AmbientLight(0xfff4e8, 0.08);
     scene.add(ambient);
 
-    const lightA = new THREE.PointLight(0x40e0ff, 5, 0, 2);
-    const lightB = new THREE.PointLight(0xff40c0, 5, 0, 2);
-    const lightC = new THREE.PointLight(0xffc060, 4, 0, 2);
+    const lightA = new THREE.PointLight(0x40e0ff, 12, 0, 2);
+    const lightB = new THREE.PointLight(0xff40c0, 12, 0, 2);
+    const lightC = new THREE.PointLight(0xffc060, 10, 0, 2);
     scene.add(lightA, lightB, lightC);
+
+    // Key rim light: defines crystal edges from above-and-behind so the
+    // cluster reads as a solid form against the black background.
+    const rim = new THREE.DirectionalLight(0xfff8f0, 0.6);
+    rim.position.set(5, 8, -5);
+    scene.add(rim);
 
     // ───────────────── CRYSTAL CLUSTER ─────────────────
     const cluster = new THREE.Group();
@@ -109,22 +186,36 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
       scaleTarget: number,
       position: THREE.Vector3,
       growthThreshold: number,
-      palettePick: number
+      palettePick: number,
+      // Transmission (light passing through glass) is comparatively
+      // expensive — Three.js renders an extra transmission pass per
+      // frame for any material with transmission > 0. We restrict it
+      // to the hero + inner ring (7 crystals) to keep frame time
+      // healthy, while still landing the "real glass" read on the
+      // crystals the eye lingers on.
+      hasTransmission: boolean
     ) => {
       const geom = new THREE.OctahedronGeometry(1, 0);
       const emissive = new THREE.Color(PALETTE[palettePick % PALETTE.length]);
       const mat = new THREE.MeshPhysicalMaterial({
         color: 0xf4ecff,
-        roughness: 0.05,
-        metalness: 0.0,
+        roughness: 0.0,
+        metalness: 0.1,
         clearcoat: 1.0,
         clearcoatRoughness: 0.0,
+        transmission: hasTransmission ? 0.4 : 0.0,
+        thickness: hasTransmission ? 0.5 : 0.0,
+        ior: 2.4,
         transparent: true,
-        opacity: 0,
+        opacity: 0, // animated up by the grow-in loop
         side: THREE.DoubleSide,
         depthWrite: false,
+        envMapIntensity: 1.5,
         emissive,
-        emissiveIntensity: 0.4
+        // FIX 5 (chromatic emissive — simpler palette variant): stronger
+        // per-crystal emissive colour stands in for true thin-film
+        // interference, giving the rim a coloured rainbow-ish tint.
+        emissiveIntensity: 1.2
       });
       const mesh = new THREE.Mesh(geom, mat);
       mesh.position.copy(position);
@@ -138,20 +229,20 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
       crystals.push({ mesh, mat, geom, targetScale: scaleTarget, growthThreshold });
     };
 
-    // TIER 1 — HERO
-    makeCrystal(1.6, new THREE.Vector3(0, 0, 0), 0.0, 0);
+    // TIER 1 — HERO (transmission on)
+    makeCrystal(1.6, new THREE.Vector3(0, 0, 0), 0.0, 0, true);
 
-    // TIER 2 — INNER RING (6)
+    // TIER 2 — INNER RING (6, transmission on)
     for (let i = 0; i < 6; i++) {
       const r = 1.8 + Math.random() * 0.6;
       onSphere(r, tmp);
       const scale = 0.8 + Math.random() * 0.3;
       const threshold = 0.05 + (i / 5) * 0.15;
-      makeCrystal(scale, tmp.clone(), threshold, i + 1);
+      makeCrystal(scale, tmp.clone(), threshold, i + 1, true);
     }
 
-    // TIER 3 — MID CLOUD (20), slight equatorial bias
-    for (let i = 0; i < 20; i++) {
+    // TIER 3 — MID CLOUD (15, no transmission), slight equatorial bias
+    for (let i = 0; i < 15; i++) {
       const r = 2.8 + Math.random() * 1.2;
       const u = Math.random();
       const v = Math.random();
@@ -166,16 +257,16 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
       );
       const scale = 0.4 + Math.random() * 0.3;
       const threshold = 0.20 + Math.random() * 0.35;
-      makeCrystal(scale, pos, threshold, i + 7);
+      makeCrystal(scale, pos, threshold, i + 7, false);
     }
 
-    // TIER 4 — OUTER DUST (50)
-    for (let i = 0; i < 50; i++) {
+    // TIER 4 — OUTER DUST (28, no transmission)
+    for (let i = 0; i < 28; i++) {
       const r = 4.2 + Math.random() * 2.3;
       onSphere(r, tmp);
       const scale = 0.15 + Math.random() * 0.2;
       const threshold = 0.55 + Math.random() * 0.4;
-      makeCrystal(scale, tmp.clone(), threshold, i + 27);
+      makeCrystal(scale, tmp.clone(), threshold, i + 22, false);
     }
 
     // ───────────────── ATMOSPHERIC GLOW SPRITES ─────────────────
@@ -282,7 +373,9 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
         }
         const s = Math.max(0.0001, c.targetScale * e);
         c.mesh.scale.setScalar(s);
-        c.mat.opacity = 0.85 * e;
+        // FIX 3: settled opacity 0.9 (was 0.85). Multiplied by the
+        // grow-in ramp so newly appearing crystals fade in cleanly.
+        c.mat.opacity = 0.9 * e;
       }
 
       // Cluster rotation: period 30s on Y.
@@ -340,6 +433,9 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
       }
       for (const g of glowGeoms) g.dispose();
       for (const m of glowMats) m.dispose();
+      // Release the PMREM-generated environment map.
+      scene.environment = null;
+      envRT.dispose();
       composer.dispose();
       renderer.dispose();
       if (renderer.domElement.parentNode === mount) {
