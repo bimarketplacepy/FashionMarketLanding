@@ -5,16 +5,17 @@ import * as Tone from 'tone';
  * Procedural ambient audio for AETHER.
  *
  * Section index map (0-indexed in DOM order under <main>):
- *   0 Intro
- *   1 Singularity   → Voice 2
- *   2 Aurora        → Voice 3
- *   3 Crystalline   → Voice 4
- *   4 Caustics      → Voice 5
- *   5 Particle Storm→ Voice 6
- *   6 Wormhole      → Voice 7
- *   7 Outro         → Voice 8
+ *   0 Intro          — silent
+ *   1 Singularity    — silent
+ *   2 Aurora         — silent
+ *   3 Crystalline    → bells (V4)
+ *   4 Caustics       — silent
+ *   5 Particle Storm → plucked notes (V6)
+ *   6 Wormhole       → arpeggio (V7)
+ *   7 Outro          → held D-major chord (V8)
  *
- * Voice 1 (deep drone) is always-on as the baseline. Each voice's
+ * Per the user's preference only note-based ("piano-like") voices are
+ * kept. All continuous drones/pads/noises were removed. Each voice's
  * gain is driven by an asymmetric triangle: ramps 0→1 across the
  * previous section + the first half of its own section, then 1→0
  * across the second half of its own section + first half of next.
@@ -74,51 +75,9 @@ function getOrBuildEngine(): Engine {
 
   const voices: Voice[] = [];
 
-  // Voice 1 (deep drone) was removed at user request — only the per-section
-  // voices V2..V8 play, so each phenomenon's character is unobstructed.
-
-  // V2 — Singularity
-  {
-    const send = makeSend(-10);
-    const dist = new Tone.Distortion(0.15).connect(send.in);
-    const af = new Tone.AutoFilter({
-      frequency: 0.1,
-      depth: 0.7,
-      baseFrequency: 240,
-      octaves: 2
-    })
-      .start()
-      .connect(dist);
-    const fm1 = new Tone.FMSynth({
-      harmonicity: 1.5,
-      modulationIndex: 6,
-      envelope: { attack: 3, decay: 0, sustain: 1, release: 3 }
-    }).connect(af);
-    const fm2 = new Tone.FMSynth({
-      harmonicity: 1.5,
-      modulationIndex: 6,
-      envelope: { attack: 3, decay: 0, sustain: 1, release: 3 }
-    }).connect(af);
-    fm1.triggerAttack('G1');
-    fm2.triggerAttack('C2');
-    voices.push({ gain: send.gain, peakDb: -10, sectionIndex: 1 });
-  }
-
-  // V3 — Aurora
-  {
-    const send = makeSend(-14);
-    const delay = new Tone.FeedbackDelay({
-      delayTime: '8n.',
-      feedback: 0.5,
-      wet: 0.4
-    }).connect(send.in);
-    const pad = new Tone.PolySynth(Tone.Synth, {
-      oscillator: { type: 'sine' },
-      envelope: { attack: 3, decay: 0, sustain: 1, release: 5 }
-    }).connect(delay);
-    pad.triggerAttack(['D5', 'F#5', 'A5', 'C#6']);
-    voices.push({ gain: send.gain, peakDb: -14, sectionIndex: 2 });
-  }
+  // V1 (continuous deep drone), V2 (Singularity FM drone), V3 (Aurora pad)
+  // and V5 (Caustics mono saw) were all removed at the user's request — only
+  // note-based "piano-like" voices remain.
 
   // V4 — Crystalline (bells)
   const bellSynth = new Tone.MetalSynth({
@@ -134,38 +93,8 @@ function getOrBuildEngine(): Engine {
     voices.push({ gain: send.gain, peakDb: -20, sectionIndex: 3 });
   }
 
-  // V5 — Caustics
-  {
-    const send = makeSend(-12);
-    const pp = new Tone.PingPongDelay({
-      delayTime: '4n',
-      feedback: 0.3,
-      wet: 0.5
-    }).connect(send.in);
-    const tr = new Tone.Tremolo({ frequency: 0.4, depth: 0.6 })
-      .start()
-      .connect(pp);
-    const filter = new Tone.Filter({
-      frequency: 1500,
-      type: 'lowpass',
-      Q: 4
-    }).connect(tr);
-    const mono = new Tone.MonoSynth({
-      oscillator: { type: 'sawtooth' },
-      envelope: { attack: 2, decay: 0, sustain: 1, release: 4 }
-    }).connect(filter);
-    mono.triggerAttack('A2');
-    const notes = ['A2', 'E3'];
-    let idx = 0;
-    // Note interval: lives for the page lifetime — singleton engine.
-    window.setInterval(() => {
-      idx = (idx + 1) % notes.length;
-      mono.setNote(notes[idx]);
-    }, 8000);
-    voices.push({ gain: send.gain, peakDb: -12, sectionIndex: 4 });
-  }
-
-  // V6 — Particle Storm (pink noise gated + pluck)
+  // V6 — Particle Storm (plucked notes only; the previous pink-noise bed
+  // was a continuous tone and has been removed.)
   const pluck = new Tone.PluckSynth({
     attackNoise: 1,
     dampening: 4000,
@@ -173,19 +102,6 @@ function getOrBuildEngine(): Engine {
   });
   {
     const send = makeSend(-14);
-    const noiseAf = new Tone.AutoFilter({
-      frequency: 0.5,
-      depth: 0.85,
-      baseFrequency: 600,
-      octaves: 3
-    })
-      .start()
-      .connect(send.in);
-    const noise = new Tone.NoiseSynth({
-      noise: { type: 'pink' },
-      envelope: { attack: 0.5, decay: 0, sustain: 1, release: 1 }
-    }).connect(noiseAf);
-    noise.triggerAttack();
     pluck.connect(send.in);
     voices.push({ gain: send.gain, peakDb: -14, sectionIndex: 5 });
   }
