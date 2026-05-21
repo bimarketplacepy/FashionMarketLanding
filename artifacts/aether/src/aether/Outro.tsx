@@ -4,7 +4,7 @@ export default function Outro() {
   return (
     <section className="h-[100vh] flex flex-col items-center justify-center relative bg-black">
       <div className="font-display italic text-[#fafafa] text-center max-w-[720px] px-8" style={{ fontSize: 'clamp(1.5rem, 3vw, 3rem)' }}>
-        You have witnessed six things that should not be possible on the web.
+        Six phenomena. One scroll. Rendered live in your browser.
       </div>
       
       <div className="mt-[64px] font-display text-[#fafafa] text-center px-8" style={{ fontSize: 'clamp(1rem, 1.4vw, 1.4rem)' }}>
