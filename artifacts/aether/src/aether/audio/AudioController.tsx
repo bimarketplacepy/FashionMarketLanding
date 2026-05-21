@@ -39,6 +39,9 @@ interface Voice {
 
 interface Engine {
   masterVolume: Tone.Volume;
+  /** V1 has its own master volume so it can mute in step but bypass the
+   *  shared reverb (which would otherwise smear its low-end warmth). */
+  v1MasterVolume: Tone.Volume;
   voices: Voice[];
   bellTimer: number | null;
   pluckTimer: number | null;
@@ -74,23 +77,36 @@ function getOrBuildEngine(): Engine {
 
   const voices: Voice[] = [];
 
-  // V1 — deep drone (always on at -24 dB)
+  // V1 — deep drone. Subtle low-end warmth that sits underneath everything,
+  // breathes via a slow LFO, and bypasses the shared reverb in favour of its
+  // own short, low-wet reverb to avoid smear.
+  const v1Reverb = new Tone.Reverb({ decay: 4, wet: 0.15 }).connect(limiter);
+  void v1Reverb.generate();
+  const v1MasterVolume = new Tone.Volume(-Infinity).connect(v1Reverb);
   {
-    const send = makeSend(-24);
-    const d1 = new Tone.AMSynth({
-      harmonicity: 1.5,
+    // Per-voice level: nominally -34 dB, modulated between -40 and -34 by LFO.
+    const v1Volume = new Tone.Volume(-34).connect(v1MasterVolume);
+    const gain = new Tone.Gain(1).connect(v1Volume);
+    const d1 = new Tone.Synth({
       oscillator: { type: 'sine' },
       envelope: { attack: 4, decay: 0, sustain: 1, release: 4 }
-    }).connect(send.in);
-    const d2 = new Tone.AMSynth({
-      harmonicity: 1.5,
+    }).connect(gain);
+    const d2 = new Tone.Synth({
       oscillator: { type: 'sine' },
       envelope: { attack: 4, decay: 0, sustain: 1, release: 4 }
-    }).connect(send.in);
+    }).connect(gain);
     d1.triggerAttack('D1');
     d2.triggerAttack('A1');
-    send.gain.gain.value = 1;
-    voices.push({ gain: send.gain, peakDb: -24, sectionIndex: -1 });
+    // Slow breath: one cycle every 20 s, 6 dB range (-40..-34).
+    const lfo = new Tone.LFO({
+      frequency: 0.05,
+      min: -40,
+      max: -34,
+      type: 'sine'
+    });
+    lfo.connect(v1Volume.volume);
+    lfo.start();
+    voices.push({ gain, peakDb: -34, sectionIndex: -1 });
   }
 
   // V2 — Singularity
@@ -255,6 +271,7 @@ function getOrBuildEngine(): Engine {
 
   const engine: Engine = {
     masterVolume,
+    v1MasterVolume,
     voices,
     bellTimer: null,
     pluckTimer: null,
@@ -313,8 +330,24 @@ export default function AudioController() {
       // voice never reaches full presence).
       const maxScrollIdx = Math.max(0, sections.length - 1);
 
+      // V1 duck: fully present everywhere EXCEPT Aurora (section 2) and
+      // Caustics (section 4), where its frequency range would muddy the
+      // section's own sustained voices. Plateau within ±0.5 of those
+      // sections, linear fade across the next 0.5.
+      const duckNear = (n: number) => {
+        const d = Math.abs(scrollIdx - n);
+        if (d <= 0.5) return 1;
+        if (d >= 1) return 0;
+        return (1 - d) / 0.5;
+      };
+      const v1Duck = Math.max(duckNear(2), duckNear(4));
+      const v1Target = 1 - v1Duck;
       for (const v of eng.voices) {
-        if (v.sectionIndex < 0) continue; // baseline drone
+        if (v.sectionIndex < 0) {
+          // Baseline drone — driven by duck, not by the triangle.
+          v.gain.gain.rampTo(v1Target, 0.4);
+          continue;
+        }
         const n = v.sectionIndex;
         const peakAt = Math.min(n + 0.5, maxScrollIdx);
         const fadeInStart = n - 1;
@@ -430,7 +463,9 @@ export default function AudioController() {
   const applyMute = useCallback((on: boolean, rampSeconds: number) => {
     const eng = engineRef.current;
     if (!eng) return;
-    eng.masterVolume.volume.rampTo(on ? PEAK_DB : -Infinity, rampSeconds);
+    const target = on ? PEAK_DB : -Infinity;
+    eng.masterVolume.volume.rampTo(target, rampSeconds);
+    eng.v1MasterVolume.volume.rampTo(target, rampSeconds);
   }, []);
 
   const toggle = useCallback(async () => {
