@@ -3,7 +3,6 @@ import { useLenis } from './aether/useLenis';
 import Intro from './aether/Intro';
 import Outro from './aether/Outro';
 import PhenomenonSection from './aether/PhenomenonSection';
-import ProgressIndicator from './aether/ProgressIndicator';
 import AudioController from './aether/audio/AudioController';
 import { phenomena } from './aether/phenomena';
 
@@ -21,7 +20,6 @@ export default function App() {
         />
       ))}
       <Outro />
-      <ProgressIndicator />
       <AudioController />
     </main>
   );
