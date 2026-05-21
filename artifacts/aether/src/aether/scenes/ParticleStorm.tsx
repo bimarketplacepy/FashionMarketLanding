@@ -13,8 +13,11 @@ interface ParticleStormProps {
   canvasId: string;
 }
 
-const PARTICLE_COUNT = 150_000;
-const SPHERE_R = 8;
+const PARTICLE_COUNT = 80_000;
+// Maximum radius any sample can land at. Gaussian draws are scaled by 4.0
+// then clamped to this magnitude so the swarm has a soft edge instead of
+// the hard sphere shell of uniform-volume sampling.
+const MAX_RADIUS = 12;
 
 const VERTEX_SHADER = /* glsl */ `
 uniform float uTime;

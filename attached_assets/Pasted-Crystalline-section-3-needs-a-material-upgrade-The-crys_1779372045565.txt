@@ -1,0 +1,97 @@
+Crystalline (section 3) needs a material upgrade. The crystals currently 
+read as flat coloured cardboard polygons because there is no environment 
+map for reflections, emissive intensity is too low, and the lights 
+aren't dramatic enough. They should look like cut glass with rainbow 
+prismatic shimmer.
+
+Do not touch any other section.
+
+FIX 1: GENERATE PROCEDURAL ENVIRONMENT MAP
+
+Without an envMap, MeshPhysicalMaterial cannot show reflections, which 
+is why the crystals look flat. Generate a procedural cube environment 
+map.
+
+Use Three.js PMREMGenerator:
+- Create a scene with a few coloured point lights and a gradient 
+  background
+- Use PMREMGenerator.fromScene() to convert it to an environment map
+- Apply this envMap to the scene.environment property so all 
+  MeshPhysicalMaterial instances in the section pick it up
+- envMapIntensity: 1.5
+
+Simple gradient background scene for the envMap:
+- A large sphere with a custom shader: top half pale violet, bottom 
+  half deep blue, with subtle warm orange highlights in three random 
+  spots
+- This creates beautiful coloured reflections inside the crystals
+
+FIX 2: REDUCE CRYSTAL COUNT, INCREASE QUALITY
+
+Reduce from 80 crystals to 50 total:
+- 1 hero crystal (unchanged)
+- 6 inner ring (unchanged)
+- 15 mid cloud (was 20)
+- 28 outer dust (was 50)
+
+The visual loss is minimal; the per-crystal quality lift is significant.
+
+FIX 3: UPGRADE MATERIAL SETTINGS
+
+For all crystals:
+- color: very pale violet-white #f4ecff (unchanged)
+- roughness: 0.0 (was 0.05, now mirror-smooth)
+- metalness: 0.1 (unchanged)
+- clearcoat: 1.0 (unchanged)
+- clearcoatRoughness: 0.0 (unchanged)
+- transmission: 0.4 for hero and inner ring crystals ONLY (7 crystals 
+  total). Outer crystals keep transmission 0.0 for performance.
+- thickness: 0.5 (only for crystals with transmission > 0)
+- ior: 2.4 (diamond-like)
+- transparent: true
+- opacity: 0.9
+- side: THREE.DoubleSide
+- emissiveIntensity: 1.0 (was 0.4)
+- envMapIntensity: 1.5
+
+FIX 4: STRONGER LIGHTING
+
+Increase coloured point light intensities:
+- Light A (cyan): intensity 12 (was 5)
+- Light B (magenta): intensity 12 (was 5)
+- Light C (warm gold): intensity 10 (was 4)
+
+Ambient light: 0.08 (was 0.15) so contrast is stronger.
+
+Add a key rim light:
+- DirectionalLight, colour off-white, intensity 0.6
+- Position: above and behind the cluster (5, 8, -5)
+- Adds defining edge highlights on the crystals
+
+FIX 5: ADD CHROMATIC FRESNEL EMISSIVE
+
+For the rim of each crystal, add a custom emissive that brightens at 
+glancing view angles, simulating thin-film interference colours. The 
+simplest way: in the material's onBeforeCompile, inject a shader chunk 
+that adds a fresnel-based rainbow tint to the emissive.
+
+If onBeforeCompile is too complex, the alternative is to give each 
+crystal a slightly stronger emissive colour from the existing palette 
+(pink, cyan, gold, violet, mint) at 1.2 intensity, which approximates 
+the effect.
+
+FIX 6: BLOOM
+- UnrealBloomPass threshold: 0.65 (was 0.7)
+- UnrealBloomPass strength: 0.55 (was 0.45)
+- UnrealBloomPass radius: 0.55 (was 0.5)
+
+More bloom is justified now that crystals have proper reflective 
+highlights to bloom off.
+
+EXPECTED RESULT
+Glass-like crystals with visible internal reflections, rainbow tints on 
+edges, dramatic coloured highlights from the orbiting lights, and a 
+sense of refractive depth (where transmission is enabled). They should 
+look like real cut quartz or diamond, not painted polygons.
+
+UK English throughout. No commit, no push.
