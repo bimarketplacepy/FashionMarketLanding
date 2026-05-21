@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: "Italiana", serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: #000000;
+  color: #fafafa;
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}

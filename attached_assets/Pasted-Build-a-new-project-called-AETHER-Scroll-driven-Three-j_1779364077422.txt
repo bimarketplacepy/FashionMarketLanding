@@ -1,0 +1,162 @@
+Build a new project called AETHER. Scroll-driven Three.js art essay 
+showcasing six impossible physical phenomena. This prompt sets up the 
+scaffold only. Do not build any of the Three.js phenomena scenes yet.
+
+PROJECT SETUP
+
+- React 18 + Vite + TypeScript
+- Tailwind CSS for layout only (no component library)
+- Three.js (latest stable)
+- GSAP + ScrollTrigger
+- Tone.js
+- @studio-freight/lenis for smooth scroll
+
+VISUAL IDENTITY
+
+- Background: pure black #000000 throughout the entire site
+- Primary text: off-white #fafafa  
+- Accent: pale violet #b8a0ff (used sparingly, for section numbers only)
+- Display font: Italiana (Google Fonts) for large display type
+- Mono font: JetBrains Mono for labels, numbers, technical text
+- All UI text is small. The phenomena are the show.
+
+PAGE STRUCTURE
+
+A single long vertical scroll containing 8 sections, each 100vh tall:
+
+Section 0 — INTRO
+Section 1 — I. SINGULARITY
+Section 2 — II. AURORA  
+Section 3 — III. CRYSTALLINE
+Section 4 — IV. CAUSTICS
+Section 5 — V. PARTICLE STORM
+Section 6 — VI. WORMHOLE
+Section 7 — OUTRO
+
+Each phenomena section (1-6) will eventually contain its own full-screen 
+Three.js canvas with a different shader scene. For now, build empty 
+placeholder sections with the labels and architecture in place. The 
+scenes themselves come in subsequent prompts.
+
+LENIS SMOOTH SCROLL
+
+Initialise Lenis at the root. Configuration:
+- Duration 1.2 seconds
+- Easing: cubic ease out
+- Smooth mouse wheel and touch
+- Sync GSAP ScrollTrigger to Lenis on every tick
+
+INTRO SECTION (Section 0)
+
+Full viewport, centred content. Pure black background.
+
+- Tiny eyebrow at top: "A SCROLL-DRIVEN THREE.JS ESSAY" in JetBrains 
+  Mono, 11px, letter-spaced 0.3em, off-white 50% opacity
+- Massive title: "AETHER" in Italiana, ridiculously large 
+  (clamp(8rem, 22vw, 22rem)), off-white, dead centre
+- Subtitle below the title, italic Italiana, off-white 70% opacity, 
+  clamp(1.5rem, 2.5vw, 2.5rem):
+  "Six impossible phenomena"
+- At the bottom of the viewport, centred:
+  - Tiny bouncing arrow ↓ in off-white 60% opacity
+  - Below the arrow: "BEGIN" in JetBrains Mono, 11px, letter-spaced, 
+    off-white 60% opacity
+
+ENTRY ANIMATION
+
+On page load:
+- AETHER title fades in letter by letter with stagger (120ms each), 
+  blur removing as it fades in (filter: blur(20px) to blur(0))
+- Subtitle fades in after the title completes
+- Eyebrow and BEGIN arrow fade in last
+- Total entry sequence: 2.4 seconds
+
+PHENOMENA SECTION TEMPLATE (Sections 1-6)
+
+Each phenomenon section is a 100vh container with:
+
+- Full-screen empty canvas placeholder (a div with id like 
+  "canvas-singularity", currently just pure black, will receive the 
+  Three.js scene in a later prompt)
+- Overlay UI absolutely positioned on top of the canvas:
+  - Top left: massive roman numeral in pale violet #b8a0ff, Italiana, 
+    clamp(6rem, 14vw, 14rem), positioned 40px from top and 40px from 
+    left
+  - Below the numeral: section title in Italiana, off-white, 
+    clamp(2.5rem, 5vw, 5rem)
+  - Below the title: description in italic Italiana, off-white 60% 
+    opacity, max-width 480px, clamp(1rem, 1.4vw, 1.4rem)
+  - Bottom left, 40px from bottom: a vertical fine line going up to the 
+    section title (1px pale violet, 80px tall) followed by tiny mono 
+    label below it like "PHENOMENON 01 / 06" in JetBrains Mono 11px 
+    letter-spaced
+
+The six section contents:
+
+I. SINGULARITY
+Description: "The point where physics ends. Light cannot escape. Mass 
+collapses into a single point. We model what we cannot see."
+
+II. AURORA
+Description: "Solar wind meets Earth's magnetic field. Charged particles 
+spiral down the lines. Light bends through plasma."
+
+III. CRYSTALLINE
+Description: "Order from chaos, atom by atom. Lattices grow from 
+nothing, following rules nature wrote long before we noticed."
+
+IV. CAUSTICS
+Description: "How water teaches light to dance. Refraction through a 
+moving surface, projected back onto the world below."
+
+V. PARTICLE STORM
+Description: "Two hundred thousand points in motion. Each one obeying 
+the same simple rules. Together they remember how to flock."
+
+VI. WORMHOLE
+Description: "A door, not a tunnel. Spacetime folded so that two 
+distant points touch. You arrive before you leave."
+
+OUTRO SECTION (Section 7)
+
+Full viewport, centred content.
+
+- Centred line in Italiana italic, off-white, clamp(1.5rem, 3vw, 3rem), 
+  max-width 720px:
+  "You have witnessed six things that should not be possible on the web."
+- Below that, 64px gap, in Italiana regular, off-white, 
+  clamp(1rem, 1.4vw, 1.4rem):
+  "Built with Three.js, GSAP, Tone.js, and Lenis."
+- Below that, 32px gap, tiny mono in JetBrains Mono 11px letter-spaced, 
+  off-white 50% opacity:
+  "REMIX THIS BUILD →"
+  (placeholder link href="#")
+- At the bottom, 40px from bottom, centred, JetBrains Mono 11px 
+  letter-spaced, off-white 40% opacity:
+  "AETHER · CRAFTED 2026"
+
+SCROLL PROGRESS INDICATOR
+
+Fixed position, right side of viewport, vertically centred:
+- A thin vertical line 200px tall, 1px wide, off-white 20% opacity
+- A small filled circle 6px diameter that slides up and down the line 
+  based on scroll progress (0% at top of line, 100% at bottom)
+- The circle is pale violet #b8a0ff
+- Beside the circle, the current section number in JetBrains Mono 11px 
+  letter-spaced, e.g. "01 / 08", updating as scroll progresses
+
+Hide the progress indicator on the intro section, fade in once user 
+starts scrolling.
+
+NAVIGATION
+
+No top nav bar. Pure full-screen scroll experience.
+
+PERFORMANCE NOTES
+
+- Each canvas placeholder will eventually pause its RAF loop when out of 
+  viewport (use IntersectionObserver)
+- Lazy mount each phenomenon component
+- Initial bundle should only load intro section assets
+
+UK English throughout. No commit, no push.
