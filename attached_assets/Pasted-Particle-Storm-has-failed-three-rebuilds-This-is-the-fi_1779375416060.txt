@@ -1,0 +1,80 @@
+Particle Storm has failed three rebuilds. This is the final attempt 
+before the section is removed from the build. Strip back to 
+fundamentals.
+
+Do not touch any other section.
+
+The auditor reports:
+- Viewport mostly empty, maybe a dozen cyan smudges visible
+- Background is grey from bloom flooding, not black
+- Violet and gold palette colours are NOT rendering, only cyan reads
+- Body copy says "Two hundred thousand points" but spec is 80,000
+
+FIX 1: FORCE PURE BLACK BACKGROUND
+
+Verify and explicitly set:
+- scene.background = new THREE.Color(0x000000)  // pure black
+- scene.fog = null  // remove fog entirely; it was contributing to grey wash
+
+FIX 2: PARTICLE COUNT AND COPY ALIGNMENT
+
+Set particle count to 200,000 (matching the body copy). The previous 
+80,000 reduction was meant to make individual particles more visible 
+but at the same time the body copy was not updated. Restore 200,000 
+and adjust visibility through size and alpha rather than count.
+
+FIX 3: VERIFY PALETTE IS BEING APPLIED
+
+Check the fragment shader is actually rendering all three colour stops. 
+Add a debug log to verify per-particle vVelocity values are distributed 
+across the full 0 to 3+ range, not clustered low (which would mean 
+everything renders as the slow-violet colour, which the auditor reports 
+as "barely cyan").
+
+If the velocity calculation is producing values too low to trigger 
+the gold colour stop, scale up the curl noise output:
+vec3 curl = vec3(a1 - a2, b1 - b2, c1 - c2) / (2.0 * eps) * 2.5;
+(multiply by 2.5 to increase velocity range)
+
+FIX 4: LARGER, MORE VISIBLE PARTICLES
+
+In the vertex shader, increase point size:
+gl_PointSize = (4.5 + aSeed * 3.5) * uPixelRatio * (320.0 / -mvPosition.z);
+(was 3.5 + aSeed * 3.0)
+
+In the fragment shader, increase alpha and remove distance falloff 
+(which was making distant particles invisible):
+gl_FragColor = vec4(colour, alpha * 1.0);
+(was alpha * 0.85 * distFalloff)
+
+FIX 5: BRIGHTER, MORE SATURATED COLOURS
+
+vec3 colSlow = vec3(0.75, 0.4, 1.0);     // brighter violet  
+vec3 colMid = vec3(0.4, 0.95, 1.0);      // brighter cyan
+vec3 colFast = vec3(1.0, 0.95, 0.6);     // brighter gold
+
+FIX 6: KEEP NORMAL BLENDING
+
+Confirm blending stays as THREE.NormalBlending, not additive. Additive 
+caused the white-out problem in earlier attempts.
+
+FIX 7: BLOOM ALMOST OFF
+(Already covered in the bloom rebalance prompt; verify it landed)
+- threshold: 0.95
+- strength: 0.1
+- radius: 0.3
+
+EXPECTED RESULT
+A dense swarm of clearly visible violet, cyan and gold particles 
+filling the viewport against pure black. Each particle is a distinct 
+coloured dot, large enough to read at normal viewing distance. The 
+swarm has visible texture and depth, with brighter gold particles in 
+the centre transitioning through cyan to violet at the edges.
+
+IF THIS STILL FAILS
+
+If after this fix the auditor's complaints persist (mostly empty, 
+mono-coloured, no density), the section will be removed from the ship 
+build. The other five phenomena carry the essay alone.
+
+UK English throughout. No commit, no push.

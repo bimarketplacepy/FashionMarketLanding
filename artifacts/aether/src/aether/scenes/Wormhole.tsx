@@ -232,11 +232,13 @@ export default function Wormhole({ canvasId }: WormholeProps) {
           vec3 palette = wormholePalette(hue);
           // Pulse: 0.85..1.15 over 2.5s.
           float pulse = 1.0 + 0.15 * sin(uTime * (6.2831853 / 2.5));
-          // Let the emissive multiplier push above 1 so bloom (threshold
-          // 0.55) actually catches the ring; cap well above 1 so the 1.6×
-          // pulse remains meaningful but cannot fully blow out.
-          vec3 colour = palette * 1.6 * pulse;
-          colour = min(colour, vec3(1.6));
+          // Portal ring emissive reduced 40% (1.6 → 0.96): at the old
+          // multiplier the portal disk read as a solid white circle
+          // under the shared bloom, hiding the internal accretion ring
+          // structure. Tunnel bloom is unchanged; only the ring's own
+          // emissive contribution is dialled back.
+          vec3 colour = palette * 0.96 * pulse;
+          colour = min(colour, vec3(0.96));
           gl_FragColor = vec4(colour, 1.0);
         }
       `,

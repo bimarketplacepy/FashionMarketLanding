@@ -177,14 +177,16 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
     composer.setSize(width, height);
     const renderPass = new RenderPass(scene, camera);
     composer.addPass(renderPass);
-    // Light bloom: particles are now visible on their own (normal blend +
-    // bright colours), so bloom only adds a sparkle to the brightest gold
-    // particles. Args: (resolution, strength, radius, threshold).
+    // Bloom almost off here: particle visibility depends on contrast
+    // against pure black, which any meaningful bloom washes out. At
+    // these settings only the very brightest gold particles get a faint
+    // sparkle and the background stays inky black.
+    // Args: (resolution, strength, radius, threshold).
     const bloom = new UnrealBloomPass(
       new THREE.Vector2(width, height),
-      0.25, // strength
-      0.4,  // radius
-      0.85  // threshold
+      0.1,  // strength
+      0.3,  // radius
+      0.95  // threshold
     );
     composer.addPass(bloom);
     const outputPass = new OutputPass();

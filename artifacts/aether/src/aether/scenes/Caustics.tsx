@@ -103,8 +103,13 @@ export default function Caustics({ canvasId }: CausticsProps) {
     composer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     composer.setSize(width, height);
     composer.addPass(new RenderPass(scene, camera));
-    // UnrealBloomPass(resolution, strength, radius, threshold)
-    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.35, 0.55, 0.7);
+    // Bloom rebalance: higher threshold + lower strength so the whole
+    // seabed caustic web stays legible, not just the bright peaks. The
+    // previous settings turned the centre of the seabed (where the
+    // camera lookAt focuses, so caustics are densest under perspective)
+    // into a wash that swallowed surrounding detail.
+    // Args: (resolution, strength, radius, threshold)
+    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.22, 0.4, 0.88);
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
 

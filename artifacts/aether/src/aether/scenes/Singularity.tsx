@@ -46,7 +46,11 @@ export default function Singularity({ canvasId }: SingularityProps) {
     composer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     composer.setSize(width, height);
     composer.addPass(new RenderPass(scene, camera));
-    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.55, 0.45, 0.7);
+    // Per-section bloom rebalance: lower strength + higher threshold so
+    // the gold disk highlights still glow but the thin photon ring is
+    // no longer swallowed by the wash.
+    // Args: (resolution, strength, radius, threshold)
+    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.35, 0.4, 0.85);
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
 

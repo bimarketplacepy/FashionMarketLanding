@@ -81,13 +81,16 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
     composer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     composer.setSize(width, height);
     composer.addPass(new RenderPass(scene, camera));
-    // Slightly stronger bloom now that the crystals have proper reflective
-    // highlights to bloom off. Args: (resolution, strength, radius, threshold).
+    // Biggest bloom reduction in the deck: the crystals self-illuminate
+    // via emissive AND were getting bloomed, doubling the wash. With
+    // emissiveIntensity also cut sharply below, the crystals now read
+    // as reflective rather than glowing, and individual facets stay
+    // countable. Args: (resolution, strength, radius, threshold).
     const bloom = new UnrealBloomPass(
       new THREE.Vector2(width, height),
-      0.55, // strength
-      0.55, // radius
-      0.65  // threshold
+      0.25, // strength
+      0.35, // radius
+      0.9   // threshold
     );
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
@@ -212,10 +215,11 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
         depthWrite: false,
         envMapIntensity: 1.5,
         emissive,
-        // FIX 5 (chromatic emissive — simpler palette variant): stronger
-        // per-crystal emissive colour stands in for true thin-film
-        // interference, giving the rim a coloured rainbow-ish tint.
-        emissiveIntensity: 1.2
+        // Crystals should reflect, not glow. Sharply reduced from 1.2 so
+        // the per-crystal chromatic emissive tint reads as subtle
+        // thin-film rim colour rather than a self-illuminating wash that
+        // doubles up with bloom.
+        emissiveIntensity: 0.25
       });
       const mesh = new THREE.Mesh(geom, mat);
       mesh.position.copy(position);
