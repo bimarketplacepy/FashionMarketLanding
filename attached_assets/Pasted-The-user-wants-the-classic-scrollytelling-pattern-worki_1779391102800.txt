@@ -1,0 +1,71 @@
+The user wants the classic scrollytelling pattern working cleanly:
+
+1. User scrolls down toward a section
+2. Section enters viewport and immediately PINS (locks to screen)
+3. User continues scrolling but the section stays fixed
+4. The camera/animation inside the section scrubs through its full 
+   journey as the user scrolls (this is what creates the parallax feel)
+5. When camera animation reaches 100%, the section UNPINS
+6. Next section IMMEDIATELY pins in its place — no gap, no delay
+7. Repeat
+
+Currently this is not feeling fluid. Diagnose and fix.
+
+LIKELY ISSUES TO INVESTIGATE
+
+A. Scene mount delay
+Each phenomenon scene may be lazy-loaded, so when a user scrolls into 
+the section it has to mount the Three.js renderer before showing 
+anything. This creates a brief "empty" moment between sections.
+FIX: Pre-mount all six phenomenon scenes on page load. Keep their 
+render loops paused via IntersectionObserver but their canvases and 
+renderers should exist from the start. Only the RAF loop pauses, not 
+the scene itself.
+
+B. Pin handoff gap
+When section A unpins and section B should pin, there may be a frame 
+or two where neither is fully held to the viewport, causing a jolt.
+FIX: Set pinSpacing: true on every ScrollTrigger (already done) AND 
+ensure no section has top/bottom margin between them. Sections must 
+butt edge-to-edge.
+
+C. Scrub lag
+The scrub value controls how smoothly the camera follows scroll. Too 
+high a value = camera lags behind scroll input.
+FIX: Set scrub: 0.15 on every ScrollTrigger (was 0.5). Lower scrub = 
+snappier camera response.
+
+D. Pin duration matching camera animation
+If pin duration is shorter than camera animation needs, the camera 
+clips off mid-move. If pin duration is longer than the camera needs, 
+the user scrolls but nothing happens.
+FIX: Verify each section's pin duration matches the camera animation 
+duration. Suggested values that match the current camera animations:
+- Singularity: end '+=100%'
+- Aurora: end '+=100%'
+- Crystalline: end '+=120%'
+- Caustics: end '+=100%'
+- Resonance: end '+=100%'
+- Wormhole: end '+=180%' (longer because tunnel journey is dramatic)
+
+E. Lenis smooth scroll interaction with pin
+If Lenis smoothing is too high, the scroll lags behind the user's 
+input which makes pin handoffs feel mushy.
+FIX: lenis.duration = 0.8, easing cubic ease-out.
+
+VERIFY
+
+After applying, scroll through the entire site:
+- Each section enters viewport, immediately pins, scrolls the camera 
+  through its animation as you continue scrolling, then releases to 
+  the next section
+- No empty moments, no flashes of nothing, no two sections visible at 
+  once
+- Camera scrubs feel directly tied to scroll position (no lag)
+- Wormhole gets the longest dramatic scroll because the journey 
+  warrants it
+
+The experience should feel like cinema panels each playing as you 
+turn the page.
+
+UK English throughout. No commit, no push.

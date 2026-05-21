@@ -6,20 +6,20 @@ import * as Tone from 'tone';
  *
  * Section index map (0-indexed in DOM order under <main>):
  *   0 Intro          — silent
- *   1 Singularity    — silent
- *   2 Aurora         — silent
+ *   1 Singularity    → low piano arpeggio (V2)
+ *   2 Aurora         → sparse high piano + ping-pong delay (V3)
  *   3 Crystalline    → bells (V4)
- *   4 Caustics       — silent
- *   5 Resonance      → sustained D minor 9 chord (V6, replaces the
- *                      removed Particle Storm pluck voice)
- *   6 Wormhole       → arpeggio (V7)
- *   7 Outro          → held D-major chord (V8)
+ *   4 Caustics       → mid piano motif (V5)
+ *   5 Resonance      → rising piano arpeggio + feedback delay (V6)
+ *   6 Wormhole       → sawtooth arpeggio (V7)
+ *   7 Outro          → strummed D major piano chord (V8)
  *
- * Per the user's preference only note-based ("piano-like") voices are
- * kept. All continuous drones/pads/noises were removed. Each voice's
- * gain is driven by an asymmetric triangle: ramps 0→1 across the
- * previous section + the first half of its own section, then 1→0
- * across the second half of its own section + first half of next.
+ * Every voice is note-based (piano / bell / pluck) — no sustained drones
+ * or pads anywhere in the chain. The Crystalline bells and Wormhole
+ * arpeggio anchor the aesthetic; the new piano voices match that energy.
+ * Each voice's gain is driven by an asymmetric triangle: ramps 0→1
+ * across the previous section + the first half of its own section, then
+ * 1→0 across the second half of its own section + first half of next.
  */
 
 const SESSION_KEY = 'aether.audio.unmuted';
@@ -39,14 +39,44 @@ interface Voice {
   onLeave?: () => void;
 }
 
+/** Shared piano-synth recipe — felt-piano character via the master reverb. */
+function makePianoSynth(volumeDb = 0): Tone.PolySynth {
+  return new Tone.PolySynth(Tone.Synth, {
+    oscillator: { type: 'triangle' },
+    envelope: {
+      attack: 0.005,
+      decay: 0.6,
+      sustain: 0.1,
+      release: 1.2
+    },
+    volume: volumeDb
+  });
+}
+
 interface Engine {
   masterVolume: Tone.Volume;
   voices: Voice[];
-  bellTimer: number | null;
-  arpSequence: Tone.Sequence | null;
   started: boolean;
+
+  // Per-voice synths exposed for the scheduler in startEngine + the
+  // unmute-immediate-note helper.
+  singularitySynth: Tone.PolySynth;
+  auroraSynth: Tone.PolySynth;
   bellSynth: Tone.MetalSynth;
+  causticsSynth: Tone.PolySynth;
+  resonanceSynth: Tone.PolySynth;
   arpSynth: Tone.PolySynth;
+  outroSynth: Tone.PolySynth;
+
+  // Scheduler cleanup handles. Populated in startEngine; cleared if the
+  // engine is ever torn down (currently never — it's a singleton).
+  bellTimer: number | null;
+  singularityTimer: number | null;
+  auroraTimer: number | null;
+  causticsTimer: number | null;
+  resonanceTimer: number | null;
+  outroTimer: number | null;
+  arpSequence: Tone.Sequence | null;
 }
 
 // Singleton stored on globalThis (not module-local) so that Vite HMR module
@@ -74,11 +104,31 @@ function getOrBuildEngine(): Engine {
 
   const voices: Voice[] = [];
 
-  // V1 (continuous deep drone), V2 (Singularity FM drone), V3 (Aurora pad)
-  // and V5 (Caustics mono saw) were all removed at the user's request — only
-  // note-based "piano-like" voices remain.
+  // V1 (deep drone) was deleted at the user's request. Every remaining voice
+  // is note-based (piano, bell, or pluck) — no sustained pads or drones.
 
-  // V4 — Crystalline (bells)
+  // V2 — Singularity (low piano arpeggio)
+  const singularitySynth = makePianoSynth();
+  {
+    const send = makeSend(-14);
+    singularitySynth.connect(send.in);
+    voices.push({ gain: send.gain, peakDb: -14, sectionIndex: 1 });
+  }
+
+  // V3 — Aurora (sparse high piano notes with ping-pong delay shimmer)
+  const auroraSynth = makePianoSynth();
+  {
+    const send = makeSend(-14);
+    const delay = new Tone.PingPongDelay({
+      delayTime: '4n',
+      feedback: 0.4,
+      wet: 0.4
+    }).connect(send.in);
+    auroraSynth.connect(delay);
+    voices.push({ gain: send.gain, peakDb: -14, sectionIndex: 2 });
+  }
+
+  // V4 — Crystalline (bells) — reference voice, unchanged.
   const bellSynth = new Tone.MetalSynth({
     envelope: { attack: 0.001, decay: 1.4, release: 0.2 },
     harmonicity: 5.1,
@@ -92,46 +142,28 @@ function getOrBuildEngine(): Engine {
     voices.push({ gain: send.gain, peakDb: -20, sectionIndex: 3 });
   }
 
-  // V6 — Resonance (sustained D minor 9 chord, slow filter sweep).
-  // Replaces the previous Particle Storm pluck voice. The chord is a
-  // single attack/release pair driven by section enter/leave, mirroring
-  // the standing-wave visual: long sustained tones interfering like the
-  // surface's interference field. Mixed quietly (-14 dB master send,
-  // PolySynth volume -10 dB) so it sits under the bell tails and never
-  // competes with the next section's arpeggio.
-  const resonanceSynth = new Tone.PolySynth(Tone.Synth, {
-    oscillator: { type: 'sine' },
-    envelope: { attack: 6, decay: 0, sustain: 1, release: 8 },
-    volume: -10
-  });
+  // V5 — Caustics (mid piano motif)
+  const causticsSynth = makePianoSynth();
   {
-    const send = makeSend(-14);
-    // Chorus first for shimmer, then a slow auto-filter sweep before
-    // hitting the gain stage.
-    const chorus = new Tone.Chorus({
-      frequency: 0.4,
-      delayTime: 4,
-      depth: 0.7,
-      wet: 0.5
-    }).start();
-    const autoFilter = new Tone.AutoFilter({
-      frequency: 0.1,
-      baseFrequency: 400,
-      octaves: 3,
-      depth: 0.8,
-      wet: 1
-    }).start();
-    resonanceSynth.chain(chorus, autoFilter, send.in);
-    voices.push({
-      gain: send.gain,
-      peakDb: -14,
-      sectionIndex: 5,
-      onEnter: () => resonanceSynth.triggerAttack(['D3', 'F3', 'A3', 'E4']),
-      onLeave: () => resonanceSynth.releaseAll()
-    });
+    const send = makeSend(-15);
+    causticsSynth.connect(send.in);
+    voices.push({ gain: send.gain, peakDb: -15, sectionIndex: 4 });
   }
 
-  // V7 — Wormhole (arpeggio with cutoff sweep)
+  // V6 — Resonance (rising-then-descending piano arpeggio + feedback delay)
+  const resonanceSynth = makePianoSynth();
+  {
+    const send = makeSend(-14);
+    const delay = new Tone.FeedbackDelay({
+      delayTime: '4n.',
+      feedback: 0.5,
+      wet: 0.45
+    }).connect(send.in);
+    resonanceSynth.connect(delay);
+    voices.push({ gain: send.gain, peakDb: -14, sectionIndex: 5 });
+  }
+
+  // V7 — Wormhole (arpeggio with cutoff sweep) — reference voice, unchanged.
   const arpSynth = new Tone.PolySynth(Tone.Synth, {
     oscillator: { type: 'sawtooth' },
     envelope: { attack: 0.01, decay: 0.2, sustain: 0.3, release: 0.4 }
@@ -162,30 +194,32 @@ function getOrBuildEngine(): Engine {
     });
   }
 
-  // V8 — Outro (sustained D major)
+  // V8 — Outro (strummed D major piano chord, gaps between strums)
+  const outroSynth = makePianoSynth();
   {
     const send = makeSend(-16);
-    const outroSynth = new Tone.PolySynth(Tone.Synth, {
-      oscillator: { type: 'triangle' },
-      envelope: { attack: 6, decay: 0, sustain: 1, release: 6 }
-    }).connect(send.in);
-    voices.push({
-      gain: send.gain,
-      peakDb: -16,
-      sectionIndex: 7,
-      onEnter: () => outroSynth.triggerAttack(['D4', 'F#4', 'A4', 'D5']),
-      onLeave: () => outroSynth.releaseAll()
-    });
+    outroSynth.connect(send.in);
+    voices.push({ gain: send.gain, peakDb: -16, sectionIndex: 7 });
   }
 
   const engine: Engine = {
     masterVolume,
     voices,
-    bellTimer: null,
-    arpSequence: null,
     started: false,
+    singularitySynth,
+    auroraSynth,
     bellSynth,
-    arpSynth
+    causticsSynth,
+    resonanceSynth,
+    arpSynth,
+    outroSynth,
+    bellTimer: null,
+    singularityTimer: null,
+    auroraTimer: null,
+    causticsTimer: null,
+    resonanceTimer: null,
+    outroTimer: null,
+    arpSequence: null
   };
   host[ENGINE_KEY] = engine;
   return engine;
@@ -315,47 +349,139 @@ export default function AudioController() {
     Tone.getTransport().bpm.value = 110;
     Tone.getTransport().start();
 
-    // V4 — Crystalline bells, random 1.5..3s.
-    const bellNotes = ['D5', 'F5', 'G5', 'A5', 'C6'];
-    const scheduleBell = () => {
-      const wait = 1500 + Math.random() * 1500;
-      eng.bellTimer = window.setTimeout(() => {
-        // Only audible if the V4 gain is non-trivial — Tone still triggers
-        // but the gain stage attenuates to silence.
-        const v4 = eng.voices.find((v) => v.sectionIndex === 3);
-        if (v4 && v4.gain.gain.value > 0.05 && eng.bellSynth) {
-          const note = bellNotes[Math.floor(Math.random() * bellNotes.length)];
-          eng.bellSynth.triggerAttackRelease(note, '8n');
-        }
-        scheduleBell();
-      }, wait);
+    // Helper: returns true if the voice's gain is audible enough to bother
+    // triggering its synth. Below 0.03 we skip the trigger entirely — the
+    // gain stage would attenuate it to inaudibility anyway, and skipping
+    // keeps the Web Audio thread idle when the section is offscreen.
+    const presenceOf = (sectionIndex: number) => {
+      const v = eng.voices.find((x) => x.sectionIndex === sectionIndex);
+      return v ? v.gain.gain.value : 0;
     };
-    scheduleBell();
 
-    // V6 (Resonance) needs no scheduler — its chord is triggered by
-    // the voice's onEnter / onLeave callbacks from the section-presence
-    // mixer loop, so attack fires within ~1 frame of entering section 5.
+    // ── V2 Singularity — low piano arpeggio (1.5 s gaps) ──
+    {
+      const notes = ['D2', 'A2', 'F3', 'A3'];
+      let idx = 0;
+      const tickV2 = () => {
+        eng.singularityTimer = window.setTimeout(tickV2, 1500);
+        if (presenceOf(1) < 0.03) return;
+        const note = notes[idx % notes.length];
+        idx++;
+        const velocity = 0.6 + Math.random() * 0.25;
+        eng.singularitySynth.triggerAttackRelease(note, '2n', undefined, velocity);
+      };
+      tickV2();
+    }
 
-    // V7 — arpeggio sequence on transport (1/8 note at 110 BPM).
-    const arpNotes = ['D3', 'A3', 'D4', 'F4', 'A4', 'D5', 'F5', 'A5'];
-    let arpIdx = 0;
-    const seq = new Tone.Sequence(
-      (time) => {
-        const v7 = eng.voices.find((v) => v.sectionIndex === 6);
-        if (v7 && v7.gain.gain.value > 0.03 && eng.arpSynth) {
-          eng.arpSynth.triggerAttackRelease(
-            arpNotes[arpIdx % arpNotes.length],
-            '16n',
-            time
-          );
+    // ── V3 Aurora — sparse high piano, 2–4 s random gaps ──
+    {
+      const scale = ['D5', 'E5', 'F#5', 'G5', 'A5', 'B5', 'D6'];
+      const tickV3 = () => {
+        const wait = 2000 + Math.random() * 2000;
+        eng.auroraTimer = window.setTimeout(tickV3, wait);
+        if (presenceOf(2) < 0.03) return;
+        const note = scale[Math.floor(Math.random() * scale.length)];
+        const velocity = 0.5 + Math.random() * 0.35;
+        eng.auroraSynth.triggerAttackRelease(note, '2n', undefined, velocity);
+      };
+      tickV3();
+    }
+
+    // ── V4 Crystalline bells — random 1.5..3 s (unchanged) ──
+    {
+      const bellNotes = ['D5', 'F5', 'G5', 'A5', 'C6'];
+      const scheduleBell = () => {
+        const wait = 1500 + Math.random() * 1500;
+        eng.bellTimer = window.setTimeout(() => {
+          if (presenceOf(3) > 0.05) {
+            const note = bellNotes[Math.floor(Math.random() * bellNotes.length)];
+            eng.bellSynth.triggerAttackRelease(note, '8n');
+          }
+          scheduleBell();
+        }, wait);
+      };
+      scheduleBell();
+    }
+
+    // ── V5 Caustics — 8-note mid motif, 1 s gaps ──
+    {
+      const motif = ['A3', 'E4', 'C4', 'G4', 'F3', 'C4', 'A3', 'E4'];
+      let idx = 0;
+      const tickV5 = () => {
+        eng.causticsTimer = window.setTimeout(tickV5, 1000);
+        if (presenceOf(4) < 0.03) return;
+        const note = motif[idx % motif.length];
+        idx++;
+        const velocity = 0.55 + Math.random() * 0.25;
+        eng.causticsSynth.triggerAttackRelease(note, '2n', undefined, velocity);
+      };
+      tickV5();
+    }
+
+    // ── V6 Resonance — rising then descending arpeggio, 0.4 s gaps ──
+    {
+      // 12-note loop: D3→D5 ascending then back down to F3, so the loop
+      // restart on D3 doesn't double-strike the same pitch twice.
+      const arp = [
+        'D3', 'F3', 'A3', 'D4', 'F4', 'A4', 'D5',
+        'A4', 'F4', 'D4', 'A3', 'F3'
+      ];
+      let idx = 0;
+      const tickV6 = () => {
+        eng.resonanceTimer = window.setTimeout(tickV6, 400);
+        if (presenceOf(5) < 0.03) return;
+        const note = arp[idx % arp.length];
+        idx++;
+        eng.resonanceSynth.triggerAttackRelease(note, '4n', undefined, 0.7);
+      };
+      tickV6();
+    }
+
+    // ── V7 Wormhole arpeggio (unchanged) ──
+    {
+      const arpNotes = ['D3', 'A3', 'D4', 'F4', 'A4', 'D5', 'F5', 'A5'];
+      let arpIdx = 0;
+      const seq = new Tone.Sequence(
+        (time) => {
+          if (presenceOf(6) > 0.03) {
+            eng.arpSynth.triggerAttackRelease(
+              arpNotes[arpIdx % arpNotes.length],
+              '16n',
+              time
+            );
+          }
+          arpIdx++;
+        },
+        [0],
+        '8n'
+      );
+      seq.start(0);
+      eng.arpSequence = seq;
+    }
+
+    // ── V8 Outro — strummed D major, 4 s between strums ──
+    {
+      const chord = ['D4', 'F#4', 'A4', 'D5'];
+      const STRUM_GAP_MS = 150;
+      const REST_MS = 4000;
+      const strumOnce = () => {
+        if (presenceOf(7) < 0.03) {
+          // Voice offscreen — still schedule the next attempt so we resume
+          // strumming the moment the user scrolls into the outro.
+          eng.outroTimer = window.setTimeout(strumOnce, REST_MS);
+          return;
         }
-        arpIdx++;
-      },
-      [0],
-      '8n'
-    );
-    seq.start(0);
-    eng.arpSequence = seq;
+        chord.forEach((note, i) => {
+          window.setTimeout(() => {
+            if (presenceOf(7) < 0.03) return;
+            eng.outroSynth.triggerAttackRelease(note, '2n', undefined, 0.5);
+          }, i * STRUM_GAP_MS);
+        });
+        const totalStrum = chord.length * STRUM_GAP_MS;
+        eng.outroTimer = window.setTimeout(strumOnce, totalStrum + REST_MS);
+      };
+      strumOnce();
+    }
   }, []);
 
   // ───── mute / unmute ─────
@@ -380,31 +506,36 @@ export default function AudioController() {
       sessionStorage.setItem(SESSION_KEY, '1');
 
       // Fire one immediate note for whichever section is currently on
-      // screen, so the very first thing the user hears is sound, not
-      // silence-waiting-for-the-next-scheduler-tick. If they're on a
-      // silent section (Intro/Singularity/Aurora/Caustics) this no-ops,
-      // which is fine — those sections are intentionally silent.
-      // Use floor (not round) so we pick the section whose voice has the
-      // highest presence under the existing triangle envelope (each voice
-      // peaks at sectionIndex + 0.5, so floor(scrollIdx) is the dominant
-      // voice). Rounding could mis-fire near boundaries — e.g. at
-      // scrollIdx 3.6 the bell at section 3 is still the dominant voice
-      // but round would jump to 4 (Caustics, silent).
+      // screen, so the very first thing the user hears is sound rather
+      // than silence-waiting-for-the-next-scheduler-tick. Use floor (not
+      // round) so we pick the section whose voice has the highest
+      // presence under the existing triangle envelope.
       const vh = window.innerHeight || 1;
       const scrollY = window.scrollY || window.pageYOffset || 0;
       const currentSection = Math.floor(scrollY / vh);
-      if (currentSection === 3 && eng.bellSynth) {
-        // Crystalline — bell.
-        eng.bellSynth.triggerAttackRelease('A5', '8n');
-      } else if (currentSection === 6 && eng.arpSynth) {
-        // Wormhole — arp note.
-        eng.arpSynth.triggerAttackRelease('D4', '16n');
+      switch (currentSection) {
+        case 1:
+          eng.singularitySynth.triggerAttackRelease('D2', '2n', undefined, 0.7);
+          break;
+        case 2:
+          eng.auroraSynth.triggerAttackRelease('A5', '2n', undefined, 0.65);
+          break;
+        case 3:
+          eng.bellSynth.triggerAttackRelease('A5', '8n');
+          break;
+        case 4:
+          eng.causticsSynth.triggerAttackRelease('A3', '2n', undefined, 0.65);
+          break;
+        case 5:
+          eng.resonanceSynth.triggerAttackRelease('D3', '4n', undefined, 0.7);
+          break;
+        case 6:
+          eng.arpSynth.triggerAttackRelease('D4', '16n');
+          break;
+        case 7:
+          eng.outroSynth.triggerAttackRelease('D4', '2n', undefined, 0.5);
+          break;
       }
-      // Section 5 (Resonance) intentionally omitted: its chord is
-      // attached to the voice's onEnter callback, which the rAF mixer
-      // loop will fire on the very next tick once presence crosses the
-      // 0.05 threshold (within ~16ms of unmute) — no need to
-      // double-fire it from here.
     } else {
       const next = !unmuted;
       applyMute(next, 0.4);
