@@ -205,6 +205,10 @@ export default function Wormhole({ canvasId }: WormholeProps) {
     // along world Z, then centre it so it spans z = 2 .. z = -78.
     tunnel.rotation.x = Math.PI / 2;
     tunnel.position.set(0, 0, -38);
+    // Render the tunnel interior first so the additive ring and glow
+    // layer on top of (rather than getting hidden behind) the streaking
+    // rainbow pattern when viewed through the portal opening.
+    tunnel.renderOrder = 0;
     scene.add(tunnel);
     disposables.push(tunnelGeo, tunnelMat);
 
@@ -233,13 +237,12 @@ export default function Wormhole({ canvasId }: WormholeProps) {
           vec3 palette = wormholePalette(hue);
           // Pulse: 0.85..1.15 over 2.5s.
           float pulse = 1.0 + 0.15 * sin(uTime * (6.2831853 / 2.5));
-          // Portal ring emissive reduced 40% (1.6 → 0.96): at the old
-          // multiplier the portal disk read as a solid white circle
-          // under the shared bloom, hiding the internal accretion ring
-          // structure. Tunnel bloom is unchanged; only the ring's own
-          // emissive contribution is dialled back.
-          vec3 colour = palette * 0.96 * pulse;
-          colour = min(colour, vec3(0.96));
+          // Portal ring emissive multiplier 1.0: dialled back from the
+          // original 1.6 so the rainbow cycling is still visible without
+          // the bloom pass crushing the centre of the disk to solid
+          // white. Tunnel bloom is unchanged.
+          vec3 colour = palette * 1.0 * pulse;
+          colour = min(colour, vec3(1.0));
           gl_FragColor = vec4(colour, 1.0);
         }
       `,
@@ -249,6 +252,7 @@ export default function Wormhole({ canvasId }: WormholeProps) {
     });
     const ring = new THREE.Mesh(ringGeo, ringMat);
     ring.position.set(0, 0, 2);
+    ring.renderOrder = 1;
     scene.add(ring);
     disposables.push(ringGeo, ringMat);
 
@@ -270,8 +274,12 @@ export default function Wormhole({ canvasId }: WormholeProps) {
         void main(){
           float d = distance(vUv, vec2(0.5));
           float pulse = 1.0 + 0.15 * sin(uTime * (6.2831853 / 2.5));
-          float a = smoothstep(0.5, 0.0, d) * 0.6 * pulse;
-          gl_FragColor = vec4(vec3(1.0), a);
+          // Entrance glow alpha 0.18 (was 0.6), pale cyan-violet tint
+          // #b8e0ff (was pure white): suggests light behind the portal
+          // without washing the centre to solid, so the streaking tunnel
+          // pattern stays visible through the ring.
+          float a = smoothstep(0.5, 0.0, d) * 0.18 * pulse;
+          gl_FragColor = vec4(vec3(0.722, 0.878, 1.0), a);
         }
       `,
       transparent: true,
@@ -280,6 +288,7 @@ export default function Wormhole({ canvasId }: WormholeProps) {
     });
     const glow = new THREE.Mesh(glowGeo, glowMat);
     glow.position.set(0, 0, 1.8);
+    glow.renderOrder = 2;
     scene.add(glow);
     disposables.push(glowGeo, glowMat);
 
