@@ -319,9 +319,13 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
       scrollTrigger = ScrollTrigger.create({
         trigger: section,
         pin: true,
+        pinSpacing: true,
         start: 'top top',
-        end: '+=100%',
-        scrub: true,
+        // Crystalline needs longer scroll runway than the standard 100%
+        // so the grow-in stages of the outer crystal dust don't get
+        // truncated.
+        end: '+=120%',
+        scrub: 0.5,
         onUpdate: (self) => {
           const p = self.progress;
           camState.progress = p;

@@ -332,9 +332,10 @@ export default function Aurora({ canvasId }: AuroraProps) {
       scrollTrigger = ScrollTrigger.create({
         trigger: section,
         pin: true,
+        pinSpacing: true,
         start: 'top top',
         end: '+=100%',
-        scrub: true,
+        scrub: 0.5,
         onUpdate: (self) => {
           const p = self.progress;
           camState.progress = p;

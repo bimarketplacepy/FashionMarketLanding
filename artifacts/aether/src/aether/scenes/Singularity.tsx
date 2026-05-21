@@ -226,9 +226,12 @@ export default function Singularity({ canvasId }: SingularityProps) {
       scrollTrigger = ScrollTrigger.create({
         trigger: section,
         pin: true,
+        pinSpacing: true,
         start: 'top top',
         end: '+=100%',
-        scrub: true,
+        // Light scrub smoothing — visually softer than scrub: true while
+        // still locking the camera to scroll position.
+        scrub: 0.5,
         onUpdate: (self) => {
           const p = self.progress;
           camState.progress = p;

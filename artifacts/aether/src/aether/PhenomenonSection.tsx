@@ -36,13 +36,20 @@ interface PhenomenonSectionProps {
 }
 
 export default function PhenomenonSection({ phenomenon, index }: PhenomenonSectionProps) {
-  // Lazy-mount the WebGL scene only when its section is actually on
-  // screen (with a small ~20vh pre-roll so it has time to initialise
-  // before the user scrolls onto it). Sandboxed iframes — including
-  // the Replit preview — cap simultaneous WebGL contexts well below
-  // the desktop browser default, so holding all six at once leaves
-  // some canvases blank. Aggressive lazy mounting keeps the live
-  // count to ~1-2 without touching scene code.
+  // Lazy-mount the WebGL scene only when its section is first about to
+  // enter the viewport (with a ~20vh pre-roll so it has time to
+  // initialise before the user scrolls onto it). Sandboxed iframes —
+  // including the Replit preview — cap simultaneous WebGL contexts well
+  // below the desktop browser default, so deferring mount until a
+  // section is needed keeps the early-page WebGL count low.
+  //
+  // CRITICAL: this is a one-way activation. Once a section has mounted
+  // we MUST NOT unmount it: the scene's ScrollTrigger pin owns a GSAP
+  // pin spacer in the document, and destroying that spacer after the
+  // user has scrolled past it changes total document height under their
+  // feet — causing jumps, broken pin geometry on downstream sections,
+  // and animations being cut off. So we observe once, flip `active`
+  // to true on first intersection, then disconnect the observer.
   const sectionRef = useRef<HTMLElement | null>(null);
   const [active, setActive] = useState(false);
 
@@ -54,7 +61,14 @@ export default function PhenomenonSection({ phenomenon, index }: PhenomenonSecti
     }
     const io = new IntersectionObserver(
       (entries) => {
-        for (const e of entries) setActive(e.isIntersecting);
+        for (const e of entries) {
+          if (e.isIntersecting) {
+            setActive(true);
+            // One-shot: stop observing so we never unmount.
+            io.disconnect();
+            break;
+          }
+        }
       },
       { rootMargin: '20% 0px 20% 0px', threshold: 0 }
     );

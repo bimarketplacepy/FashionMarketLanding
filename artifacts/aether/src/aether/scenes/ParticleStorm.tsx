@@ -333,9 +333,12 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
       scrollTrigger = ScrollTrigger.create({
         trigger: section,
         pin: true,
+        pinSpacing: true,
         start: 'top top',
-        end: '+=100%',
-        scrub: true,
+        // Extra scroll runway gives the camera dolly through the swarm
+        // room to breathe.
+        end: '+=120%',
+        scrub: 0.5,
         onUpdate: (self) => {
           // Simplified scroll-driven dolly straight along the swarm's
           // central axis: starts wide, ends inside the cloud.

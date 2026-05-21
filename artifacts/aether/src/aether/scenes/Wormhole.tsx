@@ -378,9 +378,14 @@ export default function Wormhole({ canvasId }: WormholeProps) {
       scrollTrigger = ScrollTrigger.create({
         trigger: section,
         pin: true,
+        pinSpacing: true,
         start: 'top top',
-        end: '+=100%',
-        scrub: true,
+        // Wormhole is the longest journey — dramatic tunnel approach,
+        // entry, and exit all need scroll runway. The section element
+        // itself stays at 100vh; this end value is what extends the
+        // pinned duration, not section height.
+        end: '+=200%',
+        scrub: 0.5,
         onUpdate: (self) => {
           camState.z = computeZ(self.progress);
         }
