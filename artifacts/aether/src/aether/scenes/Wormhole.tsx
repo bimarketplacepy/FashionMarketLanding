@@ -126,8 +126,24 @@ export default function Wormhole({ canvasId }: WormholeProps) {
     composer.setSize(width, height);
     const renderPass = new RenderPass(scene, camera);
     composer.addPass(renderPass);
+    // Desktop bloom: strength 0.55, radius 0.5, threshold 0.55.
+    // Mobile reduces wash because the smaller screen amplifies intensity:
+    // strength → 60% of desktop, threshold +0.05, radius -0.1.
     const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.55, 0.5, 0.55);
     composer.addPass(bloom);
+    const mobileBloomQuery = window.matchMedia('(max-width: 768px)');
+    const applyBloomForViewport = () => {
+      if (mobileBloomQuery.matches) {
+        bloom.strength = 0.33;
+        bloom.radius = 0.4;
+        bloom.threshold = 0.6;
+      } else {
+        bloom.strength = 0.55;
+        bloom.radius = 0.5;
+        bloom.threshold = 0.55;
+      }
+    };
+    applyBloomForViewport();
     const outputPass = new OutputPass();
     composer.addPass(outputPass);
 
@@ -472,6 +488,7 @@ export default function Wormhole({ canvasId }: WormholeProps) {
       renderer.setSize(w, h);
       composer.setSize(w, h);
       streakMat.uniforms.uPixelRatio.value = Math.min(window.devicePixelRatio, 2);
+      applyBloomForViewport();
     };
     window.addEventListener('resize', onResize);
 

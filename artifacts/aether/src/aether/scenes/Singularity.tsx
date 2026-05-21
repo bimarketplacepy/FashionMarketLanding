@@ -53,8 +53,23 @@ export default function Singularity({ canvasId }: SingularityProps) {
     // the gold disk highlights still glow but the thin photon ring is
     // no longer swallowed by the wash.
     // Args: (resolution, strength, radius, threshold)
+    // Desktop bloom: strength 0.35, radius 0.4, threshold 0.92.
+    // Mobile reduces wash because the smaller screen amplifies intensity.
     const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.35, 0.4, 0.92);
     composer.addPass(bloom);
+    const mobileBloomQuery = window.matchMedia('(max-width: 768px)');
+    const applyBloomForViewport = () => {
+      if (mobileBloomQuery.matches) {
+        bloom.strength = 0.18;
+        bloom.radius = 0.3;
+        bloom.threshold = 0.95;
+      } else {
+        bloom.strength = 0.35;
+        bloom.radius = 0.4;
+        bloom.threshold = 0.92;
+      }
+    };
+    applyBloomForViewport();
     composer.addPass(new OutputPass());
 
     // ───────────────── SHARED STARFIELD ─────────────────
@@ -312,6 +327,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
       fitCameraHorizontal(camera, w / h, 50);
       renderer.setSize(w, h);
       composer.setSize(w, h);
+      applyBloomForViewport();
     };
     window.addEventListener('resize', onResize);
 
