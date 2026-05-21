@@ -321,10 +321,10 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
         pin: true,
         pinSpacing: true,
         start: 'top top',
-        // Crystalline needs longer scroll runway than the standard 100%
-        // so the grow-in stages of the outer crystal dust don't get
-        // truncated.
-        end: '+=120%',
+        // Crystalline needs extra scroll runway so the grow-in stages of
+        // the outer crystal dust complete AND the pin releases cleanly
+        // before Caustics' top reaches the viewport top.
+        end: '+=150%',
         scrub: 0.5,
         onUpdate: (self) => {
           const p = self.progress;

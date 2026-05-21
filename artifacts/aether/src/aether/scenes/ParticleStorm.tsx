@@ -336,8 +336,9 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
         pinSpacing: true,
         start: 'top top',
         // Extra scroll runway gives the camera dolly through the swarm
-        // room to breathe.
-        end: '+=120%',
+        // room to breathe AND ensures the pin releases cleanly before
+        // Wormhole's top enters the viewport.
+        end: '+=150%',
         scrub: 0.5,
         onUpdate: (self) => {
           // Simplified scroll-driven dolly straight along the swarm's

@@ -424,7 +424,9 @@ export default function Caustics({ canvasId }: CausticsProps) {
         pin: true,
         pinSpacing: true,
         start: 'top top',
-        end: '+=100%',
+        // Longer pin so the camera completes its descent into the
+        // seabed before Particle Storm's top enters the viewport.
+        end: '+=150%',
         scrub: 0.5,
         onUpdate: (self) => {
           const p = self.progress;

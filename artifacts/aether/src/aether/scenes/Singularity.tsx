@@ -228,7 +228,10 @@ export default function Singularity({ canvasId }: SingularityProps) {
         pin: true,
         pinSpacing: true,
         start: 'top top',
-        end: '+=100%',
+        // Longer pin: at 100% the scrub timeline finished before the
+        // next section's top reached the viewport top, so Singularity's
+        // bottom and Aurora's top were briefly visible together.
+        end: '+=150%',
         // Light scrub smoothing — visually softer than scrub: true while
         // still locking the camera to scroll position.
         scrub: 0.5,

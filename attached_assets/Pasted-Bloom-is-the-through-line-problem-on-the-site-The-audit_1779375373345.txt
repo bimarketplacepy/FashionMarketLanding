@@ -1,0 +1,67 @@
+Bloom is the through-line problem on the site. The auditor flagged 
+five of six sections as having too much bloom. Rebalance per-section.
+
+Do not change any scene geometry, materials, or shaders. Only adjust 
+UnrealBloomPass parameters per section.
+
+SINGULARITY (section 1)
+- threshold: 0.85 (was 0.7)
+- strength: 0.35 (was 0.55)  
+- radius: 0.4 (was 0.45)
+Result: photon ring becomes visible again, gold disk highlights still 
+glow but stop swallowing the background.
+
+AURORA (section 2)
+- LEAVE ALONE. Bloom is correctly balanced here.
+- Confirm current settings remain: threshold 0.85, strength 0.32, 
+  radius 0.4.
+
+CRYSTALLINE (section 3) — biggest reduction
+- threshold: 0.9 (was 0.65)
+- strength: 0.25 (was 0.55)
+- radius: 0.35 (was 0.55)
+ALSO: reduce crystal material emissiveIntensity from 1.0 to 0.25. The 
+crystals are self-illuminating AND getting bloomed, which is doubling 
+the wash. They should reflect, not glow.
+
+CAUSTICS (section 4)
+- threshold: 0.88 (was 0.7)
+- strength: 0.22 (was 0.35)
+- radius: 0.4 (was 0.55)
+ALSO: investigate the bottom-centre seabed emissive that the auditor 
+identified as a bloom-bomb source. If there's a central caustic peak 
+or sun light at the bottom-centre of the seabed plane with high 
+emissive intensity, cut its emissiveIntensity in half. The pattern 
+elsewhere on the seabed reads clearly; the centre hotspot is the 
+problem.
+
+PARTICLE STORM (section 5)
+- threshold: 0.95 (was 0.85)
+- strength: 0.1 (was 0.25)
+- radius: 0.3 (was 0.4)
+Bloom should be almost off. Particle visibility depends on contrast 
+against a pure black background, which bloom is washing out.
+
+WORMHOLE (section 6)
+- Tunnel bloom is correct. Keep current strength on the tunnel.
+- Portal bloom needs reduction. If portal and tunnel share the same 
+  UnrealBloomPass, reduce the portal ring's emissive intensity in its 
+  ShaderMaterial from current value by 40%. The portal disk reads as 
+  a solid white circle currently; it should show internal accretion 
+  ring structure.
+
+VERIFICATION
+
+After applying, scroll through each section. The auditor's specific 
+complaints to check:
+- Singularity: can you see the thin gold photon ring?
+- Crystalline: can you count individual crystal facets?
+- Caustics: is the seabed caustic web visible across the whole floor, 
+  not just edges?
+- Particle Storm: is the background pure black?
+- Wormhole portal: can you see internal ring structure inside the 
+  portal disk?
+
+If yes to all five, the bloom rebalance is correct.
+
+UK English throughout. No commit, no push.
