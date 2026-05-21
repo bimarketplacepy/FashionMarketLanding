@@ -1,9 +1,11 @@
 import React, { Suspense } from 'react';
 import { phenomena } from './phenomena';
+import TextLegibilityOverlay from './TextLegibilityOverlay';
 
 const PhenomenonCanvas = React.lazy(() => import('./PhenomenonCanvas'));
 const Singularity = React.lazy(() => import('./scenes/Singularity'));
 const Aurora = React.lazy(() => import('./scenes/Aurora'));
+const Crystalline = React.lazy(() => import('./scenes/Crystalline'));
 
 const sceneFor = (id: string, canvasId: string) => {
   switch (id) {
@@ -11,6 +13,8 @@ const sceneFor = (id: string, canvasId: string) => {
       return <Singularity canvasId={canvasId} />;
     case 'aurora':
       return <Aurora canvasId={canvasId} />;
+    case 'crystalline':
+      return <Crystalline canvasId={canvasId} />;
     default:
       return <PhenomenonCanvas canvasId={canvasId} />;
   }
@@ -27,6 +31,8 @@ export default function PhenomenonSection({ phenomenon, index }: PhenomenonSecti
       <Suspense fallback={null}>
         {sceneFor(phenomenon.id, phenomenon.canvasId)}
       </Suspense>
+
+      <TextLegibilityOverlay />
 
       <div className="absolute inset-0 pointer-events-none z-10">
         <div className="absolute top-[40px] left-[40px] flex flex-col items-start">

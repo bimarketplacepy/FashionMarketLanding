@@ -6,6 +6,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { createStarfield } from './createStarfield';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -102,65 +103,9 @@ export default function Aurora({ canvasId }: AuroraProps) {
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
 
-    // ───────────────── STARFIELD ─────────────────
-    const STAR_COUNT = 6000;
-    const starPositions = new Float32Array(STAR_COUNT * 3);
-    const starSizes = new Float32Array(STAR_COUNT);
-    const starPhases = new Float32Array(STAR_COUNT);
-    for (let i = 0; i < STAR_COUNT; i++) {
-      const u = Math.random();
-      const v = Math.random();
-      const theta = 2 * Math.PI * u;
-      const phi = Math.acos(2 * v - 1);
-      const r = 200;
-      starPositions[i * 3 + 0] = r * Math.sin(phi) * Math.cos(theta);
-      starPositions[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
-      starPositions[i * 3 + 2] = r * Math.cos(phi);
-      starSizes[i] = 0.5 + Math.random() * 1.5;
-      starPhases[i] = Math.random() * Math.PI * 2;
-    }
-    const starGeo = new THREE.BufferGeometry();
-    starGeo.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
-    starGeo.setAttribute('aSize', new THREE.BufferAttribute(starSizes, 1));
-    starGeo.setAttribute('aPhase', new THREE.BufferAttribute(starPhases, 1));
-
-    const starMat = new THREE.ShaderMaterial({
-      uniforms: {
-        uTime: { value: 0 },
-        uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) },
-        uTint: { value: new THREE.Color(0xd8e8ff) }
-      },
-      vertexShader: /* glsl */ `
-        attribute float aSize;
-        attribute float aPhase;
-        uniform float uTime;
-        uniform float uPixelRatio;
-        varying float vTwinkle;
-        void main() {
-          // Darker overall, capped at 0.6.
-          vTwinkle = 0.30 + 0.30 * sin(uTime * 1.4 + aPhase);
-          vec4 mv = modelViewMatrix * vec4(position, 1.0);
-          gl_Position = projectionMatrix * mv;
-          gl_PointSize = aSize * uPixelRatio;
-        }
-      `,
-      fragmentShader: /* glsl */ `
-        uniform vec3 uTint;
-        varying float vTwinkle;
-        void main() {
-          vec2 uv = gl_PointCoord - 0.5;
-          float d = length(uv);
-          float a = smoothstep(0.5, 0.0, d);
-          gl_FragColor = vec4(uTint * vTwinkle, a);
-        }
-      `,
-      transparent: true,
-      blending: THREE.AdditiveBlending,
-      depthWrite: false,
-      fog: false
-    });
-    const stars = new THREE.Points(starGeo, starMat);
-    scene.add(stars);
+    // ───────────────── SHARED STARFIELD ─────────────────
+    const starfield = createStarfield();
+    scene.add(starfield.group);
 
     // ───────────────── BACKGROUND VOLUMETRIC GLOW ─────────────────
     const glowMaterials: THREE.Material[] = [];
@@ -356,7 +301,7 @@ export default function Aurora({ canvasId }: AuroraProps) {
     }
 
     // ───────────────── SCROLL-DRIVEN CAMERA ─────────────────
-    const camState = { z: 12, y: 0, lookY: 4 };
+    const camState = { z: 12, y: 0, lookY: 4, progress: 0 };
     let scrollTrigger: ScrollTrigger | null = null;
     if (section) {
       scrollTrigger = ScrollTrigger.create({
@@ -367,6 +312,7 @@ export default function Aurora({ canvasId }: AuroraProps) {
         scrub: true,
         onUpdate: (self) => {
           const p = self.progress;
+          camState.progress = p;
           camState.z = 12 + (2 - 12) * p;
           camState.y = 0 + (3 - 0) * p;
           camState.lookY = 4 + (7 - 4) * p;
@@ -382,7 +328,7 @@ export default function Aurora({ canvasId }: AuroraProps) {
       if (!running) return;
       rafId = requestAnimationFrame(tick);
       const t = clock.getElapsedTime();
-      (starMat.uniforms.uTime.value as number) = t;
+      starfield.update(t, camState.progress);
       for (const m of ribbonMats) {
         (m.uniforms.uTime.value as number) = t;
       }
@@ -439,8 +385,7 @@ export default function Aurora({ canvasId }: AuroraProps) {
       window.removeEventListener('resize', onResize);
       if (io) io.disconnect();
       if (scrollTrigger) scrollTrigger.kill();
-      starGeo.dispose();
-      starMat.dispose();
+      starfield.dispose();
       for (const g of ribbonGeoms) g.dispose();
       for (const m of ribbonMats) m.dispose();
       for (const g of glowGeoms) g.dispose();

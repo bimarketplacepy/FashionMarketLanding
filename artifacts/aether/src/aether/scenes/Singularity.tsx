@@ -6,6 +6,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { createStarfield } from './createStarfield';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,75 +50,9 @@ export default function Singularity({ canvasId }: SingularityProps) {
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
 
-    // ───────────────── STARFIELD ─────────────────
-    const STAR_COUNT = 8000;
-    const starPositions = new Float32Array(STAR_COUNT * 3);
-    const starSizes = new Float32Array(STAR_COUNT);
-    const starColors = new Float32Array(STAR_COUNT * 3);
-    const starPhases = new Float32Array(STAR_COUNT);
-    const warm = new THREE.Color(0xfffaf0);
-    const cool = new THREE.Color(0xe8f0ff);
-    for (let i = 0; i < STAR_COUNT; i++) {
-      // uniform on sphere
-      const u = Math.random();
-      const v = Math.random();
-      const theta = 2 * Math.PI * u;
-      const phi = Math.acos(2 * v - 1);
-      const r = 200;
-      starPositions[i * 3 + 0] = r * Math.sin(phi) * Math.cos(theta);
-      starPositions[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
-      starPositions[i * 3 + 2] = r * Math.cos(phi);
-      starSizes[i] = 0.5 + Math.random() * 1.5;
-      const mix = Math.random();
-      const c = warm.clone().lerp(cool, mix);
-      starColors[i * 3 + 0] = c.r;
-      starColors[i * 3 + 1] = c.g;
-      starColors[i * 3 + 2] = c.b;
-      starPhases[i] = Math.random() * Math.PI * 2;
-    }
-    const starGeo = new THREE.BufferGeometry();
-    starGeo.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
-    starGeo.setAttribute('aSize', new THREE.BufferAttribute(starSizes, 1));
-    starGeo.setAttribute('aColor', new THREE.BufferAttribute(starColors, 3));
-    starGeo.setAttribute('aPhase', new THREE.BufferAttribute(starPhases, 1));
-
-    const starMat = new THREE.ShaderMaterial({
-      uniforms: {
-        uTime: { value: 0 },
-        uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) }
-      },
-      vertexShader: /* glsl */ `
-        attribute float aSize;
-        attribute vec3 aColor;
-        attribute float aPhase;
-        uniform float uTime;
-        uniform float uPixelRatio;
-        varying vec3 vColor;
-        varying float vTwinkle;
-        void main() {
-          vColor = aColor;
-          vTwinkle = 0.65 + 0.35 * sin(uTime * 1.4 + aPhase);
-          vec4 mv = modelViewMatrix * vec4(position, 1.0);
-          gl_Position = projectionMatrix * mv;
-          gl_PointSize = aSize * uPixelRatio;
-        }
-      `,
-      fragmentShader: /* glsl */ `
-        varying vec3 vColor;
-        varying float vTwinkle;
-        void main() {
-          vec2 uv = gl_PointCoord - 0.5;
-          float d = length(uv);
-          float a = smoothstep(0.5, 0.0, d);
-          gl_FragColor = vec4(vColor * vTwinkle, a);
-        }
-      `,
-      transparent: true,
-      blending: THREE.AdditiveBlending,
-      depthWrite: false
-    });
-    const stars = new THREE.Points(starGeo, starMat);
-    scene.add(stars);
+    // ───────────────── SHARED STARFIELD ─────────────────
+    const starfield = createStarfield();
+    scene.add(starfield.group);
 
     // ───────────────── EVENT HORIZON ─────────────────
     const horizon = new THREE.Mesh(
@@ -285,7 +220,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
     scene.add(glow);
 
     // ───────────────── SCROLL-DRIVEN CAMERA ─────────────────
-    const camState = { z: 10, y: 2.5 };
+    const camState = { z: 10, y: 2.5, progress: 0 };
     let scrollTrigger: ScrollTrigger | null = null;
     if (section) {
       scrollTrigger = ScrollTrigger.create({
@@ -296,6 +231,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
         scrub: true,
         onUpdate: (self) => {
           const p = self.progress;
+          camState.progress = p;
           camState.z = 10 + (4.2 - 10) * p;
           camState.y = 2.5 + (0.8 - 2.5) * p;
         }
@@ -310,7 +246,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
       if (!running) return;
       rafId = requestAnimationFrame(tick);
       const t = clock.getElapsedTime();
-      (starMat.uniforms.uTime.value as number) = t;
+      starfield.update(t, camState.progress);
       (diskMat.uniforms.uTime.value as number) = t;
       (glowMat.uniforms.uTime.value as number) = t;
       // Photon ring pulse: 1.0 → 1.03 over 4s
@@ -366,8 +302,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
       window.removeEventListener('resize', onResize);
       if (io) io.disconnect();
       if (scrollTrigger) scrollTrigger.kill();
-      starGeo.dispose();
-      starMat.dispose();
+      starfield.dispose();
       diskGeo.dispose();
       diskMat.dispose();
       glowGeo.dispose();
