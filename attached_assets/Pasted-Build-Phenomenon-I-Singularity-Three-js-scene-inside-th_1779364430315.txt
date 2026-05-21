@@ -1,0 +1,129 @@
+Build Phenomenon I (Singularity) Three.js scene inside the existing 
+section 1 placeholder. Do not touch any other section.
+
+CONCEPT
+
+A spinning black hole with a glowing accretion disk and starfield 
+background. Camera dollies in as the user scrolls through this section, 
+making the black hole loom larger. Visually inspired by Interstellar 
+and Event Horizon Telescope imagery.
+
+CANVAS SETUP
+
+Mount a Three.js scene inside the existing canvas placeholder for 
+section 1 (the canvas-singularity div). Scene must:
+
+- Full viewport size, resize on window resize
+- WebGL2 renderer with antialias true, alpha false (black bg)
+- Pixel ratio capped at 2 (Math.min(window.devicePixelRatio, 2))
+- Output encoding sRGB
+- Pause the render loop when section is outside the viewport (use 
+  IntersectionObserver on the section element)
+
+SCENE COMPOSITION
+
+1. STARFIELD BACKGROUND
+- 8000 stars as Points with custom shader
+- Distributed on the surface of a large sphere (radius 200) using 
+  spherical random distribution
+- Each star has slight size variation (0.5 to 2.0 pixels)
+- Each star has slight colour variation (warm white #fffaf0 to cool 
+  blue-white #e8f0ff)
+- Subtle twinkling: brightness oscillates with sine wave per star, 
+  random phase
+- Additive blending
+
+2. EVENT HORIZON (the black sphere)
+- SphereGeometry, radius 1.0
+- MeshBasicMaterial with colour pure black #000000
+- This is the inescapable centre
+
+3. PHOTON RING (the glowing edge)
+- TorusGeometry just slightly larger than the event horizon 
+  (radius 1.05, tube 0.02)
+- MeshBasicMaterial with emissive bright orange #ffb877
+- Tilted slightly off the camera axis
+- Subtle pulse: scale oscillates 1.0 to 1.03 over 4 seconds
+
+4. ACCRETION DISK (the spectacle)
+
+This is the centrepiece. Build it from 50,000 particles:
+
+- BufferGeometry with 50,000 positions
+- Particles distributed in a flat disk (Y near zero) between radius 1.4 
+  and radius 5.0
+- Disk thickness on Y axis: very thin, around 0.05 units, with noise
+- Each particle stores:
+  - Initial radius (for orbital speed calculation)
+  - Initial angle
+  - Vertical offset within the thin disk
+- Custom ShaderMaterial:
+  - Vertex shader: animates orbital position based on time and initial 
+    radius (Keplerian rotation: inner particles orbit faster, omega 
+    proportional to 1/sqrt(radius))
+  - Fragment shader: colours each particle based on radius
+    - Inner band (radius 1.4 to 1.8): white-hot #fff8e1
+    - Mid band (radius 1.8 to 3.0): hot orange #ffa830
+    - Outer band (radius 3.0 to 5.0): deep red-orange #d04420
+    - Edge fade: alpha falls off from radius 4.5 to 5.0
+  - Additive blending
+  - Depth write false
+- Particle size: 1.5 pixels with slight per-particle variation
+- Disk tilted approximately 18 degrees off horizontal so the camera 
+  sees the disk edge-on-ish with some bend
+
+5. INNER GLOW HALO
+- A small additional point-based glow concentrated right at the inner 
+  edge of the accretion disk to suggest the hottest plasma
+- 5000 particles at radius 1.4 to 1.7, hottest white #ffffff with 
+  yellow tinge, additive blend, soft circular sprite
+
+CAMERA
+
+PerspectiveCamera, FOV 50.
+Initial position: x=0, y=2.5, z=10 (looking slightly down at the disk)
+LookAt: origin (0, 0, 0)
+
+SCROLL-DRIVEN CAMERA
+
+As the user scrolls through section 1:
+- 0% progress: camera z=10
+- 100% progress: camera z=4.2
+- Y position: 2.5 at 0%, decreasing to 0.8 at 100% (sweeping down toward 
+  disk plane)
+- Use GSAP ScrollTrigger pinned to section 1, scrubbing camera position 
+  with progress
+
+Animation continues whether scrolled or not (disk rotates, photon ring 
+pulses, stars twinkle). The scroll only drives camera position.
+
+POST-PROCESSING
+
+EffectComposer with:
+- RenderPass
+- UnrealBloomPass:
+  - threshold: 0.7
+  - strength: 0.55
+  - radius: 0.45
+- OutputPass
+
+Bloom must be subtle. If the disk blows out and loses definition, 
+reduce strength to 0.45. Aim for glow, not haze.
+
+PERFORMANCE
+
+- Renderer paused when section is fully out of viewport
+- Limit DPR to 2
+- Use BufferGeometry, not Geometry
+- Single material instance per group
+
+DO NOT
+
+- Do not add OrbitControls. The user scroll drives the camera, not the 
+  mouse.
+- Do not add bloom strength above 0.6.
+- Do not add UnrealBloomPass without OutputPass after it (causes 
+  colour space issues).
+- Do not change anything outside section 1.
+
+UK English throughout. No commit, no push.

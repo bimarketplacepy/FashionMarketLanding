@@ -2,6 +2,16 @@ import React, { Suspense } from 'react';
 import { phenomena } from './phenomena';
 
 const PhenomenonCanvas = React.lazy(() => import('./PhenomenonCanvas'));
+const Singularity = React.lazy(() => import('./scenes/Singularity'));
+
+const sceneFor = (id: string, canvasId: string) => {
+  switch (id) {
+    case 'singularity':
+      return <Singularity canvasId={canvasId} />;
+    default:
+      return <PhenomenonCanvas canvasId={canvasId} />;
+  }
+};
 
 interface PhenomenonSectionProps {
   phenomenon: typeof phenomena[0];
@@ -12,7 +22,7 @@ export default function PhenomenonSection({ phenomenon, index }: PhenomenonSecti
   return (
     <section className="h-[100vh] relative overflow-hidden bg-black">
       <Suspense fallback={null}>
-        <PhenomenonCanvas canvasId={phenomenon.canvasId} />
+        {sceneFor(phenomenon.id, phenomenon.canvasId)}
       </Suspense>
 
       <div className="absolute inset-0 pointer-events-none z-10">

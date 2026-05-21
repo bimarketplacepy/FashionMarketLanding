@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import gsap from 'gsap';
-import { useLenis } from '@studio-freight/lenis/react';
 
 export default function ProgressIndicator() {
   const [progress, setProgress] = useState(0);
