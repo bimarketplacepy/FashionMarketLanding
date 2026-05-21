@@ -10,7 +10,8 @@ import * as Tone from 'tone';
  *   2 Aurora         — silent
  *   3 Crystalline    → bells (V4)
  *   4 Caustics       — silent
- *   5 Particle Storm → plucked notes (V6)
+ *   5 Resonance      → sustained D minor 9 chord (V6, replaces the
+ *                      removed Particle Storm pluck voice)
  *   6 Wormhole       → arpeggio (V7)
  *   7 Outro          → held D-major chord (V8)
  *
@@ -42,11 +43,9 @@ interface Engine {
   masterVolume: Tone.Volume;
   voices: Voice[];
   bellTimer: number | null;
-  pluckTimer: number | null;
   arpSequence: Tone.Sequence | null;
   started: boolean;
   bellSynth: Tone.MetalSynth;
-  pluck: Tone.PluckSynth;
   arpSynth: Tone.PolySynth;
 }
 
@@ -93,17 +92,43 @@ function getOrBuildEngine(): Engine {
     voices.push({ gain: send.gain, peakDb: -20, sectionIndex: 3 });
   }
 
-  // V6 — Particle Storm (plucked notes only; the previous pink-noise bed
-  // was a continuous tone and has been removed.)
-  const pluck = new Tone.PluckSynth({
-    attackNoise: 1,
-    dampening: 4000,
-    resonance: 0.85
+  // V6 — Resonance (sustained D minor 9 chord, slow filter sweep).
+  // Replaces the previous Particle Storm pluck voice. The chord is a
+  // single attack/release pair driven by section enter/leave, mirroring
+  // the standing-wave visual: long sustained tones interfering like the
+  // surface's interference field. Mixed quietly (-14 dB master send,
+  // PolySynth volume -10 dB) so it sits under the bell tails and never
+  // competes with the next section's arpeggio.
+  const resonanceSynth = new Tone.PolySynth(Tone.Synth, {
+    oscillator: { type: 'sine' },
+    envelope: { attack: 6, decay: 0, sustain: 1, release: 8 },
+    volume: -10
   });
   {
     const send = makeSend(-14);
-    pluck.connect(send.in);
-    voices.push({ gain: send.gain, peakDb: -14, sectionIndex: 5 });
+    // Chorus first for shimmer, then a slow auto-filter sweep before
+    // hitting the gain stage.
+    const chorus = new Tone.Chorus({
+      frequency: 0.4,
+      delayTime: 4,
+      depth: 0.7,
+      wet: 0.5
+    }).start();
+    const autoFilter = new Tone.AutoFilter({
+      frequency: 0.1,
+      baseFrequency: 400,
+      octaves: 3,
+      depth: 0.8,
+      wet: 1
+    }).start();
+    resonanceSynth.chain(chorus, autoFilter, send.in);
+    voices.push({
+      gain: send.gain,
+      peakDb: -14,
+      sectionIndex: 5,
+      onEnter: () => resonanceSynth.triggerAttack(['D3', 'F3', 'A3', 'E4']),
+      onLeave: () => resonanceSynth.releaseAll()
+    });
   }
 
   // V7 — Wormhole (arpeggio with cutoff sweep)
@@ -157,11 +182,9 @@ function getOrBuildEngine(): Engine {
     masterVolume,
     voices,
     bellTimer: null,
-    pluckTimer: null,
     arpSequence: null,
     started: false,
     bellSynth,
-    pluck,
     arpSynth
   };
   host[ENGINE_KEY] = engine;
@@ -309,21 +332,9 @@ export default function AudioController() {
     };
     scheduleBell();
 
-    // V6 — Pluck irregular 0.3..1.2s, D dorian, D3..D5.
-    const dorianRoots = ['D', 'E', 'F', 'G', 'A', 'B', 'C'];
-    const schedulePluck = () => {
-      const wait = 300 + Math.random() * 900;
-      eng.pluckTimer = window.setTimeout(() => {
-        const v6 = eng.voices.find((v) => v.sectionIndex === 5);
-        if (v6 && v6.gain.gain.value > 0.05 && eng.pluck) {
-          const root = dorianRoots[Math.floor(Math.random() * dorianRoots.length)];
-          const octave = 3 + Math.floor(Math.random() * 3); // 3..5
-          eng.pluck.triggerAttack(`${root}${octave}`);
-        }
-        schedulePluck();
-      }, wait);
-    };
-    schedulePluck();
+    // V6 (Resonance) needs no scheduler — its chord is triggered by
+    // the voice's onEnter / onLeave callbacks from the section-presence
+    // mixer loop, so attack fires within ~1 frame of entering section 5.
 
     // V7 — arpeggio sequence on transport (1/8 note at 110 BPM).
     const arpNotes = ['D3', 'A3', 'D4', 'F4', 'A4', 'D5', 'F5', 'A5'];
@@ -385,13 +396,15 @@ export default function AudioController() {
       if (currentSection === 3 && eng.bellSynth) {
         // Crystalline — bell.
         eng.bellSynth.triggerAttackRelease('A5', '8n');
-      } else if (currentSection === 5 && eng.pluck) {
-        // Particle Storm — pluck.
-        eng.pluck.triggerAttack('D4');
       } else if (currentSection === 6 && eng.arpSynth) {
         // Wormhole — arp note.
         eng.arpSynth.triggerAttackRelease('D4', '16n');
       }
+      // Section 5 (Resonance) intentionally omitted: its chord is
+      // attached to the voice's onEnter callback, which the rAF mixer
+      // loop will fire on the very next tick once presence crosses the
+      // 0.05 threshold (within ~16ms of unmute) — no need to
+      // double-fire it from here.
     } else {
       const next = !unmuted;
       applyMute(next, 0.4);

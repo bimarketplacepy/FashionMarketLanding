@@ -8,7 +8,7 @@ const Singularity = React.lazy(() => import('./scenes/Singularity'));
 const Aurora = React.lazy(() => import('./scenes/Aurora'));
 const Crystalline = React.lazy(() => import('./scenes/Crystalline'));
 const Caustics = React.lazy(() => import('./scenes/Caustics'));
-const ParticleStorm = React.lazy(() => import('./scenes/ParticleStorm'));
+const Resonance = React.lazy(() => import('./scenes/Resonance'));
 const Wormhole = React.lazy(() => import('./scenes/Wormhole'));
 
 const sceneFor = (id: string, canvasId: string) => {
@@ -21,8 +21,8 @@ const sceneFor = (id: string, canvasId: string) => {
       return <Crystalline canvasId={canvasId} />;
     case 'caustics':
       return <Caustics canvasId={canvasId} />;
-    case 'particle-storm':
-      return <ParticleStorm canvasId={canvasId} />;
+    case 'resonance':
+      return <Resonance canvasId={canvasId} />;
     case 'wormhole':
       return <Wormhole canvasId={canvasId} />;
     default:

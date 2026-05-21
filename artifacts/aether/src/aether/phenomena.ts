@@ -28,11 +28,11 @@ export const phenomena = [
     canvasId: "canvas-caustics"
   },
   {
-    id: "particle-storm",
+    id: "resonance",
     numeral: "V",
-    title: "PARTICLE STORM",
-    description: "Two hundred thousand points in motion. Each one obeying the same simple rules. Together they remember how to flock.",
-    canvasId: "canvas-particle-storm"
+    title: "RESONANCE",
+    description: "Sound becomes form. Frequencies meet and stand still, drawing patterns that ought not to exist.",
+    canvasId: "canvas-resonance"
   },
   {
     id: "wormhole",

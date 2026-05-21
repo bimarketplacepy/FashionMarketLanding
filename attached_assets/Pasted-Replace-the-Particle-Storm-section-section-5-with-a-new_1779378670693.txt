@@ -1,0 +1,232 @@
+Replace the Particle Storm section (section 5) with a new phenomenon: 
+RESONANCE. Standing wave cymatics pattern. Lightweight, fast, visually 
+distinct from every other section.
+
+Do not touch any other section. Renumber stays as 6 phenomena total 
+(I through VI).
+
+REMOVE FIRST
+- Delete ParticleStorm.tsx scene component entirely
+- Delete the canvas-particle-storm CSS
+- Delete the Particle Storm voice from the audio system (NoiseSynth + 
+  PluckSynth combo)
+
+BUILD NEW SECTION: V. RESONANCE
+
+Create a new scene file Resonance.tsx and a new canvas div 
+canvas-resonance in the section template.
+
+Section labels:
+- Roman numeral: V
+- Title: RESONANCE
+- Description: "Sound becomes form. Frequencies meet and stand still, 
+  drawing patterns that ought not to exist."
+- Bottom-left label: "PHENOMENON 05 / 06"
+
+CONCEPT
+
+A large flat surface viewed from a low overhead angle. Multiple sine 
+waves propagate from different points around the surface, interfering 
+constructively and destructively to create standing wave patterns. 
+The surface visually undulates with mandala-like geometric patterns 
+that morph slowly. Camera rotates slowly around the surface.
+
+CANVAS SETUP
+
+- WebGL2 renderer, antialias true, alpha false
+- Pixel ratio capped at 2
+- Output encoding sRGB
+- Pause RAF when out of viewport via IntersectionObserver
+- Background: pure black #000000
+- No fog
+
+SCENE COMPOSITION
+
+1. STARFIELD BACKGROUND
+Use the shared createStarfield() utility. Same configuration as other 
+sections. The stars sit in the background while the resonance surface 
+occupies the foreground.
+
+2. RESONANCE SURFACE (the centrepiece)
+
+- PlaneGeometry, size 14 x 14 units, 256 x 256 segments (65,536 
+  vertices total — well under any performance concern)
+- Positioned at origin, rotated -75 degrees on X axis (so it tilts 
+  toward camera, slightly off horizontal for a dramatic angle)
+- Custom ShaderMaterial
+
+VERTEX SHADER
+
+Compute vertex Y displacement as the sum of 5 sine waves emanating 
+from different source points on the surface:
+
+uniform float uTime;
+varying float vDisplacement;
+varying vec2 vUv;
+
+void main() {
+  vUv = uv;
+  vec3 pos = position;
+  
+  // 5 wave source points distributed around the surface edges
+  vec2 sources[5];
+  sources[0] = vec2(-6.0, -6.0);
+  sources[1] = vec2(6.0, -6.0);
+  sources[2] = vec2(-6.0, 6.0);
+  sources[3] = vec2(6.0, 6.0);
+  sources[4] = vec2(0.0, 0.0);  // centre source for radial symmetry
+  
+  // 5 different frequencies (rationally related for stable patterns)
+  float freqs[5];
+  freqs[0] = 1.8;
+  freqs[1] = 2.4;
+  freqs[2] = 3.1;
+  freqs[3] = 2.7;
+  freqs[4] = 1.5;
+  
+  // Slowly modulate frequencies over time for evolving patterns
+  float timeShift = uTime * 0.15;
+  
+  float totalDisplacement = 0.0;
+  for (int i = 0; i < 5; i++) {
+    vec2 sourceToPoint = pos.xy - sources[i];
+    float dist = length(sourceToPoint);
+    float waveValue = sin(dist * freqs[i] + timeShift * (1.0 + float(i) * 0.3));
+    // Attenuate by distance for realism
+    waveValue *= 1.0 / (1.0 + dist * 0.15);
+    totalDisplacement += waveValue;
+  }
+  
+  // Scale displacement to a comfortable range
+  totalDisplacement *= 0.35;
+  
+  pos.z += totalDisplacement;
+  vDisplacement = totalDisplacement;
+  
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
+}
+
+FRAGMENT SHADER
+
+Colour based on displacement amplitude (peaks warm, troughs cool) and 
+add a subtle grid pattern to make the surface texture readable:
+
+varying float vDisplacement;
+varying vec2 vUv;
+uniform float uTime;
+
+void main() {
+  // Map displacement to colour
+  float t = (vDisplacement + 0.7) / 1.4;  // normalise to 0-1
+  t = clamp(t, 0.0, 1.0);
+  
+  vec3 colTrough = vec3(0.15, 0.05, 0.4);   // deep violet
+  vec3 colMid = vec3(0.05, 0.4, 0.65);      // teal-blue
+  vec3 colPeak = vec3(0.95, 0.75, 0.45);    // warm gold
+  
+  vec3 colour;
+  if (t < 0.5) {
+    colour = mix(colTrough, colMid, t * 2.0);
+  } else {
+    colour = mix(colMid, colPeak, (t - 0.5) * 2.0);
+  }
+  
+  // Add subtle contour lines along displacement isolines for surface 
+  // definition (so the geometry reads even on flat-lit areas)
+  float contour = abs(fract(vDisplacement * 4.0) - 0.5) * 2.0;
+  contour = smoothstep(0.85, 1.0, contour);
+  colour = mix(colour, colour * 1.4, contour * 0.3);
+  
+  // Glow at the peaks
+  float peakGlow = smoothstep(0.7, 1.0, t);
+  colour += vec3(0.4, 0.3, 0.15) * peakGlow * 0.5;
+  
+  gl_FragColor = vec4(colour, 1.0);
+}
+
+MATERIAL
+- ShaderMaterial with above shaders
+- side: THREE.DoubleSide
+- No transparency, opaque
+- No additive blending
+- DepthWrite true (it's solid geometry)
+
+3. SUBTLE LIGHTING
+
+Add minimal lighting just for atmosphere:
+- AmbientLight, off-white, intensity 0.3
+- DirectionalLight, off-white, intensity 0.6, position (5, 10, 5), 
+  looking at origin. This makes the wave peaks catch a hint of 
+  highlight beyond the fragment shader colour.
+
+The custom shader does most of the colour work; lights are just 
+sweetener.
+
+4. NO PARTICLES, NO ADDITIONAL GEOMETRY
+
+The surface and starfield are the entire scene. Keep it simple.
+
+CAMERA
+
+PerspectiveCamera, FOV 50.
+Initial position: x=0, y=6, z=10
+LookAt: origin
+
+SCROLL-DRIVEN CAMERA
+
+As scroll progresses through section 5:
+- 0% progress: x=0, y=6, z=10 (above and back)
+- 50% progress: x=4, y=4, z=8 (orbiting to the right, descending)
+- 100% progress: x=0, y=2, z=7 (lower, looking across the surface)
+
+Camera lookAt always origin. Slow orbital descent reveals the surface 
+detail from multiple angles. Use GSAP ScrollTrigger pinned to section 
+5.
+
+The wave pattern animates continuously regardless of scroll.
+
+POST-PROCESSING
+
+EffectComposer with:
+- RenderPass
+- UnrealBloomPass:
+  - threshold: 0.8
+  - strength: 0.3
+  - radius: 0.4
+- OutputPass
+
+Bloom adds a soft glow to the warm peaks only.
+
+AUDIO INTEGRATION
+
+Add a new Voice 5 (Resonance) for this section to replace the removed 
+Particle Storm voice. Connect it musically to the visual:
+
+- Tone.PolySynth with sine wave oscillator
+- Hold a sustained chord (D minor 9: D3, F3, A3, E4) very softly
+- Tone.AutoFilter at 0.1 Hz, slow sweep
+- Long attack (6s), long release (8s)
+- Tone.Chorus for shimmer
+- Master gain fades to -14 dB across section 5
+- Fits the resonance theme: long sustained tones interfering like 
+  the visual waves
+
+PERFORMANCE TARGETS
+
+This should be the fastest, lightest scene of the build:
+- 65,536 vertices (much less than Particle Storm's 200,000)
+- No noise sampling in the shader (sine waves only)
+- No transparency, no additive blending
+- Single draw call for the surface
+
+60fps on M4 should be effortless.
+
+EXPECTED RESULT
+
+A large mandala-like wave pattern undulating slowly, with warm gold 
+peaks and deep violet troughs, contour lines defining the geometry, 
+camera descending around the surface as the user scrolls. Hypnotic, 
+mathematical, beautiful. Connects to the audio's sustained chord 
+visually and thematically.
+
+UK English throughout. No commit, no push.
