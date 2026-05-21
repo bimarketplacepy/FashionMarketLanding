@@ -57,19 +57,30 @@ export default function Singularity({ canvasId }: SingularityProps) {
     // Mobile reduces wash because the smaller screen amplifies intensity.
     const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.35, 0.4, 0.92);
     composer.addPass(bloom);
+    // Mobile treatments cover three sources of mobile over-brightness:
+    //   1. UnrealBloomPass: lower strength + tighter radius + higher threshold.
+    //   2. Inner glow halo (5000 particles, r 1.4..1.7): alpha ×0.4 via uHaloAlpha.
+    //   3. Photon ring colour: dimmer 0xc08850 (~50% darker than desktop).
+    // Helper is re-invoked from onResize so crossing the 768px breakpoint
+    // (browser resize, tablet rotation) flips all three together.
     const mobileBloomQuery = window.matchMedia('(max-width: 768px)');
-    const applyBloomForViewport = () => {
+    const applyMobileTreatments = () => {
       if (mobileBloomQuery.matches) {
-        bloom.strength = 0.18;
-        bloom.radius = 0.3;
-        bloom.threshold = 0.95;
+        bloom.strength = 0.08;
+        bloom.radius = 0.25;
+        bloom.threshold = 0.98;
+        glowMat.uniforms.uHaloAlpha.value = 0.4;
+        photonRingMat.color.setHex(0xc08850);
       } else {
         bloom.strength = 0.35;
         bloom.radius = 0.4;
         bloom.threshold = 0.92;
+        glowMat.uniforms.uHaloAlpha.value = 1.0;
+        photonRingMat.color.setHex(0xffb877);
       }
     };
-    applyBloomForViewport();
+    // NB: first invocation is deferred until after photonRingMat and
+    // glowMat are constructed below — calling here would hit TDZ.
     composer.addPass(new OutputPass());
 
     // ───────────────── SHARED STARFIELD ─────────────────
@@ -84,9 +95,13 @@ export default function Singularity({ canvasId }: SingularityProps) {
     scene.add(horizon);
 
     // ───────────────── PHOTON RING ─────────────────
+    // Desktop colour 0xffb877 (bright orange); mobile colour 0xc08850
+    // (~50% darker) is applied in applyMobileTreatments below to reduce
+    // the brightest source the bloom pass has to amplify on small screens.
+    const photonRingMat = new THREE.MeshBasicMaterial({ color: 0xffb877 });
     const photonRing = new THREE.Mesh(
       new THREE.TorusGeometry(1.05, 0.02, 32, 256),
-      new THREE.MeshBasicMaterial({ color: 0xffb877 })
+      photonRingMat
     );
     photonRing.rotation.x = Math.PI / 2;
     photonRing.rotation.y = 0.12;
@@ -205,7 +220,11 @@ export default function Singularity({ canvasId }: SingularityProps) {
     const glowMat = new THREE.ShaderMaterial({
       uniforms: {
         uTime: { value: 0 },
-        uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) }
+        uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) },
+        // 1.0 on desktop, 0.4 on mobile — halves the halo's contribution
+        // to the bloom wash on small screens. Updated by
+        // applyMobileTreatments and re-applied on resize.
+        uHaloAlpha: { value: 1.0 }
       },
       vertexShader: /* glsl */ `
         attribute float aRadius;
@@ -226,6 +245,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
         }
       `,
       fragmentShader: /* glsl */ `
+        uniform float uHaloAlpha;
         void main() {
           vec2 uv = gl_PointCoord - 0.5;
           float d = length(uv);
@@ -234,7 +254,8 @@ export default function Singularity({ canvasId }: SingularityProps) {
           vec3 col = mix(vec3(1.0, 1.0, 0.85), vec3(1.0, 0.95, 0.7), 0.5);
           // Halo alpha multiplier halved (0.55 → 0.275): hot plasma ring
           // at radius 1.4..1.7 contributes half as much to the bloom wash.
-          gl_FragColor = vec4(col, soft * 0.275);
+          // uHaloAlpha further halves it on mobile (×0.4).
+          gl_FragColor = vec4(col, soft * 0.275 * uHaloAlpha);
         }
       `,
       transparent: true,
@@ -244,6 +265,10 @@ export default function Singularity({ canvasId }: SingularityProps) {
     const glow = new THREE.Points(glowGeo, glowMat);
     glow.rotation.x = THREE.MathUtils.degToRad(18);
     scene.add(glow);
+
+    // Now that photonRingMat and glowMat both exist, apply the
+    // viewport-dependent treatments for the first time.
+    applyMobileTreatments();
 
     // ───────────────── SCROLL-DRIVEN CAMERA ─────────────────
     const camState = { z: 10, y: 2.5, progress: 0 };
@@ -327,7 +352,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
       fitCameraHorizontal(camera, w / h, 50);
       renderer.setSize(w, h);
       composer.setSize(w, h);
-      applyBloomForViewport();
+      applyMobileTreatments();
     };
     window.addEventListener('resize', onResize);
 
