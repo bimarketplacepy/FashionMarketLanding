@@ -37,21 +37,22 @@ export default function ProgressIndicator() {
     }
   }, [progress]);
 
-  const currentSection = Math.min(8, Math.floor(progress * 8) + 1);
-
+  // Section number readout ("0X / 08") removed: it was derived from raw
+  // scroll progress (Math.floor(progress * 8) + 1) which did not align
+  // with the actual phenomena boundaries — extended ScrollTrigger pin
+  // durations and intro/outro padding meant the displayed number was
+  // consistently out of sync with the visible section. The progress bar
+  // stays as the silent scroll affordance.
   return (
-    <div 
+    <div
       ref={containerRef}
-      className="fixed right-[40px] top-1/2 -translate-y-1/2 flex items-center gap-4 z-50 opacity-0 pointer-events-none"
+      className="fixed right-[40px] top-1/2 -translate-y-1/2 flex items-center z-50 opacity-0 pointer-events-none"
     >
       <div className="relative w-[1px] h-[200px] bg-[#fafafa] opacity-20">
-        <div 
+        <div
           className="absolute left-1/2 -translate-x-1/2 w-[6px] h-[6px] rounded-full bg-[#b8a0ff]"
           style={{ top: `${progress * 100}%`, transform: 'translate(-50%, -50%)' }}
         />
-      </div>
-      <div className="font-mono text-[11px] text-[#fafafa] tracking-[0.3em]">
-        0{currentSection} / 08
       </div>
     </div>
   );
