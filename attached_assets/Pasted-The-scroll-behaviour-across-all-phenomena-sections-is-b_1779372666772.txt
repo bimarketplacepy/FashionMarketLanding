@@ -1,0 +1,112 @@
+The scroll behaviour across all phenomena sections is broken. Each 
+section should pin to the viewport when reached, play out its 
+camera/animation as the user scrolls, and only release to the next 
+section once the animation has fully completed. Currently sections 
+flow through without pinning, causing animations to be cut off.
+
+Restore consistent ScrollTrigger pinning across all six phenomena 
+sections (Singularity, Aurora, Crystalline, Caustics, Particle Storm, 
+Wormhole). Use GSAP ScrollTrigger pin, not CSS position:sticky.
+
+Do not touch the intro or outro sections (they don't pin, they flow 
+through naturally).
+
+PATTERN FOR EACH PHENOMENON SECTION
+
+Apply this consistent pattern to all six phenomena sections:
+
+1. Section CSS:
+   - height: 100vh
+   - width: 100vw
+   - position: relative
+   - overflow: hidden
+
+2. Canvas container CSS:
+   - position: absolute
+   - inset: 0
+   - z-index: 1
+
+3. Text overlay CSS:
+   - position: absolute
+   - inset: 0
+   - z-index: 3
+   - pointer-events: none
+
+4. ScrollTrigger for each section (use GSAP ScrollTrigger):
+
+ScrollTrigger.create({
+  trigger: sectionElement,
+  start: 'top top',
+  end: '+=150%',  // scroll 1.5x viewport before unpinning
+  pin: true,
+  pinSpacing: true,
+  scrub: 0.5,
+  onUpdate: (self) => {
+    const progress = self.progress;
+    // Update this section's camera position based on progress
+    // Each section has its own camera animation function
+  }
+});
+
+The end: '+=150%' means the user scrolls 1.5x the viewport height while 
+the section is pinned, giving the camera animation room to breathe.
+
+5. Adjust per-section scroll length if needed:
+   - Singularity: end '+=100%' (standard)
+   - Aurora: end '+=100%'
+   - Crystalline: end '+=120%' (more time for crystal growth)
+   - Caustics: end '+=100%'
+   - Particle Storm: end '+=120%' (more time for swarm camera dolly)
+   - Wormhole: end '+=200%' (longest, dramatic tunnel journey)
+
+WORMHOLE SPECIFICALLY
+
+Revert any CSS position:sticky changes from the previous fix attempt. 
+Wormhole section CSS goes back to 100vh height, NOT 250vh. The 
+extended scroll length comes from ScrollTrigger's end: '+=200%', not 
+from making the section taller.
+
+The 90% to 100% canvas opacity fade-out for smooth transition to 
+outro stays in place.
+
+REMOVE STICKY CSS
+
+Search the codebase for any position: sticky styles applied to canvas 
+containers or text overlays in phenomena sections. Remove them. 
+ScrollTrigger pin handles the equivalent behaviour and won't conflict 
+with itself across multiple sections.
+
+SCROLLTRIGGER REFRESH
+
+After setting up all the ScrollTriggers, call ScrollTrigger.refresh() 
+once to recalculate positions. Also call ScrollTrigger.refresh() on 
+window resize.
+
+LENIS COMPATIBILITY
+
+Confirm Lenis is still wired to ScrollTrigger. In the Lenis raf loop:
+lenis.on('scroll', ScrollTrigger.update);
+gsap.ticker.add((time) => lenis.raf(time * 1000));
+gsap.ticker.lagSmoothing(0);
+
+Without this, ScrollTrigger doesn't track Lenis's smooth scroll position 
+correctly and pinning misbehaves.
+
+EXPECTED RESULT
+
+When the user scrolls down:
+1. Intro section flows past normally
+2. Section I (Singularity) pins to the viewport when its top reaches 
+   the viewport top
+3. The user scrolls and the section stays pinned, but the camera 
+   animation plays out (dolly closer to black hole)
+4. After scrolling 100% of viewport height worth of scroll, the section 
+   unpins and the page continues to Section II
+5. Section II pins, animates, unpins
+6. Same pattern through all six phenomena
+7. Outro section flows past normally at the end
+
+No section's animation should be visually truncated. Each one gets its 
+full scroll-driven journey.
+
+UK English throughout. No commit, no push.

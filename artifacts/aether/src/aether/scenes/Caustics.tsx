@@ -136,22 +136,72 @@ export default function Caustics({ canvasId }: CausticsProps) {
         #include <fog_pars_fragment>
         uniform float uTime;
         varying vec2 vUv;
-        void main(){
-          vec2 uv = vUv * 8.0;
-          float time = uTime * 0.4;
-          vec2 i = uv;
-          vec2 c = vec2(0.0);
-          for (int n = 0; n < 4; n++) {
-            float t = time * (1.0 - (3.5 / float(n + 1)));
-            i = uv + vec2(cos(t - i.x) + sin(t + i.y), sin(t - i.y) + cos(t + i.x));
-            c = vec2(uv.x / (sin(i.x + t) * 0.1 + 0.5), uv.y / (cos(i.y + t) * 0.1 + 0.5));
-          }
-          float intensity = pow(length(c) * 0.005, 2.0);
-          intensity = clamp(intensity, 0.0, 1.0);
 
-          vec3 baseColour    = vec3(0.102, 0.310, 0.353); // #1a4f5a
-          vec3 causticColour = vec3(0.722, 0.941, 1.000); // #b8f0ff
-          vec3 col = baseColour + causticColour * intensity * 1.4;
+        // Cheap 2D hash → 2D point in [0,1]^2. Used to place voronoi seeds
+        // deterministically per integer cell.
+        vec2 hash2(vec2 p) {
+          p = vec2(dot(p, vec2(127.1, 311.7)),
+                   dot(p, vec2(269.5, 183.3)));
+          return fract(sin(p) * 43758.5453);
+        }
+
+        // Voronoi-difference caustic: returns the gap between the first
+        // and second nearest animated seeds. That gap is small along cell
+        // boundaries (giving thin bright lines) and large in cell
+        // interiors (giving darker patches) — exactly the topology of
+        // real water caustics. 'offset' is added to the hash input so we
+        // can take a second uncorrelated layer at a different scale.
+        float voronoiCaustic(vec2 uv, float time, float offset) {
+          vec2 i = floor(uv);
+          vec2 f = fract(uv);
+
+          float minDist1 = 1.0;
+          float minDist2 = 1.0;
+
+          for (int y = -1; y <= 1; y++) {
+            for (int x = -1; x <= 1; x++) {
+              vec2 neighbour = vec2(float(x), float(y));
+              vec2 point = hash2(i + neighbour + offset);
+              // Animate each seed around its rest position.
+              point = 0.5 + 0.5 * sin(time + 6.2831 * point);
+              vec2 diff = neighbour + point - f;
+              float dist = length(diff);
+              if (dist < minDist1) {
+                minDist2 = minDist1;
+                minDist1 = dist;
+              } else if (dist < minDist2) {
+                minDist2 = dist;
+              }
+            }
+          }
+
+          float caustic = minDist2 - minDist1;
+          // Sharpen: pow<1 lifts midtones into bright lines, smoothstep
+          // crushes the remaining darks so only the edges glow.
+          caustic = pow(caustic, 0.4);
+          caustic = smoothstep(0.0, 0.8, caustic);
+          return caustic;
+        }
+
+        void main(){
+          float time = uTime * 0.3;
+
+          // Layer 1: large cells with slow organic drift.
+          vec2 uv1 = vUv * 6.0;
+          uv1 += vec2(sin(time * 0.3), cos(time * 0.2)) * 0.3;
+          float caustic1 = voronoiCaustic(uv1, time, 0.0);
+
+          // Layer 2: smaller cells, panning at a different speed,
+          // hash-offset so it doesn't track layer 1.
+          vec2 uv2 = vUv * 12.0 + vec2(time * 0.2);
+          float caustic2 = voronoiCaustic(uv2, time, 50.0);
+
+          float finalCaustic = caustic1 * 0.7 + caustic2 * 0.4;
+          finalCaustic = clamp(finalCaustic, 0.0, 1.5);
+
+          vec3 baseColour    = vec3(0.102, 0.310, 0.353); // #1a4f5a, dark sand-teal
+          vec3 causticColour = vec3(0.847, 0.973, 1.000); // #d8f8ff, pale cyan-white
+          vec3 col = baseColour + causticColour * finalCaustic * 1.8;
 
           #ifdef USE_FOG
             float fogFactor = 1.0 - exp(-fogDensity * fogDensity * vFogDepth * vFogDepth);
