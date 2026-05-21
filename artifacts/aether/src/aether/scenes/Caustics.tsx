@@ -444,8 +444,8 @@ export default function Caustics({ canvasId }: CausticsProps) {
         start: 'top top',
         // Longer pin so the camera completes its descent into the
         // seabed before Particle Storm's top enters the viewport.
-        end: '+=150%',
-        scrub: 0.5,
+        end: '+=100%',
+        scrub: 0.15,
         onUpdate: (self) => {
           const p = self.progress;
           camState.z = 8 + (4 - 8) * p;

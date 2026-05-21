@@ -1,0 +1,1 @@
+- [ScrollTrigger pin handoff jolt](scrolltrigger-pin-handoff.md) — React.lazy around pinned scrolly sections shifts pin-spacer geometry as chunks load; eager imports are required.

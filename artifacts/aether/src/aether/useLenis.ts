@@ -8,12 +8,12 @@ gsap.registerPlugin(ScrollTrigger);
 export function useLenis() {
   useEffect(() => {
     const lenis = new Lenis({
-      // Shorter smoothing window: 1.2s felt floaty/laggy because scroll
-      // inputs took over a full second to fully settle, which made every
-      // animation that read scroll position (ScrollTrigger scrub, scene
-      // cameras) lag visibly behind the wheel. 0.85s keeps the smooth
-      // feel without the rubber-banding.
-      duration: 0.85,
+      // Shorter smoothing window keeps pin handoffs tight: longer values
+      // let the scroll position drift past the pin's start/end edges
+      // before ScrollTrigger registers, which made transitions feel
+      // mushy. 0.8s with cubic ease-out is the sweet spot — smooth but
+      // tight enough that scrub feels directly tied to wheel input.
+      duration: 0.8,
       easing: (t: number) => 1 - Math.pow(1 - t, 3),
       smoothWheel: true,
       touchMultiplier: 2,
@@ -33,10 +33,13 @@ export function useLenis() {
     gsap.ticker.add(raf);
     gsap.ticker.lagSmoothing(0);
 
-    // Each scene creates its own ScrollTrigger inside a lazily-mounted
-    // useEffect. ScrollTrigger auto-refreshes on creation, but a one-off
-    // refresh after the first paint settles any layout work the
-    // measurements were taken against (font load, image, etc.).
+    // Each scene creates its own ScrollTrigger inside its mount effect
+    // (all six are eagerly imported and mount synchronously on first
+    // commit, so all pin spacers register up-front). ScrollTrigger auto-
+    // refreshes on creation; this one-off refresh runs in the next
+    // macrotask to settle any layout work the per-trigger measurements
+    // raced against (font load, image, etc.) and serves as the single
+    // coordinated post-mount refresh point for the page.
     const initialRefresh = window.setTimeout(() => {
       ScrollTrigger.refresh();
     }, 0);

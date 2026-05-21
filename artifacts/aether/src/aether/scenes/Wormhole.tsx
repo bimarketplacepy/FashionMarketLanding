@@ -398,8 +398,8 @@ export default function Wormhole({ canvasId }: WormholeProps) {
         // tunnel approach, entry, and exit all need scroll runway. The
         // section element itself stays at 100vh; this end value is
         // what extends the pinned duration, not section height.
-        end: '+=250%',
-        scrub: 0.5,
+        end: '+=180%',
+        scrub: 0.15,
         onUpdate: (self) => {
           camState.z = computeZ(self.progress);
         }

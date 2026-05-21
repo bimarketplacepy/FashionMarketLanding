@@ -1,0 +1,67 @@
+Apply device-responsive bloom values to Singularity (section 1) and 
+Wormhole (section 6) ONLY. Desktop bloom stays exactly as it is. 
+Mobile gets reduced bloom because the smaller screen amplifies the 
+visual intensity.
+
+Do not touch any other section. Do not change desktop bloom.
+
+IMPLEMENTATION
+
+In both Singularity and Wormhole scenes, detect mobile using:
+
+const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+Apply different UnrealBloomPass values based on the result:
+
+SINGULARITY
+
+Current desktop values (DO NOT CHANGE):
+- threshold: 0.92
+- strength: 0.35
+- radius: 0.4
+
+New mobile values:
+- threshold: 0.95
+- strength: 0.18
+- radius: 0.3
+
+WORMHOLE
+
+Current desktop values (DO NOT CHANGE):
+- threshold: (current value)
+- strength: (current value)
+- radius: (current value)
+
+New mobile values: reduce strength to 60% of current desktop value, 
+raise threshold by 0.05, reduce radius by 0.1.
+
+For example, if current Wormhole bloom is threshold 0.55, strength 
+0.45, radius 0.5, then mobile becomes threshold 0.6, strength 0.27, 
+radius 0.4.
+
+HANDLE RESIZE
+
+Add a window resize listener that re-checks the matchMedia query. If 
+the viewport crosses the 768px breakpoint (e.g. user rotates a tablet 
+or resizes a browser window), update the UnrealBloomPass parameters 
+to the appropriate values. This ensures the right bloom values apply 
+even if the user adjusts the window.
+
+DO NOT
+
+- Do not change Aurora, Crystalline, Caustics, Resonance bloom values 
+  on either device
+- Do not change desktop bloom on Singularity or Wormhole
+- Do not change any Three.js scene geometry, materials, or camera 
+  settings
+- Do not change any audio or scroll behaviour
+
+VERIFY
+
+After applying, open the site in two browser windows:
+1. Full desktop width (>768px): Singularity and Wormhole should look 
+   exactly as before
+2. Mobile width (<768px, can use DevTools device emulation): 
+   Singularity and Wormhole should show noticeably less bloom wash
+
+UK English throughout. No commit, no push.

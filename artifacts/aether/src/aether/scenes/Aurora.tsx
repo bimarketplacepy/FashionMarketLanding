@@ -345,8 +345,8 @@ export default function Aurora({ canvasId }: AuroraProps) {
         start: 'top top',
         // Longer pin so the camera completes its move before the next
         // section enters the viewport — prevents boundary overlap.
-        end: '+=150%',
-        scrub: 0.5,
+        end: '+=100%',
+        scrub: 0.15,
         onUpdate: (self) => {
           const p = self.progress;
           camState.progress = p;

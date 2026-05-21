@@ -1,15 +1,19 @@
-import React, { Suspense, useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import { phenomena } from './phenomena';
 import TextLegibilityOverlay from './TextLegibilityOverlay';
 import SceneErrorBoundary from './SceneErrorBoundary';
+import PhenomenonCanvas from './PhenomenonCanvas';
+import Singularity from './scenes/Singularity';
+import Aurora from './scenes/Aurora';
+import Crystalline from './scenes/Crystalline';
+import Caustics from './scenes/Caustics';
+import Resonance from './scenes/Resonance';
+import Wormhole from './scenes/Wormhole';
 
-const PhenomenonCanvas = React.lazy(() => import('./PhenomenonCanvas'));
-const Singularity = React.lazy(() => import('./scenes/Singularity'));
-const Aurora = React.lazy(() => import('./scenes/Aurora'));
-const Crystalline = React.lazy(() => import('./scenes/Crystalline'));
-const Caustics = React.lazy(() => import('./scenes/Caustics'));
-const Resonance = React.lazy(() => import('./scenes/Resonance'));
-const Wormhole = React.lazy(() => import('./scenes/Wormhole'));
+// Scenes are imported eagerly (not React.lazy) so all six ScrollTrigger
+// pins register synchronously on first mount. Lazy chunks would defer
+// pin registration until each chunk loaded over the network, causing
+// pin spacers to appear under the user mid-scroll on slow connections.
 
 const sceneFor = (id: string, canvasId: string) => {
   switch (id) {
@@ -36,58 +40,30 @@ interface PhenomenonSectionProps {
 }
 
 export default function PhenomenonSection({ phenomenon, index }: PhenomenonSectionProps) {
-  // Lazy-mount the WebGL scene only when its section is first about to
-  // enter the viewport (with a ~20vh pre-roll so it has time to
-  // initialise before the user scrolls onto it). Sandboxed iframes —
-  // including the Replit preview — cap simultaneous WebGL contexts well
-  // below the desktop browser default, so deferring mount until a
-  // section is needed keeps the early-page WebGL count low.
+  // All six phenomenon scenes pre-mount on first paint so their
+  // ScrollTrigger pins (and the GSAP pin spacers those pins inject into
+  // the document) exist from the start. Mounting them lazily as the user
+  // scrolled used to cause a perceptible jolt at each pin handoff: the
+  // next scene's pin spacer appeared late, shifting document height under
+  // the user mid-scroll. With all pins registered up-front the document
+  // height is stable and ScrollTrigger's per-section pin geometry is
+  // correct from the moment the page is interactive.
   //
-  // CRITICAL: this is a one-way activation. Once a section has mounted
-  // we MUST NOT unmount it: the scene's ScrollTrigger pin owns a GSAP
-  // pin spacer in the document, and destroying that spacer after the
-  // user has scrolled past it changes total document height under their
-  // feet — causing jumps, broken pin geometry on downstream sections,
-  // and animations being cut off. So we observe once, flip `active`
-  // to true on first intersection, then disconnect the observer.
+  // Trade-off: six WebGL contexts coexist from load. Modern desktop
+  // browsers allow 16 by default, so this is fine in production. The
+  // Replit preview iframe sandbox is more restrictive and may not be
+  // able to create all six in screenshot mode — that's a development
+  // visualisation limitation, not a runtime issue for real users.
   const sectionRef = useRef<HTMLElement | null>(null);
-  const [active, setActive] = useState(false);
-
-  useEffect(() => {
-    const el = sectionRef.current;
-    if (!el || typeof IntersectionObserver === 'undefined') {
-      setActive(true);
-      return;
-    }
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) {
-          if (e.isIntersecting) {
-            setActive(true);
-            // One-shot: stop observing so we never unmount.
-            io.disconnect();
-            break;
-          }
-        }
-      },
-      { rootMargin: '20% 0px 20% 0px', threshold: 0 }
-    );
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
 
   return (
     <section
       ref={sectionRef}
       className="h-[100vh] relative overflow-hidden bg-black"
     >
-      {active && (
-        <SceneErrorBoundary>
-          <Suspense fallback={null}>
-            {sceneFor(phenomenon.id, phenomenon.canvasId)}
-          </Suspense>
-        </SceneErrorBoundary>
-      )}
+      <SceneErrorBoundary>
+        {sceneFor(phenomenon.id, phenomenon.canvasId)}
+      </SceneErrorBoundary>
 
       <TextLegibilityOverlay />
 

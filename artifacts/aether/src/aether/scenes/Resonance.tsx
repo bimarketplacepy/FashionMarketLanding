@@ -218,8 +218,8 @@ export default function Resonance({ canvasId }: ResonanceProps) {
         start: 'top top',
         // Matches the surrounding sections' runway so the pin releases
         // cleanly before Wormhole's top reaches the viewport top.
-        end: '+=150%',
-        scrub: 0.5,
+        end: '+=100%',
+        scrub: 0.15,
         onUpdate: (self) => {
           // Slow orbital descent: above-and-back → orbit right and
           // descend → low across the surface. lookAt origin throughout.
