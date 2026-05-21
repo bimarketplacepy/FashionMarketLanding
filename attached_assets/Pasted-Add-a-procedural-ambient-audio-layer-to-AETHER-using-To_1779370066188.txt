@@ -1,0 +1,145 @@
+Add a procedural ambient audio layer to AETHER using Tone.js. The audio 
+builds across all sections, with each phenomena section having its own 
+sonic character matching the visual. Single mute toggle, starts muted 
+due to browser autoplay policy.
+
+Do not change any visual Three.js code.
+
+INSTALL AND SETUP
+
+Install Tone.js if not already installed.
+
+Create a single Tone.js audio context that initialises on first user 
+interaction (button click). Before that, all synths exist but the 
+master volume is at -Infinity.
+
+MASTER CHAIN
+
+Tone.Destination → master Tone.Volume node (starts at -Infinity dB, 
+ramps to -12 dB on unmute) → master Tone.Reverb (decay 4 seconds, 
+wet 0.4) → master Tone.Limiter (-1 dB threshold for safety)
+
+PER-SECTION SYNTHS
+
+Build seven layered voices. Each has its own gain node feeding into 
+the master chain. Each gain is scroll-driven: fades up as you enter 
+its section and fades down as you leave.
+
+VOICE 1: DEEP DRONE (active across the whole site, baseline)
+- Tone.AMSynth with low frequency
+- Notes: D1 and A1 (open fifth) layered
+- Slow attack (4s), no release (sustained)
+- Always at -24 dB regardless of section
+
+VOICE 2: SINGULARITY (section 1)
+- Tone.FMSynth, ominous low register
+- Base note: G1, with a second voice at C2
+- Filter: Tone.AutoFilter at 0.1 Hz, slow sweep
+- Distortion: Tone.Distortion 0.15 for grit
+- Fades in -infinity to -10 dB across section 1
+- Sustained chord
+
+VOICE 3: AURORA (section 2)
+- Tone.PolySynth (sine wave), high register pad
+- Notes: D5, F#5, A5, C#6 (D major 7 voicing)
+- Slow attack (3s), long release (5s)
+- Tone.FeedbackDelay at 3/8 note, feedback 0.5, wet 0.4
+- Shimmery, ethereal
+- Fades in across section 2 to -14 dB
+
+VOICE 4: CRYSTALLINE (section 3)
+- Tone.MetalSynth (bell-like)
+- Random pitches from D minor pentatonic, high octaves (D5, F5, G5, A5, C6)
+- Triggered randomly every 1.5 to 3 seconds, one bell hit
+- Each hit at -20 dB
+- Only triggers when section 3 is in viewport
+- Sparkling, intermittent
+
+VOICE 5: CAUSTICS (section 4)
+- Tone.MonoSynth with lowpass filter (cutoff 1500 Hz, Q 4)
+- Notes: A2, then E3, alternating every 8 seconds
+- Tone.Tremolo at 0.4 Hz, depth 0.6 (gives a watery wobble)
+- Tone.PingPongDelay at 1/4 note, feedback 0.3, wet 0.5
+- Fades in across section 4 to -12 dB
+- Underwater, hypnotic
+
+VOICE 6: PARTICLE STORM (section 5)
+- Tone.NoiseSynth (pink noise) gated with Tone.AutoFilter (LFO 0.5 Hz)
+- Plus a Tone.PluckSynth playing random notes from D dorian scale 
+  (D, E, F, G, A, B, C) at irregular intervals (between 0.3 and 1.2 
+  seconds apart)
+- Pluck notes octave: D3 to D5 random
+- Fades in across section 5 to -14 dB
+- Granular, organic
+
+VOICE 7: WORMHOLE (section 6)
+- Tone.PolySynth (sawtooth wave), ascending arpeggios
+- Loop through notes: D3, A3, D4, F4, A4, D5, F5, A5 (ascending pattern)
+- Trigger one note every 1/8 note at tempo 110 BPM
+- Tone.FeedbackDelay at 3/16 note, feedback 0.6, wet 0.6
+- Filter envelope sweeping up (Tone.Filter cutoff modulated from 
+  500 Hz to 5000 Hz over the section's duration based on scroll progress)
+- Fades in across section 6 to -10 dB
+- Tension building, climactic
+
+VOICE 8: OUTRO (section 7) - resolution
+- Tone.PolySynth (triangle wave), held chord
+- D major chord: D4, F#4, A4, D5 sustained
+- Very long attack (6s), gentle
+- Wet reverb, almost ambient pad
+- Fades in across section 7 to -16 dB
+- Calm resolution
+
+SCROLL-DRIVEN MIXING
+
+Use GSAP ScrollTrigger to drive each voice's gain based on scroll 
+position. Each voice has a fade-in window (the section before its 
+section + first half of its section) and a fade-out window (second 
+half of its section + first half of next section). Overlap creates 
+crossfades between sonic worlds.
+
+Voice 1 (Deep Drone): always at -24 dB once audio starts.
+
+USER INTERFACE
+
+A small mute toggle button in the bottom-right corner of the viewport:
+- Fixed position, 32px from bottom, 32px from right
+- 40px x 40px circular button
+- Icon: speaker icon (muted state) or speaker with sound waves (unmuted)
+- Style: transparent background, 1px off-white border, off-white icon, 
+  hover changes background to off-white 10% opacity
+- z-index: 10000 (always on top)
+
+On first click: start the Tone.js audio context, ramp master volume 
+from -Infinity to -12 dB over 1.5 seconds, change icon to unmuted state.
+
+On subsequent clicks: toggle between muted (-Infinity dB) and unmuted 
+(-12 dB), ramp over 400ms.
+
+State persists in sessionStorage so the mute preference survives scroll 
+position changes (but resets on tab close).
+
+INITIAL STATE
+
+Audio starts muted on page load. The mute button shows the muted icon. 
+This prevents autoplay blocking.
+
+A tiny tooltip appears the first time the user scrolls past section 0:
+"Sound recommended" in JetBrains Mono 10px letter-spaced, off-white 60% 
+opacity, positioned 20px above the mute button. Auto-dismisses after 
+4 seconds or after the user clicks the mute button.
+
+PERFORMANCE
+
+- All synths share one Tone.context
+- Reverb is one instance shared via send/return
+- Audio runs continuously regardless of scroll position (no start/stop, 
+  just gain modulation)
+
+DO NOT
+
+- Do not start the audio context automatically (browser blocks it)
+- Do not play any synths above -10 dB
+- Do not change any Three.js visual code
+
+UK English throughout. No commit, no push.
