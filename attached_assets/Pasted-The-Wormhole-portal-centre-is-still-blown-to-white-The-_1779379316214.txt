@@ -1,0 +1,57 @@
+The Wormhole portal centre is still blown to white. The auditor flagged 
+this and the bloom rebalance only helped partially. The remaining 
+culprit is the entrance glow plane behind the portal ring, not the 
+UnrealBloomPass.
+
+Fix the Wormhole portal entrance glow only. Do not touch the tunnel, 
+the starfield, the camera, or any other section.
+
+FIX 1: REDUCE ENTRANCE GLOW
+
+The PlaneGeometry sitting at z=1.8 with the soft white radial gradient 
+shader currently uses:
+- Centre alpha: 0.6
+- Colour: #ffffff (pure white)
+- Additive blending
+
+Change to:
+- Centre alpha: 0.18 (was 0.6)
+- Colour: #b8e0ff (pale cyan-violet tint instead of pure white)
+- Keep additive blending and radial falloff
+
+This creates a soft suggestion of light behind the portal ring without 
+washing out the centre.
+
+FIX 2: REDUCE PORTAL RING EMISSIVE INTENSITY
+
+The portal TorusGeometry shader has an emissive brightness multiplier 
+of 1.6. Reduce to 1.0.
+
+The ring itself should still glow with its cycling rainbow colours, 
+but at a level that doesn't crush all detail.
+
+FIX 3: REVEAL THE TUNNEL THROUGH THE PORTAL
+
+Right now the entrance glow plane is opaque-feeling because of its 
+brightness and is occluding the view into the wormhole tunnel. With 
+the alpha reduced, you should now see the tunnel cylinder's interior 
+(the streaking rainbow pattern) through the portal opening when 
+viewing from outside.
+
+Verify the render order: the tunnel mesh should render before the 
+portal ring and entrance glow so it shows through correctly.
+
+VERIFICATION
+
+After applying, at scroll progress 0% (camera at z=20 looking at the 
+portal from outside), the result should be:
+- A clear portal ring with visible cycling rainbow colours
+- The centre of the portal shows a soft hint of glow PLUS visible 
+  streaking tunnel pattern receding into the distance
+- The portal reads as an OPENING into something, not as a solid glowing 
+  disc
+
+If the centre still appears white, drop entrance glow alpha further to 
+0.1.
+
+UK English throughout. No commit, no push.

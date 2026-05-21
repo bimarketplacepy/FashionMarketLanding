@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import { Timer } from 'three';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
@@ -234,14 +235,16 @@ export default function Resonance({ canvasId }: ResonanceProps) {
     }
 
     // ───────────────── RAF (paused while off-screen) ─────────────────
-    const clock = new THREE.Clock();
+    const timer = new Timer();
+    timer.connect(document);
     let rafId = 0;
     let running = false;
 
     const tick = () => {
       if (!running) return;
       rafId = requestAnimationFrame(tick);
-      const t = clock.getElapsedTime();
+      timer.update();
+      const t = timer.getElapsed();
       surfaceMat.uniforms.uTime.value = t;
       // Starfield expects a normalised scroll progress for parallax;
       // pass the section's local scroll progress (or 0 before the
@@ -255,7 +258,7 @@ export default function Resonance({ canvasId }: ResonanceProps) {
     const startLoop = () => {
       if (running) return;
       running = true;
-      clock.getDelta();
+      timer.reset();
       rafId = requestAnimationFrame(tick);
     };
     const stopLoop = () => {
@@ -298,6 +301,7 @@ export default function Resonance({ canvasId }: ResonanceProps) {
       scene.remove(surface);
       scene.remove(ambient, directional, directional.target);
       for (const d of disposables) d.dispose();
+      timer.dispose();
       composer.dispose();
       renderer.dispose();
       if (renderer.domElement.parentNode === mount) {

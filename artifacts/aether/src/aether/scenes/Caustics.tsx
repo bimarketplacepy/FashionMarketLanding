@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import { Timer } from 'three';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
@@ -443,7 +444,8 @@ export default function Caustics({ canvasId }: CausticsProps) {
     }
 
     // ───────────────── RAF (paused when offscreen) ─────────────────
-    const clock = new THREE.Clock();
+    const timer = new Timer();
+    timer.connect(document);
     let rafId = 0;
     let running = false;
     let lastT = 0;
@@ -451,7 +453,8 @@ export default function Caustics({ canvasId }: CausticsProps) {
     const tick = () => {
       if (!running) return;
       rafId = requestAnimationFrame(tick);
-      const t = clock.getElapsedTime();
+      timer.update();
+      const t = timer.getElapsed();
       const dt = Math.min(0.1, t - lastT);
       lastT = t;
 
@@ -483,8 +486,8 @@ export default function Caustics({ canvasId }: CausticsProps) {
     const startLoop = () => {
       if (running) return;
       running = true;
-      clock.getDelta();
-      lastT = clock.getElapsedTime();
+      timer.reset();
+      lastT = timer.getElapsed();
       rafId = requestAnimationFrame(tick);
     };
     const stopLoop = () => {
@@ -523,6 +526,7 @@ export default function Caustics({ canvasId }: CausticsProps) {
       if (io) io.disconnect();
       if (scrollTrigger) scrollTrigger.kill();
       for (const d of disposables) d.dispose();
+      timer.dispose();
       composer.dispose();
       renderer.dispose();
       if (renderer.domElement.parentNode === mount) {

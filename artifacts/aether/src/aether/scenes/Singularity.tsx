@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import { Timer } from 'three';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
@@ -249,13 +250,15 @@ export default function Singularity({ canvasId }: SingularityProps) {
     }
 
     // ───────────────── RAF (paused when offscreen) ─────────────────
-    const clock = new THREE.Clock();
+    const timer = new Timer();
+    timer.connect(document);
     let rafId = 0;
     let running = false;
     const tick = () => {
       if (!running) return;
       rafId = requestAnimationFrame(tick);
-      const t = clock.getElapsedTime();
+      timer.update();
+      const t = timer.getElapsed();
       starfield.update(t, camState.progress);
       (diskMat.uniforms.uTime.value as number) = t;
       (glowMat.uniforms.uTime.value as number) = t;
@@ -272,7 +275,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
     const startLoop = () => {
       if (running) return;
       running = true;
-      clock.getDelta(); // discard accumulated delta after pause
+      timer.reset();
       rafId = requestAnimationFrame(tick);
     };
     const stopLoop = () => {
@@ -321,6 +324,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
       (horizon.material as THREE.Material).dispose();
       photonRing.geometry.dispose();
       (photonRing.material as THREE.Material).dispose();
+      timer.dispose();
       composer.dispose();
       renderer.dispose();
       if (renderer.domElement.parentNode === mount) {

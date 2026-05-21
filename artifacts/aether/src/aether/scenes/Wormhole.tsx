@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import { Timer } from 'three';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
@@ -395,14 +396,16 @@ export default function Wormhole({ canvasId }: WormholeProps) {
     }
 
     // ───────────────── RAF ─────────────────
-    const clock = new THREE.Clock();
+    const timer = new Timer();
+    timer.connect(document);
     let rafId = 0;
     let running = false;
 
     const tick = () => {
       if (!running) return;
       rafId = requestAnimationFrame(tick);
-      const t = clock.getElapsedTime();
+      timer.update();
+      const t = timer.getElapsed();
 
       tunnelMat.uniforms.uTime.value = t;
       ringMat.uniforms.uTime.value = t;
@@ -428,7 +431,7 @@ export default function Wormhole({ canvasId }: WormholeProps) {
     const startLoop = () => {
       if (running) return;
       running = true;
-      clock.getDelta();
+      timer.reset();
       rafId = requestAnimationFrame(tick);
     };
     const stopLoop = () => {
@@ -471,6 +474,7 @@ export default function Wormhole({ canvasId }: WormholeProps) {
       renderPass.dispose?.();
       bloom.dispose?.();
       outputPass.dispose?.();
+      timer.dispose();
       composer.dispose();
       renderer.dispose();
       if (renderer.domElement.parentNode === mount) {
