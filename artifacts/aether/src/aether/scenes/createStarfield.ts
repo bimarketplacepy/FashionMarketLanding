@@ -11,6 +11,16 @@ interface Options {
   heroCount?: number;
   beaconCount?: number;
   nebulaCount?: number;
+  /**
+   * When true, the hero and beacon star layers write to the depth
+   * buffer. This lets opaque foreground geometry (e.g. Aurora ribbons
+   * with depthWrite:false) appear behind closer stars while still
+   * occluding farther ones — useful for selling depth in scenes where
+   * the stars share space with translucent volumes. Defaults to false,
+   * which preserves the original always-on-top additive sky used by
+   * the other scenes.
+   */
+  depthWriteForeground?: boolean;
 }
 
 export function createStarfield(opts: Options = {}): StarfieldHandle {
@@ -18,6 +28,7 @@ export function createStarfield(opts: Options = {}): StarfieldHandle {
   const heroCount = opts.heroCount ?? 400;
   const beaconCount = opts.beaconCount ?? 12;
   const nebulaCount = opts.nebulaCount ?? 4;
+  const depthWriteForeground = opts.depthWriteForeground === true;
 
   const group = new THREE.Group();
 
@@ -191,7 +202,7 @@ export function createStarfield(opts: Options = {}): StarfieldHandle {
       `,
       transparent: true,
       blending: THREE.AdditiveBlending,
-      depthWrite: false,
+      depthWrite: depthWriteForeground,
       fog: false
     });
     const points = new THREE.Points(geo, heroMat);
@@ -272,7 +283,7 @@ export function createStarfield(opts: Options = {}): StarfieldHandle {
       `,
       transparent: true,
       blending: THREE.AdditiveBlending,
-      depthWrite: false,
+      depthWrite: depthWriteForeground,
       fog: false
     });
     const points = new THREE.Points(geo, mat);

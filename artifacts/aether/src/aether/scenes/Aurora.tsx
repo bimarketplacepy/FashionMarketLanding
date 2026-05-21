@@ -100,12 +100,17 @@ export default function Aurora({ canvasId }: AuroraProps) {
     composer.setSize(width, height);
     composer.addPass(new RenderPass(scene, camera));
     // UnrealBloomPass(resolution, strength, radius, threshold)
-    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.25, 0.4, 0.85);
+    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.32, 0.4, 0.85);
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
 
     // ───────────────── SHARED STARFIELD ─────────────────
-    const starfield = createStarfield();
+    // Hero stars + beacons write depth so closer stars can punch through
+    // the ribbons' dim regions, while ribbon peaks (rendered after with
+    // depthWrite:false but tested against the depth buffer the stars
+    // populated) still occlude the stars they cover — selling depth
+    // realism through the aurora curtains.
+    const starfield = createStarfield({ depthWriteForeground: true });
     // Render stars first so they read as the dark sky behind the ribbons.
     starfield.group.renderOrder = -10;
     scene.add(starfield.group);
@@ -171,7 +176,7 @@ export default function Aurora({ canvasId }: AuroraProps) {
     }
 
     // ───────────────── AURORA RIBBONS ─────────────────
-    const RIBBON_COUNT = 8;
+    const RIBBON_COUNT = 12;
     const ribbonGeoms: THREE.BufferGeometry[] = [];
     const ribbonMats: THREE.ShaderMaterial[] = [];
     const ribbonMeshes: THREE.Mesh[] = [];
@@ -267,7 +272,7 @@ export default function Aurora({ canvasId }: AuroraProps) {
 
             // Colours (capped under 0.6 so nothing exceeds 1.0 after bandBoost).
             vec3 green  = vec3(0.10, 0.55, 0.31) * 0.85; // #1a8c4e, slightly dimmed
-            vec3 teal   = vec3(0.13, 0.60, 0.50);        // teal capped under 0.6
+            vec3 teal   = vec3(0.282, 0.961, 0.753);     // #48f5c0 — punchier saturated peak teal-green
             vec3 pink   = vec3(0.55, 0.40, 0.60);        // softer violet-pink
             vec3 violet = vec3(0.30, 0.20, 0.55);        // deep violet capped
 
@@ -285,10 +290,11 @@ export default function Aurora({ canvasId }: AuroraProps) {
             // 0.92→1.0 deep violet
             col += violet * smoothstep(0.92, 0.96, y);
 
-            // Bright bands flowing DOWN: at most +0.25 additive brightness,
+            // Bright bands flowing DOWN: at most +0.35 additive brightness
+            // boost at peaks (stronger contrast than the previous 0.25),
             // never a multiplier that doubles the colour.
             float bandNoise = snoise(vec3(uSeed * 0.31, y * 4.0 + uTime * 0.4, 0.0));
-            float bandBoost = smoothstep(0.0, 1.0, bandNoise * 0.5 + 0.5) * 0.25;
+            float bandBoost = smoothstep(0.0, 1.0, bandNoise * 0.5 + 0.5) * 0.35;
             col += col * bandBoost;
 
             // Overall brightness reduction so bloom only catches highlights.
