@@ -243,7 +243,6 @@ export function createStarfield(opts: Options = {}): StarfieldHandle {
         }
       `,
       fragmentShader: /* glsl */ `
-        #extension GL_OES_standard_derivatives : enable
         varying float vPulse;
         void main(){
           vec2 uv = gl_PointCoord - 0.5;            // -0.5..0.5
