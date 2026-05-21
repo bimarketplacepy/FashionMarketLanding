@@ -99,12 +99,15 @@ export default function Aurora({ canvasId }: AuroraProps) {
     composer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     composer.setSize(width, height);
     composer.addPass(new RenderPass(scene, camera));
-    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.45, 0.55, 0.5);
+    // UnrealBloomPass(resolution, strength, radius, threshold)
+    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.25, 0.4, 0.85);
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
 
     // ───────────────── SHARED STARFIELD ─────────────────
     const starfield = createStarfield();
+    // Render stars first so they read as the dark sky behind the ribbons.
+    starfield.group.renderOrder = -10;
     scene.add(starfield.group);
 
     // ───────────────── BACKGROUND VOLUMETRIC GLOW ─────────────────
@@ -168,10 +171,26 @@ export default function Aurora({ canvasId }: AuroraProps) {
     }
 
     // ───────────────── AURORA RIBBONS ─────────────────
-    const RIBBON_COUNT = 12;
+    const RIBBON_COUNT = 8;
     const ribbonGeoms: THREE.BufferGeometry[] = [];
     const ribbonMats: THREE.ShaderMaterial[] = [];
     const ribbonMeshes: THREE.Mesh[] = [];
+
+    // Pre-pick ribbon X positions across [-22, +22] with min 1.5 separation.
+    const ribbonXs: number[] = [];
+    let safetyCounter = 0;
+    while (ribbonXs.length < RIBBON_COUNT && safetyCounter < 5000) {
+      safetyCounter++;
+      const candidate = (Math.random() * 2 - 1) * 22;
+      if (ribbonXs.every((x) => Math.abs(x - candidate) >= 1.5)) {
+        ribbonXs.push(candidate);
+      }
+    }
+    // Fallback even spread if rejection sampling fails to converge.
+    while (ribbonXs.length < RIBBON_COUNT) {
+      const i = ribbonXs.length;
+      ribbonXs.push(-22 + (44 * i) / (RIBBON_COUNT - 1));
+    }
 
     for (let i = 0; i < RIBBON_COUNT; i++) {
       const geom = new THREE.PlaneGeometry(4, 14, 32, 128);
@@ -205,7 +224,8 @@ export default function Aurora({ canvasId }: AuroraProps) {
             // Bottom (y local -7) is "ribbon bottom" → barely moves (0.2 max).
             // Top of ribbon → up to ~2.5 units displacement.
             float w = pow(yNorm, 1.7);
-            float maxDisp = mix(0.2, 2.5, w);
+            // Sway, not flop sideways: cap top displacement at 1.2.
+            float maxDisp = mix(0.2, 1.2, w);
 
             // Curl-ish: sample two simplex octaves on x and z.
             vec3 p1 = vec3(position.x * 0.4, position.y * 0.4 + uTime * 0.3, uSeed);
@@ -240,13 +260,16 @@ export default function Aurora({ canvasId }: AuroraProps) {
             float x = vUv.x;  // 0 left → 1 right
 
             // Edge fade (horizontal soft curtain edges).
-            float edge = smoothstep(0.0, 0.1, x) * (1.0 - smoothstep(0.9, 1.0, x));
+            // Sharpened so each ribbon has a clearer silhouette and dark gaps
+            // between adjacent curtains: fully transparent 0..0.15 and 0.85..1,
+            // full opacity 0.25..0.75.
+            float edge = smoothstep(0.15, 0.25, x) * (1.0 - smoothstep(0.75, 0.85, x));
 
-            // Colours.
-            vec3 green  = vec3(0.102, 0.549, 0.306); // #1a8c4e
-            vec3 teal   = vec3(0.133, 0.831, 0.659); // #22d4a8
-            vec3 pink   = vec3(0.706, 0.471, 1.000); // #b478ff
-            vec3 violet = vec3(0.353, 0.227, 1.000); // #5a3aff
+            // Colours (capped under 0.6 so nothing exceeds 1.0 after bandBoost).
+            vec3 green  = vec3(0.10, 0.55, 0.31) * 0.85; // #1a8c4e, slightly dimmed
+            vec3 teal   = vec3(0.13, 0.60, 0.50);        // teal capped under 0.6
+            vec3 pink   = vec3(0.55, 0.40, 0.60);        // softer violet-pink
+            vec3 violet = vec3(0.30, 0.20, 0.55);        // deep violet capped
 
             // Vertical alpha: black at bottom, fades to transparent at very top.
             float aAlpha = smoothstep(0.0, 0.15, y) * (1.0 - smoothstep(0.92, 1.00, y));
@@ -262,12 +285,14 @@ export default function Aurora({ canvasId }: AuroraProps) {
             // 0.92→1.0 deep violet
             col += violet * smoothstep(0.92, 0.96, y);
 
-            // Bright bands flowing DOWN: sample low-freq noise on y shifted by +time*0.4.
-            // (downward motion ⇒ shift coordinate upward over time)
+            // Bright bands flowing DOWN: at most +0.25 additive brightness,
+            // never a multiplier that doubles the colour.
             float bandNoise = snoise(vec3(uSeed * 0.31, y * 4.0 + uTime * 0.4, 0.0));
-            float bandBoost = 0.6 + 0.8 * smoothstep(0.0, 1.0, bandNoise * 0.5 + 0.5);
+            float bandBoost = smoothstep(0.0, 1.0, bandNoise * 0.5 + 0.5) * 0.25;
+            col += col * bandBoost;
 
-            col *= bandBoost;
+            // Overall brightness reduction so bloom only catches highlights.
+            col *= 0.55;
 
             float alpha = aAlpha * edge;
             #ifdef USE_FOG
@@ -288,9 +313,9 @@ export default function Aurora({ canvasId }: AuroraProps) {
 
       const mesh = new THREE.Mesh(geom, mat);
       mesh.position.set(
-        (Math.random() * 2 - 1) * 16,
+        ribbonXs[i],
         4,
-        -8 + Math.random() * 10
+        -10 + Math.random() * 14
       );
       mesh.rotation.y = THREE.MathUtils.degToRad((Math.random() * 2 - 1) * 15);
       scene.add(mesh);

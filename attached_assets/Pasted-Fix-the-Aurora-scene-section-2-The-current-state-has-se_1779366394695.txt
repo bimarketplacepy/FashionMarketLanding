@@ -1,0 +1,80 @@
+Fix the Aurora scene (section 2). The current state has serious issues:
+- Bloom is blown out, ribbons lose all definition into a white cloud
+- No discernible curtain structure (should be discrete vertical ribbons)
+- Starfield is completely invisible behind the brightness
+- Ribbons are overlapping into a blob rather than dancing as separate curtains
+
+Apply the following targeted fixes. Do not touch any other section.
+
+FIX 1: REDUCE BLOOM DRAMATICALLY
+- UnrealBloomPass strength: change to 0.25 (was around 0.45)
+- UnrealBloomPass threshold: change to 0.85 (was around 0.5)
+- UnrealBloomPass radius: 0.4
+The aim is glow on highlights only, not a wash across the whole canvas.
+
+FIX 2: REDUCE RIBBON BRIGHTNESS
+- The fragment shader colour gradient values must be reduced. The peak 
+  teal-green at vertical position 0.4 to 0.7 is currently outputting 
+  brightness above 1.0 in raw RGB. Cap all output to RGB values that 
+  stay under 0.6 before bloom applies.
+- Multiply the entire final fragment colour by 0.55 to bring overall 
+  ribbon brightness down.
+- The bright bands flowing down the ribbon (low-freq noise modulation) 
+  should add at most +0.25 to brightness, not double it.
+
+FIX 3: SPREAD THE RIBBONS APART
+- Currently the 12 ribbons are clustered too close to centre and overlap 
+  into a blob.
+- Redistribute ribbon X positions across -22 to +22 (was -16 to +16)
+- Ensure no two ribbons start within 1.5 units of each other on X
+- Random Z depth distribution: -10 to +4 (was -8 to +2) for more depth 
+  separation
+- Reduce ribbon count from 12 to 8. Fewer, better defined curtains beat 
+  more washed-out ones.
+
+FIX 4: STARFIELD VISIBILITY
+- The shared starfield must remain clearly visible between and behind 
+  the aurora ribbons.
+- Ensure the starfield renders BEFORE the ribbons (lower render order, 
+  or first in the scene graph)
+- Ribbons must have depthWrite: false but starfield should write depth 
+  normally so stars are not occluded by transparent ribbon geometry
+- If stars still don't show, reduce ribbon material opacity multiplier 
+  by another 0.2
+
+FIX 5: ADD DARK GAPS BETWEEN RIBBONS
+- The horizontal edge fade on each ribbon (currently 0 to 0.1 and 0.9 
+  to 1.0) is too gradual. Sharpen it so each ribbon has clearer edges:
+  - Edges fully transparent from 0 to 0.15 and 0.85 to 1.0
+  - Full opacity only in the band 0.25 to 0.75
+- This gives each ribbon a more defined silhouette and creates dark gaps 
+  between adjacent curtains so the sky reads as sky.
+
+FIX 6: REDUCE VERTEX DISPLACEMENT MAXIMUM
+- The horizontal displacement at the ribbon top is currently around 2.5 
+  units which causes ribbons to bend sideways and merge with their 
+  neighbours.
+- Reduce maximum top displacement to 1.2 units.
+- The ribbons should sway, not flop sideways.
+
+FIX 7: VERIFY POST-PROCESSING ORDER
+- Confirm RenderPass → UnrealBloomPass → OutputPass (in that order)
+- Confirm OutputPass is present (without it, bloom causes colour space 
+  issues that compound the brightness problem)
+
+EXPECTED RESULT AFTER FIXES
+
+You should see:
+- A dark night sky with stars clearly visible
+- 8 distinct vertical ribbons of green-to-violet light dancing in the 
+  middle distance
+- Black sky gaps between the ribbons
+- The brightest part of each ribbon is the teal-green mid-section, 
+  glowing gently but never washing out
+- The text overlay on the left remains crisp and the violet roman 
+  numeral and progress indicator stay visible
+
+If after these fixes the ribbons still look blown out, reduce bloom 
+strength further to 0.15.
+
+UK English throughout. No commit, no push.
