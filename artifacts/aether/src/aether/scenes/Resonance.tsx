@@ -154,7 +154,7 @@ export default function Resonance({ canvasId }: ResonanceProps) {
     // Bloom adds a soft glow only to the warm peaks (threshold 0.8
     // keeps the violet troughs and teal mids clean).
     // Args: (resolution, strength, radius, threshold)
-    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.3, 0.4, 0.8);
+    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.22, 0.4, 0.8);
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
 
