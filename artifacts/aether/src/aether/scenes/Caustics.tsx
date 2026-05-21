@@ -110,7 +110,7 @@ export default function Caustics({ canvasId }: CausticsProps) {
     // camera lookAt focuses, so caustics are densest under perspective)
     // into a wash that swallowed surrounding detail.
     // Args: (resolution, strength, radius, threshold)
-    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.22, 0.4, 0.88);
+    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.12, 0.3, 0.92);
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
 
@@ -205,9 +205,13 @@ export default function Caustics({ canvasId }: CausticsProps) {
           float finalCaustic = caustic1 * 0.7 + caustic2 * 0.4;
           finalCaustic = clamp(finalCaustic, 0.0, 1.5);
 
-          vec3 baseColour    = vec3(0.102, 0.310, 0.353); // #1a4f5a, dark sand-teal
+          // Base darkened from #1a4f5a → #102e36 so caustic web stands
+          // out against deeper shadow and gives bloom less to grab.
+          vec3 baseColour    = vec3(0.063, 0.180, 0.212); // #102e36, deeper teal
           vec3 causticColour = vec3(0.847, 0.973, 1.000); // #d8f8ff, pale cyan-white
-          vec3 col = baseColour + causticColour * finalCaustic * 1.8;
+          // Caustic multiplier 1.8 → 0.9: cyan lines stay clearly visible
+          // without approaching pure white under bloom.
+          vec3 col = baseColour + causticColour * finalCaustic * 0.9;
 
           #ifdef USE_FOG
             float fogFactor = 1.0 - exp(-fogDensity * fogDensity * vFogDepth * vFogDepth);
@@ -257,8 +261,11 @@ export default function Caustics({ canvasId }: CausticsProps) {
         #include <fog_pars_fragment>
         varying float vRipple;
         void main(){
-          vec3 baseColour      = vec3(0.545, 0.878, 0.941); // #8be0f0
-          vec3 highlightColour = vec3(1.000, 1.000, 1.000);
+          // Water underside base darkened #8be0f0 → #5a96a8 and highlight
+          // intensity dropped 40% (1.0 → 0.6) so the ceiling shimmer
+          // contributes less to the central bloom wash.
+          vec3 baseColour      = vec3(0.353, 0.588, 0.659); // #5a96a8
+          vec3 highlightColour = vec3(0.600, 0.600, 0.600);
           float highlight = smoothstep(0.4, 0.9, vRipple);
           vec3 col = mix(baseColour, highlightColour, highlight);
           float alpha = 0.85;
@@ -318,7 +325,10 @@ export default function Caustics({ canvasId }: CausticsProps) {
           varying vec3 vNormalView;
           void main(){
             // vUv.y goes 0 (bottom) .. 1 (top) along cylinder length.
-            float topToBottom = mix(0.02, 0.15, vUv.y);
+            // Dimmed 60% (top 0.15→0.06, bottom 0.02→0.008): the god rays
+            // were the dominant bloom source. They now read as subtle
+            // shafts rather than dominant beams.
+            float topToBottom = mix(0.008, 0.06, vUv.y);
             // Radial alpha: on an open cylinder, "centre to edge" is the
             // view-facing dot product, not UV.x (which is azimuth).
             // Squared for a slightly softer falloff.

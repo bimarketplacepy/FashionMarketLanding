@@ -1,0 +1,80 @@
+The Caustics section (section 4) still has a huge white bloom wash 
+dominating the middle and lower portion of the frame. The previous 
+bloom rebalance reduced UnrealBloomPass strength but the underlying 
+bright sources are still too hot, so even modest bloom amplifies them 
+into a featureless wash.
+
+Apply these aggressive fixes to Caustics ONLY. Do not touch any other 
+section.
+
+FIX 1: REDUCE BLOOM FURTHER ON CAUSTICS
+
+- UnrealBloomPass threshold: 0.92 (was 0.88)
+- UnrealBloomPass strength: 0.12 (was 0.22)
+- UnrealBloomPass radius: 0.3 (was 0.4)
+
+Bloom is now near-off. The scene must hold visual interest on its own 
+without leaning on bloom.
+
+FIX 2: REDUCE GOD RAYS BRIGHTNESS
+
+The god ray cylinders are likely the main bloom source. In the god 
+ray shader:
+- Reduce the soft cyan-white emissive colour alpha to 0.06 (was 0.15 
+  at top tapering to 0.02 at bottom)
+- Or equivalently: multiply the final fragment colour by 0.4 in the 
+  shader
+- This dims the god rays to a subtle suggestion rather than dominant 
+  beams
+
+FIX 3: REDUCE CAUSTIC COLOUR INTENSITY
+
+In the seabed fragment shader, the composite line:
+finalColor = baseColor + causticColor * finalCaustic * 1.8
+
+Change the multiplier from 1.8 to 0.9. The caustic network should be 
+visible as bright cyan lines but not approaching pure white.
+
+FIX 4: REMOVE THE SEABED CENTRE EMISSIVE (THE BLOOM-BOMB SOURCE)
+
+The auditor identified a specific bloom-bomb source at the 
+bottom-centre of the seabed. Search for:
+- Any PointLight, DirectionalLight, or SpotLight positioned at or 
+  near the bottom-centre of the seabed (around 0, -5, 0)
+- Any sun/sunlight emissive plane or sphere positioned at the seabed
+- Any caustic peak emissive multiplier specifically at the centre
+
+If any of these exist with high intensity, either:
+- Remove the source entirely
+- Or cut its intensity to 25% of current value
+
+FIX 5: DARKEN THE BASE SEABED COLOUR
+
+Currently base seabed colour is #1a4f5a. Darken to #102e36 so the 
+overall scene is darker and the caustic web lines stand out more 
+clearly against deeper shadow. This also gives less material for 
+bloom to wash out.
+
+FIX 6: VERIFY WATER SURFACE BRIGHTNESS
+
+The water surface (the plane above the camera showing the underside 
+of the water) may be too bright. In its shader:
+- Reduce the base silver-cyan colour from #8be0f0 to #5a96a8 (darker, 
+  less saturated)
+- Reduce the highlight colour intensity by 40%
+
+EXPECTED RESULT
+
+The lower portion of the frame should now show:
+- A darker seabed with clearly visible thin cyan caustic line network 
+  across the entire visible area (not just the edges)
+- Subtle god rays descending into the scene without dominating
+- No central white wash
+- Water surface above showing rippling silver shimmer at moderate 
+  brightness
+
+If after this the scene feels too dark, raise the seabed base colour 
+slightly to #1a3e48 (between current and the original) but do NOT 
+increase bloom or god ray brightness.
+
+UK English throughout. No commit, no push.
