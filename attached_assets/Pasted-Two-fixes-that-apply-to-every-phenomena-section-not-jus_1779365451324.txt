@@ -1,0 +1,114 @@
+Two fixes that apply to every phenomena section, not just Singularity.
+Do not start building any new Three.js scene. Only apply these fixes.
+
+FIX 1: TEXT LEGIBILITY OVERLAY
+
+The Three.js animation currently overlaps the text overlay on the left 
+side, making the description hard to read. Add a CSS gradient overlay 
+between the canvas and the text in every phenomena section template 
+(sections 1-6).
+
+Implementation:
+- Add a div positioned absolutely over the canvas, behind the text 
+  overlay (z-index between canvas and text)
+- Apply a horizontal linear gradient:
+  - From left edge: rgba(0, 0, 0, 0.7)
+  - At 30% across: rgba(0, 0, 0, 0.4)
+  - At 50% across: rgba(0, 0, 0, 0.1)
+  - At 65% and beyond: rgba(0, 0, 0, 0)
+- Also add a subtle vertical gradient from bottom for the small mono 
+  label area:
+  - Bottom edge: rgba(0, 0, 0, 0.5)
+  - At 200px up: rgba(0, 0, 0, 0)
+
+The result: text on the left and bottom-left stays crisp and readable, 
+the centre and right of the canvas remains fully visible.
+
+This overlay must be a shared component used in all phenomena section 
+templates (sections 1 through 6). The intro and outro sections do not 
+need it.
+
+FIX 2: STARFIELD UPGRADE
+
+The current Singularity starfield is too sparse and lacks depth. 
+Upgrade it dramatically. This upgraded starfield should also be used 
+as a reusable component for Aurora and any later section that needs 
+stars.
+
+Build a new shared starfield component with three layers:
+
+LAYER A: BACKGROUND DUST (the bulk of stars)
+- 18000 points distributed on a sphere at radius 200
+- Size variation: 0.4 to 1.2 pixels
+- Colour variation: warm white #fffaf0 to cool blue-white #c8d8ff 
+  (lerp based on a per-star seed)
+- Subtle twinkle: brightness oscillates 0.6 to 1.0 with sine wave, 
+  random phase per star, period 4 to 8 seconds per star
+- Additive blending
+
+LAYER B: HERO STARS (the bigger ones with halos)
+- 400 points distributed on a sphere at radius 180 (slightly closer)
+- Size: 3 to 6 pixels
+- Custom circular sprite with soft falloff (radial gradient from bright 
+  centre to transparent edge)
+- Colour: mostly warm white #fff5e8, occasional blue #88aaff (15%) or 
+  pale gold #ffd88a (10%)
+- More pronounced twinkle: brightness oscillates 0.4 to 1.0, period 3 
+  to 6 seconds per star
+- Additive blending
+
+LAYER C: BRIGHT BEACONS (the few showstoppers)
+- 12 points at random positions on a sphere at radius 150
+- Size: 8 to 14 pixels
+- Same soft circular sprite but brighter
+- Add a subtle four-point cross flare using a custom shader sprite 
+  (vertical and horizontal soft white rays extending 30 pixels from 
+  the star centre, very subtle, alpha 0.25 at brightest)
+- Slow pulse: brightness oscillates 0.7 to 1.0 over 5 to 8 seconds
+
+NEBULA HAZE LAYER (subtle background atmosphere)
+
+Behind the stars, add 4 large soft glowing sprites:
+- PlaneGeometry 80 x 80 units
+- Positioned at random points on a sphere at radius 220
+- Each a different soft colour at very low opacity (alpha 0.04 to 0.08):
+  - One pale violet #6048a8
+  - One deep blue #2840a0
+  - One warm orange #a04020
+  - One teal #208080
+- Additive blending
+- Slowly rotating very slightly to create a sense of drift
+- The result should be like distant nebulae or galactic dust, very 
+  subtle, never overwhelming the foreground
+
+PARALLAX
+
+If feasible, give each layer a slight parallax response to scroll within 
+the section: background dust barely moves, hero stars move slightly, 
+beacons move a bit more. This adds depth perception.
+
+APPLY TO SINGULARITY NOW
+
+Replace the existing starfield in Section 1 (Singularity) with this 
+upgraded shared starfield. Make sure the black hole accretion disk and 
+photon ring still read clearly against the new richer background.
+
+REUSABILITY
+
+The starfield should be exported as a shared utility (e.g. createStarfield() 
+function returning a THREE.Group) so subsequent sections (Aurora, 
+Wormhole) can use it without duplicating code.
+
+PERFORMANCE
+
+Total star count is now ~18,400 plus 4 nebula sprites. All in BufferGeometry. 
+Should still hit 60fps on M4. If frame rate drops, reduce LAYER A count 
+to 12000 first.
+
+DO NOT
+
+- Do not change the black hole or accretion disk in Singularity
+- Do not change the scroll-driven camera behaviour
+- Do not start building any new phenomena scenes yet
+
+UK English throughout. No commit, no push.

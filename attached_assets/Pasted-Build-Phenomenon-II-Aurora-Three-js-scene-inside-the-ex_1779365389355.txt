@@ -1,0 +1,136 @@
+Build Phenomenon II (Aurora) Three.js scene inside the existing 
+section 2 placeholder. Do not touch any other section.
+
+CONCEPT
+
+The Northern Lights as flowing vertical ribbons of light. Twelve aurora 
+curtains hang from the upper sky and dance, distorted by curl noise. 
+Camera slowly rises and pushes forward as the user scrolls, making the 
+ribbons loom overhead. Starfield background. No ground.
+
+CANVAS SETUP
+
+Mount a Three.js scene inside the existing canvas placeholder for 
+section 2 (canvas-aurora div). Same renderer setup as Singularity:
+- WebGL2, antialias true, alpha false
+- Pixel ratio capped at 2
+- Output encoding sRGB
+- Pause RAF when section is out of viewport (IntersectionObserver)
+
+SCENE COMPOSITION
+
+1. STARFIELD BACKGROUND
+- 6000 stars on a sphere at radius 200, same shader style as Singularity 
+  but darker overall (max brightness 0.6 not 1.0)
+- Cool blue-white tint #d8e8ff
+
+2. AURORA RIBBONS (the centrepiece)
+
+Build twelve flowing ribbon curtains:
+
+- For each ribbon: PlaneGeometry with width 4, height 14, 32 width 
+  segments, 128 height segments
+- Each ribbon positioned at:
+  - X position: random distribution across -16 to +16
+  - Y position: centred at y=4 (so ribbon spans from y=-3 to y=11)
+  - Z position: random distribution across -8 to +2 (depth variation)
+- Each ribbon rotated to face roughly toward camera with slight random 
+  yaw (-15 to +15 degrees)
+- Each ribbon has a unique seed value for noise offset
+
+Custom ShaderMaterial per ribbon (or single material with per-instance 
+attributes, your choice):
+
+VERTEX SHADER behaviour:
+- Take the original vertex position
+- Apply curl noise displacement on X and Z axes based on:
+  - The vertex's Y position (more displacement at top, less at bottom)
+  - Time (continuous flowing motion, around 0.3 units per second)
+  - The ribbon's unique seed
+- Use classic simplex 3D noise (the Ashima webgl-noise implementation 
+  is fine) sampled at scale around 0.4 for large flowing waves plus a 
+  second octave at scale 1.6 for finer ripples
+- Bend the ribbon top slightly outward in random direction for natural 
+  feel
+- Maximum horizontal displacement at top: around 2.5 units
+- The bottom edge (y=-3 local) barely moves (0.2 units max)
+
+FRAGMENT SHADER behaviour:
+- Compute vertical position normalised (0 at bottom, 1 at top of ribbon)
+- Compute horizontal position normalised (0 to 1 across width)
+- Colour gradient by vertical position:
+  - Bottom (0 to 0.15): pure black, full transparency
+  - Lower (0.15 to 0.4): emissive green #1a8c4e fading in
+  - Mid (0.4 to 0.7): bright teal-green #22d4a8 (peak brightness here)
+  - Upper (0.7 to 0.92): violet-pink #b478ff
+  - Top (0.92 to 1.0): deep violet #5a3aff fading to transparent
+- Edge fade: alpha drops off near horizontal edges (0 to 0.1 and 0.9 
+  to 1.0) for soft curtain edges
+- Brightness modulation: sample a low-frequency noise based on vertical 
+  position and time to create bright bands flowing down the ribbon. 
+  Bands move downward at around 0.4 units per second.
+- Additive blending
+- Depth write false
+- Transparent true
+
+3. SOFT VOLUMETRIC GLOW
+- Behind the ribbons, place a few large soft glowing sprites 
+  (PlaneGeometry 20x20, additive blend) tinted teal and violet, 
+  positioned at random Z depths between -10 and -4, very low opacity 
+  (alpha 0.1), slowly drifting horizontally
+- This adds atmospheric haze behind the curtains
+
+CAMERA
+
+PerspectiveCamera, FOV 60.
+Initial position: x=0, y=0, z=12 (looking forward at the curtains)
+LookAt: x=0, y=4, z=0 (looking slightly up at the curtain centres)
+
+SCROLL-DRIVEN CAMERA
+
+As scroll progresses through section 2:
+- 0% progress: position z=12, y=0
+- 100% progress: position z=2, y=3 (camera rises and pushes into the 
+  curtains, looking up at them dramatically)
+- LookAt y-component shifts from 4 to 7 over the scroll (so you look 
+  up more as you get close)
+- Use GSAP ScrollTrigger pinned to section 2, scrubbing camera 
+  position and look target with progress
+
+The ribbon animation continues whether scrolled or not.
+
+POST-PROCESSING
+
+EffectComposer with:
+- RenderPass
+- UnrealBloomPass:
+  - threshold: 0.5
+  - strength: 0.45
+  - radius: 0.55
+- OutputPass
+
+Bloom should produce a soft luminous glow on the ribbon highlights, not 
+a hazy white blowout. If brightness gets crushed, reduce strength.
+
+ATMOSPHERIC EXTRAS
+
+- Subtle background fog: scene.fog = new THREE.FogExp2(0x000511, 0.02) 
+  for distance fade-out
+- Very faint vertical light shafts from the curtains using additional 
+  cone-shaped meshes with soft additive shader is optional, skip if 
+  performance suffers
+
+PERFORMANCE TARGETS
+
+- Should hit 60fps on M4 MacBook in Chrome
+- Total particle/vertex count under 200,000
+- Single draw call per ribbon (12 ribbons total)
+- Stars in a single Points geometry
+
+DO NOT
+
+- Do not add OrbitControls
+- Do not increase bloom strength above 0.5
+- Do not change anything outside section 2
+
+UK English throughout. No commit, no push.

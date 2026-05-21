@@ -3,11 +3,14 @@ import { phenomena } from './phenomena';
 
 const PhenomenonCanvas = React.lazy(() => import('./PhenomenonCanvas'));
 const Singularity = React.lazy(() => import('./scenes/Singularity'));
+const Aurora = React.lazy(() => import('./scenes/Aurora'));
 
 const sceneFor = (id: string, canvasId: string) => {
   switch (id) {
     case 'singularity':
       return <Singularity canvasId={canvasId} />;
+    case 'aurora':
+      return <Aurora canvasId={canvasId} />;
     default:
       return <PhenomenonCanvas canvasId={canvasId} />;
   }
