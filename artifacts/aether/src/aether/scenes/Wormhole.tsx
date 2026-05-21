@@ -7,6 +7,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { fitCameraHorizontal } from './cameraFit';
 import { createStarfield } from './createStarfield';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -101,6 +102,7 @@ export default function Wormhole({ canvasId }: WormholeProps) {
     const camera = new THREE.PerspectiveCamera(65, width / height, 0.1, 400);
     camera.position.set(0, 0, 20);
     camera.lookAt(0, 0, -10);
+    fitCameraHorizontal(camera, width / height, 65);
 
     // Let Three.js create and manage its own WebGL2 context. Manually
     // pre-allocating a context AND constructing the renderer with it
@@ -466,8 +468,7 @@ export default function Wormhole({ canvasId }: WormholeProps) {
     const onResize = () => {
       const w = mount.clientWidth || window.innerWidth;
       const h = mount.clientHeight || window.innerHeight;
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
+      fitCameraHorizontal(camera, w / h, 65);
       renderer.setSize(w, h);
       composer.setSize(w, h);
       streakMat.uniforms.uPixelRatio.value = Math.min(window.devicePixelRatio, 2);

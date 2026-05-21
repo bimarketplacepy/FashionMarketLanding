@@ -7,6 +7,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { fitCameraHorizontal } from './cameraFit';
 import { createStarfield } from './createStarfield';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -33,6 +34,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
     const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 1000);
     camera.position.set(0, 2.5, 10);
     camera.lookAt(0, 0, 0);
+    fitCameraHorizontal(camera, width / height, 50);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'high-performance' });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -307,8 +309,7 @@ export default function Singularity({ canvasId }: SingularityProps) {
     const onResize = () => {
       const w = mount.clientWidth || window.innerWidth;
       const h = mount.clientHeight || window.innerHeight;
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
+      fitCameraHorizontal(camera, w / h, 50);
       renderer.setSize(w, h);
       composer.setSize(w, h);
     };

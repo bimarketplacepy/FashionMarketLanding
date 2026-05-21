@@ -7,6 +7,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { fitCameraHorizontal } from './cameraFit';
 import { createStarfield } from './createStarfield';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -64,6 +65,7 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
     camera.position.set(0, 1.5, 9);
     camera.lookAt(0, 0, 0);
+    fitCameraHorizontal(camera, width / height, 45);
 
     const renderer = new THREE.WebGLRenderer({
       antialias: true,
@@ -425,8 +427,7 @@ export default function Crystalline({ canvasId }: CrystallineProps) {
     const onResize = () => {
       const w = mount.clientWidth || window.innerWidth;
       const h = mount.clientHeight || window.innerHeight;
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
+      fitCameraHorizontal(camera, w / h, 45);
       renderer.setSize(w, h);
       composer.setSize(w, h);
     };

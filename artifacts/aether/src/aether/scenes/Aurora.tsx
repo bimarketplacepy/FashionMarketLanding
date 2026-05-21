@@ -7,6 +7,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { fitCameraHorizontal } from './cameraFit';
 import { createStarfield } from './createStarfield';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -86,6 +87,7 @@ export default function Aurora({ canvasId }: AuroraProps) {
     const camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 1000);
     camera.position.set(0, 0, 12);
     camera.lookAt(0, 4, 0);
+    fitCameraHorizontal(camera, width / height, 60);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'high-performance' });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -410,8 +412,7 @@ export default function Aurora({ canvasId }: AuroraProps) {
     const onResize = () => {
       const w = mount.clientWidth || window.innerWidth;
       const h = mount.clientHeight || window.innerHeight;
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
+      fitCameraHorizontal(camera, w / h, 60);
       renderer.setSize(w, h);
       composer.setSize(w, h);
     };

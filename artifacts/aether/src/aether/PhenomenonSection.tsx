@@ -92,20 +92,20 @@ export default function PhenomenonSection({ phenomenon, index }: PhenomenonSecti
       <TextLegibilityOverlay />
 
       <div className="absolute inset-0 pointer-events-none z-10">
-        <div className="absolute top-[40px] left-[40px] flex flex-col items-start">
-          <div className="text-[#b8a0ff] font-display leading-none" style={{ fontSize: 'clamp(6rem, 14vw, 14rem)' }}>
+        <div className="absolute top-[24px] left-[24px] md:top-[40px] md:left-[40px] flex flex-col items-start max-w-[calc(100%-48px)] md:max-w-none">
+          <div className="text-[#b8a0ff] font-display leading-none" style={{ fontSize: 'clamp(3rem, 14vw, 14rem)' }}>
             {phenomenon.numeral}
           </div>
-          <h2 className="text-[#fafafa] font-display mt-[-0.2em]" style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)' }}>
+          <h2 className="text-[#fafafa] font-display mt-[-0.2em]" style={{ fontSize: 'clamp(1.5rem, 5vw, 5rem)' }}>
             {phenomenon.title}
           </h2>
-          <p className="font-display italic text-[#fafafa] opacity-60 max-w-[480px] mt-4" style={{ fontSize: 'clamp(1rem, 1.4vw, 1.4rem)' }}>
+          <p className="font-display italic text-[#fafafa] opacity-60 max-w-[480px] mt-4" style={{ fontSize: 'clamp(0.875rem, 1.4vw, 1.4rem)' }}>
             {phenomenon.description}
           </p>
         </div>
 
-        <div className="absolute bottom-[40px] left-[40px] flex flex-col items-start">
-          <div className="w-[1px] h-[80px] bg-[#b8a0ff] mb-4"></div>
+        <div className="absolute bottom-[24px] left-[24px] md:bottom-[40px] md:left-[40px] flex flex-col items-start">
+          <div className="w-[1px] h-[48px] md:h-[80px] bg-[#b8a0ff] mb-4"></div>
           <div className="font-mono text-[11px] text-[#fafafa] tracking-[0.3em] uppercase">
             PHENOMENON 0{index} / 06
           </div>

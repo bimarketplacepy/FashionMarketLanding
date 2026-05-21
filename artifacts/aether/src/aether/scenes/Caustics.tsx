@@ -7,6 +7,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { fitCameraHorizontal } from './cameraFit';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,6 +87,7 @@ export default function Caustics({ canvasId }: CausticsProps) {
     const camera = new THREE.PerspectiveCamera(55, width / height, 0.1, 1000);
     camera.position.set(0, 2, 8);
     camera.lookAt(0, -2, 0);
+    fitCameraHorizontal(camera, width / height, 55);
 
     const renderer = new THREE.WebGLRenderer({
       antialias: true,
@@ -523,8 +525,7 @@ export default function Caustics({ canvasId }: CausticsProps) {
     const onResize = () => {
       const w = mount.clientWidth || window.innerWidth;
       const h = mount.clientHeight || window.innerHeight;
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
+      fitCameraHorizontal(camera, w / h, 55);
       renderer.setSize(w, h);
       composer.setSize(w, h);
     };

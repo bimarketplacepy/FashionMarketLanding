@@ -64,7 +64,7 @@ export default function Intro() {
         <h1 
           ref={titleRef}
           className="font-display text-[#fafafa] leading-tight text-center" 
-          style={{ fontSize: 'clamp(8rem, 22vw, 22rem)' }}
+          style={{ fontSize: 'clamp(4rem, 22vw, 22rem)' }}
         >
           {titleString.split('').map((char, i) => (
             <span key={i} className="letter inline-block opacity-0 blur-[20px]">{char}</span>
@@ -73,7 +73,7 @@ export default function Intro() {
         <div 
           ref={subtitleRef}
           className="font-display italic text-[#fafafa] opacity-0 text-center mt-[-0.2em]"
-          style={{ fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)' }}
+          style={{ fontSize: 'clamp(0.875rem, 2.5vw, 2.5rem)' }}
         >
           Six impossible phenomena
         </div>

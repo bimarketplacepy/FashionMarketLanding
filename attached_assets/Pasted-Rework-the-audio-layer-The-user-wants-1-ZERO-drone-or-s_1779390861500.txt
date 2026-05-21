@@ -1,0 +1,115 @@
+Rework the audio layer. The user wants:
+1. ZERO drone or sustained pad voices
+2. ALL sections to use piano, bell, or pluck-style discrete notes only
+3. The existing Crystalline bells and Wormhole arpeggios are the 
+   reference for the desired aesthetic; everything else should match 
+   that vibe
+
+Do not touch any visual Three.js code.
+
+STEP 1: REMOVE VOICE 1 ENTIRELY
+
+The deep drone voice (Tone.Synth sine wave at D1/A1, slow LFO 
+modulation) is to be completely removed. Delete the voice, its 
+oscillator, its LFO, and all references. Do not leave it muted; 
+delete the code.
+
+STEP 2: REPLACE ALL SUSTAINED PADS WITH PIANO-STYLE PATTERNS
+
+The following voices currently use sustained pad synths. Replace each 
+with piano-style discrete note patterns.
+
+The piano-style synth to use throughout:
+
+const pianoSynth = new Tone.PolySynth(Tone.Synth, {
+  oscillator: { type: 'triangle' },
+  envelope: {
+    attack: 0.005,
+    decay: 0.6,
+    sustain: 0.1,
+    release: 1.2
+  }
+});
+
+This approximates a felt-piano sound when combined with the existing 
+master reverb. Use it (or per-voice instances of it) for each section 
+below.
+
+VOICE 2 — SINGULARITY (was FMSynth ominous low)
+Replace with a slow piano arpeggio pattern.
+- Use the pianoSynth at low register
+- Sequence: D2, A2, F3, A3, repeating with 1.5 second between notes
+- Random tiny velocity variation (0.6 to 0.85) for human feel
+- Master level: -14 dB (faded in across section 1)
+
+VOICE 3 — AURORA (was PolySynth sine pad)
+Replace with sparse high-register piano notes.
+- pianoSynth at high register
+- Random notes from D major scale (D5, E5, F#5, G5, A5, B5, D6)
+- Trigger one note every 2 to 4 seconds, random interval
+- Each note at random velocity (0.5 to 0.85)
+- Master level: -14 dB
+- Add a Tone.PingPongDelay (1/4 note, feedback 0.4, wet 0.4) for 
+  shimmer
+
+VOICE 4 — CRYSTALLINE
+KEEP AS-IS. The MetalSynth bells are the reference vibe. Do not 
+change.
+
+VOICE 5 — CAUSTICS (was MonoSynth lowpass watery)
+Replace with mid-register piano motif.
+- pianoSynth at mid register
+- Repeating motif: A3, E4, C4, G4, then F3, C4, A3, E4 — eight-note 
+  loop
+- 1 second between notes
+- Random velocity variation (0.55 to 0.8)
+- Master level: -15 dB
+
+VOICE 6 — RESONANCE (was PolySynth sine chord)
+Replace with rising piano arpeggio.
+- pianoSynth at mid-to-high register
+- Ascending arpeggio: D3, F3, A3, D4, F4, A4, D5 then descending 
+  back down
+- 0.4 seconds between notes
+- Steady velocity 0.7
+- Master level: -14 dB
+- Add Tone.FeedbackDelay (3/8 note, feedback 0.5, wet 0.45) for the 
+  cymatics-pattern echo feel
+
+VOICE 7 — WORMHOLE
+KEEP AS-IS. The sawtooth arpeggios are the reference for the climax. 
+Do not change.
+
+VOICE 8 — OUTRO (was PolySynth triangle pad)
+Replace with sparse resolution chord.
+- pianoSynth
+- Play D major chord (D4, F#4, A4, D5) as a slow strum
+- Trigger one note every 0.15 seconds for the strum, then silence for 
+  4 seconds, then strum again
+- Repeat throughout the outro
+- Velocity 0.5
+- Master level: -16 dB
+
+STEP 3: SHARED EFFECTS
+
+All piano synth voices should send to:
+- The existing master reverb (decay 4s, wet 0.4)
+- The existing master limiter
+
+No additional drones, pads, or sustained oscillators anywhere in the 
+audio chain.
+
+STEP 4: VERIFY MUTE BEHAVIOUR
+
+Confirm the mute toggle still works. Audio starts muted, unmutes on 
+user click, ramps from -Infinity to -12 dB master in 0.05s.
+
+EXPECTED RESULT
+
+The site now has a consistent piano-bell-pluck musical character 
+throughout. No sustained drones. Each section has its own melodic 
+pattern matching its visual mood. The Crystalline bells and Wormhole 
+arpeggios still anchor the aesthetic. Everything else now matches 
+that energy.
+
+UK English throughout. No commit, no push.
