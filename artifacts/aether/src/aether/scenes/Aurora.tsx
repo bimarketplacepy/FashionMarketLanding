@@ -129,8 +129,8 @@ export default function Aurora({ canvasId }: AuroraProps) {
           varying vec2 vUv;
           void main(){
             vUv = uv;
-            vec4 mv = modelViewMatrix * vec4(position, 1.0);
-            gl_Position = projectionMatrix * mv;
+            vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+            gl_Position = projectionMatrix * mvPosition;
             #include <fog_vertex>
           }
         `,
@@ -237,8 +237,8 @@ export default function Aurora({ canvasId }: AuroraProps) {
             displaced.x += nX * maxDisp + uBendDir * w * 0.6;
             displaced.z += nZ * maxDisp * 0.6;
 
-            vec4 mv = modelViewMatrix * vec4(displaced, 1.0);
-            gl_Position = projectionMatrix * mv;
+            vec4 mvPosition = modelViewMatrix * vec4(displaced, 1.0);
+            gl_Position = projectionMatrix * mvPosition;
             #include <fog_vertex>
           }
         `,
