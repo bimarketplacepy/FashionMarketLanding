@@ -1,0 +1,199 @@
+Build Phenomenon V (Particle Storm) Three.js scene inside the existing 
+section 5 placeholder. Do not touch any other section.
+
+CONCEPT
+
+Two hundred thousand particles flowing through a 3D curl noise field, 
+creating organic flock-like motion. Particles move along invisible 
+streamlines, their colour shifting from cool violet at the edges to 
+warm gold at high-velocity centres. Camera slowly orbits the swarm as 
+the user scrolls. Pure GPU-driven motion, no per-frame CPU work.
+
+CANVAS SETUP
+
+Mount inside canvas-particle-storm div. Same renderer config as 
+previous phenomena:
+- WebGL2, antialias true, alpha false
+- Pixel ratio capped at 2
+- Output encoding sRGB
+- Pause RAF when out of viewport
+
+SCENE COMPOSITION
+
+1. ENVIRONMENT
+- Scene background colour: deep midnight blue #04081a
+- Scene fog: FogExp2, colour #04081a, density 0.025
+  (creates depth fade, particles in distance dim into the background)
+
+2. PARTICLE FIELD (the centrepiece)
+
+200,000 particles as THREE.Points with custom ShaderMaterial.
+
+BUFFER ATTRIBUTES per particle:
+
+- aPosition: base position, randomly distributed inside a sphere of 
+  radius 8 (use rejection sampling or spherical coordinates with proper 
+  density)
+- aSeed: random float 0.0 to 1.0
+- aPhase: random float 0.0 to 6.2831
+- aSpeed: random float 0.7 to 1.3 (per-particle speed variation)
+
+UNIFORMS:
+- uTime: float (incrementing every frame)
+- uPixelRatio: float
+
+VERTEX SHADER (this is the heart of the scene)
+
+The vertex shader must compute each particle's current position by 
+displacing its base position along a curl noise vector field. Use the 
+following structure:
+
+vec3 basePos = aPosition;
+
+// Time-based phase offset for this particle
+float t = uTime * 0.25 * aSpeed + aPhase;
+
+// Sample 3D curl noise at three offset positions to get a curl vector
+// Use classic Ashima simplex noise (snoise function)
+vec3 noisePos = basePos * 0.18 + vec3(t * 0.4, t * 0.3, t * 0.2);
+
+// Curl noise approximation: sample noise at three slightly offset 
+// positions and compute curl via finite differences
+float eps = 0.1;
+vec3 dx = vec3(eps, 0.0, 0.0);
+vec3 dy = vec3(0.0, eps, 0.0);
+vec3 dz = vec3(0.0, 0.0, eps);
+
+float a1 = snoise(noisePos + dy) - snoise(noisePos - dy);
+float a2 = snoise(noisePos + dz) - snoise(noisePos - dz);
+float b1 = snoise(noisePos + dz + vec3(31.4)) - snoise(noisePos - dz + vec3(31.4));
+float b2 = snoise(noisePos + dx + vec3(31.4)) - snoise(noisePos - dx + vec3(31.4));
+float c1 = snoise(noisePos + dx + vec3(62.8)) - snoise(noisePos - dx + vec3(62.8));
+float c2 = snoise(noisePos + dy + vec3(62.8)) - snoise(noisePos - dy + vec3(62.8));
+
+vec3 curl = vec3(a1 - a2, b1 - b2, c1 - c2) / (2.0 * eps);
+
+// Oscillating displacement along the streamline
+float oscillation = sin(t * 1.5) * 1.2 + 1.8;
+vec3 currentPos = basePos + curl * oscillation;
+
+// Pass velocity magnitude to fragment for colour grading
+vVelocity = length(curl);
+vDistFromCentre = length(basePos);
+
+// Standard projection
+vec4 mvPosition = modelViewMatrix * vec4(currentPos, 1.0);
+gl_Position = projectionMatrix * mvPosition;
+
+// Point size with perspective: closer = bigger, with size variation
+gl_PointSize = (1.8 + aSeed * 1.4) * uPixelRatio * (300.0 / -mvPosition.z);
+
+You must include a working snoise() simplex 3D noise function in the 
+shader. Use the Ashima webgl-noise implementation (commonly available; 
+the Three.js examples include it). If easier, declare it as a #include 
+or paste the full function inline.
+
+FRAGMENT SHADER
+
+varying float vVelocity;
+varying float vDistFromCentre;
+
+void main() {
+  // Soft circular sprite
+  vec2 uv = gl_PointCoord - 0.5;
+  float dist = length(uv);
+  if (dist > 0.5) discard;
+  float alpha = smoothstep(0.5, 0.0, dist);
+  
+  // Velocity-driven colour palette
+  // Slow particles (vVelocity 0-1): deep violet #6a2dc0
+  // Medium particles (vVelocity 1-2.5): cyan #2dd0ff
+  // Fast particles (vVelocity 2.5+): warm gold #ffd060
+  
+  vec3 colSlow = vec3(0.42, 0.18, 0.75);     // deep violet
+  vec3 colMid = vec3(0.18, 0.82, 1.0);       // cyan
+  vec3 colFast = vec3(1.0, 0.82, 0.38);      // warm gold
+  
+  float v = clamp(vVelocity / 3.0, 0.0, 1.0);
+  vec3 colour;
+  if (v < 0.5) {
+    colour = mix(colSlow, colMid, v * 2.0);
+  } else {
+    colour = mix(colMid, colFast, (v - 0.5) * 2.0);
+  }
+  
+  // Additional dimming toward outer edges of sphere (atmosphere)
+  float distFalloff = 1.0 - smoothstep(6.0, 9.0, vDistFromCentre);
+  
+  gl_FragColor = vec4(colour, alpha * 0.7 * distFalloff);
+}
+
+MATERIAL SETUP:
+- ShaderMaterial with the above vertex and fragment shaders
+- transparent: true
+- depthWrite: false
+- blending: THREE.AdditiveBlending
+
+3. SUBTLE AMBIENT GLOW
+
+Behind the particle field, add 3 large soft glowing sprites at z = -8 
+to -12:
+- PlaneGeometry 30 x 30
+- Soft radial gradient additive shader
+- Colour tints: one deep violet, one cyan, one warm gold (matching 
+  the particle palette)
+- Alpha 0.04 to 0.08 each
+- Very slowly drifting horizontally
+
+Creates a sense the swarm is part of a larger luminous environment.
+
+CAMERA
+
+PerspectiveCamera, FOV 55.
+Initial position: x=0, y=2, z=15
+LookAt: origin (0, 0, 0)
+
+SCROLL-DRIVEN CAMERA
+
+As scroll progresses through section 5:
+- 0% progress: x=0, y=2, z=15
+- 50% progress: x=8, y=0, z=10 (orbits 90 degrees clockwise around 
+  the swarm)
+- 100% progress: x=0, y=-3, z=6 (now below and close, looking up 
+  through the swarm)
+
+Camera lookAt remains origin throughout. Use GSAP ScrollTrigger pinned 
+to section 5, scrubbing position with progress.
+
+The particle motion continues independently of scroll.
+
+POST-PROCESSING
+
+EffectComposer with:
+- RenderPass
+- UnrealBloomPass:
+  - threshold: 0.6
+  - strength: 0.4
+  - radius: 0.4
+- OutputPass
+
+Bloom amplifies the bright gold central particles. Aim for jewel-like 
+sparkle, not haze. If blowout, drop strength to 0.3.
+
+PERFORMANCE TARGETS
+
+- 60fps on M4 in Chrome
+- 200,000 particles is the spec. If frame rate drops below 50fps, 
+  reduce to 150,000 first, then 100,000 if necessary.
+- All animation in vertex shader (no CPU per-particle work)
+- Single draw call for the particle system
+
+DO NOT
+
+- Do not add OrbitControls
+- Do not implement true boids (O(n²) too expensive at this scale)
+- Do not use multiple Points objects (single buffer geometry)
+- Do not increase bloom strength above 0.5
+- Do not change anything outside section 5
+
+UK English throughout. No commit, no push.
