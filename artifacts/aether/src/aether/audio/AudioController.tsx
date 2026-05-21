@@ -189,19 +189,33 @@ export default function AudioController() {
     engineRef.current = engine;
 
     // ───── scroll-driven mixing loop ─────
-    let rafId = 0;
+    // Section count is fixed once mounted; cache it (and update on resize)
+    // instead of running querySelectorAll('main > section') every frame.
+    // Cache the last presence value per voice so we only schedule a Tone
+    // param ramp when it actually changes — without this we were posting
+    // ~60 ramps/second to the audio thread for every voice, even at rest.
+    let sectionCount = 0;
+    const lastPresence = new Map<number, number>();
     const enteredFlags = new Map<number, boolean>();
 
+    const recountSections = () => {
+      sectionCount = document.querySelectorAll('main > section').length;
+    };
+    recountSections();
+    // Initial mount races scene lazy-loading: retry once on the next tick
+    // if sections weren't in the DOM yet.
+    if (sectionCount === 0) {
+      window.setTimeout(recountSections, 0);
+    }
+    window.addEventListener('resize', recountSections);
+
+    let rafId = 0;
     const tick = () => {
+      rafId = window.requestAnimationFrame(tick);
       const eng = engineRef.current;
       if (!eng) return;
-      const sections = Array.from(
-        document.querySelectorAll<HTMLElement>('main > section')
-      );
-      if (sections.length === 0) {
-        rafId = window.requestAnimationFrame(tick);
-        return;
-      }
+      if (sectionCount === 0) return;
+
       const vh = window.innerHeight || 1;
       const scrollY = window.scrollY || window.pageYOffset || 0;
       // Each section is 100vh in this app; index of the viewport top:
@@ -211,7 +225,7 @@ export default function AudioController() {
       // For the terminal section we collapse the right half of the triangle
       // so its peak shifts to the page-bottom anchor (otherwise the outro
       // voice never reaches full presence).
-      const maxScrollIdx = Math.max(0, sections.length - 1);
+      const maxScrollIdx = Math.max(0, sectionCount - 1);
 
       for (const v of eng.voices) {
         const n = v.sectionIndex;
@@ -230,7 +244,15 @@ export default function AudioController() {
         }
         presence = Math.max(0, Math.min(1, presence));
 
-        v.gain.gain.rampTo(presence, 0.08);
+        // Only post a ramp to the audio thread when the target moved
+        // perceptibly — quantising to 0.005 is below the threshold of
+        // audibility but eliminates the per-frame chatter that was
+        // contributing to scroll jank.
+        const prev = lastPresence.get(n);
+        if (prev === undefined || Math.abs(prev - presence) > 0.005) {
+          v.gain.gain.rampTo(presence, 0.08);
+          lastPresence.set(n, presence);
+        }
 
         const wasIn = enteredFlags.get(n) ?? false;
         const isIn = presence > 0.05;
@@ -247,12 +269,12 @@ export default function AudioController() {
           v.onTick(presence, localProgress);
         }
       }
-      rafId = window.requestAnimationFrame(tick);
     };
     rafId = window.requestAnimationFrame(tick);
 
     return () => {
       window.cancelAnimationFrame(rafId);
+      window.removeEventListener('resize', recountSections);
       // The Tone graph + scheduled timers are owned by the globalThis-keyed
       // singleton and intentionally outlive the component so HMR / StrictMode
       // re-mounts don't tear down audio mid-playback.
@@ -339,9 +361,37 @@ export default function AudioController() {
       await startEngine();
       // First click always unmutes — even if persisted state was muted, the
       // user just deliberately interacted with the audio control.
-      applyMute(true, 1.5);
+      // Snap volume up almost instantly (0.05s avoids a click without a
+      // perceptible fade-in) so the user hears sound immediately rather
+      // than waiting through a 1.5s ramp + scheduling delay.
+      applyMute(true, 0.05);
       setUnmuted(true);
       sessionStorage.setItem(SESSION_KEY, '1');
+
+      // Fire one immediate note for whichever section is currently on
+      // screen, so the very first thing the user hears is sound, not
+      // silence-waiting-for-the-next-scheduler-tick. If they're on a
+      // silent section (Intro/Singularity/Aurora/Caustics) this no-ops,
+      // which is fine — those sections are intentionally silent.
+      // Use floor (not round) so we pick the section whose voice has the
+      // highest presence under the existing triangle envelope (each voice
+      // peaks at sectionIndex + 0.5, so floor(scrollIdx) is the dominant
+      // voice). Rounding could mis-fire near boundaries — e.g. at
+      // scrollIdx 3.6 the bell at section 3 is still the dominant voice
+      // but round would jump to 4 (Caustics, silent).
+      const vh = window.innerHeight || 1;
+      const scrollY = window.scrollY || window.pageYOffset || 0;
+      const currentSection = Math.floor(scrollY / vh);
+      if (currentSection === 3 && eng.bellSynth) {
+        // Crystalline — bell.
+        eng.bellSynth.triggerAttackRelease('A5', '8n');
+      } else if (currentSection === 5 && eng.pluck) {
+        // Particle Storm — pluck.
+        eng.pluck.triggerAttack('D4');
+      } else if (currentSection === 6 && eng.arpSynth) {
+        // Wormhole — arp note.
+        eng.arpSynth.triggerAttackRelease('D4', '16n');
+      }
     } else {
       const next = !unmuted;
       applyMute(next, 0.4);

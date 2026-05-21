@@ -8,7 +8,12 @@ gsap.registerPlugin(ScrollTrigger);
 export function useLenis() {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
+      // Shorter smoothing window: 1.2s felt floaty/laggy because scroll
+      // inputs took over a full second to fully settle, which made every
+      // animation that read scroll position (ScrollTrigger scrub, scene
+      // cameras) lag visibly behind the wheel. 0.85s keeps the smooth
+      // feel without the rubber-banding.
+      duration: 0.85,
       easing: (t: number) => 1 - Math.pow(1 - t, 3),
       smoothWheel: true,
       touchMultiplier: 2,
