@@ -13,7 +13,12 @@ interface ParticleStormProps {
   canvasId: string;
 }
 
-const PARTICLE_COUNT = 80_000;
+// Restored to 200,000 to match body copy ("Two hundred thousand points
+// in motion"). The previous 80,000 reduction was an attempt to make
+// individual particles more visible, but visibility is now driven by
+// larger point size, brighter colours, and full alpha (no distance
+// falloff) instead of by cutting count.
+const PARTICLE_COUNT = 200_000;
 // Maximum radius any sample can land at. Gaussian draws are scaled by 4.0
 // then clamped to this magnitude so the swarm has a soft edge instead of
 // the hard sphere shell of uniform-volume sampling.
@@ -91,7 +96,11 @@ void main() {
   float c1 = snoise(noisePos + vec3(eps, 0.0, 0.0) + vec3(62.8)) - snoise(noisePos - vec3(eps, 0.0, 0.0) + vec3(62.8));
   float c2 = snoise(noisePos + vec3(0.0, eps, 0.0) + vec3(62.8)) - snoise(noisePos - vec3(0.0, eps, 0.0) + vec3(62.8));
 
-  vec3 curl = vec3(a1 - a2, b1 - b2, c1 - c2) / (2.0 * eps);
+  // Curl magnitude multiplied by 2.5 so per-particle velocities span
+  // the full 0..3+ range that the fragment shader's colour ramp expects.
+  // Without this, vVelocity clustered low and almost every particle
+  // resolved to the slow-violet stop, which read as monochrome cyan-ish.
+  vec3 curl = vec3(a1 - a2, b1 - b2, c1 - c2) / (2.0 * eps) * 2.5;
 
   float oscillation = sin(t * 1.5) * 1.4 + 2.0;
   vec3 currentPos = basePos + curl * oscillation;
@@ -102,7 +111,9 @@ void main() {
   vec4 mvPosition = modelViewMatrix * vec4(currentPos, 1.0);
   gl_Position = projectionMatrix * mvPosition;
 
-  gl_PointSize = (3.5 + aSeed * 3.0) * uPixelRatio * (300.0 / -mvPosition.z);
+  // Larger base size + slightly longer falloff distance so distant
+  // particles stay visible across the swarm depth.
+  gl_PointSize = (4.5 + aSeed * 3.5) * uPixelRatio * (320.0 / -mvPosition.z);
 }
 `;
 
@@ -116,9 +127,12 @@ void main() {
   if (dist > 0.5) discard;
   float alpha = smoothstep(0.5, 0.0, dist);
 
-  vec3 colSlow = vec3(0.65, 0.35, 0.95);   // brighter violet
-  vec3 colMid  = vec3(0.35, 0.92, 1.00);   // brighter cyan
-  vec3 colFast = vec3(1.00, 0.92, 0.55);   // brighter gold
+  // Brighter, more saturated stops — at the previous values the violet
+  // and gold barely registered and the swarm read as mono-cyan against
+  // bloomed grey. Per spec.
+  vec3 colSlow = vec3(0.75, 0.40, 1.00);   // violet
+  vec3 colMid  = vec3(0.40, 0.95, 1.00);   // cyan
+  vec3 colFast = vec3(1.00, 0.95, 0.60);   // gold
 
   float v = clamp(vVelocity / 3.0, 0.0, 1.0);
   vec3 colour;
@@ -128,10 +142,11 @@ void main() {
     colour = mix(colMid, colFast, (v - 0.5) * 2.0);
   }
 
-  // Distance falloff scaled to the new MAX_RADIUS = 12 envelope.
-  float distFalloff = 1.0 - smoothstep(9.0, 12.0, vDistFromCentre);
-
-  gl_FragColor = vec4(colour, alpha * 0.85 * distFalloff);
+  // Distance falloff removed: it was making distant particles invisible
+  // and contributing to the "mostly empty viewport" complaint. The
+  // sphere alpha mask (smoothstep above) still gives each point a soft
+  // edge; we just no longer fade by distance-from-centre.
+  gl_FragColor = vec4(colour, alpha * 1.0);
 }
 `;
 
@@ -148,8 +163,11 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
 
     // ───────────────── SCENE / RENDERER ─────────────────
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x04081a);
-    scene.fog = new THREE.FogExp2(0x04081a, 0.025);
+    // Pure black background and no fog — fog was contributing a grey
+    // wash that the auditor reported as bloom flooding. Particle
+    // visibility depends on contrast against true black.
+    scene.background = new THREE.Color(0x000000);
+    scene.fog = null;
 
     const camera = new THREE.PerspectiveCamera(55, width / height, 0.1, 1000);
     camera.position.set(0, 2, 15);
@@ -310,9 +328,16 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
       hazeMats.push(mat);
     }
 
-    // Verification log requested by spec — confirms buffer was built.
+    // Verification log requested by spec. We can't directly read GPU
+    // vVelocity values, but we can confirm the buffer size, the curl
+    // multiplier that drives the velocity range, and the colour-ramp
+    // expectations. If vVelocity is computed correctly, particles
+    // should distribute across violet→cyan→gold rather than clustering
+    // at the slow-violet end.
     // eslint-disable-next-line no-console
-    console.log(`Particle Storm: ${PARTICLE_COUNT} particles loaded`);
+    console.log(
+      `Particle Storm: ${PARTICLE_COUNT} particles, curl x2.5, velocity ramp 0..3 → violet/cyan/gold`
+    );
 
     // ───────────────── SCROLL CAMERA (3-point path) ─────────────────
     const camState = { x: 0, y: 2, z: 15 };
