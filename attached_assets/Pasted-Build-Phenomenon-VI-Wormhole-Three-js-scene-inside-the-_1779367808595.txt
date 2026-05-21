@@ -1,0 +1,199 @@
+Build Phenomenon VI (Wormhole) Three.js scene inside the existing 
+section 6 placeholder. Do not touch any other section.
+
+CONCEPT
+
+The user begins viewing a glowing portal ring suspended in space. As 
+they scroll, the camera accelerates toward the portal, passes through 
+its throat, and ends up inside a rainbow-streaked tunnel of folded 
+spacetime. The final section of the entire essay should feel like 
+arrival, not departure.
+
+CANVAS SETUP
+
+Mount inside canvas-wormhole div. Same renderer config:
+- WebGL2, antialias true, alpha false
+- Pixel ratio capped at 2
+- Output encoding sRGB
+- Pause RAF when out of viewport
+
+SCENE COMPOSITION
+
+1. STARFIELD BACKGROUND
+Use the shared createStarfield() utility. Same configuration as 
+Singularity.
+
+2. WORMHOLE TUNNEL (the centrepiece)
+
+A long cylinder we view from the inside:
+
+- CylinderGeometry: radius 4, height 80, 64 radial segments, 1 height 
+  segment, openEnded true
+- Positioned with axis along Z, centred at (0, 0, -38) so it extends 
+  from z=2 to z=-78
+- Rotated so cylinder axis aligns with Z (rotateX Math.PI / 2)
+- Material: custom ShaderMaterial with side: THREE.BackSide so we see 
+  the inside of the tunnel
+
+TUNNEL SHADER
+
+Vertex shader passes UV and world position.
+
+Fragment shader:
+
+vec2 uv = vUv;
+float time = uTime;
+
+// Scroll the pattern toward the camera (positive Z direction in 
+// world space means scrolling outward from camera)
+uv.y -= time * 0.4;
+
+// Multiple octaves of noise for streaky pattern
+float streaks = 0.0;
+streaks += abs(snoise(vec2(uv.x * 12.0, uv.y * 2.0))) * 0.6;
+streaks += abs(snoise(vec2(uv.x * 24.0, uv.y * 4.0 + 100.0))) * 0.3;
+streaks += abs(snoise(vec2(uv.x * 6.0, uv.y * 1.0 + 200.0))) * 0.4;
+
+streaks = pow(streaks, 1.5);
+
+// Colour palette cycling around the tunnel circumference
+float hue = uv.x + time * 0.05;
+vec3 colA = vec3(0.6, 0.2, 0.95);    // violet
+vec3 colB = vec3(0.2, 0.85, 1.0);    // cyan
+vec3 colC = vec3(1.0, 0.4, 0.7);     // magenta-pink
+vec3 colD = vec3(1.0, 0.85, 0.4);    // warm gold
+
+vec3 palette;
+float h = fract(hue);
+if (h < 0.25) palette = mix(colA, colB, h * 4.0);
+else if (h < 0.5) palette = mix(colB, colC, (h - 0.25) * 4.0);
+else if (h < 0.75) palette = mix(colC, colD, (h - 0.5) * 4.0);
+else palette = mix(colD, colA, (h - 0.75) * 4.0);
+
+// Darken toward the centre of the tunnel (the vanishing point), 
+// brighter on the visible walls
+// The UV.y direction is along the tunnel; bright in middle of 
+// visible portion
+float depthFade = 1.0 - abs(uv.y * 2.0 - 1.0);
+depthFade = smoothstep(0.0, 0.6, depthFade);
+
+vec3 colour = palette * streaks * 1.4 * depthFade;
+
+// Clamp to prevent blowout
+colour = min(colour, vec3(0.85));
+
+gl_FragColor = vec4(colour, 1.0);
+
+Include a working snoise() 2D simplex noise function in the shader.
+
+3. PORTAL RING (at the entrance of the tunnel)
+
+A glowing ring marking the wormhole mouth:
+
+- TorusGeometry: radius 3.2, tube 0.18, radial segments 32, tubular 
+  segments 128
+- Positioned at (0, 0, 2) facing the camera (axis aligned with Z)
+- Custom ShaderMaterial:
+  - Cycling rainbow colour around the ring circumference using same 
+    palette as the tunnel
+  - Time-driven hue offset (the rainbow rotates around the ring 
+    over 4 seconds per full cycle)
+  - Strong emissive brightness (multiplier 1.6)
+  - Pulse: overall brightness oscillates 0.85 to 1.15 over 2.5 seconds
+  - Additive blending
+  - Depth write false
+
+4. ENTRANCE GLOW
+
+A soft glowing disc behind the portal ring:
+
+- PlaneGeometry 8 x 8, positioned at (0, 0, 1.8) facing camera
+- Custom shader with radial gradient:
+  - Centre: bright soft white #ffffff at alpha 0.6
+  - Edge: transparent
+  - The gradient pulses gently in sync with the portal ring pulse
+- Additive blending, depth write false
+
+5. STREAKING PARTICLES (inside the tunnel)
+
+12,000 particles streaking past the camera once we're inside:
+
+- BufferGeometry, positions distributed in a thin shell along the 
+  tunnel: radius 1.5 to 3.8, length z = +5 to z = -75
+- Each particle has a per-particle speed (0.5 to 1.5)
+- In vertex shader: particle position scrolls along z toward camera 
+  (z position increases over time), wrapping back to z=-75 when 
+  reaching z=+5
+- Each particle elongated by stretching point size with motion blur 
+  feel (use larger gl_PointSize values, 2-5 pixels)
+- Colour: warm white with slight rainbow tint based on z position
+- Additive blending
+- Alpha 0.4 per particle (lower because of additive)
+
+These only become visible/dense once the camera is inside the tunnel.
+
+CAMERA
+
+PerspectiveCamera, FOV 65.
+Initial position: x=0, y=0, z=20 (viewing portal from outside)
+LookAt: origin (0, 0, 0)
+
+SCROLL-DRIVEN CAMERA
+
+This is the most dramatic camera move of the entire essay.
+
+As scroll progresses through section 6:
+- 0% to 25% progress: position z goes from 20 to 8 (slow approach)
+- 25% to 60% progress: position z goes from 8 to 0 (acceleration, 
+  entering the throat)
+- 60% to 100% progress: position z goes from 0 to -50 (now flying 
+  through the tunnel)
+
+Use GSAP ScrollTrigger pinned to section 6, scrubbing camera position 
+with progress. The position interpolation should use easeIn for the 
+acceleration phase (slow then fast).
+
+Camera lookAt: x=0, y=0, z=-10 throughout (always looking forward 
+down the tunnel axis).
+
+Slight camera roll: rotate the camera on its Z axis by sin(time * 0.3) 
+* 0.05 radians (very subtle wobble for cinematic feel).
+
+POST-PROCESSING
+
+EffectComposer with:
+- RenderPass
+- UnrealBloomPass:
+  - threshold: 0.55
+  - strength: 0.55
+  - radius: 0.5
+- OutputPass
+
+Bloom amplifies the portal ring and tunnel streaks. The wormhole 
+SHOULD glow more than the other phenomena because this is the climax 
+of the essay. If complete blowout occurs, drop strength to 0.4.
+
+ATMOSPHERIC EXTRAS
+
+- Inside the tunnel, add a subtle chromatic aberration only inside 
+  this section (if you have an existing chromatic aberration shader 
+  pass, enable it here at low intensity 0.003; if not, skip)
+- The starfield should fade out as the camera enters the portal 
+  (between z=8 and z=0): smoothly interpolate the starfield material 
+  opacity from 1.0 down to 0.0 based on camera Z position
+
+PERFORMANCE TARGETS
+
+- 60fps on M4 in Chrome
+- Tunnel = 1 mesh, portal = 1 mesh, particles = 1 buffer, starfield 
+  = existing shared component. Lightweight scene.
+
+DO NOT
+
+- Do not add OrbitControls
+- Do not use a particle-only tunnel approximation (the cylinder shader 
+  gives a much richer effect)
+- Do not change anything outside section 6
+- Do not increase bloom strength above 0.6
+
+UK English throughout. No commit, no push.

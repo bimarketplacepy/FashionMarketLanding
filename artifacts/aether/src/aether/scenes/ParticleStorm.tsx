@@ -105,7 +105,7 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
     const renderPass = new RenderPass(scene, camera);
     composer.addPass(renderPass);
     // UnrealBloomPass(resolution, strength, radius, threshold)
-    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.4, 0.4, 0.6);
+    const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.2, 0.4, 0.75);
     composer.addPass(bloom);
     const outputPass = new OutputPass();
     composer.addPass(outputPass);
@@ -288,12 +288,17 @@ export default function ParticleStorm({ canvasId }: ParticleStormProps) {
           }
 
           float distFalloff = 1.0 - smoothstep(6.0, 9.0, vDistFromCentre);
-          float a = alpha * 0.7 * distFalloff;
+          // 200k additive particles saturate quickly; keep per-particle
+          // alpha very low so bloom catches only true highlights.
+          float a = alpha * 0.08 * distFalloff;
           #ifdef USE_FOG
             float fogFactor = 1.0 - exp(-fogDensity * fogDensity * vFogDepth * vFogDepth);
             a *= (1.0 - fogFactor);
           #endif
           if (a < 0.001) discard;
+          // Clamp per-particle RGB so no single sprite pushes a pixel to
+          // pure white before additive accumulation.
+          colour = min(colour, vec3(0.85));
           gl_FragColor = vec4(colour, a);
         }
       `,
