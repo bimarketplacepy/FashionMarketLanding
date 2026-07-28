@@ -1,6 +1,6 @@
-# [Project name]
+# Fashion Market — By Marketplace
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Landing del sector Moda de un retailer: intro cinematográfica (ex-AETHER) + landing editorial + vestidor virtual con IA (sugerencia de looks, probador virtual e importación de prendas por foto).
 
 ## Run & Operate
 
@@ -22,11 +22,19 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/aether/` — la app web principal (Vite + React). A pesar del nombre, hoy es Fashion Market.
+  - `src/aether/Intro.tsx` — intro cinematográfica "FASHION MARKET / By Marketplace" (GSAP). El resto de `src/aether/` (escenas Three.js, Outro, audio) quedó sin usar tras el pivot.
+  - `src/fashion/` — landing retail + vestidor virtual, portado del proyecto "Landing Fashion" (`wardrobe-main` en App Storage). `FashionMarket.jsx` es el componente raíz (vista `home` = landing, vista `wardrobe` = probador virtual).
+  - `scripts/*.mjs` — backend como plugins de Vite: importación de prendas con IA (`import-job-api`), generación de pruebas virtuales (`outfit-api`), imágenes responsive vía ipx (`responsive-image-api`).
+  - `data/` — catálogo local (library.json, outfits.json, foto de referencia). No commitear contenido sensible.
+  - `public/fashion/` — imágenes placeholder generadas; reemplazar por fotos reales del retailer.
+  - `.env` (en `artifacts/aether/`, gitignoreado) — `AI_PROVIDER=gemini`, `GEMINI_API_KEY`, modelos de visión/imagen.
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- El backend del vestidor corre como plugins del dev server de Vite (heredado del proyecto original), no en `artifacts/api-server`. Si se despliega a producción con `vite preview` los plugins de import/outfit no aplican en build estático — migrar a api-server llegado el caso.
+- Escenas Three.js de AETHER se conservan en el repo pero no se montan; la intro es la única pieza que sobrevivió del sitio original.
+- `allowJs` habilitado en `artifacts/aether/tsconfig.json` porque el código portado es JSX sin tipos.
 
 ## Product
 

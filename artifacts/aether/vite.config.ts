@@ -1,8 +1,11 @@
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
+import { wardrobeImportApi } from "./scripts/import-job-api.mjs";
+import { outfitApi } from "./scripts/outfit-api.mjs";
+import { responsiveImageApi } from "./scripts/responsive-image-api.mjs";
 
 const rawPort = process.env.PORT;
 
@@ -26,12 +29,17 @@ if (!basePath) {
   );
 }
 
-export default defineConfig({
+export default defineConfig(async ({ mode }) => {
+  const env = loadEnv(mode, import.meta.dirname, "");
+  return {
   base: basePath,
   plugins: [
     react(),
     tailwindcss(),
     runtimeErrorOverlay(),
+    responsiveImageApi(),
+    wardrobeImportApi({ env }),
+    outfitApi({ env }),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
@@ -72,4 +80,5 @@ export default defineConfig({
     host: "0.0.0.0",
     allowedHosts: true,
   },
+  };
 });
