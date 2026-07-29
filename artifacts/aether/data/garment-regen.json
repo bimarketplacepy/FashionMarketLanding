@@ -1,0 +1,24 @@
+{
+  "entries": {
+    "import-f7ec9b4b-1886-4640-b940-d1590be123f1": {
+      "status": "failed",
+      "error": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa",
+      "at": "2026-07-29T17:12:30.138Z"
+    },
+    "import-c2a43768-472f-4ecb-a7fc-6bfbfa321b60": {
+      "status": "failed",
+      "error": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa",
+      "at": "2026-07-29T17:30:07.291Z"
+    },
+    "import-99cdb7f7-3c4d-465b-be96-547c89c7d930": {
+      "status": "failed",
+      "error": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa",
+      "at": "2026-07-29T17:30:44.471Z"
+    },
+    "import-f44f6426-6d75-4676-95d0-75d92e8a4ecc": {
+      "status": "failed",
+      "error": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa",
+      "at": "2026-07-29T17:31:21.626Z"
+    }
+  }
+}

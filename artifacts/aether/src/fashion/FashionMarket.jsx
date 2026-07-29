@@ -355,7 +355,7 @@ function ItemEditor({ draft, setDraft, palette, sampling, setSampling, sampleSta
   );
 }
 
-function ItemViewer({ item, onClose, onSave, onDelete }) {
+function ItemViewer({ item, modelImage, onClose, onSave, onDelete }) {
   const closeButtonRef = useRef(null);
   const imageRef = useRef(null);
   const samplingCanvasRef = useRef(null);
@@ -367,7 +367,8 @@ function ItemViewer({ item, onClose, onSave, onDelete }) {
   const [shaking, setShaking] = useState(false);
   const [closeBlocked, setCloseBlocked] = useState(false);
   const type = TYPE_MAP[item.part]?.singular || "Wardrobe item";
-  const hasModeledImage = Boolean(item.modeledImage);
+  const heroImage = item.modeledImage || modelImage;
+  const hasModeledImage = Boolean(heroImage);
   const pieceRotation = useMemo(() => {
     const hash = [...item.id].reduce((total, character) => total + character.charCodeAt(0), 0);
     return `${(hash % 9) - 4}deg`;
@@ -498,8 +499,8 @@ function ItemViewer({ item, onClose, onSave, onDelete }) {
         <div className="modeled-hero">
           <OptimizedImage
             className="modeled-hero-photo"
-            src={item.modeledImage}
-            alt={`${draft.name || type} worn by a model`}
+            src={heroImage}
+            alt={`Modelo elegida junto a ${draft.name || type}`}
             sizes="(max-width: 860px) 100vw, 520px"
             breakpoints={[320, 480, 640, 800, 1040, 1280]}
             quality={82}
@@ -557,6 +558,7 @@ export function FashionMarket({ intro }) {
   const [demo, setDemo] = useState(DEMO_DEFAULTS);
   const [customizerOpen, setCustomizerOpen] = useState(false);
   const [importLaunch, setImportLaunch] = useState(0);
+  const [modelImage, setModelImage] = useState(null);
   const [items, setItems] = useState([]);
   const [activeType, setActiveType] = useState("all");
   const [selectedId, setSelectedId] = useState(null);
@@ -783,9 +785,9 @@ export function FashionMarket({ intro }) {
       {error && <p className="status error">{error}</p>}
       {loading
         ? <p className="status">Preparando el probador virtual…</p>
-        : <VirtualTryOn items={items} onAddProducts={() => setImportLaunch((value) => value + 1)} onOpenItem={setSelectedId} />}
+        : <VirtualTryOn items={items} onAddProducts={() => setImportLaunch((value) => value + 1)} onOpenItem={setSelectedId} onModelUpdate={setModelImage} />}
 
-      {selectedItem && <ItemViewer item={selectedItem} onClose={() => setSelectedId(null)} onSave={saveItem} onDelete={deleteItem} />}
+      {selectedItem && <ItemViewer item={selectedItem} modelImage={modelImage} onClose={() => setSelectedId(null)} onSave={saveItem} onDelete={deleteItem} />}
       <WardrobeImportFlow launch={importLaunch} onGarmentApproved={addImportedItem} onModeledApproved={attachImportedModeledImage} />
     </div>
   );

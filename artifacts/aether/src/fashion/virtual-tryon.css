@@ -137,3 +137,102 @@
 .model-summary-tone { width: 42px; height: 42px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .12); }
 .model-summary small { opacity: .6; max-width: 260px; line-height: 1.5; }
 @media (max-width: 640px) { .model-mode-cards { grid-template-columns: 1fr; } }
+
+/* ---- Vestidor minimalista (rediseño estilo open-wardrobe) ---- */
+.wd-shell { background: #f4f0e8; }
+.wd-topline { display: flex; align-items: center; justify-content: space-between; padding: 34px 4.5vw 18px; }
+.wd-count { margin: 0; text-transform: uppercase; letter-spacing: .16em; font-size: .62rem; font-weight: 700; color: #4a4a44; }
+.wd-quiet { border: 0; background: none; padding: 4px 0; color: #6b6961; font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; cursor: pointer; }
+.wd-quiet:hover { color: #1b1d19; }
+
+.wd-tabs { display: flex; flex-wrap: wrap; padding: 0 4.5vw; border-bottom: 0; }
+.wd-tabs button {
+  border: 1px solid #cfc8ba; background: #f8f5ee; color: #3d3d38;
+  margin-right: -1px; margin-bottom: -1px; padding: 10px 18px;
+  font-size: .66rem; font-weight: 650; text-transform: uppercase; letter-spacing: .12em;
+  cursor: pointer; white-space: nowrap;
+}
+.wd-tabs button:last-child { margin-left: 14px; }
+.wd-tabs button.active { background: #17171a; border-color: #17171a; color: #f6f1e8; }
+.wd-tabs button:hover:not(.active) { background: #efeade; }
+
+.wd-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 44px 30px; padding: 40px 4.5vw 90px; align-items: end;
+}
+.wd-piece { border: 0; background: none; padding: 0; cursor: zoom-in; }
+.wd-piece img { width: 100%; height: 200px; object-fit: contain; display: block; transition: transform .22s ease; }
+.wd-piece:hover img { transform: scale(1.045); }
+.wd-piece:focus-visible { outline: 1px solid #17171a; outline-offset: 6px; }
+
+.wd-empty { margin: 60px 4.5vw 90px; padding: 70px 30px; border: 1px dashed #c6bfb1; text-align: center; color: #6d6b63; }
+.wd-empty p { max-width: 460px; margin: 0 auto 18px; }
+.wd-empty button { border: 1px solid #17171a; background: transparent; color: #17171a; padding: 11px 18px; font-size: .66rem; text-transform: uppercase; letter-spacing: .1em; cursor: pointer; }
+.wd-empty button:hover { background: #17171a; color: #f6f1e8; }
+
+.wd-outfits { padding: 26px 4.5vw 90px; }
+.wd-outfit-tools { display: flex; align-items: end; justify-content: space-between; gap: 22px; margin-bottom: 30px; flex-wrap: wrap; }
+.wd-filters { display: flex; flex-wrap: wrap; gap: -1px; }
+.wd-filters label { border: 1px solid #cfc8ba; background: #f8f5ee; padding: 9px 14px; margin-right: -1px; min-width: 128px; }
+.wd-filters span { display: block; text-transform: uppercase; letter-spacing: .12em; font-size: .52rem; font-weight: 700; color: #76736b; margin-bottom: 3px; }
+.wd-filters select { width: 100%; border: 0; background: transparent; font: 600 .8rem/1.2 inherit; color: inherit; outline: 0; }
+.wd-links { display: flex; gap: 20px; }
+.wd-links button { border: 0; background: none; padding: 0 0 2px; color: #4a4a44; font-size: .66rem; text-transform: uppercase; letter-spacing: .11em; border-bottom: 1px solid #b9b2a4; cursor: pointer; }
+.wd-links button:hover { color: #17171a; border-color: #17171a; }
+.wd-back { border: 0; background: none; padding: 0; margin: 0 0 22px; color: #6b6961; font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; cursor: pointer; }
+.wd-back:hover { color: #17171a; }
+
+/* tarjetas de outfit planas */
+.wd-shell .tryon-look-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 34px 26px; }
+.wd-shell .tryon-look-card { display: block; min-height: 0; background: transparent; border: 0; }
+.wd-shell .tryon-look-visual { min-height: 0; aspect-ratio: 4 / 5; background: #ede8dc; }
+.wd-shell .garment-composition { background: transparent; gap: 0; }
+.wd-shell .garment-mini { background: transparent; }
+.wd-shell .garment-mini img { padding: 14%; }
+.wd-shell .garment-mini span { display: none; }
+.wd-shell .match-score { top: 10px; left: 10px; background: transparent; color: #55534c; padding: 0; font-size: .6rem; letter-spacing: .1em; }
+.wd-shell .look-heart { top: 8px; right: 8px; width: 30px; height: 30px; background: transparent; color: #55534c; }
+.wd-shell .look-heart:hover, .wd-shell .look-heart.active { color: #17171a; }
+.wd-shell .tryon-look-copy { padding: 12px 2px 0; }
+.wd-shell .tryon-look-copy > div:first-child > p { color: #8a877e; font-size: .54rem; margin-bottom: 4px; }
+.wd-shell .tryon-look-copy h3 { font-size: 1.02rem; font-family: inherit; font-weight: 600; letter-spacing: 0; line-height: 1.25; }
+.wd-try { border: 0; background: none; padding: 8px 0 0; color: #4a4a44; font-size: .62rem; text-transform: uppercase; letter-spacing: .11em; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.wd-try:hover:not(:disabled) { color: #17171a; }
+.wd-try:disabled { opacity: .45; cursor: wait; }
+
+@media (max-width: 720px) {
+  .wd-topline { padding: 24px 20px 12px; }
+  .wd-tabs { padding: 0 20px; }
+  .wd-grid { padding: 30px 20px 70px; gap: 30px 18px; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+  .wd-piece img { height: 150px; }
+  .wd-outfits { padding: 20px 20px 70px; }
+}
+
+/* ---- selección de modelo ---- */
+.wd-model-select { padding: 30px 4.5vw 90px; max-width: 1080px; }
+.wd-model-heading { margin-bottom: 30px; }
+.wd-model-heading p { margin: 0 0 6px; text-transform: uppercase; letter-spacing: .16em; font-size: .58rem; font-weight: 700; color: #8a877e; }
+.wd-model-heading h2 { margin: 0 0 8px; font-family: Georgia, serif; font-weight: 400; font-size: clamp(1.9rem, 3vw, 2.8rem); letter-spacing: -.03em; }
+.wd-model-heading span { color: #6d6b63; font-size: .85rem; }
+.wd-model-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 18px; margin-bottom: 26px; }
+.wd-model-card { border: 1px solid #cfc8ba; background: #f8f5ee; padding: 0 0 12px; cursor: pointer; display: flex; flex-direction: column; gap: 10px; }
+.wd-model-card img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top; display: block; }
+.wd-model-card > span:last-child { font-size: .64rem; text-transform: uppercase; letter-spacing: .11em; font-weight: 650; color: #3d3d38; padding: 0 12px; }
+.wd-model-card.active { border-color: #17171a; outline: 1px solid #17171a; }
+.wd-model-own-hint { flex: 1; display: grid; place-content: center; padding: 20px 16px 8px; color: #8a877e; font-size: .74rem; line-height: 1.5; text-align: center; min-height: 180px; }
+.wd-model-upload { margin: -8px 0 24px; }
+.wd-model-upload button { border: 1px solid #17171a; background: transparent; padding: 10px 16px; font-size: .64rem; text-transform: uppercase; letter-spacing: .1em; cursor: pointer; }
+.wd-model-upload button:hover { background: #17171a; color: #f6f1e8; }
+.wd-model-build { display: flex; align-items: center; gap: 10px; margin-bottom: 30px; }
+.wd-model-build > span { text-transform: uppercase; letter-spacing: .12em; font-size: .58rem; font-weight: 700; color: #76736b; margin-right: 6px; }
+.wd-model-build button { border: 1px solid #cfc8ba; background: #f8f5ee; padding: 9px 18px; font-size: .64rem; text-transform: uppercase; letter-spacing: .1em; cursor: pointer; }
+.wd-model-build button.active { background: #17171a; border-color: #17171a; color: #f6f1e8; }
+.wd-model-save { border: 1px solid #17171a; background: #17171a; color: #f6f1e8; padding: 13px 26px; font-size: .66rem; text-transform: uppercase; letter-spacing: .1em; cursor: pointer; }
+.wd-model-save:hover:not(:disabled) { background: #6e2b35; border-color: #6e2b35; }
+.wd-model-save:disabled { opacity: .5; cursor: wait; }
+.wd-topline-actions { display: flex; gap: 22px; }
+.wd-model-gender { margin-bottom: 22px; }
+.wd-model-chip { display: flex; align-items: center; gap: 9px; border: 1px solid #cfc8ba; background: #f8f5ee; padding: 5px 12px 5px 5px; cursor: pointer; }
+.wd-model-chip img { width: 30px; height: 30px; object-fit: cover; object-position: top; border-radius: 50%; }
+.wd-model-chip span { font-size: .64rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 650; color: #3d3d38; }
+.wd-model-chip:hover { border-color: #17171a; }

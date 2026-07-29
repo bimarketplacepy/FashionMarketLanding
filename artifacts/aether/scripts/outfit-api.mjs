@@ -85,9 +85,10 @@ function outfitPrompt(outfit, garments, profile = {}) {
     ? "Layer the exact outer garment naturally over the exact top. Preserve its real closure construction; never invent an opening, zipper, buttons, or placket. Keep both selected pieces visibly identifiable."
     : "";
   const garmentSentence = `Dress them in the exact top "${top?.name}", exact bottom "${bottom?.name}"${outer ? `, exact outer layer "${outer.name}"` : ""}${extras.length ? `, and exact ${extras.map((item) => item.name).join(" and ")}` : ""}. Do not add, replace, or invent any other visible clothing or accessory.`;
+  const modelGender = profile.gender === "hombre" ? "male" : "female";
   const subject = usePhoto
     ? `Subject: Preserve the same person's recognizable face, hair, age, skin tone, and skin texture from Image 1.${build ? ` Render their body with a ${build} while keeping the face and identity unmistakably the same person.` : " Preserve their build and body proportions."} ${garmentSentence}`
-    : `Subject: A professional fashion model with ${build || "an average, balanced build"}${tone ? ` and ${tone}` : ""}, natural realistic features, friendly neutral expression. ${garmentSentence}`;
+    : `Subject: A professional ${modelGender} fashion model with ${build || "an average, balanced build"}${tone ? ` and ${tone}` : ""}, natural realistic features, friendly neutral expression. ${garmentSentence}`;
   const identityLine = usePhoto ? "\nImage 1: identity reference for the exact person to preserve." : "";
   const primary = usePhoto
     ? "Primary request: Create a professional square editorial fashion photograph of the person from Image 1 wearing every exact referenced garment, and only those garments."
@@ -204,8 +205,10 @@ export function outfitApi(options = {}) {
         const mode = input.mode === "default" ? "default" : "photo";
         const profile = {
           mode,
+          gender: input.gender === "hombre" ? "hombre" : "mujer",
           complexion: Object.keys(COMPLEXIONS).includes(input.complexion) ? input.complexion : null,
           skinTone: Object.keys(SKIN_TONES).includes(input.skinTone) ? input.skinTone : null,
+          preset: typeof input.preset === "string" ? input.preset.trim().slice(0, 40) || null : null,
           updatedAt: new Date().toISOString(),
         };
         await atomicJson(modelProfileFile, profile);

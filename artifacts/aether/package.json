@@ -9,7 +9,9 @@
     "serve": "vite preview --config vite.config.ts --host 0.0.0.0",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "import-catalog": "node scripts/import-catalog.mjs",
-    "claude-import": "node scripts/claude-import.mjs"
+    "claude-import": "node scripts/claude-import.mjs",
+    "regenerate-garments": "node scripts/regenerate-garments.mjs",
+    "generate-models": "node scripts/generate-models.mjs"
   },
   "devDependencies": {
     "@hookform/resolvers": "^3.10.0",

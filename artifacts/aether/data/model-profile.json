@@ -1,6 +1,8 @@
 {
   "mode": "default",
+  "gender": "hombre",
   "complexion": "atletica",
-  "skinTone": "media",
-  "updatedAt": "2026-07-29T13:04:35.436Z"
+  "skinTone": "oscura",
+  "preset": "h-negro",
+  "updatedAt": "2026-07-29T17:30:23.741Z"
 }

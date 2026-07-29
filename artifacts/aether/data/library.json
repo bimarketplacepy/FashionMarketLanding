@@ -29,7 +29,8 @@
     "image": "/api/import/library/import-c2a43768-472f-4ecb-a7fc-6bfbfa321b60-garment.png",
     "thumbnail": "/api/import/library/import-c2a43768-472f-4ecb-a7fc-6bfbfa321b60-garment.png",
     "modeledImage": null,
-    "importJobId": "c2a43768-472f-4ecb-a7fc-6bfbfa321b60"
+    "importJobId": "c2a43768-472f-4ecb-a7fc-6bfbfa321b60",
+    "gender": "unisex"
   },
   {
     "id": "import-99cdb7f7-3c4d-465b-be96-547c89c7d930",
@@ -63,7 +64,8 @@
     "image": "/api/import/library/import-99cdb7f7-3c4d-465b-be96-547c89c7d930-garment.png",
     "thumbnail": "/api/import/library/import-99cdb7f7-3c4d-465b-be96-547c89c7d930-garment.png",
     "modeledImage": null,
-    "importJobId": "99cdb7f7-3c4d-465b-be96-547c89c7d930"
+    "importJobId": "99cdb7f7-3c4d-465b-be96-547c89c7d930",
+    "gender": "mujer"
   },
   {
     "id": "import-f44f6426-6d75-4676-95d0-75d92e8a4ecc",
@@ -97,7 +99,8 @@
     "image": "/api/import/library/import-f44f6426-6d75-4676-95d0-75d92e8a4ecc-garment.png",
     "thumbnail": "/api/import/library/import-f44f6426-6d75-4676-95d0-75d92e8a4ecc-garment.png",
     "modeledImage": null,
-    "importJobId": "f44f6426-6d75-4676-95d0-75d92e8a4ecc"
+    "importJobId": "f44f6426-6d75-4676-95d0-75d92e8a4ecc",
+    "gender": "mujer"
   },
   {
     "id": "import-50b64953-0c39-47f6-b025-694be5d0f9be",
@@ -130,7 +133,8 @@
     "image": "/api/import/library/import-50b64953-0c39-47f6-b025-694be5d0f9be-garment.png",
     "thumbnail": "/api/import/library/import-50b64953-0c39-47f6-b025-694be5d0f9be-garment.png",
     "modeledImage": null,
-    "importJobId": "50b64953-0c39-47f6-b025-694be5d0f9be"
+    "importJobId": "50b64953-0c39-47f6-b025-694be5d0f9be",
+    "gender": "mujer"
   },
   {
     "id": "import-43e96dd0-bb10-4c08-ac32-78a38ec3848a",
@@ -163,7 +167,8 @@
     "image": "/api/import/library/import-43e96dd0-bb10-4c08-ac32-78a38ec3848a-garment.png",
     "thumbnail": "/api/import/library/import-43e96dd0-bb10-4c08-ac32-78a38ec3848a-garment.png",
     "modeledImage": null,
-    "importJobId": "43e96dd0-bb10-4c08-ac32-78a38ec3848a"
+    "importJobId": "43e96dd0-bb10-4c08-ac32-78a38ec3848a",
+    "gender": "mujer"
   },
   {
     "id": "import-f13a2c7f-5398-4b19-84c3-70dc243de93d",
@@ -195,7 +200,8 @@
     "image": "/api/import/library/import-f13a2c7f-5398-4b19-84c3-70dc243de93d-garment.png",
     "thumbnail": "/api/import/library/import-f13a2c7f-5398-4b19-84c3-70dc243de93d-garment.png",
     "modeledImage": null,
-    "importJobId": "f13a2c7f-5398-4b19-84c3-70dc243de93d"
+    "importJobId": "f13a2c7f-5398-4b19-84c3-70dc243de93d",
+    "gender": "hombre"
   },
   {
     "id": "import-915b8682-9df8-4146-bf4d-e7cd2a8c8026",
@@ -227,7 +233,8 @@
     "image": "/api/import/library/import-915b8682-9df8-4146-bf4d-e7cd2a8c8026-garment.png",
     "thumbnail": "/api/import/library/import-915b8682-9df8-4146-bf4d-e7cd2a8c8026-garment.png",
     "modeledImage": null,
-    "importJobId": "915b8682-9df8-4146-bf4d-e7cd2a8c8026"
+    "importJobId": "915b8682-9df8-4146-bf4d-e7cd2a8c8026",
+    "gender": "hombre"
   },
   {
     "id": "import-e84cb452-6406-4872-8158-819d55ae68a7",
@@ -259,7 +266,8 @@
     "image": "/api/import/library/import-e84cb452-6406-4872-8158-819d55ae68a7-garment.png",
     "thumbnail": "/api/import/library/import-e84cb452-6406-4872-8158-819d55ae68a7-garment.png",
     "modeledImage": null,
-    "importJobId": "e84cb452-6406-4872-8158-819d55ae68a7"
+    "importJobId": "e84cb452-6406-4872-8158-819d55ae68a7",
+    "gender": "hombre"
   },
   {
     "id": "import-33bed19b-f191-4f83-86a9-0f80b0d50ef3",
@@ -292,7 +300,8 @@
     "image": "/api/import/library/import-33bed19b-f191-4f83-86a9-0f80b0d50ef3-garment.png",
     "thumbnail": "/api/import/library/import-33bed19b-f191-4f83-86a9-0f80b0d50ef3-garment.png",
     "modeledImage": null,
-    "importJobId": "33bed19b-f191-4f83-86a9-0f80b0d50ef3"
+    "importJobId": "33bed19b-f191-4f83-86a9-0f80b0d50ef3",
+    "gender": "mujer"
   },
   {
     "id": "import-588c9ef5-37ff-4e4b-bf27-202ef641527e",
@@ -325,7 +334,8 @@
     "image": "/api/import/library/import-588c9ef5-37ff-4e4b-bf27-202ef641527e-garment.png",
     "thumbnail": "/api/import/library/import-588c9ef5-37ff-4e4b-bf27-202ef641527e-garment.png",
     "modeledImage": null,
-    "importJobId": "588c9ef5-37ff-4e4b-bf27-202ef641527e"
+    "importJobId": "588c9ef5-37ff-4e4b-bf27-202ef641527e",
+    "gender": "mujer"
   },
   {
     "id": "import-f7a72e7d-0d12-453b-8085-cb312b3ca949",
@@ -358,7 +368,8 @@
     "image": "/api/import/library/import-f7a72e7d-0d12-453b-8085-cb312b3ca949-garment.png",
     "thumbnail": "/api/import/library/import-f7a72e7d-0d12-453b-8085-cb312b3ca949-garment.png",
     "modeledImage": null,
-    "importJobId": "f7a72e7d-0d12-453b-8085-cb312b3ca949"
+    "importJobId": "f7a72e7d-0d12-453b-8085-cb312b3ca949",
+    "gender": "mujer"
   },
   {
     "id": "import-52532fe2-78db-4f02-bcaf-504f25578680",
@@ -389,7 +400,8 @@
     "image": "/api/import/library/import-52532fe2-78db-4f02-bcaf-504f25578680-garment.png",
     "thumbnail": "/api/import/library/import-52532fe2-78db-4f02-bcaf-504f25578680-garment.png",
     "modeledImage": null,
-    "importJobId": "52532fe2-78db-4f02-bcaf-504f25578680"
+    "importJobId": "52532fe2-78db-4f02-bcaf-504f25578680",
+    "gender": "mujer"
   },
   {
     "id": "import-a7c06278-66be-4353-8d97-53c3d806d9cf",
@@ -420,7 +432,8 @@
     "image": "/api/import/library/import-a7c06278-66be-4353-8d97-53c3d806d9cf-garment.png",
     "thumbnail": "/api/import/library/import-a7c06278-66be-4353-8d97-53c3d806d9cf-garment.png",
     "modeledImage": null,
-    "importJobId": "a7c06278-66be-4353-8d97-53c3d806d9cf"
+    "importJobId": "a7c06278-66be-4353-8d97-53c3d806d9cf",
+    "gender": "mujer"
   },
   {
     "id": "import-a938d42f-9579-4093-9b72-acf61fe8f795",
@@ -452,7 +465,8 @@
     "image": "/api/import/library/import-a938d42f-9579-4093-9b72-acf61fe8f795-garment.png",
     "thumbnail": "/api/import/library/import-a938d42f-9579-4093-9b72-acf61fe8f795-garment.png",
     "modeledImage": null,
-    "importJobId": "a938d42f-9579-4093-9b72-acf61fe8f795"
+    "importJobId": "a938d42f-9579-4093-9b72-acf61fe8f795",
+    "gender": "mujer"
   },
   {
     "id": "import-8254961d-5b91-47f3-94cd-a174bbf4c836",
@@ -484,7 +498,8 @@
     "image": "/api/import/library/import-8254961d-5b91-47f3-94cd-a174bbf4c836-garment.png",
     "thumbnail": "/api/import/library/import-8254961d-5b91-47f3-94cd-a174bbf4c836-garment.png",
     "modeledImage": null,
-    "importJobId": "8254961d-5b91-47f3-94cd-a174bbf4c836"
+    "importJobId": "8254961d-5b91-47f3-94cd-a174bbf4c836",
+    "gender": "mujer"
   },
   {
     "id": "import-45c1c3c9-ffe8-4d96-b2a6-b64c241854f3",
@@ -515,7 +530,8 @@
     "image": "/api/import/library/import-45c1c3c9-ffe8-4d96-b2a6-b64c241854f3-garment.png",
     "thumbnail": "/api/import/library/import-45c1c3c9-ffe8-4d96-b2a6-b64c241854f3-garment.png",
     "modeledImage": null,
-    "importJobId": "45c1c3c9-ffe8-4d96-b2a6-b64c241854f3"
+    "importJobId": "45c1c3c9-ffe8-4d96-b2a6-b64c241854f3",
+    "gender": "mujer"
   },
   {
     "id": "import-0bfbea48-c51e-459f-8345-ccd5f0bb568d",
@@ -547,7 +563,8 @@
     "image": "/api/import/library/import-0bfbea48-c51e-459f-8345-ccd5f0bb568d-garment.png",
     "thumbnail": "/api/import/library/import-0bfbea48-c51e-459f-8345-ccd5f0bb568d-garment.png",
     "modeledImage": null,
-    "importJobId": "0bfbea48-c51e-459f-8345-ccd5f0bb568d"
+    "importJobId": "0bfbea48-c51e-459f-8345-ccd5f0bb568d",
+    "gender": "mujer"
   },
   {
     "id": "import-b740b941-aa5a-4d37-8119-52286f566f72",
@@ -579,7 +596,8 @@
     "image": "/api/import/library/import-b740b941-aa5a-4d37-8119-52286f566f72-garment.png",
     "thumbnail": "/api/import/library/import-b740b941-aa5a-4d37-8119-52286f566f72-garment.png",
     "modeledImage": null,
-    "importJobId": "b740b941-aa5a-4d37-8119-52286f566f72"
+    "importJobId": "b740b941-aa5a-4d37-8119-52286f566f72",
+    "gender": "mujer"
   },
   {
     "id": "import-4ab3b490-67f8-499e-a576-80d35d4d77d3",
@@ -613,7 +631,8 @@
     "image": "/api/import/library/import-4ab3b490-67f8-499e-a576-80d35d4d77d3-garment.png",
     "thumbnail": "/api/import/library/import-4ab3b490-67f8-499e-a576-80d35d4d77d3-garment.png",
     "modeledImage": null,
-    "importJobId": "4ab3b490-67f8-499e-a576-80d35d4d77d3"
+    "importJobId": "4ab3b490-67f8-499e-a576-80d35d4d77d3",
+    "gender": "mujer"
   },
   {
     "id": "import-d72d4044-f86e-42fa-b85b-1fa429c216cf",
@@ -645,7 +664,8 @@
     "image": "/api/import/library/import-d72d4044-f86e-42fa-b85b-1fa429c216cf-garment.png",
     "thumbnail": "/api/import/library/import-d72d4044-f86e-42fa-b85b-1fa429c216cf-garment.png",
     "modeledImage": null,
-    "importJobId": "d72d4044-f86e-42fa-b85b-1fa429c216cf"
+    "importJobId": "d72d4044-f86e-42fa-b85b-1fa429c216cf",
+    "gender": "mujer"
   },
   {
     "id": "import-5a49a5f3-872b-4cec-9033-8006dfa587c7",
@@ -678,7 +698,8 @@
     "image": "/api/import/library/import-5a49a5f3-872b-4cec-9033-8006dfa587c7-garment.png",
     "thumbnail": "/api/import/library/import-5a49a5f3-872b-4cec-9033-8006dfa587c7-garment.png",
     "modeledImage": null,
-    "importJobId": "5a49a5f3-872b-4cec-9033-8006dfa587c7"
+    "importJobId": "5a49a5f3-872b-4cec-9033-8006dfa587c7",
+    "gender": "unisex"
   },
   {
     "id": "import-b54f52dc-9e93-424d-8116-3ef0c2856377",
@@ -712,7 +733,8 @@
     "image": "/api/import/library/import-b54f52dc-9e93-424d-8116-3ef0c2856377-garment.png",
     "thumbnail": "/api/import/library/import-b54f52dc-9e93-424d-8116-3ef0c2856377-garment.png",
     "modeledImage": null,
-    "importJobId": "b54f52dc-9e93-424d-8116-3ef0c2856377"
+    "importJobId": "b54f52dc-9e93-424d-8116-3ef0c2856377",
+    "gender": "mujer"
   },
   {
     "id": "import-bb97eb15-c57d-4ce9-a8aa-8c1bd3efea90",
@@ -744,7 +766,8 @@
     "image": "/api/import/library/import-bb97eb15-c57d-4ce9-a8aa-8c1bd3efea90-garment.png",
     "thumbnail": "/api/import/library/import-bb97eb15-c57d-4ce9-a8aa-8c1bd3efea90-garment.png",
     "modeledImage": null,
-    "importJobId": "bb97eb15-c57d-4ce9-a8aa-8c1bd3efea90"
+    "importJobId": "bb97eb15-c57d-4ce9-a8aa-8c1bd3efea90",
+    "gender": "mujer"
   },
   {
     "id": "import-a09375bf-9a20-45af-a8d3-e1744e5d05f6",
@@ -778,7 +801,8 @@
     "image": "/api/import/library/import-a09375bf-9a20-45af-a8d3-e1744e5d05f6-garment.png",
     "thumbnail": "/api/import/library/import-a09375bf-9a20-45af-a8d3-e1744e5d05f6-garment.png",
     "modeledImage": null,
-    "importJobId": "a09375bf-9a20-45af-a8d3-e1744e5d05f6"
+    "importJobId": "a09375bf-9a20-45af-a8d3-e1744e5d05f6",
+    "gender": "mujer"
   },
   {
     "id": "import-9bd2b6d3-f29b-42cf-9c7a-0ae6bacdec3e",
@@ -811,7 +835,8 @@
     "image": "/api/import/library/import-9bd2b6d3-f29b-42cf-9c7a-0ae6bacdec3e-garment.png",
     "thumbnail": "/api/import/library/import-9bd2b6d3-f29b-42cf-9c7a-0ae6bacdec3e-garment.png",
     "modeledImage": null,
-    "importJobId": "9bd2b6d3-f29b-42cf-9c7a-0ae6bacdec3e"
+    "importJobId": "9bd2b6d3-f29b-42cf-9c7a-0ae6bacdec3e",
+    "gender": "mujer"
   },
   {
     "id": "import-92095aef-2410-4314-b40c-3250d16abe07",
@@ -843,7 +868,8 @@
     "image": "/api/import/library/import-92095aef-2410-4314-b40c-3250d16abe07-garment.png",
     "thumbnail": "/api/import/library/import-92095aef-2410-4314-b40c-3250d16abe07-garment.png",
     "modeledImage": null,
-    "importJobId": "92095aef-2410-4314-b40c-3250d16abe07"
+    "importJobId": "92095aef-2410-4314-b40c-3250d16abe07",
+    "gender": "mujer"
   },
   {
     "id": "import-c16da2f8-4534-467f-9e34-49934fc61371",
@@ -874,7 +900,8 @@
     "image": "/api/import/library/import-c16da2f8-4534-467f-9e34-49934fc61371-garment.png",
     "thumbnail": "/api/import/library/import-c16da2f8-4534-467f-9e34-49934fc61371-garment.png",
     "modeledImage": null,
-    "importJobId": "c16da2f8-4534-467f-9e34-49934fc61371"
+    "importJobId": "c16da2f8-4534-467f-9e34-49934fc61371",
+    "gender": "unisex"
   },
   {
     "id": "import-49659382-6952-4609-95e3-d398663a708b",
@@ -906,7 +933,8 @@
     "image": "/api/import/library/import-49659382-6952-4609-95e3-d398663a708b-garment.png",
     "thumbnail": "/api/import/library/import-49659382-6952-4609-95e3-d398663a708b-garment.png",
     "modeledImage": null,
-    "importJobId": "49659382-6952-4609-95e3-d398663a708b"
+    "importJobId": "49659382-6952-4609-95e3-d398663a708b",
+    "gender": "mujer"
   },
   {
     "id": "import-3ef841af-70c3-4456-bbcc-9ff0f339d505",
@@ -939,7 +967,8 @@
     "image": "/api/import/library/import-3ef841af-70c3-4456-bbcc-9ff0f339d505-garment.png",
     "thumbnail": "/api/import/library/import-3ef841af-70c3-4456-bbcc-9ff0f339d505-garment.png",
     "modeledImage": null,
-    "importJobId": "3ef841af-70c3-4456-bbcc-9ff0f339d505"
+    "importJobId": "3ef841af-70c3-4456-bbcc-9ff0f339d505",
+    "gender": "mujer"
   },
   {
     "id": "import-670dc79b-fc3a-4de3-892b-5a7b32d25843",
@@ -973,7 +1002,8 @@
     "image": "/api/import/library/import-670dc79b-fc3a-4de3-892b-5a7b32d25843-garment.png",
     "thumbnail": "/api/import/library/import-670dc79b-fc3a-4de3-892b-5a7b32d25843-garment.png",
     "modeledImage": null,
-    "importJobId": "670dc79b-fc3a-4de3-892b-5a7b32d25843"
+    "importJobId": "670dc79b-fc3a-4de3-892b-5a7b32d25843",
+    "gender": "mujer"
   },
   {
     "id": "import-55ced80d-e3de-4058-beb9-e61b1056cd9a",
@@ -1005,7 +1035,8 @@
     "image": "/api/import/library/import-55ced80d-e3de-4058-beb9-e61b1056cd9a-garment.png",
     "thumbnail": "/api/import/library/import-55ced80d-e3de-4058-beb9-e61b1056cd9a-garment.png",
     "modeledImage": null,
-    "importJobId": "55ced80d-e3de-4058-beb9-e61b1056cd9a"
+    "importJobId": "55ced80d-e3de-4058-beb9-e61b1056cd9a",
+    "gender": "unisex"
   },
   {
     "id": "import-e23b4213-2a9c-47cc-a5bb-0ffc316d26ad",
@@ -1037,7 +1068,8 @@
     "image": "/api/import/library/import-e23b4213-2a9c-47cc-a5bb-0ffc316d26ad-garment.png",
     "thumbnail": "/api/import/library/import-e23b4213-2a9c-47cc-a5bb-0ffc316d26ad-garment.png",
     "modeledImage": null,
-    "importJobId": "e23b4213-2a9c-47cc-a5bb-0ffc316d26ad"
+    "importJobId": "e23b4213-2a9c-47cc-a5bb-0ffc316d26ad",
+    "gender": "unisex"
   },
   {
     "id": "import-026d0709-7b2c-4c5d-84e3-f22a4203e2aa",
@@ -1069,7 +1101,8 @@
     "image": "/api/import/library/import-026d0709-7b2c-4c5d-84e3-f22a4203e2aa-garment.png",
     "thumbnail": "/api/import/library/import-026d0709-7b2c-4c5d-84e3-f22a4203e2aa-garment.png",
     "modeledImage": null,
-    "importJobId": "026d0709-7b2c-4c5d-84e3-f22a4203e2aa"
+    "importJobId": "026d0709-7b2c-4c5d-84e3-f22a4203e2aa",
+    "gender": "unisex"
   },
   {
     "id": "import-b9fbe1f0-f134-4c09-9c4c-8c352659fd32",
@@ -1102,7 +1135,8 @@
     "image": "/api/import/library/import-b9fbe1f0-f134-4c09-9c4c-8c352659fd32-garment.png",
     "thumbnail": "/api/import/library/import-b9fbe1f0-f134-4c09-9c4c-8c352659fd32-garment.png",
     "modeledImage": null,
-    "importJobId": "b9fbe1f0-f134-4c09-9c4c-8c352659fd32"
+    "importJobId": "b9fbe1f0-f134-4c09-9c4c-8c352659fd32",
+    "gender": "unisex"
   },
   {
     "id": "import-278918fb-24ad-4291-8700-cb445e5cb1cb",
@@ -1134,7 +1168,8 @@
     "image": "/api/import/library/import-278918fb-24ad-4291-8700-cb445e5cb1cb-garment.png",
     "thumbnail": "/api/import/library/import-278918fb-24ad-4291-8700-cb445e5cb1cb-garment.png",
     "modeledImage": null,
-    "importJobId": "278918fb-24ad-4291-8700-cb445e5cb1cb"
+    "importJobId": "278918fb-24ad-4291-8700-cb445e5cb1cb",
+    "gender": "unisex"
   },
   {
     "id": "import-0835a7b3-31f7-4512-87b2-fd42e73088ee",
@@ -1167,7 +1202,8 @@
     "image": "/api/import/library/import-0835a7b3-31f7-4512-87b2-fd42e73088ee-garment.png",
     "thumbnail": "/api/import/library/import-0835a7b3-31f7-4512-87b2-fd42e73088ee-garment.png",
     "modeledImage": null,
-    "importJobId": "0835a7b3-31f7-4512-87b2-fd42e73088ee"
+    "importJobId": "0835a7b3-31f7-4512-87b2-fd42e73088ee",
+    "gender": "unisex"
   },
   {
     "id": "import-90eb24d3-fd84-44ee-b68c-fc7be618e3bb",
@@ -1200,7 +1236,8 @@
     "image": "/api/import/library/import-90eb24d3-fd84-44ee-b68c-fc7be618e3bb-garment.png",
     "thumbnail": "/api/import/library/import-90eb24d3-fd84-44ee-b68c-fc7be618e3bb-garment.png",
     "modeledImage": null,
-    "importJobId": "90eb24d3-fd84-44ee-b68c-fc7be618e3bb"
+    "importJobId": "90eb24d3-fd84-44ee-b68c-fc7be618e3bb",
+    "gender": "unisex"
   },
   {
     "id": "import-cb094c93-ecd5-4a01-b2e3-cc299f2ebd9b",
@@ -1234,7 +1271,8 @@
     "image": "/api/import/library/import-cb094c93-ecd5-4a01-b2e3-cc299f2ebd9b-garment.png",
     "thumbnail": "/api/import/library/import-cb094c93-ecd5-4a01-b2e3-cc299f2ebd9b-garment.png",
     "modeledImage": null,
-    "importJobId": "cb094c93-ecd5-4a01-b2e3-cc299f2ebd9b"
+    "importJobId": "cb094c93-ecd5-4a01-b2e3-cc299f2ebd9b",
+    "gender": "mujer"
   },
   {
     "id": "import-87cc7562-c841-4382-a1cf-d0562cf7bd7f",
@@ -1266,7 +1304,8 @@
     "image": "/api/import/library/import-87cc7562-c841-4382-a1cf-d0562cf7bd7f-garment.png",
     "thumbnail": "/api/import/library/import-87cc7562-c841-4382-a1cf-d0562cf7bd7f-garment.png",
     "modeledImage": null,
-    "importJobId": "87cc7562-c841-4382-a1cf-d0562cf7bd7f"
+    "importJobId": "87cc7562-c841-4382-a1cf-d0562cf7bd7f",
+    "gender": "mujer"
   },
   {
     "id": "import-71f3da00-6e4e-4188-b8ff-4218a2bbf1ba",
@@ -1299,7 +1338,8 @@
     "image": "/api/import/library/import-71f3da00-6e4e-4188-b8ff-4218a2bbf1ba-garment.png",
     "thumbnail": "/api/import/library/import-71f3da00-6e4e-4188-b8ff-4218a2bbf1ba-garment.png",
     "modeledImage": null,
-    "importJobId": "71f3da00-6e4e-4188-b8ff-4218a2bbf1ba"
+    "importJobId": "71f3da00-6e4e-4188-b8ff-4218a2bbf1ba",
+    "gender": "mujer"
   },
   {
     "id": "import-b040471a-6d76-4ef8-b611-b54b6a13b150",
@@ -1332,7 +1372,8 @@
     "image": "/api/import/library/import-b040471a-6d76-4ef8-b611-b54b6a13b150-garment.png",
     "thumbnail": "/api/import/library/import-b040471a-6d76-4ef8-b611-b54b6a13b150-garment.png",
     "modeledImage": null,
-    "importJobId": "b040471a-6d76-4ef8-b611-b54b6a13b150"
+    "importJobId": "b040471a-6d76-4ef8-b611-b54b6a13b150",
+    "gender": "mujer"
   },
   {
     "id": "import-e952b22d-8df7-42fc-bfbe-0b2fc7bab261",
@@ -1365,7 +1406,8 @@
     "image": "/api/import/library/import-e952b22d-8df7-42fc-bfbe-0b2fc7bab261-garment.png",
     "thumbnail": "/api/import/library/import-e952b22d-8df7-42fc-bfbe-0b2fc7bab261-garment.png",
     "modeledImage": null,
-    "importJobId": "e952b22d-8df7-42fc-bfbe-0b2fc7bab261"
+    "importJobId": "e952b22d-8df7-42fc-bfbe-0b2fc7bab261",
+    "gender": "mujer"
   },
   {
     "id": "import-e3932b48-fdc1-49da-89fb-e20ee523c6b8",
@@ -1398,7 +1440,8 @@
     "image": "/api/import/library/import-e3932b48-fdc1-49da-89fb-e20ee523c6b8-garment.png",
     "thumbnail": "/api/import/library/import-e3932b48-fdc1-49da-89fb-e20ee523c6b8-garment.png",
     "modeledImage": null,
-    "importJobId": "e3932b48-fdc1-49da-89fb-e20ee523c6b8"
+    "importJobId": "e3932b48-fdc1-49da-89fb-e20ee523c6b8",
+    "gender": "mujer"
   },
   {
     "id": "import-49534464-694e-4487-99fb-52795e330209",
@@ -1429,7 +1472,8 @@
     "image": "/api/import/library/import-49534464-694e-4487-99fb-52795e330209-garment.png",
     "thumbnail": "/api/import/library/import-49534464-694e-4487-99fb-52795e330209-garment.png",
     "modeledImage": null,
-    "importJobId": "49534464-694e-4487-99fb-52795e330209"
+    "importJobId": "49534464-694e-4487-99fb-52795e330209",
+    "gender": "unisex"
   },
   {
     "id": "import-9ebf7d97-f022-47d3-8219-8b3fa129c0cd",
@@ -1460,7 +1504,8 @@
     "image": "/api/import/library/import-9ebf7d97-f022-47d3-8219-8b3fa129c0cd-garment.png",
     "thumbnail": "/api/import/library/import-9ebf7d97-f022-47d3-8219-8b3fa129c0cd-garment.png",
     "modeledImage": null,
-    "importJobId": "9ebf7d97-f022-47d3-8219-8b3fa129c0cd"
+    "importJobId": "9ebf7d97-f022-47d3-8219-8b3fa129c0cd",
+    "gender": "mujer"
   },
   {
     "id": "import-adaf77ff-bf54-4f10-b0ca-a81727cd851c",
@@ -1493,7 +1538,8 @@
     "image": "/api/import/library/import-adaf77ff-bf54-4f10-b0ca-a81727cd851c-garment.png",
     "thumbnail": "/api/import/library/import-adaf77ff-bf54-4f10-b0ca-a81727cd851c-garment.png",
     "modeledImage": null,
-    "importJobId": "adaf77ff-bf54-4f10-b0ca-a81727cd851c"
+    "importJobId": "adaf77ff-bf54-4f10-b0ca-a81727cd851c",
+    "gender": "mujer"
   },
   {
     "id": "import-21d04282-398f-4352-83a6-e8721ca57ab4",
@@ -1525,7 +1571,8 @@
     "image": "/api/import/library/import-21d04282-398f-4352-83a6-e8721ca57ab4-garment.png",
     "thumbnail": "/api/import/library/import-21d04282-398f-4352-83a6-e8721ca57ab4-garment.png",
     "modeledImage": null,
-    "importJobId": "21d04282-398f-4352-83a6-e8721ca57ab4"
+    "importJobId": "21d04282-398f-4352-83a6-e8721ca57ab4",
+    "gender": "mujer"
   },
   {
     "id": "import-04b1341c-04d3-437e-9376-cd86de0f4ed6",
@@ -1557,7 +1604,8 @@
     "image": "/api/import/library/import-04b1341c-04d3-437e-9376-cd86de0f4ed6-garment.png",
     "thumbnail": "/api/import/library/import-04b1341c-04d3-437e-9376-cd86de0f4ed6-garment.png",
     "modeledImage": null,
-    "importJobId": "04b1341c-04d3-437e-9376-cd86de0f4ed6"
+    "importJobId": "04b1341c-04d3-437e-9376-cd86de0f4ed6",
+    "gender": "mujer"
   },
   {
     "id": "import-6bad6654-369a-437d-99ad-719ac514af98",
@@ -1589,7 +1637,8 @@
     "image": "/api/import/library/import-6bad6654-369a-437d-99ad-719ac514af98-garment.png",
     "thumbnail": "/api/import/library/import-6bad6654-369a-437d-99ad-719ac514af98-garment.png",
     "modeledImage": null,
-    "importJobId": "6bad6654-369a-437d-99ad-719ac514af98"
+    "importJobId": "6bad6654-369a-437d-99ad-719ac514af98",
+    "gender": "mujer"
   },
   {
     "id": "import-70b7c415-d1f6-447c-920b-6ef29e3263a6",
@@ -1621,7 +1670,8 @@
     "image": "/api/import/library/import-70b7c415-d1f6-447c-920b-6ef29e3263a6-garment.png",
     "thumbnail": "/api/import/library/import-70b7c415-d1f6-447c-920b-6ef29e3263a6-garment.png",
     "modeledImage": null,
-    "importJobId": "70b7c415-d1f6-447c-920b-6ef29e3263a6"
+    "importJobId": "70b7c415-d1f6-447c-920b-6ef29e3263a6",
+    "gender": "unisex"
   },
   {
     "id": "import-72b77f15-42d2-43d8-adb0-a3db102ff726",
@@ -1652,7 +1702,8 @@
     "image": "/api/import/library/import-72b77f15-42d2-43d8-adb0-a3db102ff726-garment.png",
     "thumbnail": "/api/import/library/import-72b77f15-42d2-43d8-adb0-a3db102ff726-garment.png",
     "modeledImage": null,
-    "importJobId": "72b77f15-42d2-43d8-adb0-a3db102ff726"
+    "importJobId": "72b77f15-42d2-43d8-adb0-a3db102ff726",
+    "gender": "mujer"
   },
   {
     "id": "import-720b3b52-d366-4ed0-a3e2-f09646f3070f",
@@ -1685,7 +1736,8 @@
     "image": "/api/import/library/import-720b3b52-d366-4ed0-a3e2-f09646f3070f-garment.png",
     "thumbnail": "/api/import/library/import-720b3b52-d366-4ed0-a3e2-f09646f3070f-garment.png",
     "modeledImage": null,
-    "importJobId": "720b3b52-d366-4ed0-a3e2-f09646f3070f"
+    "importJobId": "720b3b52-d366-4ed0-a3e2-f09646f3070f",
+    "gender": "mujer"
   },
   {
     "id": "import-df28ff9c-c3f1-49df-88f6-104499e84031",
@@ -1720,7 +1772,8 @@
     "image": "/api/import/library/import-df28ff9c-c3f1-49df-88f6-104499e84031-garment.png",
     "thumbnail": "/api/import/library/import-df28ff9c-c3f1-49df-88f6-104499e84031-garment.png",
     "modeledImage": null,
-    "importJobId": "df28ff9c-c3f1-49df-88f6-104499e84031"
+    "importJobId": "df28ff9c-c3f1-49df-88f6-104499e84031",
+    "gender": "mujer"
   },
   {
     "id": "import-4241246c-b11e-4c32-a4e2-941d9f05c714",
@@ -1751,7 +1804,8 @@
     "image": "/api/import/library/import-4241246c-b11e-4c32-a4e2-941d9f05c714-garment.png",
     "thumbnail": "/api/import/library/import-4241246c-b11e-4c32-a4e2-941d9f05c714-garment.png",
     "modeledImage": null,
-    "importJobId": "4241246c-b11e-4c32-a4e2-941d9f05c714"
+    "importJobId": "4241246c-b11e-4c32-a4e2-941d9f05c714",
+    "gender": "mujer"
   },
   {
     "id": "import-e30a8a13-08d3-429a-b77c-4fd5db22c038",
@@ -1783,7 +1837,8 @@
     "image": "/api/import/library/import-e30a8a13-08d3-429a-b77c-4fd5db22c038-garment.png",
     "thumbnail": "/api/import/library/import-e30a8a13-08d3-429a-b77c-4fd5db22c038-garment.png",
     "modeledImage": null,
-    "importJobId": "e30a8a13-08d3-429a-b77c-4fd5db22c038"
+    "importJobId": "e30a8a13-08d3-429a-b77c-4fd5db22c038",
+    "gender": "unisex"
   },
   {
     "id": "import-9d861898-5316-4246-a6c7-ebae2f390c62",
@@ -1816,7 +1871,8 @@
     "image": "/api/import/library/import-9d861898-5316-4246-a6c7-ebae2f390c62-garment.png",
     "thumbnail": "/api/import/library/import-9d861898-5316-4246-a6c7-ebae2f390c62-garment.png",
     "modeledImage": null,
-    "importJobId": "9d861898-5316-4246-a6c7-ebae2f390c62"
+    "importJobId": "9d861898-5316-4246-a6c7-ebae2f390c62",
+    "gender": "mujer"
   },
   {
     "id": "import-8d69d046-681e-4e7b-8682-92556f7dc79c",
@@ -1849,7 +1905,8 @@
     "image": "/api/import/library/import-8d69d046-681e-4e7b-8682-92556f7dc79c-garment.png",
     "thumbnail": "/api/import/library/import-8d69d046-681e-4e7b-8682-92556f7dc79c-garment.png",
     "modeledImage": null,
-    "importJobId": "8d69d046-681e-4e7b-8682-92556f7dc79c"
+    "importJobId": "8d69d046-681e-4e7b-8682-92556f7dc79c",
+    "gender": "mujer"
   },
   {
     "id": "import-f9520ca2-8791-455d-b1ab-9c374e52de5b",
@@ -1880,7 +1937,8 @@
     "image": "/api/import/library/import-f9520ca2-8791-455d-b1ab-9c374e52de5b-garment.png",
     "thumbnail": "/api/import/library/import-f9520ca2-8791-455d-b1ab-9c374e52de5b-garment.png",
     "modeledImage": null,
-    "importJobId": "f9520ca2-8791-455d-b1ab-9c374e52de5b"
+    "importJobId": "f9520ca2-8791-455d-b1ab-9c374e52de5b",
+    "gender": "mujer"
   },
   {
     "id": "import-f511701e-c1cd-44b7-af1a-c755dd33fa98",
@@ -1915,7 +1973,8 @@
     "image": "/api/import/library/import-f511701e-c1cd-44b7-af1a-c755dd33fa98-garment.png",
     "thumbnail": "/api/import/library/import-f511701e-c1cd-44b7-af1a-c755dd33fa98-garment.png",
     "modeledImage": null,
-    "importJobId": "f511701e-c1cd-44b7-af1a-c755dd33fa98"
+    "importJobId": "f511701e-c1cd-44b7-af1a-c755dd33fa98",
+    "gender": "mujer"
   },
   {
     "id": "import-b5340fa9-8adb-4625-bb9c-5b756c4f1559",
@@ -1947,7 +2006,8 @@
     "image": "/api/import/library/import-b5340fa9-8adb-4625-bb9c-5b756c4f1559-garment.png",
     "thumbnail": "/api/import/library/import-b5340fa9-8adb-4625-bb9c-5b756c4f1559-garment.png",
     "modeledImage": null,
-    "importJobId": "b5340fa9-8adb-4625-bb9c-5b756c4f1559"
+    "importJobId": "b5340fa9-8adb-4625-bb9c-5b756c4f1559",
+    "gender": "unisex"
   },
   {
     "id": "import-592c61c1-038d-4630-97cf-6708fd65ab95",
@@ -1979,7 +2039,8 @@
     "image": "/api/import/library/import-592c61c1-038d-4630-97cf-6708fd65ab95-garment.png",
     "thumbnail": "/api/import/library/import-592c61c1-038d-4630-97cf-6708fd65ab95-garment.png",
     "modeledImage": null,
-    "importJobId": "592c61c1-038d-4630-97cf-6708fd65ab95"
+    "importJobId": "592c61c1-038d-4630-97cf-6708fd65ab95",
+    "gender": "mujer"
   },
   {
     "id": "import-c3054e6f-cdfe-4dab-9414-9d152df8df8b",
@@ -2012,7 +2073,8 @@
     "image": "/api/import/library/import-c3054e6f-cdfe-4dab-9414-9d152df8df8b-garment.png",
     "thumbnail": "/api/import/library/import-c3054e6f-cdfe-4dab-9414-9d152df8df8b-garment.png",
     "modeledImage": null,
-    "importJobId": "c3054e6f-cdfe-4dab-9414-9d152df8df8b"
+    "importJobId": "c3054e6f-cdfe-4dab-9414-9d152df8df8b",
+    "gender": "mujer"
   },
   {
     "id": "import-b371a611-2fe4-4eae-b0ad-16f7bfff57a0",
@@ -2044,7 +2106,8 @@
     "image": "/api/import/library/import-b371a611-2fe4-4eae-b0ad-16f7bfff57a0-garment.png",
     "thumbnail": "/api/import/library/import-b371a611-2fe4-4eae-b0ad-16f7bfff57a0-garment.png",
     "modeledImage": null,
-    "importJobId": "b371a611-2fe4-4eae-b0ad-16f7bfff57a0"
+    "importJobId": "b371a611-2fe4-4eae-b0ad-16f7bfff57a0",
+    "gender": "unisex"
   },
   {
     "id": "import-7b910591-3d72-431d-9f9b-3f50772ea1b4",
@@ -2076,7 +2139,8 @@
     "image": "/api/import/library/import-7b910591-3d72-431d-9f9b-3f50772ea1b4-garment.png",
     "thumbnail": "/api/import/library/import-7b910591-3d72-431d-9f9b-3f50772ea1b4-garment.png",
     "modeledImage": null,
-    "importJobId": "7b910591-3d72-431d-9f9b-3f50772ea1b4"
+    "importJobId": "7b910591-3d72-431d-9f9b-3f50772ea1b4",
+    "gender": "mujer"
   },
   {
     "id": "import-85167789-3001-456f-af45-24c0a425a25d",
@@ -2108,7 +2172,8 @@
     "image": "/api/import/library/import-85167789-3001-456f-af45-24c0a425a25d-garment.png",
     "thumbnail": "/api/import/library/import-85167789-3001-456f-af45-24c0a425a25d-garment.png",
     "modeledImage": null,
-    "importJobId": "85167789-3001-456f-af45-24c0a425a25d"
+    "importJobId": "85167789-3001-456f-af45-24c0a425a25d",
+    "gender": "mujer"
   },
   {
     "id": "import-4760ca6a-2d81-4973-86db-5416f2809c6b",
@@ -2139,7 +2204,8 @@
     "image": "/api/import/library/import-4760ca6a-2d81-4973-86db-5416f2809c6b-garment.png",
     "thumbnail": "/api/import/library/import-4760ca6a-2d81-4973-86db-5416f2809c6b-garment.png",
     "modeledImage": null,
-    "importJobId": "4760ca6a-2d81-4973-86db-5416f2809c6b"
+    "importJobId": "4760ca6a-2d81-4973-86db-5416f2809c6b",
+    "gender": "mujer"
   },
   {
     "id": "import-45698711-18fd-42bb-9463-5bbce6f291b4",
@@ -2172,7 +2238,8 @@
     "image": "/api/import/library/import-45698711-18fd-42bb-9463-5bbce6f291b4-garment.png",
     "thumbnail": "/api/import/library/import-45698711-18fd-42bb-9463-5bbce6f291b4-garment.png",
     "modeledImage": null,
-    "importJobId": "45698711-18fd-42bb-9463-5bbce6f291b4"
+    "importJobId": "45698711-18fd-42bb-9463-5bbce6f291b4",
+    "gender": "mujer"
   },
   {
     "id": "import-ce2dc823-e420-4141-9711-3fdddbcdb834",
@@ -2204,7 +2271,8 @@
     "image": "/api/import/library/import-ce2dc823-e420-4141-9711-3fdddbcdb834-garment.png",
     "thumbnail": "/api/import/library/import-ce2dc823-e420-4141-9711-3fdddbcdb834-garment.png",
     "modeledImage": null,
-    "importJobId": "ce2dc823-e420-4141-9711-3fdddbcdb834"
+    "importJobId": "ce2dc823-e420-4141-9711-3fdddbcdb834",
+    "gender": "mujer"
   },
   {
     "id": "import-addf69c4-d0da-42b2-959c-12fed42b1abd",
@@ -2236,7 +2304,8 @@
     "image": "/api/import/library/import-addf69c4-d0da-42b2-959c-12fed42b1abd-garment.png",
     "thumbnail": "/api/import/library/import-addf69c4-d0da-42b2-959c-12fed42b1abd-garment.png",
     "modeledImage": null,
-    "importJobId": "addf69c4-d0da-42b2-959c-12fed42b1abd"
+    "importJobId": "addf69c4-d0da-42b2-959c-12fed42b1abd",
+    "gender": "mujer"
   },
   {
     "id": "import-458e1d43-92fb-4b0f-990e-0b40efaf029e",
@@ -2269,7 +2338,8 @@
     "image": "/api/import/library/import-458e1d43-92fb-4b0f-990e-0b40efaf029e-garment.png",
     "thumbnail": "/api/import/library/import-458e1d43-92fb-4b0f-990e-0b40efaf029e-garment.png",
     "modeledImage": null,
-    "importJobId": "458e1d43-92fb-4b0f-990e-0b40efaf029e"
+    "importJobId": "458e1d43-92fb-4b0f-990e-0b40efaf029e",
+    "gender": "mujer"
   },
   {
     "id": "import-daa7a78c-94d8-415f-9238-2161bc9c4427",
@@ -2301,7 +2371,8 @@
     "image": "/api/import/library/import-daa7a78c-94d8-415f-9238-2161bc9c4427-garment.png",
     "thumbnail": "/api/import/library/import-daa7a78c-94d8-415f-9238-2161bc9c4427-garment.png",
     "modeledImage": null,
-    "importJobId": "daa7a78c-94d8-415f-9238-2161bc9c4427"
+    "importJobId": "daa7a78c-94d8-415f-9238-2161bc9c4427",
+    "gender": "unisex"
   },
   {
     "id": "import-77765447-d36c-483d-8b46-8a6c276142c4",
@@ -2333,7 +2404,8 @@
     "image": "/api/import/library/import-77765447-d36c-483d-8b46-8a6c276142c4-garment.png",
     "thumbnail": "/api/import/library/import-77765447-d36c-483d-8b46-8a6c276142c4-garment.png",
     "modeledImage": null,
-    "importJobId": "77765447-d36c-483d-8b46-8a6c276142c4"
+    "importJobId": "77765447-d36c-483d-8b46-8a6c276142c4",
+    "gender": "mujer"
   },
   {
     "id": "import-8d562b3a-b2c1-4674-bf54-4d8b308f85cd",
@@ -2365,7 +2437,8 @@
     "image": "/api/import/library/import-8d562b3a-b2c1-4674-bf54-4d8b308f85cd-garment.png",
     "thumbnail": "/api/import/library/import-8d562b3a-b2c1-4674-bf54-4d8b308f85cd-garment.png",
     "modeledImage": null,
-    "importJobId": "8d562b3a-b2c1-4674-bf54-4d8b308f85cd"
+    "importJobId": "8d562b3a-b2c1-4674-bf54-4d8b308f85cd",
+    "gender": "mujer"
   },
   {
     "id": "import-dd74edc8-1fbd-45f1-8f21-485a49451be7",
@@ -2397,7 +2470,8 @@
     "image": "/api/import/library/import-dd74edc8-1fbd-45f1-8f21-485a49451be7-garment.png",
     "thumbnail": "/api/import/library/import-dd74edc8-1fbd-45f1-8f21-485a49451be7-garment.png",
     "modeledImage": null,
-    "importJobId": "dd74edc8-1fbd-45f1-8f21-485a49451be7"
+    "importJobId": "dd74edc8-1fbd-45f1-8f21-485a49451be7",
+    "gender": "mujer"
   },
   {
     "id": "import-6f5a13d1-4dda-4483-b8b6-70458dbb6206",
@@ -2428,7 +2502,8 @@
     "image": "/api/import/library/import-6f5a13d1-4dda-4483-b8b6-70458dbb6206-garment.png",
     "thumbnail": "/api/import/library/import-6f5a13d1-4dda-4483-b8b6-70458dbb6206-garment.png",
     "modeledImage": null,
-    "importJobId": "6f5a13d1-4dda-4483-b8b6-70458dbb6206"
+    "importJobId": "6f5a13d1-4dda-4483-b8b6-70458dbb6206",
+    "gender": "mujer"
   },
   {
     "id": "import-efbdbd43-b839-4905-8207-f906b088075a",
@@ -2463,7 +2538,8 @@
     "image": "/api/import/library/import-efbdbd43-b839-4905-8207-f906b088075a-garment.png",
     "thumbnail": "/api/import/library/import-efbdbd43-b839-4905-8207-f906b088075a-garment.png",
     "modeledImage": null,
-    "importJobId": "efbdbd43-b839-4905-8207-f906b088075a"
+    "importJobId": "efbdbd43-b839-4905-8207-f906b088075a",
+    "gender": "mujer"
   },
   {
     "id": "import-9e9c7dd0-c4d6-420b-88f8-a8cc30b53411",
@@ -2494,7 +2570,8 @@
     "image": "/api/import/library/import-9e9c7dd0-c4d6-420b-88f8-a8cc30b53411-garment.png",
     "thumbnail": "/api/import/library/import-9e9c7dd0-c4d6-420b-88f8-a8cc30b53411-garment.png",
     "modeledImage": null,
-    "importJobId": "9e9c7dd0-c4d6-420b-88f8-a8cc30b53411"
+    "importJobId": "9e9c7dd0-c4d6-420b-88f8-a8cc30b53411",
+    "gender": "unisex"
   },
   {
     "id": "import-bb1771ab-56da-4be9-a830-86f5cc9f03a2",
@@ -2526,7 +2603,8 @@
     "image": "/api/import/library/import-bb1771ab-56da-4be9-a830-86f5cc9f03a2-garment.png",
     "thumbnail": "/api/import/library/import-bb1771ab-56da-4be9-a830-86f5cc9f03a2-garment.png",
     "modeledImage": null,
-    "importJobId": "bb1771ab-56da-4be9-a830-86f5cc9f03a2"
+    "importJobId": "bb1771ab-56da-4be9-a830-86f5cc9f03a2",
+    "gender": "mujer"
   },
   {
     "id": "import-d2f75e85-2f8c-40f8-8076-658b6dbd4b7e",
@@ -2559,7 +2637,8 @@
     "image": "/api/import/library/import-d2f75e85-2f8c-40f8-8076-658b6dbd4b7e-garment.png",
     "thumbnail": "/api/import/library/import-d2f75e85-2f8c-40f8-8076-658b6dbd4b7e-garment.png",
     "modeledImage": null,
-    "importJobId": "d2f75e85-2f8c-40f8-8076-658b6dbd4b7e"
+    "importJobId": "d2f75e85-2f8c-40f8-8076-658b6dbd4b7e",
+    "gender": "mujer"
   },
   {
     "id": "import-078e8ea4-bef3-437a-9bd1-b489b52da8c1",
@@ -2591,7 +2670,8 @@
     "image": "/api/import/library/import-078e8ea4-bef3-437a-9bd1-b489b52da8c1-garment.png",
     "thumbnail": "/api/import/library/import-078e8ea4-bef3-437a-9bd1-b489b52da8c1-garment.png",
     "modeledImage": null,
-    "importJobId": "078e8ea4-bef3-437a-9bd1-b489b52da8c1"
+    "importJobId": "078e8ea4-bef3-437a-9bd1-b489b52da8c1",
+    "gender": "unisex"
   },
   {
     "id": "import-2397040f-011e-4dad-b9e9-3a398b9282ad",
@@ -2624,7 +2704,8 @@
     "image": "/api/import/library/import-2397040f-011e-4dad-b9e9-3a398b9282ad-garment.png",
     "thumbnail": "/api/import/library/import-2397040f-011e-4dad-b9e9-3a398b9282ad-garment.png",
     "modeledImage": null,
-    "importJobId": "2397040f-011e-4dad-b9e9-3a398b9282ad"
+    "importJobId": "2397040f-011e-4dad-b9e9-3a398b9282ad",
+    "gender": "mujer"
   },
   {
     "id": "import-9c427982-f4ce-46ac-a37d-cd51003f47d8",
@@ -2656,7 +2737,8 @@
     "image": "/api/import/library/import-9c427982-f4ce-46ac-a37d-cd51003f47d8-garment.png",
     "thumbnail": "/api/import/library/import-9c427982-f4ce-46ac-a37d-cd51003f47d8-garment.png",
     "modeledImage": null,
-    "importJobId": "9c427982-f4ce-46ac-a37d-cd51003f47d8"
+    "importJobId": "9c427982-f4ce-46ac-a37d-cd51003f47d8",
+    "gender": "mujer"
   },
   {
     "id": "import-c13d9050-68cf-4abb-b96e-b0f47a69ec3d",
@@ -2689,7 +2771,8 @@
     "image": "/api/import/library/import-c13d9050-68cf-4abb-b96e-b0f47a69ec3d-garment.png",
     "thumbnail": "/api/import/library/import-c13d9050-68cf-4abb-b96e-b0f47a69ec3d-garment.png",
     "modeledImage": null,
-    "importJobId": "c13d9050-68cf-4abb-b96e-b0f47a69ec3d"
+    "importJobId": "c13d9050-68cf-4abb-b96e-b0f47a69ec3d",
+    "gender": "mujer"
   },
   {
     "id": "import-5f8d2155-9a13-4fab-ba7d-c9077b1c48d7",
@@ -2722,7 +2805,8 @@
     "image": "/api/import/library/import-5f8d2155-9a13-4fab-ba7d-c9077b1c48d7-garment.png",
     "thumbnail": "/api/import/library/import-5f8d2155-9a13-4fab-ba7d-c9077b1c48d7-garment.png",
     "modeledImage": null,
-    "importJobId": "5f8d2155-9a13-4fab-ba7d-c9077b1c48d7"
+    "importJobId": "5f8d2155-9a13-4fab-ba7d-c9077b1c48d7",
+    "gender": "mujer"
   },
   {
     "id": "import-1922a333-fc33-4a05-b069-b1a10c543319",
@@ -2755,7 +2839,8 @@
     "image": "/api/import/library/import-1922a333-fc33-4a05-b069-b1a10c543319-garment.png",
     "thumbnail": "/api/import/library/import-1922a333-fc33-4a05-b069-b1a10c543319-garment.png",
     "modeledImage": null,
-    "importJobId": "1922a333-fc33-4a05-b069-b1a10c543319"
+    "importJobId": "1922a333-fc33-4a05-b069-b1a10c543319",
+    "gender": "mujer"
   },
   {
     "id": "import-3624420a-a9f5-45bf-88c4-6787623052b0",
@@ -2787,7 +2872,8 @@
     "image": "/api/import/library/import-3624420a-a9f5-45bf-88c4-6787623052b0-garment.png",
     "thumbnail": "/api/import/library/import-3624420a-a9f5-45bf-88c4-6787623052b0-garment.png",
     "modeledImage": null,
-    "importJobId": "3624420a-a9f5-45bf-88c4-6787623052b0"
+    "importJobId": "3624420a-a9f5-45bf-88c4-6787623052b0",
+    "gender": "mujer"
   },
   {
     "id": "import-230ccd3b-6674-49bb-a2f4-93db1796d4ac",
@@ -2819,7 +2905,8 @@
     "image": "/api/import/library/import-230ccd3b-6674-49bb-a2f4-93db1796d4ac-garment.png",
     "thumbnail": "/api/import/library/import-230ccd3b-6674-49bb-a2f4-93db1796d4ac-garment.png",
     "modeledImage": null,
-    "importJobId": "230ccd3b-6674-49bb-a2f4-93db1796d4ac"
+    "importJobId": "230ccd3b-6674-49bb-a2f4-93db1796d4ac",
+    "gender": "mujer"
   },
   {
     "id": "import-d5e274b1-9924-43dd-8316-538f3ae61f12",
@@ -2850,7 +2937,8 @@
     "image": "/api/import/library/import-d5e274b1-9924-43dd-8316-538f3ae61f12-garment.png",
     "thumbnail": "/api/import/library/import-d5e274b1-9924-43dd-8316-538f3ae61f12-garment.png",
     "modeledImage": null,
-    "importJobId": "d5e274b1-9924-43dd-8316-538f3ae61f12"
+    "importJobId": "d5e274b1-9924-43dd-8316-538f3ae61f12",
+    "gender": "mujer"
   },
   {
     "id": "import-c68ab9a9-d3e5-4ebd-8f4f-f266466cf5bb",
@@ -2881,7 +2969,8 @@
     "image": "/api/import/library/import-c68ab9a9-d3e5-4ebd-8f4f-f266466cf5bb-garment.png",
     "thumbnail": "/api/import/library/import-c68ab9a9-d3e5-4ebd-8f4f-f266466cf5bb-garment.png",
     "modeledImage": null,
-    "importJobId": "c68ab9a9-d3e5-4ebd-8f4f-f266466cf5bb"
+    "importJobId": "c68ab9a9-d3e5-4ebd-8f4f-f266466cf5bb",
+    "gender": "mujer"
   },
   {
     "id": "import-e88f935c-b838-48d4-b9a2-81bf0158c3f2",
@@ -2911,7 +3000,8 @@
     "image": "/api/import/library/import-e88f935c-b838-48d4-b9a2-81bf0158c3f2-garment.png",
     "thumbnail": "/api/import/library/import-e88f935c-b838-48d4-b9a2-81bf0158c3f2-garment.png",
     "modeledImage": null,
-    "importJobId": "e88f935c-b838-48d4-b9a2-81bf0158c3f2"
+    "importJobId": "e88f935c-b838-48d4-b9a2-81bf0158c3f2",
+    "gender": "mujer"
   },
   {
     "id": "import-0d32af8a-ccf3-4e18-a65f-ff125179859d",
@@ -2945,7 +3035,8 @@
     "image": "/api/import/library/import-0d32af8a-ccf3-4e18-a65f-ff125179859d-garment.png",
     "thumbnail": "/api/import/library/import-0d32af8a-ccf3-4e18-a65f-ff125179859d-garment.png",
     "modeledImage": null,
-    "importJobId": "0d32af8a-ccf3-4e18-a65f-ff125179859d"
+    "importJobId": "0d32af8a-ccf3-4e18-a65f-ff125179859d",
+    "gender": "mujer"
   },
   {
     "id": "import-91bbd5b7-069d-4642-923e-94b483f9a78e",
@@ -2976,7 +3067,8 @@
     "image": "/api/import/library/import-91bbd5b7-069d-4642-923e-94b483f9a78e-garment.png",
     "thumbnail": "/api/import/library/import-91bbd5b7-069d-4642-923e-94b483f9a78e-garment.png",
     "modeledImage": null,
-    "importJobId": "91bbd5b7-069d-4642-923e-94b483f9a78e"
+    "importJobId": "91bbd5b7-069d-4642-923e-94b483f9a78e",
+    "gender": "mujer"
   },
   {
     "id": "import-c3daab90-4cf1-441a-8862-a747b01e34ed",
@@ -3007,7 +3099,8 @@
     "image": "/api/import/library/import-c3daab90-4cf1-441a-8862-a747b01e34ed-garment.png",
     "thumbnail": "/api/import/library/import-c3daab90-4cf1-441a-8862-a747b01e34ed-garment.png",
     "modeledImage": null,
-    "importJobId": "c3daab90-4cf1-441a-8862-a747b01e34ed"
+    "importJobId": "c3daab90-4cf1-441a-8862-a747b01e34ed",
+    "gender": "mujer"
   },
   {
     "id": "import-c5ccb09a-4e8b-402e-8dfd-e6a4c9775f0b",
@@ -3038,7 +3131,8 @@
     "image": "/api/import/library/import-c5ccb09a-4e8b-402e-8dfd-e6a4c9775f0b-garment.png",
     "thumbnail": "/api/import/library/import-c5ccb09a-4e8b-402e-8dfd-e6a4c9775f0b-garment.png",
     "modeledImage": null,
-    "importJobId": "c5ccb09a-4e8b-402e-8dfd-e6a4c9775f0b"
+    "importJobId": "c5ccb09a-4e8b-402e-8dfd-e6a4c9775f0b",
+    "gender": "mujer"
   },
   {
     "id": "import-17d4bbab-6c9d-4072-b686-80c788a15e60",
@@ -3068,7 +3162,8 @@
     "image": "/api/import/library/import-17d4bbab-6c9d-4072-b686-80c788a15e60-garment.png",
     "thumbnail": "/api/import/library/import-17d4bbab-6c9d-4072-b686-80c788a15e60-garment.png",
     "modeledImage": null,
-    "importJobId": "17d4bbab-6c9d-4072-b686-80c788a15e60"
+    "importJobId": "17d4bbab-6c9d-4072-b686-80c788a15e60",
+    "gender": "mujer"
   },
   {
     "id": "import-fe5edc46-8c47-40fc-91f3-8bf79d333f2d",
@@ -3100,7 +3195,8 @@
     "image": "/api/import/library/import-fe5edc46-8c47-40fc-91f3-8bf79d333f2d-garment.png",
     "thumbnail": "/api/import/library/import-fe5edc46-8c47-40fc-91f3-8bf79d333f2d-garment.png",
     "modeledImage": null,
-    "importJobId": "fe5edc46-8c47-40fc-91f3-8bf79d333f2d"
+    "importJobId": "fe5edc46-8c47-40fc-91f3-8bf79d333f2d",
+    "gender": "mujer"
   },
   {
     "id": "import-0bc07962-fffa-40a2-8904-4056c15f7930",
@@ -3134,7 +3230,8 @@
     "image": "/api/import/library/import-0bc07962-fffa-40a2-8904-4056c15f7930-garment.png",
     "thumbnail": "/api/import/library/import-0bc07962-fffa-40a2-8904-4056c15f7930-garment.png",
     "modeledImage": null,
-    "importJobId": "0bc07962-fffa-40a2-8904-4056c15f7930"
+    "importJobId": "0bc07962-fffa-40a2-8904-4056c15f7930",
+    "gender": "mujer"
   },
   {
     "id": "import-b56f1ef9-c323-4f1e-bcc7-1ba54209d035",
@@ -3169,7 +3266,8 @@
     "image": "/api/import/library/import-b56f1ef9-c323-4f1e-bcc7-1ba54209d035-garment.png",
     "thumbnail": "/api/import/library/import-b56f1ef9-c323-4f1e-bcc7-1ba54209d035-garment.png",
     "modeledImage": null,
-    "importJobId": "b56f1ef9-c323-4f1e-bcc7-1ba54209d035"
+    "importJobId": "b56f1ef9-c323-4f1e-bcc7-1ba54209d035",
+    "gender": "mujer"
   },
   {
     "id": "import-a6eb7884-2086-43f5-a8a8-dfac9bd5cf38",
@@ -3204,7 +3302,8 @@
     "image": "/api/import/library/import-a6eb7884-2086-43f5-a8a8-dfac9bd5cf38-garment.png",
     "thumbnail": "/api/import/library/import-a6eb7884-2086-43f5-a8a8-dfac9bd5cf38-garment.png",
     "modeledImage": null,
-    "importJobId": "a6eb7884-2086-43f5-a8a8-dfac9bd5cf38"
+    "importJobId": "a6eb7884-2086-43f5-a8a8-dfac9bd5cf38",
+    "gender": "mujer"
   },
   {
     "id": "import-b198d056-c96a-4a27-ad80-a8f6f3a4ce57",
@@ -3239,7 +3338,8 @@
     "image": "/api/import/library/import-b198d056-c96a-4a27-ad80-a8f6f3a4ce57-garment.png",
     "thumbnail": "/api/import/library/import-b198d056-c96a-4a27-ad80-a8f6f3a4ce57-garment.png",
     "modeledImage": null,
-    "importJobId": "b198d056-c96a-4a27-ad80-a8f6f3a4ce57"
+    "importJobId": "b198d056-c96a-4a27-ad80-a8f6f3a4ce57",
+    "gender": "mujer"
   },
   {
     "id": "import-922d795a-47fe-427d-a0ec-a3c6376210ee",
@@ -3273,7 +3373,8 @@
     "image": "/api/import/library/import-922d795a-47fe-427d-a0ec-a3c6376210ee-garment.png",
     "thumbnail": "/api/import/library/import-922d795a-47fe-427d-a0ec-a3c6376210ee-garment.png",
     "modeledImage": null,
-    "importJobId": "922d795a-47fe-427d-a0ec-a3c6376210ee"
+    "importJobId": "922d795a-47fe-427d-a0ec-a3c6376210ee",
+    "gender": "mujer"
   },
   {
     "id": "import-25cbd371-9c45-4e89-abe7-91c3506039f8",
@@ -3305,7 +3406,8 @@
     "image": "/api/import/library/import-25cbd371-9c45-4e89-abe7-91c3506039f8-garment.png",
     "thumbnail": "/api/import/library/import-25cbd371-9c45-4e89-abe7-91c3506039f8-garment.png",
     "modeledImage": null,
-    "importJobId": "25cbd371-9c45-4e89-abe7-91c3506039f8"
+    "importJobId": "25cbd371-9c45-4e89-abe7-91c3506039f8",
+    "gender": "mujer"
   },
   {
     "id": "import-f397b924-abf1-47ba-a323-67244962b30e",
@@ -3339,7 +3441,8 @@
     "image": "/api/import/library/import-f397b924-abf1-47ba-a323-67244962b30e-garment.png",
     "thumbnail": "/api/import/library/import-f397b924-abf1-47ba-a323-67244962b30e-garment.png",
     "modeledImage": null,
-    "importJobId": "f397b924-abf1-47ba-a323-67244962b30e"
+    "importJobId": "f397b924-abf1-47ba-a323-67244962b30e",
+    "gender": "mujer"
   },
   {
     "id": "import-3c2f1504-74cf-4c24-8513-918869ac6fee",
@@ -3372,7 +3475,8 @@
     "image": "/api/import/library/import-3c2f1504-74cf-4c24-8513-918869ac6fee-garment.png",
     "thumbnail": "/api/import/library/import-3c2f1504-74cf-4c24-8513-918869ac6fee-garment.png",
     "modeledImage": null,
-    "importJobId": "3c2f1504-74cf-4c24-8513-918869ac6fee"
+    "importJobId": "3c2f1504-74cf-4c24-8513-918869ac6fee",
+    "gender": "mujer"
   },
   {
     "id": "import-c8935bfc-34c4-430a-b074-91a1b5af0d67",
@@ -3404,7 +3508,8 @@
     "image": "/api/import/library/import-c8935bfc-34c4-430a-b074-91a1b5af0d67-garment.png",
     "thumbnail": "/api/import/library/import-c8935bfc-34c4-430a-b074-91a1b5af0d67-garment.png",
     "modeledImage": null,
-    "importJobId": "c8935bfc-34c4-430a-b074-91a1b5af0d67"
+    "importJobId": "c8935bfc-34c4-430a-b074-91a1b5af0d67",
+    "gender": "mujer"
   },
   {
     "id": "import-c260c5a7-0cdf-491e-b26b-b769b48e657d",
@@ -3436,7 +3541,8 @@
     "image": "/api/import/library/import-c260c5a7-0cdf-491e-b26b-b769b48e657d-garment.png",
     "thumbnail": "/api/import/library/import-c260c5a7-0cdf-491e-b26b-b769b48e657d-garment.png",
     "modeledImage": null,
-    "importJobId": "c260c5a7-0cdf-491e-b26b-b769b48e657d"
+    "importJobId": "c260c5a7-0cdf-491e-b26b-b769b48e657d",
+    "gender": "mujer"
   },
   {
     "id": "import-7465f65c-bc1e-46cf-be4b-a7cda38d6bc8",
@@ -3471,7 +3577,8 @@
     "image": "/api/import/library/import-7465f65c-bc1e-46cf-be4b-a7cda38d6bc8-garment.png",
     "thumbnail": "/api/import/library/import-7465f65c-bc1e-46cf-be4b-a7cda38d6bc8-garment.png",
     "modeledImage": null,
-    "importJobId": "7465f65c-bc1e-46cf-be4b-a7cda38d6bc8"
+    "importJobId": "7465f65c-bc1e-46cf-be4b-a7cda38d6bc8",
+    "gender": "mujer"
   },
   {
     "id": "import-2a2477eb-5f84-4e3d-b6eb-93e4deccda07",
@@ -3505,7 +3612,8 @@
     "image": "/api/import/library/import-2a2477eb-5f84-4e3d-b6eb-93e4deccda07-garment.png",
     "thumbnail": "/api/import/library/import-2a2477eb-5f84-4e3d-b6eb-93e4deccda07-garment.png",
     "modeledImage": null,
-    "importJobId": "2a2477eb-5f84-4e3d-b6eb-93e4deccda07"
+    "importJobId": "2a2477eb-5f84-4e3d-b6eb-93e4deccda07",
+    "gender": "mujer"
   },
   {
     "id": "import-c2c39cea-0d4b-48fa-b9ba-b382d47df975",
@@ -3540,7 +3648,8 @@
     "image": "/api/import/library/import-c2c39cea-0d4b-48fa-b9ba-b382d47df975-garment.png",
     "thumbnail": "/api/import/library/import-c2c39cea-0d4b-48fa-b9ba-b382d47df975-garment.png",
     "modeledImage": null,
-    "importJobId": "c2c39cea-0d4b-48fa-b9ba-b382d47df975"
+    "importJobId": "c2c39cea-0d4b-48fa-b9ba-b382d47df975",
+    "gender": "mujer"
   },
   {
     "id": "import-17a7118e-93fb-4531-a8a2-6b60c1d6a407",
@@ -3574,7 +3683,8 @@
     "image": "/api/import/library/import-17a7118e-93fb-4531-a8a2-6b60c1d6a407-garment.png",
     "thumbnail": "/api/import/library/import-17a7118e-93fb-4531-a8a2-6b60c1d6a407-garment.png",
     "modeledImage": null,
-    "importJobId": "17a7118e-93fb-4531-a8a2-6b60c1d6a407"
+    "importJobId": "17a7118e-93fb-4531-a8a2-6b60c1d6a407",
+    "gender": "mujer"
   },
   {
     "id": "import-2a474bb5-7105-4fda-81a9-928a0ac506b4",
@@ -3608,7 +3718,8 @@
     "image": "/api/import/library/import-2a474bb5-7105-4fda-81a9-928a0ac506b4-garment.png",
     "thumbnail": "/api/import/library/import-2a474bb5-7105-4fda-81a9-928a0ac506b4-garment.png",
     "modeledImage": null,
-    "importJobId": "2a474bb5-7105-4fda-81a9-928a0ac506b4"
+    "importJobId": "2a474bb5-7105-4fda-81a9-928a0ac506b4",
+    "gender": "mujer"
   },
   {
     "id": "import-21e48dd8-49fe-4820-bb68-8765d7357edd",
@@ -3643,7 +3754,8 @@
     "image": "/api/import/library/import-21e48dd8-49fe-4820-bb68-8765d7357edd-garment.png",
     "thumbnail": "/api/import/library/import-21e48dd8-49fe-4820-bb68-8765d7357edd-garment.png",
     "modeledImage": null,
-    "importJobId": "21e48dd8-49fe-4820-bb68-8765d7357edd"
+    "importJobId": "21e48dd8-49fe-4820-bb68-8765d7357edd",
+    "gender": "mujer"
   },
   {
     "id": "import-6a7add5c-5bf1-4135-885e-c1607df8ff0c",
@@ -3677,7 +3789,8 @@
     "image": "/api/import/library/import-6a7add5c-5bf1-4135-885e-c1607df8ff0c-garment.png",
     "thumbnail": "/api/import/library/import-6a7add5c-5bf1-4135-885e-c1607df8ff0c-garment.png",
     "modeledImage": null,
-    "importJobId": "6a7add5c-5bf1-4135-885e-c1607df8ff0c"
+    "importJobId": "6a7add5c-5bf1-4135-885e-c1607df8ff0c",
+    "gender": "mujer"
   },
   {
     "id": "import-891afe21-f099-4423-8c5a-bbdf76f430d4",
@@ -3709,7 +3822,8 @@
     "image": "/api/import/library/import-891afe21-f099-4423-8c5a-bbdf76f430d4-garment.png",
     "thumbnail": "/api/import/library/import-891afe21-f099-4423-8c5a-bbdf76f430d4-garment.png",
     "modeledImage": null,
-    "importJobId": "891afe21-f099-4423-8c5a-bbdf76f430d4"
+    "importJobId": "891afe21-f099-4423-8c5a-bbdf76f430d4",
+    "gender": "mujer"
   },
   {
     "id": "import-44846fd4-7dd8-47b5-8a1b-7c5df8572535",
@@ -3741,7 +3855,8 @@
     "image": "/api/import/library/import-44846fd4-7dd8-47b5-8a1b-7c5df8572535-garment.png",
     "thumbnail": "/api/import/library/import-44846fd4-7dd8-47b5-8a1b-7c5df8572535-garment.png",
     "modeledImage": null,
-    "importJobId": "44846fd4-7dd8-47b5-8a1b-7c5df8572535"
+    "importJobId": "44846fd4-7dd8-47b5-8a1b-7c5df8572535",
+    "gender": "mujer"
   },
   {
     "id": "import-cab72c4b-8cd5-4c7b-b320-6541025f2104",
@@ -3772,7 +3887,8 @@
     "image": "/api/import/library/import-cab72c4b-8cd5-4c7b-b320-6541025f2104-garment.png",
     "thumbnail": "/api/import/library/import-cab72c4b-8cd5-4c7b-b320-6541025f2104-garment.png",
     "modeledImage": null,
-    "importJobId": "cab72c4b-8cd5-4c7b-b320-6541025f2104"
+    "importJobId": "cab72c4b-8cd5-4c7b-b320-6541025f2104",
+    "gender": "mujer"
   },
   {
     "id": "import-0622118a-0ec8-4ef2-ae42-4b030f950879",
@@ -3804,7 +3920,8 @@
     "image": "/api/import/library/import-0622118a-0ec8-4ef2-ae42-4b030f950879-garment.png",
     "thumbnail": "/api/import/library/import-0622118a-0ec8-4ef2-ae42-4b030f950879-garment.png",
     "modeledImage": null,
-    "importJobId": "0622118a-0ec8-4ef2-ae42-4b030f950879"
+    "importJobId": "0622118a-0ec8-4ef2-ae42-4b030f950879",
+    "gender": "mujer"
   },
   {
     "id": "import-e4d4a5fd-b1d1-46b5-88db-0e49d2c7077a",
@@ -3836,7 +3953,8 @@
     "image": "/api/import/library/import-e4d4a5fd-b1d1-46b5-88db-0e49d2c7077a-garment.png",
     "thumbnail": "/api/import/library/import-e4d4a5fd-b1d1-46b5-88db-0e49d2c7077a-garment.png",
     "modeledImage": null,
-    "importJobId": "e4d4a5fd-b1d1-46b5-88db-0e49d2c7077a"
+    "importJobId": "e4d4a5fd-b1d1-46b5-88db-0e49d2c7077a",
+    "gender": "mujer"
   },
   {
     "id": "import-b1b4301f-fac6-4450-8ad6-e1443b52bfb3",
@@ -3869,7 +3987,8 @@
     "image": "/api/import/library/import-b1b4301f-fac6-4450-8ad6-e1443b52bfb3-garment.png",
     "thumbnail": "/api/import/library/import-b1b4301f-fac6-4450-8ad6-e1443b52bfb3-garment.png",
     "modeledImage": null,
-    "importJobId": "b1b4301f-fac6-4450-8ad6-e1443b52bfb3"
+    "importJobId": "b1b4301f-fac6-4450-8ad6-e1443b52bfb3",
+    "gender": "mujer"
   },
   {
     "id": "import-4c6a5b59-9140-4e1e-a9ff-e3a5faf0ba39",
@@ -3902,7 +4021,8 @@
     "image": "/api/import/library/import-4c6a5b59-9140-4e1e-a9ff-e3a5faf0ba39-garment.png",
     "thumbnail": "/api/import/library/import-4c6a5b59-9140-4e1e-a9ff-e3a5faf0ba39-garment.png",
     "modeledImage": null,
-    "importJobId": "4c6a5b59-9140-4e1e-a9ff-e3a5faf0ba39"
+    "importJobId": "4c6a5b59-9140-4e1e-a9ff-e3a5faf0ba39",
+    "gender": "mujer"
   },
   {
     "id": "import-3e906108-0215-48ff-9de0-200213605957",
@@ -3935,7 +4055,8 @@
     "image": "/api/import/library/import-3e906108-0215-48ff-9de0-200213605957-garment.png",
     "thumbnail": "/api/import/library/import-3e906108-0215-48ff-9de0-200213605957-garment.png",
     "modeledImage": null,
-    "importJobId": "3e906108-0215-48ff-9de0-200213605957"
+    "importJobId": "3e906108-0215-48ff-9de0-200213605957",
+    "gender": "mujer"
   },
   {
     "id": "import-b41e1830-cb79-4e76-bc08-3d415ddd4eb6",
@@ -3966,7 +4087,8 @@
     "image": "/api/import/library/import-b41e1830-cb79-4e76-bc08-3d415ddd4eb6-garment.png",
     "thumbnail": "/api/import/library/import-b41e1830-cb79-4e76-bc08-3d415ddd4eb6-garment.png",
     "modeledImage": null,
-    "importJobId": "b41e1830-cb79-4e76-bc08-3d415ddd4eb6"
+    "importJobId": "b41e1830-cb79-4e76-bc08-3d415ddd4eb6",
+    "gender": "mujer"
   },
   {
     "id": "import-c765ad5f-2300-4940-9e98-b0a03974dc88",
@@ -3999,7 +4121,8 @@
     "image": "/api/import/library/import-c765ad5f-2300-4940-9e98-b0a03974dc88-garment.png",
     "thumbnail": "/api/import/library/import-c765ad5f-2300-4940-9e98-b0a03974dc88-garment.png",
     "modeledImage": null,
-    "importJobId": "c765ad5f-2300-4940-9e98-b0a03974dc88"
+    "importJobId": "c765ad5f-2300-4940-9e98-b0a03974dc88",
+    "gender": "mujer"
   },
   {
     "id": "import-742d7118-3c11-4a98-a9e8-02563a87eecb",
@@ -4030,7 +4153,8 @@
     "image": "/api/import/library/import-742d7118-3c11-4a98-a9e8-02563a87eecb-garment.png",
     "thumbnail": "/api/import/library/import-742d7118-3c11-4a98-a9e8-02563a87eecb-garment.png",
     "modeledImage": null,
-    "importJobId": "742d7118-3c11-4a98-a9e8-02563a87eecb"
+    "importJobId": "742d7118-3c11-4a98-a9e8-02563a87eecb",
+    "gender": "mujer"
   },
   {
     "id": "import-a84f971d-0cec-40a4-87e6-dc41455ff6a6",
@@ -4063,7 +4187,8 @@
     "image": "/api/import/library/import-a84f971d-0cec-40a4-87e6-dc41455ff6a6-garment.png",
     "thumbnail": "/api/import/library/import-a84f971d-0cec-40a4-87e6-dc41455ff6a6-garment.png",
     "modeledImage": null,
-    "importJobId": "a84f971d-0cec-40a4-87e6-dc41455ff6a6"
+    "importJobId": "a84f971d-0cec-40a4-87e6-dc41455ff6a6",
+    "gender": "mujer"
   },
   {
     "id": "import-da3095c6-2bf2-44e8-b07b-7b831c37a584",
@@ -4094,7 +4219,8 @@
     "image": "/api/import/library/import-da3095c6-2bf2-44e8-b07b-7b831c37a584-garment.png",
     "thumbnail": "/api/import/library/import-da3095c6-2bf2-44e8-b07b-7b831c37a584-garment.png",
     "modeledImage": null,
-    "importJobId": "da3095c6-2bf2-44e8-b07b-7b831c37a584"
+    "importJobId": "da3095c6-2bf2-44e8-b07b-7b831c37a584",
+    "gender": "mujer"
   },
   {
     "id": "import-94bcc616-513c-4890-af75-cfaa8940b635",
@@ -4126,7 +4252,8 @@
     "image": "/api/import/library/import-94bcc616-513c-4890-af75-cfaa8940b635-garment.png",
     "thumbnail": "/api/import/library/import-94bcc616-513c-4890-af75-cfaa8940b635-garment.png",
     "modeledImage": null,
-    "importJobId": "94bcc616-513c-4890-af75-cfaa8940b635"
+    "importJobId": "94bcc616-513c-4890-af75-cfaa8940b635",
+    "gender": "mujer"
   },
   {
     "id": "import-b603f820-9ced-433e-aad4-ea113087c4f0",
@@ -4157,7 +4284,8 @@
     "image": "/api/import/library/import-b603f820-9ced-433e-aad4-ea113087c4f0-garment.png",
     "thumbnail": "/api/import/library/import-b603f820-9ced-433e-aad4-ea113087c4f0-garment.png",
     "modeledImage": null,
-    "importJobId": "b603f820-9ced-433e-aad4-ea113087c4f0"
+    "importJobId": "b603f820-9ced-433e-aad4-ea113087c4f0",
+    "gender": "mujer"
   },
   {
     "id": "import-2a3d82f3-c434-4606-83cf-c32635502541",
@@ -4191,7 +4319,8 @@
     "image": "/api/import/library/import-2a3d82f3-c434-4606-83cf-c32635502541-garment.png",
     "thumbnail": "/api/import/library/import-2a3d82f3-c434-4606-83cf-c32635502541-garment.png",
     "modeledImage": null,
-    "importJobId": "2a3d82f3-c434-4606-83cf-c32635502541"
+    "importJobId": "2a3d82f3-c434-4606-83cf-c32635502541",
+    "gender": "mujer"
   },
   {
     "id": "import-eb7389a2-c447-46cb-b762-87e7d27d8093",
@@ -4225,7 +4354,8 @@
     "image": "/api/import/library/import-eb7389a2-c447-46cb-b762-87e7d27d8093-garment.png",
     "thumbnail": "/api/import/library/import-eb7389a2-c447-46cb-b762-87e7d27d8093-garment.png",
     "modeledImage": null,
-    "importJobId": "eb7389a2-c447-46cb-b762-87e7d27d8093"
+    "importJobId": "eb7389a2-c447-46cb-b762-87e7d27d8093",
+    "gender": "mujer"
   },
   {
     "id": "import-098b83cb-37b0-431c-aedc-f6676184b7ef",
@@ -4258,7 +4388,8 @@
     "image": "/api/import/library/import-098b83cb-37b0-431c-aedc-f6676184b7ef-garment.png",
     "thumbnail": "/api/import/library/import-098b83cb-37b0-431c-aedc-f6676184b7ef-garment.png",
     "modeledImage": null,
-    "importJobId": "098b83cb-37b0-431c-aedc-f6676184b7ef"
+    "importJobId": "098b83cb-37b0-431c-aedc-f6676184b7ef",
+    "gender": "mujer"
   },
   {
     "id": "import-d0d912a5-a550-45dd-896b-0d1075c924d4",
@@ -4289,7 +4420,8 @@
     "image": "/api/import/library/import-d0d912a5-a550-45dd-896b-0d1075c924d4-garment.png",
     "thumbnail": "/api/import/library/import-d0d912a5-a550-45dd-896b-0d1075c924d4-garment.png",
     "modeledImage": null,
-    "importJobId": "d0d912a5-a550-45dd-896b-0d1075c924d4"
+    "importJobId": "d0d912a5-a550-45dd-896b-0d1075c924d4",
+    "gender": "mujer"
   },
   {
     "id": "import-9b0cbb0c-b6b8-4681-b06e-8d18dc6995a3",
@@ -4323,7 +4455,8 @@
     "image": "/api/import/library/import-9b0cbb0c-b6b8-4681-b06e-8d18dc6995a3-garment.png",
     "thumbnail": "/api/import/library/import-9b0cbb0c-b6b8-4681-b06e-8d18dc6995a3-garment.png",
     "modeledImage": null,
-    "importJobId": "9b0cbb0c-b6b8-4681-b06e-8d18dc6995a3"
+    "importJobId": "9b0cbb0c-b6b8-4681-b06e-8d18dc6995a3",
+    "gender": "mujer"
   },
   {
     "id": "import-4782fb9c-7d92-433b-8318-5a90fe13644e",
@@ -4357,7 +4490,8 @@
     "image": "/api/import/library/import-4782fb9c-7d92-433b-8318-5a90fe13644e-garment.png",
     "thumbnail": "/api/import/library/import-4782fb9c-7d92-433b-8318-5a90fe13644e-garment.png",
     "modeledImage": null,
-    "importJobId": "4782fb9c-7d92-433b-8318-5a90fe13644e"
+    "importJobId": "4782fb9c-7d92-433b-8318-5a90fe13644e",
+    "gender": "mujer"
   },
   {
     "id": "import-66c96b41-f56b-4e8b-88a7-092d90a90314",
@@ -4388,7 +4522,8 @@
     "image": "/api/import/library/import-66c96b41-f56b-4e8b-88a7-092d90a90314-garment.png",
     "thumbnail": "/api/import/library/import-66c96b41-f56b-4e8b-88a7-092d90a90314-garment.png",
     "modeledImage": null,
-    "importJobId": "66c96b41-f56b-4e8b-88a7-092d90a90314"
+    "importJobId": "66c96b41-f56b-4e8b-88a7-092d90a90314",
+    "gender": "mujer"
   },
   {
     "id": "import-8c11538e-3df0-4d43-aa0c-ccffbc1bfe57",
@@ -4421,7 +4556,8 @@
     "image": "/api/import/library/import-8c11538e-3df0-4d43-aa0c-ccffbc1bfe57-garment.png",
     "thumbnail": "/api/import/library/import-8c11538e-3df0-4d43-aa0c-ccffbc1bfe57-garment.png",
     "modeledImage": null,
-    "importJobId": "8c11538e-3df0-4d43-aa0c-ccffbc1bfe57"
+    "importJobId": "8c11538e-3df0-4d43-aa0c-ccffbc1bfe57",
+    "gender": "mujer"
   },
   {
     "id": "import-4771dda7-60aa-47e7-829b-d4b1937ecc19",
@@ -4454,7 +4590,8 @@
     "image": "/api/import/library/import-4771dda7-60aa-47e7-829b-d4b1937ecc19-garment.png",
     "thumbnail": "/api/import/library/import-4771dda7-60aa-47e7-829b-d4b1937ecc19-garment.png",
     "modeledImage": null,
-    "importJobId": "4771dda7-60aa-47e7-829b-d4b1937ecc19"
+    "importJobId": "4771dda7-60aa-47e7-829b-d4b1937ecc19",
+    "gender": "mujer"
   },
   {
     "id": "import-7d14687f-a64e-4bea-bfed-76caac0ce661",
@@ -4485,7 +4622,8 @@
     "image": "/api/import/library/import-7d14687f-a64e-4bea-bfed-76caac0ce661-garment.png",
     "thumbnail": "/api/import/library/import-7d14687f-a64e-4bea-bfed-76caac0ce661-garment.png",
     "modeledImage": null,
-    "importJobId": "7d14687f-a64e-4bea-bfed-76caac0ce661"
+    "importJobId": "7d14687f-a64e-4bea-bfed-76caac0ce661",
+    "gender": "mujer"
   },
   {
     "id": "import-83402fb5-eb5a-4513-88fe-8b2d137923a9",
@@ -4518,7 +4656,8 @@
     "image": "/api/import/library/import-83402fb5-eb5a-4513-88fe-8b2d137923a9-garment.png",
     "thumbnail": "/api/import/library/import-83402fb5-eb5a-4513-88fe-8b2d137923a9-garment.png",
     "modeledImage": null,
-    "importJobId": "83402fb5-eb5a-4513-88fe-8b2d137923a9"
+    "importJobId": "83402fb5-eb5a-4513-88fe-8b2d137923a9",
+    "gender": "mujer"
   },
   {
     "id": "import-ba620813-ee2e-4b70-8100-50be951e09fc",
@@ -4551,7 +4690,8 @@
     "image": "/api/import/library/import-ba620813-ee2e-4b70-8100-50be951e09fc-garment.png",
     "thumbnail": "/api/import/library/import-ba620813-ee2e-4b70-8100-50be951e09fc-garment.png",
     "modeledImage": null,
-    "importJobId": "ba620813-ee2e-4b70-8100-50be951e09fc"
+    "importJobId": "ba620813-ee2e-4b70-8100-50be951e09fc",
+    "gender": "mujer"
   },
   {
     "id": "import-3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba",
@@ -4584,7 +4724,8 @@
     "image": "/api/import/library/import-3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba-garment.png",
     "thumbnail": "/api/import/library/import-3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba-garment.png",
     "modeledImage": null,
-    "importJobId": "3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba"
+    "importJobId": "3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba",
+    "gender": "mujer"
   },
   {
     "id": "import-ae694db6-8726-4911-9ce1-75abc82ed39d",
@@ -4616,7 +4757,8 @@
     "image": "/api/import/library/import-ae694db6-8726-4911-9ce1-75abc82ed39d-garment.png",
     "thumbnail": "/api/import/library/import-ae694db6-8726-4911-9ce1-75abc82ed39d-garment.png",
     "modeledImage": null,
-    "importJobId": "ae694db6-8726-4911-9ce1-75abc82ed39d"
+    "importJobId": "ae694db6-8726-4911-9ce1-75abc82ed39d",
+    "gender": "mujer"
   },
   {
     "id": "import-bcdefcd6-4d32-47ad-8771-82d6caf470e8",
@@ -4648,7 +4790,8 @@
     "image": "/api/import/library/import-bcdefcd6-4d32-47ad-8771-82d6caf470e8-garment.png",
     "thumbnail": "/api/import/library/import-bcdefcd6-4d32-47ad-8771-82d6caf470e8-garment.png",
     "modeledImage": null,
-    "importJobId": "bcdefcd6-4d32-47ad-8771-82d6caf470e8"
+    "importJobId": "bcdefcd6-4d32-47ad-8771-82d6caf470e8",
+    "gender": "mujer"
   },
   {
     "id": "import-fa4598b4-2663-41c2-b816-33670b73c5a1",
@@ -4679,7 +4822,8 @@
     "image": "/api/import/library/import-fa4598b4-2663-41c2-b816-33670b73c5a1-garment.png",
     "thumbnail": "/api/import/library/import-fa4598b4-2663-41c2-b816-33670b73c5a1-garment.png",
     "modeledImage": null,
-    "importJobId": "fa4598b4-2663-41c2-b816-33670b73c5a1"
+    "importJobId": "fa4598b4-2663-41c2-b816-33670b73c5a1",
+    "gender": "mujer"
   },
   {
     "id": "import-13d81096-ebf6-47cf-9514-3d184e2de19a",
@@ -4711,7 +4855,8 @@
     "image": "/api/import/library/import-13d81096-ebf6-47cf-9514-3d184e2de19a-garment.png",
     "thumbnail": "/api/import/library/import-13d81096-ebf6-47cf-9514-3d184e2de19a-garment.png",
     "modeledImage": null,
-    "importJobId": "13d81096-ebf6-47cf-9514-3d184e2de19a"
+    "importJobId": "13d81096-ebf6-47cf-9514-3d184e2de19a",
+    "gender": "mujer"
   },
   {
     "id": "import-2ba2f74b-e417-4294-8b0d-b4ba453433ff",
@@ -4742,7 +4887,8 @@
     "image": "/api/import/library/import-2ba2f74b-e417-4294-8b0d-b4ba453433ff-garment.png",
     "thumbnail": "/api/import/library/import-2ba2f74b-e417-4294-8b0d-b4ba453433ff-garment.png",
     "modeledImage": null,
-    "importJobId": "2ba2f74b-e417-4294-8b0d-b4ba453433ff"
+    "importJobId": "2ba2f74b-e417-4294-8b0d-b4ba453433ff",
+    "gender": "mujer"
   },
   {
     "id": "import-72d6bd17-16d7-4aa4-b93b-45f656e18894",
@@ -4775,7 +4921,8 @@
     "image": "/api/import/library/import-72d6bd17-16d7-4aa4-b93b-45f656e18894-garment.png",
     "thumbnail": "/api/import/library/import-72d6bd17-16d7-4aa4-b93b-45f656e18894-garment.png",
     "modeledImage": null,
-    "importJobId": "72d6bd17-16d7-4aa4-b93b-45f656e18894"
+    "importJobId": "72d6bd17-16d7-4aa4-b93b-45f656e18894",
+    "gender": "mujer"
   },
   {
     "id": "import-022b6cd2-4bc1-4a1d-9aad-e265c0f6b4cb",
@@ -4808,7 +4955,8 @@
     "image": "/api/import/library/import-022b6cd2-4bc1-4a1d-9aad-e265c0f6b4cb-garment.png",
     "thumbnail": "/api/import/library/import-022b6cd2-4bc1-4a1d-9aad-e265c0f6b4cb-garment.png",
     "modeledImage": null,
-    "importJobId": "022b6cd2-4bc1-4a1d-9aad-e265c0f6b4cb"
+    "importJobId": "022b6cd2-4bc1-4a1d-9aad-e265c0f6b4cb",
+    "gender": "mujer"
   },
   {
     "id": "import-8854d4ec-d701-460d-9ba7-ccbb7a6346dd",
@@ -4842,7 +4990,8 @@
     "image": "/api/import/library/import-8854d4ec-d701-460d-9ba7-ccbb7a6346dd-garment.png",
     "thumbnail": "/api/import/library/import-8854d4ec-d701-460d-9ba7-ccbb7a6346dd-garment.png",
     "modeledImage": null,
-    "importJobId": "8854d4ec-d701-460d-9ba7-ccbb7a6346dd"
+    "importJobId": "8854d4ec-d701-460d-9ba7-ccbb7a6346dd",
+    "gender": "mujer"
   },
   {
     "id": "import-1be79d76-34ee-4e51-bc6b-6672de030143",
@@ -4876,7 +5025,8 @@
     "image": "/api/import/library/import-1be79d76-34ee-4e51-bc6b-6672de030143-garment.png",
     "thumbnail": "/api/import/library/import-1be79d76-34ee-4e51-bc6b-6672de030143-garment.png",
     "modeledImage": null,
-    "importJobId": "1be79d76-34ee-4e51-bc6b-6672de030143"
+    "importJobId": "1be79d76-34ee-4e51-bc6b-6672de030143",
+    "gender": "mujer"
   },
   {
     "id": "import-0f0309b7-af93-45c4-bcc7-8ee7cd11372f",
@@ -4907,7 +5057,8 @@
     "image": "/api/import/library/import-0f0309b7-af93-45c4-bcc7-8ee7cd11372f-garment.png",
     "thumbnail": "/api/import/library/import-0f0309b7-af93-45c4-bcc7-8ee7cd11372f-garment.png",
     "modeledImage": null,
-    "importJobId": "0f0309b7-af93-45c4-bcc7-8ee7cd11372f"
+    "importJobId": "0f0309b7-af93-45c4-bcc7-8ee7cd11372f",
+    "gender": "mujer"
   },
   {
     "id": "import-0bd7a22a-e590-4bf0-8f8e-0110b74c8d2e",
@@ -4941,7 +5092,8 @@
     "image": "/api/import/library/import-0bd7a22a-e590-4bf0-8f8e-0110b74c8d2e-garment.png",
     "thumbnail": "/api/import/library/import-0bd7a22a-e590-4bf0-8f8e-0110b74c8d2e-garment.png",
     "modeledImage": null,
-    "importJobId": "0bd7a22a-e590-4bf0-8f8e-0110b74c8d2e"
+    "importJobId": "0bd7a22a-e590-4bf0-8f8e-0110b74c8d2e",
+    "gender": "mujer"
   },
   {
     "id": "import-624c9dce-ff00-430b-828c-3b75a13beb95",
@@ -4975,7 +5127,8 @@
     "image": "/api/import/library/import-624c9dce-ff00-430b-828c-3b75a13beb95-garment.png",
     "thumbnail": "/api/import/library/import-624c9dce-ff00-430b-828c-3b75a13beb95-garment.png",
     "modeledImage": null,
-    "importJobId": "624c9dce-ff00-430b-828c-3b75a13beb95"
+    "importJobId": "624c9dce-ff00-430b-828c-3b75a13beb95",
+    "gender": "mujer"
   },
   {
     "id": "import-99d27023-e58d-454b-9c9f-ab80d4e21b33",
@@ -5006,7 +5159,8 @@
     "image": "/api/import/library/import-99d27023-e58d-454b-9c9f-ab80d4e21b33-garment.png",
     "thumbnail": "/api/import/library/import-99d27023-e58d-454b-9c9f-ab80d4e21b33-garment.png",
     "modeledImage": null,
-    "importJobId": "99d27023-e58d-454b-9c9f-ab80d4e21b33"
+    "importJobId": "99d27023-e58d-454b-9c9f-ab80d4e21b33",
+    "gender": "mujer"
   },
   {
     "id": "import-c80b5eb8-bfd4-49d2-b0ff-67128509df52",
@@ -5039,7 +5193,8 @@
     "image": "/api/import/library/import-c80b5eb8-bfd4-49d2-b0ff-67128509df52-garment.png",
     "thumbnail": "/api/import/library/import-c80b5eb8-bfd4-49d2-b0ff-67128509df52-garment.png",
     "modeledImage": null,
-    "importJobId": "c80b5eb8-bfd4-49d2-b0ff-67128509df52"
+    "importJobId": "c80b5eb8-bfd4-49d2-b0ff-67128509df52",
+    "gender": "mujer"
   },
   {
     "id": "import-823fed18-a8e3-43ef-b749-017ad0eebb1a",
@@ -5072,7 +5227,8 @@
     "image": "/api/import/library/import-823fed18-a8e3-43ef-b749-017ad0eebb1a-garment.png",
     "thumbnail": "/api/import/library/import-823fed18-a8e3-43ef-b749-017ad0eebb1a-garment.png",
     "modeledImage": null,
-    "importJobId": "823fed18-a8e3-43ef-b749-017ad0eebb1a"
+    "importJobId": "823fed18-a8e3-43ef-b749-017ad0eebb1a",
+    "gender": "mujer"
   },
   {
     "id": "import-c14bc350-f4b5-46cf-8b7c-28113db99f2e",
@@ -5103,7 +5259,8 @@
     "image": "/api/import/library/import-c14bc350-f4b5-46cf-8b7c-28113db99f2e-garment.png",
     "thumbnail": "/api/import/library/import-c14bc350-f4b5-46cf-8b7c-28113db99f2e-garment.png",
     "modeledImage": null,
-    "importJobId": "c14bc350-f4b5-46cf-8b7c-28113db99f2e"
+    "importJobId": "c14bc350-f4b5-46cf-8b7c-28113db99f2e",
+    "gender": "mujer"
   },
   {
     "id": "import-f7ec9b4b-1886-4640-b940-d1590be123f1",
@@ -5136,7 +5293,8 @@
     "image": "/api/import/library/import-f7ec9b4b-1886-4640-b940-d1590be123f1-garment.png",
     "thumbnail": "/api/import/library/import-f7ec9b4b-1886-4640-b940-d1590be123f1-garment.png",
     "modeledImage": null,
-    "importJobId": "f7ec9b4b-1886-4640-b940-d1590be123f1"
+    "importJobId": "f7ec9b4b-1886-4640-b940-d1590be123f1",
+    "gender": "mujer"
   },
   {
     "id": "import-afabf069-85e6-4095-9a95-c3b7c7173fb5",
@@ -5168,7 +5326,8 @@
     "image": "/api/import/library/import-afabf069-85e6-4095-9a95-c3b7c7173fb5-garment.png",
     "thumbnail": "/api/import/library/import-afabf069-85e6-4095-9a95-c3b7c7173fb5-garment.png",
     "modeledImage": null,
-    "importJobId": "afabf069-85e6-4095-9a95-c3b7c7173fb5"
+    "importJobId": "afabf069-85e6-4095-9a95-c3b7c7173fb5",
+    "gender": "mujer"
   },
   {
     "id": "import-295f984b-90a6-4c34-a389-7269b8360d5b",
@@ -5199,7 +5358,8 @@
     "image": "/api/import/library/import-295f984b-90a6-4c34-a389-7269b8360d5b-garment.png",
     "thumbnail": "/api/import/library/import-295f984b-90a6-4c34-a389-7269b8360d5b-garment.png",
     "modeledImage": null,
-    "importJobId": "295f984b-90a6-4c34-a389-7269b8360d5b"
+    "importJobId": "295f984b-90a6-4c34-a389-7269b8360d5b",
+    "gender": "mujer"
   },
   {
     "id": "import-e4558826-15db-44b3-9d14-6c1aa5a3c1e6",
@@ -5232,7 +5392,8 @@
     "image": "/api/import/library/import-e4558826-15db-44b3-9d14-6c1aa5a3c1e6-garment.png",
     "thumbnail": "/api/import/library/import-e4558826-15db-44b3-9d14-6c1aa5a3c1e6-garment.png",
     "modeledImage": null,
-    "importJobId": "e4558826-15db-44b3-9d14-6c1aa5a3c1e6"
+    "importJobId": "e4558826-15db-44b3-9d14-6c1aa5a3c1e6",
+    "gender": "mujer"
   },
   {
     "id": "import-f34f7fd6-a0a6-4e77-9666-6d2c8fa6e2bf",
@@ -5265,7 +5426,8 @@
     "image": "/api/import/library/import-f34f7fd6-a0a6-4e77-9666-6d2c8fa6e2bf-garment.png",
     "thumbnail": "/api/import/library/import-f34f7fd6-a0a6-4e77-9666-6d2c8fa6e2bf-garment.png",
     "modeledImage": null,
-    "importJobId": "f34f7fd6-a0a6-4e77-9666-6d2c8fa6e2bf"
+    "importJobId": "f34f7fd6-a0a6-4e77-9666-6d2c8fa6e2bf",
+    "gender": "mujer"
   },
   {
     "id": "import-cf215823-f7e4-4b18-9c8e-55e16089615b",
@@ -5298,7 +5460,8 @@
     "image": "/api/import/library/import-cf215823-f7e4-4b18-9c8e-55e16089615b-garment.png",
     "thumbnail": "/api/import/library/import-cf215823-f7e4-4b18-9c8e-55e16089615b-garment.png",
     "modeledImage": null,
-    "importJobId": "cf215823-f7e4-4b18-9c8e-55e16089615b"
+    "importJobId": "cf215823-f7e4-4b18-9c8e-55e16089615b",
+    "gender": "mujer"
   },
   {
     "id": "import-8da67f14-7c78-4511-a3c8-759eb82a7629",
@@ -5330,7 +5493,8 @@
     "image": "/api/import/library/import-8da67f14-7c78-4511-a3c8-759eb82a7629-garment.png",
     "thumbnail": "/api/import/library/import-8da67f14-7c78-4511-a3c8-759eb82a7629-garment.png",
     "modeledImage": null,
-    "importJobId": "8da67f14-7c78-4511-a3c8-759eb82a7629"
+    "importJobId": "8da67f14-7c78-4511-a3c8-759eb82a7629",
+    "gender": "mujer"
   },
   {
     "id": "import-bb9cf3a5-3295-48f8-85f6-118d40840d44",
@@ -5362,7 +5526,8 @@
     "image": "/api/import/library/import-bb9cf3a5-3295-48f8-85f6-118d40840d44-garment.png",
     "thumbnail": "/api/import/library/import-bb9cf3a5-3295-48f8-85f6-118d40840d44-garment.png",
     "modeledImage": null,
-    "importJobId": "bb9cf3a5-3295-48f8-85f6-118d40840d44"
+    "importJobId": "bb9cf3a5-3295-48f8-85f6-118d40840d44",
+    "gender": "mujer"
   },
   {
     "id": "import-16b6fe3b-3a1f-4ec5-9b97-d0a10cfb6577",
@@ -5393,7 +5558,8 @@
     "image": "/api/import/library/import-16b6fe3b-3a1f-4ec5-9b97-d0a10cfb6577-garment.png",
     "thumbnail": "/api/import/library/import-16b6fe3b-3a1f-4ec5-9b97-d0a10cfb6577-garment.png",
     "modeledImage": null,
-    "importJobId": "16b6fe3b-3a1f-4ec5-9b97-d0a10cfb6577"
+    "importJobId": "16b6fe3b-3a1f-4ec5-9b97-d0a10cfb6577",
+    "gender": "mujer"
   },
   {
     "id": "import-7931a0ee-092b-4cae-ad62-68ad7c51fd63",
@@ -5426,7 +5592,8 @@
     "image": "/api/import/library/import-7931a0ee-092b-4cae-ad62-68ad7c51fd63-garment.png",
     "thumbnail": "/api/import/library/import-7931a0ee-092b-4cae-ad62-68ad7c51fd63-garment.png",
     "modeledImage": null,
-    "importJobId": "7931a0ee-092b-4cae-ad62-68ad7c51fd63"
+    "importJobId": "7931a0ee-092b-4cae-ad62-68ad7c51fd63",
+    "gender": "mujer"
   },
   {
     "id": "import-5896c5fc-19ae-42b2-8731-cb21ca45df4d",
@@ -5459,7 +5626,8 @@
     "image": "/api/import/library/import-5896c5fc-19ae-42b2-8731-cb21ca45df4d-garment.png",
     "thumbnail": "/api/import/library/import-5896c5fc-19ae-42b2-8731-cb21ca45df4d-garment.png",
     "modeledImage": null,
-    "importJobId": "5896c5fc-19ae-42b2-8731-cb21ca45df4d"
+    "importJobId": "5896c5fc-19ae-42b2-8731-cb21ca45df4d",
+    "gender": "mujer"
   },
   {
     "id": "import-d9e79217-990f-47ad-8d06-85428b34e3d2",
@@ -5491,7 +5659,8 @@
     "image": "/api/import/library/import-d9e79217-990f-47ad-8d06-85428b34e3d2-garment.png",
     "thumbnail": "/api/import/library/import-d9e79217-990f-47ad-8d06-85428b34e3d2-garment.png",
     "modeledImage": null,
-    "importJobId": "d9e79217-990f-47ad-8d06-85428b34e3d2"
+    "importJobId": "d9e79217-990f-47ad-8d06-85428b34e3d2",
+    "gender": "mujer"
   },
   {
     "id": "import-f2130efd-bca0-4b71-8fca-7fa5976d56c7",
@@ -5522,7 +5691,8 @@
     "image": "/api/import/library/import-f2130efd-bca0-4b71-8fca-7fa5976d56c7-garment.png",
     "thumbnail": "/api/import/library/import-f2130efd-bca0-4b71-8fca-7fa5976d56c7-garment.png",
     "modeledImage": null,
-    "importJobId": "f2130efd-bca0-4b71-8fca-7fa5976d56c7"
+    "importJobId": "f2130efd-bca0-4b71-8fca-7fa5976d56c7",
+    "gender": "mujer"
   },
   {
     "id": "import-ce98a8f8-ba67-4c51-ae29-ad482371114e",
@@ -5556,7 +5726,8 @@
     "image": "/api/import/library/import-ce98a8f8-ba67-4c51-ae29-ad482371114e-garment.png",
     "thumbnail": "/api/import/library/import-ce98a8f8-ba67-4c51-ae29-ad482371114e-garment.png",
     "modeledImage": null,
-    "importJobId": "ce98a8f8-ba67-4c51-ae29-ad482371114e"
+    "importJobId": "ce98a8f8-ba67-4c51-ae29-ad482371114e",
+    "gender": "mujer"
   },
   {
     "id": "import-6ba92d65-ed0e-4256-948e-a425b6d3a4fc",
@@ -5590,7 +5761,8 @@
     "image": "/api/import/library/import-6ba92d65-ed0e-4256-948e-a425b6d3a4fc-garment.png",
     "thumbnail": "/api/import/library/import-6ba92d65-ed0e-4256-948e-a425b6d3a4fc-garment.png",
     "modeledImage": null,
-    "importJobId": "6ba92d65-ed0e-4256-948e-a425b6d3a4fc"
+    "importJobId": "6ba92d65-ed0e-4256-948e-a425b6d3a4fc",
+    "gender": "mujer"
   },
   {
     "id": "import-8a5ae298-565c-4e24-ac14-4dd43922df7e",
@@ -5621,7 +5793,8 @@
     "image": "/api/import/library/import-8a5ae298-565c-4e24-ac14-4dd43922df7e-garment.png",
     "thumbnail": "/api/import/library/import-8a5ae298-565c-4e24-ac14-4dd43922df7e-garment.png",
     "modeledImage": null,
-    "importJobId": "8a5ae298-565c-4e24-ac14-4dd43922df7e"
+    "importJobId": "8a5ae298-565c-4e24-ac14-4dd43922df7e",
+    "gender": "mujer"
   },
   {
     "id": "import-41a8ceb6-2d3b-4c98-bfb8-54b0d796abfc",
@@ -5653,7 +5826,8 @@
     "image": "/api/import/library/import-41a8ceb6-2d3b-4c98-bfb8-54b0d796abfc-garment.png",
     "thumbnail": "/api/import/library/import-41a8ceb6-2d3b-4c98-bfb8-54b0d796abfc-garment.png",
     "modeledImage": null,
-    "importJobId": "41a8ceb6-2d3b-4c98-bfb8-54b0d796abfc"
+    "importJobId": "41a8ceb6-2d3b-4c98-bfb8-54b0d796abfc",
+    "gender": "mujer"
   },
   {
     "id": "import-072b890f-d73d-4105-88fe-89313c4121d3",
@@ -5685,7 +5859,8 @@
     "image": "/api/import/library/import-072b890f-d73d-4105-88fe-89313c4121d3-garment.png",
     "thumbnail": "/api/import/library/import-072b890f-d73d-4105-88fe-89313c4121d3-garment.png",
     "modeledImage": null,
-    "importJobId": "072b890f-d73d-4105-88fe-89313c4121d3"
+    "importJobId": "072b890f-d73d-4105-88fe-89313c4121d3",
+    "gender": "mujer"
   },
   {
     "id": "import-7d68c799-d05d-4ad2-bccc-c01063949b82",
@@ -5719,7 +5894,8 @@
     "image": "/api/import/library/import-7d68c799-d05d-4ad2-bccc-c01063949b82-garment.png",
     "thumbnail": "/api/import/library/import-7d68c799-d05d-4ad2-bccc-c01063949b82-garment.png",
     "modeledImage": null,
-    "importJobId": "7d68c799-d05d-4ad2-bccc-c01063949b82"
+    "importJobId": "7d68c799-d05d-4ad2-bccc-c01063949b82",
+    "gender": "mujer"
   },
   {
     "id": "import-f0e19ac8-ee13-40de-9b5d-3c0fe7aa13cb",
@@ -5751,7 +5927,8 @@
     "image": "/api/import/library/import-f0e19ac8-ee13-40de-9b5d-3c0fe7aa13cb-garment.png",
     "thumbnail": "/api/import/library/import-f0e19ac8-ee13-40de-9b5d-3c0fe7aa13cb-garment.png",
     "modeledImage": null,
-    "importJobId": "f0e19ac8-ee13-40de-9b5d-3c0fe7aa13cb"
+    "importJobId": "f0e19ac8-ee13-40de-9b5d-3c0fe7aa13cb",
+    "gender": "mujer"
   },
   {
     "id": "import-9dd3a0df-b63a-4237-b0c6-88cb17c5dde1",
@@ -5784,7 +5961,8 @@
     "image": "/api/import/library/import-9dd3a0df-b63a-4237-b0c6-88cb17c5dde1-garment.png",
     "thumbnail": "/api/import/library/import-9dd3a0df-b63a-4237-b0c6-88cb17c5dde1-garment.png",
     "modeledImage": null,
-    "importJobId": "9dd3a0df-b63a-4237-b0c6-88cb17c5dde1"
+    "importJobId": "9dd3a0df-b63a-4237-b0c6-88cb17c5dde1",
+    "gender": "mujer"
   },
   {
     "id": "import-4ce2bfb8-8557-4d23-86b2-be119a3290a7",
@@ -5816,7 +5994,8 @@
     "image": "/api/import/library/import-4ce2bfb8-8557-4d23-86b2-be119a3290a7-garment.png",
     "thumbnail": "/api/import/library/import-4ce2bfb8-8557-4d23-86b2-be119a3290a7-garment.png",
     "modeledImage": null,
-    "importJobId": "4ce2bfb8-8557-4d23-86b2-be119a3290a7"
+    "importJobId": "4ce2bfb8-8557-4d23-86b2-be119a3290a7",
+    "gender": "mujer"
   },
   {
     "id": "import-c3fddeff-8dde-4f1d-86eb-7aeea5cd100a",
@@ -5847,7 +6026,8 @@
     "image": "/api/import/library/import-c3fddeff-8dde-4f1d-86eb-7aeea5cd100a-garment.png",
     "thumbnail": "/api/import/library/import-c3fddeff-8dde-4f1d-86eb-7aeea5cd100a-garment.png",
     "modeledImage": null,
-    "importJobId": "c3fddeff-8dde-4f1d-86eb-7aeea5cd100a"
+    "importJobId": "c3fddeff-8dde-4f1d-86eb-7aeea5cd100a",
+    "gender": "mujer"
   },
   {
     "id": "import-f7fd414b-0298-4437-b4cf-db83c2d48950",
@@ -5880,7 +6060,8 @@
     "image": "/api/import/library/import-f7fd414b-0298-4437-b4cf-db83c2d48950-garment.png",
     "thumbnail": "/api/import/library/import-f7fd414b-0298-4437-b4cf-db83c2d48950-garment.png",
     "modeledImage": null,
-    "importJobId": "f7fd414b-0298-4437-b4cf-db83c2d48950"
+    "importJobId": "f7fd414b-0298-4437-b4cf-db83c2d48950",
+    "gender": "mujer"
   },
   {
     "id": "import-105685f8-7b2f-4b14-92f5-1b86ea238006",
@@ -5912,7 +6093,8 @@
     "image": "/api/import/library/import-105685f8-7b2f-4b14-92f5-1b86ea238006-garment.png",
     "thumbnail": "/api/import/library/import-105685f8-7b2f-4b14-92f5-1b86ea238006-garment.png",
     "modeledImage": null,
-    "importJobId": "105685f8-7b2f-4b14-92f5-1b86ea238006"
+    "importJobId": "105685f8-7b2f-4b14-92f5-1b86ea238006",
+    "gender": "mujer"
   },
   {
     "id": "import-b708a0b1-4b21-41c1-9634-5bc82cebfb41",
@@ -5945,7 +6127,8 @@
     "image": "/api/import/library/import-b708a0b1-4b21-41c1-9634-5bc82cebfb41-garment.png",
     "thumbnail": "/api/import/library/import-b708a0b1-4b21-41c1-9634-5bc82cebfb41-garment.png",
     "modeledImage": null,
-    "importJobId": "b708a0b1-4b21-41c1-9634-5bc82cebfb41"
+    "importJobId": "b708a0b1-4b21-41c1-9634-5bc82cebfb41",
+    "gender": "mujer"
   },
   {
     "id": "import-df715acd-5243-4892-aef9-f25d3bb425bb",
@@ -5978,7 +6161,8 @@
     "image": "/api/import/library/import-df715acd-5243-4892-aef9-f25d3bb425bb-garment.png",
     "thumbnail": "/api/import/library/import-df715acd-5243-4892-aef9-f25d3bb425bb-garment.png",
     "modeledImage": null,
-    "importJobId": "df715acd-5243-4892-aef9-f25d3bb425bb"
+    "importJobId": "df715acd-5243-4892-aef9-f25d3bb425bb",
+    "gender": "mujer"
   },
   {
     "id": "import-de10766f-838d-49cd-bfa9-18f5063caf26",
@@ -6011,7 +6195,8 @@
     "image": "/api/import/library/import-de10766f-838d-49cd-bfa9-18f5063caf26-garment.png",
     "thumbnail": "/api/import/library/import-de10766f-838d-49cd-bfa9-18f5063caf26-garment.png",
     "modeledImage": null,
-    "importJobId": "de10766f-838d-49cd-bfa9-18f5063caf26"
+    "importJobId": "de10766f-838d-49cd-bfa9-18f5063caf26",
+    "gender": "mujer"
   },
   {
     "id": "import-a2cc0788-048b-463e-9991-b998c0d37f0f",
@@ -6044,7 +6229,8 @@
     "image": "/api/import/library/import-a2cc0788-048b-463e-9991-b998c0d37f0f-garment.png",
     "thumbnail": "/api/import/library/import-a2cc0788-048b-463e-9991-b998c0d37f0f-garment.png",
     "modeledImage": null,
-    "importJobId": "a2cc0788-048b-463e-9991-b998c0d37f0f"
+    "importJobId": "a2cc0788-048b-463e-9991-b998c0d37f0f",
+    "gender": "mujer"
   },
   {
     "id": "import-bb14bc1f-4179-44ea-b6ec-d66cb87edeea",
@@ -6076,7 +6262,8 @@
     "image": "/api/import/library/import-bb14bc1f-4179-44ea-b6ec-d66cb87edeea-garment.png",
     "thumbnail": "/api/import/library/import-bb14bc1f-4179-44ea-b6ec-d66cb87edeea-garment.png",
     "modeledImage": null,
-    "importJobId": "bb14bc1f-4179-44ea-b6ec-d66cb87edeea"
+    "importJobId": "bb14bc1f-4179-44ea-b6ec-d66cb87edeea",
+    "gender": "mujer"
   },
   {
     "id": "import-90466617-d56e-4efb-bf05-a75a79771a2b",
@@ -6108,7 +6295,8 @@
     "image": "/api/import/library/import-90466617-d56e-4efb-bf05-a75a79771a2b-garment.png",
     "thumbnail": "/api/import/library/import-90466617-d56e-4efb-bf05-a75a79771a2b-garment.png",
     "modeledImage": null,
-    "importJobId": "90466617-d56e-4efb-bf05-a75a79771a2b"
+    "importJobId": "90466617-d56e-4efb-bf05-a75a79771a2b",
+    "gender": "mujer"
   },
   {
     "id": "import-48739846-44fe-44db-b5db-358a2efda8ee",
@@ -6140,7 +6328,8 @@
     "image": "/api/import/library/import-48739846-44fe-44db-b5db-358a2efda8ee-garment.png",
     "thumbnail": "/api/import/library/import-48739846-44fe-44db-b5db-358a2efda8ee-garment.png",
     "modeledImage": null,
-    "importJobId": "48739846-44fe-44db-b5db-358a2efda8ee"
+    "importJobId": "48739846-44fe-44db-b5db-358a2efda8ee",
+    "gender": "mujer"
   },
   {
     "id": "import-c237bd77-4c10-4432-84ad-237eefa8c2e9",
@@ -6172,7 +6361,8 @@
     "image": "/api/import/library/import-c237bd77-4c10-4432-84ad-237eefa8c2e9-garment.png",
     "thumbnail": "/api/import/library/import-c237bd77-4c10-4432-84ad-237eefa8c2e9-garment.png",
     "modeledImage": null,
-    "importJobId": "c237bd77-4c10-4432-84ad-237eefa8c2e9"
+    "importJobId": "c237bd77-4c10-4432-84ad-237eefa8c2e9",
+    "gender": "mujer"
   },
   {
     "id": "import-9524ba9e-9c57-47ba-b9ad-bcacffa21972",
@@ -6205,7 +6395,8 @@
     "image": "/api/import/library/import-9524ba9e-9c57-47ba-b9ad-bcacffa21972-garment.png",
     "thumbnail": "/api/import/library/import-9524ba9e-9c57-47ba-b9ad-bcacffa21972-garment.png",
     "modeledImage": null,
-    "importJobId": "9524ba9e-9c57-47ba-b9ad-bcacffa21972"
+    "importJobId": "9524ba9e-9c57-47ba-b9ad-bcacffa21972",
+    "gender": "mujer"
   },
   {
     "id": "import-99e7c19a-1efc-45ba-afa4-580e2380d43d",
@@ -6237,7 +6428,8 @@
     "image": "/api/import/library/import-99e7c19a-1efc-45ba-afa4-580e2380d43d-garment.png",
     "thumbnail": "/api/import/library/import-99e7c19a-1efc-45ba-afa4-580e2380d43d-garment.png",
     "modeledImage": null,
-    "importJobId": "99e7c19a-1efc-45ba-afa4-580e2380d43d"
+    "importJobId": "99e7c19a-1efc-45ba-afa4-580e2380d43d",
+    "gender": "mujer"
   },
   {
     "id": "import-f47f19d3-c835-4e67-a0c4-54fcdfd9e112",
@@ -6268,7 +6460,8 @@
     "image": "/api/import/library/import-f47f19d3-c835-4e67-a0c4-54fcdfd9e112-garment.png",
     "thumbnail": "/api/import/library/import-f47f19d3-c835-4e67-a0c4-54fcdfd9e112-garment.png",
     "modeledImage": null,
-    "importJobId": "f47f19d3-c835-4e67-a0c4-54fcdfd9e112"
+    "importJobId": "f47f19d3-c835-4e67-a0c4-54fcdfd9e112",
+    "gender": "mujer"
   },
   {
     "id": "import-018c5acb-c167-4658-a260-1bf69efda71f",
@@ -6300,7 +6493,8 @@
     "image": "/api/import/library/import-018c5acb-c167-4658-a260-1bf69efda71f-garment.png",
     "thumbnail": "/api/import/library/import-018c5acb-c167-4658-a260-1bf69efda71f-garment.png",
     "modeledImage": null,
-    "importJobId": "018c5acb-c167-4658-a260-1bf69efda71f"
+    "importJobId": "018c5acb-c167-4658-a260-1bf69efda71f",
+    "gender": "mujer"
   },
   {
     "id": "import-ca2b0a16-5b19-459d-a307-5332798fcea8",
@@ -6332,7 +6526,8 @@
     "image": "/api/import/library/import-ca2b0a16-5b19-459d-a307-5332798fcea8-garment.png",
     "thumbnail": "/api/import/library/import-ca2b0a16-5b19-459d-a307-5332798fcea8-garment.png",
     "modeledImage": null,
-    "importJobId": "ca2b0a16-5b19-459d-a307-5332798fcea8"
+    "importJobId": "ca2b0a16-5b19-459d-a307-5332798fcea8",
+    "gender": "mujer"
   },
   {
     "id": "import-1fa29045-f21d-4fd1-8f30-a47d39d75f2b",
@@ -6362,7 +6557,8 @@
     "image": "/api/import/library/import-1fa29045-f21d-4fd1-8f30-a47d39d75f2b-garment.png",
     "thumbnail": "/api/import/library/import-1fa29045-f21d-4fd1-8f30-a47d39d75f2b-garment.png",
     "modeledImage": null,
-    "importJobId": "1fa29045-f21d-4fd1-8f30-a47d39d75f2b"
+    "importJobId": "1fa29045-f21d-4fd1-8f30-a47d39d75f2b",
+    "gender": "mujer"
   },
   {
     "id": "import-83c3a276-37f7-484f-87af-a7618b0b76c7",
@@ -6394,7 +6590,8 @@
     "image": "/api/import/library/import-83c3a276-37f7-484f-87af-a7618b0b76c7-garment.png",
     "thumbnail": "/api/import/library/import-83c3a276-37f7-484f-87af-a7618b0b76c7-garment.png",
     "modeledImage": null,
-    "importJobId": "83c3a276-37f7-484f-87af-a7618b0b76c7"
+    "importJobId": "83c3a276-37f7-484f-87af-a7618b0b76c7",
+    "gender": "mujer"
   },
   {
     "id": "import-971c17ee-b984-4c7f-91df-813489254101",
@@ -6427,7 +6624,8 @@
     "image": "/api/import/library/import-971c17ee-b984-4c7f-91df-813489254101-garment.png",
     "thumbnail": "/api/import/library/import-971c17ee-b984-4c7f-91df-813489254101-garment.png",
     "modeledImage": null,
-    "importJobId": "971c17ee-b984-4c7f-91df-813489254101"
+    "importJobId": "971c17ee-b984-4c7f-91df-813489254101",
+    "gender": "mujer"
   },
   {
     "id": "import-17aa166b-68f0-409f-9a91-848c2cfd533e",
@@ -6458,7 +6656,8 @@
     "image": "/api/import/library/import-17aa166b-68f0-409f-9a91-848c2cfd533e-garment.png",
     "thumbnail": "/api/import/library/import-17aa166b-68f0-409f-9a91-848c2cfd533e-garment.png",
     "modeledImage": null,
-    "importJobId": "17aa166b-68f0-409f-9a91-848c2cfd533e"
+    "importJobId": "17aa166b-68f0-409f-9a91-848c2cfd533e",
+    "gender": "mujer"
   },
   {
     "id": "import-0835771b-af3f-4e7b-a45a-7737f74a1cc8",
@@ -6489,7 +6688,8 @@
     "image": "/api/import/library/import-0835771b-af3f-4e7b-a45a-7737f74a1cc8-garment.png",
     "thumbnail": "/api/import/library/import-0835771b-af3f-4e7b-a45a-7737f74a1cc8-garment.png",
     "modeledImage": null,
-    "importJobId": "0835771b-af3f-4e7b-a45a-7737f74a1cc8"
+    "importJobId": "0835771b-af3f-4e7b-a45a-7737f74a1cc8",
+    "gender": "mujer"
   },
   {
     "id": "import-7ed63b86-b28f-4c78-9725-03a71bd7b9d0",
@@ -6522,7 +6722,8 @@
     "image": "/api/import/library/import-7ed63b86-b28f-4c78-9725-03a71bd7b9d0-garment.png",
     "thumbnail": "/api/import/library/import-7ed63b86-b28f-4c78-9725-03a71bd7b9d0-garment.png",
     "modeledImage": null,
-    "importJobId": "7ed63b86-b28f-4c78-9725-03a71bd7b9d0"
+    "importJobId": "7ed63b86-b28f-4c78-9725-03a71bd7b9d0",
+    "gender": "mujer"
   },
   {
     "id": "import-5499987f-ba01-4da6-af6a-899c06982ec8",
@@ -6552,7 +6753,8 @@
     "image": "/api/import/library/import-5499987f-ba01-4da6-af6a-899c06982ec8-garment.png",
     "thumbnail": "/api/import/library/import-5499987f-ba01-4da6-af6a-899c06982ec8-garment.png",
     "modeledImage": null,
-    "importJobId": "5499987f-ba01-4da6-af6a-899c06982ec8"
+    "importJobId": "5499987f-ba01-4da6-af6a-899c06982ec8",
+    "gender": "mujer"
   },
   {
     "id": "import-9dadc96e-4fc9-4a84-89c8-2be91c765a36",
@@ -6585,7 +6787,8 @@
     "image": "/api/import/library/import-9dadc96e-4fc9-4a84-89c8-2be91c765a36-garment.png",
     "thumbnail": "/api/import/library/import-9dadc96e-4fc9-4a84-89c8-2be91c765a36-garment.png",
     "modeledImage": null,
-    "importJobId": "9dadc96e-4fc9-4a84-89c8-2be91c765a36"
+    "importJobId": "9dadc96e-4fc9-4a84-89c8-2be91c765a36",
+    "gender": "mujer"
   },
   {
     "id": "import-91859c48-fdd0-4c20-bf72-a85879be8e9a",
@@ -6617,7 +6820,8 @@
     "image": "/api/import/library/import-91859c48-fdd0-4c20-bf72-a85879be8e9a-garment.png",
     "thumbnail": "/api/import/library/import-91859c48-fdd0-4c20-bf72-a85879be8e9a-garment.png",
     "modeledImage": null,
-    "importJobId": "91859c48-fdd0-4c20-bf72-a85879be8e9a"
+    "importJobId": "91859c48-fdd0-4c20-bf72-a85879be8e9a",
+    "gender": "mujer"
   },
   {
     "id": "import-2a38b538-fcd5-4675-9518-d6de5e12dd38",
@@ -6649,7 +6853,8 @@
     "image": "/api/import/library/import-2a38b538-fcd5-4675-9518-d6de5e12dd38-garment.png",
     "thumbnail": "/api/import/library/import-2a38b538-fcd5-4675-9518-d6de5e12dd38-garment.png",
     "modeledImage": null,
-    "importJobId": "2a38b538-fcd5-4675-9518-d6de5e12dd38"
+    "importJobId": "2a38b538-fcd5-4675-9518-d6de5e12dd38",
+    "gender": "mujer"
   },
   {
     "id": "import-cf027679-9f46-47ba-8305-696c7d882ada",
@@ -6681,7 +6886,8 @@
     "image": "/api/import/library/import-cf027679-9f46-47ba-8305-696c7d882ada-garment.png",
     "thumbnail": "/api/import/library/import-cf027679-9f46-47ba-8305-696c7d882ada-garment.png",
     "modeledImage": null,
-    "importJobId": "cf027679-9f46-47ba-8305-696c7d882ada"
+    "importJobId": "cf027679-9f46-47ba-8305-696c7d882ada",
+    "gender": "mujer"
   },
   {
     "id": "import-f299f364-ffbd-4cb9-bc62-8e098d55f368",
@@ -6713,7 +6919,8 @@
     "image": "/api/import/library/import-f299f364-ffbd-4cb9-bc62-8e098d55f368-garment.png",
     "thumbnail": "/api/import/library/import-f299f364-ffbd-4cb9-bc62-8e098d55f368-garment.png",
     "modeledImage": null,
-    "importJobId": "f299f364-ffbd-4cb9-bc62-8e098d55f368"
+    "importJobId": "f299f364-ffbd-4cb9-bc62-8e098d55f368",
+    "gender": "mujer"
   },
   {
     "id": "import-d6429106-7a61-4bf3-a77e-713a715dc3c4",
@@ -6745,7 +6952,8 @@
     "image": "/api/import/library/import-d6429106-7a61-4bf3-a77e-713a715dc3c4-garment.png",
     "thumbnail": "/api/import/library/import-d6429106-7a61-4bf3-a77e-713a715dc3c4-garment.png",
     "modeledImage": null,
-    "importJobId": "d6429106-7a61-4bf3-a77e-713a715dc3c4"
+    "importJobId": "d6429106-7a61-4bf3-a77e-713a715dc3c4",
+    "gender": "mujer"
   },
   {
     "id": "import-4bc7a400-9011-447a-8bef-253d76097182",
@@ -6777,7 +6985,8 @@
     "image": "/api/import/library/import-4bc7a400-9011-447a-8bef-253d76097182-garment.png",
     "thumbnail": "/api/import/library/import-4bc7a400-9011-447a-8bef-253d76097182-garment.png",
     "modeledImage": null,
-    "importJobId": "4bc7a400-9011-447a-8bef-253d76097182"
+    "importJobId": "4bc7a400-9011-447a-8bef-253d76097182",
+    "gender": "mujer"
   },
   {
     "id": "import-8bfa33b7-a2e3-46a5-9d82-b1004868e959",
@@ -6809,7 +7018,8 @@
     "image": "/api/import/library/import-8bfa33b7-a2e3-46a5-9d82-b1004868e959-garment.png",
     "thumbnail": "/api/import/library/import-8bfa33b7-a2e3-46a5-9d82-b1004868e959-garment.png",
     "modeledImage": null,
-    "importJobId": "8bfa33b7-a2e3-46a5-9d82-b1004868e959"
+    "importJobId": "8bfa33b7-a2e3-46a5-9d82-b1004868e959",
+    "gender": "mujer"
   },
   {
     "id": "import-8ab3a51d-3e0d-4611-8833-cd1c461884e8",
@@ -6842,7 +7052,8 @@
     "image": "/api/import/library/import-8ab3a51d-3e0d-4611-8833-cd1c461884e8-garment.png",
     "thumbnail": "/api/import/library/import-8ab3a51d-3e0d-4611-8833-cd1c461884e8-garment.png",
     "modeledImage": null,
-    "importJobId": "8ab3a51d-3e0d-4611-8833-cd1c461884e8"
+    "importJobId": "8ab3a51d-3e0d-4611-8833-cd1c461884e8",
+    "gender": "mujer"
   },
   {
     "id": "import-5b8410a2-9d01-420a-8f96-38ed8e93ddfb",
@@ -6875,7 +7086,8 @@
     "image": "/api/import/library/import-5b8410a2-9d01-420a-8f96-38ed8e93ddfb-garment.png",
     "thumbnail": "/api/import/library/import-5b8410a2-9d01-420a-8f96-38ed8e93ddfb-garment.png",
     "modeledImage": null,
-    "importJobId": "5b8410a2-9d01-420a-8f96-38ed8e93ddfb"
+    "importJobId": "5b8410a2-9d01-420a-8f96-38ed8e93ddfb",
+    "gender": "mujer"
   },
   {
     "id": "import-dc28fed5-4327-47b6-9b33-ee59d5175036",
@@ -6905,7 +7117,8 @@
     "image": "/api/import/library/import-dc28fed5-4327-47b6-9b33-ee59d5175036-garment.png",
     "thumbnail": "/api/import/library/import-dc28fed5-4327-47b6-9b33-ee59d5175036-garment.png",
     "modeledImage": null,
-    "importJobId": "dc28fed5-4327-47b6-9b33-ee59d5175036"
+    "importJobId": "dc28fed5-4327-47b6-9b33-ee59d5175036",
+    "gender": "mujer"
   },
   {
     "id": "import-bf687a9f-b398-4399-a8f5-18fcf271c7ca",
@@ -6937,7 +7150,8 @@
     "image": "/api/import/library/import-bf687a9f-b398-4399-a8f5-18fcf271c7ca-garment.png",
     "thumbnail": "/api/import/library/import-bf687a9f-b398-4399-a8f5-18fcf271c7ca-garment.png",
     "modeledImage": null,
-    "importJobId": "bf687a9f-b398-4399-a8f5-18fcf271c7ca"
+    "importJobId": "bf687a9f-b398-4399-a8f5-18fcf271c7ca",
+    "gender": "mujer"
   },
   {
     "id": "import-c5d47993-3023-4c28-b18c-b6506e5c471b",
@@ -6970,7 +7184,8 @@
     "image": "/api/import/library/import-c5d47993-3023-4c28-b18c-b6506e5c471b-garment.png",
     "thumbnail": "/api/import/library/import-c5d47993-3023-4c28-b18c-b6506e5c471b-garment.png",
     "modeledImage": null,
-    "importJobId": "c5d47993-3023-4c28-b18c-b6506e5c471b"
+    "importJobId": "c5d47993-3023-4c28-b18c-b6506e5c471b",
+    "gender": "mujer"
   },
   {
     "id": "import-e65749e2-55bd-4834-9be8-127fdd1d1826",
@@ -7001,7 +7216,8 @@
     "image": "/api/import/library/import-e65749e2-55bd-4834-9be8-127fdd1d1826-garment.png",
     "thumbnail": "/api/import/library/import-e65749e2-55bd-4834-9be8-127fdd1d1826-garment.png",
     "modeledImage": null,
-    "importJobId": "e65749e2-55bd-4834-9be8-127fdd1d1826"
+    "importJobId": "e65749e2-55bd-4834-9be8-127fdd1d1826",
+    "gender": "mujer"
   },
   {
     "id": "import-4a28ee70-9551-474f-9549-834261382d8b",
@@ -7033,7 +7249,8 @@
     "image": "/api/import/library/import-4a28ee70-9551-474f-9549-834261382d8b-garment.png",
     "thumbnail": "/api/import/library/import-4a28ee70-9551-474f-9549-834261382d8b-garment.png",
     "modeledImage": null,
-    "importJobId": "4a28ee70-9551-474f-9549-834261382d8b"
+    "importJobId": "4a28ee70-9551-474f-9549-834261382d8b",
+    "gender": "mujer"
   },
   {
     "id": "import-e1ace5c8-e8d8-4166-83a9-02d0346b7b29",
@@ -7064,7 +7281,8 @@
     "image": "/api/import/library/import-e1ace5c8-e8d8-4166-83a9-02d0346b7b29-garment.png",
     "thumbnail": "/api/import/library/import-e1ace5c8-e8d8-4166-83a9-02d0346b7b29-garment.png",
     "modeledImage": null,
-    "importJobId": "e1ace5c8-e8d8-4166-83a9-02d0346b7b29"
+    "importJobId": "e1ace5c8-e8d8-4166-83a9-02d0346b7b29",
+    "gender": "mujer"
   },
   {
     "id": "import-79318a5a-de5b-4d1d-840b-63bc73f0633d",
@@ -7098,7 +7316,8 @@
     "image": "/api/import/library/import-79318a5a-de5b-4d1d-840b-63bc73f0633d-garment.png",
     "thumbnail": "/api/import/library/import-79318a5a-de5b-4d1d-840b-63bc73f0633d-garment.png",
     "modeledImage": null,
-    "importJobId": "79318a5a-de5b-4d1d-840b-63bc73f0633d"
+    "importJobId": "79318a5a-de5b-4d1d-840b-63bc73f0633d",
+    "gender": "mujer"
   },
   {
     "id": "import-23132552-4adb-4de3-845b-97bc19e9f55f",
@@ -7130,7 +7349,8 @@
     "image": "/api/import/library/import-23132552-4adb-4de3-845b-97bc19e9f55f-garment.png",
     "thumbnail": "/api/import/library/import-23132552-4adb-4de3-845b-97bc19e9f55f-garment.png",
     "modeledImage": null,
-    "importJobId": "23132552-4adb-4de3-845b-97bc19e9f55f"
+    "importJobId": "23132552-4adb-4de3-845b-97bc19e9f55f",
+    "gender": "mujer"
   },
   {
     "id": "import-54fd7e90-e465-47df-981a-ecaca40d132b",
@@ -7163,7 +7383,8 @@
     "image": "/api/import/library/import-54fd7e90-e465-47df-981a-ecaca40d132b-garment.png",
     "thumbnail": "/api/import/library/import-54fd7e90-e465-47df-981a-ecaca40d132b-garment.png",
     "modeledImage": null,
-    "importJobId": "54fd7e90-e465-47df-981a-ecaca40d132b"
+    "importJobId": "54fd7e90-e465-47df-981a-ecaca40d132b",
+    "gender": "mujer"
   },
   {
     "id": "import-7e78a906-b01f-44f2-b3a9-e01ba8c8c4bd",
@@ -7195,7 +7416,8 @@
     "image": "/api/import/library/import-7e78a906-b01f-44f2-b3a9-e01ba8c8c4bd-garment.png",
     "thumbnail": "/api/import/library/import-7e78a906-b01f-44f2-b3a9-e01ba8c8c4bd-garment.png",
     "modeledImage": null,
-    "importJobId": "7e78a906-b01f-44f2-b3a9-e01ba8c8c4bd"
+    "importJobId": "7e78a906-b01f-44f2-b3a9-e01ba8c8c4bd",
+    "gender": "mujer"
   },
   {
     "id": "import-c7805f99-a781-4c21-9e83-8528ef139ee3",
@@ -7227,7 +7449,8 @@
     "image": "/api/import/library/import-c7805f99-a781-4c21-9e83-8528ef139ee3-garment.png",
     "thumbnail": "/api/import/library/import-c7805f99-a781-4c21-9e83-8528ef139ee3-garment.png",
     "modeledImage": null,
-    "importJobId": "c7805f99-a781-4c21-9e83-8528ef139ee3"
+    "importJobId": "c7805f99-a781-4c21-9e83-8528ef139ee3",
+    "gender": "mujer"
   },
   {
     "id": "import-0e4f9941-2799-46ed-868c-1f18cebbab7f",
@@ -7261,7 +7484,8 @@
     "image": "/api/import/library/import-0e4f9941-2799-46ed-868c-1f18cebbab7f-garment.png",
     "thumbnail": "/api/import/library/import-0e4f9941-2799-46ed-868c-1f18cebbab7f-garment.png",
     "modeledImage": null,
-    "importJobId": "0e4f9941-2799-46ed-868c-1f18cebbab7f"
+    "importJobId": "0e4f9941-2799-46ed-868c-1f18cebbab7f",
+    "gender": "mujer"
   },
   {
     "id": "import-141af15b-d55a-4e42-aec9-a479328fd58d",
@@ -7294,7 +7518,8 @@
     "image": "/api/import/library/import-141af15b-d55a-4e42-aec9-a479328fd58d-garment.png",
     "thumbnail": "/api/import/library/import-141af15b-d55a-4e42-aec9-a479328fd58d-garment.png",
     "modeledImage": null,
-    "importJobId": "141af15b-d55a-4e42-aec9-a479328fd58d"
+    "importJobId": "141af15b-d55a-4e42-aec9-a479328fd58d",
+    "gender": "mujer"
   },
   {
     "id": "import-4b652654-25ce-4340-8298-1398b01f9cd0",
@@ -7326,7 +7551,8 @@
     "image": "/api/import/library/import-4b652654-25ce-4340-8298-1398b01f9cd0-garment.png",
     "thumbnail": "/api/import/library/import-4b652654-25ce-4340-8298-1398b01f9cd0-garment.png",
     "modeledImage": null,
-    "importJobId": "4b652654-25ce-4340-8298-1398b01f9cd0"
+    "importJobId": "4b652654-25ce-4340-8298-1398b01f9cd0",
+    "gender": "mujer"
   },
   {
     "id": "import-f4c8b10c-7643-417a-a5e9-d0f6f8b5e9eb",
@@ -7359,7 +7585,8 @@
     "image": "/api/import/library/import-f4c8b10c-7643-417a-a5e9-d0f6f8b5e9eb-garment.png",
     "thumbnail": "/api/import/library/import-f4c8b10c-7643-417a-a5e9-d0f6f8b5e9eb-garment.png",
     "modeledImage": null,
-    "importJobId": "f4c8b10c-7643-417a-a5e9-d0f6f8b5e9eb"
+    "importJobId": "f4c8b10c-7643-417a-a5e9-d0f6f8b5e9eb",
+    "gender": "mujer"
   },
   {
     "id": "import-1da8853f-2575-45b3-99e6-d7599f4f63b3",
@@ -7391,7 +7618,8 @@
     "image": "/api/import/library/import-1da8853f-2575-45b3-99e6-d7599f4f63b3-garment.png",
     "thumbnail": "/api/import/library/import-1da8853f-2575-45b3-99e6-d7599f4f63b3-garment.png",
     "modeledImage": null,
-    "importJobId": "1da8853f-2575-45b3-99e6-d7599f4f63b3"
+    "importJobId": "1da8853f-2575-45b3-99e6-d7599f4f63b3",
+    "gender": "mujer"
   },
   {
     "id": "import-5a6be600-88a9-456c-9214-94859631ae5d",
@@ -7425,7 +7653,8 @@
     "image": "/api/import/library/import-5a6be600-88a9-456c-9214-94859631ae5d-garment.png",
     "thumbnail": "/api/import/library/import-5a6be600-88a9-456c-9214-94859631ae5d-garment.png",
     "modeledImage": null,
-    "importJobId": "5a6be600-88a9-456c-9214-94859631ae5d"
+    "importJobId": "5a6be600-88a9-456c-9214-94859631ae5d",
+    "gender": "mujer"
   },
   {
     "id": "import-c8b00bba-bbcf-4320-859c-912413e540ba",
@@ -7459,7 +7688,8 @@
     "image": "/api/import/library/import-c8b00bba-bbcf-4320-859c-912413e540ba-garment.png",
     "thumbnail": "/api/import/library/import-c8b00bba-bbcf-4320-859c-912413e540ba-garment.png",
     "modeledImage": null,
-    "importJobId": "c8b00bba-bbcf-4320-859c-912413e540ba"
+    "importJobId": "c8b00bba-bbcf-4320-859c-912413e540ba",
+    "gender": "mujer"
   },
   {
     "id": "import-c8497d42-d4ea-4efb-9d42-fcca2c4c7a95",
@@ -7492,7 +7722,8 @@
     "image": "/api/import/library/import-c8497d42-d4ea-4efb-9d42-fcca2c4c7a95-garment.png",
     "thumbnail": "/api/import/library/import-c8497d42-d4ea-4efb-9d42-fcca2c4c7a95-garment.png",
     "modeledImage": null,
-    "importJobId": "c8497d42-d4ea-4efb-9d42-fcca2c4c7a95"
+    "importJobId": "c8497d42-d4ea-4efb-9d42-fcca2c4c7a95",
+    "gender": "mujer"
   },
   {
     "id": "import-88530919-4448-4639-b32b-02166be91903",
@@ -7524,7 +7755,8 @@
     "image": "/api/import/library/import-88530919-4448-4639-b32b-02166be91903-garment.png",
     "thumbnail": "/api/import/library/import-88530919-4448-4639-b32b-02166be91903-garment.png",
     "modeledImage": null,
-    "importJobId": "88530919-4448-4639-b32b-02166be91903"
+    "importJobId": "88530919-4448-4639-b32b-02166be91903",
+    "gender": "mujer"
   },
   {
     "id": "import-1e8cbe8b-bd8e-4b04-89f7-0aded003b177",
@@ -7556,7 +7788,8 @@
     "image": "/api/import/library/import-1e8cbe8b-bd8e-4b04-89f7-0aded003b177-garment.png",
     "thumbnail": "/api/import/library/import-1e8cbe8b-bd8e-4b04-89f7-0aded003b177-garment.png",
     "modeledImage": null,
-    "importJobId": "1e8cbe8b-bd8e-4b04-89f7-0aded003b177"
+    "importJobId": "1e8cbe8b-bd8e-4b04-89f7-0aded003b177",
+    "gender": "mujer"
   },
   {
     "id": "import-f6b40fea-ea57-4d82-90db-e3443f5944c0",
@@ -7587,7 +7820,8 @@
     "image": "/api/import/library/import-f6b40fea-ea57-4d82-90db-e3443f5944c0-garment.png",
     "thumbnail": "/api/import/library/import-f6b40fea-ea57-4d82-90db-e3443f5944c0-garment.png",
     "modeledImage": null,
-    "importJobId": "f6b40fea-ea57-4d82-90db-e3443f5944c0"
+    "importJobId": "f6b40fea-ea57-4d82-90db-e3443f5944c0",
+    "gender": "mujer"
   },
   {
     "id": "import-e6ad030b-8cb0-464f-8081-b90f238b7546",
@@ -7620,7 +7854,8 @@
     "image": "/api/import/library/import-e6ad030b-8cb0-464f-8081-b90f238b7546-garment.png",
     "thumbnail": "/api/import/library/import-e6ad030b-8cb0-464f-8081-b90f238b7546-garment.png",
     "modeledImage": null,
-    "importJobId": "e6ad030b-8cb0-464f-8081-b90f238b7546"
+    "importJobId": "e6ad030b-8cb0-464f-8081-b90f238b7546",
+    "gender": "unisex"
   },
   {
     "id": "import-bf8a897f-b442-4428-aa08-fdb030debd99",
@@ -7654,7 +7889,8 @@
     "image": "/api/import/library/import-bf8a897f-b442-4428-aa08-fdb030debd99-garment.png",
     "thumbnail": "/api/import/library/import-bf8a897f-b442-4428-aa08-fdb030debd99-garment.png",
     "modeledImage": null,
-    "importJobId": "bf8a897f-b442-4428-aa08-fdb030debd99"
+    "importJobId": "bf8a897f-b442-4428-aa08-fdb030debd99",
+    "gender": "mujer"
   },
   {
     "id": "import-e0b8bcb4-27d7-4634-8be0-85324aa9f991",
@@ -7687,7 +7923,8 @@
     "image": "/api/import/library/import-e0b8bcb4-27d7-4634-8be0-85324aa9f991-garment.png",
     "thumbnail": "/api/import/library/import-e0b8bcb4-27d7-4634-8be0-85324aa9f991-garment.png",
     "modeledImage": null,
-    "importJobId": "e0b8bcb4-27d7-4634-8be0-85324aa9f991"
+    "importJobId": "e0b8bcb4-27d7-4634-8be0-85324aa9f991",
+    "gender": "mujer"
   },
   {
     "id": "import-0b458069-15d6-45a6-9a5c-8430299ec5c1",
@@ -7720,7 +7957,8 @@
     "image": "/api/import/library/import-0b458069-15d6-45a6-9a5c-8430299ec5c1-garment.png",
     "thumbnail": "/api/import/library/import-0b458069-15d6-45a6-9a5c-8430299ec5c1-garment.png",
     "modeledImage": null,
-    "importJobId": "0b458069-15d6-45a6-9a5c-8430299ec5c1"
+    "importJobId": "0b458069-15d6-45a6-9a5c-8430299ec5c1",
+    "gender": "mujer"
   },
   {
     "id": "import-71623f21-6fb6-4fcf-a038-4f20cd35cb2b",
@@ -7751,7 +7989,8 @@
     "image": "/api/import/library/import-71623f21-6fb6-4fcf-a038-4f20cd35cb2b-garment.png",
     "thumbnail": "/api/import/library/import-71623f21-6fb6-4fcf-a038-4f20cd35cb2b-garment.png",
     "modeledImage": null,
-    "importJobId": "71623f21-6fb6-4fcf-a038-4f20cd35cb2b"
+    "importJobId": "71623f21-6fb6-4fcf-a038-4f20cd35cb2b",
+    "gender": "mujer"
   },
   {
     "id": "import-e0bfbb66-52d1-4e0c-9480-7974a4f45dcb",
@@ -7782,7 +8021,8 @@
     "image": "/api/import/library/import-e0bfbb66-52d1-4e0c-9480-7974a4f45dcb-garment.png",
     "thumbnail": "/api/import/library/import-e0bfbb66-52d1-4e0c-9480-7974a4f45dcb-garment.png",
     "modeledImage": null,
-    "importJobId": "e0bfbb66-52d1-4e0c-9480-7974a4f45dcb"
+    "importJobId": "e0bfbb66-52d1-4e0c-9480-7974a4f45dcb",
+    "gender": "mujer"
   },
   {
     "id": "import-553133d3-d640-430f-ae51-f283b171e56e",
@@ -7813,7 +8053,8 @@
     "image": "/api/import/library/import-553133d3-d640-430f-ae51-f283b171e56e-garment.png",
     "thumbnail": "/api/import/library/import-553133d3-d640-430f-ae51-f283b171e56e-garment.png",
     "modeledImage": null,
-    "importJobId": "553133d3-d640-430f-ae51-f283b171e56e"
+    "importJobId": "553133d3-d640-430f-ae51-f283b171e56e",
+    "gender": "mujer"
   },
   {
     "id": "import-4053cf47-5599-4900-b84e-af3f55da33c4",
@@ -7847,7 +8088,8 @@
     "image": "/api/import/library/import-4053cf47-5599-4900-b84e-af3f55da33c4-garment.png",
     "thumbnail": "/api/import/library/import-4053cf47-5599-4900-b84e-af3f55da33c4-garment.png",
     "modeledImage": null,
-    "importJobId": "4053cf47-5599-4900-b84e-af3f55da33c4"
+    "importJobId": "4053cf47-5599-4900-b84e-af3f55da33c4",
+    "gender": "mujer"
   },
   {
     "id": "import-8ba0c54e-3833-4611-8c60-ac04793a7e98",
@@ -7879,7 +8121,8 @@
     "image": "/api/import/library/import-8ba0c54e-3833-4611-8c60-ac04793a7e98-garment.png",
     "thumbnail": "/api/import/library/import-8ba0c54e-3833-4611-8c60-ac04793a7e98-garment.png",
     "modeledImage": null,
-    "importJobId": "8ba0c54e-3833-4611-8c60-ac04793a7e98"
+    "importJobId": "8ba0c54e-3833-4611-8c60-ac04793a7e98",
+    "gender": "mujer"
   },
   {
     "id": "import-60cafd8b-2d26-4348-afa9-5a2b7d58ae10",
@@ -7912,7 +8155,8 @@
     "image": "/api/import/library/import-60cafd8b-2d26-4348-afa9-5a2b7d58ae10-garment.png",
     "thumbnail": "/api/import/library/import-60cafd8b-2d26-4348-afa9-5a2b7d58ae10-garment.png",
     "modeledImage": null,
-    "importJobId": "60cafd8b-2d26-4348-afa9-5a2b7d58ae10"
+    "importJobId": "60cafd8b-2d26-4348-afa9-5a2b7d58ae10",
+    "gender": "mujer"
   },
   {
     "id": "import-2600977b-a67d-4982-8db8-0482c641aa76",
@@ -7945,7 +8189,8 @@
     "image": "/api/import/library/import-2600977b-a67d-4982-8db8-0482c641aa76-garment.png",
     "thumbnail": "/api/import/library/import-2600977b-a67d-4982-8db8-0482c641aa76-garment.png",
     "modeledImage": null,
-    "importJobId": "2600977b-a67d-4982-8db8-0482c641aa76"
+    "importJobId": "2600977b-a67d-4982-8db8-0482c641aa76",
+    "gender": "mujer"
   },
   {
     "id": "import-3a1df6be-cc18-49a1-aded-00d42acda268",
@@ -7979,7 +8224,8 @@
     "image": "/api/import/library/import-3a1df6be-cc18-49a1-aded-00d42acda268-garment.png",
     "thumbnail": "/api/import/library/import-3a1df6be-cc18-49a1-aded-00d42acda268-garment.png",
     "modeledImage": null,
-    "importJobId": "3a1df6be-cc18-49a1-aded-00d42acda268"
+    "importJobId": "3a1df6be-cc18-49a1-aded-00d42acda268",
+    "gender": "mujer"
   },
   {
     "id": "import-42574cdf-abb0-4612-b300-e90691c0bfa0",
@@ -8012,6 +8258,7 @@
     "image": "/api/import/library/import-42574cdf-abb0-4612-b300-e90691c0bfa0-garment.png",
     "thumbnail": "/api/import/library/import-42574cdf-abb0-4612-b300-e90691c0bfa0-garment.png",
     "modeledImage": null,
-    "importJobId": "42574cdf-abb0-4612-b300-e90691c0bfa0"
+    "importJobId": "42574cdf-abb0-4612-b300-e90691c0bfa0",
+    "gender": "mujer"
   }
 ]

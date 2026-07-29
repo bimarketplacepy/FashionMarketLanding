@@ -182,22 +182,10 @@ async function geminiImage({ key, baseUrl, model, prompt, images, aspectRatio })
     const normalized = await normalizeImage(image.data);
     parts.push({ inlineData: { mimeType: "image/png", data: normalized.toString("base64") } });
   }
-  const aspectRatioEnums = {
-    "1:1": "ASPECT_RATIO_ONE_BY_ONE",
-    "2:3": "ASPECT_RATIO_TWO_BY_THREE",
-    "3:2": "ASPECT_RATIO_THREE_BY_TWO",
-    "3:4": "ASPECT_RATIO_THREE_BY_FOUR",
-    "4:3": "ASPECT_RATIO_FOUR_BY_THREE",
-    "4:5": "ASPECT_RATIO_FOUR_BY_FIVE",
-    "5:4": "ASPECT_RATIO_FIVE_BY_FOUR",
-    "9:16": "ASPECT_RATIO_NINE_BY_SIXTEEN",
-    "16:9": "ASPECT_RATIO_SIXTEEN_BY_NINE",
-    "21:9": "ASPECT_RATIO_TWENTY_ONE_BY_NINE",
-  };
-  const imageFormat = {
-    aspectRatio: aspectRatioEnums[aspectRatio] || aspectRatioEnums["1:1"],
-  };
-  if (!model.includes("2.5")) imageFormat.imageSize = "IMAGE_SIZE_ONE_K";
+  // Formato actual de la API: generationConfig.imageConfig con strings "1:1" / "1K".
+  const supportedRatios = new Set(["1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9"]);
+  const imageConfig = { aspectRatio: supportedRatios.has(aspectRatio) ? aspectRatio : "1:1" };
+  if (!model.includes("2.5")) imageConfig.imageSize = "1K";
   const result = await geminiRequest({
     key,
     baseUrl,
@@ -206,7 +194,7 @@ async function geminiImage({ key, baseUrl, model, prompt, images, aspectRatio })
       contents: [{ role: "user", parts }],
       generationConfig: {
         responseModalities: ["IMAGE"],
-        responseFormat: { image: imageFormat },
+        imageConfig,
       },
     },
   });
@@ -257,7 +245,7 @@ export function createAIProvider(setting) {
           : setting("GEMINI_IMAGE_MODEL", "gemini-3.1-flash-image");
         return geminiImage({
           key,
-          baseUrl: setting("GEMINI_IMAGE_API_BASE_URL", "https://generativelanguage.googleapis.com/v1").replace(/\/$/, ""),
+          baseUrl: setting("GEMINI_IMAGE_API_BASE_URL", "https://generativelanguage.googleapis.com/v1beta").replace(/\/$/, ""),
           model,
           prompt,
           images,

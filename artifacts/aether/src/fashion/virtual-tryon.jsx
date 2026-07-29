@@ -1,17 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import {
-  ArrowRight,
-  Check,
-  CloudSun,
-  Heart,
-  MagicWand,
-  Plus,
-  Sparkle,
-  SpinnerGap,
-  TShirt,
-  UploadSimple,
-  UserCircle,
-} from "@phosphor-icons/react";
+import { Heart, MagicWand, SpinnerGap } from "@phosphor-icons/react";
+import { OptimizedImage } from "./OptimizedImage.jsx";
 import "./virtual-tryon.css";
 
 const PARTS = [
@@ -190,35 +179,84 @@ function OutfitCard({ outfit, onGenerate, onSave, busy, saved }) {
         {outfit.image
           ? <img className="generated-look" src={outfit.image} alt={`Prueba virtual de ${outfit.name}`} />
           : <div className="garment-composition">{outfit.garments.map((item) => <GarmentMini item={item} key={item.id} />)}</div>}
-        <div className="match-score"><Sparkle size={12} weight="fill" /> {outfit.score}% match</div>
-        <button className={`look-heart${saved ? " active" : ""}`} type="button" onClick={() => onSave(outfit)} aria-label="Guardar look"><Heart size={18} weight={saved ? "fill" : "regular"} /></button>
+        <div className="match-score">{outfit.score}%</div>
+        <button className={`look-heart${saved ? " active" : ""}`} type="button" onClick={() => onSave(outfit)} aria-label="Guardar look"><Heart size={16} weight={saved ? "fill" : "regular"} /></button>
       </div>
       <div className="tryon-look-copy">
         <div><p>{outfit.occasion} · {outfit.climate}</p><h3>{outfit.name}</h3></div>
-        <p>{outfit.reason}</p>
-        <div className="look-garment-pills">{outfit.garments.map((item) => <span key={item.id} style={{ "--swatch": item.color }}>{item.name}</span>)}</div>
-        <button className="tryon-primary" type="button" disabled={busy} onClick={() => onGenerate(outfit)}>
-          {busy ? <SpinnerGap className="spin" size={17} /> : <MagicWand size={17} />} {outfit.image ? "Regenerar prueba" : "Probar este look"}
+        <button className="wd-try" type="button" disabled={busy} onClick={() => onGenerate(outfit)}>
+          {busy ? <SpinnerGap className="spin" size={14} /> : null} {outfit.image ? "Regenerar prueba" : "Probar este look"}
         </button>
       </div>
     </article>
   );
 }
 
-export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
-  const [section, setSection] = useState("suggestions");
+const WARDROBE_TABS = [
+  ["all", "All"],
+  ["upperbody", "Tops"],
+  ["wholebody_up", "Jackets"],
+  ["lowerbody", "Bottoms"],
+  ["accessories_up", "Accessories"],
+  ["shoes", "Shoes"],
+];
+const PART_ORDER = Object.fromEntries(WARDROBE_TABS.slice(1).map(([part], index) => [part, index]));
+
+// real: true → la foto se usa como referencia de identidad en las pruebas
+// virtuales. Los placeholders (real: false) se reemplazan por fotos IA con
+// `pnpm run generate-models` cuando hay cuota de imagen.
+const MODEL_PRESETS = [
+  { id: "blanca", gender: "mujer", label: "Blanca", image: "/fashion/models/modelo-blanca.png", skinTone: "clara", real: true },
+  { id: "canela", gender: "mujer", label: "Canela", image: "/fashion/models/modelo-canela.png", skinTone: "media", real: true },
+  { id: "negra", gender: "mujer", label: "Negra", image: "/fashion/models/modelo-negra.png", skinTone: "oscura", real: false },
+  { id: "h-blanco", gender: "hombre", label: "Blanco", image: "/fashion/models/modelo-h-blanca.png", skinTone: "clara", real: false },
+  { id: "h-canela", gender: "hombre", label: "Canela", image: "/fashion/models/modelo-h-canela.png", skinTone: "media", real: false },
+  { id: "h-negro", gender: "hombre", label: "Negro", image: "/fashion/models/modelo-h-negra.png", skinTone: "oscura", real: false },
+];
+const BUILD_OPTIONS = [["media", "Normal"], ["atletica", "Atlética"]];
+const GENDER_OPTIONS = [["mujer", "Mujer"], ["hombre", "Hombre"]];
+
+function fitsGender(item, gender) {
+  return !item.gender || item.gender === "unisex" || item.gender === gender;
+}
+
+async function urlToDataUrl(url) {
+  const blob = await fetch(url).then((response) => response.blob());
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = () => reject(reader.error || new Error("No se pudo leer la imagen."));
+    reader.readAsDataURL(blob);
+  });
+}
+
+export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }) {
+  const [section, setSection] = useState("all");
   const [filters, setFilters] = useState({ season: "autumn", occasion: "casual", climate: "mild" });
   const [count, setCount] = useState(6);
   const [suggestions, setSuggestions] = useState([]);
   const [savedOutfits, setSavedOutfits] = useState([]);
   const [builder, setBuilder] = useState({});
   const [config, setConfig] = useState({ hasApiKey: false, hasModelReference: false, provider: "gemini", profile: null });
-  const [modelDraft, setModelDraft] = useState({ mode: "default", complexion: "media", skinTone: "media" });
+  const [modelDraft, setModelDraft] = useState({ gender: "mujer", preset: MODEL_PRESETS[0].id, complexion: "media", ownPhoto: false });
+  const [saving, setSaving] = useState(false);
   const [busyId, setBusyId] = useState(null);
   const [notice, setNotice] = useState("");
   const [error, setError] = useState("");
   const faceInput = useRef(null);
   const normalizedItems = useMemo(() => items.map(metadata), [items]);
+  const activeGender = config.profile?.gender === "hombre" ? "hombre" : "mujer";
+  const genderItems = useMemo(() => normalizedItems.filter((item) => fitsGender(item, activeGender)), [normalizedItems, activeGender]);
+
+  const activeModelImage = useMemo(() => {
+    if (!config.profile) return null;
+    const preset = MODEL_PRESETS.find((entry) => entry.id === config.profile.preset);
+    return preset?.image || (config.hasModelReference ? config.modelReferenceUrl || "/api/tryon/model-reference" : null);
+  }, [config]);
+
+  useEffect(() => {
+    if (onModelUpdate) onModelUpdate(activeModelImage);
+  }, [activeModelImage, onModelUpdate]);
 
   useEffect(() => {
     Promise.all([
@@ -229,9 +267,10 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
       setSavedOutfits(collection.outfits || []);
       if (setup.profile) {
         setModelDraft({
-          mode: setup.profile.mode || "default",
-          complexion: setup.profile.complexion || "media",
-          skinTone: setup.profile.skinTone || "media",
+          gender: setup.profile.gender === "hombre" ? "hombre" : "mujer",
+          preset: setup.profile.preset || MODEL_PRESETS[0].id,
+          complexion: setup.profile.complexion === "atletica" ? "atletica" : "media",
+          ownPhoto: !setup.profile.preset && setup.profile.mode === "photo",
         });
       } else {
         setSection("profile");
@@ -240,8 +279,8 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
   }, []);
 
   useEffect(() => {
-    setSuggestions(buildSuggestions(normalizedItems, filters, count));
-  }, [normalizedItems, filters, count]);
+    setSuggestions(buildSuggestions(genderItems, filters, count));
+  }, [genderItems, filters, count]);
 
   const uploadFace = async (file) => {
     if (!file) return;
@@ -255,17 +294,36 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
   };
 
   const saveProfile = async () => {
-    if (modelDraft.mode === "photo" && !config.hasModelReference) {
+    if (modelDraft.ownPhoto && !config.hasModelReference) {
       setError("Subí tu foto para usar este modo.");
       return;
     }
+    setSaving(true);
+    setError("");
     try {
-      const saved = await request("/api/tryon/model-profile", { method: "POST", body: JSON.stringify(modelDraft) });
-      setConfig((current) => ({ ...current, profile: saved }));
-      setError("");
-      setNotice("Modelo guardado. Ya podés probar los looks de la temporada.");
-      setSection("suggestions");
+      const genderPresets = MODEL_PRESETS.filter((entry) => entry.gender === modelDraft.gender);
+      const preset = modelDraft.ownPhoto ? null : genderPresets.find((entry) => entry.id === modelDraft.preset) || genderPresets[0];
+      if (preset?.real) {
+        // la modelo elegida pasa a ser la referencia de identidad para las pruebas virtuales
+        const imageDataUrl = await urlToDataUrl(preset.image);
+        await request("/api/tryon/model-reference", { method: "POST", body: JSON.stringify({ imageDataUrl }) });
+      }
+      const saved = await request("/api/tryon/model-profile", {
+        method: "POST",
+        body: JSON.stringify({
+          // los presets sin foto real generan con modelo descripto (género + tez + complexión)
+          mode: preset && !preset.real ? "default" : "photo",
+          gender: modelDraft.gender,
+          complexion: modelDraft.complexion,
+          skinTone: preset?.skinTone || null,
+          preset: preset?.id || null,
+        }),
+      });
+      setConfig((current) => ({ ...current, profile: saved, hasModelReference: true }));
+      setNotice("Modelo guardado. Estas son las prendas de la temporada.");
+      setSection("all");
     } catch (profileError) { setError(profileError.message); }
+    finally { setSaving(false); }
   };
 
   const saveOutfit = async (outfit) => {
@@ -307,50 +365,100 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
   } : null;
 
   const savedKeys = new Set(savedOutfits.map((outfit) => [...outfit.garmentIds].sort().join("|")));
-  const catalogCounts = Object.fromEntries(PARTS.map(([part]) => [part, normalizedItems.filter((item) => item.part === part).length]));
+  const inOutfits = ["outfits", "builder", "profile"].includes(section);
+  const gridItems = useMemo(() => {
+    const filtered = section === "all" ? genderItems : genderItems.filter((item) => item.part === section);
+    return [...filtered].sort((a, b) => {
+      if (section === "all") {
+        const difference = (PART_ORDER[a.part] ?? 99) - (PART_ORDER[b.part] ?? 99);
+        if (difference) return difference;
+      }
+      return a.id.localeCompare(b.id);
+    });
+  }, [genderItems, section]);
 
   return (
-    <main className="tryon-shell">
-      <header className="tryon-header">
-        <div>
-          <p>Probador virtual</p>
-          <h1>Un look para cada momento.</h1>
-        </div>
-        <button className="tryon-add" type="button" onClick={onAddProducts}><Plus size={17} /> Administrar catálogo</button>
-      </header>
+    <main className="tryon-shell wd-shell">
+      {section !== "profile" && (
+        <>
+          <header className="wd-topline">
+            <p className="wd-count">{inOutfits ? `${suggestions.length} outfits` : `${gridItems.length} pieces`}</p>
+            <div className="wd-topline-actions">
+              <button className="wd-model-chip" type="button" onClick={() => setSection("profile")} aria-label="Cambiar modelo">
+                {activeModelImage && <img src={activeModelImage} alt="" />}
+                <span>Mi modelo</span>
+              </button>
+              <button className="wd-quiet" type="button" onClick={onAddProducts}>Administrar catálogo</button>
+            </div>
+          </header>
 
-      <nav className="tryon-tabs" aria-label="Secciones del probador">
-        {[["suggestions", "Looks sugeridos", Sparkle], ["builder", "Crear un look", MagicWand], ["catalog", `Catálogo (${items.length})`, TShirt], ["profile", "Mi modelo", UserCircle]].map(([id, label, Icon]) => (
-          <button key={id} className={section === id ? "active" : ""} type="button" onClick={() => setSection(id)}><Icon size={17} /> {label}</button>
-        ))}
-      </nav>
+          <nav className="wd-tabs" aria-label="Categorías del vestidor">
+            {WARDROBE_TABS.map(([id, label]) => (
+              <button key={id} className={section === id ? "active" : ""} type="button" onClick={() => setSection(id)}>{label}</button>
+            ))}
+            <button className={inOutfits ? "active" : ""} type="button" onClick={() => setSection("outfits")}>Outfits</button>
+          </nav>
+        </>
+      )}
 
       {(notice || error) && <div className={`tryon-notice${error ? " error" : ""}`} role="status">{error || notice}<button type="button" onClick={() => { setError(""); setNotice(""); }}>×</button></div>}
 
-      {section === "suggestions" && (
-        <section className="tryon-section">
-          <div className="tryon-section-heading">
-            <div><p>Curaduría inteligente</p><h2>Combinaciones posibles</h2></div>
-            <p>Evaluamos color, silueta, materiales, capas, ocasión, temporada y clima. Nunca mostramos dos combinaciones iguales.</p>
-          </div>
-          <div className="tryon-filterbar">
-            <label><span>Temporada</span><select value={filters.season} onChange={(event) => setFilters({ ...filters, season: event.target.value })}>{FILTERS.seasons.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
-            <label><span>Ocasión</span><select value={filters.occasion} onChange={(event) => setFilters({ ...filters, occasion: event.target.value })}>{FILTERS.occasions.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
-            <label><span>Clima</span><select value={filters.climate} onChange={(event) => setFilters({ ...filters, climate: event.target.value })}>{FILTERS.climates.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
-            <label><span>Cantidad</span><select value={count} onChange={(event) => setCount(Number(event.target.value))}>{[3, 6, 9, 12].map((value) => <option key={value} value={value}>{value} looks</option>)}</select></label>
+      {!inOutfits && (gridItems.length ? (
+        <div className="wd-grid">
+          {gridItems.map((item) => (
+            <button
+              key={item.id}
+              className="wd-piece"
+              type="button"
+              onClick={() => onOpenItem(item.id)}
+              aria-label={item.name || "Prenda"}
+              data-testid={`wardrobe-item-${item.id}`}
+            >
+              <OptimizedImage
+                src={item.thumbnail || item.image}
+                alt=""
+                sizes="(max-width: 640px) 45vw, 220px"
+                breakpoints={[160, 240, 320, 480]}
+              />
+            </button>
+          ))}
+        </div>
+      ) : (
+        <div className="wd-empty">
+          <p>No hay piezas en esta categoría todavía.</p>
+          <button type="button" onClick={onAddProducts}>Cargar productos</button>
+        </div>
+      ))}
+
+      {section === "outfits" && (
+        <section className="wd-outfits">
+          <div className="wd-outfit-tools">
+            <div className="wd-filters">
+              <label><span>Temporada</span><select value={filters.season} onChange={(event) => setFilters({ ...filters, season: event.target.value })}>{FILTERS.seasons.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
+              <label><span>Ocasión</span><select value={filters.occasion} onChange={(event) => setFilters({ ...filters, occasion: event.target.value })}>{FILTERS.occasions.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
+              <label><span>Clima</span><select value={filters.climate} onChange={(event) => setFilters({ ...filters, climate: event.target.value })}>{FILTERS.climates.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
+              <label><span>Cantidad</span><select value={count} onChange={(event) => setCount(Number(event.target.value))}>{[3, 6, 9, 12].map((value) => <option key={value} value={value}>{value}</option>)}</select></label>
+            </div>
+            <div className="wd-links">
+              <button type="button" onClick={() => setSection("builder")}>Crear un look</button>
+            </div>
           </div>
           {suggestions.length ? (
             <div className="tryon-look-grid">
               {suggestions.map((outfit) => <OutfitCard key={outfit.id} outfit={outfit} onGenerate={generate} onSave={saveOutfit} busy={busyId === outfit.id} saved={savedKeys.has(outfit.combinationKey)} />)}
             </div>
           ) : (
-            <div className="tryon-empty"><Sparkle size={30} /><h3>El catálogo de la temporada está vacío</h3><p>Cargá los productos de tu colección para activar las combinaciones.</p><button type="button" onClick={onAddProducts}>Cargar el catálogo</button></div>
+            <div className="wd-empty">
+              <p>El catálogo de la temporada está vacío. Cargá productos para activar las combinaciones.</p>
+              <button type="button" onClick={onAddProducts}>Cargar el catálogo</button>
+            </div>
           )}
         </section>
       )}
 
       {section === "builder" && (
         <section className="tryon-section builder-section">
+          <button className="wd-back" type="button" onClick={() => setSection("outfits")}>← Outfits</button>
           <div className="tryon-section-heading"><div><p>Combinación libre</p><h2>Creá tu propio look</h2></div><p>Elegí una prenda de cada categoría. La parte superior y la inferior son obligatorias; el resto es opcional.</p></div>
           <div className="builder-layout">
             <div className="builder-selectors">
@@ -359,7 +467,7 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
                   <legend>{label} <small>{["upperbody", "lowerbody"].includes(part) ? "obligatorio" : "opcional"}</small></legend>
                   <div className="builder-options">
                     {!["upperbody", "lowerbody"].includes(part) && <button className={!builder[part] ? "active empty-option" : "empty-option"} type="button" onClick={() => setBuilder({ ...builder, [part]: null })}>Sin {label.toLowerCase()}</button>}
-                    {normalizedItems.filter((item) => item.part === part).map((item) => <button className={builder[part] === item.id ? "active" : ""} key={item.id} type="button" onClick={() => setBuilder({ ...builder, [part]: item.id })}><img src={item.thumbnail || item.image} alt="" /><span>{item.name}</span></button>)}
+                    {genderItems.filter((item) => item.part === part).map((item) => <button className={builder[part] === item.id ? "active" : ""} key={item.id} type="button" onClick={() => setBuilder({ ...builder, [part]: item.id })}><img src={item.thumbnail || item.image} alt="" /><span>{item.name}</span></button>)}
                   </div>
                 </fieldset>
               ))}
@@ -378,77 +486,75 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
         </section>
       )}
 
-      {section === "catalog" && (
-        <section className="tryon-section">
-          <div className="tryon-section-heading"><div><p>Catálogo del retailer</p><h2>Prendas de la temporada</h2></div><p>Cada producto aprobado conserva sus atributos visuales para alimentar el motor de combinaciones.</p></div>
-          <div className="catalog-summary">{PARTS.map(([part, label]) => <span key={part}><strong>{catalogCounts[part]}</strong>{label}</span>)}<button type="button" onClick={onAddProducts}><UploadSimple size={18} /> Cargar producto</button></div>
-          {normalizedItems.length ? <div className="tryon-catalog-grid">{normalizedItems.map((item) => <button type="button" key={item.id} onClick={() => onOpenItem(item.id)}><div><img src={item.thumbnail || item.image} alt="" /><span style={{ background: item.color }} /></div><p>{item.season === "all" ? "Todo el año" : item.season} · {item.material}</p><h3>{item.name}</h3><small>{item.silhouette} · {item.weight}</small></button>)}</div> : <div className="tryon-empty"><TShirt size={30} /><h3>El catálogo está vacío</h3><p>Podés cargar una foto de producto o una fotografía donde la prenda esté siendo usada.</p><button type="button" onClick={onAddProducts}>Cargar productos</button></div>}
-        </section>
-      )}
-
       {section === "profile" && (
-        <section className="tryon-section profile-section">
-          <div className="profile-copy">
-            <p>Tu modelo</p>
-            <h2>Elegí quién luce los looks.</h2>
-            <div className="model-mode-cards">
-              <button className={modelDraft.mode === "default" ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, mode: "default" })}>
-                <UserCircle size={22} /><strong>Modelo predeterminado</strong>
-                <small>Un modelo profesional con la complexión y el tono de piel que elijas.</small>
+        <section className="wd-model-select">
+          {config.profile && <button className="wd-back" type="button" onClick={() => setSection("all")}>← Volver a las prendas</button>}
+          <header className="wd-model-heading">
+            <p>Antes de empezar</p>
+            <h2>Elegí tu modelo</h2>
+            <span>El catálogo y las pruebas virtuales se adaptan al género y al modelo que elijas.</span>
+          </header>
+
+          <div className="wd-model-build wd-model-gender">
+            <span>Catálogo</span>
+            {GENDER_OPTIONS.map(([id, label]) => (
+              <button
+                key={id}
+                className={modelDraft.gender === id ? "active" : ""}
+                type="button"
+                onClick={() => {
+                  const first = MODEL_PRESETS.find((entry) => entry.gender === id);
+                  setModelDraft({ ...modelDraft, gender: id, preset: first?.id, ownPhoto: false });
+                }}
+              >{label}</button>
+            ))}
+          </div>
+
+          <div className="wd-model-cards">
+            {MODEL_PRESETS.filter((preset) => preset.gender === modelDraft.gender).map((preset) => (
+              <button
+                key={preset.id}
+                className={`wd-model-card${!modelDraft.ownPhoto && modelDraft.preset === preset.id ? " active" : ""}`}
+                type="button"
+                onClick={() => setModelDraft({ ...modelDraft, preset: preset.id, ownPhoto: false })}
+              >
+                <img src={preset.image} alt={`Modelo de ${preset.label.toLowerCase()}`} />
+                <span>{preset.label}</span>
               </button>
-              <button className={modelDraft.mode === "photo" ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, mode: "photo" })}>
-                <UploadSimple size={22} /><strong>Usar mi foto</strong>
-                <small>Analizamos tus rasgos y facciones: los looks se generan con tu rostro, tu tono y tus proporciones.</small>
-              </button>
+            ))}
+            <button
+              className={`wd-model-card wd-model-own${modelDraft.ownPhoto ? " active" : ""}`}
+              type="button"
+              onClick={() => setModelDraft({ ...modelDraft, ownPhoto: true })}
+            >
+              {modelDraft.ownPhoto && config.hasModelReference
+                ? <img src={config.modelReferenceUrl || "/api/tryon/model-reference"} alt="Tu foto de referencia" />
+                : <span className="wd-model-own-hint">Subí una foto de cuerpo entero, frontal y con buena luz.</span>}
+              <span>Usar mi foto</span>
+            </button>
+          </div>
+
+          {modelDraft.ownPhoto && (
+            <div className="wd-model-upload">
+              <input ref={faceInput} type="file" accept="image/png,image/jpeg,image/webp" hidden onChange={(event) => { uploadFace(event.target.files?.[0]); event.target.value = ""; }} />
+              <button type="button" onClick={() => faceInput.current?.click()}>{config.hasModelReference ? "Cambiar mi foto" : "Subir mi foto"}</button>
             </div>
-            <fieldset className="model-fieldset">
-              <legend>Complexión</legend>
-              <div className="model-options">
-                {COMPLEXIONS.map(([id, label]) => (
-                  <button key={id} className={modelDraft.complexion === id ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, complexion: id })}>{label}</button>
-                ))}
-              </div>
-            </fieldset>
-            {modelDraft.mode === "default" && (
-              <fieldset className="model-fieldset">
-                <legend>Tono de piel</legend>
-                <div className="model-tones">
-                  {SKIN_TONES.map(([id, label, hex]) => (
-                    <button key={id} className={modelDraft.skinTone === id ? "active" : ""} type="button" style={{ background: hex }} title={label} aria-label={label} onClick={() => setModelDraft({ ...modelDraft, skinTone: id })} />
-                  ))}
-                </div>
-              </fieldset>
-            )}
-            {modelDraft.mode === "photo" && (
-              <div className="model-photo-block">
-                <ul><li><Check /> Rostro visible y bien iluminado</li><li><Check /> Cuerpo completo o plano americano</li><li><Check /> Pose frontal y fondo simple</li></ul>
-                <input ref={faceInput} type="file" accept="image/png,image/jpeg,image/webp" hidden onChange={(event) => { uploadFace(event.target.files?.[0]); event.target.value = ""; }} />
-                <button className="tryon-secondary" type="button" onClick={() => faceInput.current?.click()}><UploadSimple size={17} /> {config.hasModelReference ? "Cambiar mi foto" : "Subir mi foto"}</button>
-                <p className="model-note">El tono de piel se toma de tu foto; la complexión elegida se aplica al generar el cuerpo. Tu imagen se usa solo como referencia local.</p>
-              </div>
-            )}
-            <button className="tryon-primary" type="button" onClick={saveProfile}><Check size={17} /> Guardar y ver combinaciones</button>
-            {!config.hasApiKey && <p className="profile-warning">Para generar imágenes también necesitás configurar <code>{config.provider === "gemini" ? "GEMINI_API_KEY" : "OPENAI_API_KEY"}</code> en el archivo <code>.env</code>.</p>}
+          )}
+
+          <div className="wd-model-build">
+            <span>Complexión</span>
+            {BUILD_OPTIONS.map(([id, label]) => (
+              <button key={id} className={modelDraft.complexion === id ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, complexion: id })}>{label}</button>
+            ))}
           </div>
-          <div className={`profile-image${(modelDraft.mode === "photo" && config.hasModelReference) ? " ready" : ""}`}>
-            {modelDraft.mode === "photo" && config.hasModelReference
-              ? <img src={config.modelReferenceUrl || "/api/tryon/model-reference"} alt="Referencia personal cargada" />
-              : modelDraft.mode === "photo"
-                ? <><UserCircle size={72} weight="thin" /><p>Tu foto aparecerá aquí</p></>
-                : (
-                  <div className="model-summary">
-                    <span className="model-summary-tone" style={{ background: SKIN_TONES.find(([id]) => id === modelDraft.skinTone)?.[2] }} />
-                    <UserCircle size={72} weight="thin" />
-                    <p><strong>{COMPLEXIONS.find(([id]) => id === modelDraft.complexion)?.[1]}</strong> · {SKIN_TONES.find(([id]) => id === modelDraft.skinTone)?.[1]}</p>
-                    <small>El modelo se genera con estas características en cada prueba.</small>
-                  </div>
-                )}
-            {modelDraft.mode === "photo" && config.hasModelReference && <span><Check weight="bold" /> Lista para probar looks</span>}
-          </div>
+
+          <button className="wd-model-save" type="button" disabled={saving} onClick={saveProfile}>
+            {saving ? "Guardando…" : "Guardar y ver las prendas"}
+          </button>
         </section>
       )}
 
-      {!!savedOutfits.filter((item) => item.image).length && section === "suggestions" && (
+      {!!savedOutfits.filter((item) => item.image).length && section === "outfits" && (
         <section className="saved-looks">
           <div><p>Tus pruebas</p><h2>Looks generados</h2></div>
           <div>{savedOutfits.filter((item) => item.image).map((outfit) => <figure key={outfit.id}><img src={outfit.image} alt={outfit.name} /><figcaption>{outfit.name}</figcaption></figure>)}</div>

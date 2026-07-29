@@ -270,6 +270,46 @@
       "status": "planned",
       "createdAt": "2026-07-29T13:04:46.608Z",
       "updatedAt": "2026-07-29T13:04:46.608Z"
+    },
+    {
+      "id": "look-5720ffc2-2b26-4e78-8178-3d06132aeee5",
+      "name": "White Base T-Shirt + Dark Wash Denim Jeans",
+      "occasion": "casual",
+      "season": "autumn",
+      "climate": "mild",
+      "garmentIds": [
+        "import-49534464-694e-4487-99fb-52795e330209",
+        "import-9ebf7d97-f022-47d3-8219-8b3fa129c0cd",
+        "import-f44f6426-6d75-4676-95d0-75d92e8a4ecc"
+      ],
+      "reason": "base neutra versátil, siluetas equilibradas, materiales compatibles. Pensado para casual.",
+      "score": 98,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T17:20:36.715Z",
+      "updatedAt": "2026-07-29T17:22:18.625Z"
+    },
+    {
+      "id": "look-51e23c9a-331e-44a3-9884-eb95527b149b",
+      "name": "White Crewneck Tee + tan relaxed sweatpants",
+      "occasion": "casual",
+      "season": "autumn",
+      "climate": "mild",
+      "garmentIds": [
+        "import-daa7a78c-94d8-415f-9238-2161bc9c4427",
+        "import-c16da2f8-4534-467f-9e34-49934fc61371",
+        "import-e6ad030b-8cb0-464f-8081-b90f238b7546"
+      ],
+      "reason": "base neutra versátil, siluetas equilibradas, textura continua. Pensado para casual.",
+      "score": 84,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T17:31:47.252Z",
+      "updatedAt": "2026-07-29T17:31:47.252Z"
     }
   ]
 }
