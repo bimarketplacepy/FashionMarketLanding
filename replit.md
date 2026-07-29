@@ -33,6 +33,7 @@ Landing del sector Moda de un retailer: intro cinematográfica (ex-AETHER) + lan
 ## Architecture decisions
 
 - El backend del vestidor corre como plugins del dev server de Vite (heredado del proyecto original), no en `artifacts/api-server`. Si se despliega a producción con `vite preview` los plugins de import/outfit no aplican en build estático — migrar a api-server llegado el caso.
+- El dominio raíz del workspace (`https://<repl>.replit.dev/` sin puerto) enruta por path: `/api/*` va al api-server (8080) y el resto al dev server de Aether (24696). Por eso `artifacts/api-server/src/middlewares/aetherProxy.ts` reenvía `/api/import/*` y `/api/tryon/*` al servidor de Aether (`AETHER_PORT`, default 24696); sin ese proxy la landing carga pero el vestidor da 404 en el dominio raíz. La vista completa también está en `https://<repl>.replit.dev:3000/` (directo a Aether).
 - Escenas Three.js de AETHER se conservan en el repo pero no se montan; la intro es la única pieza que sobrevivió del sitio original.
 - `allowJs` habilitado en `artifacts/aether/tsconfig.json` porque el código portado es JSX sin tipos.
 

@@ -250,6 +250,26 @@
       "status": "planned",
       "createdAt": "2026-07-29T12:13:12.787Z",
       "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-73c91aca-9b70-497e-8685-a9d91f8f0f1a",
+      "name": "White Crew Neck T-Shirt + Dark Wash Denim Jeans",
+      "occasion": "casual",
+      "season": "spring",
+      "climate": "mild",
+      "garmentIds": [
+        "import-b5340fa9-8adb-4625-bb9c-5b756c4f1559",
+        "import-9ebf7d97-f022-47d3-8219-8b3fa129c0cd",
+        "import-0835a7b3-31f7-4512-87b2-fd42e73088ee"
+      ],
+      "reason": "base neutra versátil, siluetas equilibradas, materiales compatibles. Pensado para casual.",
+      "score": 98,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T13:04:46.608Z",
+      "updatedAt": "2026-07-29T13:04:46.608Z"
     }
   ]
 }
