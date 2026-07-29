@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "outfits": [
+    {
+      "id": "look-8c800e19-8f14-4924-9e8e-7790b3544cf7",
+      "name": "Set leopardo satinado",
+      "occasion": "event",
+      "season": "autumn",
+      "climate": "mild",
+      "garmentIds": [
+        "import-8854d4ec-d701-460d-9ba7-ccbb7a6346dd",
+        "import-3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba",
+        "import-66c96b41-f56b-4e8b-88a7-092d90a90314"
+      ],
+      "reason": "Conjunto satinado a juego con armonía tonal gris; sandalias negras que estilizan sin competir con el estampado. Pensado para evento.",
+      "score": 94,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-4c80115d-ccdb-4d4b-bb8c-df375ce5b144",
+      "name": "Noche total black",
+      "occasion": "event",
+      "season": "winter",
+      "climate": "cold",
+      "garmentIds": [
+        "import-17aa166b-68f0-409f-9a91-848c2cfd533e",
+        "import-d6429106-7a61-4bf3-a77e-713a715dc3c4",
+        "import-c14bc350-f4b5-46cf-8b7c-28113db99f2e",
+        "import-ca2b0a16-5b19-459d-a307-5332798fcea8"
+      ],
+      "reason": "Base neutra versátil en negro con brillo de lentejuelas y tachas; siluetas equilibradas entre top recto y mini estructurada. Pensado para evento.",
+      "score": 92,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-9f5c18d6-0495-4846-b685-64ebb7c4922e",
+      "name": "Corset y satén chocolate",
+      "occasion": "event",
+      "season": "autumn",
+      "climate": "mild",
+      "garmentIds": [
+        "import-dc28fed5-4327-47b6-9b33-ee59d5175036",
+        "import-bf687a9f-b398-4399-a8f5-18fcf271c7ca",
+        "import-e65749e2-55bd-4834-9be8-127fdd1d1826",
+        "import-c5d47993-3023-4c28-b18c-b6506e5c471b"
+      ],
+      "reason": "Contraste marfil-chocolate con materiales compatibles en satén; el corset estructurado equilibra la maxi flowy. Pensado para evento.",
+      "score": 93,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-23fa2edb-4e44-4882-a35f-c4f5269f0b78",
+      "name": "Oficina argyle",
+      "occasion": "office",
+      "season": "winter",
+      "climate": "cold",
+      "garmentIds": [
+        "import-f7ec9b4b-1886-4640-b940-d1590be123f1",
+        "import-e4558826-15db-44b3-9d14-6c1aa5a3c1e6",
+        "import-7931a0ee-092b-4cae-ad62-68ad7c51fd63"
+      ],
+      "reason": "Contraste controlado bordó-gris con texturas de invierno; sweater cropped sobre wide-leg mantiene proporciones. Pensado para oficina.",
+      "score": 90,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-0ea2101f-5c76-41a3-a416-abccdd3eac9e",
+      "name": "Brunch de domingo",
+      "occasion": "weekend",
+      "season": "autumn",
+      "climate": "mild",
+      "garmentIds": [
+        "import-3a1df6be-cc18-49a1-aded-00d42acda268",
+        "import-42574cdf-abb0-4612-b300-e90691c0bfa0",
+        "import-e6ad030b-8cb0-464f-8081-b90f238b7546",
+        "import-21e48dd8-49fe-4820-bb68-8765d7357edd"
+      ],
+      "reason": "Base neutra con denim oscuro y tejido a rayas; zapatillas de gamuza para un fin de semana relajado. Pensado para fin de semana.",
+      "score": 88,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-e49292d4-ddb1-485b-ab90-a6a5359de2e5",
+      "name": "Chocolate smart-casual",
+      "occasion": "smart-casual",
+      "season": "winter",
+      "climate": "mild",
+      "garmentIds": [
+        "import-4a28ee70-9551-474f-9549-834261382d8b",
+        "import-e1ace5c8-e8d8-4166-83a9-02d0346b7b29",
+        "import-23132552-4adb-4de3-845b-97bc19e9f55f",
+        "import-2a3d82f3-c434-4606-83cf-c32635502541"
+      ],
+      "reason": "Armonía tonal chocolate-negro; chiffon liviano sobre cuero sintético estructurado, mules satinadas al tono. Pensado para smart casual.",
+      "score": 91,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-e91cc144-4543-4694-8ae3-92930c2f49f8",
+      "name": "Sastrería plaid",
+      "occasion": "office",
+      "season": "autumn",
+      "climate": "mild",
+      "garmentIds": [
+        "import-1da8853f-2575-45b3-99e6-d7599f4f63b3",
+        "import-5a6be600-88a9-456c-9214-94859631ae5d",
+        "import-c8b00bba-bbcf-4320-859c-912413e540ba",
+        "import-553133d3-d640-430f-ae51-f283b171e56e"
+      ],
+      "reason": "Mini y blazer plaid a juego con top ribbed negro; capas físicamente posibles y siluetas equilibradas. Pensado para oficina.",
+      "score": 89,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-f9c2f29b-e4b7-4aba-bf3f-492c33f28695",
+      "name": "Denim y corderoy",
+      "occasion": "casual",
+      "season": "autumn",
+      "climate": "mild",
+      "garmentIds": [
+        "import-de10766f-838d-49cd-bfa9-18f5063caf26",
+        "import-9524ba9e-9c57-47ba-b9ad-bcacffa21972",
+        "import-48739846-44fe-44db-b5db-358a2efda8ee",
+        "import-99e7c19a-1efc-45ba-afa4-580e2380d43d"
+      ],
+      "reason": "Paleta análoga crema-camel con denim índigo de contraste; texturas de temporada (ribbed, corderoy, denim). Pensado para casual.",
+      "score": 87,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-9cfef18b-783c-4638-b626-e9dcba00ab90",
+      "name": "Señora en bordó y camel",
+      "occasion": "smart-casual",
+      "season": "autumn",
+      "climate": "mild",
+      "garmentIds": [
+        "import-c765ad5f-2300-4940-9e98-b0a03974dc88",
+        "import-cab72c4b-8cd5-4c7b-b320-6541025f2104",
+        "import-d0d912a5-a550-45dd-896b-0d1075c924d4",
+        "import-0622118a-0ec8-4ef2-ae42-4b030f950879"
+      ],
+      "reason": "Contraste cálido bordó-camel; blusa de mangas globo sobre pantalón recto, mules crema que aligeran. Pensado para smart casual.",
+      "score": 88,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-ea98d075-4eda-4ea7-adb5-5ba943a17d73",
+      "name": "Utility urbano",
+      "occasion": "weekend",
+      "season": "autumn",
+      "climate": "rain",
+      "garmentIds": [
+        "import-7e78a906-b01f-44f2-b3a9-e01ba8c8c4bd",
+        "import-c7805f99-a781-4c21-9e83-8528ef139ee3",
+        "import-54fd7e90-e465-47df-981a-ecaca40d132b",
+        "import-0835a7b3-31f7-4512-87b2-fd42e73088ee"
+      ],
+      "reason": "Contraste oliva-negro con nylon técnico resistente a lluvia; volúmenes relajados con crop top que equilibra. Pensado para fin de semana.",
+      "score": 85,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-eef1c1d6-c4c7-4b41-90a9-59318660e25c",
+      "name": "Western de noche",
+      "occasion": "event",
+      "season": "winter",
+      "climate": "cold",
+      "garmentIds": [
+        "import-d5e274b1-9924-43dd-8316-538f3ae61f12",
+        "import-91bbd5b7-069d-4642-923e-94b483f9a78e",
+        "import-fe5edc46-8c47-40fc-91f3-8bf79d333f2d",
+        "import-0d32af8a-ccf3-4e18-a65f-ff125179859d"
+      ],
+      "reason": "Armonía tonal chocolate con denim negro; strass en el top y botas caña alta para la noche. Pensado para evento.",
+      "score": 90,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    },
+    {
+      "id": "look-ff27bb5b-14e9-4aaf-9d3d-2b9c04a052ca",
+      "name": "Oficina editorial",
+      "occasion": "office",
+      "season": "winter",
+      "climate": "cold",
+      "garmentIds": [
+        "import-6a7add5c-5bf1-4135-885e-c1607df8ff0c",
+        "import-79318a5a-de5b-4d1d-840b-63bc73f0633d",
+        "import-c13d9050-68cf-4abb-b96e-b0f47a69ec3d",
+        "import-17a7118e-93fb-4531-a8a2-6b60c1d6a407"
+      ],
+      "reason": "Marfil con vivos negros sobre plaid marrón; pañuelo de seda como acento de color. Pensado para oficina.",
+      "score": 89,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-29T12:13:12.787Z",
+      "updatedAt": "2026-07-29T12:13:12.787Z"
+    }
+  ]
+}

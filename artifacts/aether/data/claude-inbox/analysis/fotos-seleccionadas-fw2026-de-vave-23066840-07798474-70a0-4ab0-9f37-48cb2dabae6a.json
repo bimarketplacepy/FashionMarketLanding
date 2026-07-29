@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "White Square-Neck Sleeveless Top",
+      "part": "upperbody",
+      "color": "#f5f4f0",
+      "secondaryColor": null,
+      "tags": ["square-neck", "seamed", "sleeveless"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["casual", "smart-casual", "office"],
+      "boundingBox": { "x": 310, "y": 80, "width": 405, "height": 300 }
+    },
+    {
+      "name": "Black Satin Bias-Cut Maxi Skirt",
+      "part": "lowerbody",
+      "color": "#141416",
+      "secondaryColor": null,
+      "tags": ["satin", "bias-cut", "maxi"],
+      "season": "all",
+      "material": "silk",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["event", "smart-casual", "office"],
+      "boundingBox": { "x": 365, "y": 335, "width": 560, "height": 665 }
+    }
+  ]
+}

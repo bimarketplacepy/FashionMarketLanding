@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Tan Striped Band-Collar Button-Up Blouse",
+      "part": "upperbody",
+      "color": "#f2ede4",
+      "secondaryColor": "#a97c53",
+      "tags": ["striped", "band-collar", "roll-tab-sleeve"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["casual", "office", "smart-casual"],
+      "boundingBox": { "x": 175, "y": 245, "width": 615, "height": 610 }
+    },
+    {
+      "name": "Medium Wash Skinny Jeans",
+      "part": "lowerbody",
+      "color": "#3f5d80",
+      "secondaryColor": null,
+      "tags": ["denim", "skinny"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 185, "y": 810, "width": 475, "height": 190 }
+    }
+  ]
+}

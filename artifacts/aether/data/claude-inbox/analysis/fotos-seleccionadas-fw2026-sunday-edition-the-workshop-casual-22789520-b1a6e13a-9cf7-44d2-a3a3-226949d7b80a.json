@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Sage Khaki Nylon Parachute Pants",
+      "part": "lowerbody",
+      "color": "#b5ad93",
+      "secondaryColor": null,
+      "tags": ["nylon", "parachute", "elastic-waist"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild", "rain"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 178, "y": 106, "width": 657, "height": 738 }
+    },
+    {
+      "name": "White Fitted Tank Top",
+      "part": "upperbody",
+      "color": "#f2f0ea",
+      "secondaryColor": null,
+      "tags": ["tank", "basic"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 347, "y": 0, "width": 347, "height": 119 }
+    },
+    {
+      "name": "Black Suede Striped Low-Top Sneakers",
+      "part": "shoes",
+      "color": "#1a1a1a",
+      "secondaryColor": "#f5f2e8",
+      "tags": ["sneakers", "suede", "stripes"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 310, "y": 800, "width": 562, "height": 169 }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Ivory Fringed Soft Knit Scarf",
+      "part": "accessories_up",
+      "color": "#f6f2e4",
+      "secondaryColor": null,
+      "tags": ["scarf", "fringe", "knit"],
+      "season": "winter",
+      "material": "knit",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["cold"],
+      "occasions": ["casual", "office", "weekend"],
+      "boundingBox": { "x": 150, "y": 45, "width": 790, "height": 910 }
+    }
+  ]
+}

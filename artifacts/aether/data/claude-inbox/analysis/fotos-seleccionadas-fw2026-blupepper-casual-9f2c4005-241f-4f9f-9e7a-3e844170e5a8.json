@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Black Double-Breasted Cropped Trench Jacket",
+      "part": "wholebody_up",
+      "color": "#101014",
+      "secondaryColor": null,
+      "tags": ["double-breasted", "cropped", "lapel"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["smart-casual", "office", "casual"],
+      "boundingBox": { "x": 25, "y": 300, "width": 960, "height": 600 }
+    }
+  ]
+}

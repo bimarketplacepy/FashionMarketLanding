@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Black Strapless One-Piece Swimsuit with Gold Plate",
+      "part": "wholebody_up",
+      "color": "#141414",
+      "secondaryColor": "#d8bc7a",
+      "tags": ["swimwear", "strapless", "bandeau"],
+      "season": "summer",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm"],
+      "occasions": ["weekend", "casual"],
+      "boundingBox": { "x": 135, "y": 140, "width": 745, "height": 750 }
+    }
+  ]
+}

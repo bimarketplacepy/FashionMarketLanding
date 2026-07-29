@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Chocolate Brown Sheer Chiffon Tie-Front Blouse",
+      "part": "upperbody",
+      "color": "#4a2620",
+      "secondaryColor": null,
+      "tags": ["sheer", "ruffle", "balloon-sleeve"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["smart-casual", "event", "office"],
+      "boundingBox": { "x": 55, "y": 135, "width": 940, "height": 740 }
+    },
+    {
+      "name": "Black Faux Leather Straight Pants",
+      "part": "lowerbody",
+      "color": "#151515",
+      "secondaryColor": null,
+      "tags": ["faux-leather", "high-waist"],
+      "season": "winter",
+      "material": "leather",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["smart-casual", "event"],
+      "boundingBox": { "x": 280, "y": 690, "width": 640, "height": 310 }
+    }
+  ]
+}

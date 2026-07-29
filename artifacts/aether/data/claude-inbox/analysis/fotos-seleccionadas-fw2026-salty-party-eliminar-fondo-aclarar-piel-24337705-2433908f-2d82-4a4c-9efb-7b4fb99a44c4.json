@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Black Open-Knit One-Sleeve Lace-Up Top",
+      "part": "upperbody",
+      "color": "#171412",
+      "secondaryColor": null,
+      "tags": ["crochet", "one-shoulder", "bell-sleeve"],
+      "season": "autumn",
+      "material": "knit",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["event"],
+      "boundingBox": { "x": 80, "y": 250, "width": 615, "height": 390 }
+    },
+    {
+      "name": "Grey Studded Suede Mini Skirt",
+      "part": "lowerbody",
+      "color": "#5c5e55",
+      "secondaryColor": "#c9c9c4",
+      "tags": ["studded", "mini", "suede"],
+      "season": "autumn",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild"],
+      "occasions": ["event", "weekend"],
+      "boundingBox": { "x": 290, "y": 590, "width": 445, "height": 225 }
+    },
+    {
+      "name": "Silver Oval Pendant Cord Necklace",
+      "part": "accessories_up",
+      "color": "#c8c9c7",
+      "secondaryColor": "#141414",
+      "tags": ["necklace", "pendant"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "casual"],
+      "boundingBox": { "x": 490, "y": 340, "width": 85, "height": 90 }
+    }
+  ]
+}

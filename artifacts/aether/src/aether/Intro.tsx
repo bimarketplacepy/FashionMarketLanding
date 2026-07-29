@@ -52,10 +52,17 @@ export default function Intro() {
   const titleWords = ["FASHION", "MARKET"];
 
   return (
-    <section className="h-[100vh] flex flex-col items-center justify-between py-[64px] bg-black relative">
+    <section
+      className="h-[100vh] flex flex-col items-center justify-between py-[64px] relative"
+      style={{
+        color: '#2b211e',
+        background:
+          'radial-gradient(1100px 700px at 85% -10%, rgba(110, 43, 53, 0.07), transparent 62%), radial-gradient(900px 720px at -5% 95%, rgba(110, 43, 53, 0.05), transparent 58%), #f6f1e8',
+      }}
+    >
       <div
         ref={eyebrowRef}
-        className="font-mono text-[11px] text-[#fafafa] opacity-50 tracking-[0.3em] uppercase opacity-0"
+        className="font-mono text-[11px] opacity-50 tracking-[0.3em] uppercase opacity-0"
       >
         MODA · NUEVA TEMPORADA
       </div>
@@ -63,7 +70,7 @@ export default function Intro() {
       <div className="flex flex-col items-center justify-center flex-1">
         <h1
           ref={titleRef}
-          className="font-display text-[#fafafa] leading-[0.95] text-center flex flex-col items-center"
+          className="font-display leading-[0.95] text-center flex flex-col items-center"
           style={{ fontSize: 'clamp(3rem, 15vw, 15rem)' }}
         >
           {titleWords.map((word, w) => (
@@ -76,16 +83,16 @@ export default function Intro() {
         </h1>
         <div
           ref={subtitleRef}
-          className="font-display italic text-[#fafafa] opacity-0 text-center mt-[0.4em]"
-          style={{ fontSize: 'clamp(0.875rem, 2.5vw, 2.5rem)' }}
+          className="font-display italic opacity-0 text-center mt-[0.4em]"
+          style={{ fontSize: 'clamp(0.875rem, 2.5vw, 2.5rem)', color: '#6e2b35' }}
         >
           By Marketplace
         </div>
       </div>
 
       <div ref={bottomRef} className="flex flex-col items-center opacity-0">
-        <div ref={arrowRef} className="text-[#fafafa] opacity-60 text-lg mb-2">↓</div>
-        <div className="font-mono text-[11px] text-[#fafafa] opacity-60 tracking-[0.3em] uppercase">
+        <div ref={arrowRef} className="opacity-60 text-lg mb-2">↓</div>
+        <div className="font-mono text-[11px] opacity-60 tracking-[0.3em] uppercase">
           DESCUBRIR
         </div>
       </div>

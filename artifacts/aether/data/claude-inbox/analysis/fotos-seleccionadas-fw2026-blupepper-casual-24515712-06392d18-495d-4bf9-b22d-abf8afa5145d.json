@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Navy Longline Snap-Button Coat with Contrast Corduroy Trim",
+      "part": "wholebody_up",
+      "color": "#1d2a4a",
+      "secondaryColor": "#8b5a2b",
+      "tags": ["longline", "snap-button", "contrast-trim"],
+      "season": "winter",
+      "material": "synthetic",
+      "silhouette": "oversized",
+      "weight": "heavy",
+      "climates": ["cold", "rain", "mild"],
+      "occasions": ["casual", "smart-casual", "weekend"],
+      "boundingBox": { "x": 115, "y": 185, "width": 755, "height": 815 }
+    },
+    {
+      "name": "Light Wash Straight-Leg Jeans",
+      "part": "lowerbody",
+      "color": "#a9bfd1",
+      "secondaryColor": null,
+      "tags": ["denim", "light-wash"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 320, "y": 925, "width": 350, "height": 75 }
+    }
+  ]
+}

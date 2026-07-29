@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Pale Yellow Chicago Graphic Long-Sleeve Ringer Tee",
+      "part": "upperbody",
+      "color": "#f5eeb8",
+      "secondaryColor": "#4a2318",
+      "tags": ["graphic", "ringer", "long-sleeve"],
+      "season": "autumn",
+      "material": "cotton",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 240, "y": 220, "width": 610, "height": 500 }
+    },
+    {
+      "name": "Dark-Wash High-Rise Straight Jeans",
+      "part": "lowerbody",
+      "color": "#2d4d76",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist", "straight"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 190, "y": 570, "width": 465, "height": 430 }
+    }
+  ]
+}

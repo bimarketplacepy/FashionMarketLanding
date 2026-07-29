@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Navy Flutter-Sleeve Blouse with Lace Yoke",
+      "part": "upperbody",
+      "color": "#1e2a4a",
+      "secondaryColor": null,
+      "tags": ["flutter-sleeve", "lace", "blouse"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "office", "weekend"],
+      "boundingBox": { "x": 190, "y": 290, "width": 675, "height": 660 }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Grey Leopard Print Satin Button-Up Shirt",
+      "part": "upperbody",
+      "color": "#b8b3ac",
+      "secondaryColor": "#3d3a36",
+      "tags": ["leopard", "satin", "button-up"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["smart-casual", "event", "casual"],
+      "boundingBox": { "x": 245, "y": 160, "width": 495, "height": 390 }
+    },
+    {
+      "name": "Grey Leopard Print Wide Leg Pants",
+      "part": "lowerbody",
+      "color": "#b8b3ac",
+      "secondaryColor": "#3d3a36",
+      "tags": ["leopard", "wide-leg", "satin"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["smart-casual", "event", "casual"],
+      "boundingBox": { "x": 280, "y": 475, "width": 415, "height": 475 }
+    },
+    {
+      "name": "Black Strappy Flat Sandals",
+      "part": "shoes",
+      "color": "#161616",
+      "secondaryColor": null,
+      "tags": ["sandals", "strappy"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 253, "y": 940, "width": 330, "height": 50 }
+    }
+  ]
+}

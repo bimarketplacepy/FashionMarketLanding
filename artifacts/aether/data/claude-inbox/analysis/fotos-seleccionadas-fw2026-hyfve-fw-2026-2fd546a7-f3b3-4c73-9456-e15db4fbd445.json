@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Grey Leopard Print Long-Sleeve Wide-Leg Jumpsuit",
+      "part": "wholebody_up",
+      "color": "#b9b2a8",
+      "secondaryColor": "#4a443c",
+      "tags": ["leopard", "jumpsuit", "wide-leg"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 255, "y": 130, "width": 500, "height": 815 }
+    }
+  ]
+}

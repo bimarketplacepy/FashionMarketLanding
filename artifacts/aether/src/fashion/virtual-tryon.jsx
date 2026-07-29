@@ -28,6 +28,21 @@ const FILTERS = {
   climates: [["warm", "Cálido"], ["mild", "Templado"], ["cold", "Frío"], ["rain", "Lluvia"]],
 };
 
+const COMPLEXIONS = [
+  ["esbelta", "Esbelta"],
+  ["media", "Media"],
+  ["atletica", "Atlética"],
+  ["curvy", "Curvy"],
+];
+
+const SKIN_TONES = [
+  ["clara", "Clara", "#f2d6c0"],
+  ["media-clara", "Media clara", "#e0b394"],
+  ["media", "Media", "#c68e64"],
+  ["morena", "Morena", "#9c6743"],
+  ["oscura", "Oscura", "#6b4630"],
+];
+
 const WEIGHT = { light: 1, medium: 2, heavy: 3 };
 const NEUTRAL_SATURATION = 0.16;
 
@@ -197,7 +212,8 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
   const [suggestions, setSuggestions] = useState([]);
   const [savedOutfits, setSavedOutfits] = useState([]);
   const [builder, setBuilder] = useState({});
-  const [config, setConfig] = useState({ hasApiKey: false, hasModelReference: false, provider: "gemini" });
+  const [config, setConfig] = useState({ hasApiKey: false, hasModelReference: false, provider: "gemini", profile: null });
+  const [modelDraft, setModelDraft] = useState({ mode: "default", complexion: "media", skinTone: "media" });
   const [busyId, setBusyId] = useState(null);
   const [notice, setNotice] = useState("");
   const [error, setError] = useState("");
@@ -211,6 +227,15 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
     ]).then(([setup, collection]) => {
       setConfig(setup);
       setSavedOutfits(collection.outfits || []);
+      if (setup.profile) {
+        setModelDraft({
+          mode: setup.profile.mode || "default",
+          complexion: setup.profile.complexion || "media",
+          skinTone: setup.profile.skinTone || "media",
+        });
+      } else {
+        setSection("profile");
+      }
     }).catch((requestError) => setError(requestError.message));
   }, []);
 
@@ -229,6 +254,20 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
     } catch (uploadError) { setError(uploadError.message); setNotice(""); }
   };
 
+  const saveProfile = async () => {
+    if (modelDraft.mode === "photo" && !config.hasModelReference) {
+      setError("Subí tu foto para usar este modo.");
+      return;
+    }
+    try {
+      const saved = await request("/api/tryon/model-profile", { method: "POST", body: JSON.stringify(modelDraft) });
+      setConfig((current) => ({ ...current, profile: saved }));
+      setError("");
+      setNotice("Modelo guardado. Ya podés probar los looks de la temporada.");
+      setSection("suggestions");
+    } catch (profileError) { setError(profileError.message); }
+  };
+
   const saveOutfit = async (outfit) => {
     try {
       const saved = await request("/api/tryon/outfits", { method: "POST", body: JSON.stringify(outfit) });
@@ -238,7 +277,8 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
   };
 
   const generate = async (outfit) => {
-    if (!config.hasModelReference) { setSection("profile"); setError("Subí una foto de referencia antes de generar la prueba virtual."); return; }
+    if (!config.profile) { setSection("profile"); setError("Elegí primero tu modelo: predeterminado o con tu foto."); return; }
+    if (config.profile.mode !== "default" && !config.hasModelReference) { setSection("profile"); setError("Subí una foto de referencia antes de generar la prueba virtual."); return; }
     if (!config.hasApiKey) { setError(`Configurá ${config.provider === "gemini" ? "GEMINI_API_KEY" : "OPENAI_API_KEY"} en .env para generar la imagen final.`); return; }
     setBusyId(outfit.id); setError(""); setNotice("Generando una prueba virtual fiel a las prendas…");
     try {
@@ -276,11 +316,11 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
           <p>Probador virtual</p>
           <h1>Un look para cada momento.</h1>
         </div>
-        <button className="tryon-add" type="button" onClick={onAddProducts}><Plus size={17} /> Cargar prendas</button>
+        <button className="tryon-add" type="button" onClick={onAddProducts}><Plus size={17} /> Administrar catálogo</button>
       </header>
 
       <nav className="tryon-tabs" aria-label="Secciones del probador">
-        {[["suggestions", "Looks sugeridos", Sparkle], ["builder", "Crear un look", MagicWand], ["catalog", `Prendas (${items.length})`, TShirt], ["profile", "Mi referencia", UserCircle]].map(([id, label, Icon]) => (
+        {[["suggestions", "Looks sugeridos", Sparkle], ["builder", "Crear un look", MagicWand], ["catalog", `Catálogo (${items.length})`, TShirt], ["profile", "Mi modelo", UserCircle]].map(([id, label, Icon]) => (
           <button key={id} className={section === id ? "active" : ""} type="button" onClick={() => setSection(id)}><Icon size={17} /> {label}</button>
         ))}
       </nav>
@@ -304,7 +344,7 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
               {suggestions.map((outfit) => <OutfitCard key={outfit.id} outfit={outfit} onGenerate={generate} onSave={saveOutfit} busy={busyId === outfit.id} saved={savedKeys.has(outfit.combinationKey)} />)}
             </div>
           ) : (
-            <div className="tryon-empty"><Sparkle size={30} /><h3>Necesitamos una parte superior y una inferior</h3><p>Cargá prendas de la temporada para comenzar a crear combinaciones.</p><button type="button" onClick={onAddProducts}>Cargar primeras prendas</button></div>
+            <div className="tryon-empty"><Sparkle size={30} /><h3>El catálogo de la temporada está vacío</h3><p>Cargá los productos de tu colección para activar las combinaciones.</p><button type="button" onClick={onAddProducts}>Cargar el catálogo</button></div>
           )}
         </section>
       )}
@@ -340,7 +380,7 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
 
       {section === "catalog" && (
         <section className="tryon-section">
-          <div className="tryon-section-heading"><div><p>Catálogo local</p><h2>Prendas de temporada</h2></div><p>Cada producto aprobado conserva sus atributos visuales para alimentar el motor de combinaciones.</p></div>
+          <div className="tryon-section-heading"><div><p>Catálogo del retailer</p><h2>Prendas de la temporada</h2></div><p>Cada producto aprobado conserva sus atributos visuales para alimentar el motor de combinaciones.</p></div>
           <div className="catalog-summary">{PARTS.map(([part, label]) => <span key={part}><strong>{catalogCounts[part]}</strong>{label}</span>)}<button type="button" onClick={onAddProducts}><UploadSimple size={18} /> Cargar producto</button></div>
           {normalizedItems.length ? <div className="tryon-catalog-grid">{normalizedItems.map((item) => <button type="button" key={item.id} onClick={() => onOpenItem(item.id)}><div><img src={item.thumbnail || item.image} alt="" /><span style={{ background: item.color }} /></div><p>{item.season === "all" ? "Todo el año" : item.season} · {item.material}</p><h3>{item.name}</h3><small>{item.silhouette} · {item.weight}</small></button>)}</div> : <div className="tryon-empty"><TShirt size={30} /><h3>El catálogo está vacío</h3><p>Podés cargar una foto de producto o una fotografía donde la prenda esté siendo usada.</p><button type="button" onClick={onAddProducts}>Cargar productos</button></div>}
         </section>
@@ -349,18 +389,61 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem }) {
       {section === "profile" && (
         <section className="tryon-section profile-section">
           <div className="profile-copy">
-            <p>Referencia personal</p>
-            <h2>Tu rostro, tus proporciones, tu identidad.</h2>
-            <p>Esta foto se usa únicamente como referencia local para generar las pruebas virtuales. No forma parte del catálogo.</p>
-            <ul><li><Check /> Rostro visible y bien iluminado</li><li><Check /> Cuerpo completo o plano americano</li><li><Check /> Pose frontal y fondo simple</li></ul>
-            <input ref={faceInput} type="file" accept="image/png,image/jpeg,image/webp" hidden onChange={(event) => { uploadFace(event.target.files?.[0]); event.target.value = ""; }} />
-            <button className="tryon-primary" type="button" onClick={() => faceInput.current?.click()}><UploadSimple size={17} /> {config.hasModelReference ? "Cambiar mi referencia" : "Subir mi foto"}</button>
-            <p className="profile-provider">Proveedor activo: <strong>{config.provider === "gemini" ? "Google Gemini" : "OpenAI"}</strong></p>
+            <p>Tu modelo</p>
+            <h2>Elegí quién luce los looks.</h2>
+            <div className="model-mode-cards">
+              <button className={modelDraft.mode === "default" ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, mode: "default" })}>
+                <UserCircle size={22} /><strong>Modelo predeterminado</strong>
+                <small>Un modelo profesional con la complexión y el tono de piel que elijas.</small>
+              </button>
+              <button className={modelDraft.mode === "photo" ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, mode: "photo" })}>
+                <UploadSimple size={22} /><strong>Usar mi foto</strong>
+                <small>Analizamos tus rasgos y facciones: los looks se generan con tu rostro, tu tono y tus proporciones.</small>
+              </button>
+            </div>
+            <fieldset className="model-fieldset">
+              <legend>Complexión</legend>
+              <div className="model-options">
+                {COMPLEXIONS.map(([id, label]) => (
+                  <button key={id} className={modelDraft.complexion === id ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, complexion: id })}>{label}</button>
+                ))}
+              </div>
+            </fieldset>
+            {modelDraft.mode === "default" && (
+              <fieldset className="model-fieldset">
+                <legend>Tono de piel</legend>
+                <div className="model-tones">
+                  {SKIN_TONES.map(([id, label, hex]) => (
+                    <button key={id} className={modelDraft.skinTone === id ? "active" : ""} type="button" style={{ background: hex }} title={label} aria-label={label} onClick={() => setModelDraft({ ...modelDraft, skinTone: id })} />
+                  ))}
+                </div>
+              </fieldset>
+            )}
+            {modelDraft.mode === "photo" && (
+              <div className="model-photo-block">
+                <ul><li><Check /> Rostro visible y bien iluminado</li><li><Check /> Cuerpo completo o plano americano</li><li><Check /> Pose frontal y fondo simple</li></ul>
+                <input ref={faceInput} type="file" accept="image/png,image/jpeg,image/webp" hidden onChange={(event) => { uploadFace(event.target.files?.[0]); event.target.value = ""; }} />
+                <button className="tryon-secondary" type="button" onClick={() => faceInput.current?.click()}><UploadSimple size={17} /> {config.hasModelReference ? "Cambiar mi foto" : "Subir mi foto"}</button>
+                <p className="model-note">El tono de piel se toma de tu foto; la complexión elegida se aplica al generar el cuerpo. Tu imagen se usa solo como referencia local.</p>
+              </div>
+            )}
+            <button className="tryon-primary" type="button" onClick={saveProfile}><Check size={17} /> Guardar y ver combinaciones</button>
             {!config.hasApiKey && <p className="profile-warning">Para generar imágenes también necesitás configurar <code>{config.provider === "gemini" ? "GEMINI_API_KEY" : "OPENAI_API_KEY"}</code> en el archivo <code>.env</code>.</p>}
           </div>
-          <div className={`profile-image${config.hasModelReference ? " ready" : ""}`}>
-            {config.hasModelReference ? <img src={config.modelReferenceUrl || "/api/tryon/model-reference"} alt="Referencia personal cargada" /> : <><UserCircle size={72} weight="thin" /><p>Tu referencia aparecerá aquí</p></>}
-            {config.hasModelReference && <span><Check weight="bold" /> Lista para probar looks</span>}
+          <div className={`profile-image${(modelDraft.mode === "photo" && config.hasModelReference) ? " ready" : ""}`}>
+            {modelDraft.mode === "photo" && config.hasModelReference
+              ? <img src={config.modelReferenceUrl || "/api/tryon/model-reference"} alt="Referencia personal cargada" />
+              : modelDraft.mode === "photo"
+                ? <><UserCircle size={72} weight="thin" /><p>Tu foto aparecerá aquí</p></>
+                : (
+                  <div className="model-summary">
+                    <span className="model-summary-tone" style={{ background: SKIN_TONES.find(([id]) => id === modelDraft.skinTone)?.[2] }} />
+                    <UserCircle size={72} weight="thin" />
+                    <p><strong>{COMPLEXIONS.find(([id]) => id === modelDraft.complexion)?.[1]}</strong> · {SKIN_TONES.find(([id]) => id === modelDraft.skinTone)?.[1]}</p>
+                    <small>El modelo se genera con estas características en cada prueba.</small>
+                  </div>
+                )}
+            {modelDraft.mode === "photo" && config.hasModelReference && <span><Check weight="bold" /> Lista para probar looks</span>}
           </div>
         </section>
       )}

@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Black Wool-Blend Shacket with Flap Pockets",
+      "part": "wholebody_up",
+      "color": "#141414",
+      "secondaryColor": null,
+      "tags": ["shacket", "flap-pockets", "collared"],
+      "season": "winter",
+      "material": "wool",
+      "silhouette": "relaxed",
+      "weight": "heavy",
+      "climates": ["cold", "mild"],
+      "occasions": ["casual", "smart-casual", "weekend"],
+      "boundingBox": { "x": 110, "y": 220, "width": 760, "height": 690 }
+    },
+    {
+      "name": "White Crewneck Tee",
+      "part": "upperbody",
+      "color": "#f2f2f0",
+      "secondaryColor": null,
+      "tags": ["crewneck", "basic"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["mild", "warm", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 245, "y": 290, "width": 230, "height": 410 }
+    },
+    {
+      "name": "Black Pleated Wide-Leg Trousers",
+      "part": "lowerbody",
+      "color": "#1a1a1a",
+      "secondaryColor": null,
+      "tags": ["pleated", "wide-leg"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["office", "smart-casual", "casual"],
+      "boundingBox": { "x": 130, "y": 690, "width": 470, "height": 310 }
+    }
+  ]
+}

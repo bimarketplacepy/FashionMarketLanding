@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Gold Dipped Hoop Earrings Set",
+      "part": "accessories_up",
+      "color": "#c9a13b",
+      "secondaryColor": null,
+      "tags": ["earrings", "gold", "hoops"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "smart-casual", "casual"],
+      "boundingBox": { "x": 15, "y": 580, "width": 810, "height": 300 }
+    }
+  ]
+}

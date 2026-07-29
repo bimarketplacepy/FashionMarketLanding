@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Black Sequin Sleeveless Boat-Neck Top",
+      "part": "upperbody",
+      "color": "#16161c",
+      "secondaryColor": null,
+      "tags": ["sequin", "sleeveless", "party"],
+      "season": "winter",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["event"],
+      "boundingBox": { "x": 275, "y": 280, "width": 420, "height": 395 }
+    },
+    {
+      "name": "Brown Suede Lace-Up Micro Skirt",
+      "part": "lowerbody",
+      "color": "#5b3a24",
+      "secondaryColor": null,
+      "tags": ["suede", "lace-up", "mini"],
+      "season": "autumn",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 265, "y": 665, "width": 460, "height": 215 }
+    },
+    {
+      "name": "Gold Layered Cross Pendant Necklaces",
+      "part": "accessories_up",
+      "color": "#c9a24b",
+      "secondaryColor": null,
+      "tags": ["necklace", "gold", "layered"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "casual"],
+      "boundingBox": { "x": 435, "y": 300, "width": 135, "height": 135 }
+    }
+  ]
+}

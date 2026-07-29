@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Tortoiseshell Oval Retro Sunglasses",
+      "part": "accessories_up",
+      "color": "#8b5a2b",
+      "secondaryColor": "#2e1a0e",
+      "tags": ["sunglasses", "oval", "retro"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 47, "y": 37, "width": 910, "height": 219 }
+    },
+    {
+      "name": "Clear Champagne Oval Retro Sunglasses",
+      "part": "accessories_up",
+      "color": "#d6cfc4",
+      "secondaryColor": null,
+      "tags": ["sunglasses", "oval", "retro"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 47, "y": 387, "width": 910, "height": 219 }
+    },
+    {
+      "name": "Black Oval Retro Sunglasses",
+      "part": "accessories_up",
+      "color": "#111111",
+      "secondaryColor": null,
+      "tags": ["sunglasses", "oval", "retro"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 47, "y": 731, "width": 910, "height": 225 }
+    }
+  ]
+}

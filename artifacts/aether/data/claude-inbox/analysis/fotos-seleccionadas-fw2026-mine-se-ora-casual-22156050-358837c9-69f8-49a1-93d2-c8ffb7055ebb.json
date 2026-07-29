@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Taupe Belted Midi Shirt Dress with Gold Buttons",
+      "part": "wholebody_up",
+      "color": "#b39383",
+      "secondaryColor": null,
+      "tags": ["shirt-dress", "midi", "gold-buttons"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["office", "smart-casual", "event"],
+      "boundingBox": { "x": 165, "y": 185, "width": 695, "height": 750 }
+    },
+    {
+      "name": "Black Skinny Belt with Gold Buckle",
+      "part": "accessories_up",
+      "color": "#26221f",
+      "secondaryColor": null,
+      "tags": ["belt", "skinny"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["office", "smart-casual"],
+      "boundingBox": { "x": 420, "y": 400, "width": 205, "height": 55 }
+    }
+  ]
+}

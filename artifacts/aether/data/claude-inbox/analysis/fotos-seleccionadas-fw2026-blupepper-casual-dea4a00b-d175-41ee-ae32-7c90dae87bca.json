@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Black Cropped Double-Breasted Trench Jacket",
+      "part": "wholebody_up",
+      "color": "#17171a",
+      "secondaryColor": null,
+      "tags": ["cropped", "double-breasted", "trench"],
+      "season": "autumn",
+      "material": "cotton",
+      "silhouette": "structured",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 30, "y": 225, "width": 940, "height": 710 }
+    },
+    {
+      "name": "White Square-Neck Ribbed Crop Top",
+      "part": "upperbody",
+      "color": "#f2f0eb",
+      "secondaryColor": null,
+      "tags": ["crop", "square-neck", "ribbed"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 385, "y": 345, "width": 180, "height": 295 }
+    },
+    {
+      "name": "Medium-Wash High-Rise Jeans",
+      "part": "lowerbody",
+      "color": "#4a6787",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 160, "y": 650, "width": 530, "height": 350 }
+    }
+  ]
+}

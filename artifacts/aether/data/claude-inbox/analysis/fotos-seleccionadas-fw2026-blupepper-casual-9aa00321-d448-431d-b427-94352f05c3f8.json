@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Black Cropped Collared Jacket",
+      "part": "wholebody_up",
+      "color": "#111114",
+      "secondaryColor": null,
+      "tags": ["cropped", "collared", "button-cuff"],
+      "season": "autumn",
+      "material": "cotton",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 40, "y": 185, "width": 840, "height": 725 }
+    },
+    {
+      "name": "Light Wash High-Rise Jeans",
+      "part": "lowerbody",
+      "color": "#7c9cbd",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 235, "y": 790, "width": 515, "height": 210 }
+    }
+  ]
+}

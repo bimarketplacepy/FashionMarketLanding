@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Camel Sheer Chiffon Smocked-Waist Blouse",
+      "part": "upperbody",
+      "color": "#b98a63",
+      "secondaryColor": null,
+      "tags": ["chiffon", "smocked", "balloon-sleeve"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["smart-casual", "casual", "office"],
+      "boundingBox": { "x": 155, "y": 255, "width": 750, "height": 645 }
+    },
+    {
+      "name": "Medium Wash High-Rise Jeans",
+      "part": "lowerbody",
+      "color": "#7d9fc0",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 210, "y": 670, "width": 395, "height": 330 }
+    }
+  ]
+}

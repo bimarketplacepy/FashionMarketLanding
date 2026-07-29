@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Black Ribbed Knit Top with Bow Keyhole Front",
+      "part": "upperbody",
+      "color": "#1b1b1d",
+      "secondaryColor": null,
+      "tags": ["ribbed", "bow-detail", "keyhole"],
+      "season": "autumn",
+      "material": "knit",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "smart-casual", "event"],
+      "boundingBox": { "x": 215, "y": 295, "width": 705, "height": 405 }
+    },
+    {
+      "name": "Black Belted A-Line Mini Skirt",
+      "part": "lowerbody",
+      "color": "#1b1b1d",
+      "secondaryColor": null,
+      "tags": ["mini", "belted", "a-line"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "structured",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["smart-casual", "office", "casual"],
+      "boundingBox": { "x": 365, "y": 650, "width": 500, "height": 340 }
+    }
+  ]
+}

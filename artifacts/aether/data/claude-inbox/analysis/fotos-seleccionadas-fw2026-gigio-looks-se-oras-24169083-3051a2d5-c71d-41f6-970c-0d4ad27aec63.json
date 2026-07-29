@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Black Floral Print Puff-Sleeve Blouse",
+      "part": "upperbody",
+      "color": "#141414",
+      "secondaryColor": "#e9e7dc",
+      "tags": ["floral", "puff-sleeve", "tie-cuff"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "office", "smart-casual"],
+      "boundingBox": { "x": 120, "y": 200, "width": 745, "height": 600 }
+    },
+    {
+      "name": "Light-Wash Relaxed Jeans",
+      "part": "lowerbody",
+      "color": "#a8bcc9",
+      "secondaryColor": null,
+      "tags": ["denim", "light-wash"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 395, "y": 775, "width": 465, "height": 225 }
+    }
+  ]
+}

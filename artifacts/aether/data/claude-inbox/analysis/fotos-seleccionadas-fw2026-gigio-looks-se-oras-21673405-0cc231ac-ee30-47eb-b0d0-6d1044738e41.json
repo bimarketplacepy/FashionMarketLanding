@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Ivory Cap-Sleeve Blouse with Black Contrast Piping",
+      "part": "upperbody",
+      "color": "#f3efe6",
+      "secondaryColor": "#1c1c1e",
+      "tags": ["piping", "split-neck", "side-slit"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["office", "smart-casual", "casual"],
+      "boundingBox": { "x": 240, "y": 225, "width": 625, "height": 680 }
+    },
+    {
+      "name": "Beige Slim Stretch Pants",
+      "part": "lowerbody",
+      "color": "#cbb49a",
+      "secondaryColor": null,
+      "tags": ["slim", "stretch"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["office", "casual", "smart-casual"],
+      "boundingBox": { "x": 255, "y": 875, "width": 405, "height": 125 }
+    }
+  ]
+}

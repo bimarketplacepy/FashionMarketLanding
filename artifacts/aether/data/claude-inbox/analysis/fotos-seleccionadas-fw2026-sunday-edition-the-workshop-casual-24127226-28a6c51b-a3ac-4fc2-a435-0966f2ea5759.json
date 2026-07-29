@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Ivory Polka Dot Bow-Front Mini Dress",
+      "part": "wholebody_up",
+      "color": "#f1ede2",
+      "secondaryColor": "#1c1c1c",
+      "tags": ["polka-dot", "bow", "puff-sleeve"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "smart-casual", "office"],
+      "boundingBox": { "x": 120, "y": 230, "width": 560, "height": 745 }
+    }
+  ]
+}

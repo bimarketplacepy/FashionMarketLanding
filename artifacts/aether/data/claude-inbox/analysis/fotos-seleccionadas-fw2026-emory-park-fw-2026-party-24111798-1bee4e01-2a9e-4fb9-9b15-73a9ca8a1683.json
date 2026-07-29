@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Chocolate Brown Rhinestone Studded Tank Top",
+      "part": "upperbody",
+      "color": "#3e2723",
+      "secondaryColor": "#c0c0c0",
+      "tags": ["studded", "sleeveless", "party"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["event"],
+      "boundingBox": { "x": 235, "y": 370, "width": 628, "height": 549 }
+    },
+    {
+      "name": "Gold Layered Collar Necklace",
+      "part": "accessories_up",
+      "color": "#c9a227",
+      "secondaryColor": null,
+      "tags": ["gold", "necklace"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 338, "y": 331, "width": 253, "height": 69 }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Charcoal Grey Wool Utility Shacket",
+      "part": "wholebody_up",
+      "color": "#4a4a4a",
+      "secondaryColor": null,
+      "tags": ["shacket", "wool", "flap-pockets"],
+      "season": "winter",
+      "material": "wool",
+      "silhouette": "oversized",
+      "weight": "heavy",
+      "climates": ["cold", "mild"],
+      "occasions": ["casual", "weekend", "smart-casual"],
+      "boundingBox": { "x": 66, "y": 265, "width": 882, "height": 615 }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Leopard Print Satin Button-Up Blouse",
+      "part": "upperbody",
+      "color": "#c9b394",
+      "secondaryColor": "#3a2c1e",
+      "tags": ["leopard", "satin", "button-up"],
+      "season": "autumn",
+      "material": "silk",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 290, "y": 140, "width": 520, "height": 400 }
+    },
+    {
+      "name": "Leopard Print Satin Wide-Leg Pants",
+      "part": "lowerbody",
+      "color": "#c9b394",
+      "secondaryColor": "#3a2c1e",
+      "tags": ["leopard", "satin", "wide-leg"],
+      "season": "autumn",
+      "material": "silk",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 225, "y": 405, "width": 490, "height": 560 }
+    },
+    {
+      "name": "Black Strappy Stiletto Heels",
+      "part": "shoes",
+      "color": "#151515",
+      "secondaryColor": null,
+      "tags": ["heels", "strappy"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 195, "y": 905, "width": 405, "height": 90 }
+    }
+  ]
+}

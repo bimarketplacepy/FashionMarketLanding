@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Gold Dipped Puffed Heart Earring Set",
+      "part": "accessories_up",
+      "color": "#d4a017",
+      "secondaryColor": null,
+      "tags": ["earrings", "gold", "heart"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "event", "smart-casual"],
+      "boundingBox": { "x": 120, "y": 595, "width": 595, "height": 315 }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Black Cropped Double-Breasted Trench Jacket",
+      "part": "wholebody_up",
+      "color": "#1a1a1e",
+      "secondaryColor": null,
+      "tags": ["double-breasted", "cropped", "trench"],
+      "season": "autumn",
+      "material": "cotton",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "smart-casual", "office"],
+      "boundingBox": { "x": 150, "y": 245, "width": 850, "height": 610 }
+    },
+    {
+      "name": "Medium Wash High-Rise Jeans",
+      "part": "lowerbody",
+      "color": "#4f6d94",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 300, "y": 845, "width": 700, "height": 155 }
+    }
+  ]
+}

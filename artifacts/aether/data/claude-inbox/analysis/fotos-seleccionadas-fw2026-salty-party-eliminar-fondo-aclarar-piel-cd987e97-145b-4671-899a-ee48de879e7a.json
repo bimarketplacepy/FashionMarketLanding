@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Heather Grey Ribbed Tank Top",
+      "part": "upperbody",
+      "color": "#b8bcbe",
+      "secondaryColor": null,
+      "tags": ["ribbed", "tank", "scoop-neck"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["event", "casual"],
+      "boundingBox": { "x": 195, "y": 105, "width": 685, "height": 470 }
+    },
+    {
+      "name": "Black Faux Leather Studded Mini Skirt",
+      "part": "lowerbody",
+      "color": "#1a1a1c",
+      "secondaryColor": null,
+      "tags": ["faux-leather", "studded", "mini"],
+      "season": "autumn",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 305, "y": 525, "width": 630, "height": 385 }
+    }
+  ]
+}

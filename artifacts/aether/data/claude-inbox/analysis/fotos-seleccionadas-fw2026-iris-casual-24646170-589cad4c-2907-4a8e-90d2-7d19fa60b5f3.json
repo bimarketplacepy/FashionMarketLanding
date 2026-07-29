@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Chocolate Brown Faux Leather Bomber Jacket",
+      "part": "wholebody_up",
+      "color": "#4a2420",
+      "secondaryColor": null,
+      "tags": ["faux-leather", "bomber", "zip-up"],
+      "season": "autumn",
+      "material": "leather",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "smart-casual", "weekend"],
+      "boundingBox": { "x": 245, "y": 185, "width": 650, "height": 475 }
+    },
+    {
+      "name": "Grey Houndstooth Tapered Trousers",
+      "part": "lowerbody",
+      "color": "#8d8d8a",
+      "secondaryColor": "#2e2e2c",
+      "tags": ["houndstooth", "tapered"],
+      "season": "winter",
+      "material": "mixed",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["cold", "mild"],
+      "occasions": ["office", "smart-casual", "casual"],
+      "boundingBox": { "x": 310, "y": 640, "width": 385, "height": 360 }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Ivory and Black Wave Jacquard Crew Sweater",
+      "part": "upperbody",
+      "color": "#e3e0d8",
+      "secondaryColor": "#1a1a1a",
+      "tags": ["knit", "wave-print", "crew-neck"],
+      "season": "winter",
+      "material": "knit",
+      "silhouette": "relaxed",
+      "weight": "heavy",
+      "climates": ["cold", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 60, "y": 265, "width": 890, "height": 480 }
+    },
+    {
+      "name": "Medium Wash Straight-Leg Jeans",
+      "part": "lowerbody",
+      "color": "#6f8fae",
+      "secondaryColor": null,
+      "tags": ["denim", "straight-leg", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 215, "y": 715, "width": 565, "height": 285 }
+    }
+  ]
+}

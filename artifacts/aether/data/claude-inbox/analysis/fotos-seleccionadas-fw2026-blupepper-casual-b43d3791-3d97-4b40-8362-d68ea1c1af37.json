@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Taupe Houndstooth Button-Front Vest Top",
+      "part": "upperbody",
+      "color": "#a08b74",
+      "secondaryColor": null,
+      "tags": ["houndstooth", "sleeveless", "button-front"],
+      "season": "autumn",
+      "material": "mixed",
+      "silhouette": "structured",
+      "weight": "medium",
+      "climates": ["mild"],
+      "occasions": ["office", "smart-casual", "casual"],
+      "boundingBox": { "x": 206, "y": 244, "width": 610, "height": 556 }
+    },
+    {
+      "name": "Taupe Houndstooth Tailored Shorts",
+      "part": "lowerbody",
+      "color": "#a08b74",
+      "secondaryColor": null,
+      "tags": ["houndstooth", "tailored", "shorts"],
+      "season": "autumn",
+      "material": "mixed",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild"],
+      "occasions": ["office", "smart-casual", "casual"],
+      "boundingBox": { "x": 281, "y": 775, "width": 610, "height": 200 }
+    }
+  ]
+}

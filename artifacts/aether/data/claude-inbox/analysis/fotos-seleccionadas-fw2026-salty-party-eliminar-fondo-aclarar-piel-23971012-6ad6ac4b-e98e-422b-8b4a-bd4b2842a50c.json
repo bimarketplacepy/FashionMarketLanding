@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Chocolate Brown Mesh Halter Top",
+      "part": "upperbody",
+      "color": "#5c3a38",
+      "secondaryColor": null,
+      "tags": ["halter", "mesh", "open-back"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["event"],
+      "boundingBox": { "x": 265, "y": 235, "width": 415, "height": 490 }
+    },
+    {
+      "name": "White Flowy Smocked-Waist Maxi Skirt",
+      "part": "lowerbody",
+      "color": "#f4f2ec",
+      "secondaryColor": null,
+      "tags": ["maxi", "smocked", "flowy"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["event", "casual"],
+      "boundingBox": { "x": 205, "y": 700, "width": 600, "height": 300 }
+    },
+    {
+      "name": "Silver Bangle Bracelet Stack",
+      "part": "accessories_up",
+      "color": "#c8c8cc",
+      "secondaryColor": null,
+      "tags": ["bangle", "silver-tone"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "casual"],
+      "boundingBox": { "x": 795, "y": 800, "width": 90, "height": 50 }
+    }
+  ]
+}

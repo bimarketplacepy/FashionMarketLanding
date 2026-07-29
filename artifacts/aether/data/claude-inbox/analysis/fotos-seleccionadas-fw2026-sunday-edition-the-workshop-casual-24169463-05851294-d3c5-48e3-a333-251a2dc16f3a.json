@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Light Blue Cropped Button-Up Shirt",
+      "part": "upperbody",
+      "color": "#b3c8e6",
+      "secondaryColor": null,
+      "tags": ["button-up", "cropped", "patch-pocket"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "smart-casual", "weekend"],
+      "boundingBox": { "x": 20, "y": 180, "width": 960, "height": 555 }
+    },
+    {
+      "name": "Dark Rinse High-Waist Jeans",
+      "part": "lowerbody",
+      "color": "#1f2638",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist", "dark-wash"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 320, "y": 715, "width": 680, "height": 285 }
+    }
+  ]
+}

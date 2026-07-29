@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "White T-Shirt with Grommet Shoulder Detail",
+      "part": "upperbody",
+      "color": "#f6f6f6",
+      "secondaryColor": null,
+      "tags": ["tee", "grommet", "crew-neck"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 160, "y": 290, "width": 780, "height": 630 }
+    }
+  ]
+}

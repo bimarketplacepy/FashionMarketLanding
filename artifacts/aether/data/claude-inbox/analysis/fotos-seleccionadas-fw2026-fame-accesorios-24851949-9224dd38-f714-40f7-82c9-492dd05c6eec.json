@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Camel Zip-Top Tote Bag",
+      "part": "accessories_up",
+      "color": "#a97c50",
+      "secondaryColor": "#2b2320",
+      "tags": ["tote", "shoulder-bag", "zip-top"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "structured",
+      "weight": "medium",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "office", "weekend"],
+      "boundingBox": { "x": 200, "y": 90, "width": 635, "height": 830 }
+    }
+  ]
+}

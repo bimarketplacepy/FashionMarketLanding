@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Heather Grey Ribbed Cami Tank Top",
+      "part": "upperbody",
+      "color": "#b8bcbe",
+      "secondaryColor": null,
+      "tags": ["ribbed", "cami", "fitted"],
+      "season": "all",
+      "material": "knit",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["event", "casual"],
+      "boundingBox": { "x": 245, "y": 55, "width": 555, "height": 460 }
+    },
+    {
+      "name": "Black Faux Leather Studded Ruffle Mini Skirt",
+      "part": "lowerbody",
+      "color": "#17181a",
+      "secondaryColor": null,
+      "tags": ["faux-leather", "studded", "ruffle-hem"],
+      "season": "autumn",
+      "material": "leather",
+      "silhouette": "structured",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 180, "y": 500, "width": 675, "height": 445 }
+    }
+  ]
+}

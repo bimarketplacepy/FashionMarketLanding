@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Chocolate Brown Side-Slit Midi Skirt",
+      "part": "lowerbody",
+      "color": "#4f3020",
+      "secondaryColor": null,
+      "tags": ["midi", "side-slit"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "office", "smart-casual"],
+      "boundingBox": { "x": 285, "y": 120, "width": 490, "height": 660 }
+    },
+    {
+      "name": "Cream Ribbed Knit Button-Front Top",
+      "part": "upperbody",
+      "color": "#ede4d0",
+      "secondaryColor": null,
+      "tags": ["knit", "ribbed", "button-front"],
+      "season": "autumn",
+      "material": "knit",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "office"],
+      "boundingBox": { "x": 265, "y": 0, "width": 380, "height": 145 }
+    },
+    {
+      "name": "Grey Suede Pointed-Toe Heels",
+      "part": "shoes",
+      "color": "#6b625c",
+      "secondaryColor": null,
+      "tags": ["suede", "pointed-toe", "heels"],
+      "season": "autumn",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["office", "smart-casual"],
+      "boundingBox": { "x": 400, "y": 800, "width": 225, "height": 125 }
+    }
+  ]
+}

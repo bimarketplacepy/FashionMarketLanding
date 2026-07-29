@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Cream Ribbed Long-Sleeve Crop Top",
+      "part": "upperbody",
+      "color": "#ece4d4",
+      "secondaryColor": null,
+      "tags": ["ribbed", "cropped", "long-sleeve"],
+      "season": "autumn",
+      "material": "knit",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend", "smart-casual"],
+      "boundingBox": { "x": 300, "y": 160, "width": 430, "height": 330 }
+    },
+    {
+      "name": "Medium Wash High-Rise Wide-Leg Jeans",
+      "part": "lowerbody",
+      "color": "#46658c",
+      "secondaryColor": null,
+      "tags": ["denim", "wide-leg", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend", "smart-casual"],
+      "boundingBox": { "x": 270, "y": 350, "width": 480, "height": 585 }
+    },
+    {
+      "name": "White Pointed-Toe Heeled Mules",
+      "part": "shoes",
+      "color": "#f4f2ee",
+      "secondaryColor": null,
+      "tags": ["heels", "pointed-toe"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["smart-casual", "event", "office"],
+      "boundingBox": { "x": 245, "y": 915, "width": 405, "height": 80 }
+    }
+  ]
+}

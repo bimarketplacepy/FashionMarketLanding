@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Brown Plaid Pleated Wide-Leg Trousers",
+      "part": "lowerbody",
+      "color": "#6b4f3d",
+      "secondaryColor": "#b39a7e",
+      "tags": ["plaid", "pleated", "wide-leg"],
+      "season": "winter",
+      "material": "wool",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["office", "smart-casual", "casual"],
+      "boundingBox": { "x": 205, "y": 40, "width": 525, "height": 815 }
+    },
+    {
+      "name": "Chocolate Brown Satin Heeled Mules",
+      "part": "shoes",
+      "color": "#5c2f22",
+      "secondaryColor": null,
+      "tags": ["mules", "heeled", "satin"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["smart-casual", "office", "event"],
+      "boundingBox": { "x": 280, "y": 845, "width": 420, "height": 135 }
+    }
+  ]
+}

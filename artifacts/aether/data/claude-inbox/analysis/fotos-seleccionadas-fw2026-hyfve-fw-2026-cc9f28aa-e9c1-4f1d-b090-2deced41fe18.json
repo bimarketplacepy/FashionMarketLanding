@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Leopard Print Satin Tie-Front Cropped Shirt",
+      "part": "upperbody",
+      "color": "#c9b08a",
+      "secondaryColor": "#2e2a24",
+      "tags": ["leopard", "tie-front", "cropped"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["smart-casual", "event", "casual"],
+      "boundingBox": { "x": 255, "y": 145, "width": 515, "height": 370 }
+    },
+    {
+      "name": "Leopard Print Satin High-Waist Wide-Leg Pants",
+      "part": "lowerbody",
+      "color": "#c9b08a",
+      "secondaryColor": "#2e2a24",
+      "tags": ["leopard", "wide-leg", "high-waist"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["smart-casual", "event", "casual"],
+      "boundingBox": { "x": 210, "y": 380, "width": 515, "height": 565 }
+    },
+    {
+      "name": "Black Strappy Heeled Sandals",
+      "part": "shoes",
+      "color": "#151515",
+      "secondaryColor": null,
+      "tags": ["heels", "strappy"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 190, "y": 905, "width": 380, "height": 90 }
+    }
+  ]
+}

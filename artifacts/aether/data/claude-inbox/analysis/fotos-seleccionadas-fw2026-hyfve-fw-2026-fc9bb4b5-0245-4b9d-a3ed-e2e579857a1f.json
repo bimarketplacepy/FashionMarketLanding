@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Tan Leopard Print Satin Button-Up Shirt",
+      "part": "upperbody",
+      "color": "#c9ab84",
+      "secondaryColor": "#3f342a",
+      "tags": ["leopard", "satin", "button-up"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["smart-casual", "event", "office"],
+      "boundingBox": { "x": 240, "y": 150, "width": 495, "height": 340 }
+    },
+    {
+      "name": "Tan Leopard Print Wide-Leg Pants",
+      "part": "lowerbody",
+      "color": "#c9ab84",
+      "secondaryColor": "#3f342a",
+      "tags": ["leopard", "wide-leg", "satin"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["smart-casual", "event", "office"],
+      "boundingBox": { "x": 225, "y": 455, "width": 515, "height": 510 }
+    },
+    {
+      "name": "Black Pointed-Toe Heeled Sandals",
+      "part": "shoes",
+      "color": "#151515",
+      "secondaryColor": null,
+      "tags": ["heels", "strappy"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 185, "y": 875, "width": 480, "height": 125 }
+    }
+  ]
+}

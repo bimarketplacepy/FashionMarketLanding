@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Grey Leopard Print Tie-Front Shirt",
+      "part": "upperbody",
+      "color": "#a49a90",
+      "secondaryColor": "#2e2a26",
+      "tags": ["leopard", "tie-front", "button-up"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 100, "y": 10, "width": 875, "height": 815 }
+    },
+    {
+      "name": "Grey Leopard Print Wide-Leg Pants",
+      "part": "lowerbody",
+      "color": "#a49a90",
+      "secondaryColor": "#2e2a26",
+      "tags": ["leopard", "wide-leg"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 205, "y": 540, "width": 640, "height": 460 }
+    }
+  ]
+}

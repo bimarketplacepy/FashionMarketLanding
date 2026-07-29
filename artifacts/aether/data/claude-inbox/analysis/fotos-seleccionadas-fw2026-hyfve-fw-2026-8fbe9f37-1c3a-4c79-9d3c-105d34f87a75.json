@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Leopard Print Satin Tie-Front Shirt",
+      "part": "upperbody",
+      "color": "#c9b394",
+      "secondaryColor": "#2e2a26",
+      "tags": ["leopard", "satin", "tie-front"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["smart-casual", "event", "casual"],
+      "boundingBox": { "x": 30, "y": 30, "width": 940, "height": 810 }
+    },
+    {
+      "name": "Leopard Print Satin Wide-Leg Pants",
+      "part": "lowerbody",
+      "color": "#c9b394",
+      "secondaryColor": "#2e2a26",
+      "tags": ["leopard", "satin", "wide-leg"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["smart-casual", "event", "casual"],
+      "boundingBox": { "x": 150, "y": 540, "width": 700, "height": 460 }
+    }
+  ]
+}

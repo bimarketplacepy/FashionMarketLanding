@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Brown Floral Print V-Neck Peplum Blouse",
+      "part": "upperbody",
+      "color": "#4a2d1e",
+      "secondaryColor": "#e3cba6",
+      "tags": ["floral", "v-neck", "long-sleeve"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "office", "smart-casual"],
+      "boundingBox": { "x": 130, "y": 145, "width": 565, "height": 350 }
+    },
+    {
+      "name": "Dark Wash Bootcut Jeans",
+      "part": "lowerbody",
+      "color": "#2c3f5e",
+      "secondaryColor": null,
+      "tags": ["denim", "bootcut", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "smart-casual", "weekend"],
+      "boundingBox": { "x": 330, "y": 440, "width": 410, "height": 425 }
+    },
+    {
+      "name": "Cream Crossover Mule Sandals",
+      "part": "shoes",
+      "color": "#efe6d4",
+      "secondaryColor": null,
+      "tags": ["mules", "block-heel"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 420, "y": 880, "width": 380, "height": 80 }
+    }
+  ]
+}

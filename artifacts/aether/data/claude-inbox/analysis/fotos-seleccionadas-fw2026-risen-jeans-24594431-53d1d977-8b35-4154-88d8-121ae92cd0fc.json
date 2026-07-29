@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Camel Corduroy Barrel-Leg Jeans",
+      "part": "lowerbody",
+      "color": "#9a6b35",
+      "secondaryColor": null,
+      "tags": ["corduroy", "barrel-leg", "high-waist"],
+      "season": "autumn",
+      "material": "cotton",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["cold", "mild"],
+      "occasions": ["casual", "smart-casual", "weekend"],
+      "boundingBox": { "x": 234, "y": 12, "width": 601, "height": 869 }
+    },
+    {
+      "name": "Taupe Slingback Kitten Heels",
+      "part": "shoes",
+      "color": "#b3a291",
+      "secondaryColor": null,
+      "tags": ["slingback", "pointed-toe", "heels"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["office", "event", "smart-casual"],
+      "boundingBox": { "x": 206, "y": 869, "width": 451, "height": 124 }
+    }
+  ]
+}

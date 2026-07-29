@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Charcoal Grey Wool Shacket",
+      "part": "wholebody_up",
+      "color": "#5a5a5a",
+      "secondaryColor": null,
+      "tags": ["shacket", "button-front", "pockets"],
+      "season": "winter",
+      "material": "wool",
+      "silhouette": "oversized",
+      "weight": "heavy",
+      "climates": ["cold", "mild"],
+      "occasions": ["casual", "weekend", "smart-casual"],
+      "boundingBox": { "x": 20, "y": 205, "width": 960, "height": 730 }
+    },
+    {
+      "name": "White Crew Neck T-Shirt",
+      "part": "upperbody",
+      "color": "#f2f2f0",
+      "secondaryColor": null,
+      "tags": ["basic", "layering"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["mild", "warm", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 250, "y": 255, "width": 135, "height": 425 }
+    },
+    {
+      "name": "Black Wide-Leg Trousers",
+      "part": "lowerbody",
+      "color": "#1a1a1c",
+      "secondaryColor": null,
+      "tags": ["wide-leg", "high-waist"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "office", "smart-casual"],
+      "boundingBox": { "x": 200, "y": 655, "width": 620, "height": 345 }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Dark Blue Oversized Denim Shirt Jacket",
+      "part": "wholebody_up",
+      "color": "#2a4a8c",
+      "secondaryColor": null,
+      "tags": ["denim", "oversized", "shacket"],
+      "season": "autumn",
+      "material": "denim",
+      "silhouette": "oversized",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 75, "y": 270, "width": 860, "height": 690 }
+    }
+  ]
+}

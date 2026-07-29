@@ -38,7 +38,16 @@ Landing del sector Moda de un retailer: intro cinematográfica (ex-AETHER) + lan
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Landing minimalista de temporada (paleta crema/beige, acento bordó) + probador virtual.
+- El retailer carga su catálogo (los clientes NO suben prendas): vía UI ("Administrar catálogo") o masivamente con `pnpm --filter @workspace/aether run import-catalog`, que lee imágenes de App Storage bajo `catalogo/` (subcarpetas libres), las procesa con IA y registra lo hecho en `data/catalog-manifest.json` (re-ejecutable; solo procesa lo nuevo). Flags: `--modeled` (foto modelada extra), `--solo-recorte` (sin IA de imagen), `--dir <ruta>` (carpeta local).
+- Importación SIN API (flujo Claude Code, preferido por el usuario para FW2026): `pnpm --filter @workspace/aether run claude-import pull` baja las fotos pendientes de App Storage (prefijo por defecto `FOTOS SELECCIONADAS FW2026/`, deduplicadas por artículo) a `data/claude-inbox/images/`; Claude analiza cada imagen con visión propia y escribe `data/claude-inbox/analysis/<key>.json` (mismo esquema que la detección de Gemini, ver cabecera de `scripts/claude-import.mjs`); `claude-import apply` recorta con sharp (misma lógica que `import-job-api.mjs`), agrega a `data/library.json` y marca `catalog-manifest.json` con `via: "claude-code"`. No usa la app ni requiere API key.
+- Antes de ver combinaciones, el usuario elige modelo: predeterminado (complexión + tono de piel) o su propia foto (`/api/tryon/model-profile`).
+
+## Gotchas
+
+- La GEMINI_API_KEY actual es de tier gratuito: el análisis/detección de prendas funciona, pero los modelos de IMAGEN (`gemini-3.1-flash-image`) tienen cuota 0 → la generación de pruebas virtuales y recortes IA falla hasta habilitar facturación en Google AI. El import cae automáticamente al recorte simple (`use-crop`).
+- El schema JSON para Gemini se sanea con `geminiSchema()` en `scripts/ai-provider.mjs` (sin `additionalProperties` ni type-arrays).
+- `scripts/free-port.mjs` corre antes de `vite dev` porque Replit puede dejar procesos huérfanos reteniendo el puerto.
 
 ## User preferences
 

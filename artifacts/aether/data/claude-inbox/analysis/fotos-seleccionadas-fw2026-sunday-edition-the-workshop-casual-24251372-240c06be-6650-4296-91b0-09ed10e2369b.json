@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Ivory Striped Ribbed Mock Neck Sweater",
+      "part": "upperbody",
+      "color": "#f0ece1",
+      "secondaryColor": "#22252b",
+      "tags": ["knit", "striped", "mock-neck"],
+      "season": "autumn",
+      "material": "knit",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "office", "weekend"],
+      "boundingBox": { "x": 260, "y": 285, "width": 675, "height": 620 }
+    },
+    {
+      "name": "Dark Indigo High-Rise Jeans",
+      "part": "lowerbody",
+      "color": "#232a3d",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist", "dark-wash"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend", "smart-casual"],
+      "boundingBox": { "x": 400, "y": 690, "width": 445, "height": 310 }
+    }
+  ]
+}

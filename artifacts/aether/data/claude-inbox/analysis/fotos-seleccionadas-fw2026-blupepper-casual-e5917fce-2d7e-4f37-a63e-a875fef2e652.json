@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "name": "Camel Longline Trench Coat with Corduroy Trim",
+      "part": "wholebody_up",
+      "color": "#c8a97e",
+      "secondaryColor": "#4a3325",
+      "tags": ["trench", "longline", "snap-front"],
+      "season": "autumn",
+      "material": "cotton",
+      "silhouette": "oversized",
+      "weight": "medium",
+      "climates": ["mild", "cold", "rain"],
+      "occasions": ["casual", "smart-casual", "office"],
+      "boundingBox": { "x": 50, "y": 100, "width": 880, "height": 835 }
+    },
+    {
+      "name": "White Crew Neck T-Shirt",
+      "part": "upperbody",
+      "color": "#f2f1ee",
+      "secondaryColor": null,
+      "tags": ["basic", "crew-neck"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 425, "y": 210, "width": 215, "height": 285 }
+    },
+    {
+      "name": "Medium Wash Wide-Leg Jeans",
+      "part": "lowerbody",
+      "color": "#7391b3",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist", "wide-leg"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 330, "y": 480, "width": 400, "height": 520 }
+    },
+    {
+      "name": "Black Curved Shoulder Bag",
+      "part": "accessories_up",
+      "color": "#161616",
+      "secondaryColor": null,
+      "tags": ["shoulder-bag", "faux-leather"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "smart-casual", "event"],
+      "boundingBox": { "x": 555, "y": 550, "width": 290, "height": 280 }
+    },
+    {
+      "name": "Black Rectangular Sunglasses",
+      "part": "accessories_up",
+      "color": "#101010",
+      "secondaryColor": null,
+      "tags": ["sunglasses", "rectangular"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 415, "y": 75, "width": 150, "height": 60 }
+    }
+  ]
+}

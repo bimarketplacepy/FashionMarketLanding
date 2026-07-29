@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Burgundy Metallic Sheer Knit Camisole",
+      "part": "upperbody",
+      "color": "#5e2028",
+      "secondaryColor": null,
+      "tags": ["metallic", "sheer", "cami"],
+      "season": "autumn",
+      "material": "knit",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["event"],
+      "boundingBox": { "x": 225, "y": 390, "width": 580, "height": 560 }
+    },
+    {
+      "name": "Brown Leather Western Buckle Belt",
+      "part": "accessories_up",
+      "color": "#5a3a24",
+      "secondaryColor": "#c0c0c0",
+      "tags": ["belt", "western"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "cold", "warm"],
+      "occasions": ["casual", "event", "weekend"],
+      "boundingBox": { "x": 260, "y": 895, "width": 435, "height": 95 }
+    },
+    {
+      "name": "Washed Black Jeans",
+      "part": "lowerbody",
+      "color": "#26262a",
+      "secondaryColor": null,
+      "tags": ["denim", "dark-wash"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "event"],
+      "boundingBox": { "x": 245, "y": 930, "width": 545, "height": 70 }
+    }
+  ]
+}

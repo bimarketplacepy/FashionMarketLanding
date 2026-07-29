@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Navy Embroidered Crewneck Sweatshirt",
+      "part": "upperbody",
+      "color": "#1c2a45",
+      "secondaryColor": null,
+      "tags": ["crewneck", "embroidered", "fleece"],
+      "season": "autumn",
+      "material": "cotton",
+      "silhouette": "oversized",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 150, "y": 265, "width": 660, "height": 490 }
+    },
+    {
+      "name": "Burgundy Tartan Plaid Wide-Leg Pants",
+      "part": "lowerbody",
+      "color": "#6e1f26",
+      "secondaryColor": "#4a4a4a",
+      "tags": ["plaid", "tartan", "wide-leg"],
+      "season": "winter",
+      "material": "mixed",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 160, "y": 720, "width": 570, "height": 280 }
+    }
+  ]
+}

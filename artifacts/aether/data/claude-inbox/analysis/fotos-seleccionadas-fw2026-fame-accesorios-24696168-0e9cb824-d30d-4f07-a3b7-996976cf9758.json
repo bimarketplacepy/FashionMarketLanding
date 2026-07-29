@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Amber Tortoise Resin and Gold Bangle Set",
+      "part": "accessories_up",
+      "color": "#8a4a14",
+      "secondaryColor": "#d4af37",
+      "tags": ["bangle", "resin", "gold-tone"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "smart-casual", "casual"],
+      "boundingBox": { "x": 130, "y": 95, "width": 660, "height": 320 }
+    },
+    {
+      "name": "Ivory Marbled Resin Bangle Set",
+      "part": "accessories_up",
+      "color": "#e8ddc8",
+      "secondaryColor": null,
+      "tags": ["bangle", "resin", "marbled"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "smart-casual", "casual"],
+      "boundingBox": { "x": 400, "y": 400, "width": 575, "height": 280 }
+    },
+    {
+      "name": "Blush Marbled Resin and Gold Bangle Set",
+      "part": "accessories_up",
+      "color": "#c7a894",
+      "secondaryColor": "#d4af37",
+      "tags": ["bangle", "resin", "gold-tone"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "smart-casual", "casual"],
+      "boundingBox": { "x": 30, "y": 570, "width": 645, "height": 340 }
+    }
+  ]
+}

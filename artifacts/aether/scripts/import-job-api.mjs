@@ -328,7 +328,7 @@ export function wardrobeImportApi(options = {}) {
       if (error.code !== "ENOENT") throw error;
     }
     return {
-      ready: hasApiKey && hasModelReference,
+      ready: hasApiKey,
       hasApiKey,
       provider: ai.name,
       hasModelReference,
@@ -401,6 +401,7 @@ export function wardrobeImportApi(options = {}) {
     if (running.has(lock)) return running.get(lock);
     const task = (async () => {
       const current = await loadJob(job.id);
+      if (!current) return;
       const stage = current.stages[stageName];
       stage.status = "processing"; stage.decision = null; stage.error = null; stage.attempts += 1; stage.updatedAt = new Date().toISOString();
       await saveJob(current);
@@ -428,19 +429,25 @@ export function wardrobeImportApi(options = {}) {
           const garmentFile = path.join(dir, garmentName);
           const garment = { data: await readFile(garmentFile), mime: "image/png", name: "garment.png" };
           const modelPath = path.resolve(root, setting("WARDROBE_MODEL_REFERENCE", "data/model-reference.png"));
-          let modelData;
+          let modelData = null;
           try {
             modelData = await readFile(modelPath);
           } catch (error) {
-            if (error.code === "ENOENT") throw new Error(`Model reference not found at ${modelPath}. Set WARDROBE_MODEL_REFERENCE or add data/model-reference.png.`);
-            throw error;
+            if (error.code !== "ENOENT") throw error;
           }
-          const model = { data: modelData, mime: "image/png", name: "model.png" };
-          const basePrompt = options.modeledPrompt || "Create a professional horizontal 3:2 editorial fashion photograph of the person in Image 1 wearing the exact garment from Image 2. Preserve the person's recognizable identity, face, hair, age and proportions. Preserve every garment color, material, fit, construction, graphic, logo and distinctive detail. Keep the complete featured item clearly visible and unobstructed, use understated neutral supporting clothes, realistic anatomy, natural light, authentic fabric, a tasteful real-world setting, and leave environmental space around the model. No text, watermark, product mockup, or synthetic appearance.";
-          bytes = await ai.generateImage({ purpose: "modeled", aspectRatio: "3:2", images: [model, garment], prompt: current.stages.modeled.prompt ? `${basePrompt}\nUser regeneration direction: ${current.stages.modeled.prompt}` : basePrompt });
+          const withIdentity = Boolean(modelData);
+          const images = withIdentity
+            ? [{ data: modelData, mime: "image/png", name: "model.png" }, garment]
+            : [garment];
+          const sharedTail = "Preserve every garment color, material, fit, construction, graphic, logo and distinctive detail. Keep the complete featured item clearly visible and unobstructed, use understated neutral supporting clothes, realistic anatomy, natural light, authentic fabric, a tasteful real-world setting, and leave environmental space around the model. No text, watermark, product mockup, or synthetic appearance.";
+          const basePrompt = options.modeledPrompt || (withIdentity
+            ? `Create a professional horizontal 3:2 editorial fashion photograph of the person in Image 1 wearing the exact garment from Image 2. Preserve the person's recognizable identity, face, hair, age and proportions. ${sharedTail}`
+            : `Create a professional horizontal 3:2 editorial fashion photograph of a professional fashion model with natural realistic features wearing the exact garment from Image 1. ${sharedTail}`);
+          bytes = await ai.generateImage({ purpose: "modeled", aspectRatio: "3:2", images, prompt: current.stages.modeled.prompt ? `${basePrompt}\nUser regeneration direction: ${current.stages.modeled.prompt}` : basePrompt });
         }
         await writeFile(output, bytes);
         const fresh = await loadJob(current.id);
+        if (!fresh) return;
         fresh.stages[stageName].status = "review";
         fresh.stages[stageName].assetUrl = `${ASSET_ROOT}/${fresh.id}/${path.basename(output)}`;
         fresh.stages[stageName].failedAssetUrl = null;
@@ -451,6 +458,7 @@ export function wardrobeImportApi(options = {}) {
         await saveJob(fresh);
       } catch (error) {
         const fresh = await loadJob(current.id);
+        if (!fresh) return;
         fresh.stages[stageName].status = "failed"; fresh.stages[stageName].error = error.message; fresh.stages[stageName].updatedAt = new Date().toISOString();
         if (typeof failedAssetUrl === "string") fresh.stages[stageName].failedAssetUrl = failedAssetUrl;
         if (chromaKeyUsed) fresh.stages[stageName].chromaKey = chromaKeyUsed;
@@ -505,7 +513,6 @@ export function wardrobeImportApi(options = {}) {
         if (!setup.ready) {
           const missing = [
             !setup.hasApiKey && `${setup.provider === "gemini" ? "GEMINI_API_KEY" : "OPENAI_API_KEY"} in .env`,
-            !setup.hasModelReference && `a PNG photo of yourself at ${setup.modelReference}`,
           ].filter(Boolean).join(" and ");
           return json(res, 503, { error: `Setup required: add ${missing}, then restart the app.` });
         }
@@ -583,6 +590,22 @@ export function wardrobeImportApi(options = {}) {
         await saveJob(job);
         return json(res, 200, publicJob(job));
       }
+      const useCropMatch = action === "stages/garment/use-crop";
+      if (useCropMatch && req.method === "POST") {
+        if (!job.stages.crop?.assetUrl) throw Object.assign(new Error("El recorte todavía no está listo"), { status: 409 });
+        const now = new Date().toISOString();
+        job.stages.garment.status = "approved";
+        job.stages.garment.decision = "approved";
+        job.stages.garment.error = null;
+        job.stages.garment.assetUrl = job.stages.crop.assetUrl;
+        job.stages.garment.updatedAt = now;
+        job.status = "complete";
+        await saveJob(job);
+        await persistImported(job, false);
+        const response = publicJob(job);
+        await rm(path.join(jobsDir, job.id), { recursive: true, force: true });
+        return json(res, 200, response);
+      }
       const stageMatch = action.match(/^stages\/(crop|garment|modeled)\/(approve|reject|regenerate)$/);
       if (stageMatch && req.method === "POST") {
         const [, stageName, decision] = stageMatch;
@@ -605,9 +628,12 @@ export function wardrobeImportApi(options = {}) {
         job.stages[stageName].status = job.stages[stageName].decision;
         job.stages[stageName].error = null;
         job.stages[stageName].updatedAt = new Date().toISOString();
-        const startGarment = stageName === "crop" && decision === "approve" && job.stages.garment.status === "pending";
-        const startModeled = stageName === "garment" && decision === "approve" && job.stages.modeled.status === "pending";
+        const skipModeled = url.searchParams.get("modeled") === "skip";
+        const skipGarment = url.searchParams.get("garment") === "skip";
+        const startGarment = stageName === "crop" && decision === "approve" && job.stages.garment.status === "pending" && !skipGarment;
+        const startModeled = stageName === "garment" && decision === "approve" && job.stages.modeled.status === "pending" && !skipModeled;
         if (stageName === "modeled" && decision === "approve") job.status = "complete";
+        if (stageName === "garment" && decision === "approve" && skipModeled) job.status = "complete";
         await saveJob(job);
         if (decision === "approve" && stageName !== "crop") {
           try {

@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Blue Geometric Squares Print Silk Scarf",
+      "part": "accessories_up",
+      "color": "#5b83b8",
+      "secondaryColor": "#a9744a",
+      "tags": ["scarf", "printed", "square"],
+      "season": "all",
+      "material": "silk",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "office", "smart-casual"],
+      "boundingBox": { "x": 55, "y": 237, "width": 895, "height": 555 }
+    }
+  ]
+}

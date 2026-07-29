@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "name": "Black Cat-Eye Sunglasses",
+      "part": "accessories_up",
+      "color": "#111111",
+      "secondaryColor": null,
+      "tags": ["sunglasses", "cat-eye", "retro"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "weekend", "event"],
+      "boundingBox": { "x": 215, "y": 250, "width": 665, "height": 200 }
+    },
+    {
+      "name": "Burgundy Cat-Eye Sunglasses",
+      "part": "accessories_up",
+      "color": "#5c1f18",
+      "secondaryColor": "#8a4a2a",
+      "tags": ["sunglasses", "cat-eye", "retro"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "weekend", "event"],
+      "boundingBox": { "x": 37, "y": 355, "width": 695, "height": 245 }
+    },
+    {
+      "name": "Cream Cat-Eye Sunglasses",
+      "part": "accessories_up",
+      "color": "#e8ddc8",
+      "secondaryColor": "#3a4450",
+      "tags": ["sunglasses", "cat-eye", "retro"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "weekend", "event"],
+      "boundingBox": { "x": 330, "y": 495, "width": 630, "height": 150 }
+    },
+    {
+      "name": "Tortoiseshell Cat-Eye Sunglasses",
+      "part": "accessories_up",
+      "color": "#7a3c18",
+      "secondaryColor": "#2a1508",
+      "tags": ["sunglasses", "cat-eye", "tortoise"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "weekend", "event"],
+      "boundingBox": { "x": 130, "y": 625, "width": 740, "height": 155 }
+    }
+  ]
+}

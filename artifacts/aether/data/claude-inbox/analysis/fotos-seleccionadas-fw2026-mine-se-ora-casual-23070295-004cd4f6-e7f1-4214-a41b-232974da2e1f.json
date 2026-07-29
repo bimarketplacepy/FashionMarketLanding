@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Champagne Beige Faux Wrap Ruffle Dress",
+      "part": "wholebody_up",
+      "color": "#ddc9a3",
+      "secondaryColor": null,
+      "tags": ["wrap", "ruffle", "tie-waist"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["casual", "event", "smart-casual"],
+      "boundingBox": { "x": 5, "y": 25, "width": 990, "height": 970 }
+    }
+  ]
+}

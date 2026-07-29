@@ -56,27 +56,53 @@ async function exists(file) {
   catch (error) { if (error.code === "ENOENT") return false; throw error; }
 }
 
-function outfitPrompt(outfit, garments) {
+const COMPLEXIONS = {
+  esbelta: "slim, slender build",
+  media: "average, balanced build",
+  atletica: "athletic, toned build",
+  curvy: "curvy, fuller figure",
+};
+
+const SKIN_TONES = {
+  clara: "fair skin",
+  "media-clara": "light-medium skin",
+  media: "medium warm skin",
+  morena: "tan brown skin",
+  oscura: "deep dark skin",
+};
+
+function outfitPrompt(outfit, garments, profile = {}) {
+  const usePhoto = profile.mode !== "default";
+  const build = COMPLEXIONS[profile.complexion] || null;
+  const tone = SKIN_TONES[profile.skinTone] || null;
   const top = garments.find((item) => item.part === "upperbody");
   const bottom = garments.find((item) => item.part === "lowerbody");
   const outer = garments.find((item) => item.part === "wholebody_up");
   const extras = garments.filter((item) => ["shoes", "accessories_up"].includes(item.part));
-  const list = garments.map((item, index) => `Image ${index + 2}: exact ${item.part} reference — ${item.name}.`).join("\n");
+  const offset = usePhoto ? 2 : 1;
+  const list = garments.map((item, index) => `Image ${index + offset}: exact ${item.part} reference — ${item.name}.`).join("\n");
   const layering = outer
     ? "Layer the exact outer garment naturally over the exact top. Preserve its real closure construction; never invent an opening, zipper, buttons, or placket. Keep both selected pieces visibly identifiable."
     : "";
-  return `Use case: identity-preserve
+  const garmentSentence = `Dress them in the exact top "${top?.name}", exact bottom "${bottom?.name}"${outer ? `, exact outer layer "${outer.name}"` : ""}${extras.length ? `, and exact ${extras.map((item) => item.name).join(" and ")}` : ""}. Do not add, replace, or invent any other visible clothing or accessory.`;
+  const subject = usePhoto
+    ? `Subject: Preserve the same person's recognizable face, hair, age, skin tone, and skin texture from Image 1.${build ? ` Render their body with a ${build} while keeping the face and identity unmistakably the same person.` : " Preserve their build and body proportions."} ${garmentSentence}`
+    : `Subject: A professional fashion model with ${build || "an average, balanced build"}${tone ? ` and ${tone}` : ""}, natural realistic features, friendly neutral expression. ${garmentSentence}`;
+  const identityLine = usePhoto ? "\nImage 1: identity reference for the exact person to preserve." : "";
+  const primary = usePhoto
+    ? "Primary request: Create a professional square editorial fashion photograph of the person from Image 1 wearing every exact referenced garment, and only those garments."
+    : "Primary request: Create a professional square editorial fashion photograph of the described model wearing every exact referenced garment, and only those garments.";
+  return `Use case: ${usePhoto ? "identity-preserve" : "catalog model"}
 Asset type: square virtual try-on photograph
-
-Image 1: identity reference for the exact person to preserve.
+${identityLine}
 ${list}
 
-Primary request: Create a professional square editorial fashion photograph of the person from Image 1 wearing every exact referenced garment, and only those garments.
+${primary}
 
 Outfit: ${outfit.name || "Look personalizado"}.
 Context: ${outfit.occasion || "everyday"}; ${outfit.season || "all-season"}; ${outfit.climate || "mild"} climate.
 
-Subject: Preserve the same person's recognizable face, hair, age, build, skin texture, and body proportions. Dress them in the exact top "${top?.name}", exact bottom "${bottom?.name}"${outer ? `, exact outer layer "${outer.name}"` : ""}${extras.length ? `, and exact ${extras.map((item) => item.name).join(" and ")}` : ""}. Do not add, replace, or invent any other visible clothing or accessory.
+${subject}
 
 Style: Photorealistic natural editorial fashion campaign with authentic skin and fabric texture. Full person from head through shoes, centered, relaxed front-facing pose, arms away from clothing, warm natural light and realistic anatomy.
 
@@ -92,8 +118,19 @@ export function outfitApi(options = {}) {
   let outfitsFile;
   let outfitImagesDir;
   let modelReference;
+  let modelProfileFile;
   const setting = (name, fallback = "") => options.env?.[name] || process.env[name] || fallback;
   const ai = createAIProvider(setting);
+
+  async function loadProfile() {
+    try {
+      const value = JSON.parse(await readFile(modelProfileFile, "utf8"));
+      return value && typeof value === "object" ? value : null;
+    } catch (error) {
+      if (error.code === "ENOENT") return null;
+      throw error;
+    }
+  }
 
   async function loadLibrary() {
     try {
@@ -159,7 +196,20 @@ export function outfitApi(options = {}) {
           provider: ai.name,
           hasModelReference: await exists(modelReference),
           modelReferenceUrl: await exists(modelReference) ? `${API_ROOT}/model-reference` : null,
+          profile: await loadProfile(),
         });
+      }
+      if (url.pathname === `${API_ROOT}/model-profile` && req.method === "POST") {
+        const input = await body(req);
+        const mode = input.mode === "default" ? "default" : "photo";
+        const profile = {
+          mode,
+          complexion: Object.keys(COMPLEXIONS).includes(input.complexion) ? input.complexion : null,
+          skinTone: Object.keys(SKIN_TONES).includes(input.skinTone) ? input.skinTone : null,
+          updatedAt: new Date().toISOString(),
+        };
+        await atomicJson(modelProfileFile, profile);
+        return json(res, 200, profile);
       }
       if (url.pathname === `${API_ROOT}/model-reference` && req.method === "GET") {
         if (!await exists(modelReference)) return json(res, 404, { error: "Todavía no hay una foto de referencia." });
@@ -196,12 +246,14 @@ export function outfitApi(options = {}) {
       }
       if (url.pathname === `${API_ROOT}/generate` && req.method === "POST") {
         if (!ai.hasApiKey) return json(res, 503, { error: `Configurá ${ai.name === "gemini" ? "GEMINI_API_KEY" : "OPENAI_API_KEY"} para generar la prueba virtual.` });
-        if (!await exists(modelReference)) return json(res, 409, { error: "Subí primero una foto de referencia." });
+        const profile = await loadProfile() || { mode: "photo" };
+        const usePhoto = profile.mode !== "default";
+        if (usePhoto && !await exists(modelReference)) return json(res, 409, { error: "Subí primero una foto de referencia o elegí el modelo predeterminado." });
         const input = await body(req);
         const outfit = await saveOutfit(input);
         const library = await loadLibrary();
         const garments = outfit.garmentIds.map((id) => library.find((item) => item.id === id)).filter(Boolean);
-        const images = [{ data: await readFile(modelReference), name: "identity.png" }];
+        const images = usePhoto ? [{ data: await readFile(modelReference), name: "identity.png" }] : [];
         for (const garment of garments) {
           if (!PARTS.has(garment.part)) continue;
           const filename = path.basename(new URL(garment.image, "http://localhost").pathname);
@@ -210,7 +262,7 @@ export function outfitApi(options = {}) {
         const bytes = await ai.generateImage({
           purpose: "outfit",
           aspectRatio: "1:1",
-          prompt: outfitPrompt(outfit, garments),
+          prompt: outfitPrompt(outfit, garments, profile),
           images,
         });
         const filename = `${outfit.id}.png`;
@@ -247,6 +299,7 @@ export function outfitApi(options = {}) {
       libraryFile = path.join(dataDir, "library.json");
       outfitsFile = path.join(dataDir, "outfits.json");
       outfitImagesDir = path.join(dataDir, "outfit-images");
+      modelProfileFile = path.join(dataDir, "model-profile.json");
       modelReference = path.resolve(root, setting("WARDROBE_MODEL_REFERENCE", "data/model-reference.png"));
       await mkdir(dataDir, { recursive: true });
       await mkdir(outfitImagesDir, { recursive: true });

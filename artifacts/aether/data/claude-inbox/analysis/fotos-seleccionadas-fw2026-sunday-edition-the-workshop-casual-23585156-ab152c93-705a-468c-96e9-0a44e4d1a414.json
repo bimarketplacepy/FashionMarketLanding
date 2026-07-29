@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Ivory Geometric Line Print Oversized Shirt",
+      "part": "upperbody",
+      "color": "#f1ede3",
+      "secondaryColor": "#2d2d33",
+      "tags": ["geometric", "button-up", "oversized"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "oversized",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["casual", "smart-casual", "office"],
+      "boundingBox": { "x": 20, "y": 250, "width": 920, "height": 650 }
+    },
+    {
+      "name": "White Tailored Pleated Shorts",
+      "part": "lowerbody",
+      "color": "#f5f3ee",
+      "secondaryColor": null,
+      "tags": ["tailored", "pleated", "shorts"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "smart-casual", "weekend"],
+      "boundingBox": { "x": 270, "y": 655, "width": 670, "height": 345 }
+    }
+  ]
+}

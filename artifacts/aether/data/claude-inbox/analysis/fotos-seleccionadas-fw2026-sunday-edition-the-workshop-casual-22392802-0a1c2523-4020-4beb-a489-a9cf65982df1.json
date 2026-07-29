@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Black Short Sleeve Mock Neck Ribbed Top",
+      "part": "upperbody",
+      "color": "#17171a",
+      "secondaryColor": null,
+      "tags": ["ribbed", "mock-neck", "short-sleeve"],
+      "season": "autumn",
+      "material": "knit",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "office", "smart-casual"],
+      "boundingBox": { "x": 330, "y": 225, "width": 315, "height": 190 }
+    },
+    {
+      "name": "Grey Plaid Pleated Mini Skirt",
+      "part": "lowerbody",
+      "color": "#8d8a82",
+      "secondaryColor": "#4a463f",
+      "tags": ["plaid", "pleated", "mini"],
+      "season": "autumn",
+      "material": "wool",
+      "silhouette": "flowy",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "smart-casual", "office"],
+      "boundingBox": { "x": 320, "y": 415, "width": 380, "height": 210 }
+    },
+    {
+      "name": "Grey Plaid Double-Breasted Blazer",
+      "part": "wholebody_up",
+      "color": "#8d8a82",
+      "secondaryColor": "#4a463f",
+      "tags": ["plaid", "blazer", "double-breasted"],
+      "season": "autumn",
+      "material": "wool",
+      "silhouette": "structured",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["office", "smart-casual", "casual"],
+      "boundingBox": { "x": 545, "y": 175, "width": 245, "height": 425 }
+    }
+  ]
+}

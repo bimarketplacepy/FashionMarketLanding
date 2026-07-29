@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Black Wool-Blend Zip Bomber Jacket",
+      "part": "wholebody_up",
+      "color": "#141414",
+      "secondaryColor": null,
+      "tags": ["bomber", "zip-up", "collared"],
+      "season": "winter",
+      "material": "wool",
+      "silhouette": "relaxed",
+      "weight": "heavy",
+      "climates": ["cold", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 45, "y": 290, "width": 915, "height": 590 }
+    },
+    {
+      "name": "White Crew Neck T-Shirt",
+      "part": "upperbody",
+      "color": "#f2f2f0",
+      "secondaryColor": null,
+      "tags": ["basic", "crew-neck"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 345, "y": 300, "width": 155, "height": 410 }
+    },
+    {
+      "name": "Medium Wash High-Rise Jeans",
+      "part": "lowerbody",
+      "color": "#5b7a9e",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 170, "y": 700, "width": 590, "height": 300 }
+    }
+  ]
+}

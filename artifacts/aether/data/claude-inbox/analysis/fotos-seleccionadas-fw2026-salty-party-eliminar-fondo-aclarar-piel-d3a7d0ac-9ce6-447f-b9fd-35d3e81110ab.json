@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Heather Grey Ribbed Scoop Tank Top",
+      "part": "upperbody",
+      "color": "#c3c9c7",
+      "secondaryColor": null,
+      "tags": ["ribbed", "tank", "scoop-neck"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "event"],
+      "boundingBox": { "x": 245, "y": 105, "width": 635, "height": 470 }
+    },
+    {
+      "name": "Black Faux Leather Studded Ruffle Mini Skirt",
+      "part": "lowerbody",
+      "color": "#151515",
+      "secondaryColor": null,
+      "tags": ["faux-leather", "studded", "mini"],
+      "season": "autumn",
+      "material": "leather",
+      "silhouette": "flowy",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["event", "weekend"],
+      "boundingBox": { "x": 290, "y": 540, "width": 665, "height": 360 }
+    },
+    {
+      "name": "Silver Shell Statement Earrings",
+      "part": "accessories_up",
+      "color": "#b8bcc0",
+      "secondaryColor": null,
+      "tags": ["earrings", "silver", "statement"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 420, "y": 10, "width": 85, "height": 70 }
+    }
+  ]
+}

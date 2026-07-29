@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Cream Floral Chiffon Peasant Blouse",
+      "part": "upperbody",
+      "color": "#f0ead9",
+      "secondaryColor": "#c8a377",
+      "tags": ["floral", "chiffon", "tie-cuff"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["casual", "smart-casual", "office"],
+      "boundingBox": { "x": 140, "y": 285, "width": 785, "height": 595 }
+    },
+    {
+      "name": "Black Slim Pants",
+      "part": "lowerbody",
+      "color": "#17171a",
+      "secondaryColor": null,
+      "tags": ["slim", "basic"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "office", "smart-casual"],
+      "boundingBox": { "x": 225, "y": 870, "width": 565, "height": 130 }
+    }
+  ]
+}

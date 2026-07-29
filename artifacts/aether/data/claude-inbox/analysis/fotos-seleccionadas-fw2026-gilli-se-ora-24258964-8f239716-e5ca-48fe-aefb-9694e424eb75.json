@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Plum Sheer Chiffon Ruffle-Front Blouse",
+      "part": "upperbody",
+      "color": "#5a2050",
+      "secondaryColor": null,
+      "tags": ["ruffle", "sheer", "chiffon"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["event", "smart-casual", "office"],
+      "boundingBox": { "x": 160, "y": 290, "width": 730, "height": 570 }
+    },
+    {
+      "name": "Washed Black Straight-Leg Jeans",
+      "part": "lowerbody",
+      "color": "#3a3a3c",
+      "secondaryColor": null,
+      "tags": ["denim", "washed-black"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 225, "y": 775, "width": 565, "height": 225 }
+    },
+    {
+      "name": "Gold Layered Chain Necklace",
+      "part": "accessories_up",
+      "color": "#c9a24b",
+      "secondaryColor": null,
+      "tags": ["necklace", "gold", "layered"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "smart-casual", "office"],
+      "boundingBox": { "x": 425, "y": 295, "width": 165, "height": 60 }
+    }
+  ]
+}

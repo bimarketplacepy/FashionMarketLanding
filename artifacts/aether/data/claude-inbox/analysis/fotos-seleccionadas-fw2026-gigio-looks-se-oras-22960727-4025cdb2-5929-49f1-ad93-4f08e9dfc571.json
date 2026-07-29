@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Blush Ladder-Trim Swing Blouse",
+      "part": "upperbody",
+      "color": "#e6cfc0",
+      "secondaryColor": null,
+      "tags": ["swing", "ladder-trim", "short-sleeve"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 100, "y": 180, "width": 710, "height": 645 }
+    },
+    {
+      "name": "Cream Palm Print Drawstring Pants",
+      "part": "lowerbody",
+      "color": "#f4efe6",
+      "secondaryColor": "#c8a67e",
+      "tags": ["printed", "drawstring", "wide-leg"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 265, "y": 755, "width": 565, "height": 245 }
+    },
+    {
+      "name": "Multicolor Beaded Necklace",
+      "part": "accessories_up",
+      "color": "#2e6e6a",
+      "secondaryColor": "#b03a2e",
+      "tags": ["beaded", "necklace"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 445, "y": 315, "width": 200, "height": 75 }
+    }
+  ]
+}

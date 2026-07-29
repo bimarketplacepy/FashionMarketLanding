@@ -117,6 +117,25 @@ async function openAIAnalyze({ key, baseUrl, model, image }) {
   return parsed.items;
 }
 
+// Gemini's response_schema accepts only an OpenAPI subset: no additionalProperties,
+// and nullability is expressed with `nullable: true` instead of type arrays.
+function geminiSchema(node) {
+  if (Array.isArray(node)) return node.map(geminiSchema);
+  if (!node || typeof node !== "object") return node;
+  const { additionalProperties, ...rest } = node;
+  const out = {};
+  for (const [key, value] of Object.entries(rest)) {
+    if (key === "type" && Array.isArray(value)) {
+      const types = value.filter((entry) => entry !== "null");
+      out.type = types[0] || "string";
+      if (value.includes("null")) out.nullable = true;
+      continue;
+    }
+    out[key] = geminiSchema(value);
+  }
+  return out;
+}
+
 async function geminiRequest({ key, baseUrl, model, payload }) {
   const response = await fetch(`${baseUrl}/models/${encodeURIComponent(model)}:generateContent`, {
     method: "POST",
@@ -146,7 +165,7 @@ async function geminiAnalyze({ key, baseUrl, model, image }) {
       }],
       generationConfig: {
         responseMimeType: "application/json",
-        responseSchema: schema("array"),
+        responseSchema: geminiSchema(schema("array")),
       },
     },
   });

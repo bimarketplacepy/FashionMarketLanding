@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Silver Shimmer One-Shoulder Flared Mini Dress",
+      "part": "wholebody_up",
+      "color": "#3d3f3e",
+      "secondaryColor": "#b8b9b5",
+      "tags": ["metallic", "one-shoulder", "mini"],
+      "season": "winter",
+      "material": "knit",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["event"],
+      "boundingBox": { "x": 220, "y": 280, "width": 665, "height": 710 }
+    }
+  ]
+}

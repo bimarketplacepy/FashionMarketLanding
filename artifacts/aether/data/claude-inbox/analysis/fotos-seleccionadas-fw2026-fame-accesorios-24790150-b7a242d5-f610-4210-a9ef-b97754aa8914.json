@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Cow Print Satin Square Scarf with Brown Border",
+      "part": "accessories_up",
+      "color": "#f0ece4",
+      "secondaryColor": "#4a3226",
+      "tags": ["scarf", "cow-print", "satin"],
+      "season": "all",
+      "material": "silk",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "smart-casual", "event"],
+      "boundingBox": { "x": 25, "y": 15, "width": 950, "height": 960 }
+    }
+  ]
+}

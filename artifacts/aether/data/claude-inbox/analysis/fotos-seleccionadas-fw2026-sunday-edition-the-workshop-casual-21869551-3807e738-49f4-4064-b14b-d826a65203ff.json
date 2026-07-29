@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Chocolate Brown Single-Button Blazer",
+      "part": "wholebody_up",
+      "color": "#7a4f2c",
+      "secondaryColor": null,
+      "tags": ["blazer", "relaxed-fit", "notch-lapel"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["office", "smart-casual", "casual"],
+      "boundingBox": { "x": 155, "y": 275, "width": 740, "height": 575 }
+    },
+    {
+      "name": "White Scoop-Neck Crop Tank Top",
+      "part": "upperbody",
+      "color": "#f4f2ed",
+      "secondaryColor": null,
+      "tags": ["cropped", "tank", "basic"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 355, "y": 380, "width": 230, "height": 195 }
+    },
+    {
+      "name": "Beige High-Waist Column Midi Skirt",
+      "part": "lowerbody",
+      "color": "#d9d2c4",
+      "secondaryColor": null,
+      "tags": ["midi", "high-waist", "column"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["office", "smart-casual", "casual"],
+      "boundingBox": { "x": 210, "y": 580, "width": 490, "height": 420 }
+    }
+  ]
+}

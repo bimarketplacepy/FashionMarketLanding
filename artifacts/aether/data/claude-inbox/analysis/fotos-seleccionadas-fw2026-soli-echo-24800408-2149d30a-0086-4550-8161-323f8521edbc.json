@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Black Satin Lace-Trim Camisole",
+      "part": "upperbody",
+      "color": "#0d0d0d",
+      "secondaryColor": null,
+      "tags": ["satin", "lace", "camisole"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["event", "smart-casual", "casual"],
+      "boundingBox": { "x": 2, "y": 50, "width": 996, "height": 945 }
+    }
+  ]
+}

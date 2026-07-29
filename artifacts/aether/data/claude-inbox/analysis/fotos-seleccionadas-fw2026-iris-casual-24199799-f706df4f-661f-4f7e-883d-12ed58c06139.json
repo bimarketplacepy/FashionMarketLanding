@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Burgundy Argyle V-Neck Cropped Sweater",
+      "part": "upperbody",
+      "color": "#7a1f2b",
+      "secondaryColor": "#232a44",
+      "tags": ["argyle", "knit", "v-neck"],
+      "season": "winter",
+      "material": "knit",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["cold", "mild"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 0, "y": 55, "width": 1000, "height": 760 }
+    },
+    {
+      "name": "Light Wash Paneled Denim Skirt",
+      "part": "lowerbody",
+      "color": "#7fa3c4",
+      "secondaryColor": null,
+      "tags": ["denim", "paneled", "skirt"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 65, "y": 795, "width": 830, "height": 205 }
+    }
+  ]
+}

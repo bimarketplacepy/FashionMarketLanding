@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Black Smocked Mock Neck Crop Top",
+      "part": "upperbody",
+      "color": "#141414",
+      "secondaryColor": null,
+      "tags": ["smocked", "mock-neck", "crop"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "smart-casual"],
+      "boundingBox": { "x": 323, "y": 137, "width": 337, "height": 219 }
+    },
+    {
+      "name": "Grey Glen Plaid Wide-Leg Trousers",
+      "part": "lowerbody",
+      "color": "#7d7d7d",
+      "secondaryColor": null,
+      "tags": ["plaid", "wide-leg", "trousers"],
+      "season": "autumn",
+      "material": "mixed",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["office", "smart-casual", "casual"],
+      "boundingBox": { "x": 263, "y": 350, "width": 440, "height": 600 }
+    }
+  ]
+}

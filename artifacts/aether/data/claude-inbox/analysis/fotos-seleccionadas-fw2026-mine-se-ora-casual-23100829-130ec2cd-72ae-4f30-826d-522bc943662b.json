@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Black Polka Dot Ruffle-Sleeve Midi Dress",
+      "part": "wholebody_up",
+      "color": "#161616",
+      "secondaryColor": "#eceae4",
+      "tags": ["polka-dot", "midi", "v-neck"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "smart-casual", "office"],
+      "boundingBox": { "x": 295, "y": 165, "width": 400, "height": 600 }
+    },
+    {
+      "name": "Black Lace-Up Flat Sandals",
+      "part": "shoes",
+      "color": "#1a1a1a",
+      "secondaryColor": null,
+      "tags": ["sandals", "lace-up", "flat"],
+      "season": "summer",
+      "material": "synthetic",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 355, "y": 865, "width": 360, "height": 120 }
+    }
+  ]
+}

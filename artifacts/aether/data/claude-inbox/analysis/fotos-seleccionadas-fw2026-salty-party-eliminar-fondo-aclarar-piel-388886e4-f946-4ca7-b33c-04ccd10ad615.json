@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Black Faux Leather Grommet Halter Corset Top",
+      "part": "upperbody",
+      "color": "#1a1a1c",
+      "secondaryColor": null,
+      "tags": ["faux-leather", "halter", "grommet"],
+      "season": "autumn",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild"],
+      "occasions": ["event"],
+      "boundingBox": { "x": 245, "y": 40, "width": 630, "height": 685 }
+    },
+    {
+      "name": "Dark Indigo High-Waist Jeans",
+      "part": "lowerbody",
+      "color": "#232c3d",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist", "dark-wash"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "event", "weekend"],
+      "boundingBox": { "x": 197, "y": 505, "width": 803, "height": 495 }
+    },
+    {
+      "name": "Black Stone Pendant Cord Necklace",
+      "part": "accessories_up",
+      "color": "#131313",
+      "secondaryColor": null,
+      "tags": ["necklace", "pendant"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "casual"],
+      "boundingBox": { "x": 495, "y": 105, "width": 155, "height": 105 }
+    }
+  ]
+}

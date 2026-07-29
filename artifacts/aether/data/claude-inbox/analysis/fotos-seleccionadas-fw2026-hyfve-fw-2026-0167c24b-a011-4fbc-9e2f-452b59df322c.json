@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Leopard Print Satin Button-Down Shirt",
+      "part": "upperbody",
+      "color": "#c9b08a",
+      "secondaryColor": "#2e2a24",
+      "tags": ["leopard", "satin", "button-down"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["smart-casual", "event", "casual"],
+      "boundingBox": { "x": 300, "y": 160, "width": 500, "height": 355 }
+    },
+    {
+      "name": "Leopard Print Satin Wide-Leg Pants",
+      "part": "lowerbody",
+      "color": "#c9b08a",
+      "secondaryColor": "#2e2a24",
+      "tags": ["leopard", "wide-leg", "satin"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["smart-casual", "event", "casual"],
+      "boundingBox": { "x": 245, "y": 445, "width": 565, "height": 490 }
+    },
+    {
+      "name": "Black Strappy Heeled Sandals",
+      "part": "shoes",
+      "color": "#151515",
+      "secondaryColor": null,
+      "tags": ["heels", "strappy"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 225, "y": 925, "width": 380, "height": 75 }
+    }
+  ]
+}

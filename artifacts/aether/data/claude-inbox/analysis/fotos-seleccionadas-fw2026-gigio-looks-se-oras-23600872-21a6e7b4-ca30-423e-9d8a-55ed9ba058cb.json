@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Burgundy Ruffle-Neck Balloon Sleeve Blouse",
+      "part": "upperbody",
+      "color": "#6e1a24",
+      "secondaryColor": null,
+      "tags": ["ruffle-neck", "balloon-sleeve", "blouse"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["smart-casual", "office", "casual"],
+      "boundingBox": { "x": 30, "y": 210, "width": 925, "height": 670 }
+    },
+    {
+      "name": "Light Wash Straight Jeans",
+      "part": "lowerbody",
+      "color": "#a8c0d4",
+      "secondaryColor": null,
+      "tags": ["denim", "light-wash"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 190, "y": 810, "width": 510, "height": 190 }
+    }
+  ]
+}

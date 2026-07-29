@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Ivory Rust Rope Print Wide-Leg Pants",
+      "part": "lowerbody",
+      "color": "#f5f0e6",
+      "secondaryColor": "#b1441f",
+      "tags": ["printed", "wide-leg", "drawstring"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 159, "y": 31, "width": 704, "height": 775 }
+    },
+    {
+      "name": "Beige Espadrille Wedge Sandals",
+      "part": "shoes",
+      "color": "#d8c4a8",
+      "secondaryColor": null,
+      "tags": ["espadrille", "wedge"],
+      "season": "summer",
+      "material": "mixed",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 403, "y": 787, "width": 291, "height": 206 }
+    }
+  ]
+}

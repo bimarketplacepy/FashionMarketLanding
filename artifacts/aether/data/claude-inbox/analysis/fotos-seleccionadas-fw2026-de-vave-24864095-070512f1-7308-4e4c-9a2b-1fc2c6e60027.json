@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Chocolate Brown Satin Lace-Trim Cami Top",
+      "part": "upperbody",
+      "color": "#3f2a22",
+      "secondaryColor": null,
+      "tags": ["satin", "lace", "cami"],
+      "season": "all",
+      "material": "silk",
+      "silhouette": "flowy",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 200, "y": 75, "width": 650, "height": 830 }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Black Faux Leather One-Shoulder Mini Dress",
+      "part": "wholebody_up",
+      "color": "#1a1a1a",
+      "secondaryColor": null,
+      "tags": ["faux-leather", "one-shoulder", "mini"],
+      "season": "autumn",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 315, "y": 150, "width": 420, "height": 415 }
+    },
+    {
+      "name": "Black Pointed-Toe Pumps",
+      "part": "shoes",
+      "color": "#141414",
+      "secondaryColor": null,
+      "tags": ["pumps", "pointed-toe", "heels"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["event", "office", "smart-casual"],
+      "boundingBox": { "x": 415, "y": 865, "width": 210, "height": 115 }
+    }
+  ]
+}

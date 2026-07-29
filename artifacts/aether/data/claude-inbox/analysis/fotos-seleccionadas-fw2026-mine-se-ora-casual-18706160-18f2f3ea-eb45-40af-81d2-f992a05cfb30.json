@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "name": "Sage Green Hooded Utility Jacket",
+      "part": "wholebody_up",
+      "color": "#b6bdad",
+      "secondaryColor": null,
+      "tags": ["utility", "hooded", "zip-up"],
+      "season": "autumn",
+      "material": "cotton",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold", "rain"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 0, "y": 120, "width": 1000, "height": 810 }
+    },
+    {
+      "name": "White Cropped Square-Neck Tank Top",
+      "part": "upperbody",
+      "color": "#f7f6f3",
+      "secondaryColor": null,
+      "tags": ["crop", "tank", "basic"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 405, "y": 290, "width": 325, "height": 410 }
+    },
+    {
+      "name": "White High-Waist Jeans",
+      "part": "lowerbody",
+      "color": "#f2f1ee",
+      "secondaryColor": null,
+      "tags": ["denim", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["warm", "mild"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 170, "y": 730, "width": 675, "height": 270 }
+    },
+    {
+      "name": "Gold Chunky Chain Necklace",
+      "part": "accessories_up",
+      "color": "#c9a24a",
+      "secondaryColor": null,
+      "tags": ["necklace", "chain", "gold"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "smart-casual", "event"],
+      "boundingBox": { "x": 375, "y": 90, "width": 320, "height": 145 }
+    }
+  ]
+}

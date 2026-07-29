@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Black Ruffle-Neck Puff Sleeve Blouse",
+      "part": "upperbody",
+      "color": "#17171a",
+      "secondaryColor": null,
+      "tags": ["ruffle", "puff-sleeve", "blouse"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["office", "smart-casual", "event"],
+      "boundingBox": { "x": 110, "y": 170, "width": 845, "height": 690 }
+    },
+    {
+      "name": "Camel Straight-Leg Trousers",
+      "part": "lowerbody",
+      "color": "#b3854f",
+      "secondaryColor": null,
+      "tags": ["straight-leg", "contrast-stitch"],
+      "season": "autumn",
+      "material": "cotton",
+      "silhouette": "regular",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["office", "smart-casual"],
+      "boundingBox": { "x": 200, "y": 800, "width": 520, "height": 200 }
+    },
+    {
+      "name": "Gold Chunky Cuff Bracelet",
+      "part": "accessories_up",
+      "color": "#c9a344",
+      "secondaryColor": null,
+      "tags": ["bracelet", "gold-tone"],
+      "season": "all",
+      "material": "mixed",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 700, "y": 755, "width": 95, "height": 70 }
+    }
+  ]
+}

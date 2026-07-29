@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Navy Long Coat with Contrast Corduroy Collar",
+      "part": "wholebody_up",
+      "color": "#1b2740",
+      "secondaryColor": "#8b5a2b",
+      "tags": ["coat", "corduroy-trim", "button-front"],
+      "season": "winter",
+      "material": "cotton",
+      "silhouette": "relaxed",
+      "weight": "heavy",
+      "climates": ["cold", "mild", "rain"],
+      "occasions": ["casual", "smart-casual", "weekend"],
+      "boundingBox": { "x": 110, "y": 195, "width": 750, "height": 790 }
+    },
+    {
+      "name": "White Crew Neck T-Shirt",
+      "part": "upperbody",
+      "color": "#f4f4f2",
+      "secondaryColor": null,
+      "tags": ["basic", "crew-neck"],
+      "season": "all",
+      "material": "cotton",
+      "silhouette": "regular",
+      "weight": "light",
+      "climates": ["warm", "mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 385, "y": 235, "width": 180, "height": 280 }
+    },
+    {
+      "name": "Light Wash Wide Leg Jeans",
+      "part": "lowerbody",
+      "color": "#7d9cbd",
+      "secondaryColor": null,
+      "tags": ["denim", "wide-leg", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 100, "y": 500, "width": 550, "height": 500 }
+    }
+  ]
+}

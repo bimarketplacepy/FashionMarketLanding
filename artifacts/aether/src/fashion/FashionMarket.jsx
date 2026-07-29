@@ -21,18 +21,19 @@ const TYPE_MAP = Object.fromEntries(TYPES.map((type) => [type.id, type]));
 const TYPE_ORDER = Object.fromEntries(TYPES.slice(1).map((type, index) => [type.id, index]));
 
 const DEMO_THEMES = {
-  oliva: { ink: "#191b17", cream: "#f3eee5", accent: "#d7ff43", muted: "#ccd1ba" },
-  vino: { ink: "#24191c", cream: "#f4ece8", accent: "#ffb6c8", muted: "#d7c0c5" },
-  cobalto: { ink: "#111c38", cream: "#f0f2ed", accent: "#ffcc33", muted: "#bfc9d8" },
+  crema: { ink: "#2b211e", cream: "#f6f1e8", accent: "#6e2b35", muted: "#e8dfd0", deep: "#6e2b35", accentInk: "#f6f1e8" },
+  oliva: { ink: "#191b17", cream: "#f3eee5", accent: "#d7ff43", muted: "#ccd1ba", deep: "#5a6a32", accentInk: "#191b17" },
+  vino: { ink: "#24191c", cream: "#f4ece8", accent: "#ffb6c8", muted: "#d7c0c5", deep: "#7c3140", accentInk: "#24191c" },
+  cobalto: { ink: "#111c38", cream: "#f0f2ed", accent: "#ffcc33", muted: "#bfc9d8", deep: "#22355f", accentInk: "#111c38" },
 };
 
 const DEMO_DEFAULTS = {
   brand: "FASHION MARKET",
-  eyebrow: "Moda que aprende de vos",
+  eyebrow: "Nueva temporada · Otoño – Invierno 2026",
   headline: "Tu estilo,",
   highlight: "mejor elegido.",
-  description: "Descubrí prendas de nuestra colección, guardá tus favoritas y probá combinaciones pensadas para vos.",
-  theme: "oliva",
+  description: "Descubrí la colección de esta temporada, guardá tus piezas favoritas y probá combinaciones pensadas para vos.",
+  theme: "crema",
   type: "editorial",
   hero: "/fashion/hero-olive.png",
 };
@@ -640,7 +641,7 @@ export function FashionMarket({ intro }) {
     return (
       <div
         className={`retail-landing type-${demo.type}`}
-        style={{ "--ink": activeTheme.ink, "--cream": activeTheme.cream, "--acid": activeTheme.accent, "--muted": activeTheme.muted }}
+        style={{ "--ink": activeTheme.ink, "--cream": activeTheme.cream, "--acid": activeTheme.accent, "--muted": activeTheme.muted, "--deep": activeTheme.deep, "--accent-ink": activeTheme.accentInk }}
       >
         {intro}
         <header className="retail-nav">
@@ -650,7 +651,6 @@ export function FashionMarket({ intro }) {
           <nav aria-label="Navegación principal">
             <a href="#coleccion">Colección</a>
             <a href="#experiencia">Experiencia</a>
-            <a href="#como-funciona">Cómo funciona</a>
           </nav>
           <div className="retail-nav-actions">
             <button className="icon-action" type="button" aria-label="Favoritos"><Heart size={20} /></button>
@@ -694,7 +694,7 @@ export function FashionMarket({ intro }) {
               <legend>Imagen principal</legend>
               <div className="image-picker">
                 {[
-                  ["/fashion/hero-olive.png", "Oliva"],
+                  ["/fashion/hero-olive.png", "Arena"],
                   ["/fashion/look-camel.png", "Camel"],
                   ["/fashion/look-burgundy.png", "Vino"],
                 ].map(([src, label]) => <button className={demo.hero === src ? "active" : ""} type="button" key={src} onClick={() => setDemo({ ...demo, hero: src })}><img src={src} alt="" /><span>{label}</span></button>)}
@@ -753,38 +753,15 @@ export function FashionMarket({ intro }) {
             </div>
           </section>
 
-          <section className="lookbook-section">
-            <div className="lookbook-heading">
-              <p className="retail-kicker">Looks reales, inspiración inmediata</p>
-              <h2>La colección<br />en movimiento.</h2>
-            </div>
-            <article className="look-card look-card-one">
-              <img src="/fashion/look-camel.png" alt="Look urbano con sobrecamisa camel" />
-              <div><span>Look 01</span><strong>Esenciales urbanos</strong><button type="button" onClick={() => setView("wardrobe")}>Ver prendas <ArrowRight size={15} /></button></div>
-            </article>
-            <article className="look-card look-card-two">
-              <img src="/fashion/look-burgundy.png" alt="Look elegante en tonos vino y taupe" />
-              <div><span>Look 02</span><strong>Elegancia tonal</strong><button type="button" onClick={() => setView("wardrobe")}>Ver prendas <ArrowRight size={15} /></button></div>
-            </article>
+          <section className="customize-cta" id="experiencia">
+            <p className="retail-kicker"><Sparkle size={15} weight="fill" /> Probador virtual</p>
+            <h2>Probá la colección en vos,<br /><em>antes de elegir.</em></h2>
+            <p>Elegí un modelo o subí tu foto, y mirá cómo te quedan las combinaciones de la temporada.</p>
+            <button className="retail-primary-button" type="button" onClick={() => setView("wardrobe")}>
+              Ir a la customización <ArrowRight size={18} />
+            </button>
           </section>
 
-          <section className="personalizer-feature" id="experiencia">
-            <div className="personalizer-visual">
-              <img className="wardrobe-studio-photo" src="/fashion/wardrobe-studio.png" alt="Selección de prendas dentro del vestidor inteligente" />
-              <div className="stylist-badge"><Sparkle size={19} weight="fill" /><span>Stylist IA<br /><small>Siempre disponible</small></span></div>
-            </div>
-            <div className="personalizer-copy">
-              <p className="retail-kicker">Tu vestidor inteligente</p>
-              <h2>Todo lo que tenés.<br />Todo lo que <em>podés crear.</em></h2>
-              <p>Subí una foto de tus prendas o elegí piezas de la tienda. Nuestro personalizador reconoce cada detalle y te ayuda a construir looks completos.</p>
-              <ul id="como-funciona">
-                <li><span>01</span><div><strong>Importá tus prendas</strong><small>Desde una foto, en segundos.</small></div></li>
-                <li><span>02</span><div><strong>Organizá tu vestidor</strong><small>Por categoría, color y estilo.</small></div></li>
-                <li><span>03</span><div><strong>Creá nuevos looks</strong><small>Con tus piezas y nuestra colección.</small></div></li>
-              </ul>
-              <button className="retail-primary-button dark" type="button" onClick={() => setView("wardrobe")}>Probar el personalizador <ArrowRight size={18} /></button>
-            </div>
-          </section>
         </main>
 
         <footer className="retail-footer">

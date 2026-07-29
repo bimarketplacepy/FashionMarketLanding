@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Grey Leopard Print Satin Tie-Front Shirt",
+      "part": "upperbody",
+      "color": "#b9b3ab",
+      "secondaryColor": "#4a453f",
+      "tags": ["leopard", "satin", "tie-front"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "smart-casual", "weekend"],
+      "boundingBox": { "x": 197, "y": 125, "width": 638, "height": 325 }
+    },
+    {
+      "name": "Grey Leopard Print Satin Wide-Leg Pants",
+      "part": "lowerbody",
+      "color": "#b9b3ab",
+      "secondaryColor": "#4a453f",
+      "tags": ["leopard", "satin", "wide-leg"],
+      "season": "all",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["casual", "smart-casual", "weekend"],
+      "boundingBox": { "x": 206, "y": 400, "width": 516, "height": 569 }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "name": "Black Cropped Double-Breasted Jacket",
+      "part": "wholebody_up",
+      "color": "#15151a",
+      "secondaryColor": null,
+      "tags": ["double-breasted", "cropped", "trench-style"],
+      "season": "autumn",
+      "material": "synthetic",
+      "silhouette": "relaxed",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "smart-casual", "office"],
+      "boundingBox": { "x": 300, "y": 165, "width": 470, "height": 375 }
+    },
+    {
+      "name": "Medium Wash Skinny Jeans",
+      "part": "lowerbody",
+      "color": "#5f83a8",
+      "secondaryColor": null,
+      "tags": ["denim", "skinny", "high-waist"],
+      "season": "all",
+      "material": "denim",
+      "silhouette": "fitted",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["casual", "weekend"],
+      "boundingBox": { "x": 365, "y": 435, "width": 255, "height": 445 }
+    },
+    {
+      "name": "Black Pointed-Toe Pumps",
+      "part": "shoes",
+      "color": "#141414",
+      "secondaryColor": null,
+      "tags": ["pumps", "pointed-toe", "heels"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "cold"],
+      "occasions": ["office", "event", "smart-casual"],
+      "boundingBox": { "x": 310, "y": 860, "width": 270, "height": 125 }
+    }
+  ]
+}

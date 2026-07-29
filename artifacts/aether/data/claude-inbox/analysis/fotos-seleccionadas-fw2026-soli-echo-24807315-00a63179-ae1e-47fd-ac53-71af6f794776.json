@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "name": "Ivory Satin Corset Peplum Top",
+      "part": "upperbody",
+      "color": "#f0ece2",
+      "secondaryColor": null,
+      "tags": ["corset", "peplum", "satin"],
+      "season": "all",
+      "material": "silk",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["mild"],
+      "occasions": ["event"],
+      "boundingBox": { "x": 290, "y": 0, "width": 395, "height": 270 }
+    },
+    {
+      "name": "Dark Brown Satin Balloon-Hem Maxi Skirt",
+      "part": "lowerbody",
+      "color": "#2b1a15",
+      "secondaryColor": null,
+      "tags": ["maxi", "satin", "balloon-hem"],
+      "season": "autumn",
+      "material": "silk",
+      "silhouette": "flowy",
+      "weight": "medium",
+      "climates": ["mild", "cold"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 270, "y": 210, "width": 520, "height": 685 }
+    },
+    {
+      "name": "Cream Mini Handbag with Gold Charm",
+      "part": "accessories_up",
+      "color": "#e9e0d2",
+      "secondaryColor": "#c9a227",
+      "tags": ["mini-bag", "handbag"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "structured",
+      "weight": "light",
+      "climates": ["mild", "cold", "warm"],
+      "occasions": ["event", "smart-casual"],
+      "boundingBox": { "x": 215, "y": 395, "width": 125, "height": 140 }
+    },
+    {
+      "name": "Gold Metallic Strappy Heeled Sandals",
+      "part": "shoes",
+      "color": "#c9a86a",
+      "secondaryColor": null,
+      "tags": ["metallic", "sandals", "heels"],
+      "season": "all",
+      "material": "leather",
+      "silhouette": "fitted",
+      "weight": "light",
+      "climates": ["mild", "warm"],
+      "occasions": ["event"],
+      "boundingBox": { "x": 405, "y": 875, "width": 330, "height": 115 }
+    }
+  ]
+}
