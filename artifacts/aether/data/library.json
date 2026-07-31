@@ -1,7 +1,7 @@
 [
   {
     "id": "import-c2a43768-472f-4ecb-a7fc-6bfbfa321b60",
-    "name": "I Edit Wikipedia Graphic T-Shirt",
+    "name": "Remera gráfica negra",
     "part": "upperbody",
     "color": "#38393c",
     "secondaryColor": "#3388ff",
@@ -30,11 +30,19 @@
     "thumbnail": "/api/import/library/import-c2a43768-472f-4ecb-a7fc-6bfbfa321b60-garment.png",
     "modeledImage": null,
     "importJobId": "c2a43768-472f-4ecb-a7fc-6bfbfa321b60",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Remera gráfica negra confeccionada en algodón, con calce clásico. Ideal para el día a día. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-99cdb7f7-3c4d-465b-be96-547c89c7d930",
-    "name": "Rhinestone Embellished Mary Jane Flats",
+    "name": "Chatitas Mary Jane con strass",
     "part": "shoes",
     "color": "#1c1c1c",
     "secondaryColor": "#d6d6d6",
@@ -65,11 +73,20 @@
     "thumbnail": "/api/import/library/import-99cdb7f7-3c4d-465b-be96-547c89c7d930-garment.png",
     "modeledImage": null,
     "importJobId": "99cdb7f7-3c4d-465b-be96-547c89c7d930",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Chatitas Mary Jane con strass confeccionada en cuero, con estructura definida. Ideal para salidas y fiestas. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f44f6426-6d75-4676-95d0-75d92e8a4ecc",
-    "name": "Red Western Cowboy Boot",
+    "name": "Botas texanas rojas",
     "part": "shoes",
     "color": "#9a282a",
     "secondaryColor": "#232323",
@@ -100,11 +117,20 @@
     "thumbnail": "/api/import/library/import-f44f6426-6d75-4676-95d0-75d92e8a4ecc-garment.png",
     "modeledImage": null,
     "importJobId": "f44f6426-6d75-4676-95d0-75d92e8a4ecc",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Botas texanas rojas confeccionada en cuero, con estructura definida. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-50b64953-0c39-47f6-b025-694be5d0f9be",
-    "name": "black western cowboy boot",
+    "name": "Botas texanas negras",
     "part": "shoes",
     "color": "#1b1b1c",
     "secondaryColor": null,
@@ -134,11 +160,20 @@
     "thumbnail": "/api/import/library/import-50b64953-0c39-47f6-b025-694be5d0f9be-garment.png",
     "modeledImage": null,
     "importJobId": "50b64953-0c39-47f6-b025-694be5d0f9be",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Botas texanas negras confeccionada en cuero, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-43e96dd0-bb10-4c08-ac32-78a38ec3848a",
-    "name": "taupe suede pointed-toe loafers",
+    "name": "Mocasines de gamuza topo en punta",
     "part": "shoes",
     "color": "#a8947f",
     "secondaryColor": null,
@@ -168,11 +203,20 @@
     "thumbnail": "/api/import/library/import-43e96dd0-bb10-4c08-ac32-78a38ec3848a-garment.png",
     "modeledImage": null,
     "importJobId": "43e96dd0-bb10-4c08-ac32-78a38ec3848a",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Mocasines de gamuza topo en punta confeccionada en cuero, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f13a2c7f-5398-4b19-84c3-70dc243de93d",
-    "name": "tan suede boat shoe",
+    "name": "Náuticos de gamuza tostados",
     "part": "shoes",
     "color": "#c2834e",
     "secondaryColor": null,
@@ -201,11 +245,20 @@
     "thumbnail": "/api/import/library/import-f13a2c7f-5398-4b19-84c3-70dc243de93d-garment.png",
     "modeledImage": null,
     "importJobId": "f13a2c7f-5398-4b19-84c3-70dc243de93d",
-    "gender": "hombre"
+    "gender": "hombre",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Náuticos de gamuza tostados confeccionada en cuero, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-915b8682-9df8-4146-bf4d-e7cd2a8c8026",
-    "name": "brown leather boat shoe",
+    "name": "Náuticos de cuero marrones",
     "part": "shoes",
     "color": "#5b3a2c",
     "secondaryColor": null,
@@ -234,11 +287,20 @@
     "thumbnail": "/api/import/library/import-915b8682-9df8-4146-bf4d-e7cd2a8c8026-garment.png",
     "modeledImage": null,
     "importJobId": "915b8682-9df8-4146-bf4d-e7cd2a8c8026",
-    "gender": "hombre"
+    "gender": "hombre",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Náuticos de cuero marrones confeccionada en cuero, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e84cb452-6406-4872-8158-819d55ae68a7",
-    "name": "black leather boat shoe",
+    "name": "Náuticos de cuero negros",
     "part": "shoes",
     "color": "#1f1f21",
     "secondaryColor": null,
@@ -267,11 +329,20 @@
     "thumbnail": "/api/import/library/import-e84cb452-6406-4872-8158-819d55ae68a7-garment.png",
     "modeledImage": null,
     "importJobId": "e84cb452-6406-4872-8158-819d55ae68a7",
-    "gender": "hombre"
+    "gender": "hombre",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Náuticos de cuero negros confeccionada en cuero, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-33bed19b-f191-4f83-86a9-0f80b0d50ef3",
-    "name": "platform suede mule slipper",
+    "name": "Suecos de gamuza con plataforma",
     "part": "shoes",
     "color": "#bd956a",
     "secondaryColor": "#e8decb",
@@ -301,11 +372,20 @@
     "thumbnail": "/api/import/library/import-33bed19b-f191-4f83-86a9-0f80b0d50ef3-garment.png",
     "modeledImage": null,
     "importJobId": "33bed19b-f191-4f83-86a9-0f80b0d50ef3",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Suecos de gamuza con plataforma confeccionada en cuero, con estructura definida. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-588c9ef5-37ff-4e4b-bf27-202ef641527e",
-    "name": "Black lace halter top",
+    "name": "Top halter de encaje negro",
     "part": "upperbody",
     "color": "#1d1c1f",
     "secondaryColor": null,
@@ -335,11 +415,19 @@
     "thumbnail": "/api/import/library/import-588c9ef5-37ff-4e4b-bf27-202ef641527e-garment.png",
     "modeledImage": null,
     "importJobId": "588c9ef5-37ff-4e4b-bf27-202ef641527e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top halter de encaje negro confeccionada en seda, con calce relajado. Ideal para la noche. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-f7a72e7d-0d12-453b-8085-cb312b3ca949",
-    "name": "Black lace trim skirt",
+    "name": "Pollera negra con puntilla",
     "part": "lowerbody",
     "color": "#1c1b1e",
     "secondaryColor": null,
@@ -369,11 +457,19 @@
     "thumbnail": "/api/import/library/import-f7a72e7d-0d12-453b-8085-cb312b3ca949-garment.png",
     "modeledImage": null,
     "importJobId": "f7a72e7d-0d12-453b-8085-cb312b3ca949",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pollera negra con puntilla confeccionada en seda, con caída fluida. Ideal para la noche. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-52532fe2-78db-4f02-bcaf-504f25578680",
-    "name": "Black heel sandals",
+    "name": "Sandalias negras con taco",
     "part": "shoes",
     "color": "#18181a",
     "secondaryColor": null,
@@ -401,11 +497,20 @@
     "thumbnail": "/api/import/library/import-52532fe2-78db-4f02-bcaf-504f25578680-garment.png",
     "modeledImage": null,
     "importJobId": "52532fe2-78db-4f02-bcaf-504f25578680",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Sandalias negras con taco confeccionada en cuero, con calce clásico. Ideal para la noche. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-a7c06278-66be-4353-8d97-53c3d806d9cf",
-    "name": "Sheer Ruffled Cover-Up Dress",
+    "name": "Vestido cover-up con volados",
     "part": "wholebody_up",
     "color": "#2a2220",
     "secondaryColor": null,
@@ -433,11 +538,18 @@
     "thumbnail": "/api/import/library/import-a7c06278-66be-4353-8d97-53c3d806d9cf-garment.png",
     "modeledImage": null,
     "importJobId": "a7c06278-66be-4353-8d97-53c3d806d9cf",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Vestido cover-up con volados confeccionada en material sintético, con caída fluida. Ideal para el día a día. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-a938d42f-9579-4093-9b72-acf61fe8f795",
-    "name": "Leather Mid-Calf Boots",
+    "name": "Botas de cuero caña media",
     "part": "shoes",
     "color": "#2d1c1a",
     "secondaryColor": null,
@@ -466,11 +578,20 @@
     "thumbnail": "/api/import/library/import-a938d42f-9579-4093-9b72-acf61fe8f795-garment.png",
     "modeledImage": null,
     "importJobId": "a938d42f-9579-4093-9b72-acf61fe8f795",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Botas de cuero caña media confeccionada en cuero, con calce clásico. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-8254961d-5b91-47f3-94cd-a174bbf4c836",
-    "name": "Layered Pendant Necklace",
+    "name": "Collar en capas con dije",
     "part": "accessories_up",
     "color": "#c8a572",
     "secondaryColor": null,
@@ -499,11 +620,15 @@
     "thumbnail": "/api/import/library/import-8254961d-5b91-47f3-94cd-a174bbf4c836-garment.png",
     "modeledImage": null,
     "importJobId": "8254961d-5b91-47f3-94cd-a174bbf4c836",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Collar en capas con dije confeccionada en materiales combinados, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-45c1c3c9-ffe8-4d96-b2a6-b64c241854f3",
-    "name": "High-Waisted Shorts",
+    "name": "Short tiro alto",
     "part": "lowerbody",
     "color": "#251d1a",
     "secondaryColor": null,
@@ -531,11 +656,19 @@
     "thumbnail": "/api/import/library/import-45c1c3c9-ffe8-4d96-b2a6-b64c241854f3-garment.png",
     "modeledImage": null,
     "importJobId": "45c1c3c9-ffe8-4d96-b2a6-b64c241854f3",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Short tiro alto confeccionada en material sintético, con silueta entallada. Ideal para el día a día. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-0bfbea48-c51e-459f-8345-ccd5f0bb568d",
-    "name": "Black Fitted Tank Top",
+    "name": "Musculosa negra entallada",
     "part": "upperbody",
     "color": "#1a1a1a",
     "secondaryColor": null,
@@ -564,11 +697,19 @@
     "thumbnail": "/api/import/library/import-0bfbea48-c51e-459f-8345-ccd5f0bb568d-garment.png",
     "modeledImage": null,
     "importJobId": "0bfbea48-c51e-459f-8345-ccd5f0bb568d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Musculosa negra entallada confeccionada en material sintético, con silueta entallada. Ideal para el día a día. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-b740b941-aa5a-4d37-8119-52286f566f72",
-    "name": "Black Satin Lace-Trim Skirt",
+    "name": "Pollera satinada con puntilla negra",
     "part": "lowerbody",
     "color": "#171717",
     "secondaryColor": null,
@@ -597,11 +738,19 @@
     "thumbnail": "/api/import/library/import-b740b941-aa5a-4d37-8119-52286f566f72-garment.png",
     "modeledImage": null,
     "importJobId": "b740b941-aa5a-4d37-8119-52286f566f72",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pollera satinada con puntilla negra confeccionada en seda, con caída fluida. Ideal para la noche. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4ab3b490-67f8-499e-a576-80d35d4d77d3",
-    "name": "Dark Brown Suede Shoulder Bag",
+    "name": "Cartera de gamuza marrón oscuro",
     "part": "accessories_up",
     "color": "#3b2b23",
     "secondaryColor": null,
@@ -632,11 +781,15 @@
     "thumbnail": "/api/import/library/import-4ab3b490-67f8-499e-a576-80d35d4d77d3-garment.png",
     "modeledImage": null,
     "importJobId": "4ab3b490-67f8-499e-a576-80d35d4d77d3",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Cartera de gamuza marrón oscuro confeccionada en cuero, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-d72d4044-f86e-42fa-b85b-1fa429c216cf",
-    "name": "Black Suede Heeled Mules",
+    "name": "Mules de gamuza negras con taco",
     "part": "shoes",
     "color": "#1a1a1a",
     "secondaryColor": null,
@@ -665,11 +818,20 @@
     "thumbnail": "/api/import/library/import-d72d4044-f86e-42fa-b85b-1fa429c216cf-garment.png",
     "modeledImage": null,
     "importJobId": "d72d4044-f86e-42fa-b85b-1fa429c216cf",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Mules de gamuza negras con taco confeccionada en cuero, con silueta entallada. Ideal para la noche. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-5a49a5f3-872b-4cec-9033-8006dfa587c7",
-    "name": "Grey Crewneck Knit Sweater",
+    "name": "Sweater gris cuello redondo",
     "part": "upperbody",
     "color": "#919598",
     "secondaryColor": null,
@@ -699,11 +861,19 @@
     "thumbnail": "/api/import/library/import-5a49a5f3-872b-4cec-9033-8006dfa587c7-garment.png",
     "modeledImage": null,
     "importJobId": "5a49a5f3-872b-4cec-9033-8006dfa587c7",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Sweater gris cuello redondo confeccionada en tejido de punto, con silueta entallada. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-b54f52dc-9e93-424d-8116-3ef0c2856377",
-    "name": "Polka Dot Silk Trousers",
+    "name": "Pantalón de seda a lunares",
     "part": "lowerbody",
     "color": "#1f1e24",
     "secondaryColor": "#e6e2d8",
@@ -734,11 +904,19 @@
     "thumbnail": "/api/import/library/import-b54f52dc-9e93-424d-8116-3ef0c2856377-garment.png",
     "modeledImage": null,
     "importJobId": "b54f52dc-9e93-424d-8116-3ef0c2856377",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón de seda a lunares confeccionada en seda, con caída fluida. Ideal para el día a día. Pensada para primavera y para los días de calor de la temporada."
   },
   {
     "id": "import-bb97eb15-c57d-4ce9-a8aa-8c1bd3efea90",
-    "name": "Strappy Kitten Heel Sandals",
+    "name": "Sandalias de tiras taco kitten",
     "part": "shoes",
     "color": "#17161a",
     "secondaryColor": null,
@@ -767,11 +945,20 @@
     "thumbnail": "/api/import/library/import-bb97eb15-c57d-4ce9-a8aa-8c1bd3efea90-garment.png",
     "modeledImage": null,
     "importJobId": "bb97eb15-c57d-4ce9-a8aa-8c1bd3efea90",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Sandalias de tiras taco kitten confeccionada en cuero, con estructura definida. Ideal para el día a día. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-a09375bf-9a20-45af-a8d3-e1744e5d05f6",
-    "name": "Polka Dot Ruffled Tie-Back Blouse",
+    "name": "Blusa a lunares con volados",
     "part": "upperbody",
     "color": "#1a1a1c",
     "secondaryColor": "#e3ded3",
@@ -802,11 +989,19 @@
     "thumbnail": "/api/import/library/import-a09375bf-9a20-45af-a8d3-e1744e5d05f6-garment.png",
     "modeledImage": null,
     "importJobId": "a09375bf-9a20-45af-a8d3-e1744e5d05f6",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa a lunares con volados confeccionada en material sintético, con caída fluida. Ideal para salidas y fiestas. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-9bd2b6d3-f29b-42cf-9c7a-0ae6bacdec3e",
-    "name": "Black Leather Mini Skirt",
+    "name": "Minipollera de cuero negra",
     "part": "lowerbody",
     "color": "#121214",
     "secondaryColor": null,
@@ -836,11 +1031,19 @@
     "thumbnail": "/api/import/library/import-9bd2b6d3-f29b-42cf-9c7a-0ae6bacdec3e-garment.png",
     "modeledImage": null,
     "importJobId": "9bd2b6d3-f29b-42cf-9c7a-0ae6bacdec3e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Minipollera de cuero negra confeccionada en cuero, con silueta entallada. Ideal para la noche. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-92095aef-2410-4314-b40c-3250d16abe07",
-    "name": "olive utility shirt jacket",
+    "name": "Camisaco utilitario oliva",
     "part": "upperbody",
     "color": "#6b7248",
     "secondaryColor": "#806b5a",
@@ -869,11 +1072,19 @@
     "thumbnail": "/api/import/library/import-92095aef-2410-4314-b40c-3250d16abe07-garment.png",
     "modeledImage": null,
     "importJobId": "92095aef-2410-4314-b40c-3250d16abe07",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Camisaco utilitario oliva confeccionada en algodón, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c16da2f8-4534-467f-9e34-49934fc61371",
-    "name": "tan relaxed sweatpants",
+    "name": "Jogger tostado relaxed",
     "part": "lowerbody",
     "color": "#c4b294",
     "secondaryColor": null,
@@ -901,11 +1112,19 @@
     "thumbnail": "/api/import/library/import-c16da2f8-4534-467f-9e34-49934fc61371-garment.png",
     "modeledImage": null,
     "importJobId": "c16da2f8-4534-467f-9e34-49934fc61371",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jogger tostado relaxed confeccionada en algodón, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-49659382-6952-4609-95e3-d398663a708b",
-    "name": "floral print cloth tote bag",
+    "name": "Bolso tote de tela floral",
     "part": "accessories_up",
     "color": "#d2a237",
     "secondaryColor": "#a06b8a",
@@ -934,11 +1153,15 @@
     "thumbnail": "/api/import/library/import-49659382-6952-4609-95e3-d398663a708b-garment.png",
     "modeledImage": null,
     "importJobId": "49659382-6952-4609-95e3-d398663a708b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Bolso tote de tela floral confeccionada en algodón, con caída fluida. Ideal para el día a día. Pensada para primavera y para los días de calor de la temporada."
   },
   {
     "id": "import-3ef841af-70c3-4456-bbcc-9ff0f339d505",
-    "name": "colorblock cable knit sweater dress",
+    "name": "Vestido tejido trenzado colorblock",
     "part": "wholebody_up",
     "color": "#92592a",
     "secondaryColor": "#e6ded1",
@@ -968,11 +1191,18 @@
     "thumbnail": "/api/import/library/import-3ef841af-70c3-4456-bbcc-9ff0f339d505-garment.png",
     "modeledImage": null,
     "importJobId": "3ef841af-70c3-4456-bbcc-9ff0f339d505",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Vestido tejido trenzado colorblock confeccionada en tejido de punto, con calce relajado. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-670dc79b-fc3a-4de3-892b-5a7b32d25843",
-    "name": "black leather waist belt",
+    "name": "Cinturón de cuero negro",
     "part": "accessories_up",
     "color": "#1d1c1a",
     "secondaryColor": "#c2c2c2",
@@ -1003,11 +1233,15 @@
     "thumbnail": "/api/import/library/import-670dc79b-fc3a-4de3-892b-5a7b32d25843-garment.png",
     "modeledImage": null,
     "importJobId": "670dc79b-fc3a-4de3-892b-5a7b32d25843",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Cinturón de cuero negro confeccionada en cuero, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-55ced80d-e3de-4058-beb9-e61b1056cd9a",
-    "name": "black padded puffer coat",
+    "name": "Campera puffer negra",
     "part": "upperbody",
     "color": "#1a1a1b",
     "secondaryColor": null,
@@ -1036,11 +1270,19 @@
     "thumbnail": "/api/import/library/import-55ced80d-e3de-4058-beb9-e61b1056cd9a-garment.png",
     "modeledImage": null,
     "importJobId": "55ced80d-e3de-4058-beb9-e61b1056cd9a",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Campera puffer negra confeccionada en material sintético, con corte oversized. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e23b4213-2a9c-47cc-a5bb-0ffc316d26ad",
-    "name": "fur-lined winter boot (left)",
+    "name": "Botas de invierno con corderito",
     "part": "shoes",
     "color": "#1e1e1e",
     "secondaryColor": "#a5a29c",
@@ -1069,44 +1311,20 @@
     "thumbnail": "/api/import/library/import-e23b4213-2a9c-47cc-a5bb-0ffc316d26ad-garment.png",
     "modeledImage": null,
     "importJobId": "e23b4213-2a9c-47cc-a5bb-0ffc316d26ad",
-    "gender": "unisex"
-  },
-  {
-    "id": "import-026d0709-7b2c-4c5d-84e3-f22a4203e2aa",
-    "name": "fur-lined winter boot (right)",
-    "part": "shoes",
-    "color": "#1e1e1e",
-    "secondaryColor": "#a5a29c",
-    "palette": [
-      "#1e1e1e",
-      "#a5a29c"
+    "gender": "unisex",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
     ],
-    "tags": [
-      "blupepper",
-      "snow boot",
-      "lace-up",
-      "fur trim"
-    ],
-    "season": "winter",
-    "material": "synthetic",
-    "silhouette": "structured",
-    "weight": "heavy",
-    "climates": [
-      "cold",
-      "rain"
-    ],
-    "occasions": [
-      "outdoor"
-    ],
-    "image": "/api/import/library/import-026d0709-7b2c-4c5d-84e3-f22a4203e2aa-garment.png",
-    "thumbnail": "/api/import/library/import-026d0709-7b2c-4c5d-84e3-f22a4203e2aa-garment.png",
-    "modeledImage": null,
-    "importJobId": "026d0709-7b2c-4c5d-84e3-f22a4203e2aa",
-    "gender": "unisex"
+    "description": "Botas de invierno con corderito confeccionada en material sintético, con estructura definida. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-b9fbe1f0-f134-4c09-9c4c-8c352659fd32",
-    "name": "Navy Graphic Sweatshirt",
+    "name": "Buzo azul marino estampado",
     "part": "upperbody",
     "color": "#1e293b",
     "secondaryColor": "#f8fafc",
@@ -1136,11 +1354,19 @@
     "thumbnail": "/api/import/library/import-b9fbe1f0-f134-4c09-9c4c-8c352659fd32-garment.png",
     "modeledImage": null,
     "importJobId": "b9fbe1f0-f134-4c09-9c4c-8c352659fd32",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Buzo azul marino estampado confeccionada en algodón, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-278918fb-24ad-4291-8700-cb445e5cb1cb",
-    "name": "White Sweat Shorts",
+    "name": "Short de algodón blanco",
     "part": "lowerbody",
     "color": "#f8fafc",
     "secondaryColor": null,
@@ -1169,11 +1395,19 @@
     "thumbnail": "/api/import/library/import-278918fb-24ad-4291-8700-cb445e5cb1cb-garment.png",
     "modeledImage": null,
     "importJobId": "278918fb-24ad-4291-8700-cb445e5cb1cb",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Short de algodón blanco confeccionada en algodón, con calce relajado. Ideal para el día a día. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-0835a7b3-31f7-4512-87b2-fd42e73088ee",
-    "name": "Grey Suede Sneakers",
+    "name": "Zapatillas de gamuza gris",
     "part": "shoes",
     "color": "#94a3b8",
     "secondaryColor": "#ffffff",
@@ -1203,45 +1437,20 @@
     "thumbnail": "/api/import/library/import-0835a7b3-31f7-4512-87b2-fd42e73088ee-garment.png",
     "modeledImage": null,
     "importJobId": "0835a7b3-31f7-4512-87b2-fd42e73088ee",
-    "gender": "unisex"
-  },
-  {
-    "id": "import-90eb24d3-fd84-44ee-b68c-fc7be618e3bb",
-    "name": "Grey Suede Sneakers",
-    "part": "shoes",
-    "color": "#94a3b8",
-    "secondaryColor": "#ffffff",
-    "palette": [
-      "#94a3b8",
-      "#ffffff"
+    "gender": "unisex",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
     ],
-    "tags": [
-      "blupepper",
-      "sneakers",
-      "running",
-      "casual"
-    ],
-    "season": "all",
-    "material": "mixed",
-    "silhouette": "regular",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "warm"
-    ],
-    "occasions": [
-      "casual",
-      "sports"
-    ],
-    "image": "/api/import/library/import-90eb24d3-fd84-44ee-b68c-fc7be618e3bb-garment.png",
-    "thumbnail": "/api/import/library/import-90eb24d3-fd84-44ee-b68c-fc7be618e3bb-garment.png",
-    "modeledImage": null,
-    "importJobId": "90eb24d3-fd84-44ee-b68c-fc7be618e3bb",
-    "gender": "unisex"
+    "description": "Zapatillas de gamuza gris confeccionada en materiales combinados, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-cb094c93-ecd5-4a01-b2e3-cc299f2ebd9b",
-    "name": "Sleeveless Tailored Vest Top",
+    "name": "Chaleco sastrero sin mangas",
     "part": "upperbody",
     "color": "#a19284",
     "secondaryColor": "#211e1d",
@@ -1272,11 +1481,19 @@
     "thumbnail": "/api/import/library/import-cb094c93-ecd5-4a01-b2e3-cc299f2ebd9b-garment.png",
     "modeledImage": null,
     "importJobId": "cb094c93-ecd5-4a01-b2e3-cc299f2ebd9b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Chaleco sastrero sin mangas confeccionada en materiales combinados, con estructura definida. Ideal para el día a día. Pensada para primavera y para los días de calor de la temporada."
   },
   {
     "id": "import-87cc7562-c841-4382-a1cf-d0562cf7bd7f",
-    "name": "Matching Tailored Plaid Shorts",
+    "name": "Short sastrero a cuadros",
     "part": "lowerbody",
     "color": "#a19284",
     "secondaryColor": null,
@@ -1305,11 +1522,19 @@
     "thumbnail": "/api/import/library/import-87cc7562-c841-4382-a1cf-d0562cf7bd7f-garment.png",
     "modeledImage": null,
     "importJobId": "87cc7562-c841-4382-a1cf-d0562cf7bd7f",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Short sastrero a cuadros confeccionada en materiales combinados, con calce clásico. Ideal para el día a día. Pensada para primavera y para los días de calor de la temporada."
   },
   {
     "id": "import-71f3da00-6e4e-4188-b8ff-4218a2bbf1ba",
-    "name": "Black Leather Ankle Boots",
+    "name": "Botinetas de cuero negras",
     "part": "shoes",
     "color": "#131315",
     "secondaryColor": null,
@@ -1339,11 +1564,20 @@
     "thumbnail": "/api/import/library/import-71f3da00-6e4e-4188-b8ff-4218a2bbf1ba-garment.png",
     "modeledImage": null,
     "importJobId": "71f3da00-6e4e-4188-b8ff-4218a2bbf1ba",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Botinetas de cuero negras confeccionada en cuero, con silueta entallada. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-b040471a-6d76-4ef8-b611-b54b6a13b150",
-    "name": "Plaid High-Waisted Tailored Shorts",
+    "name": "Short sastrero tiro alto a cuadros",
     "part": "lowerbody",
     "color": "#9e8e7c",
     "secondaryColor": "#3d332a",
@@ -1373,45 +1607,19 @@
     "thumbnail": "/api/import/library/import-b040471a-6d76-4ef8-b611-b54b6a13b150-garment.png",
     "modeledImage": null,
     "importJobId": "b040471a-6d76-4ef8-b611-b54b6a13b150",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-e952b22d-8df7-42fc-bfbe-0b2fc7bab261",
-    "name": "Black Leather Ankle Boots",
-    "part": "shoes",
-    "color": "#1a1a1a",
-    "secondaryColor": null,
-    "palette": [
-      "#1a1a1a"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
     ],
-    "tags": [
-      "blupepper",
-      "leather",
-      "ankle boots",
-      "heeled"
-    ],
-    "season": "autumn",
-    "material": "leather",
-    "silhouette": "structured",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "going out",
-      "smart casual"
-    ],
-    "image": "/api/import/library/import-e952b22d-8df7-42fc-bfbe-0b2fc7bab261-garment.png",
-    "thumbnail": "/api/import/library/import-e952b22d-8df7-42fc-bfbe-0b2fc7bab261-garment.png",
-    "modeledImage": null,
-    "importJobId": "e952b22d-8df7-42fc-bfbe-0b2fc7bab261",
-    "gender": "mujer"
+    "description": "Short sastrero tiro alto a cuadros confeccionada en materiales combinados, con estructura definida. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e3932b48-fdc1-49da-89fb-e20ee523c6b8",
-    "name": "Argyle Knit Sweater Vest",
+    "name": "Chaleco tejido rombos",
     "part": "upperbody",
     "color": "#d5c8b2",
     "secondaryColor": "#4d1d2b",
@@ -1441,11 +1649,19 @@
     "thumbnail": "/api/import/library/import-e3932b48-fdc1-49da-89fb-e20ee523c6b8-garment.png",
     "modeledImage": null,
     "importJobId": "e3932b48-fdc1-49da-89fb-e20ee523c6b8",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Chaleco tejido rombos confeccionada en tejido de punto, con calce clásico. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-49534464-694e-4487-99fb-52795e330209",
-    "name": "White Base T-Shirt",
+    "name": "Remera blanca básica",
     "part": "upperbody",
     "color": "#ffffff",
     "secondaryColor": null,
@@ -1473,11 +1689,19 @@
     "thumbnail": "/api/import/library/import-49534464-694e-4487-99fb-52795e330209-garment.png",
     "modeledImage": null,
     "importJobId": "49534464-694e-4487-99fb-52795e330209",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Remera blanca básica confeccionada en algodón, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-9ebf7d97-f022-47d3-8219-8b3fa129c0cd",
-    "name": "Dark Wash Denim Jeans",
+    "name": "Jean clásico lavado oscuro",
     "part": "lowerbody",
     "color": "#1c2f52",
     "secondaryColor": null,
@@ -1505,11 +1729,19 @@
     "thumbnail": "/api/import/library/import-9ebf7d97-f022-47d3-8219-8b3fa129c0cd-garment.png",
     "modeledImage": null,
     "importJobId": "9ebf7d97-f022-47d3-8219-8b3fa129c0cd",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean clásico lavado oscuro confeccionada en denim, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-adaf77ff-bf54-4f10-b0ca-a81727cd851c",
-    "name": "burgundy stripe faux leather jacket",
+    "name": "Campera de cuero sintético bordó a rayas",
     "part": "upperbody",
     "color": "#801a24",
     "secondaryColor": "#eae4dc",
@@ -1539,11 +1771,19 @@
     "thumbnail": "/api/import/library/import-adaf77ff-bf54-4f10-b0ca-a81727cd851c-garment.png",
     "modeledImage": null,
     "importJobId": "adaf77ff-bf54-4f10-b0ca-a81727cd851c",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Campera de cuero sintético bordó a rayas confeccionada en cuero, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-21d04282-398f-4352-83a6-e8721ca57ab4",
-    "name": "black ribbed crop top",
+    "name": "Crop top morley negro",
     "part": "upperbody",
     "color": "#19181c",
     "secondaryColor": null,
@@ -1572,11 +1812,19 @@
     "thumbnail": "/api/import/library/import-21d04282-398f-4352-83a6-e8721ca57ab4-garment.png",
     "modeledImage": null,
     "importJobId": "21d04282-398f-4352-83a6-e8721ca57ab4",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Crop top morley negro confeccionada en tejido de punto, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-04b1341c-04d3-437e-9376-cd86de0f4ed6",
-    "name": "high-waisted blue jeans",
+    "name": "Jean azul tiro alto",
     "part": "lowerbody",
     "color": "#43658c",
     "secondaryColor": null,
@@ -1605,11 +1853,19 @@
     "thumbnail": "/api/import/library/import-04b1341c-04d3-437e-9376-cd86de0f4ed6-garment.png",
     "modeledImage": null,
     "importJobId": "04b1341c-04d3-437e-9376-cd86de0f4ed6",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean azul tiro alto confeccionada en denim, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-6bad6654-369a-437d-99ad-719ac514af98",
-    "name": "Black Wool-Blend Zip Bomber Jacket",
+    "name": "Campera bomber de paño negra",
     "part": "wholebody_up",
     "color": "#141414",
     "secondaryColor": null,
@@ -1638,11 +1894,18 @@
     "thumbnail": "/api/import/library/import-6bad6654-369a-437d-99ad-719ac514af98-garment.png",
     "modeledImage": null,
     "importJobId": "6bad6654-369a-437d-99ad-719ac514af98",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Campera bomber de paño negra confeccionada en lana, con calce relajado. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-70b7c415-d1f6-447c-920b-6ef29e3263a6",
-    "name": "White Crew Neck T-Shirt",
+    "name": "Remera blanca cuello redondo",
     "part": "upperbody",
     "color": "#f2f2f0",
     "secondaryColor": null,
@@ -1652,7 +1915,9 @@
     "tags": [
       "blupepper",
       "basic",
-      "crew-neck"
+      "crew-neck",
+      "layering",
+      "crewneck"
     ],
     "season": "all",
     "material": "cotton",
@@ -1671,11 +1936,19 @@
     "thumbnail": "/api/import/library/import-70b7c415-d1f6-447c-920b-6ef29e3263a6-garment.png",
     "modeledImage": null,
     "importJobId": "70b7c415-d1f6-447c-920b-6ef29e3263a6",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Remera blanca cuello redondo confeccionada en algodón, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-72b77f15-42d2-43d8-adb0-a3db102ff726",
-    "name": "Medium Wash High-Rise Jeans",
+    "name": "Jean tiro alto lavado medio",
     "part": "lowerbody",
     "color": "#5b7a9e",
     "secondaryColor": null,
@@ -1685,7 +1958,8 @@
     "tags": [
       "blupepper",
       "denim",
-      "high-waist"
+      "high-waist",
+      "mine"
     ],
     "season": "all",
     "material": "denim",
@@ -1703,11 +1977,19 @@
     "thumbnail": "/api/import/library/import-72b77f15-42d2-43d8-adb0-a3db102ff726-garment.png",
     "modeledImage": null,
     "importJobId": "72b77f15-42d2-43d8-adb0-a3db102ff726",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean tiro alto lavado medio confeccionada en denim, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-720b3b52-d366-4ed0-a3e2-f09646f3070f",
-    "name": "Charcoal Grey Wool Utility Shacket",
+    "name": "Camisaco utilitario de lana gris",
     "part": "wholebody_up",
     "color": "#4a4a4a",
     "secondaryColor": null,
@@ -1737,11 +2019,18 @@
     "thumbnail": "/api/import/library/import-720b3b52-d366-4ed0-a3e2-f09646f3070f-garment.png",
     "modeledImage": null,
     "importJobId": "720b3b52-d366-4ed0-a3e2-f09646f3070f",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Camisaco utilitario de lana gris confeccionada en lana, con corte oversized. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-df28ff9c-c3f1-49df-88f6-104499e84031",
-    "name": "Navy Longline Snap-Button Coat with Contrast Corduroy Trim",
+    "name": "Tapado azul marino con broches de corderoy",
     "part": "wholebody_up",
     "color": "#1d2a4a",
     "secondaryColor": "#8b5a2b",
@@ -1773,11 +2062,18 @@
     "thumbnail": "/api/import/library/import-df28ff9c-c3f1-49df-88f6-104499e84031-garment.png",
     "modeledImage": null,
     "importJobId": "df28ff9c-c3f1-49df-88f6-104499e84031",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Tapado azul marino con broches de corderoy confeccionada en material sintético, con corte oversized. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4241246c-b11e-4c32-a4e2-941d9f05c714",
-    "name": "Light Wash Straight-Leg Jeans",
+    "name": "Jean recto lavado claro",
     "part": "lowerbody",
     "color": "#a9bfd1",
     "secondaryColor": null,
@@ -1787,7 +2083,8 @@
     "tags": [
       "blupepper",
       "denim",
-      "light-wash"
+      "light-wash",
+      "gigio"
     ],
     "season": "all",
     "material": "denim",
@@ -1805,11 +2102,19 @@
     "thumbnail": "/api/import/library/import-4241246c-b11e-4c32-a4e2-941d9f05c714-garment.png",
     "modeledImage": null,
     "importJobId": "4241246c-b11e-4c32-a4e2-941d9f05c714",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean recto lavado claro confeccionada en denim, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e30a8a13-08d3-429a-b77c-4fd5db22c038",
-    "name": "Navy Embroidered Crewneck Sweatshirt",
+    "name": "Buzo azul marino bordado",
     "part": "upperbody",
     "color": "#1c2a45",
     "secondaryColor": null,
@@ -1838,11 +2143,19 @@
     "thumbnail": "/api/import/library/import-e30a8a13-08d3-429a-b77c-4fd5db22c038-garment.png",
     "modeledImage": null,
     "importJobId": "e30a8a13-08d3-429a-b77c-4fd5db22c038",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Buzo azul marino bordado confeccionada en algodón, con corte oversized. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-9d861898-5316-4246-a6c7-ebae2f390c62",
-    "name": "Burgundy Tartan Plaid Wide-Leg Pants",
+    "name": "Pantalón ancho tartán bordó",
     "part": "lowerbody",
     "color": "#6e1f26",
     "secondaryColor": "#4a4a4a",
@@ -1872,11 +2185,19 @@
     "thumbnail": "/api/import/library/import-9d861898-5316-4246-a6c7-ebae2f390c62-garment.png",
     "modeledImage": null,
     "importJobId": "9d861898-5316-4246-a6c7-ebae2f390c62",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón ancho tartán bordó confeccionada en materiales combinados, con calce relajado. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-8d69d046-681e-4e7b-8682-92556f7dc79c",
-    "name": "Black Cropped Double-Breasted Trench Jacket",
+    "name": "Trench corto cruzado negro",
     "part": "wholebody_up",
     "color": "#1a1a1e",
     "secondaryColor": null,
@@ -1887,7 +2208,8 @@
       "blupepper",
       "double-breasted",
       "cropped",
-      "trench"
+      "trench",
+      "lapel"
     ],
     "season": "autumn",
     "material": "cotton",
@@ -1906,43 +2228,18 @@
     "thumbnail": "/api/import/library/import-8d69d046-681e-4e7b-8682-92556f7dc79c-garment.png",
     "modeledImage": null,
     "importJobId": "8d69d046-681e-4e7b-8682-92556f7dc79c",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-f9520ca2-8791-455d-b1ab-9c374e52de5b",
-    "name": "Medium Wash High-Rise Jeans",
-    "part": "lowerbody",
-    "color": "#4f6d94",
-    "secondaryColor": null,
-    "palette": [
-      "#4f6d94"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
     ],
-    "tags": [
-      "blupepper",
-      "denim",
-      "high-waist"
-    ],
-    "season": "all",
-    "material": "denim",
-    "silhouette": "regular",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "weekend"
-    ],
-    "image": "/api/import/library/import-f9520ca2-8791-455d-b1ab-9c374e52de5b-garment.png",
-    "thumbnail": "/api/import/library/import-f9520ca2-8791-455d-b1ab-9c374e52de5b-garment.png",
-    "modeledImage": null,
-    "importJobId": "f9520ca2-8791-455d-b1ab-9c374e52de5b",
-    "gender": "mujer"
+    "description": "Trench corto cruzado negro confeccionada en algodón, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f511701e-c1cd-44b7-af1a-c755dd33fa98",
-    "name": "Navy Long Coat with Contrast Corduroy Collar",
+    "name": "Tapado largo azul marino con cuello de corderoy",
     "part": "wholebody_up",
     "color": "#1b2740",
     "secondaryColor": "#8b5a2b",
@@ -1974,44 +2271,18 @@
     "thumbnail": "/api/import/library/import-f511701e-c1cd-44b7-af1a-c755dd33fa98-garment.png",
     "modeledImage": null,
     "importJobId": "f511701e-c1cd-44b7-af1a-c755dd33fa98",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-b5340fa9-8adb-4625-bb9c-5b756c4f1559",
-    "name": "White Crew Neck T-Shirt",
-    "part": "upperbody",
-    "color": "#f4f4f2",
-    "secondaryColor": null,
-    "palette": [
-      "#f4f4f2"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
     ],
-    "tags": [
-      "blupepper",
-      "basic",
-      "crew-neck"
-    ],
-    "season": "all",
-    "material": "cotton",
-    "silhouette": "regular",
-    "weight": "light",
-    "climates": [
-      "warm",
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "weekend"
-    ],
-    "image": "/api/import/library/import-b5340fa9-8adb-4625-bb9c-5b756c4f1559-garment.png",
-    "thumbnail": "/api/import/library/import-b5340fa9-8adb-4625-bb9c-5b756c4f1559-garment.png",
-    "modeledImage": null,
-    "importJobId": "b5340fa9-8adb-4625-bb9c-5b756c4f1559",
-    "gender": "unisex"
+    "description": "Tapado largo azul marino con cuello de corderoy confeccionada en algodón, con calce relajado. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-592c61c1-038d-4630-97cf-6708fd65ab95",
-    "name": "Light Wash Wide Leg Jeans",
+    "name": "Jean ancho lavado claro",
     "part": "lowerbody",
     "color": "#7d9cbd",
     "secondaryColor": null,
@@ -2040,11 +2311,19 @@
     "thumbnail": "/api/import/library/import-592c61c1-038d-4630-97cf-6708fd65ab95-garment.png",
     "modeledImage": null,
     "importJobId": "592c61c1-038d-4630-97cf-6708fd65ab95",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean ancho lavado claro confeccionada en denim, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c3054e6f-cdfe-4dab-9414-9d152df8df8b",
-    "name": "Charcoal Grey Wool Shacket",
+    "name": "Camisaco de lana gris oscuro",
     "part": "wholebody_up",
     "color": "#5a5a5a",
     "secondaryColor": null,
@@ -2074,44 +2353,18 @@
     "thumbnail": "/api/import/library/import-c3054e6f-cdfe-4dab-9414-9d152df8df8b-garment.png",
     "modeledImage": null,
     "importJobId": "c3054e6f-cdfe-4dab-9414-9d152df8df8b",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-b371a611-2fe4-4eae-b0ad-16f7bfff57a0",
-    "name": "White Crew Neck T-Shirt",
-    "part": "upperbody",
-    "color": "#f2f2f0",
-    "secondaryColor": null,
-    "palette": [
-      "#f2f2f0"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
     ],
-    "tags": [
-      "blupepper",
-      "basic",
-      "layering"
-    ],
-    "season": "all",
-    "material": "cotton",
-    "silhouette": "regular",
-    "weight": "light",
-    "climates": [
-      "mild",
-      "warm",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "weekend"
-    ],
-    "image": "/api/import/library/import-b371a611-2fe4-4eae-b0ad-16f7bfff57a0-garment.png",
-    "thumbnail": "/api/import/library/import-b371a611-2fe4-4eae-b0ad-16f7bfff57a0-garment.png",
-    "modeledImage": null,
-    "importJobId": "b371a611-2fe4-4eae-b0ad-16f7bfff57a0",
-    "gender": "unisex"
+    "description": "Camisaco de lana gris oscuro confeccionada en lana, con corte oversized. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-7b910591-3d72-431d-9f9b-3f50772ea1b4",
-    "name": "Black Wide-Leg Trousers",
+    "name": "Pantalón ancho negro",
     "part": "lowerbody",
     "color": "#1a1a1c",
     "secondaryColor": null,
@@ -2140,11 +2393,19 @@
     "thumbnail": "/api/import/library/import-7b910591-3d72-431d-9f9b-3f50772ea1b4-garment.png",
     "modeledImage": null,
     "importJobId": "7b910591-3d72-431d-9f9b-3f50772ea1b4",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón ancho negro confeccionada en material sintético, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-85167789-3001-456f-af45-24c0a425a25d",
-    "name": "Black Cropped Collared Jacket",
+    "name": "Campera corta negra con cuello",
     "part": "wholebody_up",
     "color": "#111114",
     "secondaryColor": null,
@@ -2173,11 +2434,18 @@
     "thumbnail": "/api/import/library/import-85167789-3001-456f-af45-24c0a425a25d-garment.png",
     "modeledImage": null,
     "importJobId": "85167789-3001-456f-af45-24c0a425a25d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Campera corta negra con cuello confeccionada en algodón, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4760ca6a-2d81-4973-86db-5416f2809c6b",
-    "name": "Light Wash High-Rise Jeans",
+    "name": "Jean tiro alto lavado claro",
     "part": "lowerbody",
     "color": "#7c9cbd",
     "secondaryColor": null,
@@ -2205,45 +2473,19 @@
     "thumbnail": "/api/import/library/import-4760ca6a-2d81-4973-86db-5416f2809c6b-garment.png",
     "modeledImage": null,
     "importJobId": "4760ca6a-2d81-4973-86db-5416f2809c6b",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-45698711-18fd-42bb-9463-5bbce6f291b4",
-    "name": "Black Double-Breasted Cropped Trench Jacket",
-    "part": "wholebody_up",
-    "color": "#101014",
-    "secondaryColor": null,
-    "palette": [
-      "#101014"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
     ],
-    "tags": [
-      "blupepper",
-      "double-breasted",
-      "cropped",
-      "lapel"
-    ],
-    "season": "autumn",
-    "material": "synthetic",
-    "silhouette": "relaxed",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "smart-casual",
-      "office",
-      "casual"
-    ],
-    "image": "/api/import/library/import-45698711-18fd-42bb-9463-5bbce6f291b4-garment.png",
-    "thumbnail": "/api/import/library/import-45698711-18fd-42bb-9463-5bbce6f291b4-garment.png",
-    "modeledImage": null,
-    "importJobId": "45698711-18fd-42bb-9463-5bbce6f291b4",
-    "gender": "mujer"
+    "description": "Jean tiro alto lavado claro confeccionada en denim, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-ce2dc823-e420-4141-9711-3fdddbcdb834",
-    "name": "Taupe Houndstooth Button-Front Vest Top",
+    "name": "Chaleco pata de gallo topo",
     "part": "upperbody",
     "color": "#a08b74",
     "secondaryColor": null,
@@ -2272,11 +2514,19 @@
     "thumbnail": "/api/import/library/import-ce2dc823-e420-4141-9711-3fdddbcdb834-garment.png",
     "modeledImage": null,
     "importJobId": "ce2dc823-e420-4141-9711-3fdddbcdb834",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Chaleco pata de gallo topo confeccionada en materiales combinados, con estructura definida. Ideal para la oficina. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-addf69c4-d0da-42b2-959c-12fed42b1abd",
-    "name": "Taupe Houndstooth Tailored Shorts",
+    "name": "Short sastrero pata de gallo topo",
     "part": "lowerbody",
     "color": "#a08b74",
     "secondaryColor": null,
@@ -2305,11 +2555,19 @@
     "thumbnail": "/api/import/library/import-addf69c4-d0da-42b2-959c-12fed42b1abd-garment.png",
     "modeledImage": null,
     "importJobId": "addf69c4-d0da-42b2-959c-12fed42b1abd",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Short sastrero pata de gallo topo confeccionada en materiales combinados, con calce clásico. Ideal para la oficina. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-458e1d43-92fb-4b0f-990e-0b40efaf029e",
-    "name": "Black Wool-Blend Shacket with Flap Pockets",
+    "name": "Camisaco de paño negro con bolsillos",
     "part": "wholebody_up",
     "color": "#141414",
     "secondaryColor": null,
@@ -2339,44 +2597,18 @@
     "thumbnail": "/api/import/library/import-458e1d43-92fb-4b0f-990e-0b40efaf029e-garment.png",
     "modeledImage": null,
     "importJobId": "458e1d43-92fb-4b0f-990e-0b40efaf029e",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-daa7a78c-94d8-415f-9238-2161bc9c4427",
-    "name": "White Crewneck Tee",
-    "part": "upperbody",
-    "color": "#f2f2f0",
-    "secondaryColor": null,
-    "palette": [
-      "#f2f2f0"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
     ],
-    "tags": [
-      "blupepper",
-      "crewneck",
-      "basic"
-    ],
-    "season": "all",
-    "material": "cotton",
-    "silhouette": "regular",
-    "weight": "light",
-    "climates": [
-      "mild",
-      "warm",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "weekend"
-    ],
-    "image": "/api/import/library/import-daa7a78c-94d8-415f-9238-2161bc9c4427-garment.png",
-    "thumbnail": "/api/import/library/import-daa7a78c-94d8-415f-9238-2161bc9c4427-garment.png",
-    "modeledImage": null,
-    "importJobId": "daa7a78c-94d8-415f-9238-2161bc9c4427",
-    "gender": "unisex"
+    "description": "Camisaco de paño negro con bolsillos confeccionada en lana, con calce relajado. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-77765447-d36c-483d-8b46-8a6c276142c4",
-    "name": "Black Pleated Wide-Leg Trousers",
+    "name": "Pantalón ancho plisado negro",
     "part": "lowerbody",
     "color": "#1a1a1a",
     "secondaryColor": null,
@@ -2405,44 +2637,19 @@
     "thumbnail": "/api/import/library/import-77765447-d36c-483d-8b46-8a6c276142c4-garment.png",
     "modeledImage": null,
     "importJobId": "77765447-d36c-483d-8b46-8a6c276142c4",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-8d562b3a-b2c1-4674-bf54-4d8b308f85cd",
-    "name": "Black Cropped Double-Breasted Trench Jacket",
-    "part": "wholebody_up",
-    "color": "#17171a",
-    "secondaryColor": null,
-    "palette": [
-      "#17171a"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
     ],
-    "tags": [
-      "blupepper",
-      "cropped",
-      "double-breasted",
-      "trench"
-    ],
-    "season": "autumn",
-    "material": "cotton",
-    "silhouette": "structured",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "smart-casual"
-    ],
-    "image": "/api/import/library/import-8d562b3a-b2c1-4674-bf54-4d8b308f85cd-garment.png",
-    "thumbnail": "/api/import/library/import-8d562b3a-b2c1-4674-bf54-4d8b308f85cd-garment.png",
-    "modeledImage": null,
-    "importJobId": "8d562b3a-b2c1-4674-bf54-4d8b308f85cd",
-    "gender": "mujer"
+    "description": "Pantalón ancho plisado negro confeccionada en material sintético, con calce relajado. Ideal para la oficina. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-dd74edc8-1fbd-45f1-8f21-485a49451be7",
-    "name": "White Square-Neck Ribbed Crop Top",
+    "name": "Crop top morley blanco escote recto",
     "part": "upperbody",
     "color": "#f2f0eb",
     "secondaryColor": null,
@@ -2471,43 +2678,19 @@
     "thumbnail": "/api/import/library/import-dd74edc8-1fbd-45f1-8f21-485a49451be7-garment.png",
     "modeledImage": null,
     "importJobId": "dd74edc8-1fbd-45f1-8f21-485a49451be7",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-6f5a13d1-4dda-4483-b8b6-70458dbb6206",
-    "name": "Medium-Wash High-Rise Jeans",
-    "part": "lowerbody",
-    "color": "#4a6787",
-    "secondaryColor": null,
-    "palette": [
-      "#4a6787"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "tags": [
-      "blupepper",
-      "denim",
-      "high-waist"
-    ],
-    "season": "all",
-    "material": "denim",
-    "silhouette": "regular",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "weekend"
-    ],
-    "image": "/api/import/library/import-6f5a13d1-4dda-4483-b8b6-70458dbb6206-garment.png",
-    "thumbnail": "/api/import/library/import-6f5a13d1-4dda-4483-b8b6-70458dbb6206-garment.png",
-    "modeledImage": null,
-    "importJobId": "6f5a13d1-4dda-4483-b8b6-70458dbb6206",
-    "gender": "mujer"
+    "description": "Crop top morley blanco escote recto confeccionada en algodón, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-efbdbd43-b839-4905-8207-f906b088075a",
-    "name": "Camel Longline Trench Coat with Corduroy Trim",
+    "name": "Trench largo camel con detalles de corderoy",
     "part": "wholebody_up",
     "color": "#c8a97e",
     "secondaryColor": "#4a3325",
@@ -2539,43 +2722,18 @@
     "thumbnail": "/api/import/library/import-efbdbd43-b839-4905-8207-f906b088075a-garment.png",
     "modeledImage": null,
     "importJobId": "efbdbd43-b839-4905-8207-f906b088075a",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-9e9c7dd0-c4d6-420b-88f8-a8cc30b53411",
-    "name": "White Crew Neck T-Shirt",
-    "part": "upperbody",
-    "color": "#f2f1ee",
-    "secondaryColor": null,
-    "palette": [
-      "#f2f1ee"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
     ],
-    "tags": [
-      "blupepper",
-      "basic",
-      "crew-neck"
-    ],
-    "season": "all",
-    "material": "cotton",
-    "silhouette": "regular",
-    "weight": "light",
-    "climates": [
-      "warm",
-      "mild"
-    ],
-    "occasions": [
-      "casual",
-      "weekend"
-    ],
-    "image": "/api/import/library/import-9e9c7dd0-c4d6-420b-88f8-a8cc30b53411-garment.png",
-    "thumbnail": "/api/import/library/import-9e9c7dd0-c4d6-420b-88f8-a8cc30b53411-garment.png",
-    "modeledImage": null,
-    "importJobId": "9e9c7dd0-c4d6-420b-88f8-a8cc30b53411",
-    "gender": "unisex"
+    "description": "Trench largo camel con detalles de corderoy confeccionada en algodón, con corte oversized. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-bb1771ab-56da-4be9-a830-86f5cc9f03a2",
-    "name": "Medium Wash Wide-Leg Jeans",
+    "name": "Jean ancho lavado medio",
     "part": "lowerbody",
     "color": "#7391b3",
     "secondaryColor": null,
@@ -2604,11 +2762,19 @@
     "thumbnail": "/api/import/library/import-bb1771ab-56da-4be9-a830-86f5cc9f03a2-garment.png",
     "modeledImage": null,
     "importJobId": "bb1771ab-56da-4be9-a830-86f5cc9f03a2",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean ancho lavado medio confeccionada en denim, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-d2f75e85-2f8c-40f8-8076-658b6dbd4b7e",
-    "name": "Black Curved Shoulder Bag",
+    "name": "Cartera de hombro curva negra",
     "part": "accessories_up",
     "color": "#161616",
     "secondaryColor": null,
@@ -2638,11 +2804,15 @@
     "thumbnail": "/api/import/library/import-d2f75e85-2f8c-40f8-8076-658b6dbd4b7e-garment.png",
     "modeledImage": null,
     "importJobId": "d2f75e85-2f8c-40f8-8076-658b6dbd4b7e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Cartera de hombro curva negra confeccionada en cuero, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-078e8ea4-bef3-437a-9bd1-b489b52da8c1",
-    "name": "Black Rectangular Sunglasses",
+    "name": "Lentes de sol rectangulares negros",
     "part": "accessories_up",
     "color": "#101010",
     "secondaryColor": null,
@@ -2671,11 +2841,15 @@
     "thumbnail": "/api/import/library/import-078e8ea4-bef3-437a-9bd1-b489b52da8c1-garment.png",
     "modeledImage": null,
     "importJobId": "078e8ea4-bef3-437a-9bd1-b489b52da8c1",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Lentes de sol rectangulares negros confeccionada en material sintético, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-2397040f-011e-4dad-b9e9-3a398b9282ad",
-    "name": "Black Cropped Double-Breasted Jacket",
+    "name": "Campera corta cruzada negra",
     "part": "wholebody_up",
     "color": "#15151a",
     "secondaryColor": null,
@@ -2705,11 +2879,18 @@
     "thumbnail": "/api/import/library/import-2397040f-011e-4dad-b9e9-3a398b9282ad-garment.png",
     "modeledImage": null,
     "importJobId": "2397040f-011e-4dad-b9e9-3a398b9282ad",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Campera corta cruzada negra confeccionada en material sintético, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-9c427982-f4ce-46ac-a37d-cd51003f47d8",
-    "name": "Medium Wash Skinny Jeans",
+    "name": "Jean skinny lavado medio",
     "part": "lowerbody",
     "color": "#5f83a8",
     "secondaryColor": null,
@@ -2720,7 +2901,8 @@
       "blupepper",
       "denim",
       "skinny",
-      "high-waist"
+      "high-waist",
+      "mine"
     ],
     "season": "all",
     "material": "denim",
@@ -2738,11 +2920,19 @@
     "thumbnail": "/api/import/library/import-9c427982-f4ce-46ac-a37d-cd51003f47d8-garment.png",
     "modeledImage": null,
     "importJobId": "9c427982-f4ce-46ac-a37d-cd51003f47d8",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean skinny lavado medio confeccionada en denim, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c13d9050-68cf-4abb-b96e-b0f47a69ec3d",
-    "name": "Black Pointed-Toe Pumps",
+    "name": "Stilettos negros en punta",
     "part": "shoes",
     "color": "#141414",
     "secondaryColor": null,
@@ -2753,7 +2943,8 @@
       "blupepper",
       "pumps",
       "pointed-toe",
-      "heels"
+      "heels",
+      "iris casual"
     ],
     "season": "all",
     "material": "leather",
@@ -2772,11 +2963,20 @@
     "thumbnail": "/api/import/library/import-c13d9050-68cf-4abb-b96e-b0f47a69ec3d-garment.png",
     "modeledImage": null,
     "importJobId": "c13d9050-68cf-4abb-b96e-b0f47a69ec3d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Stilettos negros en punta confeccionada en cuero, con silueta entallada. Ideal para la oficina. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-5f8d2155-9a13-4fab-ba7d-c9077b1c48d7",
-    "name": "White Square-Neck Sleeveless Top",
+    "name": "Top blanco sin mangas escote recto",
     "part": "upperbody",
     "color": "#f5f4f0",
     "secondaryColor": null,
@@ -2806,11 +3006,19 @@
     "thumbnail": "/api/import/library/import-5f8d2155-9a13-4fab-ba7d-c9077b1c48d7-garment.png",
     "modeledImage": null,
     "importJobId": "5f8d2155-9a13-4fab-ba7d-c9077b1c48d7",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top blanco sin mangas escote recto confeccionada en algodón, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-1922a333-fc33-4a05-b069-b1a10c543319",
-    "name": "Black Satin Bias-Cut Maxi Skirt",
+    "name": "Pollera maxi satinada al bies negra",
     "part": "lowerbody",
     "color": "#141416",
     "secondaryColor": null,
@@ -2840,11 +3048,19 @@
     "thumbnail": "/api/import/library/import-1922a333-fc33-4a05-b069-b1a10c543319-garment.png",
     "modeledImage": null,
     "importJobId": "1922a333-fc33-4a05-b069-b1a10c543319",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pollera maxi satinada al bies negra confeccionada en seda, con caída fluida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-3624420a-a9f5-45bf-88c4-6787623052b0",
-    "name": "Black Strapless One-Piece Swimsuit with Gold Plate",
+    "name": "Malla strapless negra con detalle dorado",
     "part": "wholebody_up",
     "color": "#141414",
     "secondaryColor": "#d8bc7a",
@@ -2873,11 +3089,18 @@
     "thumbnail": "/api/import/library/import-3624420a-a9f5-45bf-88c4-6787623052b0-garment.png",
     "modeledImage": null,
     "importJobId": "3624420a-a9f5-45bf-88c4-6787623052b0",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Malla strapless negra con detalle dorado confeccionada en material sintético, con silueta entallada. Ideal para el fin de semana. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-230ccd3b-6674-49bb-a2f4-93db1796d4ac",
-    "name": "Chocolate Brown Satin Lace-Trim Cami Top",
+    "name": "Top satinado chocolate con puntilla",
     "part": "upperbody",
     "color": "#3f2a22",
     "secondaryColor": null,
@@ -2906,11 +3129,19 @@
     "thumbnail": "/api/import/library/import-230ccd3b-6674-49bb-a2f4-93db1796d4ac-garment.png",
     "modeledImage": null,
     "importJobId": "230ccd3b-6674-49bb-a2f4-93db1796d4ac",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top satinado chocolate con puntilla confeccionada en seda, con caída fluida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-d5e274b1-9924-43dd-8316-538f3ae61f12",
-    "name": "Chocolate Brown Rhinestone Studded Tank Top",
+    "name": "Musculosa chocolate con strass",
     "part": "upperbody",
     "color": "#3e2723",
     "secondaryColor": "#c0c0c0",
@@ -2938,11 +3169,19 @@
     "thumbnail": "/api/import/library/import-d5e274b1-9924-43dd-8316-538f3ae61f12-garment.png",
     "modeledImage": null,
     "importJobId": "d5e274b1-9924-43dd-8316-538f3ae61f12",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Musculosa chocolate con strass confeccionada en material sintético, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c68ab9a9-d3e5-4ebd-8f4f-f266466cf5bb",
-    "name": "Gold Layered Collar Necklace",
+    "name": "Gargantilla dorada en capas",
     "part": "accessories_up",
     "color": "#c9a227",
     "secondaryColor": null,
@@ -2970,11 +3209,15 @@
     "thumbnail": "/api/import/library/import-c68ab9a9-d3e5-4ebd-8f4f-f266466cf5bb-garment.png",
     "modeledImage": null,
     "importJobId": "c68ab9a9-d3e5-4ebd-8f4f-f266466cf5bb",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Gargantilla dorada en capas confeccionada en materiales combinados, con calce clásico. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e88f935c-b838-48d4-b9a2-81bf0158c3f2",
-    "name": "Burgundy Metallic Sheer Knit Camisole",
+    "name": "Musculosa tejida metalizada bordó",
     "part": "upperbody",
     "color": "#5e2028",
     "secondaryColor": null,
@@ -3001,11 +3244,19 @@
     "thumbnail": "/api/import/library/import-e88f935c-b838-48d4-b9a2-81bf0158c3f2-garment.png",
     "modeledImage": null,
     "importJobId": "e88f935c-b838-48d4-b9a2-81bf0158c3f2",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Musculosa tejida metalizada bordó confeccionada en tejido de punto, con calce relajado. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-0d32af8a-ccf3-4e18-a65f-ff125179859d",
-    "name": "Brown Leather Western Buckle Belt",
+    "name": "Cinturón western de cuero marrón",
     "part": "accessories_up",
     "color": "#5a3a24",
     "secondaryColor": "#c0c0c0",
@@ -3036,11 +3287,15 @@
     "thumbnail": "/api/import/library/import-0d32af8a-ccf3-4e18-a65f-ff125179859d-garment.png",
     "modeledImage": null,
     "importJobId": "0d32af8a-ccf3-4e18-a65f-ff125179859d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Cinturón western de cuero marrón confeccionada en cuero, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-91bbd5b7-069d-4642-923e-94b483f9a78e",
-    "name": "Washed Black Jeans",
+    "name": "Jean negro lavado",
     "part": "lowerbody",
     "color": "#26262a",
     "secondaryColor": null,
@@ -3068,11 +3323,19 @@
     "thumbnail": "/api/import/library/import-91bbd5b7-069d-4642-923e-94b483f9a78e-garment.png",
     "modeledImage": null,
     "importJobId": "91bbd5b7-069d-4642-923e-94b483f9a78e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean negro lavado confeccionada en denim, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c3daab90-4cf1-441a-8862-a747b01e34ed",
-    "name": "Silver Shimmer One-Shoulder Flared Mini Dress",
+    "name": "Vestido corto plateado un hombro",
     "part": "wholebody_up",
     "color": "#3d3f3e",
     "secondaryColor": "#b8b9b5",
@@ -3100,11 +3363,18 @@
     "thumbnail": "/api/import/library/import-c3daab90-4cf1-441a-8862-a747b01e34ed-garment.png",
     "modeledImage": null,
     "importJobId": "c3daab90-4cf1-441a-8862-a747b01e34ed",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Vestido corto plateado un hombro confeccionada en tejido de punto, con silueta entallada. Ideal para eventos. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c5ccb09a-4e8b-402e-8dfd-e6a4c9775f0b",
-    "name": "Chocolate Brown Ruffle Tie-Front Blouse",
+    "name": "Blusa chocolate con volados atada adelante",
     "part": "upperbody",
     "color": "#4a2e20",
     "secondaryColor": null,
@@ -3132,11 +3402,19 @@
     "thumbnail": "/api/import/library/import-c5ccb09a-4e8b-402e-8dfd-e6a4c9775f0b-garment.png",
     "modeledImage": null,
     "importJobId": "c5ccb09a-4e8b-402e-8dfd-e6a4c9775f0b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa chocolate con volados atada adelante confeccionada en material sintético, con caída fluida. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-17d4bbab-6c9d-4072-b686-80c788a15e60",
-    "name": "Black Tailored Micro Shorts",
+    "name": "Micro short sastrero negro",
     "part": "lowerbody",
     "color": "#141414",
     "secondaryColor": null,
@@ -3163,11 +3441,19 @@
     "thumbnail": "/api/import/library/import-17d4bbab-6c9d-4072-b686-80c788a15e60-garment.png",
     "modeledImage": null,
     "importJobId": "17d4bbab-6c9d-4072-b686-80c788a15e60",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Micro short sastrero negro confeccionada en material sintético, con silueta entallada. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-fe5edc46-8c47-40fc-91f3-8bf79d333f2d",
-    "name": "Brown Leather Knee-High Heeled Boots",
+    "name": "Botas altas de cuero marrón con taco",
     "part": "shoes",
     "color": "#4b2a20",
     "secondaryColor": null,
@@ -3196,11 +3482,20 @@
     "thumbnail": "/api/import/library/import-fe5edc46-8c47-40fc-91f3-8bf79d333f2d-garment.png",
     "modeledImage": null,
     "importJobId": "fe5edc46-8c47-40fc-91f3-8bf79d333f2d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Botas altas de cuero marrón con taco confeccionada en cuero, con estructura definida. Ideal para eventos. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-0bc07962-fffa-40a2-8904-4056c15f7930",
-    "name": "Black Cat-Eye Sunglasses",
+    "name": "Lentes de sol cat-eye negros",
     "part": "accessories_up",
     "color": "#111111",
     "secondaryColor": null,
@@ -3231,11 +3526,15 @@
     "thumbnail": "/api/import/library/import-0bc07962-fffa-40a2-8904-4056c15f7930-garment.png",
     "modeledImage": null,
     "importJobId": "0bc07962-fffa-40a2-8904-4056c15f7930",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Lentes de sol cat-eye negros confeccionada en material sintético, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-b56f1ef9-c323-4f1e-bcc7-1ba54209d035",
-    "name": "Burgundy Cat-Eye Sunglasses",
+    "name": "Lentes de sol cat-eye bordó",
     "part": "accessories_up",
     "color": "#5c1f18",
     "secondaryColor": "#8a4a2a",
@@ -3267,11 +3566,15 @@
     "thumbnail": "/api/import/library/import-b56f1ef9-c323-4f1e-bcc7-1ba54209d035-garment.png",
     "modeledImage": null,
     "importJobId": "b56f1ef9-c323-4f1e-bcc7-1ba54209d035",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Lentes de sol cat-eye bordó confeccionada en material sintético, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-a6eb7884-2086-43f5-a8a8-dfac9bd5cf38",
-    "name": "Cream Cat-Eye Sunglasses",
+    "name": "Lentes de sol cat-eye crema",
     "part": "accessories_up",
     "color": "#e8ddc8",
     "secondaryColor": "#3a4450",
@@ -3303,11 +3606,15 @@
     "thumbnail": "/api/import/library/import-a6eb7884-2086-43f5-a8a8-dfac9bd5cf38-garment.png",
     "modeledImage": null,
     "importJobId": "a6eb7884-2086-43f5-a8a8-dfac9bd5cf38",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Lentes de sol cat-eye crema confeccionada en material sintético, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-b198d056-c96a-4a27-ad80-a8f6f3a4ce57",
-    "name": "Tortoiseshell Cat-Eye Sunglasses",
+    "name": "Lentes de sol cat-eye carey",
     "part": "accessories_up",
     "color": "#7a3c18",
     "secondaryColor": "#2a1508",
@@ -3339,11 +3646,15 @@
     "thumbnail": "/api/import/library/import-b198d056-c96a-4a27-ad80-a8f6f3a4ce57-garment.png",
     "modeledImage": null,
     "importJobId": "b198d056-c96a-4a27-ad80-a8f6f3a4ce57",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Lentes de sol cat-eye carey confeccionada en material sintético, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-922d795a-47fe-427d-a0ec-a3c6376210ee",
-    "name": "Gold Dipped Puffed Heart Earring Set",
+    "name": "Set de aros corazón dorados",
     "part": "accessories_up",
     "color": "#d4a017",
     "secondaryColor": null,
@@ -3374,11 +3685,15 @@
     "thumbnail": "/api/import/library/import-922d795a-47fe-427d-a0ec-a3c6376210ee-garment.png",
     "modeledImage": null,
     "importJobId": "922d795a-47fe-427d-a0ec-a3c6376210ee",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Set de aros corazón dorados confeccionada en materiales combinados, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-25cbd371-9c45-4e89-abe7-91c3506039f8",
-    "name": "Ivory Fringed Soft Knit Scarf",
+    "name": "Bufanda de punto marfil con flecos",
     "part": "accessories_up",
     "color": "#f6f2e4",
     "secondaryColor": null,
@@ -3407,11 +3722,15 @@
     "thumbnail": "/api/import/library/import-25cbd371-9c45-4e89-abe7-91c3506039f8-garment.png",
     "modeledImage": null,
     "importJobId": "25cbd371-9c45-4e89-abe7-91c3506039f8",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Bufanda de punto marfil con flecos confeccionada en tejido de punto, con calce clásico. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f397b924-abf1-47ba-a323-67244962b30e",
-    "name": "Gold Dipped Hoop Earrings Set",
+    "name": "Set de aros dorados",
     "part": "accessories_up",
     "color": "#c9a13b",
     "secondaryColor": null,
@@ -3442,11 +3761,15 @@
     "thumbnail": "/api/import/library/import-f397b924-abf1-47ba-a323-67244962b30e-garment.png",
     "modeledImage": null,
     "importJobId": "f397b924-abf1-47ba-a323-67244962b30e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Set de aros dorados confeccionada en materiales combinados, con estructura definida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-3c2f1504-74cf-4c24-8513-918869ac6fee",
-    "name": "Tortoiseshell Oval Retro Sunglasses",
+    "name": "Lentes de sol retro ovalados carey",
     "part": "accessories_up",
     "color": "#8b5a2b",
     "secondaryColor": "#2e1a0e",
@@ -3476,11 +3799,15 @@
     "thumbnail": "/api/import/library/import-3c2f1504-74cf-4c24-8513-918869ac6fee-garment.png",
     "modeledImage": null,
     "importJobId": "3c2f1504-74cf-4c24-8513-918869ac6fee",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Lentes de sol retro ovalados carey confeccionada en material sintético, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c8935bfc-34c4-430a-b074-91a1b5af0d67",
-    "name": "Clear Champagne Oval Retro Sunglasses",
+    "name": "Lentes de sol retro ovalados champagne",
     "part": "accessories_up",
     "color": "#d6cfc4",
     "secondaryColor": null,
@@ -3509,11 +3836,15 @@
     "thumbnail": "/api/import/library/import-c8935bfc-34c4-430a-b074-91a1b5af0d67-garment.png",
     "modeledImage": null,
     "importJobId": "c8935bfc-34c4-430a-b074-91a1b5af0d67",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Lentes de sol retro ovalados champagne confeccionada en material sintético, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c260c5a7-0cdf-491e-b26b-b769b48e657d",
-    "name": "Black Oval Retro Sunglasses",
+    "name": "Lentes de sol retro ovalados negros",
     "part": "accessories_up",
     "color": "#111111",
     "secondaryColor": null,
@@ -3542,11 +3873,15 @@
     "thumbnail": "/api/import/library/import-c260c5a7-0cdf-491e-b26b-b769b48e657d-garment.png",
     "modeledImage": null,
     "importJobId": "c260c5a7-0cdf-491e-b26b-b769b48e657d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Lentes de sol retro ovalados negros confeccionada en material sintético, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-7465f65c-bc1e-46cf-be4b-a7cda38d6bc8",
-    "name": "Amber Tortoise Resin and Gold Bangle Set",
+    "name": "Set de pulseras de resina ámbar y dorado",
     "part": "accessories_up",
     "color": "#8a4a14",
     "secondaryColor": "#d4af37",
@@ -3578,11 +3913,15 @@
     "thumbnail": "/api/import/library/import-7465f65c-bc1e-46cf-be4b-a7cda38d6bc8-garment.png",
     "modeledImage": null,
     "importJobId": "7465f65c-bc1e-46cf-be4b-a7cda38d6bc8",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Set de pulseras de resina ámbar y dorado confeccionada en material sintético, con estructura definida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-2a2477eb-5f84-4e3d-b6eb-93e4deccda07",
-    "name": "Ivory Marbled Resin Bangle Set",
+    "name": "Set de pulseras de resina marfil",
     "part": "accessories_up",
     "color": "#e8ddc8",
     "secondaryColor": null,
@@ -3613,11 +3952,15 @@
     "thumbnail": "/api/import/library/import-2a2477eb-5f84-4e3d-b6eb-93e4deccda07-garment.png",
     "modeledImage": null,
     "importJobId": "2a2477eb-5f84-4e3d-b6eb-93e4deccda07",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Set de pulseras de resina marfil confeccionada en material sintético, con estructura definida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c2c39cea-0d4b-48fa-b9ba-b382d47df975",
-    "name": "Blush Marbled Resin and Gold Bangle Set",
+    "name": "Set de pulseras de resina rosa y dorado",
     "part": "accessories_up",
     "color": "#c7a894",
     "secondaryColor": "#d4af37",
@@ -3649,11 +3992,15 @@
     "thumbnail": "/api/import/library/import-c2c39cea-0d4b-48fa-b9ba-b382d47df975-garment.png",
     "modeledImage": null,
     "importJobId": "c2c39cea-0d4b-48fa-b9ba-b382d47df975",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Set de pulseras de resina rosa y dorado confeccionada en material sintético, con estructura definida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-17a7118e-93fb-4531-a8a2-6b60c1d6a407",
-    "name": "Blue Geometric Squares Print Silk Scarf",
+    "name": "Pañuelo de seda azul con estampado geométrico",
     "part": "accessories_up",
     "color": "#5b83b8",
     "secondaryColor": "#a9744a",
@@ -3684,11 +4031,15 @@
     "thumbnail": "/api/import/library/import-17a7118e-93fb-4531-a8a2-6b60c1d6a407-garment.png",
     "modeledImage": null,
     "importJobId": "17a7118e-93fb-4531-a8a2-6b60c1d6a407",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Pañuelo de seda azul con estampado geométrico confeccionada en seda, con caída fluida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-2a474bb5-7105-4fda-81a9-928a0ac506b4",
-    "name": "Cow Print Satin Square Scarf with Brown Border",
+    "name": "Pañuelo satinado print vaca con borde marrón",
     "part": "accessories_up",
     "color": "#f0ece4",
     "secondaryColor": "#4a3226",
@@ -3719,11 +4070,15 @@
     "thumbnail": "/api/import/library/import-2a474bb5-7105-4fda-81a9-928a0ac506b4-garment.png",
     "modeledImage": null,
     "importJobId": "2a474bb5-7105-4fda-81a9-928a0ac506b4",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Pañuelo satinado print vaca con borde marrón confeccionada en seda, con caída fluida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-21e48dd8-49fe-4820-bb68-8765d7357edd",
-    "name": "Camel Zip-Top Tote Bag",
+    "name": "Bolso tote camel con cierre",
     "part": "accessories_up",
     "color": "#a97c50",
     "secondaryColor": "#2b2320",
@@ -3755,11 +4110,15 @@
     "thumbnail": "/api/import/library/import-21e48dd8-49fe-4820-bb68-8765d7357edd-garment.png",
     "modeledImage": null,
     "importJobId": "21e48dd8-49fe-4820-bb68-8765d7357edd",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Bolso tote camel con cierre confeccionada en cuero, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-6a7add5c-5bf1-4135-885e-c1607df8ff0c",
-    "name": "Ivory Cap-Sleeve Blouse with Black Contrast Piping",
+    "name": "Blusa marfil con vivos negros",
     "part": "upperbody",
     "color": "#f3efe6",
     "secondaryColor": "#1c1c1e",
@@ -3790,11 +4149,19 @@
     "thumbnail": "/api/import/library/import-6a7add5c-5bf1-4135-885e-c1607df8ff0c-garment.png",
     "modeledImage": null,
     "importJobId": "6a7add5c-5bf1-4135-885e-c1607df8ff0c",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa marfil con vivos negros confeccionada en material sintético, con calce relajado. Ideal para la oficina. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-891afe21-f099-4423-8c5a-bbdf76f430d4",
-    "name": "Beige Slim Stretch Pants",
+    "name": "Pantalón beige slim elastizado",
     "part": "lowerbody",
     "color": "#cbb49a",
     "secondaryColor": null,
@@ -3823,11 +4190,19 @@
     "thumbnail": "/api/import/library/import-891afe21-f099-4423-8c5a-bbdf76f430d4-garment.png",
     "modeledImage": null,
     "importJobId": "891afe21-f099-4423-8c5a-bbdf76f430d4",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón beige slim elastizado confeccionada en material sintético, con silueta entallada. Ideal para la oficina. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-44846fd4-7dd8-47b5-8a1b-7c5df8572535",
-    "name": "Black Ruffle-Neck Puff Sleeve Blouse",
+    "name": "Blusa negra con volados y mangas abullonadas",
     "part": "upperbody",
     "color": "#17171a",
     "secondaryColor": null,
@@ -3856,11 +4231,19 @@
     "thumbnail": "/api/import/library/import-44846fd4-7dd8-47b5-8a1b-7c5df8572535-garment.png",
     "modeledImage": null,
     "importJobId": "44846fd4-7dd8-47b5-8a1b-7c5df8572535",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa negra con volados y mangas abullonadas confeccionada en material sintético, con calce relajado. Ideal para la oficina. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-cab72c4b-8cd5-4c7b-b320-6541025f2104",
-    "name": "Camel Straight-Leg Trousers",
+    "name": "Pantalón recto camel",
     "part": "lowerbody",
     "color": "#b3854f",
     "secondaryColor": null,
@@ -3888,11 +4271,19 @@
     "thumbnail": "/api/import/library/import-cab72c4b-8cd5-4c7b-b320-6541025f2104-garment.png",
     "modeledImage": null,
     "importJobId": "cab72c4b-8cd5-4c7b-b320-6541025f2104",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón recto camel confeccionada en algodón, con calce clásico. Ideal para la oficina. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-0622118a-0ec8-4ef2-ae42-4b030f950879",
-    "name": "Gold Chunky Cuff Bracelet",
+    "name": "Brazalete ancho dorado",
     "part": "accessories_up",
     "color": "#c9a344",
     "secondaryColor": null,
@@ -3921,11 +4312,15 @@
     "thumbnail": "/api/import/library/import-0622118a-0ec8-4ef2-ae42-4b030f950879-garment.png",
     "modeledImage": null,
     "importJobId": "0622118a-0ec8-4ef2-ae42-4b030f950879",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Brazalete ancho dorado confeccionada en materiales combinados, con estructura definida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e4d4a5fd-b1d1-46b5-88db-0e49d2c7077a",
-    "name": "Blush Ladder-Trim Swing Blouse",
+    "name": "Blusa rosa con calados",
     "part": "upperbody",
     "color": "#e6cfc0",
     "secondaryColor": null,
@@ -3954,11 +4349,19 @@
     "thumbnail": "/api/import/library/import-e4d4a5fd-b1d1-46b5-88db-0e49d2c7077a-garment.png",
     "modeledImage": null,
     "importJobId": "e4d4a5fd-b1d1-46b5-88db-0e49d2c7077a",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa rosa con calados confeccionada en material sintético, con caída fluida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-b1b4301f-fac6-4450-8ad6-e1443b52bfb3",
-    "name": "Cream Palm Print Drawstring Pants",
+    "name": "Pantalón crema con estampado de palmeras",
     "part": "lowerbody",
     "color": "#f4efe6",
     "secondaryColor": "#c8a67e",
@@ -3988,11 +4391,19 @@
     "thumbnail": "/api/import/library/import-b1b4301f-fac6-4450-8ad6-e1443b52bfb3-garment.png",
     "modeledImage": null,
     "importJobId": "b1b4301f-fac6-4450-8ad6-e1443b52bfb3",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón crema con estampado de palmeras confeccionada en material sintético, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4c6a5b59-9140-4e1e-a9ff-e3a5faf0ba39",
-    "name": "Multicolor Beaded Necklace",
+    "name": "Collar de cuentas multicolor",
     "part": "accessories_up",
     "color": "#2e6e6a",
     "secondaryColor": "#b03a2e",
@@ -4022,11 +4433,15 @@
     "thumbnail": "/api/import/library/import-4c6a5b59-9140-4e1e-a9ff-e3a5faf0ba39-garment.png",
     "modeledImage": null,
     "importJobId": "4c6a5b59-9140-4e1e-a9ff-e3a5faf0ba39",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Collar de cuentas multicolor confeccionada en materiales combinados, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-3e906108-0215-48ff-9de0-200213605957",
-    "name": "Ivory Rust Rope Print Wide-Leg Pants",
+    "name": "Pantalón ancho marfil con estampado de sogas",
     "part": "lowerbody",
     "color": "#f5f0e6",
     "secondaryColor": "#b1441f",
@@ -4056,11 +4471,19 @@
     "thumbnail": "/api/import/library/import-3e906108-0215-48ff-9de0-200213605957-garment.png",
     "modeledImage": null,
     "importJobId": "3e906108-0215-48ff-9de0-200213605957",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón ancho marfil con estampado de sogas confeccionada en materiales combinados, con caída fluida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-b41e1830-cb79-4e76-bc08-3d415ddd4eb6",
-    "name": "Beige Espadrille Wedge Sandals",
+    "name": "Sandalias beige con plataforma de yute",
     "part": "shoes",
     "color": "#d8c4a8",
     "secondaryColor": null,
@@ -4088,11 +4511,20 @@
     "thumbnail": "/api/import/library/import-b41e1830-cb79-4e76-bc08-3d415ddd4eb6-garment.png",
     "modeledImage": null,
     "importJobId": "b41e1830-cb79-4e76-bc08-3d415ddd4eb6",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Sandalias beige con plataforma de yute confeccionada en materiales combinados, con calce clásico. Ideal para el día a día. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-c765ad5f-2300-4940-9e98-b0a03974dc88",
-    "name": "Burgundy Ruffle-Neck Balloon Sleeve Blouse",
+    "name": "Blusa bordó con volados manga globo",
     "part": "upperbody",
     "color": "#6e1a24",
     "secondaryColor": null,
@@ -4122,43 +4554,19 @@
     "thumbnail": "/api/import/library/import-c765ad5f-2300-4940-9e98-b0a03974dc88-garment.png",
     "modeledImage": null,
     "importJobId": "c765ad5f-2300-4940-9e98-b0a03974dc88",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-742d7118-3c11-4a98-a9e8-02563a87eecb",
-    "name": "Light Wash Straight Jeans",
-    "part": "lowerbody",
-    "color": "#a8c0d4",
-    "secondaryColor": null,
-    "palette": [
-      "#a8c0d4"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "tags": [
-      "gigio",
-      "denim",
-      "light-wash"
-    ],
-    "season": "all",
-    "material": "denim",
-    "silhouette": "regular",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "weekend"
-    ],
-    "image": "/api/import/library/import-742d7118-3c11-4a98-a9e8-02563a87eecb-garment.png",
-    "thumbnail": "/api/import/library/import-742d7118-3c11-4a98-a9e8-02563a87eecb-garment.png",
-    "modeledImage": null,
-    "importJobId": "742d7118-3c11-4a98-a9e8-02563a87eecb",
-    "gender": "mujer"
+    "description": "Blusa bordó con volados manga globo confeccionada en material sintético, con caída fluida. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-a84f971d-0cec-40a4-87e6-dc41455ff6a6",
-    "name": "Black Floral Print Puff-Sleeve Blouse",
+    "name": "Blusa negra floral mangas abullonadas",
     "part": "upperbody",
     "color": "#141414",
     "secondaryColor": "#e9e7dc",
@@ -4188,11 +4596,19 @@
     "thumbnail": "/api/import/library/import-a84f971d-0cec-40a4-87e6-dc41455ff6a6-garment.png",
     "modeledImage": null,
     "importJobId": "a84f971d-0cec-40a4-87e6-dc41455ff6a6",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa negra floral mangas abullonadas confeccionada en material sintético, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-da3095c6-2bf2-44e8-b07b-7b831c37a584",
-    "name": "Light-Wash Relaxed Jeans",
+    "name": "Jean relaxed lavado claro",
     "part": "lowerbody",
     "color": "#a8bcc9",
     "secondaryColor": null,
@@ -4220,11 +4636,19 @@
     "thumbnail": "/api/import/library/import-da3095c6-2bf2-44e8-b07b-7b831c37a584-garment.png",
     "modeledImage": null,
     "importJobId": "da3095c6-2bf2-44e8-b07b-7b831c37a584",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean relaxed lavado claro confeccionada en denim, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-94bcc616-513c-4890-af75-cfaa8940b635",
-    "name": "Plum Sheer Chiffon Ruffle-Front Blouse",
+    "name": "Blusa de gasa ciruela con volados",
     "part": "upperbody",
     "color": "#5a2050",
     "secondaryColor": null,
@@ -4253,11 +4677,19 @@
     "thumbnail": "/api/import/library/import-94bcc616-513c-4890-af75-cfaa8940b635-garment.png",
     "modeledImage": null,
     "importJobId": "94bcc616-513c-4890-af75-cfaa8940b635",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa de gasa ciruela con volados confeccionada en material sintético, con caída fluida. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-b603f820-9ced-433e-aad4-ea113087c4f0",
-    "name": "Washed Black Straight-Leg Jeans",
+    "name": "Jean recto negro lavado",
     "part": "lowerbody",
     "color": "#3a3a3c",
     "secondaryColor": null,
@@ -4285,11 +4717,19 @@
     "thumbnail": "/api/import/library/import-b603f820-9ced-433e-aad4-ea113087c4f0-garment.png",
     "modeledImage": null,
     "importJobId": "b603f820-9ced-433e-aad4-ea113087c4f0",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean recto negro lavado confeccionada en denim, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-2a3d82f3-c434-4606-83cf-c32635502541",
-    "name": "Gold Layered Chain Necklace",
+    "name": "Collar dorado de cadenas en capas",
     "part": "accessories_up",
     "color": "#c9a24b",
     "secondaryColor": null,
@@ -4320,11 +4760,15 @@
     "thumbnail": "/api/import/library/import-2a3d82f3-c434-4606-83cf-c32635502541-garment.png",
     "modeledImage": null,
     "importJobId": "2a3d82f3-c434-4606-83cf-c32635502541",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Collar dorado de cadenas en capas confeccionada en materiales combinados, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-eb7389a2-c447-46cb-b762-87e7d27d8093",
-    "name": "Brown Floral Print V-Neck Peplum Blouse",
+    "name": "Blusa peplum floral marrón escote V",
     "part": "upperbody",
     "color": "#4a2d1e",
     "secondaryColor": "#e3cba6",
@@ -4355,11 +4799,19 @@
     "thumbnail": "/api/import/library/import-eb7389a2-c447-46cb-b762-87e7d27d8093-garment.png",
     "modeledImage": null,
     "importJobId": "eb7389a2-c447-46cb-b762-87e7d27d8093",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa peplum floral marrón escote V confeccionada en material sintético, con caída fluida. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-098b83cb-37b0-431c-aedc-f6676184b7ef",
-    "name": "Dark Wash Bootcut Jeans",
+    "name": "Jean bootcut lavado oscuro",
     "part": "lowerbody",
     "color": "#2c3f5e",
     "secondaryColor": null,
@@ -4389,11 +4841,19 @@
     "thumbnail": "/api/import/library/import-098b83cb-37b0-431c-aedc-f6676184b7ef-garment.png",
     "modeledImage": null,
     "importJobId": "098b83cb-37b0-431c-aedc-f6676184b7ef",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean bootcut lavado oscuro confeccionada en denim, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-d0d912a5-a550-45dd-896b-0d1075c924d4",
-    "name": "Cream Crossover Mule Sandals",
+    "name": "Sandalias mule cruzadas crema",
     "part": "shoes",
     "color": "#efe6d4",
     "secondaryColor": null,
@@ -4421,11 +4881,20 @@
     "thumbnail": "/api/import/library/import-d0d912a5-a550-45dd-896b-0d1075c924d4-garment.png",
     "modeledImage": null,
     "importJobId": "d0d912a5-a550-45dd-896b-0d1075c924d4",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Sandalias mule cruzadas crema confeccionada en cuero, con estructura definida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-9b0cbb0c-b6b8-4681-b06e-8d18dc6995a3",
-    "name": "Leopard Print Satin Button-Down Shirt",
+    "name": "Camisa satinada animal print",
     "part": "upperbody",
     "color": "#c9b08a",
     "secondaryColor": "#2e2a24",
@@ -4456,11 +4925,19 @@
     "thumbnail": "/api/import/library/import-9b0cbb0c-b6b8-4681-b06e-8d18dc6995a3-garment.png",
     "modeledImage": null,
     "importJobId": "9b0cbb0c-b6b8-4681-b06e-8d18dc6995a3",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Camisa satinada animal print confeccionada en material sintético, con calce relajado. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4782fb9c-7d92-433b-8318-5a90fe13644e",
-    "name": "Leopard Print Satin Wide-Leg Pants",
+    "name": "Pantalón ancho satinado animal print",
     "part": "lowerbody",
     "color": "#c9b08a",
     "secondaryColor": "#2e2a24",
@@ -4491,11 +4968,19 @@
     "thumbnail": "/api/import/library/import-4782fb9c-7d92-433b-8318-5a90fe13644e-garment.png",
     "modeledImage": null,
     "importJobId": "4782fb9c-7d92-433b-8318-5a90fe13644e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón ancho satinado animal print confeccionada en material sintético, con calce relajado. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-66c96b41-f56b-4e8b-88a7-092d90a90314",
-    "name": "Black Strappy Heeled Sandals",
+    "name": "Sandalias negras de tiras con taco",
     "part": "shoes",
     "color": "#151515",
     "secondaryColor": null,
@@ -4523,11 +5008,20 @@
     "thumbnail": "/api/import/library/import-66c96b41-f56b-4e8b-88a7-092d90a90314-garment.png",
     "modeledImage": null,
     "importJobId": "66c96b41-f56b-4e8b-88a7-092d90a90314",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Sandalias negras de tiras con taco confeccionada en cuero, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-8c11538e-3df0-4d43-aa0c-ccffbc1bfe57",
-    "name": "Grey Leopard Print Satin Button-Up Shirt",
+    "name": "Camisa satinada animal print gris",
     "part": "upperbody",
     "color": "#c9c2b6",
     "secondaryColor": "#4d4640",
@@ -4557,11 +5051,19 @@
     "thumbnail": "/api/import/library/import-8c11538e-3df0-4d43-aa0c-ccffbc1bfe57-garment.png",
     "modeledImage": null,
     "importJobId": "8c11538e-3df0-4d43-aa0c-ccffbc1bfe57",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Camisa satinada animal print gris confeccionada en material sintético, con calce relajado. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4771dda7-60aa-47e7-829b-d4b1937ecc19",
-    "name": "Grey Leopard Print Wide-Leg Pants",
+    "name": "Pantalón ancho animal print gris",
     "part": "lowerbody",
     "color": "#c9c2b6",
     "secondaryColor": "#4d4640",
@@ -4591,43 +5093,19 @@
     "thumbnail": "/api/import/library/import-4771dda7-60aa-47e7-829b-d4b1937ecc19-garment.png",
     "modeledImage": null,
     "importJobId": "4771dda7-60aa-47e7-829b-d4b1937ecc19",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-7d14687f-a64e-4bea-bfed-76caac0ce661",
-    "name": "Black Strappy Heeled Sandals",
-    "part": "shoes",
-    "color": "#151515",
-    "secondaryColor": null,
-    "palette": [
-      "#151515"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
     ],
-    "tags": [
-      "hyfve fw 2026",
-      "heels",
-      "strappy"
-    ],
-    "season": "all",
-    "material": "leather",
-    "silhouette": "fitted",
-    "weight": "light",
-    "climates": [
-      "mild",
-      "warm"
-    ],
-    "occasions": [
-      "event",
-      "smart-casual"
-    ],
-    "image": "/api/import/library/import-7d14687f-a64e-4bea-bfed-76caac0ce661-garment.png",
-    "thumbnail": "/api/import/library/import-7d14687f-a64e-4bea-bfed-76caac0ce661-garment.png",
-    "modeledImage": null,
-    "importJobId": "7d14687f-a64e-4bea-bfed-76caac0ce661",
-    "gender": "mujer"
+    "description": "Pantalón ancho animal print gris confeccionada en material sintético, con caída fluida. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-83402fb5-eb5a-4513-88fe-8b2d137923a9",
-    "name": "Grey Leopard Print Long-Sleeve Wide-Leg Jumpsuit",
+    "name": "Mono animal print gris manga larga",
     "part": "wholebody_up",
     "color": "#b9b2a8",
     "secondaryColor": "#4a443c",
@@ -4657,11 +5135,18 @@
     "thumbnail": "/api/import/library/import-83402fb5-eb5a-4513-88fe-8b2d137923a9-garment.png",
     "modeledImage": null,
     "importJobId": "83402fb5-eb5a-4513-88fe-8b2d137923a9",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Mono animal print gris manga larga confeccionada en material sintético, con caída fluida. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-ba620813-ee2e-4b70-8100-50be951e09fc",
-    "name": "Grey Leopard Print Satin Tie-Front Shirt",
+    "name": "Camisa satinada animal print gris atada adelante",
     "part": "upperbody",
     "color": "#b9b3ab",
     "secondaryColor": "#4a453f",
@@ -4691,11 +5176,19 @@
     "thumbnail": "/api/import/library/import-ba620813-ee2e-4b70-8100-50be951e09fc-garment.png",
     "modeledImage": null,
     "importJobId": "ba620813-ee2e-4b70-8100-50be951e09fc",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Camisa satinada animal print gris atada adelante confeccionada en material sintético, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba",
-    "name": "Grey Leopard Print Satin Wide-Leg Pants",
+    "name": "Pantalón ancho satinado animal print gris",
     "part": "lowerbody",
     "color": "#b9b3ab",
     "secondaryColor": "#4a453f",
@@ -4725,11 +5218,19 @@
     "thumbnail": "/api/import/library/import-3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba-garment.png",
     "modeledImage": null,
     "importJobId": "3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón ancho satinado animal print gris confeccionada en material sintético, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-ae694db6-8726-4911-9ce1-75abc82ed39d",
-    "name": "Leopard Print Satin Button-Up Blouse",
+    "name": "Blusa satinada animal print",
     "part": "upperbody",
     "color": "#c9b394",
     "secondaryColor": "#3a2c1e",
@@ -4758,44 +5259,19 @@
     "thumbnail": "/api/import/library/import-ae694db6-8726-4911-9ce1-75abc82ed39d-garment.png",
     "modeledImage": null,
     "importJobId": "ae694db6-8726-4911-9ce1-75abc82ed39d",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-bcdefcd6-4d32-47ad-8771-82d6caf470e8",
-    "name": "Leopard Print Satin Wide-Leg Pants",
-    "part": "lowerbody",
-    "color": "#c9b394",
-    "secondaryColor": "#3a2c1e",
-    "palette": [
-      "#c9b394",
-      "#3a2c1e"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "tags": [
-      "hyfve fw 2026",
-      "leopard",
-      "satin",
-      "wide-leg"
-    ],
-    "season": "autumn",
-    "material": "silk",
-    "silhouette": "flowy",
-    "weight": "light",
-    "climates": [
-      "mild"
-    ],
-    "occasions": [
-      "event",
-      "smart-casual"
-    ],
-    "image": "/api/import/library/import-bcdefcd6-4d32-47ad-8771-82d6caf470e8-garment.png",
-    "thumbnail": "/api/import/library/import-bcdefcd6-4d32-47ad-8771-82d6caf470e8-garment.png",
-    "modeledImage": null,
-    "importJobId": "bcdefcd6-4d32-47ad-8771-82d6caf470e8",
-    "gender": "mujer"
+    "description": "Blusa satinada animal print confeccionada en seda, con calce relajado. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-fa4598b4-2663-41c2-b816-33670b73c5a1",
-    "name": "Black Strappy Stiletto Heels",
+    "name": "Stilettos negros de tiras",
     "part": "shoes",
     "color": "#151515",
     "secondaryColor": null,
@@ -4823,11 +5299,20 @@
     "thumbnail": "/api/import/library/import-fa4598b4-2663-41c2-b816-33670b73c5a1-garment.png",
     "modeledImage": null,
     "importJobId": "fa4598b4-2663-41c2-b816-33670b73c5a1",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Stilettos negros de tiras confeccionada en cuero, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-13d81096-ebf6-47cf-9514-3d184e2de19a",
-    "name": "Grey Leopard Print Tie-Front Shirt",
+    "name": "Camisa animal print gris atada adelante",
     "part": "upperbody",
     "color": "#a49a90",
     "secondaryColor": "#2e2a26",
@@ -4856,43 +5341,19 @@
     "thumbnail": "/api/import/library/import-13d81096-ebf6-47cf-9514-3d184e2de19a-garment.png",
     "modeledImage": null,
     "importJobId": "13d81096-ebf6-47cf-9514-3d184e2de19a",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-2ba2f74b-e417-4294-8b0d-b4ba453433ff",
-    "name": "Grey Leopard Print Wide-Leg Pants",
-    "part": "lowerbody",
-    "color": "#a49a90",
-    "secondaryColor": "#2e2a26",
-    "palette": [
-      "#a49a90",
-      "#2e2a26"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "tags": [
-      "hyfve fw 2026",
-      "leopard",
-      "wide-leg"
-    ],
-    "season": "autumn",
-    "material": "synthetic",
-    "silhouette": "relaxed",
-    "weight": "light",
-    "climates": [
-      "mild"
-    ],
-    "occasions": [
-      "casual",
-      "smart-casual"
-    ],
-    "image": "/api/import/library/import-2ba2f74b-e417-4294-8b0d-b4ba453433ff-garment.png",
-    "thumbnail": "/api/import/library/import-2ba2f74b-e417-4294-8b0d-b4ba453433ff-garment.png",
-    "modeledImage": null,
-    "importJobId": "2ba2f74b-e417-4294-8b0d-b4ba453433ff",
-    "gender": "mujer"
+    "description": "Camisa animal print gris atada adelante confeccionada en material sintético, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-72d6bd17-16d7-4aa4-b93b-45f656e18894",
-    "name": "Leopard Print Satin Tie-Front Shirt",
+    "name": "Camisa satinada animal print atada adelante",
     "part": "upperbody",
     "color": "#c9b394",
     "secondaryColor": "#2e2a26",
@@ -4922,115 +5383,19 @@
     "thumbnail": "/api/import/library/import-72d6bd17-16d7-4aa4-b93b-45f656e18894-garment.png",
     "modeledImage": null,
     "importJobId": "72d6bd17-16d7-4aa4-b93b-45f656e18894",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-022b6cd2-4bc1-4a1d-9aad-e265c0f6b4cb",
-    "name": "Leopard Print Satin Wide-Leg Pants",
-    "part": "lowerbody",
-    "color": "#c9b394",
-    "secondaryColor": "#2e2a26",
-    "palette": [
-      "#c9b394",
-      "#2e2a26"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "tags": [
-      "hyfve fw 2026",
-      "leopard",
-      "satin",
-      "wide-leg"
-    ],
-    "season": "autumn",
-    "material": "synthetic",
-    "silhouette": "relaxed",
-    "weight": "light",
-    "climates": [
-      "mild"
-    ],
-    "occasions": [
-      "smart-casual",
-      "event",
-      "casual"
-    ],
-    "image": "/api/import/library/import-022b6cd2-4bc1-4a1d-9aad-e265c0f6b4cb-garment.png",
-    "thumbnail": "/api/import/library/import-022b6cd2-4bc1-4a1d-9aad-e265c0f6b4cb-garment.png",
-    "modeledImage": null,
-    "importJobId": "022b6cd2-4bc1-4a1d-9aad-e265c0f6b4cb",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-8854d4ec-d701-460d-9ba7-ccbb7a6346dd",
-    "name": "Grey Leopard Print Satin Button-Up Shirt",
-    "part": "upperbody",
-    "color": "#b8b3ac",
-    "secondaryColor": "#3d3a36",
-    "palette": [
-      "#b8b3ac",
-      "#3d3a36"
-    ],
-    "tags": [
-      "hyfve fw 2026",
-      "leopard",
-      "satin",
-      "button-up"
-    ],
-    "season": "autumn",
-    "material": "synthetic",
-    "silhouette": "relaxed",
-    "weight": "light",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "smart-casual",
-      "event",
-      "casual"
-    ],
-    "image": "/api/import/library/import-8854d4ec-d701-460d-9ba7-ccbb7a6346dd-garment.png",
-    "thumbnail": "/api/import/library/import-8854d4ec-d701-460d-9ba7-ccbb7a6346dd-garment.png",
-    "modeledImage": null,
-    "importJobId": "8854d4ec-d701-460d-9ba7-ccbb7a6346dd",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-1be79d76-34ee-4e51-bc6b-6672de030143",
-    "name": "Grey Leopard Print Wide Leg Pants",
-    "part": "lowerbody",
-    "color": "#b8b3ac",
-    "secondaryColor": "#3d3a36",
-    "palette": [
-      "#b8b3ac",
-      "#3d3a36"
-    ],
-    "tags": [
-      "hyfve fw 2026",
-      "leopard",
-      "wide-leg",
-      "satin"
-    ],
-    "season": "autumn",
-    "material": "synthetic",
-    "silhouette": "flowy",
-    "weight": "light",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "smart-casual",
-      "event",
-      "casual"
-    ],
-    "image": "/api/import/library/import-1be79d76-34ee-4e51-bc6b-6672de030143-garment.png",
-    "thumbnail": "/api/import/library/import-1be79d76-34ee-4e51-bc6b-6672de030143-garment.png",
-    "modeledImage": null,
-    "importJobId": "1be79d76-34ee-4e51-bc6b-6672de030143",
-    "gender": "mujer"
+    "description": "Camisa satinada animal print atada adelante confeccionada en material sintético, con calce relajado. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-0f0309b7-af93-45c4-bcc7-8ee7cd11372f",
-    "name": "Black Strappy Flat Sandals",
+    "name": "Sandalias bajas negras de tiras",
     "part": "shoes",
     "color": "#161616",
     "secondaryColor": null,
@@ -5058,11 +5423,20 @@
     "thumbnail": "/api/import/library/import-0f0309b7-af93-45c4-bcc7-8ee7cd11372f-garment.png",
     "modeledImage": null,
     "importJobId": "0f0309b7-af93-45c4-bcc7-8ee7cd11372f",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Sandalias bajas negras de tiras confeccionada en cuero, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-0bd7a22a-e590-4bf0-8f8e-0110b74c8d2e",
-    "name": "Leopard Print Satin Tie-Front Cropped Shirt",
+    "name": "Camisa corta satinada animal print atada",
     "part": "upperbody",
     "color": "#c9b08a",
     "secondaryColor": "#2e2a24",
@@ -5093,11 +5467,19 @@
     "thumbnail": "/api/import/library/import-0bd7a22a-e590-4bf0-8f8e-0110b74c8d2e-garment.png",
     "modeledImage": null,
     "importJobId": "0bd7a22a-e590-4bf0-8f8e-0110b74c8d2e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Camisa corta satinada animal print atada confeccionada en material sintético, con calce relajado. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-624c9dce-ff00-430b-828c-3b75a13beb95",
-    "name": "Leopard Print Satin High-Waist Wide-Leg Pants",
+    "name": "Pantalón ancho satinado animal print tiro alto",
     "part": "lowerbody",
     "color": "#c9b08a",
     "secondaryColor": "#2e2a24",
@@ -5128,43 +5510,19 @@
     "thumbnail": "/api/import/library/import-624c9dce-ff00-430b-828c-3b75a13beb95-garment.png",
     "modeledImage": null,
     "importJobId": "624c9dce-ff00-430b-828c-3b75a13beb95",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-99d27023-e58d-454b-9c9f-ab80d4e21b33",
-    "name": "Black Strappy Heeled Sandals",
-    "part": "shoes",
-    "color": "#151515",
-    "secondaryColor": null,
-    "palette": [
-      "#151515"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
     ],
-    "tags": [
-      "hyfve fw 2026",
-      "heels",
-      "strappy"
-    ],
-    "season": "all",
-    "material": "leather",
-    "silhouette": "fitted",
-    "weight": "light",
-    "climates": [
-      "mild",
-      "warm"
-    ],
-    "occasions": [
-      "event",
-      "smart-casual"
-    ],
-    "image": "/api/import/library/import-99d27023-e58d-454b-9c9f-ab80d4e21b33-garment.png",
-    "thumbnail": "/api/import/library/import-99d27023-e58d-454b-9c9f-ab80d4e21b33-garment.png",
-    "modeledImage": null,
-    "importJobId": "99d27023-e58d-454b-9c9f-ab80d4e21b33",
-    "gender": "mujer"
+    "description": "Pantalón ancho satinado animal print tiro alto confeccionada en material sintético, con calce relajado. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c80b5eb8-bfd4-49d2-b0ff-67128509df52",
-    "name": "Tan Leopard Print Satin Button-Up Shirt",
+    "name": "Camisa satinada animal print tostado",
     "part": "upperbody",
     "color": "#c9ab84",
     "secondaryColor": "#3f342a",
@@ -5194,11 +5552,19 @@
     "thumbnail": "/api/import/library/import-c80b5eb8-bfd4-49d2-b0ff-67128509df52-garment.png",
     "modeledImage": null,
     "importJobId": "c80b5eb8-bfd4-49d2-b0ff-67128509df52",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Camisa satinada animal print tostado confeccionada en material sintético, con calce relajado. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-823fed18-a8e3-43ef-b749-017ad0eebb1a",
-    "name": "Tan Leopard Print Wide-Leg Pants",
+    "name": "Pantalón ancho animal print tostado",
     "part": "lowerbody",
     "color": "#c9ab84",
     "secondaryColor": "#3f342a",
@@ -5228,11 +5594,19 @@
     "thumbnail": "/api/import/library/import-823fed18-a8e3-43ef-b749-017ad0eebb1a-garment.png",
     "modeledImage": null,
     "importJobId": "823fed18-a8e3-43ef-b749-017ad0eebb1a",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón ancho animal print tostado confeccionada en material sintético, con caída fluida. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c14bc350-f4b5-46cf-8b7c-28113db99f2e",
-    "name": "Black Pointed-Toe Heeled Sandals",
+    "name": "Sandalias negras en punta con taco",
     "part": "shoes",
     "color": "#151515",
     "secondaryColor": null,
@@ -5260,11 +5634,20 @@
     "thumbnail": "/api/import/library/import-c14bc350-f4b5-46cf-8b7c-28113db99f2e-garment.png",
     "modeledImage": null,
     "importJobId": "c14bc350-f4b5-46cf-8b7c-28113db99f2e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Sandalias negras en punta con taco confeccionada en cuero, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f7ec9b4b-1886-4640-b940-d1590be123f1",
-    "name": "Burgundy Argyle V-Neck Cropped Sweater",
+    "name": "Sweater corto rombos bordó",
     "part": "upperbody",
     "color": "#7a1f2b",
     "secondaryColor": "#232a44",
@@ -5294,11 +5677,19 @@
     "thumbnail": "/api/import/library/import-f7ec9b4b-1886-4640-b940-d1590be123f1-garment.png",
     "modeledImage": null,
     "importJobId": "f7ec9b4b-1886-4640-b940-d1590be123f1",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Sweater corto rombos bordó confeccionada en tejido de punto, con silueta entallada. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-afabf069-85e6-4095-9a95-c3b7c7173fb5",
-    "name": "Light Wash Paneled Denim Skirt",
+    "name": "Pollera de jean lavado claro con paneles",
     "part": "lowerbody",
     "color": "#7fa3c4",
     "secondaryColor": null,
@@ -5327,11 +5718,19 @@
     "thumbnail": "/api/import/library/import-afabf069-85e6-4095-9a95-c3b7c7173fb5-garment.png",
     "modeledImage": null,
     "importJobId": "afabf069-85e6-4095-9a95-c3b7c7173fb5",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pollera de jean lavado claro con paneles confeccionada en denim, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-295f984b-90a6-4c34-a389-7269b8360d5b",
-    "name": "Black Smocked Mock Neck Crop Top",
+    "name": "Crop top negro fruncido medio polo",
     "part": "upperbody",
     "color": "#141414",
     "secondaryColor": null,
@@ -5359,11 +5758,19 @@
     "thumbnail": "/api/import/library/import-295f984b-90a6-4c34-a389-7269b8360d5b-garment.png",
     "modeledImage": null,
     "importJobId": "295f984b-90a6-4c34-a389-7269b8360d5b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Crop top negro fruncido medio polo confeccionada en material sintético, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e4558826-15db-44b3-9d14-6c1aa5a3c1e6",
-    "name": "Grey Glen Plaid Wide-Leg Trousers",
+    "name": "Pantalón ancho príncipe de Gales gris",
     "part": "lowerbody",
     "color": "#7d7d7d",
     "secondaryColor": null,
@@ -5393,11 +5800,19 @@
     "thumbnail": "/api/import/library/import-e4558826-15db-44b3-9d14-6c1aa5a3c1e6-garment.png",
     "modeledImage": null,
     "importJobId": "e4558826-15db-44b3-9d14-6c1aa5a3c1e6",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón ancho príncipe de Gales gris confeccionada en materiales combinados, con calce relajado. Ideal para la oficina. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f34f7fd6-a0a6-4e77-9666-6d2c8fa6e2bf",
-    "name": "Chocolate Brown Faux Leather Bomber Jacket",
+    "name": "Campera bomber de cuero sintético chocolate",
     "part": "wholebody_up",
     "color": "#4a2420",
     "secondaryColor": null,
@@ -5427,11 +5842,18 @@
     "thumbnail": "/api/import/library/import-f34f7fd6-a0a6-4e77-9666-6d2c8fa6e2bf-garment.png",
     "modeledImage": null,
     "importJobId": "f34f7fd6-a0a6-4e77-9666-6d2c8fa6e2bf",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Campera bomber de cuero sintético chocolate confeccionada en cuero, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-cf215823-f7e4-4b18-9c8e-55e16089615b",
-    "name": "Grey Houndstooth Tapered Trousers",
+    "name": "Pantalón pata de gallo gris",
     "part": "lowerbody",
     "color": "#8d8d8a",
     "secondaryColor": "#2e2e2c",
@@ -5461,11 +5883,19 @@
     "thumbnail": "/api/import/library/import-cf215823-f7e4-4b18-9c8e-55e16089615b-garment.png",
     "modeledImage": null,
     "importJobId": "cf215823-f7e4-4b18-9c8e-55e16089615b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón pata de gallo gris confeccionada en materiales combinados, con calce clásico. Ideal para la oficina. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-8da67f14-7c78-4511-a3c8-759eb82a7629",
-    "name": "Pale Yellow Chicago Graphic Long-Sleeve Ringer Tee",
+    "name": "Remera manga larga amarilla Chicago",
     "part": "upperbody",
     "color": "#f5eeb8",
     "secondaryColor": "#4a2318",
@@ -5494,11 +5924,19 @@
     "thumbnail": "/api/import/library/import-8da67f14-7c78-4511-a3c8-759eb82a7629-garment.png",
     "modeledImage": null,
     "importJobId": "8da67f14-7c78-4511-a3c8-759eb82a7629",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Remera manga larga amarilla Chicago confeccionada en algodón, con silueta entallada. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-bb9cf3a5-3295-48f8-85f6-118d40840d44",
-    "name": "Dark-Wash High-Rise Straight Jeans",
+    "name": "Jean recto tiro alto lavado oscuro",
     "part": "lowerbody",
     "color": "#2d4d76",
     "secondaryColor": null,
@@ -5527,11 +5965,19 @@
     "thumbnail": "/api/import/library/import-bb9cf3a5-3295-48f8-85f6-118d40840d44-garment.png",
     "modeledImage": null,
     "importJobId": "bb9cf3a5-3295-48f8-85f6-118d40840d44",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean recto tiro alto lavado oscuro confeccionada en denim, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-16b6fe3b-3a1f-4ec5-9b97-d0a10cfb6577",
-    "name": "Black Faux Leather One-Shoulder Mini Dress",
+    "name": "Vestido corto un hombro de cuero sintético",
     "part": "wholebody_up",
     "color": "#1a1a1a",
     "secondaryColor": null,
@@ -5559,45 +6005,18 @@
     "thumbnail": "/api/import/library/import-16b6fe3b-3a1f-4ec5-9b97-d0a10cfb6577-garment.png",
     "modeledImage": null,
     "importJobId": "16b6fe3b-3a1f-4ec5-9b97-d0a10cfb6577",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-7931a0ee-092b-4cae-ad62-68ad7c51fd63",
-    "name": "Black Pointed-Toe Pumps",
-    "part": "shoes",
-    "color": "#141414",
-    "secondaryColor": null,
-    "palette": [
-      "#141414"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
     ],
-    "tags": [
-      "iris casual",
-      "pumps",
-      "pointed-toe",
-      "heels"
-    ],
-    "season": "all",
-    "material": "leather",
-    "silhouette": "fitted",
-    "weight": "light",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "event",
-      "office",
-      "smart-casual"
-    ],
-    "image": "/api/import/library/import-7931a0ee-092b-4cae-ad62-68ad7c51fd63-garment.png",
-    "thumbnail": "/api/import/library/import-7931a0ee-092b-4cae-ad62-68ad7c51fd63-garment.png",
-    "modeledImage": null,
-    "importJobId": "7931a0ee-092b-4cae-ad62-68ad7c51fd63",
-    "gender": "mujer"
+    "description": "Vestido corto un hombro de cuero sintético confeccionada en cuero, con silueta entallada. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-5896c5fc-19ae-42b2-8731-cb21ca45df4d",
-    "name": "Sage Green Hooded Utility Jacket",
+    "name": "Campera utilitaria verde salvia con capucha",
     "part": "wholebody_up",
     "color": "#b6bdad",
     "secondaryColor": null,
@@ -5627,11 +6046,18 @@
     "thumbnail": "/api/import/library/import-5896c5fc-19ae-42b2-8731-cb21ca45df4d-garment.png",
     "modeledImage": null,
     "importJobId": "5896c5fc-19ae-42b2-8731-cb21ca45df4d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Campera utilitaria verde salvia con capucha confeccionada en algodón, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-d9e79217-990f-47ad-8d06-85428b34e3d2",
-    "name": "White Cropped Square-Neck Tank Top",
+    "name": "Musculosa corta blanca escote recto",
     "part": "upperbody",
     "color": "#f7f6f3",
     "secondaryColor": null,
@@ -5660,11 +6086,19 @@
     "thumbnail": "/api/import/library/import-d9e79217-990f-47ad-8d06-85428b34e3d2-garment.png",
     "modeledImage": null,
     "importJobId": "d9e79217-990f-47ad-8d06-85428b34e3d2",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Musculosa corta blanca escote recto confeccionada en algodón, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f2130efd-bca0-4b71-8fca-7fa5976d56c7",
-    "name": "White High-Waist Jeans",
+    "name": "Jean blanco tiro alto",
     "part": "lowerbody",
     "color": "#f2f1ee",
     "secondaryColor": null,
@@ -5692,11 +6126,19 @@
     "thumbnail": "/api/import/library/import-f2130efd-bca0-4b71-8fca-7fa5976d56c7-garment.png",
     "modeledImage": null,
     "importJobId": "f2130efd-bca0-4b71-8fca-7fa5976d56c7",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean blanco tiro alto confeccionada en denim, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-ce98a8f8-ba67-4c51-ae29-ad482371114e",
-    "name": "Gold Chunky Chain Necklace",
+    "name": "Collar de cadena gruesa dorada",
     "part": "accessories_up",
     "color": "#c9a24a",
     "secondaryColor": null,
@@ -5727,11 +6169,15 @@
     "thumbnail": "/api/import/library/import-ce98a8f8-ba67-4c51-ae29-ad482371114e-garment.png",
     "modeledImage": null,
     "importJobId": "ce98a8f8-ba67-4c51-ae29-ad482371114e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Collar de cadena gruesa dorada confeccionada en materiales combinados, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-6ba92d65-ed0e-4256-948e-a425b6d3a4fc",
-    "name": "Tan Striped Band-Collar Button-Up Blouse",
+    "name": "Blusa a rayas tostada cuello mao",
     "part": "upperbody",
     "color": "#f2ede4",
     "secondaryColor": "#a97c53",
@@ -5762,43 +6208,19 @@
     "thumbnail": "/api/import/library/import-6ba92d65-ed0e-4256-948e-a425b6d3a4fc-garment.png",
     "modeledImage": null,
     "importJobId": "6ba92d65-ed0e-4256-948e-a425b6d3a4fc",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-8a5ae298-565c-4e24-ac14-4dd43922df7e",
-    "name": "Medium Wash Skinny Jeans",
-    "part": "lowerbody",
-    "color": "#3f5d80",
-    "secondaryColor": null,
-    "palette": [
-      "#3f5d80"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "tags": [
-      "mine",
-      "denim",
-      "skinny"
-    ],
-    "season": "all",
-    "material": "denim",
-    "silhouette": "fitted",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "weekend"
-    ],
-    "image": "/api/import/library/import-8a5ae298-565c-4e24-ac14-4dd43922df7e-garment.png",
-    "thumbnail": "/api/import/library/import-8a5ae298-565c-4e24-ac14-4dd43922df7e-garment.png",
-    "modeledImage": null,
-    "importJobId": "8a5ae298-565c-4e24-ac14-4dd43922df7e",
-    "gender": "mujer"
+    "description": "Blusa a rayas tostada cuello mao confeccionada en material sintético, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-41a8ceb6-2d3b-4c98-bfb8-54b0d796abfc",
-    "name": "Taupe Belted Midi Shirt Dress with Gold Buttons",
+    "name": "Vestido camisero midi topo con cinturón",
     "part": "wholebody_up",
     "color": "#b39383",
     "secondaryColor": null,
@@ -5827,11 +6249,18 @@
     "thumbnail": "/api/import/library/import-41a8ceb6-2d3b-4c98-bfb8-54b0d796abfc-garment.png",
     "modeledImage": null,
     "importJobId": "41a8ceb6-2d3b-4c98-bfb8-54b0d796abfc",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Vestido camisero midi topo con cinturón confeccionada en material sintético, con caída fluida. Ideal para la oficina. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-072b890f-d73d-4105-88fe-89313c4121d3",
-    "name": "Black Skinny Belt with Gold Buckle",
+    "name": "Cinturón fino negro con hebilla dorada",
     "part": "accessories_up",
     "color": "#26221f",
     "secondaryColor": null,
@@ -5860,11 +6289,15 @@
     "thumbnail": "/api/import/library/import-072b890f-d73d-4105-88fe-89313c4121d3-garment.png",
     "modeledImage": null,
     "importJobId": "072b890f-d73d-4105-88fe-89313c4121d3",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Cinturón fino negro con hebilla dorada confeccionada en cuero, con silueta entallada. Ideal para la oficina. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-7d68c799-d05d-4ad2-bccc-c01063949b82",
-    "name": "Cream Floral Chiffon Peasant Blouse",
+    "name": "Blusa campesina de gasa floral crema",
     "part": "upperbody",
     "color": "#f0ead9",
     "secondaryColor": "#c8a377",
@@ -5895,11 +6328,19 @@
     "thumbnail": "/api/import/library/import-7d68c799-d05d-4ad2-bccc-c01063949b82-garment.png",
     "modeledImage": null,
     "importJobId": "7d68c799-d05d-4ad2-bccc-c01063949b82",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa campesina de gasa floral crema confeccionada en material sintético, con caída fluida. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f0e19ac8-ee13-40de-9b5d-3c0fe7aa13cb",
-    "name": "Black Slim Pants",
+    "name": "Pantalón slim negro",
     "part": "lowerbody",
     "color": "#17171a",
     "secondaryColor": null,
@@ -5928,11 +6369,19 @@
     "thumbnail": "/api/import/library/import-f0e19ac8-ee13-40de-9b5d-3c0fe7aa13cb-garment.png",
     "modeledImage": null,
     "importJobId": "f0e19ac8-ee13-40de-9b5d-3c0fe7aa13cb",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón slim negro confeccionada en material sintético, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-9dd3a0df-b63a-4237-b0c6-88cb17c5dde1",
-    "name": "Champagne Beige Faux Wrap Ruffle Dress",
+    "name": "Vestido cruzado champagne con volados",
     "part": "wholebody_up",
     "color": "#ddc9a3",
     "secondaryColor": null,
@@ -5962,11 +6411,18 @@
     "thumbnail": "/api/import/library/import-9dd3a0df-b63a-4237-b0c6-88cb17c5dde1-garment.png",
     "modeledImage": null,
     "importJobId": "9dd3a0df-b63a-4237-b0c6-88cb17c5dde1",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Vestido cruzado champagne con volados confeccionada en material sintético, con caída fluida. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4ce2bfb8-8557-4d23-86b2-be119a3290a7",
-    "name": "Camel Sheer Chiffon Smocked-Waist Blouse",
+    "name": "Blusa de gasa camel con cintura fruncida",
     "part": "upperbody",
     "color": "#b98a63",
     "secondaryColor": null,
@@ -5995,43 +6451,19 @@
     "thumbnail": "/api/import/library/import-4ce2bfb8-8557-4d23-86b2-be119a3290a7-garment.png",
     "modeledImage": null,
     "importJobId": "4ce2bfb8-8557-4d23-86b2-be119a3290a7",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-c3fddeff-8dde-4f1d-86eb-7aeea5cd100a",
-    "name": "Medium Wash High-Rise Jeans",
-    "part": "lowerbody",
-    "color": "#7d9fc0",
-    "secondaryColor": null,
-    "palette": [
-      "#7d9fc0"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "tags": [
-      "mine",
-      "denim",
-      "high-waist"
-    ],
-    "season": "all",
-    "material": "denim",
-    "silhouette": "regular",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "weekend"
-    ],
-    "image": "/api/import/library/import-c3fddeff-8dde-4f1d-86eb-7aeea5cd100a-garment.png",
-    "thumbnail": "/api/import/library/import-c3fddeff-8dde-4f1d-86eb-7aeea5cd100a-garment.png",
-    "modeledImage": null,
-    "importJobId": "c3fddeff-8dde-4f1d-86eb-7aeea5cd100a",
-    "gender": "mujer"
+    "description": "Blusa de gasa camel con cintura fruncida confeccionada en material sintético, con caída fluida. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f7fd414b-0298-4437-b4cf-db83c2d48950",
-    "name": "Black Polka Dot Ruffle-Sleeve Midi Dress",
+    "name": "Vestido midi negro a lunares",
     "part": "wholebody_up",
     "color": "#161616",
     "secondaryColor": "#eceae4",
@@ -6061,11 +6493,18 @@
     "thumbnail": "/api/import/library/import-f7fd414b-0298-4437-b4cf-db83c2d48950-garment.png",
     "modeledImage": null,
     "importJobId": "f7fd414b-0298-4437-b4cf-db83c2d48950",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Vestido midi negro a lunares confeccionada en material sintético, con caída fluida. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-105685f8-7b2f-4b14-92f5-1b86ea238006",
-    "name": "Black Lace-Up Flat Sandals",
+    "name": "Sandalias bajas negras atadas",
     "part": "shoes",
     "color": "#1a1a1a",
     "secondaryColor": null,
@@ -6094,11 +6533,20 @@
     "thumbnail": "/api/import/library/import-105685f8-7b2f-4b14-92f5-1b86ea238006-garment.png",
     "modeledImage": null,
     "importJobId": "105685f8-7b2f-4b14-92f5-1b86ea238006",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Sandalias bajas negras atadas confeccionada en material sintético, con silueta entallada. Ideal para el día a día. Pensada para verano y para los días de calor de la temporada."
   },
   {
     "id": "import-b708a0b1-4b21-41c1-9634-5bc82cebfb41",
-    "name": "Navy Flutter-Sleeve Blouse with Lace Yoke",
+    "name": "Blusa azul marino con encaje",
     "part": "upperbody",
     "color": "#1e2a4a",
     "secondaryColor": null,
@@ -6128,11 +6576,19 @@
     "thumbnail": "/api/import/library/import-b708a0b1-4b21-41c1-9634-5bc82cebfb41-garment.png",
     "modeledImage": null,
     "importJobId": "b708a0b1-4b21-41c1-9634-5bc82cebfb41",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa azul marino con encaje confeccionada en material sintético, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-df715acd-5243-4892-aef9-f25d3bb425bb",
-    "name": "White T-Shirt with Grommet Shoulder Detail",
+    "name": "Remera blanca con ojales en hombros",
     "part": "upperbody",
     "color": "#f6f6f6",
     "secondaryColor": null,
@@ -6162,11 +6618,19 @@
     "thumbnail": "/api/import/library/import-df715acd-5243-4892-aef9-f25d3bb425bb-garment.png",
     "modeledImage": null,
     "importJobId": "df715acd-5243-4892-aef9-f25d3bb425bb",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Remera blanca con ojales en hombros confeccionada en algodón, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-de10766f-838d-49cd-bfa9-18f5063caf26",
-    "name": "Cream Ribbed Long-Sleeve Crop Top",
+    "name": "Crop top morley crema manga larga",
     "part": "upperbody",
     "color": "#ece4d4",
     "secondaryColor": null,
@@ -6196,11 +6660,19 @@
     "thumbnail": "/api/import/library/import-de10766f-838d-49cd-bfa9-18f5063caf26-garment.png",
     "modeledImage": null,
     "importJobId": "de10766f-838d-49cd-bfa9-18f5063caf26",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Crop top morley crema manga larga confeccionada en tejido de punto, con silueta entallada. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-a2cc0788-048b-463e-9991-b998c0d37f0f",
-    "name": "Medium Wash High-Rise Wide-Leg Jeans",
+    "name": "Jean ancho tiro alto lavado medio",
     "part": "lowerbody",
     "color": "#46658c",
     "secondaryColor": null,
@@ -6230,11 +6702,19 @@
     "thumbnail": "/api/import/library/import-a2cc0788-048b-463e-9991-b998c0d37f0f-garment.png",
     "modeledImage": null,
     "importJobId": "a2cc0788-048b-463e-9991-b998c0d37f0f",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean ancho tiro alto lavado medio confeccionada en denim, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-bb14bc1f-4179-44ea-b6ec-d66cb87edeea",
-    "name": "White Pointed-Toe Heeled Mules",
+    "name": "Mules blancas en punta con taco",
     "part": "shoes",
     "color": "#f4f2ee",
     "secondaryColor": null,
@@ -6263,11 +6743,20 @@
     "thumbnail": "/api/import/library/import-bb14bc1f-4179-44ea-b6ec-d66cb87edeea-garment.png",
     "modeledImage": null,
     "importJobId": "bb14bc1f-4179-44ea-b6ec-d66cb87edeea",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Mules blancas en punta con taco confeccionada en cuero, con silueta entallada. Ideal para un look smart casual. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-90466617-d56e-4efb-bf05-a75a79771a2b",
-    "name": "Dark Blue Oversized Denim Shirt Jacket",
+    "name": "Camisaco de jean azul oversized",
     "part": "wholebody_up",
     "color": "#2a4a8c",
     "secondaryColor": null,
@@ -6296,11 +6785,18 @@
     "thumbnail": "/api/import/library/import-90466617-d56e-4efb-bf05-a75a79771a2b-garment.png",
     "modeledImage": null,
     "importJobId": "90466617-d56e-4efb-bf05-a75a79771a2b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Camisaco de jean azul oversized confeccionada en denim, con corte oversized. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-48739846-44fe-44db-b5db-358a2efda8ee",
-    "name": "Dark Indigo Contrast-Stitch Denim Jacket",
+    "name": "Campera de jean índigo con costuras en contraste",
     "part": "wholebody_up",
     "color": "#1e2a44",
     "secondaryColor": null,
@@ -6329,11 +6825,18 @@
     "thumbnail": "/api/import/library/import-48739846-44fe-44db-b5db-358a2efda8ee-garment.png",
     "modeledImage": null,
     "importJobId": "48739846-44fe-44db-b5db-358a2efda8ee",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Campera de jean índigo con costuras en contraste confeccionada en denim, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c237bd77-4c10-4432-84ad-237eefa8c2e9",
-    "name": "Dark Blue Pinstripe Wide-Leg Jeans",
+    "name": "Jean ancho azul a rayas",
     "part": "lowerbody",
     "color": "#27354f",
     "secondaryColor": null,
@@ -6362,11 +6865,19 @@
     "thumbnail": "/api/import/library/import-c237bd77-4c10-4432-84ad-237eefa8c2e9-garment.png",
     "modeledImage": null,
     "importJobId": "c237bd77-4c10-4432-84ad-237eefa8c2e9",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean ancho azul a rayas confeccionada en denim, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-9524ba9e-9c57-47ba-b9ad-bcacffa21972",
-    "name": "Camel Corduroy Barrel-Leg Jeans",
+    "name": "Jean barrel de corderoy camel",
     "part": "lowerbody",
     "color": "#9a6b35",
     "secondaryColor": null,
@@ -6396,11 +6907,19 @@
     "thumbnail": "/api/import/library/import-9524ba9e-9c57-47ba-b9ad-bcacffa21972-garment.png",
     "modeledImage": null,
     "importJobId": "9524ba9e-9c57-47ba-b9ad-bcacffa21972",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean barrel de corderoy camel confeccionada en algodón, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-99e7c19a-1efc-45ba-afa4-580e2380d43d",
-    "name": "Taupe Slingback Kitten Heels",
+    "name": "Zapatos slingback topo taco kitten",
     "part": "shoes",
     "color": "#b3a291",
     "secondaryColor": null,
@@ -6429,11 +6948,20 @@
     "thumbnail": "/api/import/library/import-99e7c19a-1efc-45ba-afa4-580e2380d43d-garment.png",
     "modeledImage": null,
     "importJobId": "99e7c19a-1efc-45ba-afa4-580e2380d43d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Zapatos slingback topo taco kitten confeccionada en cuero, con calce clásico. Ideal para la oficina. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f47f19d3-c835-4e67-a0c4-54fcdfd9e112",
-    "name": "Chocolate Brown Mesh Halter Top",
+    "name": "Top halter de tul chocolate",
     "part": "upperbody",
     "color": "#5c3a38",
     "secondaryColor": null,
@@ -6461,11 +6989,19 @@
     "thumbnail": "/api/import/library/import-f47f19d3-c835-4e67-a0c4-54fcdfd9e112-garment.png",
     "modeledImage": null,
     "importJobId": "f47f19d3-c835-4e67-a0c4-54fcdfd9e112",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top halter de tul chocolate confeccionada en material sintético, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-018c5acb-c167-4658-a260-1bf69efda71f",
-    "name": "White Flowy Smocked-Waist Maxi Skirt",
+    "name": "Pollera maxi fluida blanca con cintura fruncida",
     "part": "lowerbody",
     "color": "#f4f2ec",
     "secondaryColor": null,
@@ -6494,11 +7030,19 @@
     "thumbnail": "/api/import/library/import-018c5acb-c167-4658-a260-1bf69efda71f-garment.png",
     "modeledImage": null,
     "importJobId": "018c5acb-c167-4658-a260-1bf69efda71f",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pollera maxi fluida blanca con cintura fruncida confeccionada en algodón, con caída fluida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-ca2b0a16-5b19-459d-a307-5332798fcea8",
-    "name": "Silver Bangle Bracelet Stack",
+    "name": "Set de pulseras plateadas",
     "part": "accessories_up",
     "color": "#c8c8cc",
     "secondaryColor": null,
@@ -6527,11 +7071,15 @@
     "thumbnail": "/api/import/library/import-ca2b0a16-5b19-459d-a307-5332798fcea8-garment.png",
     "modeledImage": null,
     "importJobId": "ca2b0a16-5b19-459d-a307-5332798fcea8",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Set de pulseras plateadas confeccionada en material sintético, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-1fa29045-f21d-4fd1-8f30-a47d39d75f2b",
-    "name": "Black Open-Knit One-Sleeve Lace-Up Top",
+    "name": "Top tejido calado un hombro",
     "part": "upperbody",
     "color": "#171412",
     "secondaryColor": null,
@@ -6558,11 +7106,19 @@
     "thumbnail": "/api/import/library/import-1fa29045-f21d-4fd1-8f30-a47d39d75f2b-garment.png",
     "modeledImage": null,
     "importJobId": "1fa29045-f21d-4fd1-8f30-a47d39d75f2b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top tejido calado un hombro confeccionada en tejido de punto, con silueta entallada. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-83c3a276-37f7-484f-87af-a7618b0b76c7",
-    "name": "Grey Studded Suede Mini Skirt",
+    "name": "Minipollera de gamuza gris con tachas",
     "part": "lowerbody",
     "color": "#5c5e55",
     "secondaryColor": "#c9c9c4",
@@ -6591,11 +7147,19 @@
     "thumbnail": "/api/import/library/import-83c3a276-37f7-484f-87af-a7618b0b76c7-garment.png",
     "modeledImage": null,
     "importJobId": "83c3a276-37f7-484f-87af-a7618b0b76c7",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Minipollera de gamuza gris con tachas confeccionada en cuero, con silueta entallada. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-971c17ee-b984-4c7f-91df-813489254101",
-    "name": "Silver Oval Pendant Cord Necklace",
+    "name": "Collar de cordón con dije oval plateado",
     "part": "accessories_up",
     "color": "#c8c9c7",
     "secondaryColor": "#141414",
@@ -6625,11 +7189,15 @@
     "thumbnail": "/api/import/library/import-971c17ee-b984-4c7f-91df-813489254101-garment.png",
     "modeledImage": null,
     "importJobId": "971c17ee-b984-4c7f-91df-813489254101",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Collar de cordón con dije oval plateado confeccionada en materiales combinados, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-17aa166b-68f0-409f-9a91-848c2cfd533e",
-    "name": "Black Sequin Sleeveless Boat-Neck Top",
+    "name": "Top de lentejuelas negro",
     "part": "upperbody",
     "color": "#16161c",
     "secondaryColor": null,
@@ -6657,11 +7225,19 @@
     "thumbnail": "/api/import/library/import-17aa166b-68f0-409f-9a91-848c2cfd533e-garment.png",
     "modeledImage": null,
     "importJobId": "17aa166b-68f0-409f-9a91-848c2cfd533e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top de lentejuelas negro confeccionada en material sintético, con silueta entallada. Ideal para eventos. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-0835771b-af3f-4e7b-a45a-7737f74a1cc8",
-    "name": "Brown Suede Lace-Up Micro Skirt",
+    "name": "Micropollera de gamuza marrón con cordones",
     "part": "lowerbody",
     "color": "#5b3a24",
     "secondaryColor": null,
@@ -6689,11 +7265,19 @@
     "thumbnail": "/api/import/library/import-0835771b-af3f-4e7b-a45a-7737f74a1cc8-garment.png",
     "modeledImage": null,
     "importJobId": "0835771b-af3f-4e7b-a45a-7737f74a1cc8",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Micropollera de gamuza marrón con cordones confeccionada en cuero, con silueta entallada. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-7ed63b86-b28f-4c78-9725-03a71bd7b9d0",
-    "name": "Gold Layered Cross Pendant Necklaces",
+    "name": "Collares dorados con cruz en capas",
     "part": "accessories_up",
     "color": "#c9a24b",
     "secondaryColor": null,
@@ -6723,11 +7307,15 @@
     "thumbnail": "/api/import/library/import-7ed63b86-b28f-4c78-9725-03a71bd7b9d0-garment.png",
     "modeledImage": null,
     "importJobId": "7ed63b86-b28f-4c78-9725-03a71bd7b9d0",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Collares dorados con cruz en capas confeccionada en materiales combinados, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-5499987f-ba01-4da6-af6a-899c06982ec8",
-    "name": "Black Faux Leather Grommet Halter Corset Top",
+    "name": "Top corset halter de cuero sintético",
     "part": "upperbody",
     "color": "#1a1a1c",
     "secondaryColor": null,
@@ -6754,11 +7342,19 @@
     "thumbnail": "/api/import/library/import-5499987f-ba01-4da6-af6a-899c06982ec8-garment.png",
     "modeledImage": null,
     "importJobId": "5499987f-ba01-4da6-af6a-899c06982ec8",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top corset halter de cuero sintético confeccionada en cuero, con silueta entallada. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-9dadc96e-4fc9-4a84-89c8-2be91c765a36",
-    "name": "Dark Indigo High-Waist Jeans",
+    "name": "Jean tiro alto índigo oscuro",
     "part": "lowerbody",
     "color": "#232c3d",
     "secondaryColor": null,
@@ -6769,7 +7365,8 @@
       "salty",
       "denim",
       "high-waist",
-      "dark-wash"
+      "dark-wash",
+      "the workshop"
     ],
     "season": "all",
     "material": "denim",
@@ -6788,11 +7385,19 @@
     "thumbnail": "/api/import/library/import-9dadc96e-4fc9-4a84-89c8-2be91c765a36-garment.png",
     "modeledImage": null,
     "importJobId": "9dadc96e-4fc9-4a84-89c8-2be91c765a36",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean tiro alto índigo oscuro confeccionada en denim, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-91859c48-fdd0-4c20-bf72-a85879be8e9a",
-    "name": "Black Stone Pendant Cord Necklace",
+    "name": "Collar de cordón con dije de piedra negra",
     "part": "accessories_up",
     "color": "#131313",
     "secondaryColor": null,
@@ -6821,11 +7426,15 @@
     "thumbnail": "/api/import/library/import-91859c48-fdd0-4c20-bf72-a85879be8e9a-garment.png",
     "modeledImage": null,
     "importJobId": "91859c48-fdd0-4c20-bf72-a85879be8e9a",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Collar de cordón con dije de piedra negra confeccionada en materiales combinados, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-2a38b538-fcd5-4675-9518-d6de5e12dd38",
-    "name": "Heather Grey Ribbed Cami Tank Top",
+    "name": "Musculosa morley gris de tiras finas",
     "part": "upperbody",
     "color": "#b8bcbe",
     "secondaryColor": null,
@@ -6854,11 +7463,19 @@
     "thumbnail": "/api/import/library/import-2a38b538-fcd5-4675-9518-d6de5e12dd38-garment.png",
     "modeledImage": null,
     "importJobId": "2a38b538-fcd5-4675-9518-d6de5e12dd38",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Musculosa morley gris de tiras finas confeccionada en tejido de punto, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-cf027679-9f46-47ba-8305-696c7d882ada",
-    "name": "Black Faux Leather Studded Ruffle Mini Skirt",
+    "name": "Minipollera de cuero sintético con tachas y volados",
     "part": "lowerbody",
     "color": "#17181a",
     "secondaryColor": null,
@@ -6869,7 +7486,8 @@
       "salty",
       "faux-leather",
       "studded",
-      "ruffle-hem"
+      "ruffle-hem",
+      "mini"
     ],
     "season": "autumn",
     "material": "leather",
@@ -6887,11 +7505,19 @@
     "thumbnail": "/api/import/library/import-cf027679-9f46-47ba-8305-696c7d882ada-garment.png",
     "modeledImage": null,
     "importJobId": "cf027679-9f46-47ba-8305-696c7d882ada",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Minipollera de cuero sintético con tachas y volados confeccionada en cuero, con estructura definida. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f299f364-ffbd-4cb9-bc62-8e098d55f368",
-    "name": "Heather Grey Ribbed Tank Top",
+    "name": "Musculosa morley gris",
     "part": "upperbody",
     "color": "#b8bcbe",
     "secondaryColor": null,
@@ -6920,11 +7546,19 @@
     "thumbnail": "/api/import/library/import-f299f364-ffbd-4cb9-bc62-8e098d55f368-garment.png",
     "modeledImage": null,
     "importJobId": "f299f364-ffbd-4cb9-bc62-8e098d55f368",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Musculosa morley gris confeccionada en algodón, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-d6429106-7a61-4bf3-a77e-713a715dc3c4",
-    "name": "Black Faux Leather Studded Mini Skirt",
+    "name": "Minipollera de cuero sintético con tachas",
     "part": "lowerbody",
     "color": "#1a1a1c",
     "secondaryColor": null,
@@ -6953,11 +7587,19 @@
     "thumbnail": "/api/import/library/import-d6429106-7a61-4bf3-a77e-713a715dc3c4-garment.png",
     "modeledImage": null,
     "importJobId": "d6429106-7a61-4bf3-a77e-713a715dc3c4",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Minipollera de cuero sintético con tachas confeccionada en cuero, con silueta entallada. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4bc7a400-9011-447a-8bef-253d76097182",
-    "name": "Heather Grey Ribbed Scoop Tank Top",
+    "name": "Musculosa morley gris escote U",
     "part": "upperbody",
     "color": "#c3c9c7",
     "secondaryColor": null,
@@ -6986,44 +7628,19 @@
     "thumbnail": "/api/import/library/import-4bc7a400-9011-447a-8bef-253d76097182-garment.png",
     "modeledImage": null,
     "importJobId": "4bc7a400-9011-447a-8bef-253d76097182",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-8bfa33b7-a2e3-46a5-9d82-b1004868e959",
-    "name": "Black Faux Leather Studded Ruffle Mini Skirt",
-    "part": "lowerbody",
-    "color": "#151515",
-    "secondaryColor": null,
-    "palette": [
-      "#151515"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "tags": [
-      "salty",
-      "faux-leather",
-      "studded",
-      "mini"
-    ],
-    "season": "autumn",
-    "material": "leather",
-    "silhouette": "flowy",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "event",
-      "weekend"
-    ],
-    "image": "/api/import/library/import-8bfa33b7-a2e3-46a5-9d82-b1004868e959-garment.png",
-    "thumbnail": "/api/import/library/import-8bfa33b7-a2e3-46a5-9d82-b1004868e959-garment.png",
-    "modeledImage": null,
-    "importJobId": "8bfa33b7-a2e3-46a5-9d82-b1004868e959",
-    "gender": "mujer"
+    "description": "Musculosa morley gris escote U confeccionada en algodón, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-8ab3a51d-3e0d-4611-8833-cd1c461884e8",
-    "name": "Silver Shell Statement Earrings",
+    "name": "Aros statement de concha plateados",
     "part": "accessories_up",
     "color": "#b8bcc0",
     "secondaryColor": null,
@@ -7053,11 +7670,15 @@
     "thumbnail": "/api/import/library/import-8ab3a51d-3e0d-4611-8833-cd1c461884e8-garment.png",
     "modeledImage": null,
     "importJobId": "8ab3a51d-3e0d-4611-8833-cd1c461884e8",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Aros statement de concha plateados confeccionada en materiales combinados, con estructura definida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-5b8410a2-9d01-420a-8f96-38ed8e93ddfb",
-    "name": "Black Satin Lace-Trim Camisole",
+    "name": "Musculosa satinada negra con puntilla",
     "part": "upperbody",
     "color": "#0d0d0d",
     "secondaryColor": null,
@@ -7087,11 +7708,19 @@
     "thumbnail": "/api/import/library/import-5b8410a2-9d01-420a-8f96-38ed8e93ddfb-garment.png",
     "modeledImage": null,
     "importJobId": "5b8410a2-9d01-420a-8f96-38ed8e93ddfb",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Musculosa satinada negra con puntilla confeccionada en material sintético, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-dc28fed5-4327-47b6-9b33-ee59d5175036",
-    "name": "Ivory Satin Corset Peplum Top",
+    "name": "Top corset peplum satinado marfil",
     "part": "upperbody",
     "color": "#f0ece2",
     "secondaryColor": null,
@@ -7118,11 +7747,19 @@
     "thumbnail": "/api/import/library/import-dc28fed5-4327-47b6-9b33-ee59d5175036-garment.png",
     "modeledImage": null,
     "importJobId": "dc28fed5-4327-47b6-9b33-ee59d5175036",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top corset peplum satinado marfil confeccionada en seda, con estructura definida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-bf687a9f-b398-4399-a8f5-18fcf271c7ca",
-    "name": "Dark Brown Satin Balloon-Hem Maxi Skirt",
+    "name": "Pollera maxi satinada globo marrón oscuro",
     "part": "lowerbody",
     "color": "#2b1a15",
     "secondaryColor": null,
@@ -7151,11 +7788,19 @@
     "thumbnail": "/api/import/library/import-bf687a9f-b398-4399-a8f5-18fcf271c7ca-garment.png",
     "modeledImage": null,
     "importJobId": "bf687a9f-b398-4399-a8f5-18fcf271c7ca",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pollera maxi satinada globo marrón oscuro confeccionada en seda, con caída fluida. Ideal para eventos. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c5d47993-3023-4c28-b18c-b6506e5c471b",
-    "name": "Cream Mini Handbag with Gold Charm",
+    "name": "Mini cartera crema con dije dorado",
     "part": "accessories_up",
     "color": "#e9e0d2",
     "secondaryColor": "#c9a227",
@@ -7185,11 +7830,15 @@
     "thumbnail": "/api/import/library/import-c5d47993-3023-4c28-b18c-b6506e5c471b-garment.png",
     "modeledImage": null,
     "importJobId": "c5d47993-3023-4c28-b18c-b6506e5c471b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Mini cartera crema con dije dorado confeccionada en cuero, con estructura definida. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e65749e2-55bd-4834-9be8-127fdd1d1826",
-    "name": "Gold Metallic Strappy Heeled Sandals",
+    "name": "Sandalias doradas de tiras con taco",
     "part": "shoes",
     "color": "#c9a86a",
     "secondaryColor": null,
@@ -7217,11 +7866,20 @@
     "thumbnail": "/api/import/library/import-e65749e2-55bd-4834-9be8-127fdd1d1826-garment.png",
     "modeledImage": null,
     "importJobId": "e65749e2-55bd-4834-9be8-127fdd1d1826",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Sandalias doradas de tiras con taco confeccionada en cuero, con silueta entallada. Ideal para eventos. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4a28ee70-9551-474f-9549-834261382d8b",
-    "name": "Chocolate Brown Sheer Chiffon Tie-Front Blouse",
+    "name": "Blusa de gasa chocolate atada adelante",
     "part": "upperbody",
     "color": "#4a2620",
     "secondaryColor": null,
@@ -7250,11 +7908,19 @@
     "thumbnail": "/api/import/library/import-4a28ee70-9551-474f-9549-834261382d8b-garment.png",
     "modeledImage": null,
     "importJobId": "4a28ee70-9551-474f-9549-834261382d8b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Blusa de gasa chocolate atada adelante confeccionada en material sintético, con caída fluida. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e1ace5c8-e8d8-4166-83a9-02d0346b7b29",
-    "name": "Black Faux Leather Straight Pants",
+    "name": "Pantalón recto de cuero sintético negro",
     "part": "lowerbody",
     "color": "#151515",
     "secondaryColor": null,
@@ -7282,11 +7948,19 @@
     "thumbnail": "/api/import/library/import-e1ace5c8-e8d8-4166-83a9-02d0346b7b29-garment.png",
     "modeledImage": null,
     "importJobId": "e1ace5c8-e8d8-4166-83a9-02d0346b7b29",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón recto de cuero sintético negro confeccionada en cuero, con calce clásico. Ideal para un look smart casual. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-79318a5a-de5b-4d1d-840b-63bc73f0633d",
-    "name": "Brown Plaid Pleated Wide-Leg Trousers",
+    "name": "Pantalón ancho plisado a cuadros marrón",
     "part": "lowerbody",
     "color": "#6b4f3d",
     "secondaryColor": "#b39a7e",
@@ -7317,11 +7991,19 @@
     "thumbnail": "/api/import/library/import-79318a5a-de5b-4d1d-840b-63bc73f0633d-garment.png",
     "modeledImage": null,
     "importJobId": "79318a5a-de5b-4d1d-840b-63bc73f0633d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón ancho plisado a cuadros marrón confeccionada en lana, con calce relajado. Ideal para la oficina. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-23132552-4adb-4de3-845b-97bc19e9f55f",
-    "name": "Chocolate Brown Satin Heeled Mules",
+    "name": "Mules satinadas chocolate con taco",
     "part": "shoes",
     "color": "#5c2f22",
     "secondaryColor": null,
@@ -7350,11 +8032,20 @@
     "thumbnail": "/api/import/library/import-23132552-4adb-4de3-845b-97bc19e9f55f-garment.png",
     "modeledImage": null,
     "importJobId": "23132552-4adb-4de3-845b-97bc19e9f55f",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Mules satinadas chocolate con taco confeccionada en material sintético, con silueta entallada. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-54fd7e90-e465-47df-981a-ecaca40d132b",
-    "name": "Black Hooded Nylon Windbreaker with Drawstring Hem",
+    "name": "Rompevientos negro con capucha",
     "part": "wholebody_up",
     "color": "#1c1c1e",
     "secondaryColor": null,
@@ -7384,11 +8075,18 @@
     "thumbnail": "/api/import/library/import-54fd7e90-e465-47df-981a-ecaca40d132b-garment.png",
     "modeledImage": null,
     "importJobId": "54fd7e90-e465-47df-981a-ecaca40d132b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Rompevientos negro con capucha confeccionada en material sintético, con corte oversized. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-7e78a906-b01f-44f2-b3a9-e01ba8c8c4bd",
-    "name": "Olive Cropped Tank Top",
+    "name": "Musculosa corta oliva",
     "part": "upperbody",
     "color": "#8a7f63",
     "secondaryColor": null,
@@ -7417,11 +8115,19 @@
     "thumbnail": "/api/import/library/import-7e78a906-b01f-44f2-b3a9-e01ba8c8c4bd-garment.png",
     "modeledImage": null,
     "importJobId": "7e78a906-b01f-44f2-b3a9-e01ba8c8c4bd",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Musculosa corta oliva confeccionada en algodón, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c7805f99-a781-4c21-9e83-8528ef139ee3",
-    "name": "Black Parachute Cargo Pants",
+    "name": "Pantalón cargo paracaídas negro",
     "part": "lowerbody",
     "color": "#1e1e20",
     "secondaryColor": null,
@@ -7450,11 +8156,19 @@
     "thumbnail": "/api/import/library/import-c7805f99-a781-4c21-9e83-8528ef139ee3-garment.png",
     "modeledImage": null,
     "importJobId": "c7805f99-a781-4c21-9e83-8528ef139ee3",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón cargo paracaídas negro confeccionada en material sintético, con calce relajado. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-0e4f9941-2799-46ed-868c-1f18cebbab7f",
-    "name": "Gold Chain Link Necklace",
+    "name": "Collar de cadena dorada",
     "part": "accessories_up",
     "color": "#c9a24a",
     "secondaryColor": null,
@@ -7485,11 +8199,15 @@
     "thumbnail": "/api/import/library/import-0e4f9941-2799-46ed-868c-1f18cebbab7f-garment.png",
     "modeledImage": null,
     "importJobId": "0e4f9941-2799-46ed-868c-1f18cebbab7f",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "Único"
+    ],
+    "description": "Collar de cadena dorada confeccionada en materiales combinados, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-141af15b-d55a-4e42-aec9-a479328fd58d",
-    "name": "Chocolate Brown Single-Button Blazer",
+    "name": "Blazer chocolate un botón",
     "part": "wholebody_up",
     "color": "#7a4f2c",
     "secondaryColor": null,
@@ -7519,11 +8237,18 @@
     "thumbnail": "/api/import/library/import-141af15b-d55a-4e42-aec9-a479328fd58d-garment.png",
     "modeledImage": null,
     "importJobId": "141af15b-d55a-4e42-aec9-a479328fd58d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Blazer chocolate un botón confeccionada en material sintético, con calce relajado. Ideal para la oficina. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4b652654-25ce-4340-8298-1398b01f9cd0",
-    "name": "White Scoop-Neck Crop Tank Top",
+    "name": "Crop top blanco escote U",
     "part": "upperbody",
     "color": "#f4f2ed",
     "secondaryColor": null,
@@ -7552,11 +8277,19 @@
     "thumbnail": "/api/import/library/import-4b652654-25ce-4340-8298-1398b01f9cd0-garment.png",
     "modeledImage": null,
     "importJobId": "4b652654-25ce-4340-8298-1398b01f9cd0",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Crop top blanco escote U confeccionada en algodón, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f4c8b10c-7643-417a-a5e9-d0f6f8b5e9eb",
-    "name": "Beige High-Waist Column Midi Skirt",
+    "name": "Pollera midi columna beige",
     "part": "lowerbody",
     "color": "#d9d2c4",
     "secondaryColor": null,
@@ -7586,11 +8319,19 @@
     "thumbnail": "/api/import/library/import-f4c8b10c-7643-417a-a5e9-d0f6f8b5e9eb-garment.png",
     "modeledImage": null,
     "importJobId": "f4c8b10c-7643-417a-a5e9-d0f6f8b5e9eb",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pollera midi columna beige confeccionada en material sintético, con silueta entallada. Ideal para la oficina. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-1da8853f-2575-45b3-99e6-d7599f4f63b3",
-    "name": "Black Short Sleeve Mock Neck Ribbed Top",
+    "name": "Top morley negro medio polo",
     "part": "upperbody",
     "color": "#17171a",
     "secondaryColor": null,
@@ -7619,11 +8360,19 @@
     "thumbnail": "/api/import/library/import-1da8853f-2575-45b3-99e6-d7599f4f63b3-garment.png",
     "modeledImage": null,
     "importJobId": "1da8853f-2575-45b3-99e6-d7599f4f63b3",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top morley negro medio polo confeccionada en tejido de punto, con silueta entallada. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-5a6be600-88a9-456c-9214-94859631ae5d",
-    "name": "Grey Plaid Pleated Mini Skirt",
+    "name": "Minipollera plisada a cuadros gris",
     "part": "lowerbody",
     "color": "#8d8a82",
     "secondaryColor": "#4a463f",
@@ -7654,11 +8403,19 @@
     "thumbnail": "/api/import/library/import-5a6be600-88a9-456c-9214-94859631ae5d-garment.png",
     "modeledImage": null,
     "importJobId": "5a6be600-88a9-456c-9214-94859631ae5d",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Minipollera plisada a cuadros gris confeccionada en lana, con caída fluida. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c8b00bba-bbcf-4320-859c-912413e540ba",
-    "name": "Grey Plaid Double-Breasted Blazer",
+    "name": "Blazer cruzado a cuadros gris",
     "part": "wholebody_up",
     "color": "#8d8a82",
     "secondaryColor": "#4a463f",
@@ -7689,11 +8446,18 @@
     "thumbnail": "/api/import/library/import-c8b00bba-bbcf-4320-859c-912413e540ba-garment.png",
     "modeledImage": null,
     "importJobId": "c8b00bba-bbcf-4320-859c-912413e540ba",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Blazer cruzado a cuadros gris confeccionada en lana, con estructura definida. Ideal para la oficina. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-c8497d42-d4ea-4efb-9d42-fcca2c4c7a95",
-    "name": "Ivory and Black Wave Jacquard Crew Sweater",
+    "name": "Sweater jacquard marfil y negro",
     "part": "upperbody",
     "color": "#e3e0d8",
     "secondaryColor": "#1a1a1a",
@@ -7723,11 +8487,19 @@
     "thumbnail": "/api/import/library/import-c8497d42-d4ea-4efb-9d42-fcca2c4c7a95-garment.png",
     "modeledImage": null,
     "importJobId": "c8497d42-d4ea-4efb-9d42-fcca2c4c7a95",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Sweater jacquard marfil y negro confeccionada en tejido de punto, con calce relajado. Ideal para el día a día. Pensada para invierno, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-88530919-4448-4639-b32b-02166be91903",
-    "name": "Medium Wash Straight-Leg Jeans",
+    "name": "Jean recto lavado medio",
     "part": "lowerbody",
     "color": "#6f8fae",
     "secondaryColor": null,
@@ -7756,11 +8528,19 @@
     "thumbnail": "/api/import/library/import-88530919-4448-4639-b32b-02166be91903-garment.png",
     "modeledImage": null,
     "importJobId": "88530919-4448-4639-b32b-02166be91903",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean recto lavado medio confeccionada en denim, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-1e8cbe8b-bd8e-4b04-89f7-0aded003b177",
-    "name": "Sage Khaki Nylon Parachute Pants",
+    "name": "Pantalón paracaídas verde salvia",
     "part": "lowerbody",
     "color": "#b5ad93",
     "secondaryColor": null,
@@ -7789,11 +8569,19 @@
     "thumbnail": "/api/import/library/import-1e8cbe8b-bd8e-4b04-89f7-0aded003b177-garment.png",
     "modeledImage": null,
     "importJobId": "1e8cbe8b-bd8e-4b04-89f7-0aded003b177",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pantalón paracaídas verde salvia confeccionada en material sintético, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-f6b40fea-ea57-4d82-90db-e3443f5944c0",
-    "name": "White Fitted Tank Top",
+    "name": "Musculosa blanca entallada",
     "part": "upperbody",
     "color": "#f2f0ea",
     "secondaryColor": null,
@@ -7821,11 +8609,19 @@
     "thumbnail": "/api/import/library/import-f6b40fea-ea57-4d82-90db-e3443f5944c0-garment.png",
     "modeledImage": null,
     "importJobId": "f6b40fea-ea57-4d82-90db-e3443f5944c0",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Musculosa blanca entallada confeccionada en algodón, con silueta entallada. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e6ad030b-8cb0-464f-8081-b90f238b7546",
-    "name": "Black Suede Striped Low-Top Sneakers",
+    "name": "Zapatillas de gamuza negras con rayas",
     "part": "shoes",
     "color": "#1a1a1a",
     "secondaryColor": "#f5f2e8",
@@ -7855,11 +8651,20 @@
     "thumbnail": "/api/import/library/import-e6ad030b-8cb0-464f-8081-b90f238b7546-garment.png",
     "modeledImage": null,
     "importJobId": "e6ad030b-8cb0-464f-8081-b90f238b7546",
-    "gender": "unisex"
+    "gender": "unisex",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Zapatillas de gamuza negras con rayas confeccionada en cuero, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-bf8a897f-b442-4428-aa08-fdb030debd99",
-    "name": "Ivory Geometric Line Print Oversized Shirt",
+    "name": "Camisa oversized marfil con líneas geométricas",
     "part": "upperbody",
     "color": "#f1ede3",
     "secondaryColor": "#2d2d33",
@@ -7890,11 +8695,19 @@
     "thumbnail": "/api/import/library/import-bf8a897f-b442-4428-aa08-fdb030debd99-garment.png",
     "modeledImage": null,
     "importJobId": "bf8a897f-b442-4428-aa08-fdb030debd99",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Camisa oversized marfil con líneas geométricas confeccionada en algodón, con corte oversized. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e0b8bcb4-27d7-4634-8be0-85324aa9f991",
-    "name": "White Tailored Pleated Shorts",
+    "name": "Short sastrero plisado blanco",
     "part": "lowerbody",
     "color": "#f5f3ee",
     "secondaryColor": null,
@@ -7924,11 +8737,19 @@
     "thumbnail": "/api/import/library/import-e0b8bcb4-27d7-4634-8be0-85324aa9f991-garment.png",
     "modeledImage": null,
     "importJobId": "e0b8bcb4-27d7-4634-8be0-85324aa9f991",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Short sastrero plisado blanco confeccionada en algodón, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-0b458069-15d6-45a6-9a5c-8430299ec5c1",
-    "name": "Ivory Polka Dot Bow-Front Mini Dress",
+    "name": "Vestido corto marfil a lunares con moño",
     "part": "wholebody_up",
     "color": "#f1ede2",
     "secondaryColor": "#1c1c1c",
@@ -7958,11 +8779,18 @@
     "thumbnail": "/api/import/library/import-0b458069-15d6-45a6-9a5c-8430299ec5c1-garment.png",
     "modeledImage": null,
     "importJobId": "0b458069-15d6-45a6-9a5c-8430299ec5c1",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Vestido corto marfil a lunares con moño confeccionada en material sintético, con calce clásico. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-71623f21-6fb6-4fcf-a038-4f20cd35cb2b",
-    "name": "Chocolate Brown Side-Slit Midi Skirt",
+    "name": "Pollera midi chocolate con tajo",
     "part": "lowerbody",
     "color": "#4f3020",
     "secondaryColor": null,
@@ -7990,11 +8818,19 @@
     "thumbnail": "/api/import/library/import-71623f21-6fb6-4fcf-a038-4f20cd35cb2b-garment.png",
     "modeledImage": null,
     "importJobId": "71623f21-6fb6-4fcf-a038-4f20cd35cb2b",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Pollera midi chocolate con tajo confeccionada en material sintético, con caída fluida. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-e0bfbb66-52d1-4e0c-9480-7974a4f45dcb",
-    "name": "Cream Ribbed Knit Button-Front Top",
+    "name": "Top morley crema con botones",
     "part": "upperbody",
     "color": "#ede4d0",
     "secondaryColor": null,
@@ -8022,11 +8858,19 @@
     "thumbnail": "/api/import/library/import-e0bfbb66-52d1-4e0c-9480-7974a4f45dcb-garment.png",
     "modeledImage": null,
     "importJobId": "e0bfbb66-52d1-4e0c-9480-7974a4f45dcb",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top morley crema con botones confeccionada en tejido de punto, con silueta entallada. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-553133d3-d640-430f-ae51-f283b171e56e",
-    "name": "Grey Suede Pointed-Toe Heels",
+    "name": "Stilettos de gamuza gris en punta",
     "part": "shoes",
     "color": "#6b625c",
     "secondaryColor": null,
@@ -8054,11 +8898,20 @@
     "thumbnail": "/api/import/library/import-553133d3-d640-430f-ae51-f283b171e56e-garment.png",
     "modeledImage": null,
     "importJobId": "553133d3-d640-430f-ae51-f283b171e56e",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "description": "Stilettos de gamuza gris en punta confeccionada en cuero, con silueta entallada. Ideal para la oficina. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-4053cf47-5599-4900-b84e-af3f55da33c4",
-    "name": "Light Blue Cropped Button-Up Shirt",
+    "name": "Camisa corta celeste",
     "part": "upperbody",
     "color": "#b3c8e6",
     "secondaryColor": null,
@@ -8089,11 +8942,19 @@
     "thumbnail": "/api/import/library/import-4053cf47-5599-4900-b84e-af3f55da33c4-garment.png",
     "modeledImage": null,
     "importJobId": "4053cf47-5599-4900-b84e-af3f55da33c4",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Camisa corta celeste confeccionada en material sintético, con calce relajado. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-8ba0c54e-3833-4611-8c60-ac04793a7e98",
-    "name": "Dark Rinse High-Waist Jeans",
+    "name": "Jean tiro alto lavado oscuro",
     "part": "lowerbody",
     "color": "#1f2638",
     "secondaryColor": null,
@@ -8122,11 +8983,19 @@
     "thumbnail": "/api/import/library/import-8ba0c54e-3833-4611-8c60-ac04793a7e98-garment.png",
     "modeledImage": null,
     "importJobId": "8ba0c54e-3833-4611-8c60-ac04793a7e98",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Jean tiro alto lavado oscuro confeccionada en denim, con calce clásico. Ideal para el día a día. Una pieza versátil para todo el año, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-60cafd8b-2d26-4348-afa9-5a2b7d58ae10",
-    "name": "Black Ribbed Knit Top with Bow Keyhole Front",
+    "name": "Top morley negro con moño",
     "part": "upperbody",
     "color": "#1b1b1d",
     "secondaryColor": null,
@@ -8156,11 +9025,19 @@
     "thumbnail": "/api/import/library/import-60cafd8b-2d26-4348-afa9-5a2b7d58ae10-garment.png",
     "modeledImage": null,
     "importJobId": "60cafd8b-2d26-4348-afa9-5a2b7d58ae10",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Top morley negro con moño confeccionada en tejido de punto, con silueta entallada. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-2600977b-a67d-4982-8db8-0482c641aa76",
-    "name": "Black Belted A-Line Mini Skirt",
+    "name": "Minipollera evasé negra con cinturón",
     "part": "lowerbody",
     "color": "#1b1b1d",
     "secondaryColor": null,
@@ -8190,11 +9067,19 @@
     "thumbnail": "/api/import/library/import-2600977b-a67d-4982-8db8-0482c641aa76-garment.png",
     "modeledImage": null,
     "importJobId": "2600977b-a67d-4982-8db8-0482c641aa76",
-    "gender": "mujer"
+    "gender": "mujer",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "description": "Minipollera evasé negra con cinturón confeccionada en material sintético, con estructura definida. Ideal para un look smart casual. Pensada para otoño, de la colección Otoño–Invierno 2026."
   },
   {
     "id": "import-3a1df6be-cc18-49a1-aded-00d42acda268",
-    "name": "Ivory Striped Ribbed Mock Neck Sweater",
+    "name": "Sweater marfil a rayas medio polo",
     "part": "upperbody",
     "color": "#f0ece1",
     "secondaryColor": "#22252b",
@@ -8225,40 +9110,14 @@
     "thumbnail": "/api/import/library/import-3a1df6be-cc18-49a1-aded-00d42acda268-garment.png",
     "modeledImage": null,
     "importJobId": "3a1df6be-cc18-49a1-aded-00d42acda268",
-    "gender": "mujer"
-  },
-  {
-    "id": "import-42574cdf-abb0-4612-b300-e90691c0bfa0",
-    "name": "Dark Indigo High-Rise Jeans",
-    "part": "lowerbody",
-    "color": "#232a3d",
-    "secondaryColor": null,
-    "palette": [
-      "#232a3d"
+    "gender": "mujer",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "tags": [
-      "the workshop",
-      "denim",
-      "high-waist",
-      "dark-wash"
-    ],
-    "season": "all",
-    "material": "denim",
-    "silhouette": "regular",
-    "weight": "medium",
-    "climates": [
-      "mild",
-      "cold"
-    ],
-    "occasions": [
-      "casual",
-      "weekend",
-      "smart-casual"
-    ],
-    "image": "/api/import/library/import-42574cdf-abb0-4612-b300-e90691c0bfa0-garment.png",
-    "thumbnail": "/api/import/library/import-42574cdf-abb0-4612-b300-e90691c0bfa0-garment.png",
-    "modeledImage": null,
-    "importJobId": "42574cdf-abb0-4612-b300-e90691c0bfa0",
-    "gender": "mujer"
+    "description": "Sweater marfil a rayas medio polo confeccionada en tejido de punto, con silueta entallada. Ideal para el día a día. Pensada para otoño, de la colección Otoño–Invierno 2026."
   }
 ]

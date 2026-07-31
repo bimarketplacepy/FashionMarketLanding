@@ -3,6 +3,7 @@ import { copyFile, mkdir, readFile, rename, rm, stat, writeFile } from "node:fs/
 import path from "node:path";
 import sharp from "sharp";
 import { createAIProvider } from "./ai-provider.mjs";
+import { generateModelPhoto, modelKey, normalizePerfil, LOOKBOOK_CAMERA, styleReferences } from "./model-gen.mjs";
 
 const API_ROOT = "/api/tryon";
 const PARTS = new Set(["upperbody", "wholebody_up", "lowerbody", "accessories_up", "shoes"]);
@@ -61,6 +62,14 @@ const COMPLEXIONS = {
   media: "average, balanced build",
   atletica: "athletic, toned build",
   curvy: "curvy, fuller figure",
+  // complexiones del customizador de modelo personalizado (1|2|3)
+  1: "slender build",
+  2: "average balanced build",
+  3: "fuller sturdy build with natural proportions",
+  // complexiones del customizador anterior (perfiles ya guardados)
+  menuda: "petite slender build",
+  curva: "curvy fuller figure with natural proportions",
+  robusta: "broad sturdy plus-size build",
 };
 
 const SKIN_TONES = {
@@ -71,7 +80,7 @@ const SKIN_TONES = {
   oscura: "deep dark skin",
 };
 
-function outfitPrompt(outfit, garments, profile = {}) {
+function outfitPrompt(outfit, garments, profile = {}, style = "studio", styleRefCount = 0) {
   const usePhoto = profile.mode !== "default";
   const build = COMPLEXIONS[profile.complexion] || null;
   const tone = SKIN_TONES[profile.skinTone] || null;
@@ -93,11 +102,19 @@ function outfitPrompt(outfit, garments, profile = {}) {
   const primary = usePhoto
     ? "Primary request: Create a professional square editorial fashion photograph of the person from Image 1 wearing every exact referenced garment, and only those garments."
     : "Primary request: Create a professional square editorial fashion photograph of the described model wearing every exact referenced garment, and only those garments.";
+  // Estilo "lookbook" (cards de outfits con modelo personalizado): luz dorada
+  // de jardín calcada de las fotos de referencia; "studio" mantiene el probador.
+  const styleLine = style === "lookbook"
+    ? `Style: Photorealistic candid fashion-editorial photograph with authentic skin and fabric texture. ${LOOKBOOK_CAMERA.split("\n").slice(1).join(" ")} Full person visible, arms away from clothing, realistic anatomy.`
+    : "Style: Photorealistic natural editorial fashion campaign with authentic skin and fabric texture. Full person from head through shoes, centered, relaxed front-facing pose, arms away from clothing, warm natural light and realistic anatomy.";
+  const styleRefLine = styleRefCount
+    ? `\nThe last ${styleRefCount === 1 ? "attached image is a photographic style reference" : `${styleRefCount} attached images are photographic style references`} only — copy the framing, light and mood, never the person or the clothes shown there.`
+    : "";
   return `Use case: ${usePhoto ? "identity-preserve" : "catalog model"}
 Asset type: square virtual try-on photograph
 ${identityLine}
 ${list}
-
+${styleRefLine}
 ${primary}
 
 Outfit: ${outfit.name || "Look personalizado"}.
@@ -105,7 +122,7 @@ Context: ${outfit.occasion || "everyday"}; ${outfit.season || "all-season"}; ${o
 
 ${subject}
 
-Style: Photorealistic natural editorial fashion campaign with authentic skin and fabric texture. Full person from head through shoes, centered, relaxed front-facing pose, arms away from clothing, warm natural light and realistic anatomy.
+${styleLine}
 
 Garment fidelity: Preserve every referenced garment precisely: color, material, fit, silhouette, weight, construction, pattern, graphics, proportions, closures and distinctive details. ${layering}
 
@@ -118,6 +135,7 @@ export function outfitApi(options = {}) {
   let libraryFile;
   let outfitsFile;
   let outfitImagesDir;
+  let modelosDir;
   let modelReference;
   let modelProfileFile;
   const setting = (name, fallback = "") => options.env?.[name] || process.env[name] || fallback;
@@ -206,13 +224,53 @@ export function outfitApi(options = {}) {
         const profile = {
           mode,
           gender: input.gender === "hombre" ? "hombre" : "mujer",
-          complexion: Object.keys(COMPLEXIONS).includes(input.complexion) ? input.complexion : null,
+          complexion: COMPLEXIONS[input.complexion] ? input.complexion : null,
           skinTone: Object.keys(SKIN_TONES).includes(input.skinTone) ? input.skinTone : null,
           preset: typeof input.preset === "string" ? input.preset.trim().slice(0, 40) || null : null,
+          // selección del customizador de modelo personalizado (silueta/complexión/tono Monk/pelo)
+          custom: input.custom ? normalizePerfil(input.custom) : null,
           updatedAt: new Date().toISOString(),
         };
+        profile.modelUrl = profile.custom ? `${API_ROOT}/models/${modelKey(profile.custom)}.png` : null;
         await atomicJson(modelProfileFile, profile);
         return json(res, 200, profile);
+      }
+      // Genera (o sirve de caché) la foto del modelo personalizado del customizador.
+      if (url.pathname === `${API_ROOT}/generate-model` && req.method === "POST") {
+        const input = await body(req);
+        const perfil = normalizePerfil(input);
+        if (!perfil) return json(res, 400, { error: "Completá la selección de tu modelo antes de generarlo." });
+        const variant = input.variant === "lookbook" ? "lookbook" : "studio";
+        const key = modelKey(perfil, variant);
+        const file = path.join(modelosDir, `${key}.png`);
+        const modelUrl = `${API_ROOT}/models/${key}.png`;
+        if (!input.force && await exists(file)) {
+          console.log(`[tryon] caché de modelo HIT: ${key}`);
+          if (input.setAsReference) await copyFile(file, modelReference);
+          return json(res, 200, { url: modelUrl, key, cached: true, verified: true });
+        }
+        console.log(`[tryon] caché de modelo MISS: ${key} → generando`);
+        if (!ai.hasApiKey) return json(res, 503, { error: `Configurá ${ai.name === "gemini" ? "GEMINI_API_KEY" : "OPENAI_API_KEY"} para generar tu modelo.` });
+        let generated;
+        try {
+          generated = await generateModelPhoto({ ai, dataDir, perfil, variant });
+        } catch (error) {
+          if (/quota|429/i.test(error.message)) return json(res, 503, { error: "El proveedor de imagen no tiene cuota disponible ahora. Probá de nuevo más tarde." });
+          throw error;
+        }
+        const { bytes, verified, attempts } = generated;
+        const normalized = await sharp(bytes).resize({ width: 1200, withoutEnlargement: true }).png().toBuffer();
+        await writeFile(file, normalized);
+        if (input.setAsReference) await copyFile(file, modelReference);
+        return json(res, 200, { url: modelUrl, key, cached: false, verified, attempts });
+      }
+      const modelMatch = url.pathname.match(/^\/api\/tryon\/models\/([\w.-]+)$/);
+      if (modelMatch && req.method === "GET") {
+        const file = path.join(modelosDir, path.basename(modelMatch[1]));
+        await stat(file);
+        res.setHeader("Content-Type", "image/png");
+        res.setHeader("Cache-Control", "public, max-age=86400");
+        return res.end(await readFile(file));
       }
       if (url.pathname === `${API_ROOT}/model-reference` && req.method === "GET") {
         if (!await exists(modelReference)) return json(res, 404, { error: "Todavía no hay una foto de referencia." });
@@ -262,10 +320,15 @@ export function outfitApi(options = {}) {
           const filename = path.basename(new URL(garment.image, "http://localhost").pathname);
           images.push({ data: await readFile(path.join(dataDir, "imported", filename)), name: `${garment.part}.png` });
         }
+        // Con modelo personalizado, las cards de outfits sugeridos usan el estilo
+        // "lookbook" (jardín, luz dorada); el probador manual mantiene el estudio.
+        const style = profile.custom && outfit.source === "suggested" ? "lookbook" : "studio";
+        const styleRefs = style === "lookbook" ? await styleReferences(dataDir, "lookbook") : [];
+        images.push(...styleRefs);
         const bytes = await ai.generateImage({
           purpose: "outfit",
           aspectRatio: "1:1",
-          prompt: outfitPrompt(outfit, garments, profile),
+          prompt: outfitPrompt(outfit, garments, profile, style, styleRefs.length),
           images,
         });
         const filename = `${outfit.id}.png`;
@@ -302,10 +365,12 @@ export function outfitApi(options = {}) {
       libraryFile = path.join(dataDir, "library.json");
       outfitsFile = path.join(dataDir, "outfits.json");
       outfitImagesDir = path.join(dataDir, "outfit-images");
+      modelosDir = path.join(dataDir, "modelos");
       modelProfileFile = path.join(dataDir, "model-profile.json");
       modelReference = path.resolve(root, setting("WARDROBE_MODEL_REFERENCE", "data/model-reference.png"));
       await mkdir(dataDir, { recursive: true });
       await mkdir(outfitImagesDir, { recursive: true });
+      await mkdir(modelosDir, { recursive: true });
     },
     configureServer(server) { server.middlewares.use(handler); },
     configurePreviewServer(server) { server.middlewares.use(handler); },

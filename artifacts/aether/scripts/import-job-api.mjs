@@ -16,6 +16,16 @@ const MATERIALS = new Set(["cotton", "linen", "denim", "knit", "wool", "leather"
 const SILHOUETTES = new Set(["fitted", "regular", "relaxed", "oversized", "flowy", "structured"]);
 const WEIGHTS = new Set(["light", "medium", "heavy"]);
 const CLIMATES = new Set(["warm", "mild", "cold", "rain"]);
+const GENDERS = new Set(["mujer", "hombre", "unisex"]);
+
+const DEFAULT_SIZES = {
+  upperbody: ["XS", "S", "M", "L", "XL"],
+  wholebody_up: ["XS", "S", "M", "L"],
+  lowerbody: ["36", "38", "40", "42", "44"],
+  shoes: ["35", "36", "37", "38", "39", "40"],
+  accessories_up: ["Único"],
+};
+
 
 function json(res, status, value) {
   res.statusCode = status;
@@ -390,6 +400,9 @@ export function wardrobeImportApi(options = {}) {
       thumbnail: `${LIBRARY_ASSET_ROOT}/${garmentName}`,
       modeledImage: modeledImage || existing?.modeledImage || null,
       importJobId: job.id,
+      gender: existing?.gender || "unisex",
+      sizes: existing?.sizes || DEFAULT_SIZES[metadata.part] || ["Único"],
+      description: existing?.description || "",
     };
     const next = [...records.filter((item) => item.id !== id), record];
     await atomicJson(importedFile, next);
@@ -478,6 +491,33 @@ export function wardrobeImportApi(options = {}) {
       }
       if (url.pathname === "/api/import/config" && req.method === "GET") {
         return json(res, 200, await setupStatus());
+      }
+      const wardrobePatchMatch = url.pathname.match(/^\/api\/import\/wardrobe\/(import-[a-f0-9-]{36})$/i);
+      if (wardrobePatchMatch && req.method === "PATCH") {
+        const id = wardrobePatchMatch[1];
+        const records = await loadImported();
+        const record = records.find((item) => item.id === id);
+        if (!record) return json(res, 404, { error: "Imported wardrobe item not found" });
+        const input = await body(req);
+        if (typeof input.name === "string" && input.name.trim()) record.name = input.name.trim().slice(0, 120);
+        if (PARTS.has(input.part)) record.part = input.part;
+        if (typeof input.color === "string" && HEX_COLOR.test(input.color)) record.color = input.color.toLowerCase();
+        if ("secondaryColor" in input) {
+          record.secondaryColor = typeof input.secondaryColor === "string" && HEX_COLOR.test(input.secondaryColor)
+            ? input.secondaryColor.toLowerCase()
+            : null;
+        }
+        if (Array.isArray(input.tags)) {
+          record.tags = input.tags.filter((tag) => typeof tag === "string").map((tag) => tag.trim().slice(0, 40)).filter(Boolean).slice(0, 12);
+        }
+        if (Array.isArray(input.sizes)) {
+          record.sizes = input.sizes.filter((size) => typeof size === "string").map((size) => size.trim().slice(0, 12)).filter(Boolean).slice(0, 12);
+        }
+        if (typeof input.description === "string") record.description = input.description.trim().slice(0, 600);
+        if (GENDERS.has(input.gender)) record.gender = input.gender;
+        record.palette = [record.color, record.secondaryColor].filter(Boolean);
+        await atomicJson(importedFile, records);
+        return json(res, 200, record);
       }
       const wardrobeDeleteMatch = url.pathname.match(/^\/api\/import\/wardrobe\/(import-[a-f0-9-]{36})$/i);
       if (wardrobeDeleteMatch && req.method === "DELETE") {

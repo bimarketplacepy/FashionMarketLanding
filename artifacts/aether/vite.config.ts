@@ -4,6 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { wardrobeImportApi } from "./scripts/import-job-api.mjs";
+import { batchImportApi } from "./scripts/batch-import-api.mjs";
 import { outfitApi } from "./scripts/outfit-api.mjs";
 import { responsiveImageApi } from "./scripts/responsive-image-api.mjs";
 
@@ -39,6 +40,7 @@ export default defineConfig(async ({ mode }) => {
     runtimeErrorOverlay(),
     responsiveImageApi(),
     wardrobeImportApi({ env }),
+    batchImportApi({ env }),
     outfitApi({ env }),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined

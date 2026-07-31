@@ -76,7 +76,7 @@ async function openAIImage({ key, baseUrl, model, quality, prompt, images, aspec
   const form = new FormData();
   form.set("model", model);
   form.set("prompt", prompt);
-  form.set("size", aspectRatio === "3:2" ? "1536x1024" : "1024x1024");
+  form.set("size", aspectRatio === "3:2" ? "1536x1024" : ["2:3", "3:4", "9:16"].includes(aspectRatio) ? "1024x1536" : "1024x1024");
   form.set("quality", quality || "high");
   form.set("output_format", "png");
   for (const [index, image] of images.entries()) {
@@ -176,6 +176,51 @@ async function geminiAnalyze({ key, baseUrl, model, image }) {
   return parsed.items;
 }
 
+// Chequeo estructurado genérico sobre una imagen (prompt + schema arbitrarios).
+async function geminiInspect({ key, baseUrl, model, image, prompt, schema: checkSchema }) {
+  const result = await geminiRequest({
+    key,
+    baseUrl,
+    model,
+    payload: {
+      contents: [{
+        role: "user",
+        parts: [
+          { text: prompt },
+          { inlineData: { mimeType: "image/png", data: image.toString("base64") } },
+        ],
+      }],
+      generationConfig: {
+        responseMimeType: "application/json",
+        responseSchema: geminiSchema(checkSchema),
+      },
+    },
+  });
+  const outputText = result.candidates?.[0]?.content?.parts?.find((part) => typeof part.text === "string")?.text;
+  if (!outputText) throw new Error("Gemini inspection returned no structured result");
+  return JSON.parse(cleanJsonText(outputText));
+}
+
+async function openAIInspect({ key, baseUrl, model, image, prompt, schema: checkSchema }) {
+  const response = await fetch(`${baseUrl}/responses`, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      model,
+      input: [{ role: "user", content: [
+        { type: "input_text", text: prompt },
+        { type: "input_image", image_url: `data:image/png;base64,${image.toString("base64")}` },
+      ] }],
+      text: { format: { type: "json_schema", name: "image_inspection", strict: true, schema: checkSchema } },
+    }),
+  });
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(result.error?.message || `OpenAI inspection failed (${response.status})`);
+  const outputText = result.output_text || result.output?.flatMap((item) => item.content || []).find((item) => item.type === "output_text")?.text;
+  if (!outputText) throw new Error("OpenAI inspection returned no structured result");
+  return JSON.parse(cleanJsonText(outputText));
+}
+
 async function geminiImage({ key, baseUrl, model, prompt, images, aspectRatio }) {
   const parts = [{ text: prompt }];
   for (const image of images) {
@@ -235,6 +280,29 @@ export function createAIProvider(setting) {
         baseUrl: setting("OPENAI_API_BASE_URL", "https://api.openai.com/v1").replace(/\/$/, ""),
         model: setting("OPENAI_VISION_MODEL", "gpt-5.4-mini"),
         image: normalized,
+      });
+    },
+    // Chequeo estructurado sobre una imagen (validaciones de calidad, no detección).
+    async inspect({ image, prompt, schema: checkSchema }) {
+      const normalized = await normalizeImage(image);
+      if (!key) throw new Error(`${provider === "gemini" ? "GEMINI_API_KEY" : "OPENAI_API_KEY"} is not configured`);
+      if (provider === "gemini") {
+        return geminiInspect({
+          key,
+          baseUrl: setting("GEMINI_API_BASE_URL", "https://generativelanguage.googleapis.com/v1beta").replace(/\/$/, ""),
+          model: setting("GEMINI_VISION_MODEL", "gemini-3.6-flash"),
+          image: normalized,
+          prompt,
+          schema: checkSchema,
+        });
+      }
+      return openAIInspect({
+        key,
+        baseUrl: setting("OPENAI_API_BASE_URL", "https://api.openai.com/v1").replace(/\/$/, ""),
+        model: setting("OPENAI_VISION_MODEL", "gpt-5.4-mini"),
+        image: normalized,
+        prompt,
+        schema: checkSchema,
       });
     },
     async generateImage({ prompt, images, aspectRatio = "1:1", purpose = "image" }) {

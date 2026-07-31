@@ -1,9 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Heart, MagicWand, SpinnerGap } from "@phosphor-icons/react";
+import { useLocation } from "wouter";
+import { Heart, PencilSimple, SpinnerGap } from "@phosphor-icons/react";
 import { OptimizedImage } from "./OptimizedImage.jsx";
+import { draftFromOutfit, writeDraft } from "./outfit-draft.js";
+import { avatarDataUrl, DEFAULT_PERFIL, HAIR_STOPS, MONK_TONES, normalizeAvatarPerfil, peloHexFromValor, tonoHexFromValor } from "./model-avatar.js";
 import "./virtual-tryon.css";
 
-const PARTS = [
+export const PARTS = [
   ["upperbody", "Superior"],
   ["lowerbody", "Inferior"],
   ["wholebody_up", "Abrigo"],
@@ -31,6 +34,23 @@ const SKIN_TONES = [
   ["morena", "Morena", "#9c6743"],
   ["oscura", "Oscura", "#6b4630"],
 ];
+
+// Customizador "Creá tu modelo": la complexión se comunica solo con forma
+// (iconos), y piel/pelo solo con color (sliders de gradiente). Ninguna palabra
+// descriptiva de características físicas aparece en la UI; los aria-labels son
+// neutros. La silueta la define el toggle de catálogo (mujer/hombre).
+const complexionIcon = (level) => {
+  const half = [6.5, 9, 12][level - 1];
+  return (
+    <svg viewBox="0 0 40 48" aria-hidden="true" focusable="false">
+      <circle cx="20" cy="7.5" r="5" />
+      <rect x={20 - half} y="16" width={half * 2} height="29" rx={half * 0.75} />
+    </svg>
+  );
+};
+
+const TONO_GRADIENT = `linear-gradient(90deg, ${MONK_TONES.join(", ")})`;
+const PELO_GRADIENT = `linear-gradient(90deg, ${HAIR_STOPS.join(", ")})`;
 
 const WEIGHT = { light: 1, medium: 2, heavy: 3 };
 const NEUTRAL_SATURATION = 0.16;
@@ -68,7 +88,7 @@ function hexToHsl(hex = "#777777") {
   return { hue: hue < 0 ? hue + 360 : hue, saturation: delta / (1 - Math.abs(max + min - 1) || 1), lightness: (max + min) / 2 };
 }
 
-function colorCompatibility(first, second) {
+export function colorCompatibility(first, second) {
   const a = hexToHsl(first);
   const b = hexToHsl(second);
   if (a.saturation < NEUTRAL_SATURATION || b.saturation < NEUTRAL_SATURATION) return { score: 18, label: "base neutra versátil" };
@@ -80,7 +100,7 @@ function colorCompatibility(first, second) {
   return { score: 9, label: "contraste controlado" };
 }
 
-function metadata(item) {
+export function metadata(item) {
   return {
     ...item,
     season: item.season || "all",
@@ -172,7 +192,7 @@ function GarmentMini({ item }) {
   );
 }
 
-function OutfitCard({ outfit, onGenerate, onSave, busy, saved }) {
+function OutfitCard({ outfit, onGenerate, onSave, onEdit, busy, saved }) {
   return (
     <article className="tryon-look-card">
       <div className="tryon-look-visual">
@@ -186,6 +206,9 @@ function OutfitCard({ outfit, onGenerate, onSave, busy, saved }) {
         <div><p>{outfit.occasion} · {outfit.climate}</p><h3>{outfit.name}</h3></div>
         <button className="wd-try" type="button" disabled={busy} onClick={() => onGenerate(outfit)}>
           {busy ? <SpinnerGap className="spin" size={14} /> : null} {outfit.image ? "Regenerar prueba" : "Probar este look"}
+        </button>
+        <button className="wd-try wd-try-edit" type="button" onClick={() => onEdit(outfit)}>
+          <PencilSimple size={14} /> Editar en el builder
         </button>
       </div>
     </article>
@@ -202,43 +225,29 @@ const WARDROBE_TABS = [
 ];
 const PART_ORDER = Object.fromEntries(WARDROBE_TABS.slice(1).map(([part], index) => [part, index]));
 
-// real: true → la foto se usa como referencia de identidad en las pruebas
-// virtuales. Los placeholders (real: false) se reemplazan por fotos IA con
-// `pnpm run generate-models` cuando hay cuota de imagen.
-const MODEL_PRESETS = [
-  { id: "blanca", gender: "mujer", label: "Blanca", image: "/fashion/models/modelo-blanca.png", skinTone: "clara", real: true },
-  { id: "canela", gender: "mujer", label: "Canela", image: "/fashion/models/modelo-canela.png", skinTone: "media", real: true },
-  { id: "negra", gender: "mujer", label: "Negra", image: "/fashion/models/modelo-negra.png", skinTone: "oscura", real: false },
-  { id: "h-blanco", gender: "hombre", label: "Blanco", image: "/fashion/models/modelo-h-blanca.png", skinTone: "clara", real: false },
-  { id: "h-canela", gender: "hombre", label: "Canela", image: "/fashion/models/modelo-h-canela.png", skinTone: "media", real: false },
-  { id: "h-negro", gender: "hombre", label: "Negro", image: "/fashion/models/modelo-h-negra.png", skinTone: "oscura", real: false },
-];
 const BUILD_OPTIONS = [["media", "Normal"], ["atletica", "Atlética"]];
 const GENDER_OPTIONS = [["mujer", "Mujer"], ["hombre", "Hombre"]];
+
+// El toggle de catálogo (mujer/hombre) también define la silueta del
+// customizador "Creá tu modelo".
+const GENDER_SILUETA = { mujer: "B", hombre: "A" };
 
 function fitsGender(item, gender) {
   return !item.gender || item.gender === "unisex" || item.gender === gender;
 }
 
-async function urlToDataUrl(url) {
-  const blob = await fetch(url).then((response) => response.blob());
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(reader.result);
-    reader.onerror = () => reject(reader.error || new Error("No se pudo leer la imagen."));
-    reader.readAsDataURL(blob);
-  });
-}
-
-export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }) {
-  const [section, setSection] = useState("all");
+export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate, initialSection }) {
+  const [, navigate] = useLocation();
+  const [section, setSection] = useState(initialSection || "all");
   const [filters, setFilters] = useState({ season: "autumn", occasion: "casual", climate: "mild" });
   const [count, setCount] = useState(6);
   const [suggestions, setSuggestions] = useState([]);
   const [savedOutfits, setSavedOutfits] = useState([]);
-  const [builder, setBuilder] = useState({});
   const [config, setConfig] = useState({ hasApiKey: false, hasModelReference: false, provider: "gemini", profile: null });
-  const [modelDraft, setModelDraft] = useState({ gender: "mujer", preset: MODEL_PRESETS[0].id, complexion: "media", ownPhoto: false });
+  const [modelDraft, setModelDraft] = useState({ gender: "mujer", complexion: "media", ownPhoto: false, custom: true });
+  const [customDraft, setCustomDraft] = useState(DEFAULT_PERFIL);
+  const [customModel, setCustomModel] = useState(null); // { url, verified, cached } del modelo IA generado
+  const [generating, setGenerating] = useState(false);
   const [saving, setSaving] = useState(false);
   const [busyId, setBusyId] = useState(null);
   const [notice, setNotice] = useState("");
@@ -250,8 +259,7 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }
 
   const activeModelImage = useMemo(() => {
     if (!config.profile) return null;
-    const preset = MODEL_PRESETS.find((entry) => entry.id === config.profile.preset);
-    return preset?.image || (config.hasModelReference ? config.modelReferenceUrl || "/api/tryon/model-reference" : null);
+    return config.profile.modelUrl || (config.hasModelReference ? config.modelReferenceUrl || "/api/tryon/model-reference" : null);
   }, [config]);
 
   useEffect(() => {
@@ -266,12 +274,20 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }
       setConfig(setup);
       setSavedOutfits(collection.outfits || []);
       if (setup.profile) {
+        const gender = setup.profile.gender === "hombre" ? "hombre" : "mujer";
+        const custom = Boolean(setup.profile.custom);
         setModelDraft({
-          gender: setup.profile.gender === "hombre" ? "hombre" : "mujer",
-          preset: setup.profile.preset || MODEL_PRESETS[0].id,
+          gender,
           complexion: setup.profile.complexion === "atletica" ? "atletica" : "media",
-          ownPhoto: !setup.profile.preset && setup.profile.mode === "photo",
+          ownPhoto: !custom && setup.profile.mode === "photo" && !setup.profile.preset,
+          custom: custom || setup.profile.mode !== "photo" || Boolean(setup.profile.preset),
         });
+        if (custom) {
+          setCustomDraft(normalizeAvatarPerfil(setup.profile.custom));
+          if (setup.profile.modelUrl) setCustomModel({ url: setup.profile.modelUrl, verified: true, cached: true });
+        } else {
+          setCustomDraft((current) => ({ ...current, silueta: GENDER_SILUETA[gender] }));
+        }
       } else {
         setSection("profile");
       }
@@ -293,30 +309,66 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }
     } catch (uploadError) { setError(uploadError.message); setNotice(""); }
   };
 
+  // Cambiar cualquier variable del customizador invalida la foto ya generada.
+  const updateCustom = (patch) => {
+    setCustomDraft((current) => ({ ...current, ...patch }));
+    setCustomModel(null);
+  };
+
+  // Al confirmar la selección del customizador se genera la foto del modelo con
+  // el prompt maestro (el servidor sirve de caché si esa combinación ya existe)
+  // y pasa a ser la referencia de identidad del probador.
+  const generateCustomModel = async (force = false) => {
+    setGenerating(true); setError(""); setNotice("Generando tu modelo con IA… puede tardar un minuto.");
+    try {
+      const result = await request("/api/tryon/generate-model", { method: "POST", body: JSON.stringify({ ...customDraft, setAsReference: true, force }) });
+      setCustomModel({ ...result, url: result.cached ? result.url : `${result.url}?v=${Date.now()}` });
+      setConfig((current) => ({ ...current, hasModelReference: true, modelReferenceUrl: `/api/tryon/model-reference?updated=${Date.now()}` }));
+      setNotice(result.verified
+        ? (result.cached ? "Tu modelo ya estaba generado: listo al instante." : "Tu modelo está listo. Guardalo para vestirlo con el catálogo.")
+        : "Modelo generado, pero la validación automática detectó posibles defectos (cuerpo cortado o manos). Podés ajustar y regenerar.");
+    } catch (generateError) { setError(generateError.message); setNotice(""); }
+    finally { setGenerating(false); }
+  };
+
   const saveProfile = async () => {
     if (modelDraft.ownPhoto && !config.hasModelReference) {
       setError("Subí tu foto para usar este modo.");
       return;
     }
+    if (modelDraft.custom && !customModel) {
+      setError("Generá tu modelo con IA antes de guardarlo.");
+      return;
+    }
     setSaving(true);
     setError("");
     try {
-      const genderPresets = MODEL_PRESETS.filter((entry) => entry.gender === modelDraft.gender);
-      const preset = modelDraft.ownPhoto ? null : genderPresets.find((entry) => entry.id === modelDraft.preset) || genderPresets[0];
-      if (preset?.real) {
-        // la modelo elegida pasa a ser la referencia de identidad para las pruebas virtuales
-        const imageDataUrl = await urlToDataUrl(preset.image);
-        await request("/api/tryon/model-reference", { method: "POST", body: JSON.stringify({ imageDataUrl }) });
+      if (modelDraft.custom) {
+        const saved = await request("/api/tryon/model-profile", {
+          method: "POST",
+          body: JSON.stringify({
+            mode: "photo", // el modelo generado es la referencia de identidad
+            gender: customDraft.silueta === "A" ? "hombre" : "mujer",
+            complexion: customDraft.complexion,
+            skinTone: null,
+            preset: null,
+            custom: customDraft,
+          }),
+        });
+        setConfig((current) => ({ ...current, profile: saved, hasModelReference: true }));
+        setNotice("Modelo guardado. Estas son las prendas de la temporada.");
+        setSection("all");
+        return;
       }
+      // Modo "usar mi foto": la foto subida es la referencia de identidad.
       const saved = await request("/api/tryon/model-profile", {
         method: "POST",
         body: JSON.stringify({
-          // los presets sin foto real generan con modelo descripto (género + tez + complexión)
-          mode: preset && !preset.real ? "default" : "photo",
+          mode: "photo",
           gender: modelDraft.gender,
           complexion: modelDraft.complexion,
-          skinTone: preset?.skinTone || null,
-          preset: preset?.id || null,
+          skinTone: null,
+          preset: null,
         }),
       });
       setConfig((current) => ({ ...current, profile: saved, hasModelReference: true }));
@@ -349,23 +401,13 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }
     finally { setBusyId(null); }
   };
 
-  const manualGarments = PARTS.map(([part]) => normalizedItems.find((item) => item.id === builder[part])).filter(Boolean);
-  const manualReady = Boolean(builder.upperbody && builder.lowerbody);
-  const manualOutfit = manualReady ? {
-    id: `manual-${manualGarments.map((item) => item.id).join("-")}`,
-    name: "Mi combinación",
-    garmentIds: manualGarments.map((item) => item.id),
-    garments: manualGarments,
-    reason: "Combinación creada libremente con prendas del catálogo seleccionado.",
-    score: 100,
-    ...filters,
-    source: "manual",
-    status: "planned",
-    combinationKey: manualGarments.map((item) => item.id).sort().join("|"),
-  } : null;
+  const editInBuilder = (outfit) => {
+    writeDraft(draftFromOutfit(outfit, normalizedItems));
+    navigate("/outfit");
+  };
 
   const savedKeys = new Set(savedOutfits.map((outfit) => [...outfit.garmentIds].sort().join("|")));
-  const inOutfits = ["outfits", "builder", "profile"].includes(section);
+  const inOutfits = ["outfits", "profile"].includes(section);
   const gridItems = useMemo(() => {
     const filtered = section === "all" ? genderItems : genderItems.filter((item) => item.part === section);
     return [...filtered].sort((a, b) => {
@@ -388,7 +430,7 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }
                 {activeModelImage && <img src={activeModelImage} alt="" />}
                 <span>Mi modelo</span>
               </button>
-              <button className="wd-quiet" type="button" onClick={onAddProducts}>Administrar catálogo</button>
+              {onAddProducts && <button className="wd-quiet" type="button" onClick={onAddProducts}>Administrar catálogo</button>}
             </div>
           </header>
 
@@ -420,13 +462,16 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }
                 sizes="(max-width: 640px) 45vw, 220px"
                 breakpoints={[160, 240, 320, 480]}
               />
+              <span className="wd-piece-caption">
+                <span>{item.name}</span>
+              </span>
             </button>
           ))}
         </div>
       ) : (
         <div className="wd-empty">
           <p>No hay piezas en esta categoría todavía.</p>
-          <button type="button" onClick={onAddProducts}>Cargar productos</button>
+          {onAddProducts && <button type="button" onClick={onAddProducts}>Cargar productos</button>}
         </div>
       ))}
 
@@ -440,49 +485,19 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }
               <label><span>Cantidad</span><select value={count} onChange={(event) => setCount(Number(event.target.value))}>{[3, 6, 9, 12].map((value) => <option key={value} value={value}>{value}</option>)}</select></label>
             </div>
             <div className="wd-links">
-              <button type="button" onClick={() => setSection("builder")}>Crear un look</button>
+              <button type="button" onClick={() => navigate("/outfit")}>Armá tu outfit</button>
             </div>
           </div>
           {suggestions.length ? (
             <div className="tryon-look-grid">
-              {suggestions.map((outfit) => <OutfitCard key={outfit.id} outfit={outfit} onGenerate={generate} onSave={saveOutfit} busy={busyId === outfit.id} saved={savedKeys.has(outfit.combinationKey)} />)}
+              {suggestions.map((outfit) => <OutfitCard key={outfit.id} outfit={outfit} onGenerate={generate} onSave={saveOutfit} onEdit={editInBuilder} busy={busyId === outfit.id} saved={savedKeys.has(outfit.combinationKey)} />)}
             </div>
           ) : (
             <div className="wd-empty">
               <p>El catálogo de la temporada está vacío. Cargá productos para activar las combinaciones.</p>
-              <button type="button" onClick={onAddProducts}>Cargar el catálogo</button>
+              {onAddProducts && <button type="button" onClick={onAddProducts}>Cargar el catálogo</button>}
             </div>
           )}
-        </section>
-      )}
-
-      {section === "builder" && (
-        <section className="tryon-section builder-section">
-          <button className="wd-back" type="button" onClick={() => setSection("outfits")}>← Outfits</button>
-          <div className="tryon-section-heading"><div><p>Combinación libre</p><h2>Creá tu propio look</h2></div><p>Elegí una prenda de cada categoría. La parte superior y la inferior son obligatorias; el resto es opcional.</p></div>
-          <div className="builder-layout">
-            <div className="builder-selectors">
-              {PARTS.map(([part, label]) => (
-                <fieldset key={part}>
-                  <legend>{label} <small>{["upperbody", "lowerbody"].includes(part) ? "obligatorio" : "opcional"}</small></legend>
-                  <div className="builder-options">
-                    {!["upperbody", "lowerbody"].includes(part) && <button className={!builder[part] ? "active empty-option" : "empty-option"} type="button" onClick={() => setBuilder({ ...builder, [part]: null })}>Sin {label.toLowerCase()}</button>}
-                    {genderItems.filter((item) => item.part === part).map((item) => <button className={builder[part] === item.id ? "active" : ""} key={item.id} type="button" onClick={() => setBuilder({ ...builder, [part]: item.id })}><img src={item.thumbnail || item.image} alt="" /><span>{item.name}</span></button>)}
-                  </div>
-                </fieldset>
-              ))}
-            </div>
-            <aside className="builder-preview">
-              <p>Tu selección</p>
-              <h3>{manualReady ? "Look listo para probar" : "Elegí al menos dos prendas"}</h3>
-              <div className="builder-preview-stage">
-                {manualGarments.length ? manualGarments.map((item) => <GarmentMini item={item} key={item.id} />) : <MagicWand size={34} />}
-              </div>
-              <ul>{manualGarments.map((item) => <li key={item.id}><i style={{ background: item.color }} />{item.name}<span>{PARTS.find(([part]) => part === item.part)?.[1]}</span></li>)}</ul>
-              <button className="tryon-primary" type="button" disabled={!manualReady || busyId === manualOutfit?.id} onClick={() => generate(manualOutfit)}>{busyId === manualOutfit?.id ? <SpinnerGap className="spin" /> : <MagicWand />} Generar prueba virtual</button>
-              <button className="tryon-secondary" type="button" disabled={!manualReady} onClick={() => saveOutfit(manualOutfit)}><Heart size={16} /> Guardar combinación</button>
-            </aside>
-          </div>
         </section>
       )}
 
@@ -503,29 +518,28 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }
                 className={modelDraft.gender === id ? "active" : ""}
                 type="button"
                 onClick={() => {
-                  const first = MODEL_PRESETS.find((entry) => entry.gender === id);
-                  setModelDraft({ ...modelDraft, gender: id, preset: first?.id, ownPhoto: false });
+                  // El catálogo define el género y, con él, la silueta del
+                  // customizador "Creá tu modelo".
+                  setModelDraft({ ...modelDraft, gender: id });
+                  if (customDraft.silueta !== GENDER_SILUETA[id]) updateCustom({ silueta: GENDER_SILUETA[id] });
                 }}
               >{label}</button>
             ))}
           </div>
 
           <div className="wd-model-cards">
-            {MODEL_PRESETS.filter((preset) => preset.gender === modelDraft.gender).map((preset) => (
-              <button
-                key={preset.id}
-                className={`wd-model-card${!modelDraft.ownPhoto && modelDraft.preset === preset.id ? " active" : ""}`}
-                type="button"
-                onClick={() => setModelDraft({ ...modelDraft, preset: preset.id, ownPhoto: false })}
-              >
-                <img src={preset.image} alt={`Modelo de ${preset.label.toLowerCase()}`} />
-                <span>{preset.label}</span>
-              </button>
-            ))}
+            <button
+              className={`wd-model-card wd-model-custom${modelDraft.custom ? " active" : ""}`}
+              type="button"
+              onClick={() => setModelDraft({ ...modelDraft, ownPhoto: false, custom: true })}
+            >
+              <img src={customModel?.url || avatarDataUrl(customDraft)} alt="Vista previa de tu modelo personalizado" />
+              <span>Creá tu modelo</span>
+            </button>
             <button
               className={`wd-model-card wd-model-own${modelDraft.ownPhoto ? " active" : ""}`}
               type="button"
-              onClick={() => setModelDraft({ ...modelDraft, ownPhoto: true })}
+              onClick={() => setModelDraft({ ...modelDraft, ownPhoto: true, custom: false })}
             >
               {modelDraft.ownPhoto && config.hasModelReference
                 ? <img src={config.modelReferenceUrl || "/api/tryon/model-reference"} alt="Tu foto de referencia" />
@@ -534,6 +548,59 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }
             </button>
           </div>
 
+          {modelDraft.custom && (
+            <div className="wd-custom-panel">
+              <header className="wd-custom-heading">
+                <h3>Creá tu modelo</h3>
+                <p>Elegí el modelo que mejor te represente</p>
+              </header>
+              <div className="wd-custom-body">
+                <figure className="wd-custom-preview">
+                  <img src={customModel?.url || avatarDataUrl(customDraft)} alt="Vista previa de tu modelo" />
+                </figure>
+                <div className="wd-custom-controls">
+                  <div className="wd-icon-row" role="group" aria-label="Complexión">
+                    {[1, 2, 3].map((level) => (
+                      <button
+                        key={level}
+                        className={`wd-icon-btn${customDraft.complexion === level ? " active" : ""}`}
+                        type="button"
+                        aria-label={`Complexión ${level}`}
+                        aria-pressed={customDraft.complexion === level}
+                        onClick={() => updateCustom({ complexion: level })}
+                      >{complexionIcon(level)}</button>
+                    ))}
+                  </div>
+                  <input
+                    className="wd-slider"
+                    type="range"
+                    min="0"
+                    max="100"
+                    step="1"
+                    value={customDraft.tonoValor}
+                    style={{ background: TONO_GRADIENT }}
+                    aria-label="Tono de piel"
+                    onChange={(event) => { const valor = Number(event.target.value); updateCustom({ tonoValor: valor, tonoHex: tonoHexFromValor(valor) }); }}
+                  />
+                  <input
+                    className="wd-slider"
+                    type="range"
+                    min="0"
+                    max="100"
+                    step="1"
+                    value={customDraft.peloValor}
+                    style={{ background: PELO_GRADIENT }}
+                    aria-label="Color de pelo"
+                    onChange={(event) => { const valor = Number(event.target.value); updateCustom({ peloValor: valor, peloHex: peloHexFromValor(valor) }); }}
+                  />
+                  <button className="wd-model-save wd-custom-generate" type="button" disabled={generating} aria-busy={generating} onClick={() => generateCustomModel(Boolean(customModel))}>
+                    {generating ? <SpinnerGap className="spin" size={16} aria-label="Creando tu modelo" /> : "Crear mi modelo"}
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
           {modelDraft.ownPhoto && (
             <div className="wd-model-upload">
               <input ref={faceInput} type="file" accept="image/png,image/jpeg,image/webp" hidden onChange={(event) => { uploadFace(event.target.files?.[0]); event.target.value = ""; }} />
@@ -541,12 +608,14 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate }
             </div>
           )}
 
-          <div className="wd-model-build">
-            <span>Complexión</span>
-            {BUILD_OPTIONS.map(([id, label]) => (
-              <button key={id} className={modelDraft.complexion === id ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, complexion: id })}>{label}</button>
-            ))}
-          </div>
+          {!modelDraft.custom && (
+            <div className="wd-model-build">
+              <span>Complexión</span>
+              {BUILD_OPTIONS.map(([id, label]) => (
+                <button key={id} className={modelDraft.complexion === id ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, complexion: id })}>{label}</button>
+              ))}
+            </div>
+          )}
 
           <button className="wd-model-save" type="button" disabled={saving} onClick={saveProfile}>
             {saving ? "Guardando…" : "Guardar y ver las prendas"}

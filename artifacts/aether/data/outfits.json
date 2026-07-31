@@ -8,7 +8,7 @@
       "season": "autumn",
       "climate": "mild",
       "garmentIds": [
-        "import-8854d4ec-d701-460d-9ba7-ccbb7a6346dd",
+        "import-8c11538e-3df0-4d43-aa0c-ccffbc1bfe57",
         "import-3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba",
         "import-66c96b41-f56b-4e8b-88a7-092d90a90314"
       ],
@@ -72,7 +72,7 @@
       "garmentIds": [
         "import-f7ec9b4b-1886-4640-b940-d1590be123f1",
         "import-e4558826-15db-44b3-9d14-6c1aa5a3c1e6",
-        "import-7931a0ee-092b-4cae-ad62-68ad7c51fd63"
+        "import-c13d9050-68cf-4abb-b96e-b0f47a69ec3d"
       ],
       "reason": "Contraste controlado bordó-gris con texturas de invierno; sweater cropped sobre wide-leg mantiene proporciones. Pensado para oficina.",
       "score": 90,
@@ -91,7 +91,7 @@
       "climate": "mild",
       "garmentIds": [
         "import-3a1df6be-cc18-49a1-aded-00d42acda268",
-        "import-42574cdf-abb0-4612-b300-e90691c0bfa0",
+        "import-9dadc96e-4fc9-4a84-89c8-2be91c765a36",
         "import-e6ad030b-8cb0-464f-8081-b90f238b7546",
         "import-21e48dd8-49fe-4820-bb68-8765d7357edd"
       ],
@@ -258,7 +258,7 @@
       "season": "spring",
       "climate": "mild",
       "garmentIds": [
-        "import-b5340fa9-8adb-4625-bb9c-5b756c4f1559",
+        "import-70b7c415-d1f6-447c-920b-6ef29e3263a6",
         "import-9ebf7d97-f022-47d3-8219-8b3fa129c0cd",
         "import-0835a7b3-31f7-4512-87b2-fd42e73088ee"
       ],
@@ -298,7 +298,7 @@
       "season": "autumn",
       "climate": "mild",
       "garmentIds": [
-        "import-daa7a78c-94d8-415f-9238-2161bc9c4427",
+        "import-70b7c415-d1f6-447c-920b-6ef29e3263a6",
         "import-c16da2f8-4534-467f-9e34-49934fc61371",
         "import-e6ad030b-8cb0-464f-8081-b90f238b7546"
       ],
@@ -310,6 +310,70 @@
       "status": "planned",
       "createdAt": "2026-07-29T17:31:47.252Z",
       "updatedAt": "2026-07-29T17:31:47.252Z"
+    },
+    {
+      "id": "look-6c2535d2-4d0f-469e-b865-e6966d5c9d56",
+      "name": "Mi outfit",
+      "occasion": "casual",
+      "season": "all",
+      "climate": "mild",
+      "garmentIds": [
+        "import-c2a43768-472f-4ecb-a7fc-6bfbfa321b60",
+        "import-efbdbd43-b839-4905-8207-f906b088075a",
+        "import-bf687a9f-b398-4399-a8f5-18fcf271c7ca",
+        "import-e65749e2-55bd-4834-9be8-127fdd1d1826",
+        "import-8254961d-5b91-47f3-94cd-a174bbf4c836"
+      ],
+      "reason": "Outfit armado libremente en el builder.",
+      "score": 100,
+      "source": "manual",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-30T13:26:29.275Z",
+      "updatedAt": "2026-07-30T13:26:36.148Z"
+    },
+    {
+      "id": "look-8484bb20-a625-44b0-8cbd-7b53c3634f88",
+      "name": "Camisaco utilitario oliva + Minipollera de cuero negra",
+      "occasion": "casual",
+      "season": "autumn",
+      "climate": "mild",
+      "garmentIds": [
+        "import-92095aef-2410-4314-b40c-3250d16abe07",
+        "import-9bd2b6d3-f29b-42cf-9c7a-0ae6bacdec3e",
+        "import-43e96dd0-bb10-4c08-ac32-78a38ec3848a",
+        "import-670dc79b-fc3a-4de3-892b-5a7b32d25843"
+      ],
+      "reason": "base neutra versátil, siluetas equilibradas, materiales compatibles. Pensado para casual.",
+      "score": 98,
+      "source": "suggested",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-30T19:55:52.027Z",
+      "updatedAt": "2026-07-30T19:55:52.027Z"
+    },
+    {
+      "id": "look-45780480-099e-4d57-a605-e2a4a7e0af8a",
+      "name": "Mi outfit",
+      "occasion": "casual",
+      "season": "all",
+      "climate": "mild",
+      "garmentIds": [
+        "import-b9fbe1f0-f134-4c09-9c4c-8c352659fd32",
+        "import-278918fb-24ad-4291-8700-cb445e5cb1cb",
+        "import-e65749e2-55bd-4834-9be8-127fdd1d1826",
+        "import-8254961d-5b91-47f3-94cd-a174bbf4c836"
+      ],
+      "reason": "Outfit armado libremente en el builder.",
+      "score": 100,
+      "source": "manual",
+      "favorite": false,
+      "image": null,
+      "status": "planned",
+      "createdAt": "2026-07-30T19:55:15.096Z",
+      "updatedAt": "2026-07-31T13:15:21.996Z"
     }
   ]
 }

@@ -1,8 +1,10 @@
 {
-  "mode": "default",
-  "gender": "hombre",
+  "mode": "photo",
+  "gender": "mujer",
   "complexion": "atletica",
-  "skinTone": "oscura",
-  "preset": "h-negro",
-  "updatedAt": "2026-07-29T17:30:23.741Z"
+  "skinTone": "clara",
+  "preset": "blanca",
+  "custom": null,
+  "updatedAt": "2026-07-30T19:56:06.927Z",
+  "modelUrl": null
 }
