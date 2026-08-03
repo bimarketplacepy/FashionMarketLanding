@@ -3,7 +3,7 @@ import { copyFile, mkdir, readFile, rename, rm, stat, writeFile } from "node:fs/
 import path from "node:path";
 import { createAIProvider } from "./ai-provider.mjs";
 import { garmentFitsModel, inferGarmentGender } from "../shared/garment-gender.mjs";
-import { findModelPreset } from "../shared/model-presets.mjs";
+import { findModelPreset, findModelStyle } from "../shared/model-presets.mjs";
 
 const API_ROOT = "/api/tryon";
 const PARTS = new Set(["upperbody", "wholebody_up", "lowerbody", "accessories_up", "shoes"]);
@@ -207,13 +207,19 @@ export function outfitApi(options = {}) {
         const input = await body(req);
         const preset = findModelPreset(input.preset);
         if (!preset) return json(res, 400, { error: "Elegí uno de los modelos IA disponibles." });
+        const style = findModelStyle(preset, input.style);
         const profile = {
           mode: "preset",
           gender: preset.gender,
           complexion: preset.complexion,
           skinTone: preset.skinTone,
           preset: preset.id,
-          modelUrl: preset.image,
+          style: style.id,
+          hairColor: style.hairColor,
+          hairLength: style.hairLength,
+          hairTexture: style.hairTexture,
+          ageRange: style.ageRange,
+          modelUrl: style.image,
           appearance: preset.appearance,
           updatedAt: new Date().toISOString(),
         };
@@ -254,11 +260,12 @@ export function outfitApi(options = {}) {
         const profile = await loadProfile();
         const preset = findModelPreset(profile?.preset);
         if (!preset) return json(res, 409, { error: "Elegí primero uno de los modelos IA disponibles." });
+        const style = findModelStyle(preset, profile?.style);
         const input = await body(req);
         const outfit = await saveOutfit(input);
         const library = await loadLibrary();
         const garments = outfit.garmentIds.map((id) => library.find((item) => item.id === id)).filter(Boolean);
-        const presetFile = path.resolve(publicDir, preset.image.replace(/^\/+/, ""));
+        const presetFile = path.resolve(publicDir, style.image.replace(/^\/+/, ""));
         if (!presetFile.startsWith(`${publicDir}${path.sep}`)) return json(res, 400, { error: "El preset seleccionado no es válido." });
         const images = [{ data: await readFile(presetFile), name: "model-preset.webp" }];
         for (const garment of garments) {

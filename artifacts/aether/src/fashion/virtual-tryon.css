@@ -198,6 +198,17 @@
 .model-preset-card strong { font-family: Georgia, serif; font-size: 1rem; font-weight: 400; }
 .model-preset-card small { color: #6d6b63; font-size: .64rem; }
 .model-preset-card em { align-self: start; color: #6d6b63; font-size: .67rem; font-style: normal; }
+.model-style-fieldset { margin-top: 1.35rem; }
+.model-style-intro { max-width: 520px; margin: 0 0 12px; color: #68675f; font-size: .73rem; line-height: 1.55; }
+.model-style-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.model-style-grid label { display: grid; gap: 6px; }
+.model-style-grid label > span { color: #6d6b63; font-size: .63rem; text-transform: uppercase; letter-spacing: .09em; }
+.model-style-grid select { width: 100%; min-height: 43px; padding: 0 34px 0 11px; border: 1px solid rgba(43, 33, 30, .22); border-radius: 0; background: rgba(255, 255, 255, .36); color: #2b211e; font: inherit; font-size: .76rem; cursor: pointer; }
+.model-style-grid select:hover { border-color: rgba(43, 33, 30, .5); }
+.model-style-grid select:focus-visible { outline: 2px solid rgba(110, 43, 53, .28); outline-offset: 2px; border-color: #6e2b35; }
+.model-style-current { display: flex; align-items: center; gap: 6px; margin-top: 11px; color: #68675f; font-size: .7rem; }
+.model-style-current svg { color: #747b50; }
+.model-style-current strong { color: #2b211e; font-weight: 600; }
 .model-inclusion-note { margin: 1.4rem 0 1rem; padding: 14px 16px; border-left: 3px solid #747b50; background: rgba(116, 123, 80, .08); }
 .model-inclusion-note strong { font-size: .78rem; }
 .model-inclusion-note p { margin: 5px 0 0; color: #68675f; font-size: .72rem; line-height: 1.55; }
@@ -216,5 +227,6 @@
 }
 @media (max-width: 600px) {
   .model-preset-grid { grid-template-columns: 1fr; }
+  .model-style-grid { grid-template-columns: 1fr 1fr; }
   .preset-profile-image { min-height: 560px; }
 }

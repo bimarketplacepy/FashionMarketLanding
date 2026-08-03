@@ -8,7 +8,7 @@ import {
   UserCircle,
 } from "@phosphor-icons/react";
 import { effectiveProfileGender, garmentFitsModel, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
-import { defaultModelPreset, findModelPreset, presetsForGender } from "../../shared/model-presets.mjs";
+import { defaultModelPreset, findModelPreset, findModelStyle, presetsForGender } from "../../shared/model-presets.mjs";
 import "./virtual-tryon.css";
 
 const PARTS = [
@@ -31,17 +31,27 @@ const CLIMATE_LABELS = Object.fromEntries(FILTERS.climates);
 
 const GENDERS = [["mujer", "Mujer"], ["hombre", "Hombre"]];
 
-function profileFromPreset(preset) {
+function profileFromPreset(preset, styleId) {
+  const style = findModelStyle(preset, styleId);
   return {
     mode: "preset",
     preset: preset.id,
+    style: style.id,
     gender: preset.gender,
     catalogGender: preset.gender,
     modelGender: preset.gender,
     complexion: preset.complexion,
     skinTone: preset.skinTone,
-    modelUrl: preset.image,
+    hairColor: style.hairColor,
+    hairLength: style.hairLength,
+    hairTexture: style.hairTexture,
+    ageRange: style.ageRange,
+    modelUrl: style.image,
   };
+}
+
+function uniqueStyleOptions(styles, valueKey, labelKey) {
+  return [...new Map(styles.map((style) => [style[valueKey], { value: style[valueKey], label: style[labelKey] }])).values()];
 }
 
 const DEFAULT_MODEL = profileFromPreset(defaultModelPreset("mujer"));
@@ -238,9 +248,17 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
   const genderItems = useMemo(() => normalizedItems.filter((item) => garmentFitsModel(item, modelGender)), [normalizedItems, modelGender]);
   const availablePresets = useMemo(() => presetsForGender(modelGender), [modelGender]);
   const selectedPreset = findModelPreset(modelDraft.preset) || defaultModelPreset(modelGender);
+  const selectedStyle = findModelStyle(selectedPreset, modelDraft.style);
 
   const selectPreset = (preset) => {
     setModelDraft(profileFromPreset(preset));
+    setError("");
+    setNotice("");
+  };
+
+  const selectStyleTrait = (trait, value) => {
+    const style = selectedPreset.styles.find((candidate) => candidate[trait] === value) || selectedStyle;
+    setModelDraft(profileFromPreset(selectedPreset, style.id));
     setError("");
     setNotice("");
   };
@@ -254,7 +272,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
       setSavedOutfits(collection.outfits || []);
       if (setup.profile?.preset) {
         const savedPreset = findModelPreset(setup.profile.preset) || defaultModelPreset(setup.profile.gender);
-        setModelDraft(profileFromPreset(savedPreset));
+        setModelDraft(profileFromPreset(savedPreset, setup.profile.style));
       } else {
         setSection("profile");
       }
@@ -295,10 +313,10 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
 
   const saveProfile = async () => {
     try {
-      const profileToSave = profileFromPreset(selectedPreset);
+      const profileToSave = profileFromPreset(selectedPreset, selectedStyle.id);
       const saved = await request("/api/tryon/model-profile", { method: "POST", body: JSON.stringify(profileToSave) });
       setConfig((current) => ({ ...current, profile: saved }));
-      setModelDraft(profileFromPreset(findModelPreset(saved.preset) || selectedPreset));
+      setModelDraft(profileFromPreset(findModelPreset(saved.preset) || selectedPreset, saved.style));
       setError("");
       setNotice(`${selectedPreset.label} quedó seleccionado. Ya podés probar los looks de la temporada.`);
       setSection("suggestions");
@@ -441,7 +459,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
           <div className="profile-copy">
             <p>Tu modelo</p>
             <h2>Elegí un modelo IA para tus looks.</h2>
-            <p className="profile-lead">Todos los modelos son ficticios, están predeterminados y usan la misma pose de estudio. Cambiar de avatar no consume créditos de IA; la generación sólo se usa cuando pedís la fotografía final de un look.</p>
+            <p className="profile-lead">Todos los modelos son ficticios, adultos jóvenes y están predeterminados. Elegí entre dos perfiles capilares curados por avatar y mirá el cambio al instante, sin consumir créditos de IA.</p>
 
             <fieldset className="model-fieldset">
               <legend>Presentación del modelo</legend>
@@ -476,10 +494,42 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
                   <button key={preset.id} className={`model-preset-card${selectedPreset.id === preset.id ? " active" : ""}`} type="button" onClick={() => selectPreset(preset)}>
                     <img src={preset.thumbnail} alt="" loading="lazy" />
                     <span><strong>{preset.label}</strong><small>{preset.skinToneLabel}</small></span>
-                    <em>{preset.complexionLabel}</em>
+                    <em>{preset.appearance}</em>
                   </button>
                 ))}
               </div>
+            </fieldset>
+
+            <fieldset className="model-fieldset model-style-fieldset">
+              <legend>Cabello y edad aproximada</legend>
+              <p className="model-style-intro">Mostramos sólo dos combinaciones armónicas para este avatar. Al cambiar un dato, los demás se ajustan al perfil compatible.</p>
+              <div className="model-style-grid">
+                <label>
+                  <span>Color de pelo</span>
+                  <select value={selectedStyle.hairColor} onChange={(event) => selectStyleTrait("hairColor", event.target.value)}>
+                    {uniqueStyleOptions(selectedPreset.styles, "hairColor", "hairColorLabel").map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
+                  </select>
+                </label>
+                <label>
+                  <span>Largo</span>
+                  <select value={selectedStyle.hairLength} onChange={(event) => selectStyleTrait("hairLength", event.target.value)}>
+                    {uniqueStyleOptions(selectedPreset.styles, "hairLength", "hairLengthLabel").map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
+                  </select>
+                </label>
+                <label>
+                  <span>Textura</span>
+                  <select value={selectedStyle.hairTexture} onChange={(event) => selectStyleTrait("hairTexture", event.target.value)}>
+                    {uniqueStyleOptions(selectedPreset.styles, "hairTexture", "hairTextureLabel").map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
+                  </select>
+                </label>
+                <label>
+                  <span>Edad aproximada</span>
+                  <select value={selectedStyle.ageRange} onChange={(event) => selectStyleTrait("ageRange", event.target.value)}>
+                    {uniqueStyleOptions(selectedPreset.styles, "ageRange", "ageRangeLabel").map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
+                  </select>
+                </label>
+              </div>
+              <div className="model-style-current"><Sparkle weight="fill" /> Perfil seleccionado: <strong>{selectedStyle.label}</strong></div>
             </fieldset>
 
             <div className="model-inclusion-note">
@@ -490,12 +540,12 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
             <button className="tryon-primary" type="button" onClick={saveProfile}><Check size={17} /> Usá a {selectedPreset.label} y mirá combinaciones</button>
           </div>
           <div className="profile-image preset-profile-image ready" aria-live="polite">
-            <img key={selectedPreset.id} src={selectedPreset.image} alt={`Modelo IA ${selectedPreset.label}: ${selectedPreset.appearance}, tono ${selectedPreset.skinToneLabel}`} />
+            <img key={`${selectedPreset.id}-${selectedStyle.id}`} src={selectedStyle.image} alt={`Modelo IA ${selectedPreset.label}: ${selectedPreset.appearance}, pelo ${selectedStyle.hairColorLabel} ${selectedStyle.hairTextureLabel}`} />
             <div className="preset-profile-caption">
               <span><Check weight="bold" /> Vista previa instantánea</span>
               <h3>{selectedPreset.label}</h3>
               <p>{selectedPreset.appearance}</p>
-              <small>{selectedPreset.skinToneLabel} · {selectedPreset.complexionLabel}</small>
+              <small>{selectedStyle.hairColorLabel} · {selectedStyle.hairLengthLabel} · {selectedStyle.hairTextureLabel} · {selectedStyle.ageRangeLabel}</small>
             </div>
           </div>
         </section>
