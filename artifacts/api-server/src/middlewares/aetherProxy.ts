@@ -5,7 +5,11 @@ import http from "node:http";
 // middlewares del dev server de Vite en artifacts/aether. El dominio raíz del
 // workspace enruta todo /api/* a este api-server, así que estas rutas se
 // reenvían al servidor de Aether para que la landing funcione sin :3000.
-const AETHER_API_PREFIXES = ["/api/import/", "/api/tryon/"];
+const AETHER_API_PREFIXES = [
+  "/api/import/",
+  "/api/tryon/",
+  "/api/garment-regeneration",
+];
 const AETHER_PORT = Number(process.env["AETHER_PORT"] || 24696);
 
 export function aetherProxy(

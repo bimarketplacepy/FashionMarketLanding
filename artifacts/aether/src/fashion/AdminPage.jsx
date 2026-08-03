@@ -58,7 +58,7 @@ function AdminLogin({ onAuthed }) {
 
 export function AdminPage() {
   const [, navigate] = useLocation();
-  const { items, loading, error: catalogError, saveItem, deleteItem } = useCatalog();
+  const { items, loading, error: catalogError, saveItem, deleteItem, refreshCatalog } = useCatalog();
   const [adminKey, setAdminKey] = useState(() => sessionStorage.getItem(KEY_STORAGE) || "");
   const [category, setCategory] = useState("all");
   const [selectedId, setSelectedId] = useState(null);
@@ -133,6 +133,7 @@ export function AdminPage() {
           onClose={() => setSelectedId(null)}
           onSave={saveItem}
           onDelete={removeItem}
+          onRegenerationApproved={refreshCatalog}
         />
       )}
     </div>

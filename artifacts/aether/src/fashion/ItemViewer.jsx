@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Check, Plus, Trash, X } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, Check, Plus, Trash, X } from "@phosphor-icons/react";
 import { OptimizedImage } from "./OptimizedImage.jsx";
 import { GARMENT_TYPES, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
 
@@ -338,7 +338,107 @@ function normalizedDraft(draft) {
   };
 }
 
-export function ItemViewer({ item, modelImage, onClose, onSave, onDelete }) {
+function GarmentRegenerationPanel({ item, onApproved }) {
+  const [state, setState] = useState(null);
+  const [instruction, setInstruction] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const refresh = useCallback(() => {
+    fetch(`/api/garment-regeneration/${item.id}`, { cache: "no-store" })
+      .then(async (response) => {
+        const value = await response.json().catch(() => ({}));
+        if (!response.ok) throw new Error(value.error || "No se pudo consultar la regeneración.");
+        setState(value);
+      })
+      .catch((requestError) => setMessage(requestError.message));
+  }, [item.id]);
+
+  useEffect(() => { refresh(); }, [refresh]);
+  useEffect(() => {
+    if (!["pending", "processing"].includes(state?.latest?.status)) return undefined;
+    const timer = window.setInterval(refresh, 4000);
+    return () => window.clearInterval(timer);
+  }, [refresh, state?.latest?.status]);
+
+  const post = async (action, payload = {}) => {
+    setBusy(true);
+    setMessage("");
+    try {
+      const response = await fetch(`/api/garment-regeneration/${item.id}/${action}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const value = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(value.error || "No se pudo completar la acción.");
+      setState(value);
+      if (action === "request") {
+        setMessage(value.generationMode === "api"
+          ? "La nueva imagen está lista. Revisala antes de aprobarla."
+          : "La nueva versión quedó en proceso y aparecerá acá cuando esté lista.");
+      }
+      if (action === "approve") {
+        setMessage("Nueva imagen aprobada y versión anterior archivada.");
+        onApproved?.();
+      }
+      if (action === "reject") setMessage("Versión descartada. La imagen actual no cambió.");
+    } catch (requestError) {
+      setMessage(requestError.message);
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const latest = state?.latest;
+  const waiting = ["pending", "processing"].includes(latest?.status);
+  const ready = latest?.status === "ready_for_review" && latest.candidateImage;
+  const statusLabel = {
+    pending: "pendiente",
+    processing: "procesando",
+    ready_for_review: "lista para revisar",
+    approved: "aprobada",
+    rejected: "descartada",
+    failed: "con error",
+  }[latest?.status] || "";
+
+  return (
+    <section className="garment-regeneration-panel">
+      <div className="regeneration-heading">
+        <div><span>Imagen de producto</span><h3>Regeneración de la prenda</h3></div>
+        {latest?.status && <small data-status={latest.status}>{statusLabel}</small>}
+      </div>
+      <p>La imagen actual se conserva. El resultado solamente reemplaza el catálogo después de que lo apruebes.</p>
+      {ready && (
+        <div className="regeneration-compare">
+          <figure><img src={item.image} alt={`Imagen actual de ${item.name}`} /><figcaption>Actual</figcaption></figure>
+          <figure><img src={latest.candidateImage} alt={`Nueva versión de ${item.name}`} /><figcaption>Nueva versión</figcaption></figure>
+        </div>
+      )}
+      {!ready && (
+        <label className="regeneration-instruction">
+          <span>Corrección opcional</span>
+          <textarea value={instruction} onChange={(event) => setInstruction(event.target.value)} placeholder="Ej.: conservá exactamente el cuello, los cierres y el estampado." maxLength={1200} />
+        </label>
+      )}
+      {message && <p className="regeneration-message" role="status">{message}</p>}
+      <div className="regeneration-actions">
+        {ready ? (
+          <>
+            <button type="button" disabled={busy} onClick={() => post("reject", { requestId: latest.id })}>Descartar</button>
+            <button className="approve" type="button" disabled={busy} onClick={() => post("approve", { requestId: latest.id })}><Check size={15} /> Aprobar imagen</button>
+          </>
+        ) : (
+          <button className="approve" type="button" disabled={busy || waiting} onClick={() => post("request", { instruction })}>
+            <ArrowCounterClockwise size={15} /> {waiting ? "Generando imagen…" : latest ? "Generá otra versión" : "Regenerá esta prenda"}
+          </button>
+        )}
+      </div>
+    </section>
+  );
+}
+
+export function ItemViewer({ item, modelImage, onClose, onSave, onDelete, onRegenerationApproved }) {
   const closeButtonRef = useRef(null);
   const imageRef = useRef(null);
   const samplingCanvasRef = useRef(null);
@@ -508,6 +608,8 @@ export function ItemViewer({ item, modelImage, onClose, onSave, onDelete }) {
           setSampling={setSampling}
           sampleStatus={sampleStatus}
         />
+
+        <GarmentRegenerationPanel item={item} onApproved={onRegenerationApproved} />
 
         {closeBlocked && <p className="unsaved-notice" role="status">Guardá o cancelá los cambios antes de cerrar.</p>}
 

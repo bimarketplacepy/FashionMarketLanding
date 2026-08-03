@@ -9,7 +9,8 @@ export function CatalogProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  useEffect(() => {
+  const refreshCatalog = useCallback(() => {
+    setLoading(true);
     fetch("/api/import/wardrobe", { cache: "no-store" })
       .then((response) => {
         if (!response.ok) throw new Error("No se pudo cargar el catálogo.");
@@ -19,6 +20,10 @@ export function CatalogProvider({ children }) {
       .catch((requestError) => setError(requestError.message))
       .finally(() => setLoading(false));
   }, []);
+
+  useEffect(() => {
+    refreshCatalog();
+  }, [refreshCatalog]);
 
   const saveItem = useCallback(async (updatedItem) => {
     const response = await fetch(`/api/import/wardrobe/${updatedItem.id}`, {
@@ -58,7 +63,7 @@ export function CatalogProvider({ children }) {
   }, []);
 
   return (
-    <CatalogContext.Provider value={{ items, loading, error, setError, saveItem, deleteItem, addImportedItem, attachImportedModeledImage }}>
+    <CatalogContext.Provider value={{ items, loading, error, setError, saveItem, deleteItem, addImportedItem, attachImportedModeledImage, refreshCatalog }}>
       {children}
     </CatalogContext.Provider>
   );
