@@ -1,14 +1,14 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   Check,
   Heart,
   MagicWand,
   Sparkle,
   SpinnerGap,
-  UploadSimple,
   UserCircle,
 } from "@phosphor-icons/react";
 import { effectiveProfileGender, garmentFitsModel, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
+import { defaultModelPreset, findModelPreset, presetsForGender } from "../../shared/model-presets.mjs";
 import "./virtual-tryon.css";
 
 const PARTS = [
@@ -29,44 +29,22 @@ const FILTERS = {
 const OCCASION_LABELS = Object.fromEntries(FILTERS.occasions);
 const CLIMATE_LABELS = Object.fromEntries(FILTERS.climates);
 
-const COMPLEXIONS = [
-  ["esbelta", "Esbelta"],
-  ["media", "Media"],
-  ["atletica", "Atlética"],
-  ["curvy", "Curvy"],
-];
-
-const SKIN_TONES = [
-  ["clara", "Clara", "#f2d6c0"],
-  ["media-clara", "Media clara", "#e0b394"],
-  ["media", "Media", "#c68e64"],
-  ["morena", "Morena", "#9c6743"],
-  ["oscura", "Oscura", "#6b4630"],
-];
-
 const GENDERS = [["mujer", "Mujer"], ["hombre", "Hombre"]];
-const AGE_RANGES = [["18-25", "18–25"], ["26-35", "26–35"], ["36-50", "36–50"], ["51-65", "51–65"]];
-const HEIGHTS = [["baja", "Baja"], ["media", "Media"], ["alta", "Alta"]];
-const BODY_BALANCES = [["estrecha", "Hombros estrechos"], ["equilibrada", "Equilibrada"], ["amplia", "Hombros amplios"]];
-const UNDERTONES = [["frio", "Frío"], ["neutro", "Neutro"], ["calido", "Cálido"]];
-const HAIR_LENGTHS = [["rapado", "Rapado"], ["corto", "Corto"], ["medio", "Medio"], ["largo", "Largo"]];
-const HAIR_COLORS = [["negro", "Negro"], ["castano-oscuro", "Castaño oscuro"], ["castano", "Castaño"], ["rubio", "Rubio"], ["pelirrojo", "Pelirrojo"], ["gris", "Gris / canoso"]];
-const HAIR_TEXTURES = [["lacio", "Lacio"], ["ondulado", "Ondulado"], ["rizado", "Rizado"], ["afro", "Afro"], ["sin-cabello", "Sin cabello"]];
 
-const DEFAULT_MODEL = {
-  mode: "default",
-  catalogGender: "mujer",
-  modelGender: "mujer",
-  complexion: "media",
-  height: "media",
-  bodyBalance: "equilibrada",
-  ageRange: "26-35",
-  skinTone: "media",
-  undertone: "neutro",
-  hairColor: "castano",
-  hairLength: "medio",
-  hairTexture: "ondulado",
-};
+function profileFromPreset(preset) {
+  return {
+    mode: "preset",
+    preset: preset.id,
+    gender: preset.gender,
+    catalogGender: preset.gender,
+    modelGender: preset.gender,
+    complexion: preset.complexion,
+    skinTone: preset.skinTone,
+    modelUrl: preset.image,
+  };
+}
+
+const DEFAULT_MODEL = profileFromPreset(defaultModelPreset("mujer"));
 
 const WEIGHT = { light: 1, medium: 2, heavy: 3 };
 const NEUTRAL_SATURATION = 0.16;
@@ -87,13 +65,6 @@ function request(path, options) {
     return value;
   });
 }
-
-const fileToDataUrl = (file) => new Promise((resolve, reject) => {
-  const reader = new FileReader();
-  reader.onload = () => resolve(reader.result);
-  reader.onerror = () => reject(reader.error || new Error("No se pudo leer la imagen."));
-  reader.readAsDataURL(file);
-});
 
 function hexToHsl(hex = "#777777") {
   const value = hex.replace("#", "");
@@ -262,10 +233,17 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
   const [busyId, setBusyId] = useState(null);
   const [notice, setNotice] = useState("");
   const [error, setError] = useState("");
-  const faceInput = useRef(null);
   const normalizedItems = useMemo(() => items.map(metadata), [items]);
   const modelGender = effectiveProfileGender(modelDraft);
   const genderItems = useMemo(() => normalizedItems.filter((item) => garmentFitsModel(item, modelGender)), [normalizedItems, modelGender]);
+  const availablePresets = useMemo(() => presetsForGender(modelGender), [modelGender]);
+  const selectedPreset = findModelPreset(modelDraft.preset) || defaultModelPreset(modelGender);
+
+  const selectPreset = (preset) => {
+    setModelDraft(profileFromPreset(preset));
+    setError("");
+    setNotice("");
+  };
 
   useEffect(() => {
     Promise.all([
@@ -274,8 +252,9 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
     ]).then(([setup, collection]) => {
       setConfig(setup);
       setSavedOutfits(collection.outfits || []);
-      if (setup.profile) {
-        setModelDraft({ ...DEFAULT_MODEL, ...setup.profile });
+      if (setup.profile?.preset) {
+        const savedPreset = findModelPreset(setup.profile.preset) || defaultModelPreset(setup.profile.gender);
+        setModelDraft(profileFromPreset(savedPreset));
       } else {
         setSection("profile");
       }
@@ -314,31 +293,14 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
     return () => window.clearInterval(interval);
   }, [config.generationMode]);
 
-  const uploadFace = async (file) => {
-    if (!file) return;
-    setError(""); setNotice("Preparando tu referencia…");
-    try {
-      const imageDataUrl = await fileToDataUrl(file);
-      const result = await request("/api/tryon/model-reference", { method: "POST", body: JSON.stringify({ imageDataUrl }) });
-      setConfig((current) => ({ ...current, hasModelReference: true, modelReferenceUrl: result.modelReferenceUrl }));
-      setNotice("Referencia guardada de forma local.");
-    } catch (uploadError) { setError(uploadError.message); setNotice(""); }
-  };
-
   const saveProfile = async () => {
-    if (modelDraft.mode === "photo" && !config.hasModelReference) {
-      setError("Subí tu foto para usar este modo.");
-      return;
-    }
     try {
-      const profileToSave = modelDraft.mode === "default"
-        ? { ...modelDraft, catalogGender: modelDraft.modelGender }
-        : modelDraft;
+      const profileToSave = profileFromPreset(selectedPreset);
       const saved = await request("/api/tryon/model-profile", { method: "POST", body: JSON.stringify(profileToSave) });
       setConfig((current) => ({ ...current, profile: saved }));
-      setModelDraft((current) => ({ ...current, ...saved }));
+      setModelDraft(profileFromPreset(findModelPreset(saved.preset) || selectedPreset));
       setError("");
-      setNotice("Modelo guardado. Ya podés probar los looks de la temporada.");
+      setNotice(`${selectedPreset.label} quedó seleccionado. Ya podés probar los looks de la temporada.`);
       setSection("suggestions");
     } catch (profileError) {
       setError(profileError.message);
@@ -355,8 +317,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
 
   const generate = async (outfit) => {
     const chatMode = config.generationMode === "chat";
-    if (!config.profile) { setSection("profile"); setError("Elegí primero tu modelo: predeterminado o con tu foto."); return; }
-    if (config.profile.mode !== "default" && !config.hasModelReference) { setSection("profile"); setError("Subí una foto de referencia antes de generar la prueba virtual."); return; }
+    if (!config.profile?.preset) { setSection("profile"); setError("Elegí primero uno de los modelos IA disponibles."); return; }
     if (!chatMode && !config.hasApiKey) { setError("La generación de imágenes no está disponible en este momento. Intentá nuevamente más tarde."); return; }
     setBusyId(outfit.id); setError(""); setNotice("Estamos preparando tu prueba virtual…");
     try {
@@ -479,90 +440,63 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
         <section className="tryon-section profile-section">
           <div className="profile-copy">
             <p>Tu modelo</p>
-            <h2>Elegí quién luce los looks.</h2>
-            <div className="model-mode-cards">
-              <button className={modelDraft.mode === "default" ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, mode: "default" })}>
-                <UserCircle size={22} /><strong>Modelo predeterminado</strong>
-                <small>Un modelo profesional con la complexión y el tono de piel que elijas.</small>
-              </button>
-              <button className={modelDraft.mode === "photo" ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, mode: "photo" })}>
-                <UploadSimple size={22} /><strong>Usá mi foto</strong>
-                <small>Los looks conservan tu rostro y usan la complexión que elijas para el cuerpo generado.</small>
-              </button>
-            </div>
-            {modelDraft.mode === "photo" ? (
-              <fieldset className="model-fieldset">
-                <legend>Prendas para</legend>
-                <div className="model-options">
-                  {GENDERS.map(([id, label]) => (
-                    <button key={id} className={modelDraft.catalogGender === id ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, catalogGender: id })}>{label}</button>
-                  ))}
-                </div>
-              </fieldset>
-            ) : (
-              <fieldset className="model-fieldset">
-                <legend>Modelo humano</legend>
-                <div className="model-options">
-                  {GENDERS.map(([id, label]) => (
-                    <button key={id} className={modelDraft.modelGender === id ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, modelGender: id, catalogGender: id })}>{label}</button>
-                  ))}
-                </div>
-              </fieldset>
-            )}
-            <p className="model-note">Las prendas específicas de mujer u hombre sólo aparecen para el modelo compatible. Las prendas unisex aparecen en ambos.</p>
+            <h2>Elegí un modelo IA para tus looks.</h2>
+            <p className="profile-lead">Todos los modelos son ficticios, están predeterminados y usan la misma pose de estudio. Cambiar de avatar no consume créditos de IA; la generación sólo se usa cuando pedís la fotografía final de un look.</p>
+
             <fieldset className="model-fieldset">
-              <legend>Complexión</legend>
+              <legend>Presentación del modelo</legend>
               <div className="model-options">
-                {COMPLEXIONS.map(([id, label]) => (
-                  <button key={id} className={modelDraft.complexion === id ? "active" : ""} type="button" onClick={() => setModelDraft({ ...modelDraft, complexion: id })}>{label}</button>
+                {GENDERS.map(([id, label]) => (
+                  <button key={id} className={modelGender === id ? "active" : ""} type="button" onClick={() => selectPreset(defaultModelPreset(id))}>{label}</button>
                 ))}
               </div>
             </fieldset>
-            {modelDraft.mode === "default" && (
-              <>
-                <div className="model-detail-grid">
-                  <label><span>Edad visual</span><select value={modelDraft.ageRange} onChange={(event) => setModelDraft({ ...modelDraft, ageRange: event.target.value })}>{AGE_RANGES.map(([id, label]) => <option key={id} value={id}>{label} años</option>)}</select></label>
-                  <label><span>Altura</span><select value={modelDraft.height} onChange={(event) => setModelDraft({ ...modelDraft, height: event.target.value })}>{HEIGHTS.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
-                  <label><span>Proporción corporal</span><select value={modelDraft.bodyBalance} onChange={(event) => setModelDraft({ ...modelDraft, bodyBalance: event.target.value })}>{BODY_BALANCES.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
-                  <label><span>Subtono de piel</span><select value={modelDraft.undertone} onChange={(event) => setModelDraft({ ...modelDraft, undertone: event.target.value })}>{UNDERTONES.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
-                  <label><span>Largo del cabello</span><select value={modelDraft.hairLength} onChange={(event) => setModelDraft({ ...modelDraft, hairLength: event.target.value })}>{HAIR_LENGTHS.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
-                  <label><span>Color del cabello</span><select value={modelDraft.hairColor} onChange={(event) => setModelDraft({ ...modelDraft, hairColor: event.target.value })}>{HAIR_COLORS.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
-                  <label><span>Textura del cabello</span><select value={modelDraft.hairTexture} onChange={(event) => setModelDraft({ ...modelDraft, hairTexture: event.target.value })}>{HAIR_TEXTURES.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
-                </div>
-                <fieldset className="model-fieldset">
-                  <legend>Tono de piel</legend>
-                  <div className="model-tones">
-                    {SKIN_TONES.map(([id, label, hex]) => (
-                      <button key={id} className={modelDraft.skinTone === id ? "active" : ""} type="button" style={{ background: hex }} title={label} aria-label={label} onClick={() => setModelDraft({ ...modelDraft, skinTone: id })} />
-                    ))}
-                  </div>
-                </fieldset>
-              </>
-            )}
-            {modelDraft.mode === "photo" && (
-              <div className="model-photo-block">
-                <ul><li><Check /> Rostro visible y bien iluminado</li><li><Check /> Cuerpo completo o plano americano</li><li><Check /> Pose frontal y fondo simple</li></ul>
-                <input ref={faceInput} type="file" accept="image/png,image/jpeg,image/webp" hidden onChange={(event) => { uploadFace(event.target.files?.[0]); event.target.value = ""; }} />
-                <button className="tryon-secondary" type="button" onClick={() => faceInput.current?.click()}><UploadSimple size={17} /> {config.hasModelReference ? "Cambiá mi foto" : "Subí mi foto"}</button>
-                <p className="model-note">El tono de piel se toma de tu foto. La imagen se guarda únicamente como referencia local para el probador.</p>
+
+            <fieldset className="model-fieldset model-tone-fieldset">
+              <legend>Tono de piel</legend>
+              <div className="model-tones model-preset-tones">
+                {availablePresets.map((preset) => (
+                  <button
+                    key={preset.id}
+                    className={selectedPreset.id === preset.id ? "active" : ""}
+                    type="button"
+                    style={{ "--tone": preset.skinToneColor }}
+                    title={`${preset.skinToneLabel} · ${preset.label}`}
+                    aria-label={`Elegí tono ${preset.skinToneLabel} con el modelo ${preset.label}`}
+                    onClick={() => selectPreset(preset)}
+                  ><i /></button>
+                ))}
               </div>
-            )}
-            <button className="tryon-primary" type="button" onClick={saveProfile}><Check size={17} /> Guardá y mirá combinaciones</button>
+            </fieldset>
+
+            <fieldset className="model-fieldset">
+              <legend>Avatares disponibles</legend>
+              <div className="model-preset-grid">
+                {availablePresets.map((preset) => (
+                  <button key={preset.id} className={`model-preset-card${selectedPreset.id === preset.id ? " active" : ""}`} type="button" onClick={() => selectPreset(preset)}>
+                    <img src={preset.thumbnail} alt="" loading="lazy" />
+                    <span><strong>{preset.label}</strong><small>{preset.skinToneLabel}</small></span>
+                    <em>{preset.complexionLabel}</em>
+                  </button>
+                ))}
+              </div>
+            </fieldset>
+
+            <div className="model-inclusion-note">
+              <strong>Una biblioteca inclusiva, sin etiquetas rígidas.</strong>
+              <p>Los perfiles describen únicamente los rasgos visibles de estos avatares ficticios. No representan personalidad, nacionalidad ni preferencias, y ninguna apariencia se vincula a una prenda u ocasión.</p>
+            </div>
+            <p className="model-note">Las prendas específicas de mujer u hombre sólo aparecen para el modelo compatible. Las prendas unisex aparecen en ambos.</p>
+            <button className="tryon-primary" type="button" onClick={saveProfile}><Check size={17} /> Usá a {selectedPreset.label} y mirá combinaciones</button>
           </div>
-          <div className={`profile-image${(modelDraft.mode === "photo" && config.hasModelReference) ? " ready" : ""}`}>
-            {modelDraft.mode === "photo" && config.hasModelReference
-              ? <img src={config.modelReferenceUrl || "/api/tryon/model-reference"} alt="Referencia personal cargada" />
-              : modelDraft.mode === "photo"
-                ? <><UserCircle size={72} weight="thin" /><p>Tu foto aparecerá aquí</p></>
-                : (
-                  <div className="model-summary">
-                    <span className="model-summary-tone" style={{ background: SKIN_TONES.find(([id]) => id === modelDraft.skinTone)?.[2] }} />
-                    <UserCircle size={72} weight="thin" />
-                    <p><strong>{GENDERS.find(([id]) => id === modelDraft.modelGender)?.[1]}</strong> · {AGE_RANGES.find(([id]) => id === modelDraft.ageRange)?.[1]} años</p>
-                    <small>{COMPLEXIONS.find(([id]) => id === modelDraft.complexion)?.[1]} · altura {HEIGHTS.find(([id]) => id === modelDraft.height)?.[1]?.toLowerCase()} · piel {SKIN_TONES.find(([id]) => id === modelDraft.skinTone)?.[1]?.toLowerCase()} · cabello {HAIR_COLORS.find(([id]) => id === modelDraft.hairColor)?.[1]?.toLowerCase()}, {HAIR_TEXTURES.find(([id]) => id === modelDraft.hairTexture)?.[1]?.toLowerCase()}.</small>
-                  </div>
-                )}
-            {modelDraft.mode === "photo" && config.hasModelReference && <span><Check weight="bold" /> Lista para probar looks</span>}
+          <div className="profile-image preset-profile-image ready" aria-live="polite">
+            <img key={selectedPreset.id} src={selectedPreset.image} alt={`Modelo IA ${selectedPreset.label}: ${selectedPreset.appearance}, tono ${selectedPreset.skinToneLabel}`} />
+            <div className="preset-profile-caption">
+              <span><Check weight="bold" /> Vista previa instantánea</span>
+              <h3>{selectedPreset.label}</h3>
+              <p>{selectedPreset.appearance}</p>
+              <small>{selectedPreset.skinToneLabel} · {selectedPreset.complexionLabel}</small>
+            </div>
           </div>
         </section>
       )}

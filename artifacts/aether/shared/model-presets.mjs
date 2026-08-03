@@ -1,0 +1,118 @@
+export const MODEL_PRESETS = [
+  {
+    id: "mujer-europea-clara",
+    gender: "mujer",
+    label: "Alba",
+    appearance: "Rasgos europeos diversos",
+    skinTone: "clara",
+    skinToneLabel: "Clara",
+    skinToneColor: "#efd2bb",
+    complexion: "esbelta",
+    complexionLabel: "Esbelta natural",
+    image: "/fashion/models/ai/mujer-europea-clara.webp",
+    thumbnail: "/fashion/models/ai/mujer-europea-clara-thumb.webp",
+  },
+  {
+    id: "mujer-asia-dorada",
+    gender: "mujer",
+    label: "Mei",
+    appearance: "Rasgos de Asia oriental",
+    skinTone: "dorada",
+    skinToneLabel: "Dorada clara",
+    skinToneColor: "#d5a47f",
+    complexion: "media",
+    complexionLabel: "Media equilibrada",
+    image: "/fashion/models/ai/mujer-asia-dorada.webp",
+    thumbnail: "/fashion/models/ai/mujer-asia-dorada-thumb.webp",
+  },
+  {
+    id: "mujer-latina-oliva",
+    gender: "mujer",
+    label: "Sofía",
+    appearance: "Rasgos latinoamericanos diversos",
+    skinTone: "oliva",
+    skinToneLabel: "Oliva media",
+    skinToneColor: "#b87851",
+    complexion: "curvy",
+    complexionLabel: "Curva natural",
+    image: "/fashion/models/ai/mujer-latina-oliva.webp",
+    thumbnail: "/fashion/models/ai/mujer-latina-oliva-thumb.webp",
+  },
+  {
+    id: "mujer-afro-profunda",
+    gender: "mujer",
+    label: "Amara",
+    appearance: "Rasgos afrodescendientes",
+    skinTone: "profunda",
+    skinToneLabel: "Profunda",
+    skinToneColor: "#68442f",
+    complexion: "atletica",
+    complexionLabel: "Atlética natural",
+    image: "/fashion/models/ai/mujer-afro-profunda.webp",
+    thumbnail: "/fashion/models/ai/mujer-afro-profunda-thumb.webp",
+  },
+  {
+    id: "hombre-europeo-claro",
+    gender: "hombre",
+    label: "Leo",
+    appearance: "Rasgos europeos diversos",
+    skinTone: "clara",
+    skinToneLabel: "Clara",
+    skinToneColor: "#efd2bb",
+    complexion: "media",
+    complexionLabel: "Media equilibrada",
+    image: "/fashion/models/ai/hombre-europeo-claro.webp",
+    thumbnail: "/fashion/models/ai/hombre-europeo-claro-thumb.webp",
+  },
+  {
+    id: "hombre-asia-dorado",
+    gender: "hombre",
+    label: "Jun",
+    appearance: "Rasgos de Asia oriental",
+    skinTone: "dorada",
+    skinToneLabel: "Dorada clara",
+    skinToneColor: "#d5a47f",
+    complexion: "esbelta",
+    complexionLabel: "Esbelta natural",
+    image: "/fashion/models/ai/hombre-asia-dorado.webp",
+    thumbnail: "/fashion/models/ai/hombre-asia-dorado-thumb.webp",
+  },
+  {
+    id: "hombre-latino-oliva",
+    gender: "hombre",
+    label: "Mateo",
+    appearance: "Rasgos latinoamericanos diversos",
+    skinTone: "oliva",
+    skinToneLabel: "Oliva media",
+    skinToneColor: "#b87851",
+    complexion: "atletica",
+    complexionLabel: "Atlética natural",
+    image: "/fashion/models/ai/hombre-latino-oliva.webp",
+    thumbnail: "/fashion/models/ai/hombre-latino-oliva-thumb.webp",
+  },
+  {
+    id: "hombre-afro-profundo",
+    gender: "hombre",
+    label: "Malik",
+    appearance: "Rasgos afrodescendientes",
+    skinTone: "profunda",
+    skinToneLabel: "Profunda",
+    skinToneColor: "#68442f",
+    complexion: "robusta",
+    complexionLabel: "Robusta natural",
+    image: "/fashion/models/ai/hombre-afro-profundo.webp",
+    thumbnail: "/fashion/models/ai/hombre-afro-profundo-thumb.webp",
+  },
+];
+
+export function findModelPreset(id) {
+  return MODEL_PRESETS.find((preset) => preset.id === id) || null;
+}
+
+export function presetsForGender(gender) {
+  return MODEL_PRESETS.filter((preset) => preset.gender === (gender === "hombre" ? "hombre" : "mujer"));
+}
+
+export function defaultModelPreset(gender = "mujer") {
+  return presetsForGender(gender)[1] || presetsForGender(gender)[0] || MODEL_PRESETS[0];
+}

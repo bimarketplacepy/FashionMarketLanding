@@ -867,7 +867,7 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
           <section className="customize-cta" id="probador">
             <p className="retail-kicker"><Sparkle size={15} weight="fill" /> Probador virtual</p>
             <h2>Explorá nuevas formas<br /><em>de llevar cada look.</em></h2>
-            <p>Cuando quieras probar una combinación, elegí un modelo o subí tu foto y mirá cómo se integra el look completo.</p>
+            <p>Cuando quieras probar una combinación, elegí uno de nuestros modelos IA predeterminados y mirá cómo se integra el look completo.</p>
             <button className="retail-primary-button" type="button" onClick={() => changeView("wardrobe")}>
               Abrí el probador <ArrowRight size={18} />
             </button>

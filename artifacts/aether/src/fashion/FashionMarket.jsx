@@ -161,7 +161,7 @@ export function Landing({ intro }) {
         <section className="customize-cta" id="experiencia">
           <p className="retail-kicker"><Sparkle size={15} weight="fill" /> Probador virtual</p>
           <h2>Probá la colección en vos,<br /><em>antes de elegir.</em></h2>
-          <p>Elegí un modelo o subí tu foto, y mirá cómo te quedan las combinaciones de la temporada.</p>
+          <p>Elegí un modelo IA predeterminado y mirá cómo se integran las combinaciones de la temporada.</p>
           <button className="retail-primary-button" type="button" onClick={() => navigate("/catalogo")}>
             Ir al probador <ArrowRight size={18} />
           </button>
