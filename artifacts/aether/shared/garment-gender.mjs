@@ -38,3 +38,8 @@ export function garmentFitsModel(item, modelGender) {
   const garmentGender = inferGarmentGender(item);
   return garmentGender === "unisex" || garmentGender === modelGender;
 }
+
+export function effectiveProfileGender(profile = {}) {
+  if (profile.gender === "hombre" || profile.catalogGender === "hombre" || profile.modelGender === "hombre") return "hombre";
+  return "mujer";
+}
