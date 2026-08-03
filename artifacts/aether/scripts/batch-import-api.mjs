@@ -14,6 +14,7 @@ import {
   fileHint,
   parseAnalysisResults,
 } from "./services/vision-provider.mjs";
+import { inferGarmentGender, normalizeGarmentType } from "../shared/garment-gender.mjs";
 
 const ASSET_ROOT = "/api/batches/assets";
 const LIBRARY_ASSET_ROOT = "/api/import/library";
@@ -392,6 +393,7 @@ export function batchImportApi(options = {}) {
       id,
       name: ficha.nombre,
       part: ficha.categoriaInterna,
+      garmentType: normalizeGarmentType(ficha.garmentType, ficha.categoriaInterna),
       color: ficha.colores[0] || "#d8d0c2",
       secondaryColor: ficha.colores[1] || null,
       palette: ficha.colores.length ? ficha.colores : ["#d8d0c2"],
@@ -406,7 +408,13 @@ export function batchImportApi(options = {}) {
       thumbnail: `${LIBRARY_ASSET_ROOT}/${garmentName}`,
       modeledImage: null,
       importJobId: null,
-      gender: "unisex",
+      gender: inferGarmentGender({
+        name: ficha.nombre,
+        part: ficha.categoriaInterna,
+        garmentType: ficha.garmentType,
+        gender: ficha.gender,
+        tags: [ficha.subcategoria],
+      }),
       sizes: DEFAULT_SIZES[ficha.categoriaInterna] || ["Único"],
       description: ficha.descripcion || "",
       price: Number.isFinite(ficha.precio) ? ficha.precio : null,
@@ -434,6 +442,8 @@ export function batchImportApi(options = {}) {
     }
     if (typeof input.descripcion === "string") ficha.descripcion = input.descripcion.trim().slice(0, 600);
     if (typeof input.subcategoria === "string") ficha.subcategoria = input.subcategoria.trim().slice(0, 80);
+    if (typeof input.garmentType === "string") ficha.garmentType = normalizeGarmentType(input.garmentType, ficha.categoriaInterna);
+    if (["mujer", "hombre", "unisex"].includes(input.gender)) ficha.gender = inferGarmentGender({ ...ficha, name: ficha.nombre, tags: [ficha.subcategoria], gender: input.gender });
   }
 
   async function handler(req, res, next) {

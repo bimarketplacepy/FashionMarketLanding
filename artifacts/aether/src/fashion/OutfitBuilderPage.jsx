@@ -6,6 +6,7 @@ import { readDraft, writeDraft, draftFromOutfit } from "./outfit-draft.js";
 import { sugerirPrendas } from "./sugerencias.js";
 import { SuggestionCarousel } from "./SuggestionCarousel.jsx";
 import { PART_LABELS } from "./format.js";
+import { garmentFitsModel } from "../../shared/garment-gender.mjs";
 import "./styles.css";
 import "./shop.css";
 
@@ -40,6 +41,7 @@ export function OutfitBuilderPage() {
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
   const [savedOutfits, setSavedOutfits] = useState([]);
+  const [profileGender, setProfileGender] = useState(null);
   const [tryOn, setTryOn] = useState({ busy: false, image: null });
   const [saving, setSaving] = useState(false);
   const [notice, setNotice] = useState("");
@@ -47,9 +49,14 @@ export function OutfitBuilderPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    fetch("/api/tryon/outfits")
-      .then((response) => response.ok ? response.json() : { outfits: [] })
-      .then((collection) => setSavedOutfits(collection.outfits || []))
+    Promise.all([
+      fetch("/api/tryon/outfits").then((response) => response.ok ? response.json() : { outfits: [] }),
+      fetch("/api/tryon/config").then((response) => response.ok ? response.json() : { profile: null }),
+    ])
+      .then(([collection, config]) => {
+        setSavedOutfits(collection.outfits || []);
+        setProfileGender(config.profile?.gender === "hombre" ? "hombre" : (config.profile ? "mujer" : null));
+      })
       .catch(() => {});
   }, []);
 
@@ -57,7 +64,19 @@ export function OutfitBuilderPage() {
     writeDraft(slots);
   }, [slots]);
 
-  const itemById = useMemo(() => new Map(items.map((item) => [item.id, item])), [items]);
+  const compatibleItems = useMemo(
+    () => profileGender ? items.filter((item) => garmentFitsModel(item, profileGender)) : items,
+    [items, profileGender],
+  );
+  const itemById = useMemo(() => new Map(compatibleItems.map((item) => [item.id, item])), [compatibleItems]);
+
+  useEffect(() => {
+    if (loading) return;
+    setSlots((current) => {
+      const next = Object.fromEntries(Object.entries(current).filter(([, entry]) => itemById.has(entry.id)));
+      return Object.keys(next).length === Object.keys(current).length ? current : next;
+    });
+  }, [itemById, loading]);
 
   const slotGarments = useMemo(() => {
     const result = {};
@@ -74,18 +93,23 @@ export function OutfitBuilderPage() {
   // Sugerencias bajo el lienzo: solo categorías de slots vacíos, recalculadas
   // con cada prenda que entra o sale del outfit.
   const sugerencias = useMemo(
-    () => (chosenGarments.length ? sugerirPrendas({ outfit: slotGarments, items, outfits: savedOutfits }) : []),
-    [slotGarments, items, savedOutfits, chosenGarments.length],
+    () => (chosenGarments.length ? sugerirPrendas({ outfit: slotGarments, items: compatibleItems, outfits: savedOutfits }) : []),
+    [slotGarments, compatibleItems, savedOutfits, chosenGarments.length],
   );
 
   const catalogItems = useMemo(() => {
     const query = search.trim().toLowerCase();
-    return items.filter((item) => {
+    return compatibleItems.filter((item) => {
       if (filter !== "all" && item.part !== filter) return false;
       if (!query) return true;
       return item.name.toLowerCase().includes(query) || (item.tags || []).some((tag) => tag.toLowerCase().includes(query));
     });
-  }, [items, filter, search]);
+  }, [compatibleItems, filter, search]);
+
+  const compatibleSavedOutfits = useMemo(() => {
+    const ids = new Set(compatibleItems.map((item) => item.id));
+    return savedOutfits.filter((outfit) => outfit.garmentIds.every((id) => ids.has(id)));
+  }, [compatibleItems, savedOutfits]);
 
   const assign = (item) => {
     setSlots((current) => ({ ...current, [item.part]: { id: item.id } }));
@@ -184,12 +208,12 @@ export function OutfitBuilderPage() {
                 <p>Combinación libre</p>
                 <h2>Armá tu outfit</h2>
               </div>
-              {savedOutfits.length > 0 && (
+              {compatibleSavedOutfits.length > 0 && (
                 <label className="builder-load">
                   <span>Cargar un look guardado</span>
-                  <select value="" onChange={(event) => loadOutfit(savedOutfits.find((outfit) => outfit.id === event.target.value))}>
+                  <select value="" onChange={(event) => loadOutfit(compatibleSavedOutfits.find((outfit) => outfit.id === event.target.value))}>
                     <option value="" disabled>Elegir look…</option>
-                    {savedOutfits.map((outfit) => <option key={outfit.id} value={outfit.id}>{outfit.name}</option>)}
+                    {compatibleSavedOutfits.map((outfit) => <option key={outfit.id} value={outfit.id}>{outfit.name}</option>)}
                   </select>
                 </label>
               )}

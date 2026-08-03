@@ -3,6 +3,7 @@ import { copyFile, mkdir, readFile, readdir, rename, rm, stat, writeFile } from 
 import path from "node:path";
 import sharp from "sharp";
 import { createAIProvider } from "./ai-provider.mjs";
+import { GARMENT_GENDERS, inferGarmentGender, normalizeGarmentType } from "../shared/garment-gender.mjs";
 
 const API_ROOT = "/api/import/jobs";
 const ASSET_ROOT = "/api/import/assets";
@@ -16,7 +17,7 @@ const MATERIALS = new Set(["cotton", "linen", "denim", "knit", "wool", "leather"
 const SILHOUETTES = new Set(["fitted", "regular", "relaxed", "oversized", "flowy", "structured"]);
 const WEIGHTS = new Set(["light", "medium", "heavy"]);
 const CLIMATES = new Set(["warm", "mild", "cold", "rain"]);
-const GENDERS = new Set(["mujer", "hombre", "unisex"]);
+const GENDERS = new Set(GARMENT_GENDERS);
 
 const DEFAULT_SIZES = {
   upperbody: ["XS", "S", "M", "L", "XL"],
@@ -71,9 +72,13 @@ function normalizeMetadata(value = {}) {
   const metadata = value && typeof value === "object" && !Array.isArray(value) ? value : {};
   const color = typeof metadata.color === "string" && HEX_COLOR.test(metadata.color) ? metadata.color.toLowerCase() : "#d8d0c2";
   const secondaryColor = typeof metadata.secondaryColor === "string" && HEX_COLOR.test(metadata.secondaryColor) ? metadata.secondaryColor.toLowerCase() : null;
+  const part = PARTS.has(metadata.part) ? metadata.part : "upperbody";
+  const garmentType = normalizeGarmentType(metadata.garmentType, part);
   return {
     name: typeof metadata.name === "string" ? metadata.name.trim().slice(0, 120) || "New piece" : "New piece",
-    part: PARTS.has(metadata.part) ? metadata.part : "upperbody",
+    part,
+    garmentType,
+    gender: inferGarmentGender({ ...metadata, part, garmentType }),
     color,
     secondaryColor,
     tags: Array.isArray(metadata.tags) ? metadata.tags.filter((tag) => typeof tag === "string").map((tag) => tag.trim().toLowerCase().slice(0, 40)).filter(Boolean).slice(0, 12) : [],
@@ -386,6 +391,7 @@ export function wardrobeImportApi(options = {}) {
       id,
       name: metadata.name || "New piece",
       part: metadata.part || "upperbody",
+      garmentType: normalizeGarmentType(metadata.garmentType, metadata.part),
       color: metadata.color || "#d8d0c2",
       secondaryColor: metadata.secondaryColor || null,
       palette: [metadata.color, metadata.secondaryColor].filter(Boolean),
@@ -400,7 +406,7 @@ export function wardrobeImportApi(options = {}) {
       thumbnail: `${LIBRARY_ASSET_ROOT}/${garmentName}`,
       modeledImage: modeledImage || existing?.modeledImage || null,
       importJobId: job.id,
-      gender: existing?.gender || "unisex",
+      gender: inferGarmentGender({ ...metadata, gender: metadata.gender || existing?.gender }),
       sizes: existing?.sizes || DEFAULT_SIZES[metadata.part] || ["Único"],
       description: existing?.description || "",
     };
@@ -501,6 +507,7 @@ export function wardrobeImportApi(options = {}) {
         const input = await body(req);
         if (typeof input.name === "string" && input.name.trim()) record.name = input.name.trim().slice(0, 120);
         if (PARTS.has(input.part)) record.part = input.part;
+        if (typeof input.garmentType === "string") record.garmentType = normalizeGarmentType(input.garmentType, record.part);
         if (typeof input.color === "string" && HEX_COLOR.test(input.color)) record.color = input.color.toLowerCase();
         if ("secondaryColor" in input) {
           record.secondaryColor = typeof input.secondaryColor === "string" && HEX_COLOR.test(input.secondaryColor)
@@ -514,7 +521,7 @@ export function wardrobeImportApi(options = {}) {
           record.sizes = input.sizes.filter((size) => typeof size === "string").map((size) => size.trim().slice(0, 12)).filter(Boolean).slice(0, 12);
         }
         if (typeof input.description === "string") record.description = input.description.trim().slice(0, 600);
-        if (GENDERS.has(input.gender)) record.gender = input.gender;
+        if (GENDERS.has(input.gender)) record.gender = inferGarmentGender({ ...record, gender: input.gender });
         record.palette = [record.color, record.secondaryColor].filter(Boolean);
         await atomicJson(importedFile, records);
         return json(res, 200, record);

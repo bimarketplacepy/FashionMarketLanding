@@ -1,0 +1,40 @@
+export const GARMENT_GENDERS = ["mujer", "hombre", "unisex"];
+
+export const GARMENT_TYPES = [
+  "top", "blouse", "shirt", "tshirt", "sweater", "dress", "jumpsuit",
+  "skirt", "trousers", "jeans", "shorts", "jacket", "coat", "heels",
+  "shoes", "bag", "jewelry", "belt", "scarf", "hat", "other",
+];
+
+const WOMEN_ONLY_TYPES = new Set(["top", "blouse", "dress", "skirt", "heels"]);
+const WOMEN_TERMS = /\b(women'?s?|woman|female|mujer|femenin[ao]|blouse|blusa|crop\s*top|strapless|bustier|corset|bralette|camisole|dress|vestido|pollera|falda|skirt|tac[oó]n(?:es)?|high\s*heels?|stiletto|pump|handbag|cartera|purse|clutch|mini\s*bag|earrings?|aros?|necklace|bracelet|pulsera)\b/i;
+const MEN_TERMS = /\b(men'?s?|man|male|hombre|masculin[ao])\b/i;
+
+function searchable(item = {}) {
+  return [item.name, item.garmentType, item.construction, item.material, item.silhouette, ...(Array.isArray(item.tags) ? item.tags : [])]
+    .filter(Boolean)
+    .join(" ");
+}
+
+export function normalizeGarmentType(value, part = "") {
+  if (GARMENT_TYPES.includes(value)) return value;
+  if (part === "wholebody_up") return "jacket";
+  if (part === "lowerbody") return "trousers";
+  if (part === "shoes") return "shoes";
+  if (part === "accessories_up") return "other";
+  return "other";
+}
+
+export function inferGarmentGender(item = {}) {
+  const type = normalizeGarmentType(item.garmentType, item.part);
+  const text = searchable(item);
+  if (WOMEN_ONLY_TYPES.has(type) || WOMEN_TERMS.test(text)) return "mujer";
+  if (MEN_TERMS.test(text)) return "hombre";
+  if (GARMENT_GENDERS.includes(item.gender)) return item.gender;
+  return "unisex";
+}
+
+export function garmentFitsModel(item, modelGender) {
+  const garmentGender = inferGarmentGender(item);
+  return garmentGender === "unisex" || garmentGender === modelGender;
+}

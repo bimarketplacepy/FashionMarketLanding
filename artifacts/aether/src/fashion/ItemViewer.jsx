@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Check, Plus, Trash, X } from "@phosphor-icons/react";
 import { OptimizedImage } from "./OptimizedImage.jsx";
+import { GARMENT_TYPES, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
 
 // Editor de prendas del panel /admin. Los cambios persisten en el servidor
 // vía PATCH /api/import/wardrobe/:id (ver catalog-context.jsx).
@@ -16,6 +17,12 @@ const TYPES = [
 const TYPE_MAP = Object.fromEntries(TYPES.map((type) => [type.id, type]));
 
 const GENDERS = [["mujer", "Mujer"], ["hombre", "Hombre"], ["unisex", "Unisex"]];
+const GARMENT_TYPE_LABELS = {
+  top: "Top", blouse: "Blusa", shirt: "Camisa", tshirt: "Remera", sweater: "Suéter",
+  dress: "Vestido", jumpsuit: "Enterizo", skirt: "Pollera", trousers: "Pantalón", jeans: "Jean",
+  shorts: "Short", jacket: "Chaqueta", coat: "Abrigo", heels: "Tacones", shoes: "Calzado",
+  bag: "Cartera / bolso", jewelry: "Joyería", belt: "Cinturón", scarf: "Pañuelo", hat: "Sombrero", other: "Otro",
+};
 
 function rgbToHex(red, green, blue) {
   return `#${[red, green, blue].map((value) => Math.max(0, Math.min(255, value)).toString(16).padStart(2, "0")).join("")}`;
@@ -242,6 +249,13 @@ function ItemEditor({ draft, setDraft, palette, sampling, setSampling, sampleSta
       </div>
 
       <label className="field">
+        <span>Tipo de prenda</span>
+        <select value={draft.garmentType} onChange={(event) => setDraft((current) => ({ ...current, garmentType: event.target.value }))}>
+          {GARMENT_TYPES.map((type) => <option value={type} key={type}>{GARMENT_TYPE_LABELS[type]}</option>)}
+        </select>
+      </label>
+
+      <label className="field">
         <span>Talles (separados por coma)</span>
         <input
           value={draft.sizesText}
@@ -300,10 +314,11 @@ function draftFrom(item) {
   return {
     name: item.name || "",
     part: item.part,
+    garmentType: normalizeGarmentType(item.garmentType, item.part),
     color: item.color || "#9a9286",
     secondaryColor: item.secondaryColor || null,
     tags: [...(item.tags || [])],
-    gender: item.gender || "unisex",
+    gender: inferGarmentGender(item),
     sizesText: (item.sizes || []).join(", "),
     description: item.description || "",
   };
@@ -313,6 +328,7 @@ function normalizedDraft(draft) {
   return {
     name: draft.name.trim(),
     part: draft.part,
+    garmentType: draft.garmentType,
     color: draft.color?.toLowerCase() || null,
     secondaryColor: draft.secondaryColor?.toLowerCase() || null,
     tags: draft.tags.map((tag) => tag.trim()).filter(Boolean),

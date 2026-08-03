@@ -4,6 +4,7 @@ import path from "node:path";
 import sharp from "sharp";
 import { createAIProvider } from "./ai-provider.mjs";
 import { generateModelPhoto, modelKey, normalizePerfil, LOOKBOOK_CAMERA, styleReferences } from "./model-gen.mjs";
+import { garmentFitsModel, inferGarmentGender } from "../shared/garment-gender.mjs";
 
 const API_ROOT = "/api/tryon";
 const PARTS = new Set(["upperbody", "wholebody_up", "lowerbody", "accessories_up", "shoes"]);
@@ -177,6 +178,15 @@ export function outfitApi(options = {}) {
     const ids = [...new Set(Array.isArray(input.garmentIds) ? input.garmentIds : [])];
     const garments = ids.map((id) => library.find((item) => item.id === id)).filter(Boolean);
     if (garments.length !== ids.length) throw Object.assign(new Error("Una o más prendas ya no están disponibles."), { status: 400 });
+    const profile = await loadProfile();
+    if (profile) {
+      const modelGender = profile.gender === "hombre" ? "hombre" : "mujer";
+      const incompatible = garments.find((item) => !garmentFitsModel(item, modelGender));
+      if (incompatible) {
+        const garmentGender = inferGarmentGender(incompatible);
+        throw Object.assign(new Error(`“${incompatible.name}” es una prenda para ${garmentGender} y no es compatible con el modelo seleccionado.`), { status: 400 });
+      }
+    }
     if (!garments.some((item) => item.part === "upperbody") || !garments.some((item) => item.part === "lowerbody")) {
       throw Object.assign(new Error("El look necesita una prenda superior y una inferior."), { status: 400 });
     }

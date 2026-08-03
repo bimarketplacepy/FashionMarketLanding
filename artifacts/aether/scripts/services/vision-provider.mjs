@@ -5,6 +5,8 @@
 //       confianza, prendaCompleta, prendasSecundarias[] }
 // Cambiar de proveedor no requiere tocar nada fuera de este módulo.
 
+import { GARMENT_GENDERS, GARMENT_TYPES, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
+
 const PUBLIC_CATEGORIES = ["tops", "jackets", "bottoms", "shoes", "accessories"];
 
 export const PUBLIC_TO_INTERNAL = {
@@ -60,7 +62,7 @@ const REGLAS_PRINCIPAL = `Reglas para identificar la prenda PRINCIPAL cuando la 
 - Todas las demás prendas visibles van en "prendasSecundarias" (nombres cortos en español).
 - "prendaCompleta" es false si la prenda principal está parcialmente cortada por el encuadre.`;
 
-const FORMATO_JSON = `{ "archivo": "nombre-exacto-del-archivo.jpg", "nombre": "...", "categoria": "tops|jackets|bottoms|shoes|accessories",
+const FORMATO_JSON = `{ "archivo": "nombre-exacto-del-archivo.jpg", "nombre": "...", "categoria": "tops|jackets|bottoms|shoes|accessories", "garmentType": "...", "gender": "mujer|hombre|unisex",
   "subcategoria": "...", "colores": ["#hex1","#hex2"], "descripcion": "...",
   "prendaCompleta": true, "prendaPrincipal": "...", "prendasSecundarias": ["..."] }`;
 
@@ -81,6 +83,8 @@ Contenido de cada resultado:
 - "archivo": el nombre exacto del archivo analizado (obligatorio, se usa para matchear).
 - "nombre": nombre comercial en español rioplatense, estilo catálogo (ej: "Jean recto azul lavado").
 - "categoria": una de tops | jackets | bottoms | shoes | accessories (la de la prenda principal).
+- "garmentType": tipo exacto en inglés del enum indicado por el schema. Usá top para tops de moda; para prendas neutras o masculinas preferí tshirt, shirt, sweater u otro tipo específico.
+- "gender": mujer | hombre | unisex según la PRENDA, su corte y construcción, no según la persona que posa. Tops de moda, blusas, vestidos, polleras, tacones y accesorios claramente femeninos son mujer. Usá unisex sólo cuando sea realmente neutra o ambigua.
 - "subcategoria": tipo específico en español (ej: "jean recto", "remera manga corta", "campera de cuero").
 - "colores": 1 a 3 colores hex dominantes de la prenda principal.
 - "descripcion": 1 a 2 frases comerciales en español, sin inventar detalles que no se vean.
@@ -110,12 +114,16 @@ export function validateAnalysis(raw) {
     && ["x", "y", "width", "height"].every((key) => Number.isFinite(Number(raw.recorte[key])))
     ? { x: Number(raw.recorte.x), y: Number(raw.recorte.y), width: Number(raw.recorte.width), height: Number(raw.recorte.height) }
     : null;
+  const garmentType = normalizeGarmentType(raw.garmentType, PUBLIC_TO_INTERNAL[categoria]);
+  const gender = inferGarmentGender({ name: nombre, garmentType, gender: raw.gender, tags: [raw.subcategoria] });
   return {
     result: {
       archivo: typeof raw.archivo === "string" ? raw.archivo.trim() : null,
       nombre,
       categoria,
       categoriaInterna: PUBLIC_TO_INTERNAL[categoria],
+      garmentType,
+      gender,
       subcategoria: typeof raw.subcategoria === "string" ? raw.subcategoria.trim().slice(0, 80) : "",
       colores,
       descripcion: typeof raw.descripcion === "string" ? raw.descripcion.trim().slice(0, 600) : "",
@@ -159,6 +167,8 @@ const GEMINI_SCHEMA = {
   properties: {
     nombre: { type: "string" },
     categoria: { type: "string", enum: PUBLIC_CATEGORIES },
+    garmentType: { type: "string", enum: GARMENT_TYPES },
+    gender: { type: "string", enum: GARMENT_GENDERS },
     subcategoria: { type: "string" },
     colores: { type: "array", items: { type: "string" }, maxItems: 3 },
     descripcion: { type: "string" },
@@ -167,7 +177,7 @@ const GEMINI_SCHEMA = {
     prendaPrincipal: { type: "string" },
     prendasSecundarias: { type: "array", items: { type: "string" }, maxItems: 6 },
   },
-  required: ["nombre", "categoria", "subcategoria", "colores", "descripcion", "prendaCompleta", "prendaPrincipal", "prendasSecundarias"],
+  required: ["nombre", "categoria", "garmentType", "gender", "subcategoria", "colores", "descripcion", "prendaCompleta", "prendaPrincipal", "prendasSecundarias"],
 };
 
 function humanError(message, detail) {
@@ -247,7 +257,7 @@ function geminiProvider(setting) {
         const context = [`Nombre de archivo: "${fileName}"`];
         if (folderName) context.push(`Carpeta de origen: "${folderName}"`);
         if (targetGarment) context.push(`Prenda objetivo: "${targetGarment}" — analizá SOLO esa prenda de la imagen.`);
-        const prompt = `Analizá esta foto de prenda para un catálogo de moda.\n\n${context.join("\n")}\n\n${REGLAS_PRINCIPAL}\n\n"nombre", "subcategoria" y "descripcion" en español rioplatense, estilo catálogo. "colores": 1 a 3 hex dominantes de la prenda principal. Respondé según el schema JSON.`;
+        const prompt = `Analizá esta foto de prenda para un catálogo de moda.\n\n${context.join("\n")}\n\n${REGLAS_PRINCIPAL}\n\n"nombre", "subcategoria" y "descripcion" en español rioplatense, estilo catálogo. "colores": 1 a 3 hex dominantes. Clasificá garmentType y gender por la prenda, nunca por quien posa: tops de moda, blusas, vestidos, polleras, tacones y accesorios femeninos son mujer; hombre para prendas masculinas; unisex sólo si es realmente neutral. Respondé según el schema JSON.`;
         // Hasta 3 intentos ante 429, con backoff exponencial que respeta el
         // retry-after informado por la API.
         let lastError;

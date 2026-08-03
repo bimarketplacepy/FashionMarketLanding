@@ -4,6 +4,7 @@ import { Heart, PencilSimple, SpinnerGap } from "@phosphor-icons/react";
 import { OptimizedImage } from "./OptimizedImage.jsx";
 import { draftFromOutfit, writeDraft } from "./outfit-draft.js";
 import { avatarDataUrl, DEFAULT_PERFIL, HAIR_STOPS, MONK_TONES, normalizeAvatarPerfil, peloHexFromValor, tonoHexFromValor } from "./model-avatar.js";
+import { garmentFitsModel, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
 import "./virtual-tryon.css";
 
 export const PARTS = [
@@ -103,6 +104,8 @@ export function colorCompatibility(first, second) {
 export function metadata(item) {
   return {
     ...item,
+    garmentType: normalizeGarmentType(item.garmentType, item.part),
+    gender: inferGarmentGender(item),
     season: item.season || "all",
     material: item.material || "mixed",
     silhouette: item.silhouette || "regular",
@@ -233,7 +236,7 @@ const GENDER_OPTIONS = [["mujer", "Mujer"], ["hombre", "Hombre"]];
 const GENDER_SILUETA = { mujer: "B", hombre: "A" };
 
 function fitsGender(item, gender) {
-  return !item.gender || item.gender === "unisex" || item.gender === gender;
+  return garmentFitsModel(item, gender);
 }
 
 export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate, initialSection }) {
@@ -406,7 +409,9 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate, 
     navigate("/outfit");
   };
 
-  const savedKeys = new Set(savedOutfits.map((outfit) => [...outfit.garmentIds].sort().join("|")));
+  const compatibleIds = new Set(genderItems.map((item) => item.id));
+  const compatibleSavedOutfits = savedOutfits.filter((outfit) => outfit.garmentIds.every((id) => compatibleIds.has(id)));
+  const savedKeys = new Set(compatibleSavedOutfits.map((outfit) => [...outfit.garmentIds].sort().join("|")));
   const inOutfits = ["outfits", "profile"].includes(section);
   const gridItems = useMemo(() => {
     const filtered = section === "all" ? genderItems : genderItems.filter((item) => item.part === section);
@@ -623,10 +628,10 @@ export function VirtualTryOn({ items, onAddProducts, onOpenItem, onModelUpdate, 
         </section>
       )}
 
-      {!!savedOutfits.filter((item) => item.image).length && section === "outfits" && (
+      {!!compatibleSavedOutfits.filter((item) => item.image).length && section === "outfits" && (
         <section className="saved-looks">
           <div><p>Tus pruebas</p><h2>Looks generados</h2></div>
-          <div>{savedOutfits.filter((item) => item.image).map((outfit) => <figure key={outfit.id}><img src={outfit.image} alt={outfit.name} /><figcaption>{outfit.name}</figcaption></figure>)}</div>
+          <div>{compatibleSavedOutfits.filter((item) => item.image).map((outfit) => <figure key={outfit.id}><img src={outfit.image} alt={outfit.name} /><figcaption>{outfit.name}</figcaption></figure>)}</div>
         </section>
       )}
     </main>

@@ -1,4 +1,5 @@
 import sharp from "sharp";
+import { GARMENT_GENDERS, GARMENT_TYPES } from "../shared/garment-gender.mjs";
 
 const PARTS = ["upperbody", "wholebody_up", "lowerbody", "accessories_up", "shoes"];
 const SEASONS = ["all", "spring", "summer", "autumn", "winter"];
@@ -12,6 +13,9 @@ const DETECTION_PROMPT = `Identify every distinct wearable clothing item visible
 For each item:
 - include a tight bounding box using integer coordinates normalized to a 1000 by 1000 image;
 - use only these category ids: upperbody, wholebody_up, lowerbody, accessories_up, shoes;
+- classify garmentType using the most specific supplied enum. Reserve top for fashion tops; use tshirt, shirt, sweater or another specific type for neutral or men's upper garments;
+- classify gender as mujer, hombre, or unisex from the GARMENT, its cut, construction and product context. Do not copy the gender of the person wearing it merely because they are the model;
+- use mujer for fashion tops, blouses, dresses, skirts, high heels and clearly feminine bags or jewelry; use hombre for clearly masculine garments; use unisex only when the product is genuinely neutral or ambiguous;
 - suggest a concise specific name, primary hex color, optional genuinely distinct secondary hex color, and 1-4 useful lowercase detail tags;
 - infer the most plausible season, material, silhouette, visual weight, compatible climates and occasions only from visible evidence;
 - prefer conservative generic metadata when evidence is uncertain.
@@ -35,6 +39,8 @@ function schema(nullableStyle = "array") {
           properties: {
             name: { type: "string" },
             part: { type: "string", enum: PARTS },
+            garmentType: { type: "string", enum: GARMENT_TYPES },
+            gender: { type: "string", enum: GARMENT_GENDERS },
             color: { type: "string", pattern: "^#[0-9A-Fa-f]{6}$" },
             secondaryColor: nullableString,
             tags: { type: "array", items: { type: "string" }, maxItems: 4 },
@@ -56,7 +62,7 @@ function schema(nullableStyle = "array") {
               required: ["x", "y", "width", "height"],
             },
           },
-          required: ["name", "part", "color", "secondaryColor", "tags", "season", "material", "silhouette", "weight", "climates", "occasions", "boundingBox"],
+          required: ["name", "part", "garmentType", "gender", "color", "secondaryColor", "tags", "season", "material", "silhouette", "weight", "climates", "occasions", "boundingBox"],
         },
       },
     },

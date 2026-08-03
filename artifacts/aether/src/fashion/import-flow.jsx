@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowCounterClockwise, Check, Plus, SpinnerGap, Trash, UploadSimple, WarningCircle, X } from "@phosphor-icons/react";
+import { GARMENT_TYPES, inferGarmentGender } from "../../shared/garment-gender.mjs";
 import "./import-flow.css";
 
 const API = "/api/import/jobs";
@@ -11,6 +12,13 @@ const PARTS = [
   ["accessories_up", "Accessories"],
   ["shoes", "Shoes"],
 ];
+const GENDERS = [["mujer", "Mujer"], ["hombre", "Hombre"], ["unisex", "Unisex"]];
+const GARMENT_TYPE_LABELS = {
+  top: "Top", blouse: "Blusa", shirt: "Camisa", tshirt: "Remera", sweater: "Suéter", dress: "Vestido",
+  jumpsuit: "Enterizo", skirt: "Pollera", trousers: "Pantalón", jeans: "Jean", shorts: "Short", jacket: "Chaqueta",
+  coat: "Abrigo", heels: "Tacones", shoes: "Calzado", bag: "Cartera / bolso", jewelry: "Joyería", belt: "Cinturón",
+  scarf: "Pañuelo", hat: "Sombrero", other: "Otro",
+};
 const HEX_COLOR = /^#[0-9a-f]{6}$/i;
 
 const fileToDataUrl = (file) => new Promise((resolve, reject) => {
@@ -61,6 +69,8 @@ function defaultDraft(job) {
   return {
     name: metadata.name || "New piece",
     part: metadata.part || "upperbody",
+    garmentType: metadata.garmentType || "other",
+    gender: metadata.gender || "unisex",
     color: metadata.color || "#d8d0c2",
     secondaryColor: metadata.secondaryColor || "",
     tags: Array.isArray(metadata.tags) ? metadata.tags.join(", ") : (metadata.tags || ""),
@@ -88,6 +98,8 @@ function ReviewEditor({ job, stage, draft, setDraft, regenPrompt, setRegenPrompt
           <>
             <div className="import-field"><label htmlFor={`name-${job.id}`}>Name</label><input id={`name-${job.id}`} value={draft.name} onChange={(event) => setDraft({ ...draft, name: event.target.value })} /></div>
             <div className="import-field"><label htmlFor={`part-${job.id}`}>Category</label><select id={`part-${job.id}`} value={draft.part} onChange={(event) => setDraft({ ...draft, part: event.target.value })}>{PARTS.map(([id, label]) => <option value={id} key={id}>{label}</option>)}</select></div>
+            <div className="import-field"><label htmlFor={`type-${job.id}`}>Tipo de prenda</label><select id={`type-${job.id}`} value={draft.garmentType} onChange={(event) => setDraft({ ...draft, garmentType: event.target.value })}>{GARMENT_TYPES.map((type) => <option value={type} key={type}>{GARMENT_TYPE_LABELS[type]}</option>)}</select></div>
+            <div className="import-field"><label htmlFor={`gender-${job.id}`}>Género de la prenda</label><select id={`gender-${job.id}`} value={draft.gender} onChange={(event) => setDraft({ ...draft, gender: event.target.value })}>{GENDERS.map(([id, label]) => <option value={id} key={id}>{label}</option>)}</select></div>
             <div className="import-field"><label htmlFor={`primary-${job.id}`}>Primary color</label><div className="import-color-row"><input id={`primary-${job.id}`} type="color" value={primaryValid ? draft.color : "#000000"} onChange={(event) => setDraft({ ...draft, color: event.target.value })} /><input aria-label="Primary color hex" aria-invalid={!primaryValid} value={draft.color} onChange={(event) => setDraft({ ...draft, color: event.target.value })} /></div>{!primaryValid && <small className="import-field-error">Use a six-digit hex color, such as #d8d0c2.</small>}</div>
             <div className="import-field"><label htmlFor={`secondary-${job.id}`}>Secondary color <span>optional</span></label><input id={`secondary-${job.id}`} type="text" aria-invalid={!secondaryValid} placeholder="#hex or leave blank" value={draft.secondaryColor} onChange={(event) => setDraft({ ...draft, secondaryColor: event.target.value })} />{!secondaryValid && <small className="import-field-error">Use a six-digit hex color or leave this empty.</small>}</div>
             <div className="import-field"><label htmlFor={`tags-${job.id}`}>Details</label><input id={`tags-${job.id}`} value={draft.tags} placeholder="casual, cotton, striped" onChange={(event) => setDraft({ ...draft, tags: event.target.value })} /></div>
@@ -245,6 +257,7 @@ export function WardrobeImportFlow({ onGarmentApproved, onModeledApproved, launc
           occasions: draft.occasions.split(",").map((value) => value.trim().toLowerCase()).filter(Boolean),
           climates: draft.climates.split(",").map((value) => value.trim().toLowerCase()).filter(Boolean),
         };
+        metadata.gender = inferGarmentGender(metadata);
         await api(`${API}/${job.id}/metadata`, { method: "PATCH", body: JSON.stringify({ metadata }) });
         const updated = await api(`${API}/${job.id}/stages/garment/approve`, { method: "POST" });
         const garmentPath = `/api/import/library/import-${job.id}-garment.png`;

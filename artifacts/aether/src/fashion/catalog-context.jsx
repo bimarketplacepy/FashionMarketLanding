@@ -27,6 +27,7 @@ export function CatalogProvider({ children }) {
       body: JSON.stringify({
         name: updatedItem.name,
         part: updatedItem.part,
+        garmentType: updatedItem.garmentType,
         color: updatedItem.color,
         secondaryColor: updatedItem.secondaryColor,
         tags: updatedItem.tags,
