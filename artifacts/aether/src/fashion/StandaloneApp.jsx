@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowCounterClockwise, ArrowRight, Check, InstagramLogo, List, Plus, Sparkle, Trash, UploadSimple, X } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, ArrowRight, Check, EnvelopeSimple, FacebookLogo, InstagramLogo, List, Plus, Sparkle, Trash, UploadSimple, X } from "@phosphor-icons/react";
 import { WardrobeImportFlow } from "./import-flow.jsx";
 import { OptimizedImage } from "./OptimizedImage.jsx";
 import { VirtualTryOn } from "./virtual-tryon.jsx";
@@ -676,6 +676,52 @@ function ItemViewer({ item, onClose, onSave, onDelete, onRegenerationApproved })
   );
 }
 
+const FOOTER_CONTACT = {
+  email: "info@marketplace.com.py",
+  facebookUrl: "https://www.facebook.com/fashionmarketpy/",
+  facebookLabel: "Fashionmarketpy",
+  instagramUrl: "https://www.instagram.com/fashionmarket_py/",
+  instagramLabel: "@fashionmarket_py",
+};
+
+function RetailFooter({ brand, tagline }) {
+  return (
+    <footer className="retail-footer">
+      <div className="retail-footer__top">
+        <div className="brand-mark"><span>{brand || "FASHION MARKET"}</span><small>By Marketplace</small></div>
+        <p>{tagline}</p>
+        <small>Otoño — Invierno 2026</small>
+      </div>
+      <div className="retail-footer__columns">
+        <section>
+          <h3>Horario de Atención</h3>
+          <p><strong>Central:</strong></p>
+          <p>Lun a Sáb: 9:00 a 20:00hs</p>
+          <p>Dom: 10:00 a 20:00hs</p>
+          <p><strong>San Bernardino:</strong></p>
+          <p>Solo abierto en Temporada</p>
+        </section>
+        <section>
+          <h3>Contacto</h3>
+          <a className="retail-social" href={`mailto:${FOOTER_CONTACT.email}`}>
+            <EnvelopeSimple size={16} /> {FOOTER_CONTACT.email}
+          </a>
+        </section>
+        <section>
+          <h3>Encontranos en</h3>
+          <a className="retail-social" href={FOOTER_CONTACT.facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook de Fashion Market">
+            <FacebookLogo size={16} /> {FOOTER_CONTACT.facebookLabel}
+          </a>
+          <a className="retail-social" href={FOOTER_CONTACT.instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram de Fashion Market">
+            <InstagramLogo size={16} /> {FOOTER_CONTACT.instagramLabel}
+          </a>
+        </section>
+      </div>
+      <p className="retail-footer__legal">© 2026 Fashion Market. Todos los derechos reservados.</p>
+    </footer>
+  );
+}
+
 export function App({ initialView = "home", onNavigate, tryOnInitialSection = "suggestions" }) {
   const [view, setView] = useState(initialView);
   const demo = DEMO_DEFAULTS;
@@ -874,14 +920,7 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
           </section>
         </main>
 
-        <footer className="retail-footer">
-          <div className="brand-mark"><span>{demo.brand || "FASHION MARKET"}</span><small>By Marketplace</small></div>
-          <p>Descubrí la temporada, conocé sus piezas y encontrá tu propia forma de llevarlas.</p>
-          <small>Otoño — Invierno 2026</small>
-          <a className="retail-social" href="https://www.instagram.com/fashionmarket_py/" target="_blank" rel="noreferrer" aria-label="Instagram de Fashion Market">
-            <InstagramLogo size={16} /> @fashionmarket_py
-          </a>
-        </footer>
+        <RetailFooter brand={demo.brand} tagline="Descubrí la temporada, conocé sus piezas y encontrá tu propia forma de llevarlas." />
       </div>
     );
   }
@@ -920,7 +959,7 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
             </div>
           ) : <div className="catalog-empty"><h2>Esta categoría se está preparando.</h2><p>Volvé pronto para conocer las próximas piezas.</p></div>}
         </main>
-        <footer className="retail-footer"><div className="brand-mark"><span>{demo.brand}</span><small>By Marketplace</small></div><p>Una selección para descubrir a tu ritmo.</p><small>Otoño — Invierno 2026</small><a className="retail-social" href="https://www.instagram.com/fashionmarket_py/" target="_blank" rel="noreferrer" aria-label="Instagram de Fashion Market"><InstagramLogo size={16} /> @fashionmarket_py</a></footer>
+        <RetailFooter brand={demo.brand} tagline="Una selección para descubrir a tu ritmo." />
       </div>
     );
   }
