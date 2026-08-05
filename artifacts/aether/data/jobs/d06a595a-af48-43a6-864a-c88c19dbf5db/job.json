@@ -1,0 +1,86 @@
+{
+  "id": "d06a595a-af48-43a6-864a-c88c19dbf5db",
+  "status": "active",
+  "metadata": {
+    "name": "Black Polka Dot Midi Dress",
+    "part": "wholebody_up",
+    "garmentType": "dress",
+    "gender": "mujer",
+    "color": "#1a191d",
+    "secondaryColor": "#ffffff",
+    "tags": [
+      "polka dot",
+      "midi",
+      "v-neck",
+      "ruffle sleeve"
+    ],
+    "season": "summer",
+    "material": "synthetic",
+    "silhouette": "flowy",
+    "weight": "light",
+    "climates": [
+      "warm",
+      "mild"
+    ],
+    "occasions": [
+      "casual",
+      "daywear",
+      "party"
+    ],
+    "boundingBox": {
+      "x": 319,
+      "y": 165,
+      "width": 378,
+      "height": 615
+    }
+  },
+  "stages": {
+    "crop": {
+      "status": "review",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": "/api/import/assets/d06a595a-af48-43a6-864a-c88c19dbf5db/crop.png",
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": "2026-08-03T19:50:01.418Z"
+    },
+    "garment": {
+      "status": "pending",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": null,
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": null
+    },
+    "modeled": {
+      "status": "pending",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": null,
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": null
+    }
+  },
+  "createdAt": "2026-08-03T19:50:01.418Z",
+  "updatedAt": "2026-08-03T19:50:01.418Z",
+  "internal": {
+    "originalFile": "original.png",
+    "cropFile": "crop.png",
+    "originalMime": "image/png"
+  },
+  "originalAssetUrl": "/api/import/assets/d06a595a-af48-43a6-864a-c88c19dbf5db/original.png"
+}

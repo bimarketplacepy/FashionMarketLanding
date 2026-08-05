@@ -11,6 +11,7 @@ const API = "/api/batches";
 
 const CATEGORIAS = [
   ["upperbody", "Prendas superiores"],
+  ["wholebody", "Vestidos y enterizos"],
   ["wholebody_up", "Abrigos"],
   ["lowerbody", "Prendas inferiores"],
   ["shoes", "Calzado"],

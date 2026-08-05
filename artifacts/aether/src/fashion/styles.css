@@ -161,6 +161,8 @@
 
 .retail-footer { background: var(--acid); color: var(--accent-ink, var(--ink)); padding: 3rem 4.5vw; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 .retail-footer p { margin: 0; }
+.retail-footer .retail-social { display: inline-flex; align-items: center; gap: 6px; color: inherit; opacity: 0.6; text-decoration: none; font-size: 0.85rem; white-space: nowrap; }
+.retail-footer .retail-social:hover { opacity: 1; text-decoration: underline; }
 .retail-footer > button { border: 0; border-bottom: 1px solid; background: none; padding: 6px 0; display: flex; align-items: center; gap: 8px; font-weight: 700; cursor: pointer; }
 
 .retail-wardrobe { padding-top: 78px; }

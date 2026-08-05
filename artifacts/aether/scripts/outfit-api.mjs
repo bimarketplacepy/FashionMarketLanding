@@ -2,11 +2,11 @@ import { randomUUID } from "node:crypto";
 import { copyFile, mkdir, readFile, rename, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { createAIProvider } from "./ai-provider.mjs";
-import { garmentFitsModel, inferGarmentGender } from "../shared/garment-gender.mjs";
-import { findModelPreset, findModelStyle } from "../shared/model-presets.mjs";
+import { garmentCoverage, garmentFitsModel, inferGarmentGender } from "../shared/garment-gender.mjs";
+import { defaultModelPreset, findModelPreset, findModelStyle } from "../shared/model-presets.mjs";
 
 const API_ROOT = "/api/tryon";
-const PARTS = new Set(["upperbody", "wholebody_up", "lowerbody", "accessories_up", "shoes"]);
+const PARTS = new Set(["upperbody", "wholebody", "wholebody_up", "lowerbody", "accessories_up", "shoes"]);
 
 function json(res, status, value) {
   res.statusCode = status;
@@ -69,16 +69,20 @@ function outfitPrompt(outfit, garments, profile = {}) {
   const useReference = profile.mode === "preset";
   const build = COMPLEXIONS[profile.complexion] || null;
   const tone = SKIN_TONES[profile.skinTone] || null;
-  const top = garments.find((item) => item.part === "upperbody");
-  const bottom = garments.find((item) => item.part === "lowerbody");
+  const onePiece = garments.find((item) => garmentCoverage(item) === "full");
+  const top = garments.find((item) => garmentCoverage(item) === "top");
+  const bottom = garments.find((item) => garmentCoverage(item) === "bottom");
   const outer = garments.find((item) => item.part === "wholebody_up");
   const extras = garments.filter((item) => ["shoes", "accessories_up"].includes(item.part));
   const offset = useReference ? 2 : 1;
   const list = garments.map((item, index) => `Image ${index + offset}: exact ${item.part} reference — ${item.name}.`).join("\n");
   const layering = outer
-    ? "Layer the exact outer garment naturally over the exact top. Preserve its real closure construction; never invent an opening, zipper, buttons, or placket. Keep both selected pieces visibly identifiable."
+    ? `Layer the exact outer garment naturally over the exact ${onePiece ? "one-piece garment" : "top"}. Preserve its real closure construction; never invent an opening, zipper, buttons, or placket. Keep both selected pieces visibly identifiable.`
     : "";
-  const garmentSentence = `Dress them in the exact top "${top?.name}", exact bottom "${bottom?.name}"${outer ? `, exact outer layer "${outer.name}"` : ""}${extras.length ? `, and exact ${extras.map((item) => item.name).join(" and ")}` : ""}. Do not add, replace, or invent any other visible clothing or accessory.`;
+  const baseSentence = onePiece
+    ? `one-piece garment "${onePiece.name}"`
+    : `top "${top?.name}", exact bottom "${bottom?.name}"`;
+  const garmentSentence = `Dress them in the exact ${baseSentence}${outer ? `, exact outer layer "${outer.name}"` : ""}${extras.length ? `, and exact ${extras.map((item) => item.name).join(" and ")}` : ""}. Do not add, replace, or invent any other visible clothing or accessory.`;
   const modelGender = profile.gender === "hombre" ? "male" : "female";
   const subject = useReference
     ? `Subject: Preserve the same fictional model's recognizable face, hair, age, skin tone, build, and skin texture from Image 1. Keep the avatar identity unmistakably consistent. ${garmentSentence}`
@@ -116,14 +120,44 @@ export function outfitApi(options = {}) {
   const setting = (name, fallback = "") => options.env?.[name] || process.env[name] || fallback;
   const ai = createAIProvider(setting);
 
+  function presetProfile(preset, styleId, previous = {}) {
+    const style = findModelStyle(preset, styleId);
+    return {
+      mode: "preset",
+      gender: preset.gender,
+      complexion: preset.complexion,
+      skinTone: preset.skinTone,
+      preset: preset.id,
+      style: style.id,
+      hairColor: style.hairColor,
+      hairLength: style.hairLength,
+      hairTexture: style.hairTexture,
+      ageRange: style.ageRange,
+      modelUrl: style.image,
+      appearance: preset.appearance,
+      updatedAt: previous.updatedAt || new Date().toISOString(),
+    };
+  }
+
   async function loadProfile() {
+    let value;
     try {
-      const value = JSON.parse(await readFile(modelProfileFile, "utf8"));
-      return value && typeof value === "object" ? value : null;
+      value = JSON.parse(await readFile(modelProfileFile, "utf8"));
     } catch (error) {
       if (error.code === "ENOENT") return null;
       throw error;
     }
+    if (!value || typeof value !== "object" || !value.preset) return null;
+    // Perfiles guardados por versiones anteriores (modo "photo", presets
+    // renombrados o eliminados) se migran al catálogo actual de avatares IA
+    // para que /config y /generate siempre trabajen con un preset válido.
+    const preset = findModelPreset(value.preset) || defaultModelPreset(value.gender);
+    const style = findModelStyle(preset, value.style);
+    const upToDate = value.mode === "preset" && value.preset === preset.id && value.style === style.id && value.modelUrl === style.image;
+    if (upToDate) return value;
+    const migrated = presetProfile(preset, value.style, value);
+    await atomicJson(modelProfileFile, migrated);
+    return migrated;
   }
 
   async function loadLibrary() {
@@ -161,8 +195,9 @@ export function outfitApi(options = {}) {
         throw Object.assign(new Error(`“${incompatible.name}” es una prenda para ${garmentGender} y no es compatible con el modelo seleccionado.`), { status: 400 });
       }
     }
-    if (!garments.some((item) => item.part === "upperbody") || !garments.some((item) => item.part === "lowerbody")) {
-      throw Object.assign(new Error("El look necesita una prenda superior y una inferior."), { status: 400 });
+    const coverages = garments.map((item) => garmentCoverage(item));
+    if (!coverages.includes("full") && !(coverages.includes("top") && coverages.includes("bottom"))) {
+      throw Object.assign(new Error("El look necesita un vestido o enterizo, o una prenda superior y una inferior."), { status: 400 });
     }
     const collection = await loadOutfits();
     const key = [...ids].sort().join("|");
@@ -207,22 +242,7 @@ export function outfitApi(options = {}) {
         const input = await body(req);
         const preset = findModelPreset(input.preset);
         if (!preset) return json(res, 400, { error: "Elegí uno de los modelos IA disponibles." });
-        const style = findModelStyle(preset, input.style);
-        const profile = {
-          mode: "preset",
-          gender: preset.gender,
-          complexion: preset.complexion,
-          skinTone: preset.skinTone,
-          preset: preset.id,
-          style: style.id,
-          hairColor: style.hairColor,
-          hairLength: style.hairLength,
-          hairTexture: style.hairTexture,
-          ageRange: style.ageRange,
-          modelUrl: style.image,
-          appearance: preset.appearance,
-          updatedAt: new Date().toISOString(),
-        };
+        const profile = presetProfile(preset, input.style);
         await atomicJson(modelProfileFile, profile);
         return json(res, 200, profile);
       }

@@ -1,0 +1,86 @@
+{
+  "id": "2d8dabb6-eeea-4ee3-b0f6-680cced96a5e",
+  "status": "active",
+  "metadata": {
+    "name": "Cinturón fino negro con hebilla dorada",
+    "part": "accessories_up",
+    "garmentType": "belt",
+    "gender": "mujer",
+    "color": "#222222",
+    "secondaryColor": "#cba258",
+    "tags": [
+      "fino",
+      "hebilla",
+      "clasico"
+    ],
+    "season": "all",
+    "material": "leather",
+    "silhouette": "structured",
+    "weight": "light",
+    "climates": [
+      "warm",
+      "mild",
+      "cold"
+    ],
+    "occasions": [
+      "casual",
+      "work",
+      "smart_casual"
+    ],
+    "boundingBox": {
+      "x": 409,
+      "y": 418,
+      "width": 182,
+      "height": 45
+    }
+  },
+  "stages": {
+    "crop": {
+      "status": "review",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": "/api/import/assets/2d8dabb6-eeea-4ee3-b0f6-680cced96a5e/crop.png",
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": "2026-08-03T19:48:39.098Z"
+    },
+    "garment": {
+      "status": "pending",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": null,
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": null
+    },
+    "modeled": {
+      "status": "pending",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": null,
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": null
+    }
+  },
+  "createdAt": "2026-08-03T19:48:39.098Z",
+  "updatedAt": "2026-08-03T19:48:39.098Z",
+  "internal": {
+    "originalFile": "original.png",
+    "cropFile": "crop.png",
+    "originalMime": "image/png"
+  },
+  "originalAssetUrl": "/api/import/assets/2d8dabb6-eeea-4ee3-b0f6-680cced96a5e/original.png"
+}

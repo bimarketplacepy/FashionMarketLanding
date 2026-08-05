@@ -1,6 +1,7 @@
 export const PART_LABELS = {
   upperbody: "Prenda superior",
-  wholebody_up: "Abrigo / Vestido",
+  wholebody: "Vestido / enterizo",
+  wholebody_up: "Abrigo",
   lowerbody: "Prenda inferior",
   shoes: "Calzado",
   accessories_up: "Accesorio",

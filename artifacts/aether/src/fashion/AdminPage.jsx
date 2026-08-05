@@ -15,6 +15,7 @@ const ADMIN_KEY = import.meta.env.VITE_ADMIN_KEY || "fw2026";
 const ADMIN_TABS = [
   ["all", "Todo"],
   ["upperbody", "Superiores"],
+  ["wholebody", "Vestidos y enterizos"],
   ["wholebody_up", "Abrigos"],
   ["lowerbody", "Inferiores"],
   ["accessories_up", "Accesorios"],

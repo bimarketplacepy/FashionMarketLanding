@@ -1,0 +1,86 @@
+{
+  "id": "11e257f8-11e3-43e0-9587-ece6aeb870c6",
+  "status": "active",
+  "metadata": {
+    "name": "Vestido camisero midi taupe",
+    "part": "wholebody_up",
+    "garmentType": "dress",
+    "gender": "mujer",
+    "color": "#a08a7b",
+    "secondaryColor": null,
+    "tags": [
+      "camisero",
+      "midi",
+      "botones",
+      "manga3/4"
+    ],
+    "season": "spring",
+    "material": "synthetic",
+    "silhouette": "flowy",
+    "weight": "medium",
+    "climates": [
+      "warm",
+      "mild"
+    ],
+    "occasions": [
+      "casual",
+      "work",
+      "smart_casual"
+    ],
+    "boundingBox": {
+      "x": 258,
+      "y": 178,
+      "width": 597,
+      "height": 786
+    }
+  },
+  "stages": {
+    "crop": {
+      "status": "review",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": "/api/import/assets/11e257f8-11e3-43e0-9587-ece6aeb870c6/crop.png",
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": "2026-08-03T19:48:39.075Z"
+    },
+    "garment": {
+      "status": "pending",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": null,
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": null
+    },
+    "modeled": {
+      "status": "pending",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": null,
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": null
+    }
+  },
+  "createdAt": "2026-08-03T19:48:39.075Z",
+  "updatedAt": "2026-08-03T19:48:39.075Z",
+  "internal": {
+    "originalFile": "original.png",
+    "cropFile": "crop.png",
+    "originalMime": "image/png"
+  },
+  "originalAssetUrl": "/api/import/assets/11e257f8-11e3-43e0-9587-ece6aeb870c6/original.png"
+}

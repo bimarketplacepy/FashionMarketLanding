@@ -3,14 +3,14 @@ import { copyFile, mkdir, readFile, readdir, rename, rm, stat, writeFile } from 
 import path from "node:path";
 import sharp from "sharp";
 import { createAIProvider } from "./ai-provider.mjs";
-import { GARMENT_GENDERS, inferGarmentGender, normalizeGarmentType } from "../shared/garment-gender.mjs";
+import { GARMENT_GENDERS, inferGarmentGender, normalizeGarmentType, partForGarmentType } from "../shared/garment-gender.mjs";
 
 const API_ROOT = "/api/import/jobs";
 const ASSET_ROOT = "/api/import/assets";
 const LIBRARY_ASSET_ROOT = "/api/import/library";
 const STAGES = new Set(["crop", "garment", "modeled"]);
 const DECISIONS = new Set(["approve", "reject"]);
-const PARTS = new Set(["upperbody", "wholebody_up", "lowerbody", "accessories_up", "shoes"]);
+const PARTS = new Set(["upperbody", "wholebody", "wholebody_up", "lowerbody", "accessories_up", "shoes"]);
 const HEX_COLOR = /^#[0-9a-f]{6}$/i;
 const SEASONS = new Set(["all", "spring", "summer", "autumn", "winter"]);
 const MATERIALS = new Set(["cotton", "linen", "denim", "knit", "wool", "leather", "silk", "synthetic", "mixed"]);
@@ -21,6 +21,7 @@ const GENDERS = new Set(GARMENT_GENDERS);
 
 const DEFAULT_SIZES = {
   upperbody: ["XS", "S", "M", "L", "XL"],
+  wholebody: ["XS", "S", "M", "L", "XL"],
   wholebody_up: ["XS", "S", "M", "L"],
   lowerbody: ["36", "38", "40", "42", "44"],
   shoes: ["35", "36", "37", "38", "39", "40"],
@@ -387,11 +388,13 @@ export function wardrobeImportApi(options = {}) {
     const metadata = job.metadata || {};
     const records = await loadImported();
     const existing = records.find((record) => record.id === id);
+    const garmentType = normalizeGarmentType(metadata.garmentType, metadata.part);
+    const part = partForGarmentType(garmentType, PARTS.has(metadata.part) ? metadata.part : "upperbody");
     const record = {
       id,
       name: metadata.name || "New piece",
-      part: metadata.part || "upperbody",
-      garmentType: normalizeGarmentType(metadata.garmentType, metadata.part),
+      part,
+      garmentType,
       color: metadata.color || "#d8d0c2",
       secondaryColor: metadata.secondaryColor || null,
       palette: [metadata.color, metadata.secondaryColor].filter(Boolean),
@@ -407,7 +410,7 @@ export function wardrobeImportApi(options = {}) {
       modeledImage: modeledImage || existing?.modeledImage || null,
       importJobId: job.id,
       gender: inferGarmentGender({ ...metadata, gender: metadata.gender || existing?.gender }),
-      sizes: existing?.sizes || DEFAULT_SIZES[metadata.part] || ["Único"],
+      sizes: existing?.sizes || DEFAULT_SIZES[part] || ["Único"],
       description: existing?.description || "",
     };
     const next = [...records.filter((item) => item.id !== id), record];

@@ -11,6 +11,7 @@
     "import-catalog": "node scripts/import-catalog.mjs",
     "claude-import": "node scripts/claude-import.mjs",
     "regenerate-garments": "node scripts/regenerate-garments.mjs",
+    "reclassify-parts": "node scripts/reclassify-parts.mjs",
     "generate-models": "node scripts/generate-models.mjs"
   },
   "devDependencies": {

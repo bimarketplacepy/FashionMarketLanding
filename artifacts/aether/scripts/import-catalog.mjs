@@ -22,7 +22,9 @@ const PAUSE_MS = PAUSE_INDEX >= 0 ? Number(ARGS[PAUSE_INDEX + 1]) || 0 : 4000;
 const DIR_INDEX = ARGS.indexOf("--dir");
 const LOCAL_DIR = DIR_INDEX >= 0 ? ARGS[DIR_INDEX + 1] : null;
 const API = process.env.CATALOG_API_URL || `http://localhost:${process.env.PORT || 24696}`;
-const STORAGE_PREFIX = process.env.CATALOG_STORAGE_PREFIX || "catalogo/";
+// CATALOG_STORAGE_PREFIX="" importa desde la raíz del bucket (?? y no ||: la
+// cadena vacía es un prefijo válido, no un "sin valor").
+const STORAGE_PREFIX = process.env.CATALOG_STORAGE_PREFIX ?? "catalogo/";
 const MANIFEST = path.resolve(import.meta.dirname, "..", "data", "catalog-manifest.json");
 const IMAGE_EXT = /\.(png|jpe?g|webp)$/i;
 const POLL_MS = 4000;

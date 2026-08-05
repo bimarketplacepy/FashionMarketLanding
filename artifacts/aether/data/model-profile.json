@@ -1,10 +1,15 @@
 {
-  "mode": "photo",
+  "mode": "preset",
   "gender": "mujer",
-  "complexion": "atletica",
+  "complexion": "curvy",
   "skinTone": "clara",
-  "preset": "blanca",
-  "custom": null,
-  "updatedAt": "2026-07-30T19:56:06.927Z",
-  "modelUrl": null
+  "preset": "mujer-europea-clara",
+  "style": "castano-medio-29-34",
+  "hairColor": "castano-claro",
+  "hairLength": "medio",
+  "hairTexture": "ondulado",
+  "ageRange": "29–34",
+  "modelUrl": "/fashion/models/ai/mujer-europea-clara.webp",
+  "appearance": "Rasgos europeos diversos",
+  "updatedAt": "2026-07-30T19:56:06.927Z"
 }

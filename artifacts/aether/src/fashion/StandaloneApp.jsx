@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowCounterClockwise, ArrowRight, Check, List, Plus, Sparkle, Trash, UploadSimple, X } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, ArrowRight, Check, InstagramLogo, List, Plus, Sparkle, Trash, UploadSimple, X } from "@phosphor-icons/react";
 import { WardrobeImportFlow } from "./import-flow.jsx";
 import { OptimizedImage } from "./OptimizedImage.jsx";
 import { VirtualTryOn } from "./virtual-tryon.jsx";
@@ -878,6 +878,9 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
           <div className="brand-mark"><span>{demo.brand || "FASHION MARKET"}</span><small>By Marketplace</small></div>
           <p>Descubrí la temporada, conocé sus piezas y encontrá tu propia forma de llevarlas.</p>
           <small>Otoño — Invierno 2026</small>
+          <a className="retail-social" href="https://www.instagram.com/fashionmarket_py/" target="_blank" rel="noreferrer" aria-label="Instagram de Fashion Market">
+            <InstagramLogo size={16} /> @fashionmarket_py
+          </a>
         </footer>
       </div>
     );
@@ -917,7 +920,7 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
             </div>
           ) : <div className="catalog-empty"><h2>Esta categoría se está preparando.</h2><p>Volvé pronto para conocer las próximas piezas.</p></div>}
         </main>
-        <footer className="retail-footer"><div className="brand-mark"><span>{demo.brand}</span><small>By Marketplace</small></div><p>Una selección para descubrir a tu ritmo.</p><small>Otoño — Invierno 2026</small></footer>
+        <footer className="retail-footer"><div className="brand-mark"><span>{demo.brand}</span><small>By Marketplace</small></div><p>Una selección para descubrir a tu ritmo.</p><small>Otoño — Invierno 2026</small><a className="retail-social" href="https://www.instagram.com/fashionmarket_py/" target="_blank" rel="noreferrer" aria-label="Instagram de Fashion Market"><InstagramLogo size={16} /> @fashionmarket_py</a></footer>
       </div>
     );
   }

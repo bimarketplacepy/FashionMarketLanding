@@ -7,7 +7,7 @@ import {
   SpinnerGap,
   UserCircle,
 } from "@phosphor-icons/react";
-import { effectiveProfileGender, garmentFitsModel, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
+import { effectiveProfileGender, garmentCoverage, garmentFitsModel, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
 import { defaultModelPreset, findModelPreset, findModelStyle, presetsForGender } from "../../shared/model-presets.mjs";
 import "./virtual-tryon.css";
 
@@ -120,8 +120,12 @@ function metadata(item) {
 function buildSuggestions(sourceItems, filters, count) {
   const items = sourceItems.map(metadata);
   const byPart = Object.fromEntries(PARTS.map(([part]) => [part, items.filter((item) => item.part === part)]));
-  const hasTwoPieceBase = byPart.upperbody.length && byPart.lowerbody.length;
-  if (!hasTwoPieceBase && !byPart.wholebody.length) return [];
+  // Las polleras viven en la sección wholebody pero combinan como prenda inferior;
+  // solo vestidos y enterizos funcionan como base completa de un look.
+  const onePieces = byPart.wholebody.filter((item) => garmentCoverage(item) === "full");
+  const bottoms = [...byPart.lowerbody, ...byPart.wholebody.filter((item) => garmentCoverage(item) === "bottom")];
+  const hasTwoPieceBase = byPart.upperbody.length && bottoms.length;
+  if (!hasTwoPieceBase && !onePieces.length) return [];
   const candidates = [];
   const outers = [null, ...byPart.wholebody_up];
   const shoes = [null, ...byPart.shoes];
@@ -172,10 +176,10 @@ function buildSuggestions(sourceItems, filters, count) {
 
   if (hasTwoPieceBase) {
     for (const top of byPart.upperbody) {
-      for (const bottom of byPart.lowerbody) addBase([top, bottom], `${top.name || "Superior"} + ${bottom.name || "Inferior"}`);
+      for (const bottom of bottoms) addBase([top, bottom], `${top.name || "Superior"} + ${bottom.name || "Inferior"}`);
     }
   }
-  for (const onePiece of byPart.wholebody) addBase([onePiece], onePiece.name || "Vestido / enterizo");
+  for (const onePiece of onePieces) addBase([onePiece], onePiece.name || "Vestido / enterizo");
 
   const usage = new Map();
   const chosen = [];
@@ -348,7 +352,8 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
         : "Tu prueba virtual está lista.");
     } catch (generationError) {
       console.error("No se pudo generar la prueba virtual", generationError);
-      setError(generationError.status === 400
+      if (generationError.status === 409) setSection("profile");
+      setError(generationError.status >= 400 && generationError.status < 500 && generationError.message
         ? generationError.message
         : "No pudimos generar tu prueba. Intentá nuevamente en unos minutos.");
       setNotice("");
@@ -364,7 +369,12 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
     });
   };
   const manualGarments = PARTS.map(([part]) => genderItems.find((item) => item.id === builder[part])).filter(Boolean);
-  const manualReady = Boolean(builder.wholebody || (builder.upperbody && builder.lowerbody));
+  const manualWhole = genderItems.find((item) => item.id === builder.wholebody) || null;
+  const manualWholeCoverage = manualWhole ? garmentCoverage(manualWhole) : null;
+  const manualReady = Boolean(
+    manualWholeCoverage === "full"
+    || (builder.upperbody && (builder.lowerbody || manualWholeCoverage === "bottom")),
+  );
   const manualOutfit = manualReady ? {
     id: `manual-${manualGarments.map((item) => item.id).join("-")}`,
     name: "Mi combinación",

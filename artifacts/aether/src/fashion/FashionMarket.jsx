@@ -9,8 +9,10 @@ import "./shop.css";
 
 const CATEGORIES = [
   ["upperbody", "Prendas superiores"],
+  ["wholebody", "Vestidos y enterizos"],
   ["wholebody_up", "Abrigos"],
   ["lowerbody", "Prendas inferiores"],
+  ["shoes", "Calzado"],
   ["accessories_up", "Accesorios"],
 ];
 
@@ -187,7 +189,7 @@ export function CatalogPage() {
   const [sheetStack, setSheetStack] = useState([]);
   const initialSection = useMemo(() => {
     const requested = new URLSearchParams(window.location.search).get("cat");
-    return ["upperbody", "wholebody_up", "lowerbody", "accessories_up", "shoes", "outfits"].includes(requested) ? requested : null;
+    return ["upperbody", "wholebody", "wholebody_up", "lowerbody", "accessories_up", "shoes", "outfits"].includes(requested) ? requested : null;
   }, []);
 
   useEffect(() => {
