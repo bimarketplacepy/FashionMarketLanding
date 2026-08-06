@@ -16,8 +16,8 @@ Landing del sector Moda de un retailer: intro cinematográfica (ex-AETHER) + lan
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
 - `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only). Necesario después de tocar `lib/db/src/schema/`; las tablas `tryon_*` son las que usa el probador en producción.
+- Required env: `DATABASE_URL` — Postgres connection string. `GEMINI_API_KEY` tiene que estar también en el deployment: ahí la generación de looks la hace el api-server, no Vite.
 
 ## Stack
 
@@ -40,8 +40,14 @@ Landing del sector Moda de un retailer: intro cinematográfica (ex-AETHER) + lan
 
 ## Architecture decisions
 
-- El backend del vestidor corre como plugins del dev server de Vite (heredado del proyecto original), no en `artifacts/api-server`. Si se despliega a producción con `vite preview` los plugins de import/outfit no aplican en build estático — migrar a api-server llegado el caso.
-- El dominio raíz del workspace (`https://<repl>.replit.dev/` sin puerto) enruta por path: `/api/*` va al api-server (8080) y el resto al dev server de Aether (24696). `aetherProxy.ts` reenvía `/api/import/*`, `/api/tryon/*` y `/api/garment-regeneration/*` al servidor de Aether.
+- El backend del vestidor corre como plugins del dev server de Vite (heredado del proyecto original). En el deployment **no corre ningún proceso de Aether**: se sirve el build estático más el api-server, así que los plugins no existen ahí. Por eso `/api/tryon/*` está montado en las dos partes (agosto 2026):
+  - `scripts/outfit-api.mjs` exporta `createTryonHandler({ root, env, store })`, un middleware Node `(req, res, next)` sin dependencia de Vite. `outfitApi()` quedó como envoltorio delgado para el dev server.
+  - La persistencia entra por `store`. En el workspace es `scripts/tryon-store-fs.mjs` (los JSON de `data/`, que se commitean y curan los looks como siempre). En el deployment es `artifacts/api-server/src/tryon/pgStore.ts` (Postgres), porque en autoscale el disco es efímero y no se comparte entre instancias.
+  - El store de Postgres **superpone**, no reemplaza: lee `data/outfits.json`, `data/model-profile.json` y `data/outfit-images/` como semilla de sólo lectura (viajan con el repo) y guarda en las tablas `tryon_*` sólo lo que se genera en runtime. Un deployment recién publicado ya muestra los looks curados.
+  - `artifacts/api-server/src/tryon/index.ts` decide el modo: en deployment monta el handler con Postgres; en el workspace mantiene `aetherProxy.ts` apuntando a Vite. Se puede forzar con `TRYON_MODE=local|proxy` (útil para probar el camino de producción sin publicar).
+  - El panel `/admin` (import-job, batch-import, garment-regeneration) **sigue siendo sólo del workspace**: en el deployment esas rutas responden 503 con un mensaje explícito. El catálogo se carga en el workspace y se publica commiteado.
+- El dominio raíz del workspace (`https://<repl>.replit.dev/` sin puerto) enruta por path: `/api/*` va al api-server (8080) y el resto al dev server de Aether (24696). En el deployment rige la misma regla, que es la razón por la que todo lo que tiene que funcionar en producción vive bajo `/api/`.
+- Las imágenes responsive de ipx se sirven en `/api/_ipx` (antes `/_ipx`), justamente para caer del lado del api-server en producción. `responsive-image-api.mjs` exporta `createIpxHandler({ dirs })` y lo montan tanto Vite como Express; `OptimizedImage.jsx` fija ese `baseURL`.
 - Escenas Three.js de AETHER se conservan en el repo pero no se montan; la intro es la única pieza que sobrevivió del sitio original.
 - `allowJs` habilitado en `artifacts/aether/tsconfig.json` porque el código portado es JSX sin tipos.
 
@@ -66,7 +72,11 @@ Landing del sector Moda de un retailer: intro cinematográfica (ex-AETHER) + lan
 
 - La generación de cada fotografía final del look requiere cuota de imagen del proveedor configurado. Explorar, filtrar y cambiar los ocho modelos predeterminados no realiza llamadas de IA.
 - El schema JSON para Gemini se sanea con `geminiSchema()` en `scripts/ai-provider.mjs` (sin `additionalProperties` ni type-arrays).
+- Prendas que entran al catálogo con el fondo croma pegado: `removeChromaBackground()` mide distancia euclídea al croma *exacto* que se pidió, y eso falla en dos casos reales. Primero, `chooseChromaKey()` elige el croma más lejano al color de la prenda, así que para una prenda negra pide cian pero la IA suele devolver verde. Segundo, aun acertando el tono, la IA devuelve verdes apagados (ej. `rgb(6,170,76)`, a ~114 de `#00ff00`) que superan el tope de tolerancia (110). En ambos casos el fondo sobrevive entero. Rescate: `node scripts/dechroma-garment.mjs --check` lista los afectados y `node scripts/dechroma-garment.mjs <id>...` los limpia; el matte va por verdor relativo (`G - max(R,B)`) en vez de distancia absoluta y delega el encuadre y la verificación en `processChromaBackground()` para no desviarse de la convención. Agosto 2026 se rescataron así la bota texana negra y el pantalón denim oscuro.
 - `scripts/free-port.mjs` corre antes de `vite dev` porque Replit puede dejar procesos huérfanos reteniendo el puerto.
+- `ipx` pide `sharp@^0.32.6`, cuyo binario nativo depende de un install script que pnpm no ejecuta, así que `/api/_ipx` moría con `Cannot find module '../build/Release/sharp-linux-x64.node'`. Está forzado a `^0.35.3` con el override `ipx>sharp` en `pnpm-workspace.yaml`; no quitarlo.
+- `sharp` es dependencia explícita de `api-server` porque el bundle de esbuild lo externaliza y el handler del vestidor lo arrastra vía `ai-provider.mjs`.
+- El build de `mockup-sandbox` (y el de aether) exigen `PORT` y `BASE_PATH` en el entorno: `pnpm run build` a secas desde una shell pelada falla ahí, no es un error del código.
 
 ## User preferences
 

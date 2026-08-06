@@ -1,7 +1,9 @@
 import { forwardRef } from "react";
 import { Image } from "@unpic/react";
 
-const IPX_OPTIONS = { ipx: { baseURL: "/_ipx" } };
+// Bajo /api para que en el deployment el router lo mande al api-server, que es
+// quien monta ipx en producción (ahí no corre ningún servidor de Vite).
+const IPX_OPTIONS = { ipx: { baseURL: "/api/_ipx" } };
 const DEFAULT_BREAKPOINTS = [160, 240, 320, 480, 640, 800, 960, 1280];
 
 function sourcePath(src) {

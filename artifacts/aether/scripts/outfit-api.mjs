@@ -1,7 +1,8 @@
 import { randomUUID } from "node:crypto";
-import { copyFile, mkdir, readFile, rename, rm, stat, writeFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { createAIProvider } from "./ai-provider.mjs";
+import { createFsOutfitStore } from "./tryon-store-fs.mjs";
 import { garmentCoverage, garmentFitsModel, inferGarmentGender } from "../shared/garment-gender.mjs";
 import { defaultModelPreset, findModelPreset, findModelStyle } from "../shared/model-presets.mjs";
 
@@ -26,21 +27,6 @@ async function body(req, limit = 30 * 1024 * 1024) {
   if (!chunks.length) return {};
   try { return JSON.parse(Buffer.concat(chunks).toString("utf8")); }
   catch { throw Object.assign(new Error("El cuerpo de la solicitud no es válido."), { status: 400 }); }
-}
-
-async function atomicJson(file, value) {
-  const tmp = `${file}.${randomUUID()}.tmp`;
-  await writeFile(tmp, `${JSON.stringify(value, null, 2)}\n`);
-  try {
-    await rename(tmp, file);
-  } catch (error) {
-    if (!["EBUSY", "EXDEV", "EPERM"].includes(error.code)) {
-      await rm(tmp, { force: true });
-      throw error;
-    }
-    await copyFile(tmp, file);
-    await rm(tmp, { force: true });
-  }
 }
 
 const COMPLEXIONS = {
@@ -109,16 +95,17 @@ Garment fidelity: Preserve every referenced garment precisely: color, material, 
 Avoid: hidden selected garments, invented closures, unnatural layering, extra layers, hats, bags, scarves or jewelry unless referenced, crossed arms, hands blocking clothing, garment redesign, cropped feet, extra people, text, watermark, mockup appearance, or synthetic AI polish.`;
 }
 
-export function outfitApi(options = {}) {
-  let root;
-  let dataDir;
-  let libraryFile;
-  let outfitsFile;
-  let outfitImagesDir;
-  let publicDir;
-  let modelProfileFile;
-  const setting = (name, fallback = "") => options.env?.[name] || process.env[name] || fallback;
+// Handler del vestidor desacoplado de Vite: es un middleware Node estándar
+// (req, res, next), así que lo monta igual el dev server de Vite (store de
+// archivos) y Express en el deployment (store de Postgres). La persistencia
+// entra por `store` porque en autoscale el disco es efímero; ver
+// scripts/tryon-store-fs.mjs y artifacts/api-server/src/tryon/pgStore.ts.
+export function createTryonHandler({ root, env = {}, store }) {
+  const setting = (name, fallback = "") => env[name] || process.env[name] || fallback;
   const ai = createAIProvider(setting);
+  const dataDir = path.resolve(root, setting("WARDROBE_DATA_DIR", "data"));
+  const libraryFile = path.join(dataDir, "library.json");
+  const publicDir = path.resolve(root, "public");
 
   function presetProfile(preset, styleId, previous = {}) {
     const style = findModelStyle(preset, styleId);
@@ -140,13 +127,7 @@ export function outfitApi(options = {}) {
   }
 
   async function loadProfile() {
-    let value;
-    try {
-      value = JSON.parse(await readFile(modelProfileFile, "utf8"));
-    } catch (error) {
-      if (error.code === "ENOENT") return null;
-      throw error;
-    }
+    const value = await store.loadProfile();
     if (!value || typeof value !== "object" || !value.preset) return null;
     // Perfiles guardados por versiones anteriores (modo "photo", presets
     // renombrados o eliminados) se migran al catálogo actual de avatares IA
@@ -156,7 +137,7 @@ export function outfitApi(options = {}) {
     const upToDate = value.mode === "preset" && value.preset === preset.id && value.style === style.id && value.modelUrl === style.image;
     if (upToDate) return value;
     const migrated = presetProfile(preset, value.style, value);
-    await atomicJson(modelProfileFile, migrated);
+    await store.saveProfile(migrated);
     return migrated;
   }
 
@@ -170,16 +151,7 @@ export function outfitApi(options = {}) {
     }
   }
 
-  async function loadOutfits() {
-    try {
-      const value = JSON.parse(await readFile(outfitsFile, "utf8"));
-      if (Array.isArray(value)) return { version: 1, outfits: value };
-      return { version: 1, outfits: Array.isArray(value.outfits) ? value.outfits : [] };
-    } catch (error) {
-      if (error.code === "ENOENT") return { version: 1, outfits: [] };
-      throw error;
-    }
-  }
+  const loadOutfits = () => store.loadOutfits();
 
   async function saveOutfit(input) {
     const library = await loadLibrary();
@@ -219,8 +191,7 @@ export function outfitApi(options = {}) {
       createdAt: existing?.createdAt || now,
       updatedAt: now,
     };
-    collection.outfits = [...collection.outfits.filter((item) => item.id !== outfit.id), outfit];
-    await atomicJson(outfitsFile, collection);
+    await store.putOutfit(outfit);
     return outfit;
   }
 
@@ -243,7 +214,7 @@ export function outfitApi(options = {}) {
         const preset = findModelPreset(input.preset);
         if (!preset) return json(res, 400, { error: "Elegí uno de los modelos IA disponibles." });
         const profile = presetProfile(preset, input.style);
-        await atomicJson(modelProfileFile, profile);
+        await store.saveProfile(profile);
         return json(res, 200, profile);
       }
       if (url.pathname === `${API_ROOT}/generate-model` && req.method === "POST") {
@@ -272,7 +243,7 @@ export function outfitApi(options = {}) {
         if (!outfit) return json(res, 404, { error: "No se encontró el look." });
         outfit.favorite = !outfit.favorite;
         outfit.updatedAt = new Date().toISOString();
-        await atomicJson(outfitsFile, collection);
+        await store.putOutfit(outfit);
         return json(res, 200, outfit);
       }
       if (url.pathname === `${API_ROOT}/generate` && req.method === "POST") {
@@ -300,22 +271,22 @@ export function outfitApi(options = {}) {
           images,
         });
         const filename = `${outfit.id}.png`;
-        await writeFile(path.join(outfitImagesDir, filename), bytes);
-        const collection = await loadOutfits();
-        const saved = collection.outfits.find((item) => item.id === outfit.id);
-        saved.image = `${API_ROOT}/images/${filename}`;
-        saved.status = "accepted";
-        saved.updatedAt = new Date().toISOString();
-        await atomicJson(outfitsFile, collection);
+        await store.writeOutfitImage(filename, bytes);
+        const saved = {
+          ...outfit,
+          image: `${API_ROOT}/images/${filename}`,
+          status: "accepted",
+          updatedAt: new Date().toISOString(),
+        };
+        await store.putOutfit(saved);
         return json(res, 200, saved);
       }
       const imageMatch = url.pathname.match(/^\/api\/tryon\/images\/([\w.-]+)$/);
       if (imageMatch && req.method === "GET") {
-        const file = path.join(outfitImagesDir, path.basename(imageMatch[1]));
-        await stat(file);
+        const bytes = await store.readOutfitImage(path.basename(imageMatch[1]));
         res.setHeader("Content-Type", "image/png");
         res.setHeader("Cache-Control", "no-store");
-        return res.end(await readFile(file));
+        return res.end(bytes);
       }
       return json(res, 404, { error: "No encontrado." });
     } catch (error) {
@@ -324,21 +295,28 @@ export function outfitApi(options = {}) {
     }
   }
 
+  return handler;
+}
+
+// Plugin de Vite para el workspace: usa el store de archivos, así los looks y el
+// perfil siguen quedando en data/*.json y se commitean como hasta ahora.
+export function outfitApi(options = {}) {
+  let handler;
+
   return {
     name: "wardrobe-outfit-api",
     apply: "serve",
     async configResolved(config) {
-      root = config.root;
-      dataDir = path.resolve(root, setting("WARDROBE_DATA_DIR", "data"));
-      libraryFile = path.join(dataDir, "library.json");
-      outfitsFile = path.join(dataDir, "outfits.json");
-      outfitImagesDir = path.join(dataDir, "outfit-images");
-      publicDir = path.resolve(root, "public");
-      modelProfileFile = path.join(dataDir, "model-profile.json");
-      await mkdir(dataDir, { recursive: true });
-      await mkdir(outfitImagesDir, { recursive: true });
+      const root = config.root;
+      const env = options.env || {};
+      const dataDir = path.resolve(root, env["WARDROBE_DATA_DIR"] || process.env["WARDROBE_DATA_DIR"] || "data");
+      handler = createTryonHandler({
+        root,
+        env,
+        store: await createFsOutfitStore({ dataDir }),
+      });
     },
-    configureServer(server) { server.middlewares.use(handler); },
-    configurePreviewServer(server) { server.middlewares.use(handler); },
+    configureServer(server) { server.middlewares.use((req, res, next) => handler(req, res, next)); },
+    configurePreviewServer(server) { server.middlewares.use((req, res, next) => handler(req, res, next)); },
   };
 }
