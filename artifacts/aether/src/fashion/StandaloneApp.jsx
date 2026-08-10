@@ -833,6 +833,29 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
     return (modeled.length >= 3 ? modeled : items).slice(0, 3);
   }, [items]);
 
+  // Selección del Winter Sale: prioriza season "winter" y después prendas aptas
+  // para frío (climates "cold"), dejando fuera los accesorios.
+  const winterItems = useMemo(() => {
+    const winterScore = (item) => {
+      if (item.season === "winter") return 0;
+      if (!(item.climates || []).includes("cold")) return null;
+      if (item.weight === "heavy") return 1;
+      return item.weight === "medium" ? 2 : 3;
+    };
+    const seenNames = new Set();
+    return items
+      .filter((item) => !String(item.part || "").startsWith("accessories"))
+      .map((item) => ({ item, score: winterScore(item) }))
+      .filter(({ item, score }) => {
+        if (score === null || seenNames.has(item.name)) return false;
+        seenNames.add(item.name);
+        return true;
+      })
+      .sort((a, b) => a.score - b.score)
+      .slice(0, 14)
+      .map(({ item }) => item);
+  }, [items]);
+
   const activeTheme = DEMO_THEMES[demo.theme];
   const themeStyle = { "--ink": activeTheme.ink, "--cream": activeTheme.cream, "--acid": activeTheme.accent, "--muted": activeTheme.muted, "--deep": activeTheme.deep, "--accent-ink": activeTheme.accentInk };
   const openCollection = (type = "all") => {
@@ -914,6 +937,41 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
               </dl>
             </div>
           </section>
+
+          <section className="winter-sale" id="winter-sale" aria-label="Winter Sale">
+            <p className="retail-kicker"><Sparkle size={15} weight="fill" /> Winter Sale · 50% Off</p>
+            <h2>El invierno, <em>a mitad de precio.</em></h2>
+            <p>Hasta el 31 de agosto, una selección de prendas de invierno con 50% de descuento. Piezas pensadas para durar, en una ocasión que no.</p>
+            <button className="retail-text-link winter-sale__link" type="button" onClick={() => openCollection()}>
+              Descubrí la selección <ArrowRight size={16} />
+            </button>
+          </section>
+
+          {winterItems.length > 3 && (
+            <section className="winter-carousel" aria-label="Prendas seleccionadas del Winter Sale">
+              <div className="winter-carousel__track" style={{ "--marquee-duration": `${winterItems.length * 4}s` }}>
+                {[0, 1].map((copy) => (
+                  <div className="winter-carousel__group" key={copy} aria-hidden={copy === 1 || undefined}>
+                    {winterItems.map((item) => (
+                      <button
+                        className="winter-carousel__card"
+                        type="button"
+                        key={`${copy}-${item.id}`}
+                        tabIndex={copy === 1 ? -1 : undefined}
+                        onClick={() => { openProduct(item.id); openCollection(); }}
+                        aria-label={`Ver ${item.name} en la colección`}
+                      >
+                        <span className="winter-carousel__image">
+                          <OptimizedImage src={item.thumbnail || item.image} alt="" sizes="200px" breakpoints={[160, 240, 320]} />
+                        </span>
+                        <span className="winter-carousel__name">{item.name}</span>
+                      </button>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           <section className="collection-strip" id="coleccion">
             <div>

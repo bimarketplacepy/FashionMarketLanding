@@ -87,6 +87,28 @@
 .demo-customizer__footer button { min-height: 42px; padding: 0 14px; border: 1px solid #191b17; background: transparent; display: flex; align-items: center; gap: 7px; cursor: pointer; font-weight: 700; }
 .demo-customizer__footer button:last-child { background: #191b17; color: white; }
 
+.winter-sale { margin: 0 4.5vw; padding: clamp(3.5rem, 7vw, 5.5rem) 2rem clamp(2.4rem, 4.5vw, 3.4rem); border-top: 1px solid #bbb4a9; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.1rem; background: var(--cream); }
+.winter-sale .retail-kicker { margin: 0; color: var(--deep, #6e2b35); }
+.winter-sale h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.2rem, 4.4vw, 4rem); font-weight: 400; line-height: 1; letter-spacing: -.04em; margin: 0; }
+.winter-sale h2 em { color: var(--deep, #6e2b35); font-weight: 400; }
+.winter-sale > p:not(.retail-kicker) { max-width: 560px; margin: 0; font-size: clamp(.95rem, 1.2vw, 1.1rem); line-height: 1.6; color: #66635c; }
+.winter-sale__link { border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; margin-top: .4rem; text-decoration: underline; text-underline-offset: 6px; font-size: .82rem; text-transform: uppercase; letter-spacing: .1em; }
+
+.winter-carousel { overflow: hidden; background: var(--cream); padding: 0 0 clamp(3rem, 6vw, 5rem); }
+.winter-carousel__track { display: flex; width: max-content; animation: winter-marquee var(--marquee-duration, 48s) linear infinite; }
+.winter-carousel:hover .winter-carousel__track, .winter-carousel:focus-within .winter-carousel__track { animation-play-state: paused; }
+.winter-carousel__group { display: flex; gap: 18px; padding-right: 18px; }
+.winter-carousel__card { border: 0; background: transparent; padding: 0; cursor: pointer; color: inherit; width: clamp(150px, 15vw, 205px); flex-shrink: 0; text-align: left; display: flex; flex-direction: column; gap: 10px; }
+.winter-carousel__image { display: block; aspect-ratio: 3 / 4; overflow: hidden; background: color-mix(in srgb, var(--muted, #ccd1ba) 45%, var(--cream)); }
+.winter-carousel__image img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.winter-carousel__card:hover .winter-carousel__image img { transform: scale(1.04); }
+.winter-carousel__name { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; line-height: 1.45; color: #66635c; }
+@keyframes winter-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .winter-carousel { overflow-x: auto; }
+  .winter-carousel__track { animation: none; }
+}
+
 .collection-strip { background: #1b1d19; color: #f4f0e8; padding: 6rem 4.5vw; display: grid; grid-template-columns: .8fr 1.2fr; gap: 7vw; }
 .collection-strip h2, .personalizer-copy h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(2.8rem, 5vw, 5.7rem); letter-spacing: -.045em; line-height: .96; margin: 0; }
 .collection-categories { border-top: 1px solid #5b5d56; }
@@ -189,6 +211,7 @@ button.public-product-card { border: 0; background: transparent; padding: 0; tex
   .hero-proof { gap: 12px; justify-content: space-between; }
   .hero-proof span { display: block; max-width: 80px; }
   .collection-strip, .personalizer-feature, .season-story { grid-template-columns: 1fr; padding: 5rem 20px; }
+  .winter-sale { margin: 0 20px; padding: 3rem 10px; }
   .season-story__image, .season-story__image img { min-height: 520px; }
   .public-catalog, .admin-catalog { padding: 4rem 20px 6rem; }
   .public-catalog__heading { grid-template-columns: 1fr; gap: 22px; }
