@@ -5,12 +5,14 @@ import { OptimizedImage } from "./OptimizedImage.jsx";
 import { addToDraft } from "./outfit-draft.js";
 import { sugerirPrendas } from "./sugerencias.js";
 import { SuggestionCarousel, useSavedOutfits } from "./SuggestionCarousel.jsx";
-import { formatPriceGs, PART_LABELS } from "./format.js";
+import { formatPriceGs, GARMENT_TYPE_LABELS, MATERIAL_LABELS, PART_LABELS, SEASON_LABELS, SILHOUETTE_LABELS } from "./format.js";
+import "./shop.css";
 
 // Ficha comercial de solo lectura que ve el público al hacer click en una prenda.
 export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
   const [, navigate] = useLocation();
   const closeButtonRef = useRef(null);
+  const sheetRef = useRef(null);
   const [added, setAdded] = useState(false);
   const { outfits, ready } = useSavedOutfits();
   const sugerencias = useMemo(
@@ -20,6 +22,7 @@ export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
 
   useEffect(() => {
     setAdded(false);
+    sheetRef.current?.scrollTo({ top: 0 });
   }, [item]);
 
   useEffect(() => {
@@ -43,7 +46,7 @@ export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
   return (
     <div className="viewer-overlay" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
       <div className="viewer-entry">
-        <aside className="viewer product-sheet" role="dialog" aria-modal="true" aria-label={item.name}>
+        <aside className="viewer product-sheet" role="dialog" aria-modal="true" aria-label={item.name} ref={sheetRef}>
           {onBack && (
             <button className="sheet-back" type="button" onClick={onBack}>
               <ArrowLeft size={14} /> Volver
@@ -69,14 +72,24 @@ export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
               {typeof item.price === "number" && <p className="product-price">{formatPriceGs(item.price)}</p>}
               {item.description && <p className="product-description">{item.description}</p>}
 
-              {(item.sizes || []).length > 0 && (
-                <div className="product-sizes">
-                  <span>Talles disponibles</span>
+              <dl className="product-attrs">
+                {[
+                  ["Tipo", GARMENT_TYPE_LABELS[item.garmentType]],
+                  ["Tela", MATERIAL_LABELS[item.material]],
+                  ["Silueta", SILHOUETTE_LABELS[item.silhouette]],
+                  ["Temporada", SEASON_LABELS[item.season]],
+                ].filter(([, value]) => value).map(([label, value]) => (
+                  <div key={label}><dt>{label}</dt><dd>{value}</dd></div>
+                ))}
+                {item.color && (
                   <div>
-                    {item.sizes.map((option) => <span className="product-size-chip" key={option}>{option}</span>)}
+                    <dt>Color</dt>
+                    <dd className="product-colors">
+                      {[item.color, item.secondaryColor].filter(Boolean).map((color) => <i key={color} style={{ background: color }} aria-hidden="true" />)}
+                    </dd>
                   </div>
-                </div>
-              )}
+                )}
+              </dl>
 
               <button className="retail-primary-button product-add" type="button" onClick={addToOutfit}>
                 <CoatHanger size={17} /> Agregar a mi outfit

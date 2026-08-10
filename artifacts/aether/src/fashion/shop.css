@@ -13,6 +13,12 @@
 .product-sheet-info h2 { margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: clamp(1.7rem, 3vw, 2.5rem); letter-spacing: -.03em; line-height: 1.02; }
 .product-price { margin: 0; font-size: 1.15rem; font-weight: 750; color: #1b1d19; letter-spacing: -.01em; }
 .product-description { margin: 0; color: #5d5b53; line-height: 1.6; font-size: .92rem; }
+.product-attrs { margin: 2px 0 0; border-top: 1px solid #e4ddce; }
+.product-attrs > div { display: grid; grid-template-columns: 108px 1fr; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #e4ddce; }
+.product-attrs dt { text-transform: uppercase; letter-spacing: .12em; font-size: .58rem; font-weight: 720; color: #76736b; }
+.product-attrs dd { margin: 0; font-size: .88rem; }
+.product-colors { display: flex; gap: 7px; }
+.product-colors i { width: 17px; height: 17px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, .18); }
 .product-sizes > span { display: block; text-transform: uppercase; letter-spacing: .11em; font-size: .58rem; font-weight: 720; color: #76736b; margin-bottom: 8px; }
 .product-sizes > div { display: flex; flex-wrap: wrap; gap: 7px; }
 .product-size-chip { min-width: 44px; min-height: 36px; padding: 0 10px; border: 1px solid #c8c1b5; background: #fbf8f2; font: 650 .8rem/36px inherit; text-align: center; }

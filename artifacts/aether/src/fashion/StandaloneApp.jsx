@@ -5,6 +5,8 @@ import { OptimizedImage } from "./OptimizedImage.jsx";
 import { VirtualTryOn } from "./virtual-tryon.jsx";
 import { FashionIntro } from "./FashionIntro.jsx";
 import { BrandLogo } from "./BrandLogo.jsx";
+import { ProductSheet } from "./ProductSheet.jsx";
+import { MATERIAL_LABELS, SEASON_LABELS, SILHOUETTE_LABELS } from "./format.js";
 import { GARMENT_TYPES, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
 import "./styles.css";
 
@@ -732,6 +734,22 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
   const [selectedId, setSelectedId] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  // Ficha pública de producto: pila de ids para poder volver desde una sugerencia.
+  const [productTrail, setProductTrail] = useState(() => {
+    const fromUrl = new URLSearchParams(window.location.search).get("producto");
+    return fromUrl ? [fromUrl] : [];
+  });
+  const openProduct = (id) => setProductTrail((trail) => (trail[trail.length - 1] === id ? trail : [...trail, id]));
+  const closeProduct = () => setProductTrail([]);
+  const selectedProduct = (view === "collection" && items.find((item) => item.id === productTrail[productTrail.length - 1])) || null;
+
+  useEffect(() => {
+    if (view !== "collection") return;
+    const url = new URL(window.location.href);
+    if (selectedProduct) url.searchParams.set("producto", selectedProduct.id);
+    else url.searchParams.delete("producto");
+    window.history.replaceState(null, "", url);
+  }, [view, selectedProduct]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -950,16 +968,25 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
           {visibleItems.length ? (
             <div className="public-product-grid">
               {visibleItems.map((item) => (
-                <article className="public-product-card" key={item.id}>
+                <button className="public-product-card" type="button" key={item.id} onClick={() => openProduct(item.id)} aria-label={`Ver detalles de ${item.name}`}>
                   <div><OptimizedImage src={item.thumbnail || item.image} alt={item.name} sizes="(max-width: 640px) 50vw, (max-width: 1000px) 33vw, 25vw" breakpoints={[240, 360, 480, 640]} /><i style={{ background: item.color }} /></div>
-                  <p>{item.season === "all" ? "Todo el año" : item.season} · {TYPE_MAP[item.part]?.singular}</p>
+                  <p>{SEASON_LABELS[item.season] || item.season} · {TYPE_MAP[item.part]?.singular}</p>
                   <h2>{item.name}</h2>
-                  <small>{item.material} · {item.silhouette}</small>
-                </article>
+                  <small>{MATERIAL_LABELS[item.material] || item.material} · {SILHOUETTE_LABELS[item.silhouette] || item.silhouette}</small>
+                </button>
               ))}
             </div>
           ) : <div className="catalog-empty"><h2>Esta categoría se está preparando.</h2><p>Volvé pronto para conocer las próximas piezas.</p></div>}
         </main>
+        {selectedProduct && (
+          <ProductSheet
+            item={selectedProduct}
+            items={items}
+            onClose={closeProduct}
+            onOpen={openProduct}
+            onBack={productTrail.length > 1 ? () => setProductTrail((trail) => trail.slice(0, -1)) : undefined}
+          />
+        )}
         <RetailFooter brand={demo.brand} tagline="Una selección para descubrir a tu ritmo." />
       </div>
     );

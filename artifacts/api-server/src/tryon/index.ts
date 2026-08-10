@@ -7,7 +7,7 @@
 // persistencia en Postgres en vez de archivos.
 
 import path from "node:path";
-import { readFile } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import cookieParser from "cookie-parser";
 import { Router, type IRouter, type Request, type Response } from "express";
@@ -82,10 +82,19 @@ export function tryonRouter(): IRouter {
   router.get("/api/import/library/:file", async (req: Request, res: Response) => {
     const file = path.join(libraryAssetDir, path.basename(String(req.params["file"])));
     try {
-      const image = await readFile(file);
+      // Los PNG del catálogo se retocan en el workspace sin cambiar de nombre,
+      // así que nada de "immutable": ETag por mtime+tamaño y revalidación con
+      // 304 baratos. Un retoque queda visible con sólo republicar.
+      const info = await stat(file);
+      const etag = `W/"${info.size.toString(16)}-${Math.trunc(info.mtimeMs).toString(16)}"`;
+      res.setHeader("Cache-Control", "public, no-cache");
+      res.setHeader("ETag", etag);
+      if (req.headers["if-none-match"] === etag) {
+        res.status(304).end();
+        return;
+      }
       res.setHeader("Content-Type", "image/png");
-      res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
-      res.end(image);
+      res.end(await readFile(file));
     } catch {
       res.status(404).json({ error: "Not found" });
     }

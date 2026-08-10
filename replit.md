@@ -5,7 +5,7 @@ Landing del sector Moda de un retailer: intro cinematográfica (ex-AETHER) + lan
 ## Rutas (wouter, julio 2026)
 
 - `/` — landing editorial de temporada, sin controles de demo ni accesos administrativos.
-- `/catalogo` — colección pública separada del probador.
+- `/catalogo` — colección pública separada del probador. Cada tarjeta abre la ficha de producto (`ProductSheet.jsx`: atributos en español, talles, colores y carrusel "Combina con" de `sugerencias.js`); `?producto=<id>` la abre directo (enlace compartible, se mantiene con replaceState). "Agregar a mi outfit" guarda el borrador (`outfit-draft.js`, localStorage) y el builder del probador lo siembra al montar y lo sincroniza al cambiar.
 - `/probador` — probador virtual con tres secciones: "Looks sugeridos", "Crear un look" y "Mi modelo".
 - `/outfit` — ruta histórica; redirige a `/probador?seccion=builder`.
 - `/admin` — panel con clave simple validada en el cliente (`VITE_ADMIN_KEY`, fallback `fw2026`, sessionStorage): editor de prendas `ItemViewer` (nombre/categoría/género/talles/descripción/colores/tags) + "Administrar catálogo" para importar. El editor y la importación NO son accesibles desde las vistas públicas.
@@ -32,7 +32,7 @@ Landing del sector Moda de un retailer: intro cinematográfica (ex-AETHER) + lan
 
 - `artifacts/aether/` — la app web principal (Vite + React). A pesar del nombre, hoy es Fashion Market.
   - `src/fashion/StandaloneApp.jsx` — fuente canónica de la landing, la colección y el probador. `FashionIntro.jsx`, `styles.css`, `virtual-tryon.jsx` y `virtual-tryon.css` contienen la UI sincronizada con el proyecto local. `BrandLogo.jsx` es el logo oficial (placa horizontal delineada con corchetes salientes en los extremos y versalitas serif finas, en currentColor) como SVG inline; lo usan todos los `.brand-mark` y `public/favicon.svg` es el mismo logo sobre placa blanca redondeada.
-  - `src/fashion/AdminPage.jsx` e `ItemViewer.jsx` — panel privado y editor persistente. `FashionMarket.jsx`, `OutfitBuilderPage.jsx` y `ProductSheet.jsx` quedan como implementación histórica sin imports desde el entrypoint activo.
+  - `src/fashion/AdminPage.jsx` e `ItemViewer.jsx` — panel privado y editor persistente. `FashionMarket.jsx` y `OutfitBuilderPage.jsx` quedan como implementación histórica sin imports desde el entrypoint activo; `ProductSheet.jsx`, `SuggestionCarousel.jsx`, `sugerencias.js` y `outfit-draft.js` volvieron al flujo activo con la ficha del catálogo (agosto 2026).
   - `scripts/*.mjs` — backend como plugins de Vite: importación con IA (`import-job-api`), pruebas virtuales (`outfit-api`), regeneración aprobable de prendas (`garment-regeneration-api`) e imágenes responsive (`responsive-image-api`).
   - `data/` — catálogo local (`library.json`, `outfits.json`) e imágenes generadas de looks. No commitear contenido sensible.
   - `public/fashion/models/ai/` — biblioteca estática de ocho modelos IA ficticios, optimizada en WebP y versionada con la app.

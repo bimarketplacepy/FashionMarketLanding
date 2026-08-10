@@ -9,6 +9,7 @@ import {
 } from "@phosphor-icons/react";
 import { effectiveProfileGender, garmentCoverage, garmentFitsModel, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
 import { defaultModelPreset, findModelPreset, findModelStyle, presetsForGender } from "../../shared/model-presets.mjs";
+import { readDraft, writeDraft } from "./outfit-draft.js";
 import "./virtual-tryon.css";
 
 const PARTS = [
@@ -241,7 +242,23 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
   const [count, setCount] = useState(6);
   const [suggestions, setSuggestions] = useState([]);
   const [savedOutfits, setSavedOutfits] = useState([]);
-  const [builder, setBuilder] = useState({});
+  // El builder arranca con el borrador que dejó la ficha de producto
+  // ("Agregar a mi outfit") y lo mantiene sincronizado para el camino inverso.
+  const [builder, setBuilder] = useState(() => {
+    const seeded = {};
+    for (const [part, value] of Object.entries(readDraft())) {
+      if (value && typeof value.id === "string") seeded[part] = value.id;
+    }
+    // Misma exclusividad que selectBuilderGarment: enterizo pisa superior+inferior.
+    if (seeded.wholebody) {
+      delete seeded.upperbody;
+      delete seeded.lowerbody;
+    }
+    return seeded;
+  });
+  useEffect(() => {
+    writeDraft(Object.fromEntries(Object.entries(builder).filter(([, id]) => id).map(([part, id]) => [part, { id }])));
+  }, [builder]);
   const [config, setConfig] = useState({ hasApiKey: false, hasModelReference: false, provider: "gemini", generationMode: "api", profile: null });
   const [modelDraft, setModelDraft] = useState(DEFAULT_MODEL);
   const [busyId, setBusyId] = useState(null);

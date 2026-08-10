@@ -116,6 +116,7 @@
 .catalog-filters button.active { background: var(--ink, #191b17); color: var(--cream, #f3eee5); border-color: var(--ink, #191b17); }
 .public-product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 34px 18px; }
 .public-product-card { min-width: 0; color: inherit; }
+button.public-product-card { border: 0; background: transparent; padding: 0; text-align: left; cursor: pointer; font: inherit; }
 .public-product-card > div { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: color-mix(in srgb, var(--muted, #d4cbbc) 52%, var(--cream)); }
 .public-product-card img { width: 100%; height: 100%; object-fit: contain; padding: 8%; transition: transform .35s ease; }
 .public-product-card:hover img { transform: scale(1.025); }
