@@ -7,11 +7,14 @@
 // persistencia en Postgres en vez de archivos.
 
 import path from "node:path";
+import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
+import cookieParser from "cookie-parser";
 import { Router, type IRouter, type Request, type Response } from "express";
 import { createTryonHandler } from "../../../aether/scripts/outfit-api.mjs";
 import { createIpxHandler } from "../../../aether/scripts/responsive-image-api.mjs";
 import { createPgOutfitStore } from "./pgStore";
+import { tryonSession, sessionOf } from "./session";
 import { aetherProxy } from "../middlewares/aetherProxy";
 import { logger } from "../lib/logger";
 
@@ -20,7 +23,6 @@ import { logger } from "../lib/logger";
 // aether están disponibles como semilla de sólo lectura.
 const distDir = path.dirname(fileURLToPath(import.meta.url));
 const AETHER_ROOT = process.env["AETHER_ROOT"] ?? path.resolve(distDir, "../../aether");
-const AETHER_DATA_DIR = path.resolve(AETHER_ROOT, process.env["WARDROBE_DATA_DIR"] ?? "data");
 
 // Rutas de administración (importar catálogo con IA, regenerar prendas) que
 // siguen viviendo sólo como plugins de Vite: se cargan desde el workspace y el
@@ -57,6 +59,38 @@ export function tryonRouter(): IRouter {
     return router;
   }
 
+  // Catálogo público de sólo lectura: la fuente de verdad sigue siendo
+  // data/library.json + data/imported/, que se curan en el workspace y viajan
+  // commiteados al deployment. Acá sólo se sirven; todo lo que escribe o usa IA
+  // de importación queda detrás del 503 de abajo.
+  const libraryFile = path.resolve(AETHER_ROOT, "data/library.json");
+  const libraryAssetDir = path.resolve(AETHER_ROOT, "data/imported");
+
+  router.get("/api/import/wardrobe", async (_req: Request, res: Response) => {
+    try {
+      res.type("application/json").send(await readFile(libraryFile, "utf8"));
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code === "ENOENT") {
+        res.json([]);
+        return;
+      }
+      logger.error({ err: error }, "No se pudo leer library.json");
+      res.status(500).json({ error: "No pudimos cargar la colección." });
+    }
+  });
+
+  router.get("/api/import/library/:file", async (req: Request, res: Response) => {
+    const file = path.join(libraryAssetDir, path.basename(String(req.params["file"])));
+    try {
+      const image = await readFile(file);
+      res.setHeader("Content-Type", "image/png");
+      res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+      res.end(image);
+    } catch {
+      res.status(404).json({ error: "Not found" });
+    }
+  });
+
   router.use(ADMIN_ONLY_PREFIXES, (_req: Request, res: Response) => {
     res.status(503).json({
       error:
@@ -67,10 +101,19 @@ export function tryonRouter(): IRouter {
   const handler = createTryonHandler({
     root: AETHER_ROOT,
     env: process.env,
-    store: createPgOutfitStore({ dataDir: AETHER_DATA_DIR }),
+    store: createPgOutfitStore(),
+    resolveSession: sessionOf,
   });
+
+  // La cookie se emite sólo en las rutas del vestidor: /api/_ipx sirve imágenes
+  // públicas del catálogo y no necesita identificar a nadie.
+  router.use(
+    "/api/tryon",
+    cookieParser(),
+    tryonSession({ secure: process.env["REPLIT_DEPLOYMENT"] === "1" }),
+  );
   router.use((req, res, next) => handler(req, res, next));
 
-  logger.info({ root: AETHER_ROOT, store: "postgres" }, "Vestidor montado en api-server");
+  logger.info({ root: AETHER_ROOT, store: "postgres" }, "Vestidor montado en api-server (sesión por visitante)");
   return router;
 }

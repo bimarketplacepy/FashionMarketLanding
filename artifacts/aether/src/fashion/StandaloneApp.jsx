@@ -4,6 +4,7 @@ import { WardrobeImportFlow } from "./import-flow.jsx";
 import { OptimizedImage } from "./OptimizedImage.jsx";
 import { VirtualTryOn } from "./virtual-tryon.jsx";
 import { FashionIntro } from "./FashionIntro.jsx";
+import { BrandLogo } from "./BrandLogo.jsx";
 import { GARMENT_TYPES, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
 import "./styles.css";
 
@@ -688,7 +689,7 @@ function RetailFooter({ brand, tagline }) {
   return (
     <footer className="retail-footer">
       <div className="retail-footer__top">
-        <div className="brand-mark"><span>{brand || "FASHION MARKET"}</span><small>By Marketplace</small></div>
+        <div className="brand-mark"><BrandLogo /><small>By Marketplace</small></div>
         <p>{tagline}</p>
         <small>Otoño — Invierno 2026</small>
       </div>
@@ -840,7 +841,7 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
         <FashionIntro />
         <header className="retail-nav" id="inicio">
           <button className="brand-mark" type="button" onClick={() => changeView("home")} aria-label="Inicio">
-            <span>{demo.brand || "FASHION MARKET"}</span><small>By Marketplace</small>
+            <BrandLogo /><small>By Marketplace</small>
           </button>
           <nav aria-label="Navegación principal">
             <a href="#temporada">Temporada</a>
@@ -930,7 +931,7 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
       <div className={`retail-landing retail-subpage type-${demo.type}`} style={themeStyle}>
         <header className="retail-nav retail-subnav">
           <button className="brand-mark" type="button" onClick={() => changeView("home")} aria-label="Volvé al inicio">
-            <span>{demo.brand}</span><small>By Marketplace</small>
+            <BrandLogo /><small>By Marketplace</small>
           </button>
           <nav aria-label="Navegación de la colección">
             <button type="button" onClick={() => changeView("home")}>Inicio</button>
@@ -968,7 +969,7 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
     return (
       <div className={`app-shell retail-wardrobe admin-view${selectedItem ? " has-selection" : ""}`}>
         <header className="wardrobe-topbar">
-          <button className="brand-mark" type="button" onClick={() => changeView("home")}><span>{demo.brand}</span><small>By Marketplace</small></button>
+          <button className="brand-mark" type="button" onClick={() => changeView("home")}><BrandLogo /><small>By Marketplace</small></button>
           <p>Administración del catálogo</p>
           <button className="retail-outline-button" type="button" onClick={() => changeView("home")}><List size={17} /> Mirá el sitio</button>
         </header>
@@ -986,7 +987,7 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
   return (
     <div className={`app-shell retail-wardrobe${selectedItem ? " has-selection" : ""}`}>
       <header className="wardrobe-topbar">
-        <button className="brand-mark" type="button" onClick={() => changeView("home")}><span>{demo.brand || "FASHION MARKET"}</span><small>By Marketplace</small></button>
+        <button className="brand-mark" type="button" onClick={() => changeView("home")}><BrandLogo /><small>By Marketplace</small></button>
         <p>Probador virtual</p>
         <button className="retail-outline-button" type="button" onClick={() => changeView("home")}><List size={17} /> Volvé al inicio</button>
       </header>

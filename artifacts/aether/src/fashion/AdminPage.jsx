@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { useLocation } from "wouter";
 import { FolderOpen, LockKey, SignOut, SpinnerGap } from "@phosphor-icons/react";
 import { useCatalog } from "./catalog-context.jsx";
+import { BrandLogo } from "./BrandLogo.jsx";
 import { ItemViewer } from "./ItemViewer.jsx";
 import { BatchImportPanel } from "./batch-import.jsx";
 import "./styles.css";
@@ -87,7 +88,7 @@ export function AdminPage() {
   return (
     <div className="app-shell retail-wardrobe admin-page">
       <header className="wardrobe-topbar">
-        <button className="brand-mark" type="button" onClick={() => navigate("/")}><span>FASHION MARKET</span><small>Administración</small></button>
+        <button className="brand-mark" type="button" onClick={() => navigate("/")}><BrandLogo subtitle="Administración" /><small>Administración</small></button>
         <p>Catálogo</p>
         <div className="topbar-actions">
           <button

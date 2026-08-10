@@ -1,16 +1,20 @@
 // Store del vestidor respaldado por Postgres: es el que se usa en el deployment.
 //
-// El deployment de autoscale tiene disco efímero y no compartido entre
-// instancias, así que todo lo que el probador escribe en runtime va a la base.
-// Los archivos commiteados bajo artifacts/aether/data/ se siguen usando como
-// semilla de sólo lectura, de modo que un deployment recién publicado ya muestra
-// los looks curados desde el workspace y la base sólo guarda lo nuevo.
+// Dos razones para no usar el disco acá:
+//   - el deployment de autoscale tiene disco efímero y no compartido entre
+//     instancias, así que lo que el probador escribe se perdería;
+//   - el probador es público y sin login, y cada visitante tiene que ver su
+//     propio avatar y sus propios looks. Todo se consulta por `sessionId`, que
+//     sale de la cookie anónima que emite session.ts.
+//
+// A diferencia del store de archivos, acá no hay semilla compartida: un
+// visitante nuevo arranca sin avatar (el probador lo manda a elegir modelo) y
+// con la lista de looks vacía. Los looks curados desde el workspace viven en
+// data/outfits.json y son parte del flujo de curaduría, no de la vista pública.
 //
 // El equivalente para el workspace vive en artifacts/aether/scripts/tryon-store-fs.mjs.
 
-import { readFile } from "node:fs/promises";
-import path from "node:path";
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import {
   db,
   tryonModelProfileTable,
@@ -18,115 +22,94 @@ import {
   tryonOutfitImagesTable,
 } from "@workspace/db";
 
-const PROFILE_ID = "default";
-
 type Outfit = { id: string; [key: string]: unknown };
 type OutfitCollection = { version: number; outfits: Outfit[] };
 
-function normalizeOutfits(value: unknown): OutfitCollection {
-  if (Array.isArray(value)) return { version: 1, outfits: value as Outfit[] };
-  if (value && typeof value === "object" && Array.isArray((value as OutfitCollection).outfits)) {
-    return { version: 1, outfits: (value as OutfitCollection).outfits };
-  }
-  return { version: 1, outfits: [] };
-}
-
-async function readJsonFile(file: string): Promise<unknown> {
-  try {
-    return JSON.parse(await readFile(file, "utf8"));
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") return null;
-    throw error;
-  }
-}
-
 export interface TryonStore {
   name: string;
-  loadProfile(): Promise<unknown>;
-  saveProfile(profile: unknown): Promise<void>;
-  loadOutfits(): Promise<OutfitCollection>;
-  putOutfit(outfit: Outfit): Promise<void>;
-  readOutfitImage(filename: string): Promise<Buffer>;
-  writeOutfitImage(filename: string, bytes: Buffer): Promise<void>;
+  loadProfile(sessionId: string): Promise<unknown>;
+  saveProfile(sessionId: string, profile: unknown): Promise<void>;
+  loadOutfits(sessionId: string): Promise<OutfitCollection>;
+  putOutfit(sessionId: string, outfit: Outfit): Promise<void>;
+  readOutfitImage(sessionId: string, filename: string): Promise<Buffer>;
+  writeOutfitImage(sessionId: string, filename: string, bytes: Buffer): Promise<void>;
 }
 
-export function createPgOutfitStore({ dataDir }: { dataDir: string }): TryonStore {
-  const seedOutfitsFile = path.join(dataDir, "outfits.json");
-  const seedProfileFile = path.join(dataDir, "model-profile.json");
-  const seedImagesDir = path.join(dataDir, "outfit-images");
-
+export function createPgOutfitStore(): TryonStore {
   return {
     name: "postgres",
 
-    async loadProfile() {
+    async loadProfile(sessionId) {
       const [row] = await db
         .select()
         .from(tryonModelProfileTable)
-        .where(eq(tryonModelProfileTable.id, PROFILE_ID))
+        .where(eq(tryonModelProfileTable.sessionId, sessionId))
         .limit(1);
-      if (row) return row.profile;
-      // Sin elección todavía en esta base: cae al perfil commiteado.
-      return readJsonFile(seedProfileFile);
+      // Sin fila = visitante nuevo. El probador lo lleva a "Mi modelo".
+      return row?.profile ?? null;
     },
 
-    async saveProfile(profile) {
+    async saveProfile(sessionId, profile) {
       await db
         .insert(tryonModelProfileTable)
-        .values({ id: PROFILE_ID, profile, updatedAt: new Date() })
+        .values({ sessionId, profile, updatedAt: new Date() })
         .onConflictDoUpdate({
-          target: tryonModelProfileTable.id,
+          target: tryonModelProfileTable.sessionId,
           set: { profile, updatedAt: new Date() },
         });
     },
 
-    async loadOutfits() {
-      const seed = normalizeOutfits(await readJsonFile(seedOutfitsFile));
-      const rows = await db.select().from(tryonOutfitsTable);
-      const stored = new Map(rows.map((row) => [row.id, row.outfit as Outfit]));
-
-      // La semilla manda el orden de los looks curados; lo guardado en la base
-      // pisa esas entradas y lo nuevo se agrega al final por fecha de creación.
-      const merged = seed.outfits.map((outfit) => stored.get(outfit.id) ?? outfit);
-      const seedIds = new Set(seed.outfits.map((outfit) => outfit.id));
-      const extra = rows
-        .filter((row) => !seedIds.has(row.id))
+    async loadOutfits(sessionId) {
+      const rows = await db
+        .select()
+        .from(tryonOutfitsTable)
+        .where(eq(tryonOutfitsTable.sessionId, sessionId));
+      const outfits = rows
         .sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())
         .map((row) => row.outfit as Outfit);
-
-      return { version: 1, outfits: [...merged, ...extra] };
+      return { version: 1, outfits };
     },
 
-    async putOutfit(outfit) {
+    async putOutfit(sessionId, outfit) {
       const now = new Date();
       await db
         .insert(tryonOutfitsTable)
-        .values({ id: outfit.id, outfit, createdAt: now, updatedAt: now })
+        .values({ id: outfit.id, sessionId, outfit, createdAt: now, updatedAt: now })
         .onConflictDoUpdate({
           target: tryonOutfitsTable.id,
+          // El filtro por sesión evita que un id adivinado pise el look de otra
+          // persona: si no es suyo, el update no toca ninguna fila.
+          setWhere: eq(tryonOutfitsTable.sessionId, sessionId),
           set: { outfit, updatedAt: now },
         });
     },
 
-    async readOutfitImage(filename) {
-      const name = path.basename(filename);
+    async readOutfitImage(sessionId, filename) {
       const [row] = await db
         .select()
         .from(tryonOutfitImagesTable)
-        .where(eq(tryonOutfitImagesTable.filename, name))
+        .where(
+          and(
+            eq(tryonOutfitImagesTable.filename, filename),
+            eq(tryonOutfitImagesTable.sessionId, sessionId),
+          ),
+        )
         .limit(1);
-      if (row) return row.data;
-      // Las fotos de los looks curados viajan con el repo; el handler traduce un
-      // ENOENT en 404, así que se deja propagar.
-      return readFile(path.join(seedImagesDir, name));
+      if (!row) {
+        // El handler traduce ENOENT en 404, que es lo correcto tanto si la
+        // imagen no existe como si es de otra sesión.
+        throw Object.assign(new Error("No se encontró la imagen del look."), { code: "ENOENT" });
+      }
+      return row.data;
     },
 
-    async writeOutfitImage(filename, bytes) {
-      const name = path.basename(filename);
+    async writeOutfitImage(sessionId, filename, bytes) {
       await db
         .insert(tryonOutfitImagesTable)
-        .values({ filename: name, contentType: "image/png", data: bytes, createdAt: new Date() })
+        .values({ filename, sessionId, contentType: "image/png", data: bytes, createdAt: new Date() })
         .onConflictDoUpdate({
           target: tryonOutfitImagesTable.filename,
+          setWhere: eq(tryonOutfitImagesTable.sessionId, sessionId),
           set: { data: bytes, contentType: "image/png" },
         });
     },

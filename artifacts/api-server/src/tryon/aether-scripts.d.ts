@@ -10,6 +10,9 @@ declare module "*/scripts/outfit-api.mjs" {
     root: string;
     env?: Record<string, string | undefined>;
     store: TryonStore;
+    // El handler le pasa la request tal cual la recibió; quien monta decide de
+    // dónde sale la sesión (cookie en el deployment, fija en el workspace).
+    resolveSession?: (req: IncomingMessage & { tryonSessionId?: string }) => string;
   }): (
     req: IncomingMessage,
     res: ServerResponse,

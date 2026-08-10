@@ -61,16 +61,20 @@ export async function createFsOutfitStore({ dataDir }) {
   await mkdir(dataDir, { recursive: true });
   await mkdir(outfitImagesDir, { recursive: true });
 
+  // El parámetro `sessionId` se recibe y se ignora a propósito: el workspace lo
+  // usa una sola persona curando el catálogo, y el estado tiene que quedar en
+  // los archivos que después se commitean. Las sesiones por visitante son cosa
+  // del deployment (ver pgStore.ts).
   return {
     name: "fs",
 
-    loadProfile: () => readSeedProfile(modelProfileFile),
+    loadProfile: (_sessionId) => readSeedProfile(modelProfileFile),
 
-    saveProfile: (profile) => atomicJson(modelProfileFile, profile),
+    saveProfile: (_sessionId, profile) => atomicJson(modelProfileFile, profile),
 
-    loadOutfits: () => readSeedOutfits(outfitsFile),
+    loadOutfits: (_sessionId) => readSeedOutfits(outfitsFile),
 
-    async putOutfit(outfit) {
+    async putOutfit(_sessionId, outfit) {
       const collection = await readSeedOutfits(outfitsFile);
       collection.outfits = [
         ...collection.outfits.filter((item) => item.id !== outfit.id),
@@ -79,10 +83,10 @@ export async function createFsOutfitStore({ dataDir }) {
       await atomicJson(outfitsFile, collection);
     },
 
-    readOutfitImage: (filename) =>
+    readOutfitImage: (_sessionId, filename) =>
       readFile(path.join(outfitImagesDir, path.basename(filename))),
 
-    writeOutfitImage: (filename, bytes) =>
+    writeOutfitImage: (_sessionId, filename, bytes) =>
       writeFile(path.join(outfitImagesDir, path.basename(filename)), bytes),
   };
 }

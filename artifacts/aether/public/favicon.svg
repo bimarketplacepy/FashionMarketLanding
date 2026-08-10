@@ -1,3 +1,12 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="36" fill="#FF3C00"/>
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="36" fill="#ffffff"/>
+  <g transform="translate(8 75.3) scale(0.2929)">
+    <g fill="none" stroke="#111111" stroke-width="8">
+      <path d="M 18 38 L 18 30 Q 18 8 40 8 L 520 8 Q 542 8 542 30 L 542 38"/>
+      <path d="M 18 62 L 18 70 Q 18 92 40 92 L 520 92 Q 542 92 542 70 L 542 62"/>
+      <path d="M 36 31 L 8 31 L 8 69 L 36 69"/>
+      <path d="M 524 31 L 552 31 L 552 69 L 524 69"/>
+    </g>
+    <text x="280" y="64" text-anchor="middle" fill="#111111" font-family="Italiana, Georgia, 'Times New Roman', serif" letter-spacing="4" textLength="400" lengthAdjust="spacingAndGlyphs"><tspan font-size="46">F</tspan><tspan font-size="34">ASHION</tspan><tspan font-size="46" dx="14">M</tspan><tspan font-size="34">ARKET</tspan></text>
+  </g>
 </svg>

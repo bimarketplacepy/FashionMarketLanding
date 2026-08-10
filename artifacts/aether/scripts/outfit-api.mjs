@@ -100,7 +100,12 @@ Avoid: hidden selected garments, invented closures, unnatural layering, extra la
 // archivos) y Express en el deployment (store de Postgres). La persistencia
 // entra por `store` porque en autoscale el disco es efímero; ver
 // scripts/tryon-store-fs.mjs y artifacts/api-server/src/tryon/pgStore.ts.
-export function createTryonHandler({ root, env = {}, store }) {
+//
+// `resolveSession(req)` devuelve de quién es el avatar y los looks de esta
+// solicitud. En el deployment sale de la cookie anónima (un visitante = una
+// sesión); en el workspace no hay sesiones y siempre es "default", que es el
+// estado único que se cura y se commitea.
+export function createTryonHandler({ root, env = {}, store, resolveSession = () => "default" }) {
   const setting = (name, fallback = "") => env[name] || process.env[name] || fallback;
   const ai = createAIProvider(setting);
   const dataDir = path.resolve(root, setting("WARDROBE_DATA_DIR", "data"));
@@ -126,8 +131,8 @@ export function createTryonHandler({ root, env = {}, store }) {
     };
   }
 
-  async function loadProfile() {
-    const value = await store.loadProfile();
+  async function loadProfile(sid) {
+    const value = await store.loadProfile(sid);
     if (!value || typeof value !== "object" || !value.preset) return null;
     // Perfiles guardados por versiones anteriores (modo "photo", presets
     // renombrados o eliminados) se migran al catálogo actual de avatares IA
@@ -137,7 +142,7 @@ export function createTryonHandler({ root, env = {}, store }) {
     const upToDate = value.mode === "preset" && value.preset === preset.id && value.style === style.id && value.modelUrl === style.image;
     if (upToDate) return value;
     const migrated = presetProfile(preset, value.style, value);
-    await store.saveProfile(migrated);
+    await store.saveProfile(sid, migrated);
     return migrated;
   }
 
@@ -151,14 +156,14 @@ export function createTryonHandler({ root, env = {}, store }) {
     }
   }
 
-  const loadOutfits = () => store.loadOutfits();
+  const loadOutfits = (sid) => store.loadOutfits(sid);
 
-  async function saveOutfit(input) {
+  async function saveOutfit(sid, input) {
     const library = await loadLibrary();
     const ids = [...new Set(Array.isArray(input.garmentIds) ? input.garmentIds : [])];
     const garments = ids.map((id) => library.find((item) => item.id === id)).filter(Boolean);
     if (garments.length !== ids.length) throw Object.assign(new Error("Una o más prendas ya no están disponibles."), { status: 400 });
-    const profile = await loadProfile();
+    const profile = await loadProfile(sid);
     if (profile) {
       const modelGender = profile.gender === "hombre" ? "hombre" : "mujer";
       const incompatible = garments.find((item) => !garmentFitsModel(item, modelGender));
@@ -171,7 +176,7 @@ export function createTryonHandler({ root, env = {}, store }) {
     if (!coverages.includes("full") && !(coverages.includes("top") && coverages.includes("bottom"))) {
       throw Object.assign(new Error("El look necesita un vestido o enterizo, o una prenda superior y una inferior."), { status: 400 });
     }
-    const collection = await loadOutfits();
+    const collection = await loadOutfits(sid);
     const key = [...ids].sort().join("|");
     const existing = collection.outfits.find((item) => [...item.garmentIds].sort().join("|") === key);
     const now = new Date().toISOString();
@@ -191,13 +196,14 @@ export function createTryonHandler({ root, env = {}, store }) {
       createdAt: existing?.createdAt || now,
       updatedAt: now,
     };
-    await store.putOutfit(outfit);
+    await store.putOutfit(sid, outfit);
     return outfit;
   }
 
   async function handler(req, res, next) {
     const url = new URL(req.url, "http://localhost");
     if (!url.pathname.startsWith(API_ROOT)) return next();
+    const sid = resolveSession(req);
     try {
       if (url.pathname === `${API_ROOT}/config` && req.method === "GET") {
         return json(res, 200, {
@@ -206,7 +212,7 @@ export function createTryonHandler({ root, env = {}, store }) {
           modelMode: "presets",
           hasModelReference: false,
           modelReferenceUrl: null,
-          profile: await loadProfile(),
+          profile: await loadProfile(sid),
         });
       }
       if (url.pathname === `${API_ROOT}/model-profile` && req.method === "POST") {
@@ -214,7 +220,7 @@ export function createTryonHandler({ root, env = {}, store }) {
         const preset = findModelPreset(input.preset);
         if (!preset) return json(res, 400, { error: "Elegí uno de los modelos IA disponibles." });
         const profile = presetProfile(preset, input.style);
-        await store.saveProfile(profile);
+        await store.saveProfile(sid, profile);
         return json(res, 200, profile);
       }
       if (url.pathname === `${API_ROOT}/generate-model` && req.method === "POST") {
@@ -231,29 +237,29 @@ export function createTryonHandler({ root, env = {}, store }) {
         return json(res, 410, { error: "La carga de fotos personales está desactivada. Elegí un avatar IA predeterminado." });
       }
       if (url.pathname === `${API_ROOT}/outfits` && req.method === "GET") {
-        return json(res, 200, await loadOutfits());
+        return json(res, 200, await loadOutfits(sid));
       }
       if (url.pathname === `${API_ROOT}/outfits` && req.method === "POST") {
-        return json(res, 200, await saveOutfit(await body(req)));
+        return json(res, 200, await saveOutfit(sid, await body(req)));
       }
       const favoriteMatch = url.pathname.match(/^\/api\/tryon\/outfits\/([\w-]+)\/favorite$/);
       if (favoriteMatch && req.method === "POST") {
-        const collection = await loadOutfits();
+        const collection = await loadOutfits(sid);
         const outfit = collection.outfits.find((item) => item.id === favoriteMatch[1]);
         if (!outfit) return json(res, 404, { error: "No se encontró el look." });
         outfit.favorite = !outfit.favorite;
         outfit.updatedAt = new Date().toISOString();
-        await store.putOutfit(outfit);
+        await store.putOutfit(sid, outfit);
         return json(res, 200, outfit);
       }
       if (url.pathname === `${API_ROOT}/generate` && req.method === "POST") {
         if (!ai.hasApiKey) return json(res, 503, { error: `Configurá ${ai.name === "gemini" ? "GEMINI_API_KEY" : "OPENAI_API_KEY"} para generar la prueba virtual.` });
-        const profile = await loadProfile();
+        const profile = await loadProfile(sid);
         const preset = findModelPreset(profile?.preset);
         if (!preset) return json(res, 409, { error: "Elegí primero uno de los modelos IA disponibles." });
         const style = findModelStyle(preset, profile?.style);
         const input = await body(req);
-        const outfit = await saveOutfit(input);
+        const outfit = await saveOutfit(sid, input);
         const library = await loadLibrary();
         const garments = outfit.garmentIds.map((id) => library.find((item) => item.id === id)).filter(Boolean);
         const presetFile = path.resolve(publicDir, style.image.replace(/^\/+/, ""));
@@ -271,19 +277,19 @@ export function createTryonHandler({ root, env = {}, store }) {
           images,
         });
         const filename = `${outfit.id}.png`;
-        await store.writeOutfitImage(filename, bytes);
+        await store.writeOutfitImage(sid, filename, bytes);
         const saved = {
           ...outfit,
           image: `${API_ROOT}/images/${filename}`,
           status: "accepted",
           updatedAt: new Date().toISOString(),
         };
-        await store.putOutfit(saved);
+        await store.putOutfit(sid, saved);
         return json(res, 200, saved);
       }
       const imageMatch = url.pathname.match(/^\/api\/tryon\/images\/([\w.-]+)$/);
       if (imageMatch && req.method === "GET") {
-        const bytes = await store.readOutfitImage(path.basename(imageMatch[1]));
+        const bytes = await store.readOutfitImage(sid, path.basename(imageMatch[1]));
         res.setHeader("Content-Type", "image/png");
         res.setHeader("Cache-Control", "no-store");
         return res.end(bytes);

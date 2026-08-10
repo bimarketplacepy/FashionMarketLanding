@@ -26,6 +26,8 @@
 .brand-mark { border: 0; background: none; color: inherit; display: flex; flex-direction: column; align-items: flex-start; cursor: pointer; padding: 0; }
 .brand-mark span { font-size: 1.28rem; font-weight: 800; letter-spacing: .16em; line-height: 1; }
 .brand-mark small { font-size: .61rem; letter-spacing: .08em; margin-top: 5px; opacity: .58; }
+.brand-logo { display: block; height: 42px; width: auto; }
+.retail-footer .brand-logo { height: 48px; }
 .retail-nav nav { display: flex; gap: 2.4rem; }
 .retail-nav nav a, .retail-nav nav button { color: inherit; text-decoration: none; font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; }
 .retail-nav nav button { border: 0; background: transparent; padding: 0; cursor: pointer; }
