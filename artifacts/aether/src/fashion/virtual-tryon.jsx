@@ -578,7 +578,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
         </section>
       )}
 
-      {!!compatibleSavedOutfits.filter((item) => item.image).length && section === "suggestions" && (
+      {!!compatibleSavedOutfits.filter((item) => item.image).length && (section === "suggestions" || section === "builder") && (
         <section className="saved-looks">
           <div><p>Tus pruebas</p><h2>Looks generados</h2></div>
           <div>{compatibleSavedOutfits.filter((item) => item.image).map((outfit) => <figure key={outfit.id}><img src={outfit.image} alt={outfit.name} /><figcaption>{outfit.name}</figcaption></figure>)}</div>
