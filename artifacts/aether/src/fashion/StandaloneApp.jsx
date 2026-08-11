@@ -725,6 +725,51 @@ function RetailFooter({ brand, tagline }) {
   );
 }
 
+const WINTER_PROMO_SEEN_KEY = "fm-winter-sale-promo-v1";
+
+function WinterSaleDialog({ onClose, onDiscover }) {
+  const closeButtonRef = useRef(null);
+
+  useEffect(() => {
+    closeButtonRef.current?.focus();
+    const onKeyDown = (event) => { if (event.key === "Escape") onClose(); };
+    document.addEventListener("keydown", onKeyDown);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [onClose]);
+
+  return (
+    <div className="winter-promo__backdrop" onClick={onClose}>
+      <div
+        className="winter-promo"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="winter-promo-title"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <button ref={closeButtonRef} className="winter-promo__close" type="button" onClick={onClose} aria-label="Cerrar aviso">
+          <X size={16} />
+        </button>
+        <p className="retail-kicker"><Sparkle size={14} weight="fill" /> Winter Sale · Hasta 50% Off</p>
+        <h2 id="winter-promo-title">El invierno, <em>con hasta 50% off.</em></h2>
+        <p>Hasta el 31 de agosto, una selección de prendas de invierno con hasta 50% de descuento.</p>
+        <div className="winter-promo__actions">
+          <button className="retail-primary-button" type="button" onClick={onDiscover}>
+            Descubrí la selección <ArrowRight size={16} />
+          </button>
+          <button className="retail-text-link winter-promo__dismiss" type="button" onClick={onClose}>
+            Seguir explorando
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function App({ initialView = "home", onNavigate, tryOnInitialSection = "suggestions" }) {
   const [view, setView] = useState(initialView);
   const demo = DEMO_DEFAULTS;
@@ -754,6 +799,25 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [view]);
+
+  // Aviso emergente del Winter Sale: una vez por sesión, al entrar a la landing.
+  const [showWinterPromo, setShowWinterPromo] = useState(false);
+  useEffect(() => {
+    if (view !== "home") return;
+    let seen = false;
+    try { seen = sessionStorage.getItem(WINTER_PROMO_SEEN_KEY) === "1"; } catch { /* modo privado */ }
+    if (seen) return;
+    const timer = setTimeout(() => setShowWinterPromo(true), 1800);
+    return () => clearTimeout(timer);
+  }, [view]);
+  const dismissWinterPromo = useCallback(() => {
+    setShowWinterPromo(false);
+    try { sessionStorage.setItem(WINTER_PROMO_SEEN_KEY, "1"); } catch { /* modo privado */ }
+  }, []);
+  const discoverWinterPromo = () => {
+    dismissWinterPromo();
+    document.getElementById("winter-sale")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     setView(initialView);
@@ -939,9 +1003,9 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
           </section>
 
           <section className="winter-sale" id="winter-sale" aria-label="Winter Sale">
-            <p className="retail-kicker"><Sparkle size={15} weight="fill" /> Winter Sale · 50% Off</p>
-            <h2>El invierno, <em>a mitad de precio.</em></h2>
-            <p>Hasta el 31 de agosto, una selección de prendas de invierno con 50% de descuento. Piezas pensadas para durar, en una ocasión que no.</p>
+            <p className="retail-kicker"><Sparkle size={15} weight="fill" /> Winter Sale · Hasta 50% Off</p>
+            <h2>El invierno, <em>con hasta 50% off.</em></h2>
+            <p>Hasta el 31 de agosto, una selección de prendas de invierno con hasta 50% de descuento. Piezas pensadas para durar, en una ocasión que no.</p>
             <button className="retail-text-link winter-sale__link" type="button" onClick={() => openCollection()}>
               Descubrí la selección <ArrowRight size={16} />
             </button>
@@ -998,6 +1062,7 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
         </main>
 
         <RetailFooter brand={demo.brand} tagline="Descubrí la temporada, conocé sus piezas y encontrá tu propia forma de llevarlas." />
+        {showWinterPromo && <WinterSaleDialog onClose={dismissWinterPromo} onDiscover={discoverWinterPromo} />}
       </div>
     );
   }
