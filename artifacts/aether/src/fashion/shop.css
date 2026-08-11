@@ -4,7 +4,8 @@
 
 /* ---------- Ficha de producto (pública) ---------- */
 .viewer.product-sheet { display: block; overflow-y: auto; padding-bottom: 26px; }
-.sheet-back { position: absolute; top: 40px; left: 30px; z-index: 8; border: 0; background: none; padding: 0; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; color: #6e2b35; font: inherit; font-size: .78rem; text-decoration: underline; text-underline-offset: 3px; }
+.sheet-back { position: absolute; top: 38px; left: 30px; z-index: 8; border: 1px solid #d8d1c6; background: rgba(246, 241, 232, .94); padding: 9px 13px; display: inline-flex; align-items: center; gap: 7px; cursor: pointer; color: #1b1d19; font: 700 .62rem/1 inherit; text-transform: uppercase; letter-spacing: .09em; }
+.sheet-back:hover { border-color: #1b1d19; }
 .product-sheet-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 26px; padding: 54px 30px 8px; }
 .product-sheet-art { background: #efe9dd; display: grid; place-items: center; min-height: 380px; padding: 22px; }
 .product-sheet-art img { max-width: 100%; max-height: 460px; object-fit: contain; }
@@ -57,7 +58,12 @@
   .sc-action { display: none; }
 }
 @media (max-width: 640px) {
-  .sc-card, .sc-skeleton { flex-basis: 38%; }
+  .sc-card, .sc-skeleton { flex-basis: 34%; }
+  .sc-track { gap: 12px; }
+  .sc-title { margin-bottom: 12px; font-size: .56rem; }
+  .sc-origin { margin-top: 6px; font-size: .52rem; }
+  .sc-name { font-size: .68rem; }
+  .sc-price { font-size: .62rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .sc-art, .sc-action, .sc-arrow { transition: none; }
@@ -149,4 +155,26 @@
   .item-editor .field-row { grid-template-columns: 1fr; }
   .combina-card { flex-basis: 118px; }
   .topbar-actions { flex-wrap: wrap; }
+}
+
+/* Ficha de producto en teléfonos: la imagen deja de ocupar la pantalla entera
+   para que la info, el botón y el carrusel "Combina con" queden al alcance
+   de un scroll corto. */
+@media (max-width: 640px) {
+  .viewer.product-sheet { -webkit-overflow-scrolling: touch; overscroll-behavior: contain; padding-bottom: max(22px, env(safe-area-inset-bottom)); }
+  .sheet-back { top: 20px; left: 18px; }
+  .product-sheet-layout { gap: 14px; padding: 62px 16px 2px; }
+  /* Altura fija: la foto nunca ocupa la pantalla y deja a la vista que hay
+     más contenido (atributos, botón y carrusel) debajo. */
+  .product-sheet-art { min-height: 0; height: min(36vh, 300px); padding: 12px; }
+  .product-sheet-art img { max-width: 100%; max-height: 100%; }
+  .product-sheet-info { gap: 10px; padding-right: 0; }
+  .product-sheet-info h2 { font-size: 1.4rem; }
+  .product-price { font-size: 1rem; }
+  .product-description { font-size: .84rem; }
+  .product-attrs > div { grid-template-columns: 90px 1fr; gap: 10px; padding: 7px 0; }
+  .product-attrs dd { font-size: .8rem; }
+  .product-size-chip { min-width: 38px; min-height: 32px; font: 650 .72rem/32px inherit; }
+  .product-add { align-self: stretch; }
+  .sc { padding: 24px 16px 12px; }
 }

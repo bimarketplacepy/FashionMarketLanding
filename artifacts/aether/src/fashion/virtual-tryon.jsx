@@ -1,5 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
+  CaretLeft,
+  CaretRight,
   Check,
   Heart,
   MagicWand,
@@ -200,6 +202,45 @@ function buildSuggestions(sourceItems, filters, count) {
   return chosen;
 }
 
+// Fila horizontal de prendas del builder, con flechas para avanzar sin
+// depender del gesto de scroll (clave en móvil, donde la fila es más larga
+// que la pantalla).
+function GarmentRail({ children }) {
+  const trackRef = useRef(null);
+  const [canScroll, setCanScroll] = useState({ left: false, right: false });
+  const updateArrows = useCallback(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    setCanScroll({
+      left: track.scrollLeft > 4,
+      right: track.scrollLeft + track.clientWidth < track.scrollWidth - 4,
+    });
+  }, []);
+  useEffect(() => {
+    updateArrows();
+    const track = trackRef.current;
+    if (!track || typeof ResizeObserver === "undefined") return undefined;
+    const observer = new ResizeObserver(updateArrows);
+    observer.observe(track);
+    return () => observer.disconnect();
+  }, [updateArrows, children]);
+  const scroll = (direction) => {
+    const track = trackRef.current;
+    if (track) track.scrollBy({ left: direction * track.clientWidth * 0.8, behavior: "smooth" });
+  };
+  return (
+    <div className="builder-rail">
+      <div className="builder-options" ref={trackRef} onScroll={updateArrows}>{children}</div>
+      {(canScroll.left || canScroll.right) && (
+        <>
+          <button className="builder-rail__arrow builder-rail__arrow--left" type="button" disabled={!canScroll.left} onClick={() => scroll(-1)} aria-label="Prendas anteriores"><CaretLeft size={16} weight="bold" /></button>
+          <button className="builder-rail__arrow builder-rail__arrow--right" type="button" disabled={!canScroll.right} onClick={() => scroll(1)} aria-label="Más prendas"><CaretRight size={16} weight="bold" /></button>
+        </>
+      )}
+    </div>
+  );
+}
+
 function GarmentMini({ item }) {
   return (
     <div className="garment-mini" title={item.name}>
@@ -264,6 +305,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
   const [busyId, setBusyId] = useState(null);
   const [notice, setNotice] = useState("");
   const [error, setError] = useState("");
+  const [lookReady, setLookReady] = useState(null);
   const normalizedItems = useMemo(() => items.map(metadata), [items]);
   const modelGender = effectiveProfileGender(modelDraft);
   const genderItems = useMemo(() => normalizedItems.filter((item) => garmentFitsModel(item, modelGender)), [normalizedItems, modelGender]);
@@ -364,9 +406,12 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
       const complete = { ...generated, garments: generated.garmentIds.map((id) => normalizedItems.find((item) => item.id === id)).filter(Boolean) };
       setSuggestions((current) => current.map((item) => item.combinationKey === outfit.combinationKey ? { ...item, ...complete } : item));
       setSavedOutfits((current) => [...current.filter((item) => item.id !== generated.id), generated]);
-      setNotice(generated.status === "queued_chat"
-        ? "Tu prueba quedó en proceso. La imagen aparecerá acá cuando esté lista."
-        : "Tu prueba virtual está lista.");
+      if (generated.status === "queued_chat") {
+        setNotice("Tu prueba quedó en proceso. La imagen aparecerá acá cuando esté lista.");
+      } else {
+        setNotice("");
+        setLookReady({ name: complete.name });
+      }
     } catch (generationError) {
       console.error("No se pudo generar la prueba virtual", generationError);
       if (generationError.status === 409) setSection("profile");
@@ -460,10 +505,10 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
               {PARTS.map(([part, label]) => (
                 <fieldset key={part}>
                   <legend>{label} <small>{part === "wholebody" ? "alternativa" : (["upperbody", "lowerbody"].includes(part) ? "obligatorio sin vestido" : "opcional")}</small></legend>
-                  <div className="builder-options">
+                  <GarmentRail>
                     {!["upperbody", "lowerbody"].includes(part) && <button className={!builder[part] ? "active empty-option" : "empty-option"} type="button" onClick={() => selectBuilderGarment(part, null)}>Sin {label.toLowerCase()}</button>}
                     {genderItems.filter((item) => item.part === part).map((item) => <button className={builder[part] === item.id ? "active" : ""} key={item.id} type="button" onClick={() => selectBuilderGarment(part, item.id)}><img src={item.thumbnail || item.image} alt="" /><span>{item.name}</span></button>)}
-                  </div>
+                  </GarmentRail>
                 </fieldset>
               ))}
             </div>
@@ -579,10 +624,31 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
       )}
 
       {!!compatibleSavedOutfits.filter((item) => item.image).length && (section === "suggestions" || section === "builder") && (
-        <section className="saved-looks">
+        <section className="saved-looks" id="looks-generados">
           <div><p>Tus pruebas</p><h2>Looks generados</h2></div>
           <div>{compatibleSavedOutfits.filter((item) => item.image).map((outfit) => <figure key={outfit.id}><img src={outfit.image} alt={outfit.name} /><figcaption>{outfit.name}</figcaption></figure>)}</div>
         </section>
+      )}
+
+      {lookReady && (
+        <div className="look-ready__backdrop" onClick={() => setLookReady(null)}>
+          <div className="look-ready" role="dialog" aria-modal="true" aria-labelledby="look-ready-title" onClick={(event) => event.stopPropagation()}>
+            <span className="look-ready__icon"><Check size={22} weight="bold" /></span>
+            <h3 id="look-ready-title">Se generó tu look</h3>
+            <p>{lookReady.name} ya está disponible en tus pruebas.</p>
+            <div className="look-ready__actions">
+              <button
+                className="tryon-primary"
+                type="button"
+                onClick={() => {
+                  setLookReady(null);
+                  document.getElementById("looks-generados")?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >Ver el look</button>
+              <button className="tryon-secondary" type="button" onClick={() => setLookReady(null)}>Seguir explorando</button>
+            </div>
+          </div>
+        </div>
       )}
     </main>
   );

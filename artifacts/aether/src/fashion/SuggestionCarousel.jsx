@@ -47,7 +47,7 @@ export function SuggestionCarousel({ title, suggestions, ready = true, action = 
 
   useEffect(() => () => clearTimeout(addedTimer.current), []);
 
-  if (ready && suggestions.length < 4) return null;
+  if (ready && !suggestions.length) return null;
 
   const scrollBy = (direction) => {
     const track = trackRef.current;

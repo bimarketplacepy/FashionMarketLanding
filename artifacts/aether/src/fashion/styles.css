@@ -219,41 +219,70 @@ button.public-product-card { border: 0; background: transparent; padding: 0; tex
 .wardrobe-topbar > p { margin: 0; text-transform: uppercase; letter-spacing: .13em; font-size: .68rem; font-weight: 700; }
 
 @media (max-width: 820px) {
-  .retail-nav { padding: 0 20px; }
-  .retail-nav nav, .icon-action { display: none; }
+  /* Header compacto: el logo baja de escala y la navegación pasa a una fila
+     propia debajo de la marca en lugar de ocultarse. */
+  .retail-nav { flex-wrap: wrap; min-height: 0; padding: 10px 20px; gap: 2px 12px; }
+  .retail-nav nav { order: 3; flex-basis: 100%; gap: 1.7rem; padding: 9px 2px 1px; border-top: 1px solid rgba(25, 27, 23, .1); }
+  .retail-nav nav a, .retail-nav nav button { font-size: .68rem; }
+  .icon-action { display: none; }
+  .brand-logo { height: 32px; }
+  .brand-mark small { font-size: .54rem; margin-top: 3px; }
+  .retail-outline-button { min-height: 36px; padding: 0 13px; font-size: .62rem; }
+  .retail-primary-button { min-height: 46px; padding: 0 18px; gap: 12px; font-size: .68rem; }
   .retail-hero { grid-template-columns: 1fr; }
-  .hero-copy { min-height: 680px; padding: 5rem 20px 2rem; }
-  .hero-copy h1 { font-size: clamp(4.3rem, 21vw, 7rem); }
-  .hero-editorial { min-height: 580px; }
-  .hero-proof { gap: 12px; justify-content: space-between; }
+  .hero-copy { min-height: 0; padding: 3.2rem 20px 2.4rem; }
+  .hero-copy h1 { font-size: clamp(2.9rem, 13vw, 4.6rem); }
+  .retail-kicker { margin-bottom: 1.2rem; font-size: .63rem; }
+  .hero-description { margin-top: 1.5rem; font-size: .96rem; }
+  .hero-actions { margin-top: 1.7rem; gap: 1.2rem; flex-wrap: wrap; }
+  .hero-editorial { min-height: 440px; }
+  .hero-proof { gap: 12px; justify-content: space-between; padding-top: 2.4rem; }
   .hero-proof span { display: block; max-width: 80px; }
-  .collection-strip, .personalizer-feature, .season-story { grid-template-columns: 1fr; padding: 5rem 20px; }
-  .winter-sale { margin: 0 20px; padding: 3rem 10px; }
-  .season-story__image, .season-story__image img { min-height: 520px; }
-  .public-catalog, .admin-catalog { padding: 4rem 20px 6rem; }
+  .collection-strip, .personalizer-feature, .season-story { grid-template-columns: 1fr; padding: 3.6rem 20px; }
+  .collection-strip h2, .personalizer-copy h2 { font-size: clamp(2.1rem, 7vw, 3.4rem); }
+  .season-story__copy h2 { font-size: clamp(2.2rem, 8vw, 3.6rem); }
+  .winter-sale { margin: 0 20px; padding: 2.6rem 10px 2.2rem; }
+  .winter-sale h2 { font-size: clamp(1.8rem, 6vw, 2.6rem); }
+  .season-story__image, .season-story__image img { min-height: 400px; }
+  .public-catalog, .admin-catalog { padding: 3rem 20px 5rem; }
   .public-catalog__heading { grid-template-columns: 1fr; gap: 22px; }
+  .public-catalog__heading h1, .admin-catalog h1 { font-size: clamp(2.5rem, 9vw, 4.5rem); }
+  /* Filtros de categoría en una sola fila deslizable */
+  .catalog-filters { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 1.1rem; margin-bottom: 1.8rem; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .catalog-filters::-webkit-scrollbar { display: none; }
+  .catalog-filters button { flex: 0 0 auto; min-height: 34px; padding: 0 12px; font-size: .64rem; }
   .public-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .admin-catalog > header { align-items: flex-start; flex-direction: column; }
-  .lookbook-section { grid-template-columns: 1fr 1fr; padding: 5rem 20px; }
+  .lookbook-section { grid-template-columns: 1fr 1fr; padding: 3.6rem 20px; }
   .lookbook-heading { grid-column: 1 / -1; padding: 0 0 2rem; }
+  .lookbook-heading h2 { font-size: clamp(2rem, 6.5vw, 3.2rem); }
   .look-card, .look-card-two { height: 65vw; min-height: 420px; }
   .look-card > div { grid-template-columns: 1fr; }
   .personalizer-visual { min-height: 440px; }
+  .customize-cta h2 { font-size: clamp(1.9rem, 6.5vw, 3rem); }
   .retail-footer { align-items: stretch; padding: 3rem 20px 1.6rem; }
+  .retail-footer .brand-logo { height: 38px; }
   .retail-footer__top { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .retail-footer__columns { grid-template-columns: 1fr; }
   .wardrobe-topbar { padding: 0 16px; }
   .wardrobe-topbar > p { display: none; }
+  .wardrobe-topbar .brand-logo { height: 28px; }
   .wardrobe-topbar .retail-outline-button { padding: 0 10px; font-size: .6rem; }
 }
 
 @media (max-width: 560px) {
+  .retail-nav { padding: 10px 16px; }
+  .retail-nav nav { gap: 1.3rem; }
+  .brand-logo { height: 28px; }
+  .hero-copy h1 { font-size: clamp(2.6rem, 14vw, 3.6rem); }
+  .hero-editorial { min-height: 340px; }
   .lookbook-section { grid-template-columns: 1fr; }
   .lookbook-heading { grid-column: auto; }
   .look-card, .look-card-two { height: 125vw; }
-  .retail-subnav nav { display: none; }
   .public-product-grid { gap: 26px 10px; }
   .public-product-card h2 { font-size: 1.08rem; }
+  .winter-promo { max-height: calc(100dvh - 40px); overflow-y: auto; padding: 2.3rem 1.4rem 1.9rem; }
+  .demo-customize-trigger { right: 14px; bottom: 14px; min-height: 42px; padding: 0 13px; }
 }
 
 :root {
@@ -283,6 +312,11 @@ body {
 }
 
 body.viewer-open { overflow: hidden; }
+/* En móvil overflow:hidden no alcanza (iOS sigue scrolleando el fondo):
+   viewer-lock congela el body; el top negativo lo repone el JS al cerrar. */
+@media (max-width: 860px) {
+  body.viewer-lock { position: fixed; left: 0; right: 0; width: 100%; overflow: hidden; }
+}
 
 button { font: inherit; }
 
@@ -559,7 +593,9 @@ button { font: inherit; }
 .viewer-overlay {
   position: fixed;
   inset: 0;
-  z-index: 20;
+  /* Por encima del subnav sticky (30) y del topbar del probador (40); si no,
+     esos headers tapan la X de cerrar y el botón de volver de la ficha. */
+  z-index: 50;
   display: flex;
   justify-content: flex-end;
   background: rgba(25, 24, 22, .28);

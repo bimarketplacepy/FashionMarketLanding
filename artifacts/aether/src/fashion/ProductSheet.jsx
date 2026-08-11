@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation } from "wouter";
-import { ArrowLeft, ArrowRight, CoatHanger, X } from "@phosphor-icons/react";
+import { ArrowLeft, ArrowRight, CoatHanger } from "@phosphor-icons/react";
 import { OptimizedImage } from "./OptimizedImage.jsx";
 import { addToDraft } from "./outfit-draft.js";
 import { sugerirPrendas } from "./sugerencias.js";
@@ -30,11 +30,17 @@ export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
       if (event.key === "Escape") onClose();
     };
     document.addEventListener("keydown", onKeyDown);
-    document.body.classList.add("viewer-open");
+    // viewer-lock fija el body en móvil (position: fixed) para que el gesto de
+    // scroll no se encadene a la página de fondo y la ficha scrollee completa.
+    const scrollY = window.scrollY;
+    document.body.classList.add("viewer-open", "viewer-lock");
+    document.body.style.top = `-${scrollY}px`;
     closeButtonRef.current?.focus({ preventScroll: true });
     return () => {
       document.removeEventListener("keydown", onKeyDown);
-      document.body.classList.remove("viewer-open");
+      document.body.classList.remove("viewer-open", "viewer-lock");
+      document.body.style.top = "";
+      window.scrollTo(0, scrollY);
     };
   }, [onClose]);
 
@@ -47,13 +53,8 @@ export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
     <div className="viewer-overlay" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
       <div className="viewer-entry">
         <aside className="viewer product-sheet" role="dialog" aria-modal="true" aria-label={item.name} ref={sheetRef}>
-          {onBack && (
-            <button className="sheet-back" type="button" onClick={onBack}>
-              <ArrowLeft size={14} /> Volver
-            </button>
-          )}
-          <button className="viewer-icon-close" type="button" onClick={onClose} aria-label="Cerrar ficha" ref={closeButtonRef}>
-            <X size={24} weight="light" aria-hidden="true" />
+          <button className="sheet-back" type="button" onClick={onBack || onClose} ref={closeButtonRef}>
+            <ArrowLeft size={14} /> {onBack ? "Volver" : "Volver al catálogo"}
           </button>
 
           <div className="product-sheet-layout">
