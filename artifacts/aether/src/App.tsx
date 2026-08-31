@@ -1,6 +1,7 @@
 import React from "react";
 import { Redirect, Route, Switch, useLocation } from "wouter";
 import { useLenis } from "./aether/useLenis";
+import { useGtmPageViews } from "./analytics/useGtmPageViews";
 import { CatalogProvider } from "./fashion/catalog-context.jsx";
 import { AdminPage } from "./fashion/AdminPage.jsx";
 import { App as FashionMarketApp } from "./fashion/StandaloneApp.jsx";
@@ -31,6 +32,7 @@ function FashionRoute({ view, tryOnInitialSection }: FashionRouteProps) {
 
 export default function App() {
   useLenis();
+  useGtmPageViews();
 
   return (
     <CatalogProvider>

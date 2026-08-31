@@ -21,6 +21,9 @@ const PAUSE_INDEX = ARGS.indexOf("--pausa");
 const PAUSE_MS = PAUSE_INDEX >= 0 ? Number(ARGS[PAUSE_INDEX + 1]) || 0 : 4000;
 const DIR_INDEX = ARGS.indexOf("--dir");
 const LOCAL_DIR = DIR_INDEX >= 0 ? ARGS[DIR_INDEX + 1] : null;
+// --tag <etiqueta>: se agrega a todas las prendas de la corrida (ej: temporada "ss26")
+const TAG_INDEX = ARGS.indexOf("--tag");
+const EXTRA_TAG = TAG_INDEX >= 0 ? (ARGS[TAG_INDEX + 1] || "").trim().toLowerCase() || null : null;
 const API = process.env.CATALOG_API_URL || `http://localhost:${process.env.PORT || 24696}`;
 // CATALOG_STORAGE_PREFIX="" importa desde la raíz del bucket (?? y no ||: la
 // cadena vacía es un prefijo válido, no un "sin valor").
@@ -136,8 +139,9 @@ async function processImage(source) {
     const label = job.metadata?.name || job.id.slice(0, 8);
     process.stdout.write(`    · ${label}: recorte…`);
     const brand = brandOf(source.name);
-    if (brand) {
-      const tags = [brand, ...(job.metadata?.tags || [])].slice(0, 4);
+    if (brand || EXTRA_TAG) {
+      const fixed = [brand, EXTRA_TAG].filter(Boolean);
+      const tags = [...fixed, ...(job.metadata?.tags || [])].slice(0, fixed.length + 3);
       await api(`/api/import/jobs/${job.id}/metadata`, { method: "PATCH", body: JSON.stringify({ metadata: { tags } }) }).catch(() => {});
     }
     const cropSuffix = CROP_ONLY ? "?garment=skip" : "";

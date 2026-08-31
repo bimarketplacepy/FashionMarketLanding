@@ -48,4 +48,7 @@ Thumbs.db
 .cache/
 .local/
 
+# Fotos fuente de catálogo (se importan con import-catalog, no se commitean)
+artifacts/aether/fotos-ss26/
+
 .env
