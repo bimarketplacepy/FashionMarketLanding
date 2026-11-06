@@ -7,6 +7,7 @@
 //   pnpm --filter @workspace/aether run reclassify-parts            # aplica
 //   pnpm --filter @workspace/aether run reclassify-parts -- --dry   # solo muestra
 import { normalizeGarmentType, partForGarmentType } from "../shared/garment-gender.mjs";
+import { adminHeaders } from "./cli-admin.mjs";
 
 const API = process.env.CATALOG_API_URL || `http://localhost:${process.env.PORT || 24696}`;
 const DRY_RUN = process.argv.includes("--dry");
@@ -27,7 +28,7 @@ for (const item of items) {
   if (!DRY_RUN) {
     const patch = await fetch(`${API}/api/import/wardrobe/${item.id}`, {
       method: "PATCH",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...adminHeaders() },
       body: JSON.stringify({ part }),
     });
     if (!patch.ok) {

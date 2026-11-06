@@ -56,6 +56,10 @@ function issueToken(adminKey) {
 export function isAdminRequest(req, env) {
   const adminKey = keyOf(env);
   if (!adminKey) return false;
+  // Scripts locales (import-catalog, reclassify-parts) se autentican con la
+  // misma clave en un header; el navegador usa siempre la cookie.
+  const headerKey = req.headers?.["x-admin-key"];
+  if (typeof headerKey === "string" && headerKey) return safeEqual(headerKey, adminKey);
   const token = readCookie(req, ADMIN_COOKIE);
   if (!token) return false;
   const [version, expires, signature] = token.split(".");

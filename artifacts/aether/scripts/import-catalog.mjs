@@ -12,6 +12,7 @@
 // cada corrida procesa solo las imágenes nuevas (y reintenta las que fallaron).
 import { readFile, writeFile, readdir, stat, mkdir } from "node:fs/promises";
 import path from "node:path";
+import { adminHeaders } from "./cli-admin.mjs";
 
 const ARGS = process.argv.slice(2);
 const WITH_MODELED = ARGS.includes("--modeled");
@@ -41,7 +42,7 @@ const mimeFor = (name) =>
 async function api(pathname, options) {
   const response = await fetch(`${API}${pathname}`, {
     ...options,
-    headers: { "Content-Type": "application/json", ...(options?.headers || {}) },
+    headers: { "Content-Type": "application/json", ...adminHeaders(), ...(options?.headers || {}) },
   });
   const value = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(value.error || `${response.status} en ${pathname}`);
