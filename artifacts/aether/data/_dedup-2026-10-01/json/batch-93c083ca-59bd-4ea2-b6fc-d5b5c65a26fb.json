@@ -1,0 +1,4462 @@
+{
+  "id": "93c083ca-59bd-4ea2-b6fc-d5b5c65a26fb",
+  "name": "SOLI ECHO",
+  "createdAt": "2026-09-30T12:27:54.505Z",
+  "items": [
+    {
+      "id": "28e6252b-4548-4a66-a276-1471ac1bdc22",
+      "fileName": "25126555_1ea3cf17-a99c-4235-9f6c-5de93084317d.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "28e6252b-4548-4a66-a276-1471ac1bdc22.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e8023e06-1af8-45a2-91c0-bb316e5add11",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón ancho animal print con tiras",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones",
+        "colores": [
+          "#a88258",
+          "#1c1714",
+          "#f5f5f5"
+        ],
+        "descripcion": "Pantalón tiro alto de calce holgado con estampado de leopardo, cintura elastizada y detalles de tiras laterales blancas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón ancho animal print",
+        "prendasSecundarias": [
+          "top corto blanco",
+          "zapatillas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón ancho animal print con tiras",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones",
+        "colores": [
+          "#a88258",
+          "#1c1714",
+          "#f5f5f5"
+        ],
+        "descripcion": "Pantalón tiro alto de calce holgado con estampado de leopardo, cintura elastizada y detalles de tiras laterales blancas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón ancho animal print",
+        "prendasSecundarias": [
+          "top corto blanco",
+          "zapatillas"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:54.745Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c136081a-5e86-4d61-a0bf-4fd66307b1bb",
+      "fileName": "25126555_50308b02-8334-46de-b01d-1f656b05b2fb.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "c136081a-5e86-4d61-a0bf-4fd66307b1bb.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-545ebbf2-c8f1-48a7-8c4a-d2629904d42d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón wide leg animal print leopardo",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones casuales",
+        "colores": [
+          "#a17f53",
+          "#231b15",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón holgado tiro alto con estampado animal print de leopardo, cintura elastizada y detalles de tres tiras laterales a lo largo de las piernas. Ideal para un look urbano y cómodo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón de leopardo",
+        "prendasSecundarias": [
+          "top corto blanco",
+          "zapatillas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón wide leg animal print leopardo",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones casuales",
+        "colores": [
+          "#a17f53",
+          "#231b15",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón holgado tiro alto con estampado animal print de leopardo, cintura elastizada y detalles de tres tiras laterales a lo largo de las piernas. Ideal para un look urbano y cómodo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón de leopardo",
+        "prendasSecundarias": [
+          "top corto blanco",
+          "zapatillas"
+        ],
+        "confianza": 0.98,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:54.753Z",
+      "errorDetail": null
+    },
+    {
+      "id": "645ef66a-f8c4-4035-8225-c70d7b11c849",
+      "fileName": "25126555_a027d4c2-2ccc-4382-883a-c213d9317b7d.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "645ef66a-f8c4-4035-8225-c70d7b11c849.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ba1e0302-7c72-486b-ad5f-58af2a0a5823",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Tabla de talles de pantalón",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "unisex",
+        "subcategoria": "Tabla de talles",
+        "colores": [
+          "#ffffff",
+          "#000000",
+          "#f2e6e6"
+        ],
+        "descripcion": "Tabla informativa de guía de talles con especificaciones de cintura, cadera y largo para las medidas S, M y L.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "tabla de talles",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Tabla de talles de pantalón",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Tabla de talles",
+        "colores": [
+          "#ffffff",
+          "#000000",
+          "#f2e6e6"
+        ],
+        "descripcion": "Tabla informativa de guía de talles con especificaciones de cintura, cadera y largo para las medidas S, M y L.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "tabla de talles",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "unisex"
+      },
+      "createdAt": "2026-09-30T12:27:54.973Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2b33cb5a-f3e0-47d8-ab60-ed89a5c4b7f1",
+      "fileName": "25535426_024fb326-2d56-481a-a59e-4e7939b4e7f3.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "2b33cb5a-f3e0-47d8-ab60-ed89a5c4b7f1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-30398721-516f-48b6-abd4-c331c5554ef3",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo a rayas rojas y rosa",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones",
+        "colores": [
+          "#d01c24",
+          "#f294a5"
+        ],
+        "descripcion": "Pantalón de calce holgado estilo palazzo con cintura elastizada y cordón ajustable. Presenta un diseño retro con rayas verticales combinadas en rojo y rosa.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo",
+        "prendasSecundarias": [
+          "remera gráfica",
+          "cartera verde",
+          "sandalias de cuero"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo a rayas rojas y rosa",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones",
+        "colores": [
+          "#d01c24",
+          "#f294a5"
+        ],
+        "descripcion": "Pantalón de calce holgado estilo palazzo con cintura elastizada y cordón ajustable. Presenta un diseño retro con rayas verticales combinadas en rojo y rosa.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo",
+        "prendasSecundarias": [
+          "remera gráfica",
+          "cartera verde",
+          "sandalias de cuero"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.023Z",
+      "errorDetail": null
+    },
+    {
+      "id": "bdcf6f14-c7a4-4d4b-b82e-69b84b9321d4",
+      "fileName": "25535426_0f095a55-b287-46ab-b856-5f5ceaa13816.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "bdcf6f14-c7a4-4d4b-b82e-69b84b9321d4.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-08a569f5-39e0-4d1d-aee3-629e693e5811",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo a rayas azules y blancas",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones palazzo",
+        "colores": [
+          "#2874c4",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo de tiro alto con estampado de rayas verticales en tonos azul y blanco. Posee cintura elastizada con cordón ajustable y corte ancho de caída fluida, ideal para un look fresco y relajado de temporada.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera blanca estampada",
+          "cartera verde oliva",
+          "sandalias de plataforma",
+          "collares"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo a rayas azules y blancas",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones palazzo",
+        "colores": [
+          "#2874c4",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo de tiro alto con estampado de rayas verticales en tonos azul y blanco. Posee cintura elastizada con cordón ajustable y corte ancho de caída fluida, ideal para un look fresco y relajado de temporada.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera blanca estampada",
+          "cartera verde oliva",
+          "sandalias de plataforma",
+          "collares"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.200Z",
+      "errorDetail": null
+    },
+    {
+      "id": "59e64e4e-f091-4446-bc74-5325898f5a85",
+      "fileName": "25535426_1d13bcda-db81-403e-b13b-7a853a7b0200.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "59e64e4e-f091-4446-bc74-5325898f5a85.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-82a7dc70-96b6-4a77-a51a-16230eedfa80",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo a rayas azul y blanco",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones palazzo",
+        "colores": [
+          "#1f3d83",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo de piernas anchas con estampado de rayas verticales en azul y blanco. Presenta tiro alto con cintura elastizada y lazo ajustable.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera celeste",
+          "cartera verde",
+          "sandalias marrones",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo a rayas azul y blanco",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones palazzo",
+        "colores": [
+          "#1f3d83",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo de piernas anchas con estampado de rayas verticales en azul y blanco. Presenta tiro alto con cintura elastizada y lazo ajustable.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera celeste",
+          "cartera verde",
+          "sandalias marrones",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.254Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d0a344d2-3c2c-4e0f-af81-43cc9ac8a264",
+      "fileName": "25535426_1ea6a2b2-646c-4208-84d1-20569308bff1.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "d0a344d2-3c2c-4e0f-af81-43cc9ac8a264.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-52857ca1-df92-42d6-89bc-62b6ef755445",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo a rayas naranja y blanco",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones anchos",
+        "colores": [
+          "#e3832a"
+        ],
+        "descripcion": "Pantalón amplio de tiro alto con elástico y cordón ajustador en la cintura. Presenta un diseño de rayas verticales en tono naranja y blanco, ideal para lograr un look fresco y casual.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera estampada",
+          "sandalias de plataforma",
+          "cartera verde"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo a rayas naranja y blanco",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones anchos",
+        "colores": [
+          "#e3832a"
+        ],
+        "descripcion": "Pantalón amplio de tiro alto con elástico y cordón ajustador en la cintura. Presenta un diseño de rayas verticales en tono naranja y blanco, ideal para lograr un look fresco y casual.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera estampada",
+          "sandalias de plataforma",
+          "cartera verde"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.286Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2a2f8c72-58e8-49f7-a5e3-5b0b8b8342a1",
+      "fileName": "25535426_2f1d2380-ea0c-4d77-a6d3-ff1725daa759.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "2a2f8c72-58e8-49f7-a5e3-5b0b8b8342a1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b6336949-19db-4b76-811f-5dda220457f3",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo rayado azul y blanco",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones palazzo",
+        "colores": [
+          "#0e7ac4",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo holgado tiro alto con estampado de rayas verticales en azul y blanco. Cuenta con cintura elastizada y cordón ajustable para un calce cómodo e ideal en días cálidos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo rayado",
+        "prendasSecundarias": [
+          "remera estampada",
+          "cartera bandolera oliva",
+          "sandalias de cuero",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo rayado azul y blanco",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones palazzo",
+        "colores": [
+          "#0e7ac4",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo holgado tiro alto con estampado de rayas verticales en azul y blanco. Cuenta con cintura elastizada y cordón ajustable para un calce cómodo e ideal en días cálidos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo rayado",
+        "prendasSecundarias": [
+          "remera estampada",
+          "cartera bandolera oliva",
+          "sandalias de cuero",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.436Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e14c79f8-bcd6-4fae-85ec-3c974b38062c",
+      "fileName": "25535426_32b9c2b7-36e4-4449-bf21-2f30b280dc88.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "e14c79f8-bcd6-4fae-85ec-3c974b38062c.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": null,
+      "ficha": {
+        "nombre": "25535426 32b9c2b7 36e4 4449 bf21 2f30b280dc88",
+        "categoriaInterna": null,
+        "subcategoria": "",
+        "colores": [],
+        "descripcion": "",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "",
+        "prendasSecundarias": [],
+        "confianza": null
+      },
+      "createdAt": "2026-09-30T12:27:55.484Z"
+    },
+    {
+      "id": "b7c0b7e3-da79-400e-ab3e-841471ecca1f",
+      "fileName": "25535426_3742537c-34f7-4126-8439-bc359efd50d1.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "b7c0b7e3-da79-400e-ab3e-841471ecca1f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-20996cb3-a6bc-4bb5-82e3-8a16f4e57016",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón Palazzo Rayado Amarillo y Blanco",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones palazzo",
+        "colores": [
+          "#d9d232",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo holgado de tiro alto con cintura elastizada y cordón ajustable, confeccionado en tejido liviano con estampado de rayas verticales en amarillo y blanco.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera gráfica",
+          "cartera verde",
+          "sandalias de plataforma",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón Palazzo Rayado Amarillo y Blanco",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones palazzo",
+        "colores": [
+          "#d9d232",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo holgado de tiro alto con cintura elastizada y cordón ajustable, confeccionado en tejido liviano con estampado de rayas verticales en amarillo y blanco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera gráfica",
+          "cartera verde",
+          "sandalias de plataforma",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.512Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4189fa67-bcf0-4e25-9e49-dcbdd727d09a",
+      "fileName": "25535426_460a6d59-4440-49a9-8d9e-a8d947f13f98.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "4189fa67-bcf0-4e25-9e49-dcbdd727d09a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-3ed8c050-6b20-41de-9d06-fdbf008689d5",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo a rayas",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones holgados",
+        "colores": [
+          "#000000"
+        ],
+        "descripcion": "Pantalón palazzo de tiro alto confeccionado en tela fluida con estampado de rayas verticales a contraste en negro y blanco. Cuenta con cintura elastizada y cordón ajustable para un calce cómodo y relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón a rayas",
+        "prendasSecundarias": [
+          "remera estampada",
+          "cartera verde",
+          "sandalias",
+          "accesorios"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo a rayas",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones holgados",
+        "colores": [
+          "#000000"
+        ],
+        "descripcion": "Pantalón palazzo de tiro alto confeccionado en tela fluida con estampado de rayas verticales a contraste en negro y blanco. Cuenta con cintura elastizada y cordón ajustable para un calce cómodo y relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón a rayas",
+        "prendasSecundarias": [
+          "remera estampada",
+          "cartera verde",
+          "sandalias",
+          "accesorios"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.518Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2f1b0967-8f14-4ec7-a9af-081e6167c35d",
+      "fileName": "25535426_5e7dc660-9e4e-4637-9060-e09cdc6b7a0e.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "2f1b0967-8f14-4ec7-a9af-081e6167c35d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-6745b8c1-686b-4797-ab65-562bad5f0ca5",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo a rayas lila y blanco",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones",
+        "colores": [
+          "#c3b1e1",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo de calce holgado con tiro alto y cintura elastizada con cordón ajustable. Confeccionado en tejido liviano con estampado de rayas verticales en tono lila y blanco, ideal para un look fresco y relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera estampada",
+          "cartera verde",
+          "sandalias de cuero"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo a rayas lila y blanco",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones",
+        "colores": [
+          "#c3b1e1",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo de calce holgado con tiro alto y cintura elastizada con cordón ajustable. Confeccionado en tejido liviano con estampado de rayas verticales en tono lila y blanco, ideal para un look fresco y relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera estampada",
+          "cartera verde",
+          "sandalias de cuero"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.667Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ae030d3c-4b38-49fa-b995-9400e553bc10",
+      "fileName": "25535426_7e54f87e-5cde-4e89-b935-bcc8998f0d9b.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "ae030d3c-4b38-49fa-b995-9400e553bc10.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-29073d0b-1201-4a0b-ad9e-9cc4df40b0cf",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo a rayas celeste y blanco",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones palazzo",
+        "colores": [
+          "#7ea5d9",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo holgado tiro alto con estampado de rayas verticales en celeste y blanco, cintura elastizada y cordón ajustable. Ideal para un look fresco y urbano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón a rayas",
+        "prendasSecundarias": [
+          "remera estampada",
+          "sandalias",
+          "cartera de hombro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo a rayas celeste y blanco",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones palazzo",
+        "colores": [
+          "#7ea5d9",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo holgado tiro alto con estampado de rayas verticales en celeste y blanco, cintura elastizada y cordón ajustable. Ideal para un look fresco y urbano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón a rayas",
+        "prendasSecundarias": [
+          "remera estampada",
+          "sandalias",
+          "cartera de hombro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.722Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7023a557-b8cc-4544-afb0-da4dc6a7e008",
+      "fileName": "25535426_d7824437-aba9-46fe-a46e-334e21039cbf.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "7023a557-b8cc-4544-afb0-da4dc6a7e008.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-70b0aece-0e8d-43b6-bde3-50fcce132407",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo a rayas rojas y blancas",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalón palazzo",
+        "colores": [
+          "#b81d24"
+        ],
+        "descripcion": "Pantalón palazzo holgado de tiro alto con estampado de rayas verticales en rojo y blanco. Cuenta con cintura elastizada y cordón ajustable para mayor comodidad.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón palazzo a rayas rojas y blancas",
+        "prendasSecundarias": [
+          "remera oversize blanca",
+          "cartera verde oliva",
+          "sandalias marrones"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo a rayas rojas y blancas",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalón palazzo",
+        "colores": [
+          "#b81d24"
+        ],
+        "descripcion": "Pantalón palazzo holgado de tiro alto con estampado de rayas verticales en rojo y blanco. Cuenta con cintura elastizada y cordón ajustable para mayor comodidad.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón palazzo a rayas rojas y blancas",
+        "prendasSecundarias": [
+          "remera oversize blanca",
+          "cartera verde oliva",
+          "sandalias marrones"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.738Z",
+      "errorDetail": null
+    },
+    {
+      "id": "837bd206-2160-4e9b-9c4e-42e65678d26a",
+      "fileName": "25535426_f18e8155-6aff-489e-9aee-4699f025f357.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "837bd206-2160-4e9b-9c4e-42e65678d26a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d612bd15-161e-472d-8db9-428707173114",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo a rayas rosa y blanco",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones palazzo",
+        "colores": [
+          "#eca5b8",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo holgado de tiro alto con cintura elastizada y cordón ajustador, diseñado en tela liviana con estampa de rayas verticales en tono rosa y blanco.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera estampada",
+          "cartera cruzada",
+          "sandalias"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo a rayas rosa y blanco",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones palazzo",
+        "colores": [
+          "#eca5b8",
+          "#ffffff"
+        ],
+        "descripcion": "Pantalón palazzo holgado de tiro alto con cintura elastizada y cordón ajustador, diseñado en tela liviana con estampa de rayas verticales en tono rosa y blanco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón palazzo a rayas",
+        "prendasSecundarias": [
+          "remera estampada",
+          "cartera cruzada",
+          "sandalias"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.749Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4c46e691-401d-445c-b1e4-ff343423bf2a",
+      "fileName": "25535426_fb748c48-31f3-4ada-873c-87c5ee9cba90.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "4c46e691-401d-445c-b1e4-ff343423bf2a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-675cc2c4-81ff-4462-96c1-cf23f7c18cf5",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo a rayas verde y blanco",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalón palazzo",
+        "colores": [
+          "#1e8642",
+          "#ffffff",
+          "#6e472b"
+        ],
+        "descripcion": "Pantalón holgado de tiro alto con estampado de rayas verticales en verde y blanco, con cintura elastizada y cordón ajustable ideal para un look fresco.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón palazzo a rayas verde y blanco",
+        "prendasSecundarias": [
+          "remera estampada",
+          "sandalias",
+          "cartera de hombro",
+          "accesorios"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo a rayas verde y blanco",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalón palazzo",
+        "colores": [
+          "#1e8642",
+          "#ffffff",
+          "#6e472b"
+        ],
+        "descripcion": "Pantalón holgado de tiro alto con estampado de rayas verticales en verde y blanco, con cintura elastizada y cordón ajustable ideal para un look fresco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón palazzo a rayas verde y blanco",
+        "prendasSecundarias": [
+          "remera estampada",
+          "sandalias",
+          "cartera de hombro",
+          "accesorios"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.896Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4a61d36c-43c3-4d30-95ea-1558650c874f",
+      "fileName": "25603671_3e24443e-5197-4f0f-9c26-981e51829a49.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "4a61d36c-43c3-4d30-95ea-1558650c874f.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": null,
+      "ficha": {
+        "nombre": "25603671 3e24443e 5197 4f0f 9c26 981e51829a49",
+        "categoriaInterna": null,
+        "subcategoria": "",
+        "colores": [],
+        "descripcion": "",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "",
+        "prendasSecundarias": [],
+        "confianza": null
+      },
+      "createdAt": "2026-09-30T12:27:55.966Z"
+    },
+    {
+      "id": "c0835798-cb0c-4721-94fe-4453f44f4f0d",
+      "fileName": "25603671_427eb914-3a4a-43e9-892f-58b762224d5d.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "c0835798-cb0c-4721-94fe-4453f44f4f0d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-cdb3f69b-14e3-40f5-a45f-e4579f0ffa46",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless estampado botánico",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#ece3d3",
+          "#593116",
+          "#515ba3"
+        ],
+        "descripcion": "Top estilo strapless holgado confeccionado en tela liviana con estampado botánico y guardas étnicas en tonos marrón, azul y crudo. Un diseño fresco e ideal para armar conjuntos veraniegos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short estampado",
+          "sandalias",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless estampado botánico",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#ece3d3",
+          "#593116",
+          "#515ba3"
+        ],
+        "descripcion": "Top estilo strapless holgado confeccionado en tela liviana con estampado botánico y guardas étnicas en tonos marrón, azul y crudo. Un diseño fresco e ideal para armar conjuntos veraniegos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short estampado",
+          "sandalias",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:55.982Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c0ee7070-a6c7-4a50-9d61-ee10fd987b4a",
+      "fileName": "25603671_5828f2e1-812d-4e86-9897-7457371d7b0a.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "c0ee7070-a6c7-4a50-9d61-ee10fd987b4a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a722a2d5-a1d8-4890-a00d-ad95a5eb6336",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless estampado botánico",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#ece2d0",
+          "#5a3825",
+          "#5c68a5"
+        ],
+        "descripcion": "Top strapless de silueta holgada confeccionado en tejido fresco con estampado botánico en tonos café y azul sobre fondo crema. Presenta escote recto sin tirantes, ideal para outfits veraniegos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless estampado",
+        "prendasSecundarias": [
+          "shorts estampados",
+          "cadena dorada"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless estampado botánico",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#ece2d0",
+          "#5a3825",
+          "#5c68a5"
+        ],
+        "descripcion": "Top strapless de silueta holgada confeccionado en tejido fresco con estampado botánico en tonos café y azul sobre fondo crema. Presenta escote recto sin tirantes, ideal para outfits veraniegos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless estampado",
+        "prendasSecundarias": [
+          "shorts estampados",
+          "cadena dorada"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.122Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e12eeb9b-f8b9-4e08-92e1-520b8156a690",
+      "fileName": "25603671_5f1eb316-eae7-487a-9819-2a5cf31c501d.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "e12eeb9b-f8b9-4e08-92e1-520b8156a690.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1ff05cc1-448a-487a-a5fd-a1294afa17c0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless estampado floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#a4c7e8",
+          "#e6e2af"
+        ],
+        "descripcion": "Top strapless de corte holgado con estampado floral en tonos marrón, celeste y crema. Un diseño fresco y veraniego de caída fluida.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Top strapless estampado",
+        "prendasSecundarias": [
+          "short estampado",
+          "sandalias negras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless estampado floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#a4c7e8",
+          "#e6e2af"
+        ],
+        "descripcion": "Top strapless de corte holgado con estampado floral en tonos marrón, celeste y crema. Un diseño fresco y veraniego de caída fluida.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Top strapless estampado",
+        "prendasSecundarias": [
+          "short estampado",
+          "sandalias negras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.194Z",
+      "errorDetail": null
+    },
+    {
+      "id": "63a1c8b1-7188-4a57-a86b-cac4c01e98d9",
+      "fileName": "25603671_837e7c69-d453-4848-93a7-b7503119d831.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "63a1c8b1-7188-4a57-a86b-cac4c01e98d9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1d6af24a-7dd9-4a0b-8b33-c74d8e7a1c36",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top Strapless Estampado Palma",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#584837",
+          "#9eae66"
+        ],
+        "descripcion": "Top strapless de calce suelto confeccionado en tejido ligero con estampado botánico de palmeras sobre fondo marrón. Un diseño fresco y relajado ideal para armar un conjunto veraniego.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short estampado",
+          "sandalias",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top Strapless Estampado Palma",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#584837",
+          "#9eae66"
+        ],
+        "descripcion": "Top strapless de calce suelto confeccionado en tejido ligero con estampado botánico de palmeras sobre fondo marrón. Un diseño fresco y relajado ideal para armar un conjunto veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short estampado",
+          "sandalias",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.213Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e6e28eb1-6ec1-42b2-99b0-73e29efeb887",
+      "fileName": "25603671_89425d7c-a59c-4419-80df-1de2ee678683.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "e6e28eb1-6ec1-42b2-99b0-73e29efeb887.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ad1076e3-037a-403a-8f97-353c4d747d2a",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless a rayas multicolor",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#3a6cb4"
+        ],
+        "descripcion": "Top strapless holgado con estampado de rayas verticales en tonos azules, verdes y marrones. Ideal para armar un conjunto fresco y veraniego.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a rayas",
+        "prendasSecundarias": [
+          "short a rayas",
+          "sandalias planas",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless a rayas multicolor",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#3a6cb4"
+        ],
+        "descripcion": "Top strapless holgado con estampado de rayas verticales en tonos azules, verdes y marrones. Ideal para armar un conjunto fresco y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a rayas",
+        "prendasSecundarias": [
+          "short a rayas",
+          "sandalias planas",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.351Z",
+      "errorDetail": null
+    },
+    {
+      "id": "63a326cb-2f5b-407f-8ff6-cc094ede1566",
+      "fileName": "25603671_8cbb779c-2e8b-417d-9bca-7d60e2c3f478.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "63a326cb-2f5b-407f-8ff6-cc094ede1566.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f56e0280-3f0a-4f44-9d29-a567d0e93e96",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless rayado",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Top strapless",
+        "colores": [
+          "#417ac6"
+        ],
+        "descripcion": "Top strapless de calce holgado confeccionado en tela liviana con estampado de rayas verticales en tonos azul, marrón y crema. Ideal para armar conjuntos veraniegos frescos y relajados.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless rayado",
+        "prendasSecundarias": [
+          "short rayado",
+          "sandalias chatas",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless rayado",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Top strapless",
+        "colores": [
+          "#417ac6"
+        ],
+        "descripcion": "Top strapless de calce holgado confeccionado en tela liviana con estampado de rayas verticales en tonos azul, marrón y crema. Ideal para armar conjuntos veraniegos frescos y relajados.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless rayado",
+        "prendasSecundarias": [
+          "short rayado",
+          "sandalias chatas",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.417Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f20b8338-4f11-4372-8130-660cc7dc09ee",
+      "fileName": "25603671_962d0fe5-0896-4949-8401-f04ff5df7887.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "f20b8338-4f11-4372-8130-660cc7dc09ee.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5fa89593-ebce-4bf2-a748-e50b4c2f7d47",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless estampado palmeras",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "top strapless",
+        "colores": [
+          "#4a3728",
+          "#8f9e57"
+        ],
+        "descripcion": "Top strapless suelto con estampado tropical de palmeras en tonos café y verde oliva, ideal para días de verano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short",
+          "sandalias",
+          "collar",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless estampado palmeras",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "top strapless",
+        "colores": [
+          "#4a3728",
+          "#8f9e57"
+        ],
+        "descripcion": "Top strapless suelto con estampado tropical de palmeras en tonos café y verde oliva, ideal para días de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short",
+          "sandalias",
+          "collar",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.430Z",
+      "errorDetail": null
+    },
+    {
+      "id": "cf56bf3a-37a2-490b-8a27-5403c65033f0",
+      "fileName": "25603671_bcde9cee-d456-4fb1-b4fd-773aabf4bd2c.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "cf56bf3a-37a2-490b-8a27-5403c65033f0.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-80224ccf-ec3c-4d0b-9b0f-17bb967974f6",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless estampado palmeras",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#5c4837",
+          "#98a850"
+        ],
+        "descripcion": "Top estilo strapless de calce suelto con escote elastizado y estampado de palmeras en tonos marrón y verde oliva. Una opción fresca y canchera para los días de calor.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Top strapless estampado palmeras",
+        "prendasSecundarias": [
+          "short estampado",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless estampado palmeras",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#5c4837",
+          "#98a850"
+        ],
+        "descripcion": "Top estilo strapless de calce suelto con escote elastizado y estampado de palmeras en tonos marrón y verde oliva. Una opción fresca y canchera para los días de calor.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Top strapless estampado palmeras",
+        "prendasSecundarias": [
+          "short estampado",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.439Z",
+      "errorDetail": null
+    },
+    {
+      "id": "fdf9ddc6-986d-441f-9eca-c8fae9d7938f",
+      "fileName": "25603671_d6b1f2b3-8a4d-46ce-8dd8-4a15ca7eb2bc.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "fdf9ddc6-986d-441f-9eca-c8fae9d7938f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-feb60156-ba98-4e2c-a054-09739fc1a2da",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless estampado floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Top strapless",
+        "colores": [
+          "#3d2b22",
+          "#9dc0e2",
+          "#e0e5ac"
+        ],
+        "descripcion": "Top strapless holgado con estampado botánico en tonos marrón, celeste y amarillo pastel. Una prenda fresca y ligera perfecta para los días de verano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "shorts",
+          "ojotas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless estampado floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Top strapless",
+        "colores": [
+          "#3d2b22",
+          "#9dc0e2",
+          "#e0e5ac"
+        ],
+        "descripcion": "Top strapless holgado con estampado botánico en tonos marrón, celeste y amarillo pastel. Una prenda fresca y ligera perfecta para los días de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "shorts",
+          "ojotas"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.578Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ec1ee6a2-26ab-4637-8d2b-e1e36671d49b",
+      "fileName": "25603671_d7cbf140-339d-458c-b3ed-fc046570a8d0.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "ec1ee6a2-26ab-4637-8d2b-e1e36671d49b.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-52f9c595-a498-4380-bd75-8b12216028e2",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless con estampado botánico",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#4a3525"
+        ],
+        "descripcion": "Top estilo strapless de calce holgado con estampado floral en celeste y amarillo sobre fondo marrón chocolate, perfecto para un look veraniego.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short",
+          "sandalias",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless con estampado botánico",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#4a3525"
+        ],
+        "descripcion": "Top estilo strapless de calce holgado con estampado floral en celeste y amarillo sobre fondo marrón chocolate, perfecto para un look veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short",
+          "sandalias",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.644Z",
+      "errorDetail": null
+    },
+    {
+      "id": "8ccd081c-4c84-4fe6-8776-bb3b9e28ede1",
+      "fileName": "25603671_dd9ea2d5-b679-4434-80f6-3443bf6e0a6f.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "8ccd081c-4c84-4fe6-8776-bb3b9e28ede1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b5702f87-26f7-4787-b207-5190ffd63254",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless estampado de palmeras",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Top strapless",
+        "colores": [
+          "#4b392b",
+          "#99a95b"
+        ],
+        "descripcion": "Top strapless suelto con elástico en el escote y estampado de palmeras sobre fondo marrón. Ideal para armar conjuntos frescos de verano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short",
+          "ojotas",
+          "collar",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless estampado de palmeras",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Top strapless",
+        "colores": [
+          "#4b392b",
+          "#99a95b"
+        ],
+        "descripcion": "Top strapless suelto con elástico en el escote y estampado de palmeras sobre fondo marrón. Ideal para armar conjuntos frescos de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short",
+          "ojotas",
+          "collar",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.657Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3131d76b-4789-4be6-80c6-4525b300e5bd",
+      "fileName": "25603671_f8ab9c37-4419-4ac7-8e48-b8b6db11a116.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "3131d76b-4789-4be6-80c6-4525b300e5bd.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4ca328b3-89b8-49ce-b87a-67eaed754d88",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless estampado botánico",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#eae2d5",
+          "#4c3322",
+          "#4b5cb6"
+        ],
+        "descripcion": "Top strapless de corte holgado confeccionado en tela fluida, con un vistoso estampado de follaje tropical en tonos marrón y azul sobre base cruda. Ideal para un look fresco y veraniego.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short estampado",
+          "sandalias planas",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless estampado botánico",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#eae2d5",
+          "#4c3322",
+          "#4b5cb6"
+        ],
+        "descripcion": "Top strapless de corte holgado confeccionado en tela fluida, con un vistoso estampado de follaje tropical en tonos marrón y azul sobre base cruda. Ideal para un look fresco y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "short estampado",
+          "sandalias planas",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.680Z",
+      "errorDetail": null
+    },
+    {
+      "id": "766fd8e4-9d1d-4339-ad9a-93439db71636",
+      "fileName": "25603671_fbb3a120-07b9-4c5e-8b19-3b102ef91042.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "766fd8e4-9d1d-4339-ad9a-93439db71636.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5d34f58e-225a-4bfb-bad3-8b8291719a3a",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Top sin breteles",
+        "colores": [
+          "#4a3728",
+          "#dfd8c4"
+        ],
+        "descripcion": "Top strapless de calce holgado con estampado a rayas verticales en tonos azul, marrón y crema. Ideal para looks veraniegos frescos y relajados.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a rayas",
+        "prendasSecundarias": [
+          "short a rayas",
+          "sandalias",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Top sin breteles",
+        "colores": [
+          "#4a3728",
+          "#dfd8c4"
+        ],
+        "descripcion": "Top strapless de calce holgado con estampado a rayas verticales en tonos azul, marrón y crema. Ideal para looks veraniegos frescos y relajados.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a rayas",
+        "prendasSecundarias": [
+          "short a rayas",
+          "sandalias",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.804Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4584e81a-b81c-4849-afb5-a98afd345add",
+      "fileName": "25706479_24b4a9a1-1312-4b87-99fc-6debe717a426.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "4584e81a-b81c-4849-afb5-a98afd345add.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-3378b282-36d7-40d6-8686-aaa7c26061d7",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless a rayas con bordado",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#2b2d31",
+          "#ffffff"
+        ],
+        "descripcion": "Top strapless con escote corazón, fruncido ajustable con lazo al frente y estampado a rayas verticales. Destaca por su ruedo calado festoneado con bordado floral.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Top strapless a rayas",
+        "prendasSecundarias": [
+          "Pantalón blanco",
+          "Zapatillas guillermina",
+          "Pulseras",
+          "Anillos"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless a rayas con bordado",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#2b2d31",
+          "#ffffff"
+        ],
+        "descripcion": "Top strapless con escote corazón, fruncido ajustable con lazo al frente y estampado a rayas verticales. Destaca por su ruedo calado festoneado con bordado floral.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Top strapless a rayas",
+        "prendasSecundarias": [
+          "Pantalón blanco",
+          "Zapatillas guillermina",
+          "Pulseras",
+          "Anillos"
+        ],
+        "confianza": 0.98,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.888Z",
+      "errorDetail": null
+    },
+    {
+      "id": "408673a9-afc0-4031-b924-522a825c5fc0",
+      "fileName": "25706479_284ef60b-d877-4a0e-9481-df267ca085d4.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "408673a9-afc0-4031-b924-522a825c5fc0.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-46f7eb7d-9116-45e1-94d9-2f7e3670560c",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless peplum a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#8ca2bf",
+          "#ffffff",
+          "#1e3b8a"
+        ],
+        "descripcion": "Top strapless estilo peplum con estampado de rayas verticales en azul y blanco. Cuenta con escote corazón ajustable mediante lazo frontal y detalle de bordado floral calado con festón en el ruedo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "aros dorados",
+          "collar dorado",
+          "pulsera dorada"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless peplum a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#8ca2bf",
+          "#ffffff",
+          "#1e3b8a"
+        ],
+        "descripcion": "Top strapless estilo peplum con estampado de rayas verticales en azul y blanco. Cuenta con escote corazón ajustable mediante lazo frontal y detalle de bordado floral calado con festón en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "aros dorados",
+          "collar dorado",
+          "pulsera dorada"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.899Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ab0a1511-01dc-423f-b7ec-efa68c1e68d8",
+      "fileName": "25706479_2cfdf0fb-da33-4b3d-9026-bd8a649b6fe9.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "ab0a1511-01dc-423f-b7ec-efa68c1e68d8.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-24c41790-fb64-44c6-aac5-5f0c230126e8",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top Strapless Rayado con Bordado Floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#a4c2e6",
+          "#ffffff",
+          "#1e40af"
+        ],
+        "descripcion": "Top strapless a rayas celestes y blancas, ajustables con cordón al frente. Posee un volado inferior con bajo festoneado y bordados florales en azul.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "cartera crema",
+          "chatitas blancas",
+          "collar dorado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top Strapless Rayado con Bordado Floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#a4c2e6",
+          "#ffffff",
+          "#1e40af"
+        ],
+        "descripcion": "Top strapless a rayas celestes y blancas, ajustables con cordón al frente. Posee un volado inferior con bajo festoneado y bordados florales en azul.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "cartera crema",
+          "chatitas blancas",
+          "collar dorado"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:56.909Z",
+      "errorDetail": null
+    },
+    {
+      "id": "5ae53577-5429-4865-952a-1d6d2fb83993",
+      "fileName": "25706479_6e68a713-874b-4174-a238-71808e4eaa40.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "5ae53577-5429-4865-952a-1d6d2fb83993.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-74bd22c6-159b-454e-ad54-6065c0e943d9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top Strapless a Rayas con Bordado Floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#222328",
+          "#ffffff"
+        ],
+        "descripcion": "Top strapless entallado a rayas verticales en blanco y negro. Destaca por su escote corazón fruncido con lazo ajustable y un bajo evasé con detalles calados y bordados florales en el ruedo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a rayas",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "collar dorado",
+          "pulsera dorada"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top Strapless a Rayas con Bordado Floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#222328",
+          "#ffffff"
+        ],
+        "descripcion": "Top strapless entallado a rayas verticales en blanco y negro. Destaca por su escote corazón fruncido con lazo ajustable y un bajo evasé con detalles calados y bordados florales en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a rayas",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "collar dorado",
+          "pulsera dorada"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.037Z",
+      "errorDetail": null
+    },
+    {
+      "id": "777058ed-a615-4ba2-ae95-4aa1675c4b77",
+      "fileName": "25706479_98b9ecd0-8b7c-4b42-be1e-bee844595df8.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "777058ed-a615-4ba2-ae95-4aa1675c4b77.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ec86e758-ca09-44ed-87e2-d360ec623698",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top Strapless Rayado con Nido de Abeja",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#4b6b94",
+          "#ffffff"
+        ],
+        "descripcion": "Top strapless confeccionado en tela de algodón a rayas finas en azul y blanco. Presenta detalle de elástico fruncido tipo nido de abeja en la espalda para un ajuste perfecto y corte con vuelo estilo peplum.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless rayado",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "cartera beige",
+          "pulsera dorada",
+          "collar dorado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top Strapless Rayado con Nido de Abeja",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#4b6b94",
+          "#ffffff"
+        ],
+        "descripcion": "Top strapless confeccionado en tela de algodón a rayas finas en azul y blanco. Presenta detalle de elástico fruncido tipo nido de abeja en la espalda para un ajuste perfecto y corte con vuelo estilo peplum.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless rayado",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "cartera beige",
+          "pulsera dorada",
+          "collar dorado"
+        ],
+        "confianza": 0.98,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.114Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d53165fb-a5eb-4a64-8a34-7146a8c39f46",
+      "fileName": "25706479_9bc9187c-91df-44dd-846e-b8fada109fe9.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "d53165fb-a5eb-4a64-8a34-7146a8c39f46.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-12908543-c939-47aa-aa23-1312558b2546",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top Strapless Rayado con Bordado Floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#9bbbe1"
+        ],
+        "descripcion": "Top strapless escote corazón con lazo ajustable al frente, confeccionado en tejido a rayas verticales celestes y blancas, finalizado con un bajo festoneado con bordado floral en color azul.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless rayado",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "collar dorado",
+          "pulsera dorada",
+          "anillos dorados"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top Strapless Rayado con Bordado Floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#9bbbe1"
+        ],
+        "descripcion": "Top strapless escote corazón con lazo ajustable al frente, confeccionado en tejido a rayas verticales celestes y blancas, finalizado con un bajo festoneado con bordado floral en color azul.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless rayado",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "collar dorado",
+          "pulsera dorada",
+          "anillos dorados"
+        ],
+        "confianza": 0.98,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.134Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d36e93b7-2585-45c5-809e-ab8cc4a4f42d",
+      "fileName": "25706479_df1991ef-5284-4b0d-a79c-3c6aa13a96f7.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "d36e93b7-2585-45c5-809e-ab8cc4a4f42d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-49bd1286-00db-4c31-ab1b-d9202c6b31a3",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless a rayas con bordado calado",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#2b2d31"
+        ],
+        "descripcion": "Top strapless con estampado a rayas verticales, escote fruncido con lazo ajustable y terminación peplum con bordados florales calados en el ruedo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "cartera",
+          "zapatos planos",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless a rayas con bordado calado",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#2b2d31"
+        ],
+        "descripcion": "Top strapless con estampado a rayas verticales, escote fruncido con lazo ajustable y terminación peplum con bordados florales calados en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "cartera",
+          "zapatos planos",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.145Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0fa30ed1-251e-4f52-bf60-7e18f55fdd26",
+      "fileName": "25737151_271a92ae-2a60-476e-b6a9-bfbc3d0758be.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "0fa30ed1-251e-4f52-bf60-7e18f55fdd26.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-6e4b8327-5873-4a20-ab3a-39b70e413325",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized Positano celeste",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras estampadas",
+        "colores": [
+          "#a4c2df",
+          "#efece6"
+        ],
+        "descripcion": "Remera de calce relajado en tono celeste claro, con cuello redondo y mangas cortas. Presenta una estampa frontal con la leyenda Positano Lover e ilustración marina. Ideal para un look urbano y veraniego.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera celeste estampada",
+        "prendasSecundarias": [
+          "short blanco con puntilla",
+          "collar de perlas",
+          "pulsera blanca"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized Positano celeste",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras estampadas",
+        "colores": [
+          "#a4c2df",
+          "#efece6"
+        ],
+        "descripcion": "Remera de calce relajado en tono celeste claro, con cuello redondo y mangas cortas. Presenta una estampa frontal con la leyenda Positano Lover e ilustración marina. Ideal para un look urbano y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera celeste estampada",
+        "prendasSecundarias": [
+          "short blanco con puntilla",
+          "collar de perlas",
+          "pulsera blanca"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.263Z",
+      "errorDetail": null
+    },
+    {
+      "id": "467d34d4-4224-46c6-852f-ef85ec1aa824",
+      "fileName": "25737151_ad33820b-58df-46ae-8329-a143c7bbe009.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "467d34d4-4224-46c6-852f-ef85ec1aa824.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-462968db-1302-4d7c-aa84-6c5302a9cdf8",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized Positano celeste",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remera oversized",
+        "colores": [
+          "#a4c4e8"
+        ],
+        "descripcion": "Remera de corte oversized en algodón celeste claro con estampado gráfico Positano Lover. Un modelo fresco y relajado, ideal para combinar con prendas de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized",
+        "prendasSecundarias": [
+          "short con puntilla",
+          "collar de perlas",
+          "bolso de mimbre"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized Positano celeste",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remera oversized",
+        "colores": [
+          "#a4c4e8"
+        ],
+        "descripcion": "Remera de corte oversized en algodón celeste claro con estampado gráfico Positano Lover. Un modelo fresco y relajado, ideal para combinar con prendas de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized",
+        "prendasSecundarias": [
+          "short con puntilla",
+          "collar de perlas",
+          "bolso de mimbre"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.342Z",
+      "errorDetail": null
+    },
+    {
+      "id": "cb9b4997-afbd-44c1-a20f-699d6a864409",
+      "fileName": "25737151_bd659776-40a4-4e41-b0b6-ac04ef59c310.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "cb9b4997-afbd-44c1-a20f-699d6a864409.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9c491e9a-5342-4fd3-a267-714b95bc92e1",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized Positano celeste",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#a0c0e4",
+          "#5b7b36"
+        ],
+        "descripcion": "Remera de algodón oversized en color celeste pastel, con cuello redondo y mangas cortas. Presenta estampa frontal con la frase Positano Lover e ilustración en tonos verde y amarillo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized celeste",
+        "prendasSecundarias": [
+          "short con puntilla",
+          "cartera de paja",
+          "zapatillas marrones",
+          "medias celestes",
+          "collar de perlas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized Positano celeste",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#a0c0e4",
+          "#5b7b36"
+        ],
+        "descripcion": "Remera de algodón oversized en color celeste pastel, con cuello redondo y mangas cortas. Presenta estampa frontal con la frase Positano Lover e ilustración en tonos verde y amarillo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized celeste",
+        "prendasSecundarias": [
+          "short con puntilla",
+          "cartera de paja",
+          "zapatillas marrones",
+          "medias celestes",
+          "collar de perlas"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.355Z",
+      "errorDetail": null
+    },
+    {
+      "id": "5a957904-3778-4947-a5d1-2b3d99fa07c2",
+      "fileName": "25737151_e2473933-b27c-45db-8954-e91ef448a651.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "5a957904-3778-4947-a5d1-2b3d99fa07c2.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": null,
+      "ficha": {
+        "nombre": "25737151 e2473933 b27c 45db 8954 e91ef448a651",
+        "categoriaInterna": null,
+        "subcategoria": "",
+        "colores": [],
+        "descripcion": "",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "",
+        "prendasSecundarias": [],
+        "confianza": null
+      },
+      "createdAt": "2026-09-30T12:27:57.370Z"
+    },
+    {
+      "id": "0df0b811-b53a-4eb4-a7b6-3e9f01fcace3",
+      "fileName": "25737151_ee9451f6-dd90-4f15-88a1-633f5ec69ecb.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "0df0b811-b53a-4eb4-a7b6-3e9f01fcace3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4bc74ef2-c47b-4529-9ecf-2693d48f17ee",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera Positano Lover Celeste",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras estampadas",
+        "colores": [
+          "#a8c5e5"
+        ],
+        "descripcion": "Remera de corte amplio en tono celeste pastel, confeccionada en algodón con cuello redondo, mangas cortas y estampa gráfica frontal Positano Lover.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "short",
+          "collar de perlas",
+          "pulsera",
+          "bolso de mimbre"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera Positano Lover Celeste",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras estampadas",
+        "colores": [
+          "#a8c5e5"
+        ],
+        "descripcion": "Remera de corte amplio en tono celeste pastel, confeccionada en algodón con cuello redondo, mangas cortas y estampa gráfica frontal Positano Lover.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "short",
+          "collar de perlas",
+          "pulsera",
+          "bolso de mimbre"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.494Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b13dcd11-0453-4fb1-8b8c-63cba7b207f6",
+      "fileName": "25763651_06ea216a-29bd-4a04-9cf4-02af128d1d75.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "b13dcd11-0453-4fb1-8b8c-63cba7b207f6.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-6fbcb3ce-276e-4748-8622-843e5b03abed",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco denim estilo militar con botones",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#38373c"
+        ],
+        "descripcion": "Chaleco de jean negro gastado con alamar militar y botones metálicos ornamentales al frente, terminado con sisa desflecada.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco militar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Chaleco denim estilo militar con botones",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#38373c"
+        ],
+        "descripcion": "Chaleco de jean negro gastado con alamar militar y botones metálicos ornamentales al frente, terminado con sisa desflecada.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco militar",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.573Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7d4162c3-d133-4a72-b997-09e51d3b26b7",
+      "fileName": "25763651_0d39c2d4-7866-43ec-83e0-666494f3be51.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "7d4162c3-d133-4a72-b997-09e51d3b26b7.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-022dbaf6-0df4-405c-8ced-713e3f20a6ee",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco denim estilo militar",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#46678b",
+          "#8c7b53"
+        ],
+        "descripcion": "Chaleco de jean entallado estilo húsar con galones horizontales e hileras de botones metálicos grabados. Presenta cuello alto, sisa con acabado deshilachado y un diseño estructurado ideal para superponer.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco denim estilo militar",
+        "prendasSecundarias": [
+          "remera blanca",
+          "pantalón de cuero negro",
+          "cartera de flecos negra",
+          "anteojos de sol",
+          "joyería dorada"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco denim estilo militar",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#46678b",
+          "#8c7b53"
+        ],
+        "descripcion": "Chaleco de jean entallado estilo húsar con galones horizontales e hileras de botones metálicos grabados. Presenta cuello alto, sisa con acabado deshilachado y un diseño estructurado ideal para superponer.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco denim estilo militar",
+        "prendasSecundarias": [
+          "remera blanca",
+          "pantalón de cuero negro",
+          "cartera de flecos negra",
+          "anteojos de sol",
+          "joyería dorada"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.587Z",
+      "errorDetail": null
+    },
+    {
+      "id": "8b58dedb-f6c8-4504-bab4-a722be68fb23",
+      "fileName": "25763651_3b46c866-2f7c-4b46-8302-9caff25d2aef.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "8b58dedb-f6c8-4504-bab4-a722be68fb23.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b9980689-09f6-4040-b777-ecd8f606af18",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco denim con bordes desflecados",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3c6a9b"
+        ],
+        "descripcion": "Chaleco de jean azul con detalle desflecado en las sisas y costuras estructurales. Una prenda versátil e ideal para superponer en looks urbanos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco denim",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Chaleco denim con bordes desflecados",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3c6a9b"
+        ],
+        "descripcion": "Chaleco de jean azul con detalle desflecado en las sisas y costuras estructurales. Una prenda versátil e ideal para superponer en looks urbanos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco denim",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.600Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2bd3c403-864c-410a-b892-e2979b441e70",
+      "fileName": "25763651_69e6713e-8edd-4f98-803c-2381aae64f7b.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "2bd3c403-864c-410a-b892-e2979b441e70.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4cca4d6e-e92d-4eb7-81af-843b14367b08",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de jean celeste",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "unisex",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#8ca3bc"
+        ],
+        "descripcion": "Chaleco denim en lavado celeste claro, con terminaciones desflecadas en las sissas y costuras verticales definidas. Un básico canchero para superponer en cualquier outfit.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Chaleco de jean celeste",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#8ca3bc"
+        ],
+        "descripcion": "Chaleco denim en lavado celeste claro, con terminaciones desflecadas en las sissas y costuras verticales definidas. Un básico canchero para superponer en cualquier outfit.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "unisex"
+      },
+      "createdAt": "2026-09-30T12:27:57.721Z",
+      "errorDetail": null
+    },
+    {
+      "id": "89ddf34e-8376-4ee4-be79-d97ca2c54a0c",
+      "fileName": "25763651_7e0ea3fa-f7a9-4068-9500-4c2f869ec10d.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "89ddf34e-8376-4ee4-be79-d97ca2c54a0c.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-657f0968-27ee-4037-98c3-817e92239cd0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco militar blanco con botones",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#f4f4f2"
+        ],
+        "descripcion": "Chaleco estilo militar de gabardina blanca con detalles de pasamanería horizontal y botones metálicos oscuros decorativos en la parte frontal.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco militar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Chaleco militar blanco con botones",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#f4f4f2"
+        ],
+        "descripcion": "Chaleco estilo militar de gabardina blanca con detalles de pasamanería horizontal y botones metálicos oscuros decorativos en la parte frontal.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco militar",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.799Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4d5ef9ec-5a35-492f-9c34-a9383677db52",
+      "fileName": "25763651_86724358-d385-46d9-bbf2-45b1518f4156.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "4d5ef9ec-5a35-492f-9c34-a9383677db52.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-33fa6414-42d0-4698-9adf-686d2c5b756e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco denim estilo militar",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos de jean",
+        "colores": [
+          "#9bb3cd"
+        ],
+        "descripcion": "Chaleco de jean celeste claro con pechera de inspiración militar, detalles de pasamanería bordada y doble hilera de botones metálicos grabados. Posee sisa con terminación desflecada y corte entallado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Chaleco de jean",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Chaleco denim estilo militar",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos de jean",
+        "colores": [
+          "#9bb3cd"
+        ],
+        "descripcion": "Chaleco de jean celeste claro con pechera de inspiración militar, detalles de pasamanería bordada y doble hilera de botones metálicos grabados. Posee sisa con terminación desflecada y corte entallado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Chaleco de jean",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.816Z",
+      "errorDetail": null
+    },
+    {
+      "id": "94f393c8-aeb8-4aa9-bc69-7eeec46a614f",
+      "fileName": "25763651_cc310cc6-c526-4668-9dd5-ed7713c00b94.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "94f393c8-aeb8-4aa9-bc69-7eeec46a614f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-619965d5-ec7c-4e3a-a0e6-c4fb2869a77a",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco denim de estilo militar",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#4e74a6",
+          "#34517b",
+          "#82a2ca"
+        ],
+        "descripcion": "Chaleco de jean azul con diseño de inspiración militar, detalles de solapas con alamares y botones metálicos de fantasía. Cuenta con acabado deshilachado en la sisa y corte entallado al cuerpo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Chaleco denim de estilo militar",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#4e74a6",
+          "#34517b",
+          "#82a2ca"
+        ],
+        "descripcion": "Chaleco de jean azul con diseño de inspiración militar, detalles de solapas con alamares y botones metálicos de fantasía. Cuenta con acabado deshilachado en la sisa y corte entallado al cuerpo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.833Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3b6ad309-1d30-4adc-b69d-581df20b4d85",
+      "fileName": "25763651_dd8aa9ed-ad1d-42f5-8f47-ddf3059c32f1.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "3b6ad309-1d30-4adc-b69d-581df20b4d85.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-407808da-cbcb-443d-8c89-a1dbf01bc0ba",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco militar de jean blanco",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "chalecos",
+        "colores": [
+          "#f2f1ee",
+          "#9cb2c9",
+          "#3d628b"
+        ],
+        "descripcion": "Chaleco de jean estilo militar con alamares y botones metálicos frontales. Un diseño estructurado y moderno ideal para complementar tus looks.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco militar blanco",
+        "prendasSecundarias": [
+          "chaleco militar celeste",
+          "chaleco militar azul"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco militar de jean blanco",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "chalecos",
+        "colores": [
+          "#f2f1ee",
+          "#9cb2c9",
+          "#3d628b"
+        ],
+        "descripcion": "Chaleco de jean estilo militar con alamares y botones metálicos frontales. Un diseño estructurado y moderno ideal para complementar tus looks.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco militar blanco",
+        "prendasSecundarias": [
+          "chaleco militar celeste",
+          "chaleco militar azul"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:57.951Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6ea83a6b-3c6c-45a4-81a0-2ca6e45e3c9d",
+      "fileName": "25771868_19d3ee88-ef81-4b33-87f7-0699de745a18.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "6ea83a6b-3c6c-45a4-81a0-2ca6e45e3c9d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ee40356f-dcb3-487a-ab2d-8123acb4915b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top floreado mostaza con lazos",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "musculosas y tops",
+        "colores": [
+          "#c9991d",
+          "#e0a1bd",
+          "#a04a50"
+        ],
+        "descripcion": "Top musculosa con escote en V y estilo bohemio en color mostaza, estampado floral en tonos rosa y detalle de tiras ajustables al frente.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "top floreado mostaza",
+        "prendasSecundarias": [
+          "pañuelo estampado",
+          "pantalón rosado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top floreado mostaza con lazos",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "musculosas y tops",
+        "colores": [
+          "#c9991d",
+          "#e0a1bd",
+          "#a04a50"
+        ],
+        "descripcion": "Top musculosa con escote en V y estilo bohemio en color mostaza, estampado floral en tonos rosa y detalle de tiras ajustables al frente.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "top floreado mostaza",
+        "prendasSecundarias": [
+          "pañuelo estampado",
+          "pantalón rosado"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.025Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0c79aa74-7702-4d15-8bcb-07ab677ff4d6",
+      "fileName": "25771868_2a80aa9c-9469-4e9c-8856-0809a7801253.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "0c79aa74-7702-4d15-8bcb-07ab677ff4d6.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": null,
+      "ficha": {
+        "nombre": "25771868 2a80aa9c 9469 4e9c 8856 0809a7801253",
+        "categoriaInterna": null,
+        "subcategoria": "",
+        "colores": [],
+        "descripcion": "",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "",
+        "prendasSecundarias": [],
+        "confianza": null
+      },
+      "createdAt": "2026-09-30T12:27:58.045Z"
+    },
+    {
+      "id": "7678c8ca-a04b-44fd-a0c3-e818691b50a9",
+      "fileName": "25771868_33efc2ed-6f30-45ac-a160-1a1b3128f53c.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "7678c8ca-a04b-44fd-a0c3-e818691b50a9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-c30c3edb-f032-4f6c-aaff-236ac5440399",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top sin mangas floreado con microestampado",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Musculosas",
+        "colores": [
+          "#1c1e2b",
+          "#d6bf74",
+          "#e3dab8"
+        ],
+        "descripcion": "Top sin mangas con estampa floral sobre fondo oscuro con micro lunares. Presenta corte recto y detalle de guarda ornamental en el ruedo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top sin mangas floreado",
+        "prendasSecundarias": [
+          "pantalón de jean",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top sin mangas floreado con microestampado",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Musculosas",
+        "colores": [
+          "#1c1e2b",
+          "#d6bf74",
+          "#e3dab8"
+        ],
+        "descripcion": "Top sin mangas con estampa floral sobre fondo oscuro con micro lunares. Presenta corte recto y detalle de guarda ornamental en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top sin mangas floreado",
+        "prendasSecundarias": [
+          "pantalón de jean",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.077Z",
+      "errorDetail": null
+    },
+    {
+      "id": "dc3e7b11-a837-4f58-a5a3-5ff15031f8ea",
+      "fileName": "25771868_6babe91b-a4e3-4b2f-9aa6-a1db6b230d16.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "dc3e7b11-a837-4f58-a5a3-5ff15031f8ea.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a71a1c6b-f663-4df5-83f3-72d395e30ef9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top muscolosa estampado floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops sin mangas",
+        "colores": [
+          "#522129"
+        ],
+        "descripcion": "Top muscolosa sin mangas con estampado floral de estilo bohemio sobre fondo borra de vino, detalles de micro punteado y guarda decorativa en el ruedo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top estampado",
+        "prendasSecundarias": [
+          "pantalón rayado",
+          "pulsera de caracoles"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top muscolosa estampado floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops sin mangas",
+        "colores": [
+          "#522129"
+        ],
+        "descripcion": "Top muscolosa sin mangas con estampado floral de estilo bohemio sobre fondo borra de vino, detalles de micro punteado y guarda decorativa en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top estampado",
+        "prendasSecundarias": [
+          "pantalón rayado",
+          "pulsera de caracoles"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.194Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3d3d1d00-64f7-4e63-93a8-7ab41506c255",
+      "fileName": "25771868_6d05617b-d5f0-4ba8-ab62-6919465b6a12.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "3d3d1d00-64f7-4e63-93a8-7ab41506c255.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9422d8a7-9623-4cdc-8e9e-693d695dff20",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top sin mangas estampado rosa",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "musculosa estampada",
+        "colores": [
+          "#ea98a8"
+        ],
+        "descripcion": "Musculosa con estampado floral e índigo/marrón sobre fondo rosa, vista de espalda con talle recto y detalle de guarda en el ruedo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top sin mangas",
+        "prendasSecundarias": [
+          "pantalón rayado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top sin mangas estampado rosa",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "musculosa estampada",
+        "colores": [
+          "#ea98a8"
+        ],
+        "descripcion": "Musculosa con estampado floral e índigo/marrón sobre fondo rosa, vista de espalda con talle recto y detalle de guarda en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top sin mangas",
+        "prendasSecundarias": [
+          "pantalón rayado"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.256Z",
+      "errorDetail": null
+    },
+    {
+      "id": "581498ab-4f00-43d0-83ec-1b8b52024f0b",
+      "fileName": "25771868_6f5d9e44-7950-44af-9c83-dcd059c5a1ae.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "581498ab-4f00-43d0-83ec-1b8b52024f0b.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5cd9c8ad-d11f-4ca0-8f45-b2214da1c0d5",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top musculosa con estampado floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops estampados",
+        "colores": [
+          "#f3efe6",
+          "#3481c7",
+          "#8ea735"
+        ],
+        "descripcion": "Top sin mangas con estampado floral en tonos azules y verdes sobre fondo claro. Posee escote redondo y un diseño fresco ideal para los días calurosos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top estampado",
+        "prendasSecundarias": [
+          "pantalón"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top musculosa con estampado floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops estampados",
+        "colores": [
+          "#f3efe6",
+          "#3481c7",
+          "#8ea735"
+        ],
+        "descripcion": "Top sin mangas con estampado floral en tonos azules y verdes sobre fondo claro. Posee escote redondo y un diseño fresco ideal para los días calurosos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top estampado",
+        "prendasSecundarias": [
+          "pantalón"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.279Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f34b0c78-94a1-4f0e-be60-a1552622bde3",
+      "fileName": "25771868_81ca137a-6451-46a3-a823-423bd63db66b.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "f34b0c78-94a1-4f0e-be60-a1552622bde3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a041e52c-705c-432f-bb28-37e92782d69f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top chaleco estampado con lazos",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops sin mangas",
+        "colores": [
+          "#f3f1e8"
+        ],
+        "descripcion": "Top estilo chaleco sin mangas confeccionado en tejido liviano con estampado floral en tonos azul y verde sobre fondo crema. Posee escote en V profundo y frente abierto ajustable con lazos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "top estampado con lazos",
+        "prendasSecundarias": [
+          "pantalón verde"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top chaleco estampado con lazos",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops sin mangas",
+        "colores": [
+          "#f3f1e8"
+        ],
+        "descripcion": "Top estilo chaleco sin mangas confeccionado en tejido liviano con estampado floral en tonos azul y verde sobre fondo crema. Posee escote en V profundo y frente abierto ajustable con lazos.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "top estampado con lazos",
+        "prendasSecundarias": [
+          "pantalón verde"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.328Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e485cabc-bc99-46c1-bc88-50296ba04dc6",
+      "fileName": "25771868_891fe763-e7b6-4646-aa52-7fc8a18c0227.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "e485cabc-bc99-46c1-bc88-50296ba04dc6.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-108bdbf0-b976-46b2-9bb5-cc9ca6db99da",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top sin mangas estampado floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops estampados",
+        "colores": [
+          "#c49219"
+        ],
+        "descripcion": "Top musculosa confeccionado en tono mostaza con estampado floral y guardas en el ruedo. Presenta calce recto y textura liviana, ideal para combinar en looks casuales y bohemios.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "top estampado",
+        "prendasSecundarias": [
+          "pantalón cargo",
+          "accesorio para el pelo"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top sin mangas estampado floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops estampados",
+        "colores": [
+          "#c49219"
+        ],
+        "descripcion": "Top musculosa confeccionado en tono mostaza con estampado floral y guardas en el ruedo. Presenta calce recto y textura liviana, ideal para combinar en looks casuales y bohemios.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "top estampado",
+        "prendasSecundarias": [
+          "pantalón cargo",
+          "accesorio para el pelo"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.454Z",
+      "errorDetail": null
+    },
+    {
+      "id": "8d595ff0-f8c7-4ad3-86e0-26672619e9d7",
+      "fileName": "25771868_8e335422-524d-4139-a7fc-78d933b719d3.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "8d595ff0-f8c7-4ad3-86e0-26672619e9d7.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-fe897b7a-e831-47ea-84b6-324f8570ff22",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Bermuda cargo Soli Echo",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "shorts",
+        "gender": "mujer",
+        "subcategoria": "bermudas cargo",
+        "colores": [
+          "#b6514c",
+          "#9e433e"
+        ],
+        "descripcion": "Bermuda estilo cargo de tiro medio en tono rojo terracota con lavado desgastado. Presenta un calce holgado y relajado, bolsillos aplicados en el frente y laterales con solapa, ideal para un look urbano y desenfadado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "bermuda cargo",
+        "prendasSecundarias": [
+          "chaleco floreado",
+          "sandalias acordonadas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Bermuda cargo Soli Echo",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "bermudas cargo",
+        "colores": [
+          "#b6514c",
+          "#9e433e"
+        ],
+        "descripcion": "Bermuda estilo cargo de tiro medio en tono rojo terracota con lavado desgastado. Presenta un calce holgado y relajado, bolsillos aplicados en el frente y laterales con solapa, ideal para un look urbano y desenfadado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "bermuda cargo",
+        "prendasSecundarias": [
+          "chaleco floreado",
+          "sandalias acordonadas"
+        ],
+        "confianza": 0.95,
+        "garmentType": "shorts",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.484Z",
+      "errorDetail": null
+    },
+    {
+      "id": "cd8bc0b2-a5e3-489d-b664-0daaafc40969",
+      "fileName": "25771868_97576c1d-fc55-4648-899b-e790062dcac7.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "cd8bc0b2-a5e3-489d-b664-0daaafc40969.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0988aab0-de3e-4853-acd6-ba30bbbd54c7",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top sin mangas estampado floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops",
+        "colores": [
+          "#1b1b1d",
+          "#f3c654",
+          "#eaeaea"
+        ],
+        "descripcion": "Top sin mangas con estampado floral en tonos amarillos sobre fondo negro con micro lunares. Posee un corte recto y escote sutil, ideal para un look fresco de verano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top estampado",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Top sin mangas estampado floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops",
+        "colores": [
+          "#1b1b1d",
+          "#f3c654",
+          "#eaeaea"
+        ],
+        "descripcion": "Top sin mangas con estampado floral en tonos amarillos sobre fondo negro con micro lunares. Posee un corte recto y escote sutil, ideal para un look fresco de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top estampado",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.517Z",
+      "errorDetail": null
+    },
+    {
+      "id": "90599036-711c-44d8-9700-98fa4638bb8a",
+      "fileName": "25771868_b9c196b5-6ba5-46e5-8888-0d30c3da2a8e.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "90599036-711c-44d8-9700-98fa4638bb8a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e754f9bc-efed-4a9b-8cdd-84c2077f08ab",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top Chaleco Estampado Floral con Lazos",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#4d2329"
+        ],
+        "descripcion": "Top tipo chaleco sin mangas confeccionado en tejido estampado con motivos florales y detalles de lunares. Posee escote en V profundo ajustado al frente mediante lazos atados, perfecto para un estilo bohemio y relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top chaleco estampado",
+        "prendasSecundarias": [
+          "pantalón a rayas",
+          "pulsera de caracoles"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top Chaleco Estampado Floral con Lazos",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#4d2329"
+        ],
+        "descripcion": "Top tipo chaleco sin mangas confeccionado en tejido estampado con motivos florales y detalles de lunares. Posee escote en V profundo ajustado al frente mediante lazos atados, perfecto para un estilo bohemio y relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top chaleco estampado",
+        "prendasSecundarias": [
+          "pantalón a rayas",
+          "pulsera de caracoles"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.560Z",
+      "errorDetail": null
+    },
+    {
+      "id": "9e200127-afd3-4561-942e-83bc93da90e9",
+      "fileName": "25771868_d3733922-86e8-4879-9927-597d75fe8190.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "9e200127-afd3-4561-942e-83bc93da90e9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-cad492ae-4688-4b70-bd5b-32f5830dd3ef",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top estampado con lazos",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops sin mangas",
+        "colores": [
+          "#1c2130",
+          "#d3b77b",
+          "#f0ece1"
+        ],
+        "descripcion": "Top sin mangas con escote V profundo y cierre frontal mediante lazos. Presenta un diseño combinado de estampado floral y lunares sobre fondo azul marino.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "top estampado",
+        "prendasSecundarias": [
+          "jean",
+          "bandolera de gamuza"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top estampado con lazos",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops sin mangas",
+        "colores": [
+          "#1c2130",
+          "#d3b77b",
+          "#f0ece1"
+        ],
+        "descripcion": "Top sin mangas con escote V profundo y cierre frontal mediante lazos. Presenta un diseño combinado de estampado floral y lunares sobre fondo azul marino.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "top estampado",
+        "prendasSecundarias": [
+          "jean",
+          "bandolera de gamuza"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.729Z",
+      "errorDetail": null
+    },
+    {
+      "id": "84ca5cab-7076-4c0b-b0af-abf9be4469c3",
+      "fileName": "25771868_dfde49eb-ba08-471f-9bda-82d7b963278e.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "84ca5cab-7076-4c0b-b0af-abf9be4469c3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-3ded9f4f-4e7c-47c4-807b-9e7a2e377dab",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco estampado floral con lazos",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#1b1c22",
+          "#e6c361",
+          "#f2f2f2"
+        ],
+        "descripcion": "Chaleco sin mangas confeccionado en tejido liviano con estampado combinado de flores amarillas y fondo de lunares. Diseñado con escote en V y ajuste frontal mediante lazos para atar.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Chaleco estampado floral con lazos",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#1b1c22",
+          "#e6c361",
+          "#f2f2f2"
+        ],
+        "descripcion": "Chaleco sin mangas confeccionado en tejido liviano con estampado combinado de flores amarillas y fondo de lunares. Diseñado con escote en V y ajuste frontal mediante lazos para atar.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.792Z",
+      "errorDetail": null
+    },
+    {
+      "id": "174c0998-c550-484a-92f5-83410ae70725",
+      "fileName": "25798567_2cc584f0-6607-43ec-a853-c61c011edf14.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "174c0998-c550-484a-92f5-83410ae70725.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-84be4d19-22ac-43aa-839e-fc750f98bc4d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa Boho con Volados Azul Marino",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#283556"
+        ],
+        "descripcion": "Blusa de estilo boho confeccionada en tela liviana tono azul marino. Presenta un escote en V pronunciado con volados y lazada al frente, mangas largas de calce holgado y puños elastizados. Una prenda versátil e ideal para combinar con jeans y lograr un look relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa boho azul marino",
+        "prendasSecundarias": [
+          "pantalón de jean",
+          "cinturón",
+          "cartera tejida",
+          "collares",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa Boho con Volados Azul Marino",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#283556"
+        ],
+        "descripcion": "Blusa de estilo boho confeccionada en tela liviana tono azul marino. Presenta un escote en V pronunciado con volados y lazada al frente, mangas largas de calce holgado y puños elastizados. Una prenda versátil e ideal para combinar con jeans y lograr un look relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa boho azul marino",
+        "prendasSecundarias": [
+          "pantalón de jean",
+          "cinturón",
+          "cartera tejida",
+          "collares",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.823Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3ff14ee0-0e12-404d-8637-39e9ef90007d",
+      "fileName": "25798567_3984e8f1-d082-4641-bb76-3512041cdab0.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "3ff14ee0-0e12-404d-8637-39e9ef90007d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8d899417-4e20-44cb-889d-1a3bb5914bbf",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de gasa con volados y lazo",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f3f2ec"
+        ],
+        "descripcion": "Blusa romántica de gasa semitransparente en tono blanco marfil. Presenta escote en V bordeado por volados, lazo para atar en el frente y mangas largas holgadas con puños elastizados y terminación en volado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Blusa de gasa con volados y lazo",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f3f2ec"
+        ],
+        "descripcion": "Blusa romántica de gasa semitransparente en tono blanco marfil. Presenta escote en V bordeado por volados, lazo para atar en el frente y mangas largas holgadas con puños elastizados y terminación en volado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:58.956Z",
+      "errorDetail": null
+    },
+    {
+      "id": "aca74796-dc74-40c2-9e3c-e155e2c32138",
+      "fileName": "25798567_4d07f621-98ac-4eb3-9020-ff8ad533d1bb.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "aca74796-dc74-40c2-9e3c-e155e2c32138.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f02f3b5b-00e3-4f07-9bbb-59fda1ca92e6",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa boho de gasa con volados",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f4f3ef"
+        ],
+        "descripcion": "Blusa holgada de gasa blanca con escote en V adornado con volados y detalle de lazo frontal para atar. Presenta mangas largas abullonadas, perfecta para un estilo bohemio y chic.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "blusa de gasa con volados",
+        "prendasSecundarias": [
+          "jean desgastado",
+          "cinturón de cuero",
+          "cartera tejida",
+          "aros dorados",
+          "gargantilla dorada",
+          "pulseras doradas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa boho de gasa con volados",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f4f3ef"
+        ],
+        "descripcion": "Blusa holgada de gasa blanca con escote en V adornado con volados y detalle de lazo frontal para atar. Presenta mangas largas abullonadas, perfecta para un estilo bohemio y chic.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "blusa de gasa con volados",
+        "prendasSecundarias": [
+          "jean desgastado",
+          "cinturón de cuero",
+          "cartera tejida",
+          "aros dorados",
+          "gargantilla dorada",
+          "pulseras doradas"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.038Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a8e973ad-c1a5-4765-94e7-952bbb8336b7",
+      "fileName": "25798567_5941ee34-88a1-4247-84ed-f12c04f0cefd.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "a8e973ad-c1a5-4765-94e7-952bbb8336b7.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-765b7263-a22c-4536-8a39-a80b3d906b5a",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de gasa con volados en cuello y puños",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de manga larga",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa holgada confeccionada en tela liviana y semitransparente de color blanco. Cuenta con un diseño romántico con cuello alzado y fruncido con volados, mangas largas fluidas y puños elastizados con detalle de volados.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Blusa de gasa con volados en cuello y puños",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de manga larga",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa holgada confeccionada en tela liviana y semitransparente de color blanco. Cuenta con un diseño romántico con cuello alzado y fruncido con volados, mangas largas fluidas y puños elastizados con detalle de volados.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.063Z",
+      "errorDetail": null
+    },
+    {
+      "id": "57dd7b3c-f0dc-4e0f-aba0-9d63e3425422",
+      "fileName": "25798567_a441658a-f826-497c-ae88-ac7a6bb0a4e7.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "57dd7b3c-f0dc-4e0f-aba0-9d63e3425422.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": null,
+      "ficha": {
+        "nombre": "25798567 a441658a f826 497c ae88 ac7a6bb0a4e7",
+        "categoriaInterna": null,
+        "subcategoria": "",
+        "colores": [],
+        "descripcion": "",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "",
+        "prendasSecundarias": [],
+        "confianza": null
+      },
+      "createdAt": "2026-09-30T12:27:59.184Z"
+    },
+    {
+      "id": "26d1ba6a-c1aa-4dc9-a43c-0a60ac181114",
+      "fileName": "25798567_c889468a-93a0-47e2-9001-8b7c076d5789.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "26d1ba6a-c1aa-4dc9-a43c-0a60ac181114.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ce9c9cbd-f9c9-442c-b527-3a2567a5e560",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa negra con escote en V y volados",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas boho",
+        "colores": [
+          "#181818"
+        ],
+        "descripcion": "Blusa holgada en color negro con escote profundo en V decorado con volados y lazo frontal. Presenta mangas largas de estilo fluido, ideal para componer un outfit boho chic.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "blusa negra",
+        "prendasSecundarias": [
+          "jean",
+          "cinturón",
+          "collar",
+          "cartera de rafia",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa negra con escote en V y volados",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas boho",
+        "colores": [
+          "#181818"
+        ],
+        "descripcion": "Blusa holgada en color negro con escote profundo en V decorado con volados y lazo frontal. Presenta mangas largas de estilo fluido, ideal para componer un outfit boho chic.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "blusa negra",
+        "prendasSecundarias": [
+          "jean",
+          "cinturón",
+          "collar",
+          "cartera de rafia",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.274Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4c369066-ef57-4850-95ee-ce3e034da5cd",
+      "fileName": "25798567_d7721b6f-7c6a-4f8d-a532-ab43e25dfcde.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "4c369066-ef57-4850-95ee-ce3e034da5cd.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d156d31c-3c6c-4485-baab-e9994ec0a767",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa boho con volados amarilla",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f3cc22"
+        ],
+        "descripcion": "Blusa holgada de estilo boho en llamativo color amarillo, caracterizada por un escote en V con aplique de volados y lazo frontal para atar. Posee mangas largas fluidas con puños elastizados, ideal para lograr un look fresco y casual.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Blusa amarilla con volados",
+        "prendasSecundarias": [
+          "jean",
+          "cinturón de cuero",
+          "collar dorado",
+          "pulseras",
+          "bolso tejido"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa boho con volados amarilla",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f3cc22"
+        ],
+        "descripcion": "Blusa holgada de estilo boho en llamativo color amarillo, caracterizada por un escote en V con aplique de volados y lazo frontal para atar. Posee mangas largas fluidas con puños elastizados, ideal para lograr un look fresco y casual.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Blusa amarilla con volados",
+        "prendasSecundarias": [
+          "jean",
+          "cinturón de cuero",
+          "collar dorado",
+          "pulseras",
+          "bolso tejido"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.298Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f06bd342-633e-4e8e-913b-6d2f9ea1608c",
+      "fileName": "25798567_df95cc90-9fbb-4d30-9ac2-cf9378b61fb0.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "f06bd342-633e-4e8e-913b-6d2f9ea1608c.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f69974b3-9c26-4bb6-941e-49ad76b5719f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa bordó con volados y escote en V",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de manga larga",
+        "colores": [
+          "#731924"
+        ],
+        "descripcion": "Blusa de estilo bohemio en color bordó, con profundo escote en V rodeado de volados y detalle de lazo para atar en el frente. Cuenta con mangas largas de caída fluida y puños fruncidos, ideal para un look casual y elegante.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "blusa bordó con volados",
+        "prendasSecundarias": [
+          "jean gris",
+          "cinturón",
+          "cartera de rafia",
+          "collares dorados",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa bordó con volados y escote en V",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de manga larga",
+        "colores": [
+          "#731924"
+        ],
+        "descripcion": "Blusa de estilo bohemio en color bordó, con profundo escote en V rodeado de volados y detalle de lazo para atar en el frente. Cuenta con mangas largas de caída fluida y puños fruncidos, ideal para un look casual y elegante.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "blusa bordó con volados",
+        "prendasSecundarias": [
+          "jean gris",
+          "cinturón",
+          "cartera de rafia",
+          "collares dorados",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.311Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b4fecb5e-bd29-4567-a8af-ee492ee84fc9",
+      "fileName": "25798567_e73c56f7-0110-4425-89b6-1dfb5d432fbf.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "b4fecb5e-bd29-4567-a8af-ee492ee84fc9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-6e7c0bc2-258c-43bb-b23f-fcfd9ab70e0d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa fluida con volados y lazo",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de manga larga",
+        "colores": [
+          "#823f89",
+          "#9e51a1"
+        ],
+        "descripcion": "Blusa de gasa fluida en tono violeta morado con cuello en V enmarcado por volados y lazo frontal ajustable. Presenta mangas largas holgadas con elástico en los puños y un corte holgado de estilo boho chic.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Blusa violeta con volados",
+        "prendasSecundarias": [
+          "jean",
+          "cinturón",
+          "cartera de rafia",
+          "collar",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa fluida con volados y lazo",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de manga larga",
+        "colores": [
+          "#823f89",
+          "#9e51a1"
+        ],
+        "descripcion": "Blusa de gasa fluida en tono violeta morado con cuello en V enmarcado por volados y lazo frontal ajustable. Presenta mangas largas holgadas con elástico en los puños y un corte holgado de estilo boho chic.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Blusa violeta con volados",
+        "prendasSecundarias": [
+          "jean",
+          "cinturón",
+          "cartera de rafia",
+          "collar",
+          "pulseras"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.404Z",
+      "errorDetail": null
+    },
+    {
+      "id": "891972e1-ec0f-4cd1-9504-f99a51f8fa0b",
+      "fileName": "25798567_e9d111af-4ae7-4456-a6c1-5f87c8b6d2f4.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "891972e1-ec0f-4cd1-9504-f99a51f8fa0b.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d25f0d4b-3af9-4ecb-a144-0b647ba2bbf3",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa boho con volados y lazo",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas",
+        "colores": [
+          "#a8a085"
+        ],
+        "descripcion": "Blusa de estilo boho chic en tono beige oliva, confeccionada en tela fluida y liviana. Presenta escote en V profundo con volados delicados, detalle de lazo para atar al frente y mangas largas holgadas con puños elastizados. Perfecta para un look casual y sofisticado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa boho",
+        "prendasSecundarias": [
+          "jean",
+          "cinturón",
+          "collares",
+          "cartera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa boho con volados y lazo",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas",
+        "colores": [
+          "#a8a085"
+        ],
+        "descripcion": "Blusa de estilo boho chic en tono beige oliva, confeccionada en tela fluida y liviana. Presenta escote en V profundo con volados delicados, detalle de lazo para atar al frente y mangas largas holgadas con puños elastizados. Perfecta para un look casual y sofisticado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa boho",
+        "prendasSecundarias": [
+          "jean",
+          "cinturón",
+          "collares",
+          "cartera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.521Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3386b910-6435-458e-98b6-4d175add6830",
+      "fileName": "25805145_49660185-b682-4d46-9c5b-087790a497f7.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "3386b910-6435-458e-98b6-4d175add6830.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-75e0eb7e-24bb-4e94-87b7-f31b7993bdaa",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top sin mangas a rayas verticales",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Musculosas",
+        "colores": [
+          "#3d2e25",
+          "#ece8e1"
+        ],
+        "descripcion": "Top musculosa de corte recto con escote redondo y diseño de rayas verticales a contraste. Una prenda fresca y versátil, ideal para complementar un look de verano relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top sin mangas a rayas",
+        "prendasSecundarias": [
+          "pantalón a rayas",
+          "cartera de mano",
+          "collares",
+          "pulseras",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top sin mangas a rayas verticales",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Musculosas",
+        "colores": [
+          "#3d2e25",
+          "#ece8e1"
+        ],
+        "descripcion": "Top musculosa de corte recto con escote redondo y diseño de rayas verticales a contraste. Una prenda fresca y versátil, ideal para complementar un look de verano relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top sin mangas a rayas",
+        "prendasSecundarias": [
+          "pantalón a rayas",
+          "cartera de mano",
+          "collares",
+          "pulseras",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.553Z",
+      "errorDetail": null
+    },
+    {
+      "id": "98a04cc8-dac2-4437-a503-bb8e6b2d3e28",
+      "fileName": "25805145_804981ac-3d02-4169-a76f-d04f4a99980c.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "98a04cc8-dac2-4437-a503-bb8e6b2d3e28.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5b04c5c7-4be5-424c-856d-4c0d751d3bb1",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Musculosa holgada a rayas verticales",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Musculosas",
+        "colores": [
+          "#423228",
+          "#ddd8cd"
+        ],
+        "descripcion": "Musculosa recta sin mangas con escote redondo y motivo de rayas verticales a contraste. Una prenda fresca y fluida ideal para combinar en conjuntos de verano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "musculosa a rayas",
+        "prendasSecundarias": [
+          "pantalón a rayas",
+          "collar largo",
+          "sandalias"
+        ]
+      },
+      "ficha": {
+        "nombre": "Musculosa holgada a rayas verticales",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Musculosas",
+        "colores": [
+          "#423228",
+          "#ddd8cd"
+        ],
+        "descripcion": "Musculosa recta sin mangas con escote redondo y motivo de rayas verticales a contraste. Una prenda fresca y fluida ideal para combinar en conjuntos de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "musculosa a rayas",
+        "prendasSecundarias": [
+          "pantalón a rayas",
+          "collar largo",
+          "sandalias"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.636Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6ac57b75-5a29-44b5-878e-4c059f02e624",
+      "fileName": "25805145_968be1a2-705e-435b-8b50-1a12f193b1d4.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "6ac57b75-5a29-44b5-878e-4c059f02e624.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": null,
+      "ficha": {
+        "nombre": "25805145 968be1a2 705e 435b 8b50 1a12f193b1d4",
+        "categoriaInterna": null,
+        "subcategoria": "",
+        "colores": [],
+        "descripcion": "",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "",
+        "prendasSecundarias": [],
+        "confianza": null
+      },
+      "createdAt": "2026-09-30T12:27:59.753Z"
+    },
+    {
+      "id": "eb175bac-89ce-433b-af9a-f7ee3822d954",
+      "fileName": "25805145_cd7d0b63-f74a-4ee7-bd33-78fe2eac8d3f.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "eb175bac-89ce-433b-af9a-f7ee3822d954.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-78c90b04-95ff-4312-987d-4d892fddf7fa",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Musculosa con rayas verticales marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Musculosas",
+        "colores": [
+          "#3d2f28",
+          "#e6dfd5"
+        ],
+        "descripcion": "Musculosa holgada sin mangas en tono marrón oscuro con pinstripes verticales en tono claro. Una prenda fresca y versátil ideal para outfits de verano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Musculosa a rayas",
+        "prendasSecundarias": [
+          "pantalón a rayas",
+          "sandalias",
+          "pulseras",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Musculosa con rayas verticales marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Musculosas",
+        "colores": [
+          "#3d2f28",
+          "#e6dfd5"
+        ],
+        "descripcion": "Musculosa holgada sin mangas en tono marrón oscuro con pinstripes verticales en tono claro. Una prenda fresca y versátil ideal para outfits de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Musculosa a rayas",
+        "prendasSecundarias": [
+          "pantalón a rayas",
+          "sandalias",
+          "pulseras",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.796Z",
+      "errorDetail": null
+    },
+    {
+      "id": "734624f6-ca23-449a-8882-bd953af6e165",
+      "fileName": "25805145_d5de4d2e-f69c-4c96-8142-4bc6d2b57aaf.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "734624f6-ca23-449a-8882-bd953af6e165.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-31b06b30-7bb7-44b9-aa99-c134928558cb",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top largo a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "musculosas",
+        "colores": [
+          "#423228"
+        ],
+        "descripcion": "Top largo sin mangas con diseño de rayas verticales en tono marrón chocolate y blanco, de calce entallado e ideal para armar conjuntos formales.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top largo a rayas",
+        "prendasSecundarias": [
+          "pantalón a rayas",
+          "sandalias",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top largo a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "musculosas",
+        "colores": [
+          "#423228"
+        ],
+        "descripcion": "Top largo sin mangas con diseño de rayas verticales en tono marrón chocolate y blanco, de calce entallado e ideal para armar conjuntos formales.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top largo a rayas",
+        "prendasSecundarias": [
+          "pantalón a rayas",
+          "sandalias",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.882Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7a3693ed-02df-4ff0-bc7e-4c1654424bb5",
+      "fileName": "25805169_0cfc761d-98e6-493d-9a7d-18438aa2fb48.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "7a3693ed-02df-4ff0-bc7e-4c1654424bb5.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d11f0194-b0c3-48bf-a480-88220128aa8e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera Oversize Capri Estampada",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras estampadas",
+        "colores": [
+          "#f5f4f0",
+          "#d22a2a",
+          "#f4d35e"
+        ],
+        "descripcion": "Remera de algodón corte oversize en color blanco, con cuello redondo y estampa gráfica frontal de langosta Capri. Una prenda fresca, cómoda y super canchera para complementar tus outfits de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera estampada",
+        "prendasSecundarias": [
+          "pollera de satén",
+          "lentes de sol",
+          "collar dorado",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera Oversize Capri Estampada",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras estampadas",
+        "colores": [
+          "#f5f4f0",
+          "#d22a2a",
+          "#f4d35e"
+        ],
+        "descripcion": "Remera de algodón corte oversize en color blanco, con cuello redondo y estampa gráfica frontal de langosta Capri. Una prenda fresca, cómoda y super canchera para complementar tus outfits de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera estampada",
+        "prendasSecundarias": [
+          "pollera de satén",
+          "lentes de sol",
+          "collar dorado",
+          "aros"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:59.983Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c4c3340b-a183-450c-bf1c-c641af90c4d4",
+      "fileName": "25805169_347bb6e5-4728-4456-94e4-da8896240b4c.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "c4c3340b-a183-450c-bf1c-c641af90c4d4.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": null,
+      "ficha": {
+        "nombre": "25805169 347bb6e5 4728 4456 94e4 da8896240b4c",
+        "categoriaInterna": null,
+        "subcategoria": "",
+        "colores": [],
+        "descripcion": "",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "",
+        "prendasSecundarias": [],
+        "confianza": null
+      },
+      "createdAt": "2026-09-30T12:28:00.048Z"
+    },
+    {
+      "id": "6b9a037f-fb25-443f-a14f-c0f9c543d6d3",
+      "fileName": "25805169_48ee8f9f-6881-4f34-9845-54a65f76230e.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "6b9a037f-fb25-443f-a14f-c0f9c543d6d3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e9c3985b-61ce-4bc4-abcf-ac63344002b0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera blanca gráfica Capri",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras gráficas",
+        "colores": [
+          "#f6f5f0"
+        ],
+        "descripcion": "Remera de calce holgado en color blanco hueso con estampa central de langosta y la palabra Capri. Confeccionada en algodón suave, con manga corta y cuello redondo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "pantalón de jean",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera blanca gráfica Capri",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras gráficas",
+        "colores": [
+          "#f6f5f0"
+        ],
+        "descripcion": "Remera de calce holgado en color blanco hueso con estampa central de langosta y la palabra Capri. Confeccionada en algodón suave, con manga corta y cuello redondo.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "pantalón de jean",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:28:00.119Z",
+      "errorDetail": null
+    },
+    {
+      "id": "cd82c5ae-1048-4d98-a504-bcb77c7921b2",
+      "fileName": "25805169_552252f1-857b-4272-b6f7-f162ed65fb1c.jpg",
+      "folderName": "SOLI ECHO",
+      "file": "cd82c5ae-1048-4d98-a504-bcb77c7921b2.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-083699ff-4d9e-4502-b52b-87d73aef6fb8",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera blanca oversized con estampa Capri",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras estampadas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Remera blanca estilo oversized de manga corta y cuello redondo con estampa frontal ilustrada de langosta y leyenda Capri. Confeccionada en algodón fresco, ideal para un look casual de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera blanca estampada",
+        "prendasSecundarias": [
+          "pollera amarilla",
+          "anteojos de sol",
+          "collar",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera blanca oversized con estampa Capri",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras estampadas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Remera blanca estilo oversized de manga corta y cuello redondo con estampa frontal ilustrada de langosta y leyenda Capri. Confeccionada en algodón fresco, ideal para un look casual de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera blanca estampada",
+        "prendasSecundarias": [
+          "pollera amarilla",
+          "anteojos de sol",
+          "collar",
+          "aros"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:28:00.400Z",
+      "errorDetail": null
+    }
+  ],
+  "updatedAt": "2026-09-30T16:21:31.534Z"
+}

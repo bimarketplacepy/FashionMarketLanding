@@ -632,7 +632,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
 
       {lookReady && (
         <div className="look-ready__backdrop" onClick={() => setLookReady(null)}>
-          <div className="look-ready" role="dialog" aria-modal="true" aria-labelledby="look-ready-title" onClick={(event) => event.stopPropagation()}>
+          <div className="look-ready" data-lenis-prevent role="dialog" aria-modal="true" aria-labelledby="look-ready-title" onClick={(event) => event.stopPropagation()}>
             <span className="look-ready__icon"><Check size={22} weight="bold" /></span>
             <h3 id="look-ready-title">Se generó tu look</h3>
             <p>{lookReady.name} ya está disponible en tus pruebas.</p>

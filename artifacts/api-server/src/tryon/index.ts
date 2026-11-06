@@ -27,7 +27,7 @@ const AETHER_ROOT = process.env["AETHER_ROOT"] ?? path.resolve(distDir, "../../a
 // Rutas de administración (importar catálogo con IA, regenerar prendas) que
 // siguen viviendo sólo como plugins de Vite: se cargan desde el workspace y el
 // resultado se publica commiteado.
-const ADMIN_ONLY_PREFIXES = ["/api/import/", "/api/garment-regeneration"];
+const ADMIN_ONLY_PREFIXES = ["/api/import/", "/api/batches", "/api/garment-regeneration"];
 
 function isDeployment(): boolean {
   const mode = process.env["TRYON_MODE"];

@@ -52,7 +52,7 @@ export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
   return (
     <div className="viewer-overlay" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
       <div className="viewer-entry">
-        <aside className="viewer product-sheet" role="dialog" aria-modal="true" aria-label={item.name} ref={sheetRef}>
+        <aside className="viewer product-sheet" data-lenis-prevent role="dialog" aria-modal="true" aria-label={item.name} ref={sheetRef}>
           <button className="sheet-back" type="button" onClick={onBack || onClose} ref={closeButtonRef}>
             <ArrowLeft size={14} /> {onBack ? "Volver" : "Volver al catálogo"}
           </button>

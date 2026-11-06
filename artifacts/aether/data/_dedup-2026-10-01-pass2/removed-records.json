@@ -1,0 +1,2966 @@
+[
+ {
+  "id": "import-acd4b313-a166-4077-b54c-3a81d31d7e6f",
+  "name": "Remera básica manga corta verde pastel",
+  "part": "upperbody",
+  "garmentType": "tshirt",
+  "color": "#c4ceab",
+  "secondaryColor": null,
+  "palette": [
+   "#c4ceab"
+  ],
+  "tags": [
+   "remeras básicas"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-acd4b313-a166-4077-b54c-3a81d31d7e6f-garment.png",
+  "thumbnail": "/api/import/library/import-acd4b313-a166-4077-b54c-3a81d31d7e6f-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Remera básica de cuello redondo y mangas cortas en un delicado tono verde claro, confeccionada en tejido suave de calce cómodo, ideal para un estilo urbano y relajado.",
+  "price": null,
+  "importBatch": {
+   "id": "2ba4e4ce-b8ff-4f45-a5d9-3ba226de404f",
+   "name": "ACTIVE BASIC"
+  },
+  "importedAt": "2026-09-30T16:03:00.877Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Remera básica manga corta verde pastel",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "tshirt",
+   "gender": "mujer",
+   "subcategoria": "Remeras básicas",
+   "colores": [
+    "#c4ceab"
+   ],
+   "descripcion": "Remera básica de cuello redondo y mangas cortas en un delicado tono verde claro, confeccionada en tejido suave de calce cómodo, ideal para un estilo urbano y relajado.",
+   "recorte": null,
+   "confianza": 0.98,
+   "prendaCompleta": true,
+   "prendaPrincipal": "remera",
+   "prendasSecundarias": [
+    "jean"
+   ]
+  }
+ },
+ {
+  "id": "import-53cb72f9-a4dd-4f94-9db9-a6ba2b5be53a",
+  "name": "Camisa de manga corta texturada azul",
+  "part": "upperbody",
+  "garmentType": "shirt",
+  "color": "#4d69d6",
+  "secondaryColor": null,
+  "palette": [
+   "#4d69d6"
+  ],
+  "tags": [
+   "camisas de manga corta"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-53cb72f9-a4dd-4f94-9db9-a6ba2b5be53a-garment.png",
+  "thumbnail": "/api/import/library/import-53cb72f9-a4dd-4f94-9db9-a6ba2b5be53a-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Camisa de manga corta en tela texturada de algodón, con cuello solapa, abotonadura frontal y un calce relajado y fresco.",
+  "price": null,
+  "importBatch": {
+   "id": "2ba4e4ce-b8ff-4f45-a5d9-3ba226de404f",
+   "name": "ACTIVE BASIC"
+  },
+  "importedAt": "2026-09-30T16:03:00.189Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Camisa de manga corta texturada azul",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "shirt",
+   "gender": "mujer",
+   "subcategoria": "Camisas de manga corta",
+   "colores": [
+    "#4d69d6"
+   ],
+   "descripcion": "Camisa de manga corta en tela texturada de algodón, con cuello solapa, abotonadura frontal y un calce relajado y fresco.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "camisa de manga corta",
+   "prendasSecundarias": [
+    "shorts",
+    "ojotas"
+   ]
+  }
+ },
+ {
+  "id": "import-409d6c5e-f684-4a63-bc6f-536346f11124",
+  "name": "Top sin mangas negro Active Basic",
+  "part": "upperbody",
+  "garmentType": "top",
+  "color": "#1a1a1a",
+  "secondaryColor": null,
+  "palette": [
+   "#1a1a1a"
+  ],
+  "tags": [
+   "musculosas y tops"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-409d6c5e-f684-4a63-bc6f-536346f11124-garment.png",
+  "thumbnail": "/api/import/library/import-409d6c5e-f684-4a63-bc6f-536346f11124-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Top corto sin mangas en color negro, con escote redondo y calce recto. Un básico versátil y elegante para combinar con pantalones de tiro alto.",
+  "price": null,
+  "importBatch": {
+   "id": "2ba4e4ce-b8ff-4f45-a5d9-3ba226de404f",
+   "name": "ACTIVE BASIC"
+  },
+  "importedAt": "2026-09-30T16:03:06.121Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Top sin mangas negro Active Basic",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "top",
+   "gender": "mujer",
+   "subcategoria": "musculosas y tops",
+   "colores": [
+    "#1a1a1a"
+   ],
+   "descripcion": "Top corto sin mangas en color negro, con escote redondo y calce recto. Un básico versátil y elegante para combinar con pantalones de tiro alto.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "top sin mangas negro",
+   "prendasSecundarias": [
+    "pantalón negro de vestir",
+    "pulsera plateada"
+   ]
+  }
+ },
+ {
+  "id": "import-2e159b6e-656b-4b81-be32-b6823969b676",
+  "name": "Short chino de algodón beige",
+  "part": "lowerbody",
+  "garmentType": "shorts",
+  "color": "#a89b88",
+  "secondaryColor": null,
+  "palette": [
+   "#a89b88"
+  ],
+  "tags": [
+   "shorts chinos"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-2e159b6e-656b-4b81-be32-b6823969b676-garment.png",
+  "thumbnail": "/api/import/library/import-2e159b6e-656b-4b81-be32-b6823969b676-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "36",
+   "38",
+   "40",
+   "42",
+   "44"
+  ],
+  "description": "Short chino femenino en tono beige claro, diseñado con calce ajustado, bolsillos laterales, presillas para cinturón y detalle de dobladillo en el ruedo. Ideal para lograr un look casual y fresco de verano.",
+  "price": null,
+  "importBatch": {
+   "id": "2ba4e4ce-b8ff-4f45-a5d9-3ba226de404f",
+   "name": "ACTIVE BASIC"
+  },
+  "importedAt": "2026-09-30T16:20:37.798Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Short chino de algodón beige",
+   "categoria": "bottoms",
+   "categoriaInterna": "lowerbody",
+   "garmentType": "shorts",
+   "gender": "mujer",
+   "subcategoria": "shorts chinos",
+   "colores": [
+    "#a89b88"
+   ],
+   "descripcion": "Short chino femenino en tono beige claro, diseñado con calce ajustado, bolsillos laterales, presillas para cinturón y detalle de dobladillo en el ruedo. Ideal para lograr un look casual y fresco de verano.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "short chino beige",
+   "prendasSecundarias": [
+    "remera blanca",
+    "cinturón marrón",
+    "zapatillas blancas"
+   ]
+  }
+ },
+ {
+  "id": "import-03b9ede3-233c-4723-a598-6cf3159521af",
+  "name": "Pantalón jean recto verde oliva",
+  "part": "lowerbody",
+  "garmentType": "jeans",
+  "color": "#9a9d82",
+  "secondaryColor": null,
+  "palette": [
+   "#9a9d82"
+  ],
+  "tags": [
+   "jeans rectos"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-03b9ede3-233c-4723-a598-6cf3159521af-garment.png",
+  "thumbnail": "/api/import/library/import-03b9ede3-233c-4723-a598-6cf3159521af-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "36",
+   "38",
+   "40",
+   "42",
+   "44"
+  ],
+  "description": "Pantalón de jean estilo wide leg o recto en tono verde seco, de tiro alto con cinco bolsillos tradicionales y cierre con botón.",
+  "price": null,
+  "importBatch": {
+   "id": "7ab2f833-4c08-4c0d-af93-9aaf7ffda480",
+   "name": "BLUPEPPER SS26"
+  },
+  "importedAt": "2026-09-30T16:20:48.364Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Pantalón jean recto verde oliva",
+   "categoria": "bottoms",
+   "categoriaInterna": "lowerbody",
+   "garmentType": "jeans",
+   "gender": "mujer",
+   "subcategoria": "Jeans rectos",
+   "colores": [
+    "#9a9d82"
+   ],
+   "descripcion": "Pantalón de jean estilo wide leg o recto en tono verde seco, de tiro alto con cinco bolsillos tradicionales y cierre con botón.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "pantalón jean verde oliva",
+   "prendasSecundarias": [
+    "sandalias plataformas blancas"
+   ]
+  }
+ },
+ {
+  "id": "import-17065050-815e-4e43-8048-a425fabbb668",
+  "name": "Top de lino con lazos laterales verde oliva",
+  "part": "upperbody",
+  "garmentType": "top",
+  "color": "#7e8b6b",
+  "secondaryColor": null,
+  "palette": [
+   "#7e8b6b"
+  ],
+  "tags": [
+   "musculosas y tops"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-17065050-815e-4e43-8048-a425fabbb668-garment.png",
+  "thumbnail": "/api/import/library/import-17065050-815e-4e43-8048-a425fabbb668-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Top confeccionado en tela rústica tipo lino en tono verde oliva. Presenta cuello a la base, diseño sin mangas, muescas laterales con detalle de lazos para atar y un calce holgado ideal para los días de calor.",
+  "price": null,
+  "importBatch": {
+   "id": "7ab2f833-4c08-4c0d-af93-9aaf7ffda480",
+   "name": "BLUPEPPER SS26"
+  },
+  "importedAt": "2026-09-30T16:20:53.636Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Top de lino con lazos laterales verde oliva",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "top",
+   "gender": "mujer",
+   "subcategoria": "Musculosas y tops",
+   "colores": [
+    "#7e8b6b"
+   ],
+   "descripcion": "Top confeccionado en tela rústica tipo lino en tono verde oliva. Presenta cuello a la base, diseño sin mangas, muescas laterales con detalle de lazos para atar y un calce holgado ideal para los días de calor.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "top sin mangas de lino verde oliva",
+   "prendasSecundarias": [
+    "pantalón holgado de lino",
+    "sandalias chatas",
+    "collar de caracoles"
+   ]
+  }
+ },
+ {
+  "id": "import-3296408b-446e-44f6-b2eb-3b92a2a395fe",
+  "name": "Vestido largo strapless crema",
+  "part": "upperbody",
+  "garmentType": "dress",
+  "color": "#f5f2e6",
+  "secondaryColor": null,
+  "palette": [
+   "#f5f2e6"
+  ],
+  "tags": [
+   "vestidos"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-3296408b-446e-44f6-b2eb-3b92a2a395fe-garment.png",
+  "thumbnail": "/api/import/library/import-3296408b-446e-44f6-b2eb-3b92a2a395fe-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Vestido largo de estilo strapless en tono crema, compuesto por un corpiño acanalado elastizado y una falda amplia en capas con detalles de puntilla. Ideal para un look fresco y relajado de verano.",
+  "price": null,
+  "importBatch": {
+   "id": "7ab2f833-4c08-4c0d-af93-9aaf7ffda480",
+   "name": "BLUPEPPER SS26"
+  },
+  "importedAt": "2026-09-30T16:21:02.795Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Vestido largo strapless crema",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "dress",
+   "gender": "mujer",
+   "subcategoria": "Vestidos",
+   "colores": [
+    "#f5f2e6"
+   ],
+   "descripcion": "Vestido largo de estilo strapless en tono crema, compuesto por un corpiño acanalado elastizado y una falda amplia en capas con detalles de puntilla. Ideal para un look fresco y relajado de verano.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": false,
+   "prendaPrincipal": "vestido largo strapless",
+   "prendasSecundarias": [
+    "collar con dijes",
+    "aros"
+   ]
+  }
+ },
+ {
+  "id": "import-958813d3-20c2-48f6-9166-5646ea6ab588",
+  "name": "Top tejido abotonado crudo",
+  "part": "upperbody",
+  "garmentType": "top",
+  "color": "#f3f1ec",
+  "secondaryColor": null,
+  "palette": [
+   "#f3f1ec"
+  ],
+  "tags": [
+   "tops tejidos"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-958813d3-20c2-48f6-9166-5646ea6ab588-garment.png",
+  "thumbnail": "/api/import/library/import-958813d3-20c2-48f6-9166-5646ea6ab588-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Top tejido de punto estructurado en tono crudo, con escote redondo, mangas cortas sisa y frente abotonado con botones metálicos labrados.",
+  "price": null,
+  "importBatch": {
+   "id": "7ab2f833-4c08-4c0d-af93-9aaf7ffda480",
+   "name": "BLUPEPPER SS26"
+  },
+  "importedAt": "2026-09-30T16:20:47.400Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Top tejido abotonado crudo",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "top",
+   "gender": "mujer",
+   "subcategoria": "Tops tejidos",
+   "colores": [
+    "#f3f1ec"
+   ],
+   "descripcion": "Top tejido de punto estructurado en tono crudo, con escote redondo, mangas cortas sisa y frente abotonado con botones metálicos labrados.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "top tejido crudo",
+   "prendasSecundarias": [
+    "jean wide leg",
+    "cartera blanca",
+    "sandalias",
+    "aros dorados"
+   ]
+  }
+ },
+ {
+  "id": "import-7275ab8b-9a73-452c-a0b2-3b0a994f2c52",
+  "name": "Bota texana con estrellas negra",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#1a1a1a",
+  "secondaryColor": "#f7f7f5",
+  "palette": [
+   "#1a1a1a",
+   "#f7f7f5"
+  ],
+  "tags": [
+   "bota texana"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-7275ab8b-9a73-452c-a0b2-3b0a994f2c52-garment.png",
+  "thumbnail": "/api/import/library/import-7275ab8b-9a73-452c-a0b2-3b0a994f2c52-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Bota texana de caña media con tachas de estrellas metálicas, puntera en punta y taco de madera. Se muestra en variantes negro y blanco. Protagonista de cualquier look.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:20:33.618Z",
+  "analysis": {
+   "archivo": "e216888f-af1c-41b7-880f-53b36e6ea9d5.jpg",
+   "nombre": "Bota texana con estrellas negra",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "bota texana",
+   "colores": [
+    "#1a1a1a",
+    "#f7f7f5"
+   ],
+   "descripcion": "Bota texana de caña media con tachas de estrellas metálicas, puntera en punta y taco de madera. Se muestra en variantes negro y blanco. Protagonista de cualquier look.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "dos botas completas en distintos colores",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-5f89d9b3-c55a-45d8-9e49-611286bd1592",
+  "name": "Mule alpargata negra",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#1a1a1a",
+  "secondaryColor": null,
+  "palette": [
+   "#1a1a1a"
+  ],
+  "tags": [
+   "mule alpargata"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-5f89d9b3-c55a-45d8-9e49-611286bd1592-garment.png",
+  "thumbnail": "/api/import/library/import-5f89d9b3-c55a-45d8-9e49-611286bd1592-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Mule de puntera cerrada con base de yute tipo alpargata y talón descubierto. Fresca y fácil de calzar.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:52.133Z",
+  "analysis": {
+   "archivo": "20824963-3453-48dc-96b2-09f8b736f657.jpg",
+   "nombre": "Mule alpargata negra",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "mule alpargata",
+   "colores": [
+    "#1a1a1a"
+   ],
+   "descripcion": "Mule de puntera cerrada con base de yute tipo alpargata y talón descubierto. Fresca y fácil de calzar.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par completo visto desde arriba",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-ee9a94b7-5fd5-4995-bfca-89c752e07a62",
+  "name": "Mule alpargata verde agua",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#b7cfb0",
+  "secondaryColor": "#efe6d8",
+  "palette": [
+   "#b7cfb0",
+   "#efe6d8",
+   "#1a1a1a"
+  ],
+  "tags": [
+   "mule alpargata"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-ee9a94b7-5fd5-4995-bfca-89c752e07a62-garment.png",
+  "thumbnail": "/api/import/library/import-ee9a94b7-5fd5-4995-bfca-89c752e07a62-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Mule de puntera cerrada con base de yute tipo alpargata y talón descubierto. Se muestra en variantes verde agua, crudo y negro. Fresca y fácil de calzar.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:52.915Z",
+  "analysis": {
+   "archivo": "41177f9b-dd3b-43bb-aeae-518ef5d75de2.jpg",
+   "nombre": "Mule alpargata verde agua",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "mule alpargata",
+   "colores": [
+    "#b7cfb0",
+    "#efe6d8",
+    "#1a1a1a"
+   ],
+   "descripcion": "Mule de puntera cerrada con base de yute tipo alpargata y talón descubierto. Se muestra en variantes verde agua, crudo y negro. Fresca y fácil de calzar.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "tres mules completas sobre bolsa de yute",
+   "prendasSecundarias": [
+    "bolsa de yute",
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-5c178b47-8ba0-42da-95bc-47f87982d065",
+  "name": "Mule alpargata verde agua",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#b7cfb0",
+  "secondaryColor": null,
+  "palette": [
+   "#b7cfb0"
+  ],
+  "tags": [
+   "mule alpargata"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-5c178b47-8ba0-42da-95bc-47f87982d065-garment.png",
+  "thumbnail": "/api/import/library/import-5c178b47-8ba0-42da-95bc-47f87982d065-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Mule de puntera cerrada con base de yute tipo alpargata y talón descubierto. Fresca y fácil de calzar.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:56.564Z",
+  "analysis": {
+   "archivo": "bc26a60c-c027-4b74-abc1-387c824a0f34.jpg",
+   "nombre": "Mule alpargata verde agua",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "mule alpargata",
+   "colores": [
+    "#b7cfb0"
+   ],
+   "descripcion": "Mule de puntera cerrada con base de yute tipo alpargata y talón descubierto. Fresca y fácil de calzar.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "mule individual completa de perfil",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-4f7defab-8879-4886-80eb-01b561508095",
+  "name": "Mule alpargata verde agua",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#b7cfb0",
+  "secondaryColor": null,
+  "palette": [
+   "#b7cfb0"
+  ],
+  "tags": [
+   "mule alpargata"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-4f7defab-8879-4886-80eb-01b561508095-garment.png",
+  "thumbnail": "/api/import/library/import-4f7defab-8879-4886-80eb-01b561508095-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Mule de puntera cerrada con base de yute tipo alpargata y talón descubierto. Fresca y fácil de calzar.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:57.839Z",
+  "analysis": {
+   "archivo": "e88dac34-164e-4612-a590-b9e1971c5c16.jpg",
+   "nombre": "Mule alpargata verde agua",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "mule alpargata",
+   "colores": [
+    "#b7cfb0"
+   ],
+   "descripcion": "Mule de puntera cerrada con base de yute tipo alpargata y talón descubierto. Fresca y fácil de calzar.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par completo sobre bolsa de yute",
+   "prendasSecundarias": [
+    "bolsa de yute"
+   ]
+  }
+ },
+ {
+  "id": "import-5fa60bfd-ef01-4e91-a397-04b621f07a0e",
+  "name": "Sandalia cuña de yute beige",
+  "part": "shoes",
+  "garmentType": "heels",
+  "color": "#dcc7ae",
+  "secondaryColor": null,
+  "palette": [
+   "#dcc7ae"
+  ],
+  "tags": [
+   "sandalia plataforma cuña"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-5fa60bfd-ef01-4e91-a397-04b621f07a0e-garment.png",
+  "thumbnail": "/api/import/library/import-5fa60bfd-ef01-4e91-a397-04b621f07a0e-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Sandalia con cuña forrada en yute, tiras cruzadas al frente y pulsera al tobillo con hebilla. Ideal para looks de verano.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:52.963Z",
+  "analysis": {
+   "archivo": "4226b7ea-9039-4da7-b53e-a8680aea5e26.jpg",
+   "nombre": "Sandalia cuña de yute beige",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "heels",
+   "gender": "mujer",
+   "subcategoria": "sandalia plataforma cuña",
+   "colores": [
+    "#dcc7ae"
+   ],
+   "descripcion": "Sandalia con cuña forrada en yute, tiras cruzadas al frente y pulsera al tobillo con hebilla. Ideal para looks de verano.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par completo sobre fondo blanco",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-f6b907c5-0b82-474a-b012-3edfe4d61d17",
+  "name": "Sandalia cuña de yute beige",
+  "part": "shoes",
+  "garmentType": "heels",
+  "color": "#dcc7ae",
+  "secondaryColor": "#1a1a1a",
+  "palette": [
+   "#dcc7ae",
+   "#1a1a1a",
+   "#d4b77a"
+  ],
+  "tags": [
+   "sandalia plataforma cuña"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-f6b907c5-0b82-474a-b012-3edfe4d61d17-garment.png",
+  "thumbnail": "/api/import/library/import-f6b907c5-0b82-474a-b012-3edfe4d61d17-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Sandalia con cuña forrada en yute, tiras cruzadas al frente y pulsera al tobillo con hebilla. Se muestra en variantes beige, negro y dorado. Ideal para looks de verano.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:55.142Z",
+  "analysis": {
+   "archivo": "913428cc-773c-480a-abc0-dcb665b00904.jpg",
+   "nombre": "Sandalia cuña de yute beige",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "heels",
+   "gender": "mujer",
+   "subcategoria": "sandalia plataforma cuña",
+   "colores": [
+    "#dcc7ae",
+    "#1a1a1a",
+    "#d4b77a"
+   ],
+   "descripcion": "Sandalia con cuña forrada en yute, tiras cruzadas al frente y pulsera al tobillo con hebilla. Se muestra en variantes beige, negro y dorado. Ideal para looks de verano.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "tres sandalias cuña completas",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-7817b287-b98c-40f2-934a-7cb498b757ae",
+  "name": "Sandalia cuña de yute beige",
+  "part": "shoes",
+  "garmentType": "heels",
+  "color": "#dcc7ae",
+  "secondaryColor": "#1a1a1a",
+  "palette": [
+   "#dcc7ae",
+   "#1a1a1a"
+  ],
+  "tags": [
+   "sandalia plataforma cuña"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-7817b287-b98c-40f2-934a-7cb498b757ae-garment.png",
+  "thumbnail": "/api/import/library/import-7817b287-b98c-40f2-934a-7cb498b757ae-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Sandalia con cuña forrada en yute, tiras cruzadas al frente y pulsera al tobillo con hebilla. Se muestra en variantes beige y negro. Ideal para looks de verano.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:55.523Z",
+  "analysis": {
+   "archivo": "a44fcc4d-b047-40b8-8132-cd976b4068e3.jpg",
+   "nombre": "Sandalia cuña de yute beige",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "heels",
+   "gender": "mujer",
+   "subcategoria": "sandalia plataforma cuña",
+   "colores": [
+    "#dcc7ae",
+    "#1a1a1a"
+   ],
+   "descripcion": "Sandalia con cuña forrada en yute, tiras cruzadas al frente y pulsera al tobillo con hebilla. Se muestra en variantes beige y negro. Ideal para looks de verano.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "dos sandalias cuña completas",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-797457c4-9461-467c-9cb5-748c497fb558",
+  "name": "Sandalia cuña de yute dorada",
+  "part": "shoes",
+  "garmentType": "heels",
+  "color": "#d4b77a",
+  "secondaryColor": "#1a1a1a",
+  "palette": [
+   "#d4b77a",
+   "#1a1a1a"
+  ],
+  "tags": [
+   "sandalia plataforma cuña"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-797457c4-9461-467c-9cb5-748c497fb558-garment.png",
+  "thumbnail": "/api/import/library/import-797457c4-9461-467c-9cb5-748c497fb558-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Sandalia con cuña forrada en yute, tiras cruzadas al frente y pulsera al tobillo con hebilla. Se muestra en variantes dorado y negro. Ideal para looks de verano.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:55.460Z",
+  "analysis": {
+   "archivo": "a152fec0-8ec2-49cc-a121-95712a138a3d.jpg",
+   "nombre": "Sandalia cuña de yute dorada",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "heels",
+   "gender": "mujer",
+   "subcategoria": "sandalia plataforma cuña",
+   "colores": [
+    "#d4b77a",
+    "#1a1a1a"
+   ],
+   "descripcion": "Sandalia con cuña forrada en yute, tiras cruzadas al frente y pulsera al tobillo con hebilla. Se muestra en variantes dorado y negro. Ideal para looks de verano.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "dos sandalias cuña completas",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-21219c55-4ff6-4f78-90db-6ccc3b986920",
+  "name": "Chinela calada chocolate",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#5c3a2a",
+  "secondaryColor": "#d9a583",
+  "palette": [
+   "#5c3a2a",
+   "#d9a583"
+  ],
+  "tags": [
+   "chinela calada"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-21219c55-4ff6-4f78-90db-6ccc3b986920-garment.png",
+  "thumbnail": "/api/import/library/import-21219c55-4ff6-4f78-90db-6ccc3b986920-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Chinela plana de puntera cuadrada con faja calada de diseño floral. Se muestra en variantes chocolate y nude. Delicada y fácil de combinar.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:53.182Z",
+  "analysis": {
+   "archivo": "47073151-94a6-49c3-a4d4-d2e2851c7787.jpg",
+   "nombre": "Chinela calada chocolate",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "chinela calada",
+   "colores": [
+    "#5c3a2a",
+    "#d9a583"
+   ],
+   "descripcion": "Chinela plana de puntera cuadrada con faja calada de diseño floral. Se muestra en variantes chocolate y nude. Delicada y fácil de combinar.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par en dos colores completo",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-82f8d287-13d3-4e75-873d-773c493804c5",
+  "name": "Chinela calada chocolate",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#5c3a2a",
+  "secondaryColor": "#d9a583",
+  "palette": [
+   "#5c3a2a",
+   "#d9a583"
+  ],
+  "tags": [
+   "chinela calada"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-82f8d287-13d3-4e75-873d-773c493804c5-garment.png",
+  "thumbnail": "/api/import/library/import-82f8d287-13d3-4e75-873d-773c493804c5-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Chinela plana de puntera cuadrada con faja calada de diseño floral. Se muestra en variantes chocolate y nude. Delicada y fácil de combinar.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:54.711Z",
+  "analysis": {
+   "archivo": "7a474ef8-0708-45a4-8370-7194a1b25251.jpg",
+   "nombre": "Chinela calada chocolate",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "chinela calada",
+   "colores": [
+    "#5c3a2a",
+    "#d9a583"
+   ],
+   "descripcion": "Chinela plana de puntera cuadrada con faja calada de diseño floral. Se muestra en variantes chocolate y nude. Delicada y fácil de combinar.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par en dos colores completo",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-fa170df0-e623-4fb5-ad1c-1d368b295551",
+  "name": "Chinela calada suela",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#a8633a",
+  "secondaryColor": "#1a1a1a",
+  "palette": [
+   "#a8633a",
+   "#1a1a1a"
+  ],
+  "tags": [
+   "chinela calada"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-fa170df0-e623-4fb5-ad1c-1d368b295551-garment.png",
+  "thumbnail": "/api/import/library/import-fa170df0-e623-4fb5-ad1c-1d368b295551-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Chinela plana de puntera cuadrada con faja calada de diseño floral. Se muestra en variantes suela y negro. Delicada y fácil de combinar.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:52.866Z",
+  "analysis": {
+   "archivo": "4075adc4-63f9-4793-8690-479dd77bddca.jpg",
+   "nombre": "Chinela calada suela",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "chinela calada",
+   "colores": [
+    "#a8633a",
+    "#1a1a1a"
+   ],
+   "descripcion": "Chinela plana de puntera cuadrada con faja calada de diseño floral. Se muestra en variantes suela y negro. Delicada y fácil de combinar.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par en dos colores completo",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-8a38fd2c-115d-42c2-bb52-76c267b3fadb",
+  "name": "Chinela calada dorada",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#d4b77a",
+  "secondaryColor": "#f7f7f5",
+  "palette": [
+   "#d4b77a",
+   "#f7f7f5"
+  ],
+  "tags": [
+   "chinela calada"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-8a38fd2c-115d-42c2-bb52-76c267b3fadb-garment.png",
+  "thumbnail": "/api/import/library/import-8a38fd2c-115d-42c2-bb52-76c267b3fadb-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Chinela plana de puntera cuadrada con faja calada de diseño floral. Se muestra en variantes dorado y blanco. Delicada y fácil de combinar.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:56.771Z",
+  "analysis": {
+   "archivo": "bd5e3469-e45e-40a3-83a4-8db6cadcbc7d.jpg",
+   "nombre": "Chinela calada dorada",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "chinela calada",
+   "colores": [
+    "#d4b77a",
+    "#f7f7f5"
+   ],
+   "descripcion": "Chinela plana de puntera cuadrada con faja calada de diseño floral. Se muestra en variantes dorado y blanco. Delicada y fácil de combinar.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par en dos colores completo",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-2ef455ba-eb93-4f2f-b22f-a64bf9924ac9",
+  "name": "Sandalia de taco fino nude",
+  "part": "shoes",
+  "garmentType": "heels",
+  "color": "#d9a583",
+  "secondaryColor": "#f7f7f5",
+  "palette": [
+   "#d9a583",
+   "#f7f7f5"
+  ],
+  "tags": [
+   "sandalia taco fino"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-2ef455ba-eb93-4f2f-b22f-a64bf9924ac9-garment.png",
+  "thumbnail": "/api/import/library/import-2ef455ba-eb93-4f2f-b22f-a64bf9924ac9-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Sandalia de puntera cuadrada con faja delantera, pulsera al tobillo con hebilla y taco fino medio. Se muestra en variantes nude y blanco. Elegante para eventos y salidas.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:55.790Z",
+  "analysis": {
+   "archivo": "ad8535ca-fdf3-4b87-8f95-19fb81034ead.jpg",
+   "nombre": "Sandalia de taco fino nude",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "heels",
+   "gender": "mujer",
+   "subcategoria": "sandalia taco fino",
+   "colores": [
+    "#d9a583",
+    "#f7f7f5"
+   ],
+   "descripcion": "Sandalia de puntera cuadrada con faja delantera, pulsera al tobillo con hebilla y taco fino medio. Se muestra en variantes nude y blanco. Elegante para eventos y salidas.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par en dos colores completo",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-21689f70-8331-4cfa-ae11-b23e72eef11e",
+  "name": "Bota texana caña alta marrón",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#8a4f2a",
+  "secondaryColor": "#b5aaa2",
+  "palette": [
+   "#8a4f2a",
+   "#b5aaa2"
+  ],
+  "tags": [
+   "bota texana caña alta"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-21689f70-8331-4cfa-ae11-b23e72eef11e-garment.png",
+  "thumbnail": "/api/import/library/import-21689f70-8331-4cfa-ae11-b23e72eef11e-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Bota texana de caña alta en gamuza con puntera metálica y taco de madera. Se muestra en variantes marrón y gris topo. Un clásico con aire western.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:57.777Z",
+  "analysis": {
+   "archivo": "e370e943-42cc-4c2e-a1d7-c85fba6c2dff.jpg",
+   "nombre": "Bota texana caña alta marrón",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "bota texana caña alta",
+   "colores": [
+    "#8a4f2a",
+    "#b5aaa2"
+   ],
+   "descripcion": "Bota texana de caña alta en gamuza con puntera metálica y taco de madera. Se muestra en variantes marrón y gris topo. Un clásico con aire western.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "dos botas completas en distintos colores",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-85e984b9-4d5e-491e-8997-ef746311218a",
+  "name": "Chinela con caracoles terracota",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#d2a08f",
+  "secondaryColor": "#efe6d8",
+  "palette": [
+   "#d2a08f",
+   "#efe6d8"
+  ],
+  "tags": [
+   "chinela bordada"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-85e984b9-4d5e-491e-8997-ef746311218a-garment.png",
+  "thumbnail": "/api/import/library/import-85e984b9-4d5e-491e-8997-ef746311218a-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Chinela plana con faja tejida con flecos, perlitas y caracoles aplicados. Se muestra en variantes terracota y crudo. Espíritu playero y artesanal.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:55.047Z",
+  "analysis": {
+   "archivo": "8b26ba7c-51bc-43d7-91fa-46bb4aad9d25.jpg",
+   "nombre": "Chinela con caracoles terracota",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "chinela bordada",
+   "colores": [
+    "#d2a08f",
+    "#efe6d8"
+   ],
+   "descripcion": "Chinela plana con faja tejida con flecos, perlitas y caracoles aplicados. Se muestra en variantes terracota y crudo. Espíritu playero y artesanal.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par en dos variantes completo",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-dcaf9551-10c3-423b-96e9-8788e42b8372",
+  "name": "Chinela con caracoles natural",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#d8c29a",
+  "secondaryColor": "#efe6d8",
+  "palette": [
+   "#d8c29a",
+   "#efe6d8"
+  ],
+  "tags": [
+   "chinela bordada"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-dcaf9551-10c3-423b-96e9-8788e42b8372-garment.png",
+  "thumbnail": "/api/import/library/import-dcaf9551-10c3-423b-96e9-8788e42b8372-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Chinela plana con faja tejida con flecos, perlitas y caracoles aplicados. Se muestra en variantes natural y crudo. Espíritu playero y artesanal.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:55.365Z",
+  "analysis": {
+   "archivo": "9be7502f-af48-439f-af52-3fee829cd71f.jpg",
+   "nombre": "Chinela con caracoles natural",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "chinela bordada",
+   "colores": [
+    "#d8c29a",
+    "#efe6d8"
+   ],
+   "descripcion": "Chinela plana con faja tejida con flecos, perlitas y caracoles aplicados. Se muestra en variantes natural y crudo. Espíritu playero y artesanal.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par en dos variantes completo",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-2fbfcde7-9b48-47e2-ac20-0becd76e2d3a",
+  "name": "Chinela con caracoles cruda",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#efe6d8",
+  "secondaryColor": "#d8c29a",
+  "palette": [
+   "#efe6d8",
+   "#d8c29a"
+  ],
+  "tags": [
+   "chinela bordada"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-2fbfcde7-9b48-47e2-ac20-0becd76e2d3a-garment.png",
+  "thumbnail": "/api/import/library/import-2fbfcde7-9b48-47e2-ac20-0becd76e2d3a-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Chinela plana con faja tejida con flecos, perlitas y caracoles aplicados. Se muestra en variantes crudo y natural. Espíritu playero y artesanal.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:52.327Z",
+  "analysis": {
+   "archivo": "2ba3fc28-22d8-4854-9a55-f1ffa37dae3d.jpg",
+   "nombre": "Chinela con caracoles cruda",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "chinela bordada",
+   "colores": [
+    "#efe6d8",
+    "#d8c29a"
+   ],
+   "descripcion": "Chinela plana con faja tejida con flecos, perlitas y caracoles aplicados. Se muestra en variantes crudo y natural. Espíritu playero y artesanal.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par en dos variantes completo",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-a7321fb5-a7dd-4edd-a00f-2a5fca6ccc13",
+  "name": "Chinela con caracoles cruda",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#efe6d8",
+  "secondaryColor": "#d8c29a",
+  "palette": [
+   "#efe6d8",
+   "#d8c29a"
+  ],
+  "tags": [
+   "chinela bordada"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-a7321fb5-a7dd-4edd-a00f-2a5fca6ccc13-garment.png",
+  "thumbnail": "/api/import/library/import-a7321fb5-a7dd-4edd-a00f-2a5fca6ccc13-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Chinela plana con faja tejida con flecos, perlitas y caracoles aplicados. Se muestra en variantes crudo y natural. Espíritu playero y artesanal.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:55.840Z",
+  "analysis": {
+   "archivo": "adf22173-0122-4402-9ed4-23912a64a246.jpg",
+   "nombre": "Chinela con caracoles cruda",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "chinela bordada",
+   "colores": [
+    "#efe6d8",
+    "#d8c29a"
+   ],
+   "descripcion": "Chinela plana con faja tejida con flecos, perlitas y caracoles aplicados. Se muestra en variantes crudo y natural. Espíritu playero y artesanal.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par en dos variantes completo",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-ee7e4864-8c80-4070-bb94-cfc0dc508b6d",
+  "name": "Chinela con caracoles cruda",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#efe6d8",
+  "secondaryColor": "#d2a08f",
+  "palette": [
+   "#efe6d8",
+   "#d2a08f"
+  ],
+  "tags": [
+   "chinela bordada"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-ee7e4864-8c80-4070-bb94-cfc0dc508b6d-garment.png",
+  "thumbnail": "/api/import/library/import-ee7e4864-8c80-4070-bb94-cfc0dc508b6d-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Chinela plana con faja tejida con flecos, perlitas y caracoles aplicados. Se muestra en variantes crudo y terracota. Espíritu playero y artesanal.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:58.033Z",
+  "analysis": {
+   "archivo": "f0128ced-23ee-4c93-872c-43dd17713894.jpg",
+   "nombre": "Chinela con caracoles cruda",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "chinela bordada",
+   "colores": [
+    "#efe6d8",
+    "#d2a08f"
+   ],
+   "descripcion": "Chinela plana con faja tejida con flecos, perlitas y caracoles aplicados. Se muestra en variantes crudo y terracota. Espíritu playero y artesanal.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "par en dos variantes completo",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-07422eba-7324-4bda-9bcb-691129d0ea89",
+  "name": "Sandalia de taco bajo con tira en T verde pistacho",
+  "part": "shoes",
+  "garmentType": "heels",
+  "color": "#c9d6a8",
+  "secondaryColor": null,
+  "palette": [
+   "#c9d6a8"
+  ],
+  "tags": [
+   "sandalia taco bajo"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-07422eba-7324-4bda-9bcb-691129d0ea89-garment.png",
+  "thumbnail": "/api/import/library/import-07422eba-7324-4bda-9bcb-691129d0ea89-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Sandalia de puntera cuadrada con tira en T, pulsera al tobillo con hebilla y taquito bajo. Cómoda y súper versátil para el día.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:54.792Z",
+  "analysis": {
+   "archivo": "7cff9765-1862-41b3-9376-c0397c6996d2.jpg",
+   "nombre": "Sandalia de taco bajo con tira en T verde pistacho",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "heels",
+   "gender": "mujer",
+   "subcategoria": "sandalia taco bajo",
+   "colores": [
+    "#c9d6a8"
+   ],
+   "descripcion": "Sandalia de puntera cuadrada con tira en T, pulsera al tobillo con hebilla y taquito bajo. Cómoda y súper versátil para el día.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "sandalia individual completa de perfil",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-bc6d4698-1746-4178-b7ef-0d90f93b72fa",
+  "name": "Sandalia de taco bajo con tira en T cruda",
+  "part": "shoes",
+  "garmentType": "heels",
+  "color": "#efe6d8",
+  "secondaryColor": "#c9d6a8",
+  "palette": [
+   "#efe6d8",
+   "#c9d6a8"
+  ],
+  "tags": [
+   "sandalia taco bajo"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-bc6d4698-1746-4178-b7ef-0d90f93b72fa-garment.png",
+  "thumbnail": "/api/import/library/import-bc6d4698-1746-4178-b7ef-0d90f93b72fa-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Sandalia de puntera cuadrada con tira en T, pulsera al tobillo con hebilla y taquito bajo. Se muestra en variantes crudo y verde. Cómoda y súper versátil para el día.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:54.007Z",
+  "analysis": {
+   "archivo": "6039934d-32fc-4796-9728-ffe7500ccb33.jpg",
+   "nombre": "Sandalia de taco bajo con tira en T cruda",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "heels",
+   "gender": "mujer",
+   "subcategoria": "sandalia taco bajo",
+   "colores": [
+    "#efe6d8",
+    "#c9d6a8"
+   ],
+   "descripcion": "Sandalia de puntera cuadrada con tira en T, pulsera al tobillo con hebilla y taquito bajo. Se muestra en variantes crudo y verde. Cómoda y súper versátil para el día.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "dos sandalias completas en distintos colores",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-956f40a8-3dd4-49af-b18b-82ec72d5e015",
+  "name": "Sandalia de taco bajo con tira en T cruda",
+  "part": "shoes",
+  "garmentType": "heels",
+  "color": "#efe6d8",
+  "secondaryColor": "#c9a277",
+  "palette": [
+   "#efe6d8",
+   "#c9a277"
+  ],
+  "tags": [
+   "sandalia taco bajo"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-956f40a8-3dd4-49af-b18b-82ec72d5e015-garment.png",
+  "thumbnail": "/api/import/library/import-956f40a8-3dd4-49af-b18b-82ec72d5e015-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Sandalia de puntera cuadrada con tira en T, pulsera al tobillo con hebilla y taquito bajo. Se muestra en variantes crudo y camel. Cómoda y súper versátil para el día.",
+  "price": null,
+  "importBatch": {
+   "id": "1d3337cd-66a9-4e74-9f1a-4afb928bbfb7",
+   "name": "CCOCCI SS26"
+  },
+  "importedAt": "2026-09-30T16:02:57.510Z",
+  "analysis": {
+   "archivo": "d69239a2-0361-4fcb-9413-13f629d9a09e.jpg",
+   "nombre": "Sandalia de taco bajo con tira en T cruda",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "heels",
+   "gender": "mujer",
+   "subcategoria": "sandalia taco bajo",
+   "colores": [
+    "#efe6d8",
+    "#c9a277"
+   ],
+   "descripcion": "Sandalia de puntera cuadrada con tira en T, pulsera al tobillo con hebilla y taquito bajo. Se muestra en variantes crudo y camel. Cómoda y súper versátil para el día.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "dos sandalias completas en distintos colores",
+   "prendasSecundarias": [
+    "misma prenda en otros colores"
+   ]
+  }
+ },
+ {
+  "id": "import-43155a3f-864b-4cea-87ad-cf92ec8a4046",
+  "name": "Sandalias bajas negras con ojales metálicos",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#b0b0b0",
+  "secondaryColor": null,
+  "palette": [
+   "#b0b0b0"
+  ],
+  "tags": [
+   "sandalias"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-43155a3f-864b-4cea-87ad-cf92ec8a4046-garment.png",
+  "thumbnail": "/api/import/library/import-43155a3f-864b-4cea-87ad-cf92ec8a4046-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Sandalias bajas de charol en color negro con doble faja con ojales metálicos plateados y plantilla cuadrada. Un diseño moderno y cómodo, perfecto para combinar con looks urbanos de verano.",
+  "price": null,
+  "importBatch": {
+   "id": "23ca8627-fa61-4b9c-827b-83b23343291e",
+   "name": "CJ SHOES"
+  },
+  "importedAt": "2026-09-30T16:02:59.036Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Sandalias bajas negras con ojales metálicos",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "Sandalias",
+   "colores": [
+    "#b0b0b0"
+   ],
+   "descripcion": "Sandalias bajas de charol en color negro con doble faja con ojales metálicos plateados y plantilla cuadrada. Un diseño moderno y cómodo, perfecto para combinar con looks urbanos de verano.",
+   "recorte": null,
+   "confianza": 0.98,
+   "prendaCompleta": false,
+   "prendaPrincipal": "sandalias bajas",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-50775049-e5ae-4608-9e20-b99e5a0d39c2",
+  "name": "Ojotas de goma con apliques marinos y strass",
+  "part": "shoes",
+  "garmentType": "shoes",
+  "color": "#e3daac",
+  "secondaryColor": "#c99e79",
+  "palette": [
+   "#e3daac",
+   "#c99e79",
+   "#f4efe0"
+  ],
+  "tags": [
+   "ojotas"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-50775049-e5ae-4608-9e20-b99e5a0d39c2-garment.png",
+  "thumbnail": "/api/import/library/import-50775049-e5ae-4608-9e20-b99e5a0d39c2-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40"
+  ],
+  "description": "Ojotas playeras de goma en tono beige, diseñadas con tiras decoradas con dijes marinos, estrellas de mar con detalle de perlas, caracoles y tiras de strass brillante. Ideales para sumar un toque glamoroso a tus looks de verano.",
+  "price": null,
+  "importBatch": {
+   "id": "9527de38-c28a-41c6-b276-f8c96ca162ee",
+   "name": "LEMONADE SHOES SS26"
+  },
+  "importedAt": "2026-09-30T16:21:32.300Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Ojotas de goma con apliques marinos y strass",
+   "categoria": "shoes",
+   "categoriaInterna": "shoes",
+   "garmentType": "shoes",
+   "gender": "mujer",
+   "subcategoria": "Ojotas",
+   "colores": [
+    "#e3daac",
+    "#c99e79",
+    "#f4efe0"
+   ],
+   "descripcion": "Ojotas playeras de goma en tono beige, diseñadas con tiras decoradas con dijes marinos, estrellas de mar con detalle de perlas, caracoles y tiras de strass brillante. Ideales para sumar un toque glamoroso a tus looks de verano.",
+   "recorte": null,
+   "confianza": 0.98,
+   "prendaCompleta": true,
+   "prendaPrincipal": "ojota",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-bf939d60-cc28-4034-b4d6-583b425a83a9",
+  "name": "Sombrero Texano Calado de Paja",
+  "part": "accessories_up",
+  "garmentType": "hat",
+  "color": "#795738",
+  "secondaryColor": "#212227",
+  "palette": [
+   "#795738",
+   "#212227",
+   "#e1d2bd"
+  ],
+  "tags": [
+   "sombreros"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-bf939d60-cc28-4034-b4d6-583b425a83a9-garment.png",
+  "thumbnail": "/api/import/library/import-bf939d60-cc28-4034-b4d6-583b425a83a9-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "unisex",
+  "sizes": [
+   "Único"
+  ],
+  "description": "Sombrero estilo texano confeccionado en paja trenzada con diseño calado y cordón ajustador decorativo. Un accesorio fresco y versátil, ideal para protegerse del sol con mucho estilo.",
+  "price": null,
+  "importBatch": {
+   "id": "86bc5951-a4b1-4309-a51a-c6e276feb831",
+   "name": "FAME ACCESORIES"
+  },
+  "importedAt": "2026-09-30T16:21:13.469Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Sombrero Texano Calado de Paja",
+   "categoria": "accessories",
+   "categoriaInterna": "accessories_up",
+   "garmentType": "hat",
+   "gender": "unisex",
+   "subcategoria": "sombreros",
+   "colores": [
+    "#795738",
+    "#212227",
+    "#e1d2bd"
+   ],
+   "descripcion": "Sombrero estilo texano confeccionado en paja trenzada con diseño calado y cordón ajustador decorativo. Un accesorio fresco y versátil, ideal para protegerse del sol con mucho estilo.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "sombrero texano de paja",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-9665a25a-3837-48ff-88ce-21f474efb884",
+  "name": "Cinturón Ancho con Círculos y Apliques Dorados",
+  "part": "accessories_up",
+  "garmentType": "belt",
+  "color": "#1a1a1c",
+  "secondaryColor": "#cba258",
+  "palette": [
+   "#1a1a1c",
+   "#cba258"
+  ],
+  "tags": [
+   "cinturones"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-9665a25a-3837-48ff-88ce-21f474efb884-garment.png",
+  "thumbnail": "/api/import/library/import-9665a25a-3837-48ff-88ce-21f474efb884-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "Único"
+  ],
+  "description": "Cinturón ancho de formato articulado con medallones circulares en simil cuero negro, ojalillos metálicos y gran aplique central dorado de estilo labrado. Ideal para definir la cintura sobre vestidos o túnicas.",
+  "price": null,
+  "importBatch": {
+   "id": "86bc5951-a4b1-4309-a51a-c6e276feb831",
+   "name": "FAME ACCESORIES"
+  },
+  "importedAt": "2026-09-30T16:21:17.256Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Cinturón Ancho con Círculos y Apliques Dorados",
+   "categoria": "accessories",
+   "categoriaInterna": "accessories_up",
+   "garmentType": "belt",
+   "gender": "mujer",
+   "subcategoria": "Cinturones",
+   "colores": [
+    "#1a1a1c",
+    "#cba258"
+   ],
+   "descripcion": "Cinturón ancho de formato articulado con medallones circulares en simil cuero negro, ojalillos metálicos y gran aplique central dorado de estilo labrado. Ideal para definir la cintura sobre vestidos o túnicas.",
+   "recorte": null,
+   "confianza": 0.98,
+   "prendaCompleta": true,
+   "prendaPrincipal": "Cinturón articulado con apliques dorados",
+   "prendasSecundarias": [
+    "Vestido negro corto"
+   ]
+  }
+ },
+ {
+  "id": "import-9686e856-b04e-49d1-944d-d25ca6810392",
+  "name": "Set de aros marinos dorados y plateados",
+  "part": "accessories_up",
+  "garmentType": "jewelry",
+  "color": "#d4af37",
+  "secondaryColor": "#c0c0c0",
+  "palette": [
+   "#d4af37",
+   "#c0c0c0",
+   "#ffffff"
+  ],
+  "tags": [
+   "aros"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-9686e856-b04e-49d1-944d-d25ca6810392-garment.png",
+  "thumbnail": "/api/import/library/import-9686e856-b04e-49d1-944d-d25ca6810392-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "Único"
+  ],
+  "description": "Set variado de aros e trepadores con temática marina, con apliques de estrellas de mar, caracoles, pececitos y detalles en perlas. Incluye versiones en acabado dorado y plateado.",
+  "price": null,
+  "importBatch": {
+   "id": "86bc5951-a4b1-4309-a51a-c6e276feb831",
+   "name": "FAME ACCESORIES"
+  },
+  "importedAt": "2026-09-30T16:21:14.744Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Set de aros marinos dorados y plateados",
+   "categoria": "accessories",
+   "categoriaInterna": "accessories_up",
+   "garmentType": "jewelry",
+   "gender": "mujer",
+   "subcategoria": "Aros",
+   "colores": [
+    "#d4af37",
+    "#c0c0c0",
+    "#ffffff"
+   ],
+   "descripcion": "Set variado de aros e trepadores con temática marina, con apliques de estrellas de mar, caracoles, pececitos y detalles en perlas. Incluye versiones en acabado dorado y plateado.",
+   "recorte": null,
+   "confianza": 0.98,
+   "prendaCompleta": true,
+   "prendaPrincipal": "Set de aros",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-98c815af-01f8-414e-9082-5d7b1c65e0dd",
+  "name": "Aros Argolla Dorados con Dijes de Pez de Cerámica y Concha",
+  "part": "accessories_up",
+  "garmentType": "jewelry",
+  "color": "#d4af37",
+  "secondaryColor": "#d32f2f",
+  "palette": [
+   "#d4af37",
+   "#d32f2f",
+   "#1e88e5"
+  ],
+  "tags": [
+   "aros"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-98c815af-01f8-414e-9082-5d7b1c65e0dd-garment.png",
+  "thumbnail": "/api/import/library/import-98c815af-01f8-414e-9082-5d7b1c65e0dd-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "Único"
+  ],
+  "description": "Set de aros estilo argolla finas en tono dorado, detallados con dijes colgantes de peces en cerámica esmaltada y aplique con forma de concha marina. Un accesorio fresco, divertido y veraniego perfecto para darle un toque de color a tu look.",
+  "price": null,
+  "importBatch": {
+   "id": "86bc5951-a4b1-4309-a51a-c6e276feb831",
+   "name": "FAME ACCESORIES"
+  },
+  "importedAt": "2026-09-30T16:21:15.417Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Aros Argolla Dorados con Dijes de Pez de Cerámica y Concha",
+   "categoria": "accessories",
+   "categoriaInterna": "accessories_up",
+   "garmentType": "jewelry",
+   "gender": "mujer",
+   "subcategoria": "Aros",
+   "colores": [
+    "#d4af37",
+    "#d32f2f",
+    "#1e88e5"
+   ],
+   "descripcion": "Set de aros estilo argolla finas en tono dorado, detallados con dijes colgantes de peces en cerámica esmaltada y aplique con forma de concha marina. Un accesorio fresco, divertido y veraniego perfecto para darle un toque de color a tu look.",
+   "recorte": null,
+   "confianza": 0.98,
+   "prendaCompleta": true,
+   "prendaPrincipal": "aros de argolla",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-657f0968-27ee-4037-98c3-817e92239cd0",
+  "name": "Chaleco militar blanco con botones",
+  "part": "wholebody_up",
+  "garmentType": "jacket",
+  "color": "#f4f4f2",
+  "secondaryColor": null,
+  "palette": [
+   "#f4f4f2"
+  ],
+  "tags": [
+   "chalecos"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-657f0968-27ee-4037-98c3-817e92239cd0-garment.png",
+  "thumbnail": "/api/import/library/import-657f0968-27ee-4037-98c3-817e92239cd0-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L"
+  ],
+  "description": "Chaleco estilo militar de gabardina blanca con detalles de pasamanería horizontal y botones metálicos oscuros decorativos en la parte frontal.",
+  "price": null,
+  "importBatch": {
+   "id": "93c083ca-59bd-4ea2-b6fc-d5b5c65a26fb",
+   "name": "SOLI ECHO"
+  },
+  "importedAt": "2026-09-30T16:21:26.675Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Chaleco militar blanco con botones",
+   "categoria": "jackets",
+   "categoriaInterna": "wholebody_up",
+   "garmentType": "jacket",
+   "gender": "mujer",
+   "subcategoria": "Chalecos",
+   "colores": [
+    "#f4f4f2"
+   ],
+   "descripcion": "Chaleco estilo militar de gabardina blanca con detalles de pasamanería horizontal y botones metálicos oscuros decorativos en la parte frontal.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "chaleco militar",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-0d852b62-01b8-4f60-8c75-5331c91a5750",
+  "name": "Body Strapless Liso Pack x3",
+  "part": "upperbody",
+  "garmentType": "top",
+  "color": "#ffffff",
+  "secondaryColor": null,
+  "palette": [
+   "#ffffff"
+  ],
+  "tags": [
+   "bodys"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-0d852b62-01b8-4f60-8c75-5331c91a5750-garment.png",
+  "thumbnail": "/api/import/library/import-0d852b62-01b8-4f60-8c75-5331c91a5750-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Body strapless elastizado de escote recto sin breteles. Una prenda básica, entallada y súper versátil para armar diversos looks.",
+  "price": null,
+  "importBatch": {
+   "id": "15e31461-39fb-4089-b3f6-5846730f2130",
+   "name": "DINAMIC FASHION"
+  },
+  "importedAt": "2026-09-30T16:02:50.933Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Body Strapless Liso Pack x3",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "top",
+   "gender": "mujer",
+   "subcategoria": "bodys",
+   "colores": [
+    "#ffffff"
+   ],
+   "descripcion": "Body strapless elastizado de escote recto sin breteles. Una prenda básica, entallada y súper versátil para armar diversos looks.",
+   "recorte": null,
+   "confianza": 0.98,
+   "prendaCompleta": true,
+   "prendaPrincipal": "body strapless",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-c2866828-213a-4bc5-b00d-59f9c613a684",
+  "name": "Top cropped de morley con breteles finos",
+  "part": "upperbody",
+  "garmentType": "top",
+  "color": "#ffffff",
+  "secondaryColor": "#e3bca8",
+  "palette": [
+   "#ffffff",
+   "#e3bca8"
+  ],
+  "tags": [
+   "tops y musculosas"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-c2866828-213a-4bc5-b00d-59f9c613a684-garment.png",
+  "thumbnail": "/api/import/library/import-c2866828-213a-4bc5-b00d-59f9c613a684-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Top cropped acanalado de breteles finos con escote en V y detalle de fruncido central en el busto. Un basico entallado e ideal para superponer o usar solo.",
+  "price": null,
+  "importBatch": {
+   "id": "15e31461-39fb-4089-b3f6-5846730f2130",
+   "name": "DINAMIC FASHION"
+  },
+  "importedAt": "2026-09-30T16:02:51.288Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Top cropped de morley con breteles finos",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "top",
+   "gender": "mujer",
+   "subcategoria": "Tops y Musculosas",
+   "colores": [
+    "#ffffff",
+    "#e3bca8"
+   ],
+   "descripcion": "Top cropped acanalado de breteles finos con escote en V y detalle de fruncido central en el busto. Un basico entallado e ideal para superponer o usar solo.",
+   "recorte": null,
+   "confianza": 0.98,
+   "prendaCompleta": true,
+   "prendaPrincipal": "top cropped",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-eb9b561a-276a-41b4-add3-92f41536821d",
+  "name": "Pollera corta cruzada a lunares",
+  "part": "lowerbody",
+  "garmentType": "skirt",
+  "color": "#dc7374",
+  "secondaryColor": "#9c3a3b",
+  "palette": [
+   "#dc7374",
+   "#9c3a3b",
+   "#ece8e1"
+  ],
+  "tags": [
+   "polleras"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-eb9b561a-276a-41b4-add3-92f41536821d-garment.png",
+  "thumbnail": "/api/import/library/import-eb9b561a-276a-41b4-add3-92f41536821d-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "36",
+   "38",
+   "40",
+   "42",
+   "44"
+  ],
+  "description": "Pollera corta de estilo cruzado en tono rosa coral con estampado de lunares a tono. Posee solapa frontal asimétrica con detalle de botón y tiro medio, ideal para un look fresco y veraniego.",
+  "price": null,
+  "importBatch": {
+   "id": "d6d0e91d-e167-4385-9fb8-e59a7f82e487",
+   "name": "1 FASHION SS26"
+  },
+  "importedAt": "2026-09-30T16:22:03.489Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Pollera corta cruzada a lunares",
+   "categoria": "bottoms",
+   "categoriaInterna": "lowerbody",
+   "garmentType": "skirt",
+   "gender": "mujer",
+   "subcategoria": "polleras",
+   "colores": [
+    "#dc7374",
+    "#9c3a3b",
+    "#ece8e1"
+   ],
+   "descripcion": "Pollera corta de estilo cruzado en tono rosa coral con estampado de lunares a tono. Posee solapa frontal asimétrica con detalle de botón y tiro medio, ideal para un look fresco y veraniego.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "pollera",
+   "prendasSecundarias": [
+    "remera blanca",
+    "collar"
+   ]
+  }
+ },
+ {
+  "id": "import-3f9ba424-32fc-40d6-b8b8-19508212f45a",
+  "name": "Bikini triángulo rayas amarillas",
+  "part": "upperbody",
+  "garmentType": "top",
+  "color": "#f2dda4",
+  "secondaryColor": "#ffffff",
+  "palette": [
+   "#f2dda4",
+   "#ffffff"
+  ],
+  "tags": [
+   "bikini triángulo"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-3f9ba424-32fc-40d6-b8b8-19508212f45a-garment.png",
+  "thumbnail": "/api/import/library/import-3f9ba424-32fc-40d6-b8b8-19508212f45a-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Bikini de triángulo a rayas amarillas y blancas con breteles anchos y bombacha de tiro alto en los costados. Un clásico fresco para el verano.",
+  "price": null,
+  "importBatch": {
+   "id": "b3fae313-c310-4952-9b89-c65704237195",
+   "name": "SUNDAY BRUNCH SS26"
+  },
+  "importedAt": "2026-09-30T12:16:03.428Z",
+  "analysis": {
+   "archivo": "42f81bfa-154a-43a9-a9ef-cbd215266876.jpg",
+   "nombre": "Bikini triángulo rayas amarillas",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "top",
+   "gender": "mujer",
+   "subcategoria": "bikini triángulo",
+   "colores": [
+    "#f2dda4",
+    "#ffffff"
+   ],
+   "descripcion": "Bikini de triángulo a rayas amarillas y blancas con breteles anchos y bombacha de tiro alto en los costados. Un clásico fresco para el verano.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "conjunto completo en fondo blanco",
+   "prendasSecundarias": [
+    "bombacha de bikini"
+   ]
+  }
+ },
+ {
+  "id": "import-3a042133-b12b-4b77-8892-f98924bf1e00",
+  "name": "Bikini triángulo tie-dye rosa y lima",
+  "part": "upperbody",
+  "garmentType": "top",
+  "color": "#f4b6cf",
+  "secondaryColor": "#cfc63c",
+  "palette": [
+   "#f4b6cf",
+   "#cfc63c",
+   "#fff6f0"
+  ],
+  "tags": [
+   "bikini triángulo"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-3a042133-b12b-4b77-8892-f98924bf1e00-garment.png",
+  "thumbnail": "/api/import/library/import-3a042133-b12b-4b77-8892-f98924bf1e00-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Bikini de triángulo con estampa tie-dye en rosa y verde lima, breteles finos al cuello y bombacha de tiritas. Liviano y súper veraniego.",
+  "price": null,
+  "importBatch": {
+   "id": "b3fae313-c310-4952-9b89-c65704237195",
+   "name": "SUNDAY BRUNCH SS26"
+  },
+  "importedAt": "2026-09-30T12:16:03.587Z",
+  "analysis": {
+   "archivo": "5b5c2012-5675-4015-ad02-934f1a4b892c.jpg",
+   "nombre": "Bikini triángulo tie-dye rosa y lima",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "top",
+   "gender": "mujer",
+   "subcategoria": "bikini triángulo",
+   "colores": [
+    "#f4b6cf",
+    "#cfc63c",
+    "#fff6f0"
+   ],
+   "descripcion": "Bikini de triángulo con estampa tie-dye en rosa y verde lima, breteles finos al cuello y bombacha de tiritas. Liviano y súper veraniego.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "conjunto completo en fondo blanco",
+   "prendasSecundarias": [
+    "bombacha de bikini"
+   ]
+  }
+ },
+ {
+  "id": "import-dfece905-93f4-46fd-9b30-ed775322ab97",
+  "name": "Bikini triángulo rayas amarillas",
+  "part": "upperbody",
+  "garmentType": "top",
+  "color": "#f3de8a",
+  "secondaryColor": "#fffdf2",
+  "palette": [
+   "#f3de8a",
+   "#fffdf2"
+  ],
+  "tags": [
+   "bikini triángulo"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-dfece905-93f4-46fd-9b30-ed775322ab97-garment.png",
+  "thumbnail": "/api/import/library/import-dfece905-93f4-46fd-9b30-ed775322ab97-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "mujer",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "description": "Bikini de triángulo a rayas amarillas y blancas con breteles anchos y bombacha de tiro alto en los costados. Un clásico fresco para el verano.",
+  "price": null,
+  "importBatch": {
+   "id": "b3fae313-c310-4952-9b89-c65704237195",
+   "name": "SUNDAY BRUNCH SS26"
+  },
+  "importedAt": "2026-09-30T12:16:03.517Z",
+  "analysis": {
+   "archivo": "4f923a30-5807-4a69-9f61-d6e5271fb97d.jpg",
+   "nombre": "Bikini triángulo rayas amarillas",
+   "categoria": "tops",
+   "categoriaInterna": "upperbody",
+   "garmentType": "top",
+   "gender": "mujer",
+   "subcategoria": "bikini triángulo",
+   "colores": [
+    "#f3de8a",
+    "#fffdf2"
+   ],
+   "descripcion": "Bikini de triángulo a rayas amarillas y blancas con breteles anchos y bombacha de tiro alto en los costados. Un clásico fresco para el verano.",
+   "recorte": null,
+   "confianza": null,
+   "prendaCompleta": true,
+   "prendaPrincipal": "corpiño de bikini rayas; conjunto completo, de perfil",
+   "prendasSecundarias": [
+    "bombacha de bikini"
+   ]
+  }
+ },
+ {
+  "id": "import-ba1e0302-7c72-486b-ad5f-58af2a0a5823",
+  "name": "Tabla de talles de pantalón",
+  "part": "lowerbody",
+  "garmentType": "trousers",
+  "color": "#ffffff",
+  "secondaryColor": "#000000",
+  "palette": [
+   "#ffffff",
+   "#000000",
+   "#f2e6e6"
+  ],
+  "tags": [
+   "tabla de talles"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-ba1e0302-7c72-486b-ad5f-58af2a0a5823-garment.png",
+  "thumbnail": "/api/import/library/import-ba1e0302-7c72-486b-ad5f-58af2a0a5823-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "unisex",
+  "sizes": [
+   "36",
+   "38",
+   "40",
+   "42",
+   "44"
+  ],
+  "description": "Tabla informativa de guía de talles con especificaciones de cintura, cadera y largo para las medidas S, M y L.",
+  "price": null,
+  "importBatch": {
+   "id": "93c083ca-59bd-4ea2-b6fc-d5b5c65a26fb",
+   "name": "SOLI ECHO"
+  },
+  "importedAt": "2026-09-30T16:21:21.834Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Tabla de talles de pantalón",
+   "categoria": "bottoms",
+   "categoriaInterna": "lowerbody",
+   "garmentType": "trousers",
+   "gender": "unisex",
+   "subcategoria": "Tabla de talles",
+   "colores": [
+    "#ffffff",
+    "#000000",
+    "#f2e6e6"
+   ],
+   "descripcion": "Tabla informativa de guía de talles con especificaciones de cintura, cadera y largo para las medidas S, M y L.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "tabla de talles",
+   "prendasSecundarias": []
+  }
+ },
+ {
+  "id": "import-f0dfd213-2137-42b4-b5c4-5b4a9b59a1a4",
+  "name": "Cinturón clásico con hebilla",
+  "part": "accessories_up",
+  "garmentType": "belt",
+  "color": "#000000",
+  "secondaryColor": "#ffffff",
+  "palette": [
+   "#000000",
+   "#ffffff"
+  ],
+  "tags": [
+   "cinturones"
+  ],
+  "season": "all",
+  "material": "mixed",
+  "silhouette": "regular",
+  "weight": "medium",
+  "climates": [
+   "mild"
+  ],
+  "occasions": [
+   "casual"
+  ],
+  "image": "/api/import/library/import-f0dfd213-2137-42b4-b5c4-5b4a9b59a1a4-garment.png",
+  "thumbnail": "/api/import/library/import-f0dfd213-2137-42b4-b5c4-5b4a9b59a1a4-garment.png",
+  "modeledImage": null,
+  "importJobId": null,
+  "gender": "unisex",
+  "sizes": [
+   "Único"
+  ],
+  "description": "Diseño esquemático de cinturón con hebilla metálica rectangular y detalle de medidas de talle.",
+  "price": null,
+  "importBatch": {
+   "id": "86bc5951-a4b1-4309-a51a-c6e276feb831",
+   "name": "FAME ACCESORIES"
+  },
+  "importedAt": "2026-09-30T16:21:16.185Z",
+  "analysis": {
+   "archivo": null,
+   "nombre": "Cinturón clásico con hebilla",
+   "categoria": "accessories",
+   "categoriaInterna": "accessories_up",
+   "garmentType": "belt",
+   "gender": "unisex",
+   "subcategoria": "Cinturones",
+   "colores": [
+    "#000000",
+    "#ffffff"
+   ],
+   "descripcion": "Diseño esquemático de cinturón con hebilla metálica rectangular y detalle de medidas de talle.",
+   "recorte": null,
+   "confianza": 0.95,
+   "prendaCompleta": true,
+   "prendaPrincipal": "cinturón",
+   "prendasSecundarias": []
+  }
+ }
+]

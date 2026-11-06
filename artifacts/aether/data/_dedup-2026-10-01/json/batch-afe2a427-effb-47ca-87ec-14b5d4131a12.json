@@ -1,0 +1,3789 @@
+{
+  "id": "afe2a427-effb-47ca-87ec-14b5d4131a12",
+  "name": "AEMI+CO",
+  "createdAt": "2026-09-30T12:24:48.339Z",
+  "items": [
+    {
+      "id": "61f9177b-5b5d-401c-a4b1-3bfacac61c26",
+      "fileName": "25166742_030ddf98-72fc-4eed-bb2a-ecffc9a0806a.jpg",
+      "folderName": "AEMI+CO",
+      "file": "61f9177b-5b5d-401c-a4b1-3bfacac61c26.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-55c60367-afe9-4855-81b6-c522bc5a4b6e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas horizontales",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#1b1c1e",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con estampado clásico de rayas horizontales en blanco y negro, de calce holgado y estilo urbano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "bermuda de jean",
+          "anteojos"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas horizontales",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#1b1c1e",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con estampado clásico de rayas horizontales en blanco y negro, de calce holgado y estilo urbano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "bermuda de jean",
+          "anteojos"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:48.713Z",
+      "errorDetail": null
+    },
+    {
+      "id": "080a24a6-c8d3-47eb-bde6-54510fbceaa7",
+      "fileName": "25166742_0d7a7785-e227-4db8-879a-56324a0359ea.jpg",
+      "folderName": "AEMI+CO",
+      "file": "080a24a6-c8d3-47eb-bde6-54510fbceaa7.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-7cf1a92b-340e-475b-8b67-83b6e2a10fa0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada de manga corta",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#45474e",
+          "#2a5db0",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón con un patrón de rayas horizontales en tonos gris oscuro, azul y blanco. De calce relajado, es perfecta para un outfit urbano y fresco.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean negro",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada de manga corta",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#45474e",
+          "#2a5db0",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón con un patrón de rayas horizontales en tonos gris oscuro, azul y blanco. De calce relajado, es perfecta para un outfit urbano y fresco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean negro",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:48.777Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c5b5fd65-4999-477a-b472-345ca6f4b309",
+      "fileName": "25166742_104f8781-76d3-4d35-b317-4965a9a56c79.jpg",
+      "folderName": "AEMI+CO",
+      "file": "c5b5fd65-4999-477a-b472-345ca6f4b309.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4f71c2c3-7021-4046-872b-79f0c2393d14",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada manga corta",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#18181a",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de calce holgado en algodón con diseño de rayas horizontales contrastantes y cuello redondo. Perfecta para un outfit informal de diario.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada manga corta",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#18181a",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de calce holgado en algodón con diseño de rayas horizontales contrastantes y cuello redondo. Perfecta para un outfit informal de diario.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:48.928Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d2a19004-34e9-45c7-865e-ed3d40607fe3",
+      "fileName": "25166742_1b1d1685-acbf-495c-9d10-33241c19105d.jpg",
+      "folderName": "AEMI+CO",
+      "file": "d2a19004-34e9-45c7-865e-ed3d40607fe3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-43cd7ab4-bfb8-4ba1-9656-2e421c70fc79",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada manga corta",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#ece8de"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en tejido suave con estampado de rayas horizontales dobles en tono contraste. De calce cómodo e ideal para un look casual diario.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "pollera negra",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada manga corta",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#ece8de"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en tejido suave con estampado de rayas horizontales dobles en tono contraste. De calce cómodo e ideal para un look casual diario.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "pollera negra",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:49.013Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ba712a04-8d3c-4258-81bc-e2ba3ac42142",
+      "fileName": "25166742_207bff90-8b66-4485-96e7-e8b2b960cd29.jpg",
+      "folderName": "AEMI+CO",
+      "file": "ba712a04-8d3c-4258-81bc-e2ba3ac42142.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-68aed152-115f-4075-96be-7cc0d55d1d42",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas manga corta",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#3e4146"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con diseño de rayas horizontales en tonos gris oscuro, azul y blanco. De calce relajado, perfecta para un look urbano y casual.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas manga corta",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#3e4146"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con diseño de rayas horizontales en tonos gris oscuro, azul y blanco. De calce relajado, perfecta para un look urbano y casual.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:49.134Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0db00010-c0a4-4e8e-a8a9-692c422d859f",
+      "fileName": "25166742_240164af-58cd-41c9-a811-f8308ee76856.jpg",
+      "folderName": "AEMI+CO",
+      "file": "0db00010-c0a4-4e8e-a8a9-692c422d859f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-459b1838-4866-4836-b2af-1d0ce2c3a413",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a Rayas Marineras Azul y Amarilla",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#2e5395",
+          "#e8a92a",
+          "#c0292b"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón. Presenta un diseño de rayas horizontales combinadas en azul, amarillo y rojo, ideal para un look casual y fresco.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón de jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a Rayas Marineras Azul y Amarilla",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#2e5395",
+          "#e8a92a",
+          "#c0292b"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón. Presenta un diseño de rayas horizontales combinadas en azul, amarillo y rojo, ideal para un look casual y fresco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón de jean"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:49.222Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f6348f7b-05ce-4920-b2b1-0877137188f3",
+      "fileName": "25166742_258ae97c-14c5-4113-bdfc-f83dcd0c4d00.jpg",
+      "folderName": "AEMI+CO",
+      "file": "f6348f7b-05ce-4920-b2b1-0877137188f3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8d900fa0-3f2d-4a60-b47a-4204648e4f24",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pollera larga maxi negra",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "polleras largas",
+        "colores": [
+          "#1a1a1c"
+        ],
+        "descripcion": "Pollera larga de tiro alto en color negro, con silueta acampanada y excelente caída. Un básico atemporal versátil para outfits casuales o formales.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pollera larga negra",
+        "prendasSecundarias": [
+          "remera a rayas",
+          "chatitas negras",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pollera larga maxi negra",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "polleras largas",
+        "colores": [
+          "#1a1a1c"
+        ],
+        "descripcion": "Pollera larga de tiro alto en color negro, con silueta acampanada y excelente caída. Un básico atemporal versátil para outfits casuales o formales.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pollera larga negra",
+        "prendasSecundarias": [
+          "remera a rayas",
+          "chatitas negras",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:49.307Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2ee3b9a1-8b90-425e-998d-e915bea14968",
+      "fileName": "25166742_302443ea-fa13-4893-9f65-c532825b84e9.jpg",
+      "folderName": "AEMI+CO",
+      "file": "2ee3b9a1-8b90-425e-998d-e915bea14968.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-c52b3dcb-b3f7-4c11-8ef5-b04c32d8b3b1",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas verde y amarilla",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#2c553e",
+          "#fad36b",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo y diseño a rayas horizontales en verde, amarillo y blanco. Un básico clásico y canchero ideal para el uso diario.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas verde y amarilla",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#2c553e",
+          "#fad36b",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo y diseño a rayas horizontales en verde, amarillo y blanco. Un básico clásico y canchero ideal para el uso diario.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:49.419Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0df494cb-d8d5-4a27-b47c-125e5f40e4e8",
+      "fileName": "25166742_3604fcff-f8ac-475e-8b76-400030b35ad4.jpg",
+      "folderName": "AEMI+CO",
+      "file": "0df494cb-d8d5-4a27-b47c-125e5f40e4e8.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-570a7988-3c19-43e7-8d49-aa9ab1ed9c31",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas manga corta",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#1a1a1a",
+          "#ffffff"
+        ],
+        "descripcion": "Remera urbana de calce cómodo con escote redondo y mangas cortas. Presenta un diseño clásico de rayas horizontales a contraste en blanco y negro, ideal para completar un look casual diario.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera manga corta a rayas",
+        "prendasSecundarias": [
+          "jean",
+          "anteojos de vista",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas manga corta",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#1a1a1a",
+          "#ffffff"
+        ],
+        "descripcion": "Remera urbana de calce cómodo con escote redondo y mangas cortas. Presenta un diseño clásico de rayas horizontales a contraste en blanco y negro, ideal para completar un look casual diario.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera manga corta a rayas",
+        "prendasSecundarias": [
+          "jean",
+          "anteojos de vista",
+          "aros"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:49.508Z",
+      "errorDetail": null
+    },
+    {
+      "id": "37631d69-f74a-4ef8-abd9-3223b5fae672",
+      "fileName": "25166742_4cabc707-1d0e-45ea-9950-ae7bdcf8532c.jpg",
+      "folderName": "AEMI+CO",
+      "file": "37631d69-f74a-4ef8-abd9-3223b5fae672.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-dd605aec-312d-4c49-8541-5b8904bf8fa5",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada verde y amarilla",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras de manga corta",
+        "colores": [
+          "#2c553e",
+          "#ecc96a",
+          "#ebe8dc"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en tejido de punto con diseño de rayas horizontales en tonos verde, amarillo y marfil.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "jean azul"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada verde y amarilla",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras de manga corta",
+        "colores": [
+          "#2c553e",
+          "#ecc96a",
+          "#ebe8dc"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en tejido de punto con diseño de rayas horizontales en tonos verde, amarillo y marfil.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "jean azul"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:49.617Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0ef0a38e-f8c4-4461-8a1f-98dd27a9b601",
+      "fileName": "25166742_5474eec9-0877-42f1-b514-eee44527e47a.jpg",
+      "folderName": "AEMI+CO",
+      "file": "0ef0a38e-f8c4-4461-8a1f-98dd27a9b601.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-68533119-87d3-45d8-b3ca-6f2da058c6ff",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas marrón y blanco",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#7a523a",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo y estampado de rayas horizontales en tono marrón y blanco. Confeccionada en punto de algodón suave, perfecta para combinar con shorts o jeans en outfits informales.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "cinturón"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas marrón y blanco",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#7a523a",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo y estampado de rayas horizontales en tono marrón y blanco. Confeccionada en punto de algodón suave, perfecta para combinar con shorts o jeans en outfits informales.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "cinturón"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:49.825Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3320ddf2-54ef-49e5-84ee-8fe312be65fb",
+      "fileName": "25166742_57e7e64c-1592-4758-9c95-9bd68791e8a1.jpg",
+      "folderName": "AEMI+CO",
+      "file": "3320ddf2-54ef-49e5-84ee-8fe312be65fb.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-fb85dfe1-b7ec-4cd7-9dbb-17f435674f26",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#83563f",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo y estampado de rayas horizontales en tono marrón y blanco.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "cinturón de cuero"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#83563f",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo y estampado de rayas horizontales en tono marrón y blanco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "cinturón de cuero"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:50.104Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6fd5ec88-cfa9-401a-ad5a-e79dcf2dd928",
+      "fileName": "25166742_6a11b0e8-cf30-43d8-a7c9-5d3870ff18fd.jpg",
+      "folderName": "AEMI+CO",
+      "file": "6fd5ec88-cfa9-401a-ad5a-e79dcf2dd928.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-246719c3-408c-4a51-8d4b-4b3cd103e5f9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada verde y crema",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras de manga corta",
+        "colores": [
+          "#2d523f",
+          "#eed785",
+          "#faf7ee"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón con un clásico estampado de rayas horizontales en tonos verde, amarillo y blanco. Ideal para lograr un look urbano y casual.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada verde y crema",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras de manga corta",
+        "colores": [
+          "#2d523f",
+          "#eed785",
+          "#faf7ee"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón con un clásico estampado de rayas horizontales en tonos verde, amarillo y blanco. Ideal para lograr un look urbano y casual.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "jean"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:50.200Z",
+      "errorDetail": null
+    },
+    {
+      "id": "63fd5edc-3436-4092-951b-91609c01a79c",
+      "fileName": "25166742_6aa9a0f3-9a08-4e8a-a529-2b92895d64e9.jpg",
+      "folderName": "AEMI+CO",
+      "file": "63fd5edc-3436-4092-951b-91609c01a79c.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-3823963c-4a28-4481-b21c-b49c5b4d8dac",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada manga corta rosa y marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#eaafb9"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón rosa pastel con estampado de rayas horizontales finas en tono marrón. Calce holgado y cómodo ideal para el día a día.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas de manga corta",
+        "prendasSecundarias": [
+          "short de jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada manga corta rosa y marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#eaafb9"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón rosa pastel con estampado de rayas horizontales finas en tono marrón. Calce holgado y cómodo ideal para el día a día.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas de manga corta",
+        "prendasSecundarias": [
+          "short de jean"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:50.306Z",
+      "errorDetail": null
+    },
+    {
+      "id": "407e566b-ae43-471d-a548-7ff05a8808de",
+      "fileName": "25166742_6bc9bb92-ed3f-43bf-adbb-5694ea87e2db.jpg",
+      "folderName": "AEMI+CO",
+      "file": "407e566b-ae43-471d-a548-7ff05a8808de.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1f2a5e28-c5da-44c6-bacf-f89330b068d0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas rosa y marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remera de manga corta",
+        "colores": [
+          "#eab7c4",
+          "#432b25"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con estampado de rayas horizontales en tono rosa y marrón.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas rosa y marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remera de manga corta",
+        "colores": [
+          "#eab7c4",
+          "#432b25"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con estampado de rayas horizontales en tono rosa y marrón.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:50.418Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c06288d0-b872-41a2-8e50-36d0a68cb649",
+      "fileName": "25166742_70e6bb0a-9ddc-43e4-9447-6a30030a3c28.jpg",
+      "folderName": "AEMI+CO",
+      "file": "c06288d0-b872-41a2-8e50-36d0a68cb649.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-fc9e2fbf-988c-4c0d-8670-65b667737cb4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a Rayas Off-White y Negra",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras de manga corta",
+        "colores": [
+          "#eceae1"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón con estampado de rayas horizontales contrastantes. Un básico infaltable y cómodo para un look urbano de todos los días.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a Rayas Off-White y Negra",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras de manga corta",
+        "colores": [
+          "#eceae1"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón con estampado de rayas horizontales contrastantes. Un básico infaltable y cómodo para un look urbano de todos los días.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "anteojos de sol"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:50.577Z",
+      "errorDetail": null
+    },
+    {
+      "id": "52294c11-723f-4881-868f-66c29134e462",
+      "fileName": "25166742_7c567aa7-79b3-409c-b956-2b7886d5bcdb.jpg",
+      "folderName": "AEMI+CO",
+      "file": "52294c11-723f-4881-868f-66c29134e462.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ec40f975-3b9a-42eb-988b-31e1928f36cb",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas horizontales",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#424348",
+          "#2458c9",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con estampado a rayas horizontales en tonos gris, azul y blanco. Diseñada para brindar comodidad y un toque urbano y relajado a tus outfits diarios.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "lentes de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas horizontales",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#424348",
+          "#2458c9",
+          "#ffffff"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con estampado a rayas horizontales en tonos gris, azul y blanco. Diseñada para brindar comodidad y un toque urbano y relajado a tus outfits diarios.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "lentes de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:50.789Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b8700427-a127-433c-956b-6ce5ecd1f70a",
+      "fileName": "25166742_85018b98-aec7-4efa-b71a-eacc5a74ad76.jpg",
+      "folderName": "AEMI+CO",
+      "file": "b8700427-a127-433c-956b-6ce5ecd1f70a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-6afe311d-0ac5-4910-9638-1c6020971b4d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas verde y crema",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#2b543d",
+          "#f4e396"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con clásico estampado de rayas horizontales en tonos verde y crema. Ideal para armar un look urbano y relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón de jean",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas verde y crema",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#2b543d",
+          "#f4e396"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con clásico estampado de rayas horizontales en tonos verde y crema. Ideal para armar un look urbano y relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón de jean",
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:50.796Z",
+      "errorDetail": null
+    },
+    {
+      "id": "460ebb61-25af-4d3a-8f3e-c1a16f594f71",
+      "fileName": "25166742_8c6f877d-544e-41b6-90bd-9b0dd16bb909.jpg",
+      "folderName": "AEMI+CO",
+      "file": "460ebb61-25af-4d3a-8f3e-c1a16f594f71.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-7d713dc2-d202-4350-ac21-a9ad44e39f1e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas azul, roja y amarilla",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras manga corta",
+        "colores": [
+          "#2d539e",
+          "#cc2229",
+          "#f3bf38"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con diseño de rayas horizontales multicolores sobre fondo azul.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Remera a rayas azul, roja y amarilla",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras manga corta",
+        "colores": [
+          "#2d539e",
+          "#cc2229",
+          "#f3bf38"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo con diseño de rayas horizontales multicolores sobre fondo azul.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:50.823Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0654e7de-8b5d-427b-ace3-38c4b0fc5c86",
+      "fileName": "25166742_992fb9d1-78ea-4c1b-a07e-ba88befacc86.jpg",
+      "folderName": "AEMI+CO",
+      "file": "0654e7de-8b5d-427b-ace3-38c4b0fc5c86.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f0189293-91e9-4ad5-a181-0d0a1b4b9b6e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada rosa y marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#e6a9b2",
+          "#3e2319"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo, confeccionada en algodón con estampado de rayas horizontales dobles sobre fondo rosa. Posee un calce cómodo y relajado, ideal para looks urbanos y casuales.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada rosa y marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#e6a9b2",
+          "#3e2319"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo, confeccionada en algodón con estampado de rayas horizontales dobles sobre fondo rosa. Posee un calce cómodo y relajado, ideal para looks urbanos y casuales.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera",
+        "prendasSecundarias": [
+          "jean"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.031Z",
+      "errorDetail": null
+    },
+    {
+      "id": "1ec67c59-4765-441b-90a8-72efa1727983",
+      "fileName": "25166742_b031ecd2-c8de-447a-94e2-e3d9d5c16fcf.jpg",
+      "folderName": "AEMI+CO",
+      "file": "1ec67c59-4765-441b-90a8-72efa1727983.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-2c3400a0-151a-4e3f-b0fd-f587774af31e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera Rayada Manga Corta",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#1a1a1a"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo y estampado de rayas horizontales a contrasete. De calce cómodo y estilo atemporal, ideal para usar todos los días.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "jean",
+          "anteojos",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera Rayada Manga Corta",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#1a1a1a"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo y estampado de rayas horizontales a contrasete. De calce cómodo y estilo atemporal, ideal para usar todos los días.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "jean",
+          "anteojos",
+          "aros"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.073Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4d6d80c0-676b-4215-8b53-28e1236a3b10",
+      "fileName": "25166742_c16c5dff-ffd3-42bf-b1f0-14e08eb68fef.jpg",
+      "folderName": "AEMI+CO",
+      "file": "4d6d80c0-676b-4215-8b53-28e1236a3b10.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-93fcffd5-b6f5-47cf-bc2c-1a7ab73020e0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera Rayada Rosa y Marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e2a9b2",
+          "#3e2723"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón suave, con estampado de rayas horizontales en tono marrón sobre fondo rosa. Un básico de calce cómodo ideal para combinar con jeans.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "pantalón de jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera Rayada Rosa y Marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e2a9b2",
+          "#3e2723"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón suave, con estampado de rayas horizontales en tono marrón sobre fondo rosa. Un básico de calce cómodo ideal para combinar con jeans.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "pantalón de jean"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.256Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c42c5859-10a1-436f-ba29-82e1e450464d",
+      "fileName": "25166742_e503a38b-b969-434e-8ee7-d78eba773ef6.jpg",
+      "folderName": "AEMI+CO",
+      "file": "c42c5859-10a1-436f-ba29-82e1e450464d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0c66651b-f0db-4007-ae7b-9e0da3c21601",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada rosa",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e5adb4",
+          "#432924"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en tejido de algodón rosa con estampado de finas rayas horizontales en tono marrón. Un básico cómodo y versátil para complementar tus looks diarios.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada rosa",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e5adb4",
+          "#432924"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en tejido de algodón rosa con estampado de finas rayas horizontales en tono marrón. Un básico cómodo y versátil para complementar tus looks diarios.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "jean"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.273Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b467da6e-61b0-4aa8-aff9-654fbeb6dd68",
+      "fileName": "25166742_ee3ebb72-d03f-4e6a-a1fc-127b68fd7dd2.jpg",
+      "folderName": "AEMI+CO",
+      "file": "b467da6e-61b0-4aa8-aff9-654fbeb6dd68.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5d1fe283-9971-4e4b-8664-d8e203b8831f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada manga corta marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#7f5a46",
+          "#ece5da"
+        ],
+        "descripcion": "Remera de corte holgado con cuello redondo y mangas cortas, confeccionada en tejido de punto con estampado de rayas horizontales finas en contraste.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "short de jean",
+          "cinturón"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada manga corta marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#7f5a46",
+          "#ece5da"
+        ],
+        "descripcion": "Remera de corte holgado con cuello redondo y mangas cortas, confeccionada en tejido de punto con estampado de rayas horizontales finas en contraste.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "short de jean",
+          "cinturón"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.301Z",
+      "errorDetail": null
+    },
+    {
+      "id": "af32fc24-08b7-43c3-99d4-92200b233a01",
+      "fileName": "25166742_f630db61-905b-45b1-9dcb-3e19ca9124fd.jpg",
+      "folderName": "AEMI+CO",
+      "file": "af32fc24-08b7-43c3-99d4-92200b233a01.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e6b589a4-86ee-4919-9c44-225de8b72c25",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas azul con detalles amarillos y rojos",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#2a528f",
+          "#f5c44b",
+          "#d92b28"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo y diseño a rayas horizontales multicolores sobre base azul. Confeccionada en algodón suave, ideal para un estilo urbano y relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Remera a rayas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Remera a rayas azul con detalles amarillos y rojos",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#2a528f",
+          "#f5c44b",
+          "#d92b28"
+        ],
+        "descripcion": "Remera de manga corta con cuello redondo y diseño a rayas horizontales multicolores sobre base azul. Confeccionada en algodón suave, ideal para un estilo urbano y relajado.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Remera a rayas",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.309Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b1287158-0e3e-4b46-8e7a-e2246a2b6109",
+      "fileName": "25166742_f88d39a8-f9ba-446e-9c70-b4f9cbddc999.jpg",
+      "folderName": "AEMI+CO",
+      "file": "b1287158-0e3e-4b46-8e7a-e2246a2b6109.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b988d3b3-837f-443a-95c3-0070b02e76b1",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada verde y crema",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#f1e5b2"
+        ],
+        "descripcion": "Remera de manga corta a rayas horizontales en tonos verde y crema, con detalle de costura expuesta central en la espalda. Confeccionada en algodón con calce relajado, ideal para un estilo casual cotidiano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "jean",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada verde y crema",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#f1e5b2"
+        ],
+        "descripcion": "Remera de manga corta a rayas horizontales en tonos verde y crema, con detalle de costura expuesta central en la espalda. Confeccionada en algodón con calce relajado, ideal para un estilo casual cotidiano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "jean",
+          "aros"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.488Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e4ae892b-a8fe-407b-b49b-894efa0b0f17",
+      "fileName": "25166752_0720decc-c4c3-4b88-b806-ec23237ae52a.jpg",
+      "folderName": "AEMI+CO",
+      "file": "e4ae892b-a8fe-407b-b49b-894efa0b0f17.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8898fd23-10a1-49ac-8191-0cba4f398484",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#1c1c1e",
+          "#f0ece1"
+        ],
+        "descripcion": "Remera holgada de manga corta y cuello redondo con estampa de rayas horizontales en contraste.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#1c1c1e",
+          "#f0ece1"
+        ],
+        "descripcion": "Remera holgada de manga corta y cuello redondo con estampa de rayas horizontales en contraste.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.502Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d4f8a5f9-67e7-490b-9214-30eb9180649b",
+      "fileName": "25166752_0c5bc516-3c0b-4f23-bc04-5aff6e5bb3ff.jpg",
+      "folderName": "AEMI+CO",
+      "file": "d4f8a5f9-67e7-490b-9214-30eb9180649b.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-131b5498-3628-4037-9da1-98a6556581c3",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas lilas y marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#a49ab9"
+        ],
+        "descripcion": "Remera oversize confeccionada en tejido de punto con diseño a rayas horizontales en tonos lila y marrón. Posee cuello redondo, manga corta de hombros caídos y un calce holgado ideal para un look relajado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas lilas y marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#a49ab9"
+        ],
+        "descripcion": "Remera oversize confeccionada en tejido de punto con diseño a rayas horizontales en tonos lila y marrón. Posee cuello redondo, manga corta de hombros caídos y un calce holgado ideal para un look relajado.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "anteojos de sol"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.536Z",
+      "errorDetail": null
+    },
+    {
+      "id": "72dbe855-839e-4df0-a8a2-1060b43200bf",
+      "fileName": "25166752_170e7fa6-8594-4ba9-9cd2-ac5a50b2efb8.jpg",
+      "folderName": "AEMI+CO",
+      "file": "72dbe855-839e-4df0-a8a2-1060b43200bf.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1befee0a-6efd-4d55-ac3b-0efe7b116524",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas rosa y blanca",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#f4c1ce",
+          "#ffffff",
+          "#1b2332"
+        ],
+        "descripcion": "Remera de calce oversize y cuello redondo confeccionada en punto de algodón con estampado de rayas horizontales en tono rosa y blanco, de mangas cortas caídas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "vincha negra"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas rosa y blanca",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#f4c1ce",
+          "#ffffff",
+          "#1b2332"
+        ],
+        "descripcion": "Remera de calce oversize y cuello redondo confeccionada en punto de algodón con estampado de rayas horizontales en tono rosa y blanco, de mangas cortas caídas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "vincha negra"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.547Z",
+      "errorDetail": null
+    },
+    {
+      "id": "198ecb78-5971-4a99-9ac6-86815b3710b1",
+      "fileName": "25166752_1cbb1bb5-910a-4172-a2eb-b78fbaaa6ce0.jpg",
+      "folderName": "AEMI+CO",
+      "file": "198ecb78-5971-4a99-9ac6-86815b3710b1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8da96843-357a-4e58-8c0c-1bb591b2aee0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas rosa y azul",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#e39fb0",
+          "#7389a6"
+        ],
+        "descripcion": "Remera de corte oversize confeccionada en jersey de algodón con diseño de rayas horizontales en tonos rosa y azul celeste. Posee cuello redondo ribeteado y mangas cortas de hombro caído. Perfecta para un look casual de todos los días.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas rosa y azul",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#e39fb0",
+          "#7389a6"
+        ],
+        "descripcion": "Remera de corte oversize confeccionada en jersey de algodón con diseño de rayas horizontales en tonos rosa y azul celeste. Posee cuello redondo ribeteado y mangas cortas de hombro caído. Perfecta para un look casual de todos los días.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.716Z",
+      "errorDetail": null
+    },
+    {
+      "id": "8108e93a-4300-48ab-ab26-19c0032474e1",
+      "fileName": "25166752_1d67dcbc-01b7-48a0-9de7-d9ba1a42854e.jpg",
+      "folderName": "AEMI+CO",
+      "file": "8108e93a-4300-48ab-ab26-19c0032474e1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-dac325df-5884-4e69-9290-9a712f826b5e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas horizontales",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#d893a8",
+          "#8798b6"
+        ],
+        "descripcion": "Remera de calce oversize confeccionada en algodón con un patrón de rayas horizontales en tonos rosa y azul suave. Cuenta con cuello redondo, hombros caídos y mangas amplias de estilo relajado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas oversize",
+        "prendasSecundarias": [
+          "jean",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas horizontales",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#d893a8",
+          "#8798b6"
+        ],
+        "descripcion": "Remera de calce oversize confeccionada en algodón con un patrón de rayas horizontales en tonos rosa y azul suave. Cuenta con cuello redondo, hombros caídos y mangas amplias de estilo relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas oversize",
+        "prendasSecundarias": [
+          "jean",
+          "anteojos de sol"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.927Z",
+      "errorDetail": null
+    },
+    {
+      "id": "65b2ab86-4dd9-47d1-b8af-11e3dc09e7b4",
+      "fileName": "25166752_2b1f1fb8-ee79-4e69-9355-4b2e7d37344a.jpg",
+      "folderName": "AEMI+CO",
+      "file": "65b2ab86-4dd9-47d1-b8af-11e3dc09e7b4.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5827b65f-3980-4fac-840f-aa659b2d0e68",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas rosa y beige",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#dc99ad",
+          "#bdab8e",
+          "#eae6db"
+        ],
+        "descripcion": "Remera oversize de manga corta y cuello redondo con un diseño clásico de rayas horizontales en tonos rosa y beige. Confeccionada en tejido de algodón suave, ideal para lograr un look relajado y canchero de todos los días.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas rosa y beige",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#dc99ad",
+          "#bdab8e",
+          "#eae6db"
+        ],
+        "descripcion": "Remera oversize de manga corta y cuello redondo con un diseño clásico de rayas horizontales en tonos rosa y beige. Confeccionada en tejido de algodón suave, ideal para lograr un look relajado y canchero de todos los días.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:51.941Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a67d1559-05ac-40a1-818d-b1633114912a",
+      "fileName": "25166752_3100fd37-7e9d-4c50-84ef-8380ba656e58.jpg",
+      "folderName": "AEMI+CO",
+      "file": "a67d1559-05ac-40a1-818d-b1633114912a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-97bb1ceb-cb0f-4c03-af27-2a9946cb012f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#3b6287",
+          "#9f8f74"
+        ],
+        "descripcion": "Remera oversized con estampado de rayas horizontales en azul y beige, cuello redondo y mangas de hombro caído. Ideal para un look relajado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "gorra"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#3b6287",
+          "#9f8f74"
+        ],
+        "descripcion": "Remera oversized con estampado de rayas horizontales en azul y beige, cuello redondo y mangas de hombro caído. Ideal para un look relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "gorra"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.003Z",
+      "errorDetail": null
+    },
+    {
+      "id": "56f9192d-0347-4a29-af1d-934fd8607139",
+      "fileName": "25166752_35c76c2e-95fe-4caa-8adc-0160ce7b94f7.jpg",
+      "folderName": "AEMI+CO",
+      "file": "56f9192d-0347-4a29-af1d-934fd8607139.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-3ce82902-fd1e-4a0a-8723-a034c8cc4bcd",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas horizontales",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#3e5c76",
+          "#baa892"
+        ],
+        "descripcion": "Remera estilo oversize de manga corta y cuello redondo, confeccionada en algodón con patrón de rayas horizontales en tonos azul y beige.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "gorra"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas horizontales",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#3e5c76",
+          "#baa892"
+        ],
+        "descripcion": "Remera estilo oversize de manga corta y cuello redondo, confeccionada en algodón con patrón de rayas horizontales en tonos azul y beige.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "gorra"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.014Z",
+      "errorDetail": null
+    },
+    {
+      "id": "fa2010c7-1064-43f0-9059-ebcac63e102d",
+      "fileName": "25166752_394dd6ed-388c-43b0-b00f-de2599d3a844.jpg",
+      "folderName": "AEMI+CO",
+      "file": "fa2010c7-1064-43f0-9059-ebcac63e102d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8a5bf1f2-28c5-4ad1-9b03-90897e3e0bbe",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas marineras",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#1e1e1e",
+          "#ece8df"
+        ],
+        "descripcion": "Remera de calce oversize con estampa de rayas horizontales en tono negro y crudo. Diseño de escote redondo y mangas cortas amplias con hombro caído, ideal para combinar en outfits urbanos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas marineras",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#1e1e1e",
+          "#ece8df"
+        ],
+        "descripcion": "Remera de calce oversize con estampa de rayas horizontales en tono negro y crudo. Diseño de escote redondo y mangas cortas amplias con hombro caído, ideal para combinar en outfits urbanos.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.201Z",
+      "errorDetail": null
+    },
+    {
+      "id": "139aa1bf-b7f7-43f1-bbd0-b344e5cca240",
+      "fileName": "25166752_5882aad0-2f54-42f9-b683-af682b49b5ec.jpg",
+      "folderName": "AEMI+CO",
+      "file": "139aa1bf-b7f7-43f1-bbd0-b344e5cca240.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-11b99192-8348-48df-be0b-308cdd58fc01",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#7c8da4",
+          "#dda1b3"
+        ],
+        "descripcion": "Remera oversized a rayas horizontales en tonos rosa y azul grisáceo. Presenta cuello redondo, hombros caídos y calce suelto para un look urbano y relajado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#7c8da4",
+          "#dda1b3"
+        ],
+        "descripcion": "Remera oversized a rayas horizontales en tonos rosa y azul grisáceo. Presenta cuello redondo, hombros caídos y calce suelto para un look urbano y relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "anteojos de sol"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.234Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2b6bd5f1-d8ab-40a1-9b44-60ab7794436e",
+      "fileName": "25166752_4730fb40-34be-4d45-82fe-cb2b26e2efad.jpg",
+      "folderName": "AEMI+CO",
+      "file": "2b6bd5f1-d8ab-40a1-9b44-60ab7794436e.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-39ab90f6-c235-440a-a0ec-1a19078c60a3",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas rosa y beige",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras manga corta",
+        "colores": [
+          "#e99cb3"
+        ],
+        "descripcion": "Remera de corte amplio oversize confeccionada en tejido de punto a rayas horizontales rosa y beige. Presenta cuello redondo, mangas cortas con hombro caído y un calce relajado perfecto para el uso diario.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón blanco"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas rosa y beige",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras manga corta",
+        "colores": [
+          "#e99cb3"
+        ],
+        "descripcion": "Remera de corte amplio oversize confeccionada en tejido de punto a rayas horizontales rosa y beige. Presenta cuello redondo, mangas cortas con hombro caído y un calce relajado perfecto para el uso diario.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón blanco"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.254Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b3a7b4e6-5c38-48e7-8e29-dc9d2aee5e26",
+      "fileName": "25166752_58dfd743-ae9e-4028-8fc0-e2483da14d79.jpg",
+      "folderName": "AEMI+CO",
+      "file": "b3a7b4e6-5c38-48e7-8e29-dc9d2aee5e26.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8985af74-093a-49a8-8277-7a83b59259ef",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas rosa y blanca",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#f4b7c5",
+          "#ffffff"
+        ],
+        "descripcion": "Remera oversized de calce suelto confeccionada en algodón con estampado de rayas horizontales en rosa y blanco, cuello redondo y mangas cortas caídas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "jean de tiro alto",
+          "vincha negra"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas rosa y blanca",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#f4b7c5",
+          "#ffffff"
+        ],
+        "descripcion": "Remera oversized de calce suelto confeccionada en algodón con estampado de rayas horizontales en rosa y blanco, cuello redondo y mangas cortas caídas.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "jean de tiro alto",
+          "vincha negra"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.275Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4b9924aa-c7c4-452e-8d90-991028afbe99",
+      "fileName": "25166752_5acea0de-67ef-445c-9cce-ad76a37215a4.jpg",
+      "folderName": "AEMI+CO",
+      "file": "4b9924aa-c7c4-452e-8d90-991028afbe99.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-361f54b3-f98b-4be1-a0e3-03b0ed34f0b9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize rayada rosa y beige",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#d88a9e",
+          "#beb296",
+          "#ece7da"
+        ],
+        "descripcion": "Remera de calce oversize con cuello redondo y mangas cortas amplias. Presenta un estampado de rayas horizontales en tonos rosa y beige. Confeccionada en tejido suave y liviano, ideal para un look relajado y urbano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize rayada",
+        "prendasSecundarias": [
+          "short de jean crema"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize rayada rosa y beige",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#d88a9e",
+          "#beb296",
+          "#ece7da"
+        ],
+        "descripcion": "Remera de calce oversize con cuello redondo y mangas cortas amplias. Presenta un estampado de rayas horizontales en tonos rosa y beige. Confeccionada en tejido suave y liviano, ideal para un look relajado y urbano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize rayada",
+        "prendasSecundarias": [
+          "short de jean crema"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.424Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f7f89533-5997-4458-b1a9-96d7b61ac0ff",
+      "fileName": "25166752_5de24769-1d1e-48ee-86cd-08dff26eab72.jpg",
+      "folderName": "AEMI+CO",
+      "file": "f7f89533-5997-4458-b1a9-96d7b61ac0ff.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-969777ae-6246-47b0-b4e6-735501f79fec",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera Oversized a Rayas Rosa y Marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#e38ba2",
+          "#4c2e29"
+        ],
+        "descripcion": "Remera de corte oversized confeccionada en algodón, con diseño de rayas horizontales en tonos rosa y marrón. Posee cuello redondo, hombros caídos y mangas cortas de calce suelto, ideal para un estilo urbano y relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "pollera de jean",
+          "lentes de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera Oversized a Rayas Rosa y Marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#e38ba2",
+          "#4c2e29"
+        ],
+        "descripcion": "Remera de corte oversized confeccionada en algodón, con diseño de rayas horizontales en tonos rosa y marrón. Posee cuello redondo, hombros caídos y mangas cortas de calce suelto, ideal para un estilo urbano y relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "pollera de jean",
+          "lentes de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.459Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0ff724a2-2df0-4722-9c12-de8dd2328a7f",
+      "fileName": "25166752_61d6dcaa-c141-41e0-80e8-8205102254a6.jpg",
+      "folderName": "AEMI+CO",
+      "file": "0ff724a2-2df0-4722-9c12-de8dd2328a7f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9d10c269-31c0-4b5c-96f4-c29063748230",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#5a423b",
+          "#a39eca"
+        ],
+        "descripcion": "Remera de calce oversized y manga corta caída con cuello redondo. Confeccionada con patrón de rayas horizontales en tonos marrón y lavanda, ideal para un estilo urbano y cómodo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "short beige",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#5a423b",
+          "#a39eca"
+        ],
+        "descripcion": "Remera de calce oversized y manga corta caída con cuello redondo. Confeccionada con patrón de rayas horizontales en tonos marrón y lavanda, ideal para un estilo urbano y cómodo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "short beige",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.495Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a6d16a5e-acac-4b12-bff4-a89d56b56110",
+      "fileName": "25166752_62e9eebe-8b45-4f84-8da7-d0c018c07bc6.jpg",
+      "folderName": "AEMI+CO",
+      "file": "a6d16a5e-acac-4b12-bff4-a89d56b56110.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e850517b-8836-457f-83b9-a7f18f346fe0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera Oversize a Rayas Lila y Marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#583e35"
+        ],
+        "descripcion": "Remera de calce oversize confeccionada en punto de algodón suave con estampado a rayas horizontales en tonos marrón y lila pastel. Presenta cuello redondo y mangas cortas de hombro caído para un estilo relajado y moderno.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera Oversize a Rayas Lila y Marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#583e35"
+        ],
+        "descripcion": "Remera de calce oversize confeccionada en punto de algodón suave con estampado a rayas horizontales en tonos marrón y lila pastel. Presenta cuello redondo y mangas cortas de hombro caído para un estilo relajado y moderno.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.513Z",
+      "errorDetail": null
+    },
+    {
+      "id": "9d9cccde-4bd4-43b4-b9fc-778c6fc5f51c",
+      "fileName": "25166752_743a9306-45c1-447f-972c-345f04394be2.jpg",
+      "folderName": "AEMI+CO",
+      "file": "9d9cccde-4bd4-43b4-b9fc-778c6fc5f51c.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-2e7f99cc-07b0-4680-9204-2168a41cba2d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas café y lila",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#5e423a",
+          "#b6a7cb"
+        ],
+        "descripcion": "Remera de calce oversized con cuello redondo y mangas cortas, confeccionada con estampado de rayas horizontales en combinación café y lila. Un básico relajado e ideal para uso diario.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short beige",
+          "lentes de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas café y lila",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#5e423a",
+          "#b6a7cb"
+        ],
+        "descripcion": "Remera de calce oversized con cuello redondo y mangas cortas, confeccionada con estampado de rayas horizontales en combinación café y lila. Un básico relajado e ideal para uso diario.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short beige",
+          "lentes de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.654Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4b6edd18-a7dd-4295-b069-be7d2239beef",
+      "fileName": "25166752_7621dfbe-b288-4cfa-8a6e-92f7ef34dce6.jpg",
+      "folderName": "AEMI+CO",
+      "file": "4b6edd18-a7dd-4295-b069-be7d2239beef.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-506176bb-e83e-4986-9d8a-71c2178d01f4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas rosa y blanca",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#f4b8c7",
+          "#ffffff"
+        ],
+        "descripcion": "Remera oversize de manga corta con estampado de rayas horizontales en tonos rosa y blanco. Posee cuello redondo, hombros caídos y un calce holgado de estilo relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "short de jean",
+          "vincha"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas rosa y blanca",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#f4b8c7",
+          "#ffffff"
+        ],
+        "descripcion": "Remera oversize de manga corta con estampado de rayas horizontales en tonos rosa y blanco. Posee cuello redondo, hombros caídos y un calce holgado de estilo relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "short de jean",
+          "vincha"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.685Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a08d73e9-8b89-43ac-87c6-3f3907b63642",
+      "fileName": "25166752_7de953c0-4d73-434c-8867-e3d3a4e43e38.jpg",
+      "folderName": "AEMI+CO",
+      "file": "a08d73e9-8b89-43ac-87c6-3f3907b63642.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-dd06ac7e-c873-42ab-bcc0-b17d70956c0a",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas oversized",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#1a1a1a",
+          "#ece7d9"
+        ],
+        "descripcion": "Remera oversized de algodón con diseño de rayas horizontales a contraculto en blanco y negro. Posee cuello redondo, hombros caídos y calce holgado para un look urbano y relajado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Remera a rayas oversized",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas oversized",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#1a1a1a",
+          "#ece7d9"
+        ],
+        "descripcion": "Remera oversized de algodón con diseño de rayas horizontales a contraculto en blanco y negro. Posee cuello redondo, hombros caídos y calce holgado para un look urbano y relajado.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Remera a rayas oversized",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.754Z",
+      "errorDetail": null
+    },
+    {
+      "id": "cdddd3c7-f0d4-4d9b-8b5a-237809a9ee11",
+      "fileName": "25166752_8325ce25-b13c-4261-822e-f033b4f59200.jpg",
+      "folderName": "AEMI+CO",
+      "file": "cdddd3c7-f0d4-4d9b-8b5a-237809a9ee11.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1ab446c6-e6f3-47b8-ac0b-0ec74ed9b2e2",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera a rayas rosa y beige",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e28ca1",
+          "#cdbfa9"
+        ],
+        "descripcion": "Remera holgada de manga corta y cuello redondo con estampado de rayas horizontales en tonos rosa y beige. Ideal para un look urbano y relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón beige"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera a rayas rosa y beige",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e28ca1",
+          "#cdbfa9"
+        ],
+        "descripcion": "Remera holgada de manga corta y cuello redondo con estampado de rayas horizontales en tonos rosa y beige. Ideal para un look urbano y relajado.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón beige"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.884Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f63e286a-04f3-4ce8-9575-158de8d8c5d6",
+      "fileName": "25166752_841ae839-6d0b-4ef5-9445-48d360598382.jpg",
+      "folderName": "AEMI+CO",
+      "file": "f63e286a-04f3-4ce8-9575-158de8d8c5d6.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5d12322a-26c5-4a3f-bb8c-aa11a67c9785",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize rayada rosa y marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e388ad",
+          "#51302a"
+        ],
+        "descripcion": "Remera de manga corta y estilo oversize con cuello redondo, confeccionada en tejido suave con estampado de rayas horizontales en rosa y marrón.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversize rayada",
+        "prendasSecundarias": [
+          "pantalón de jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize rayada rosa y marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e388ad",
+          "#51302a"
+        ],
+        "descripcion": "Remera de manga corta y estilo oversize con cuello redondo, confeccionada en tejido suave con estampado de rayas horizontales en rosa y marrón.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversize rayada",
+        "prendasSecundarias": [
+          "pantalón de jean"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:52.944Z",
+      "errorDetail": null
+    },
+    {
+      "id": "90a4d7d2-8401-421b-9f7b-fe14fa82cf74",
+      "fileName": "25166752_9509f246-96e9-4e12-a677-896a61d70390.jpg",
+      "folderName": "AEMI+CO",
+      "file": "90a4d7d2-8401-421b-9f7b-fe14fa82cf74.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ad51dc94-2cc7-4f59-99a5-0c779d7c0625",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas rosa y marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#df8da5"
+        ],
+        "descripcion": "Remera de manga corta y calce holgado con cuello redondo, confeccionada con estampado de rayas horizontales en tonos rosa y marrón.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "pollera de jean",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas rosa y marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#df8da5"
+        ],
+        "descripcion": "Remera de manga corta y calce holgado con cuello redondo, confeccionada con estampado de rayas horizontales en tonos rosa y marrón.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "pollera de jean",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.002Z",
+      "errorDetail": null
+    },
+    {
+      "id": "66207998-6e6c-4ae5-b43f-28e390d5773a",
+      "fileName": "25166752_9981da73-b8ed-44be-93c3-d40fcad6208b.jpg",
+      "folderName": "AEMI+CO",
+      "file": "66207998-6e6c-4ae5-b43f-28e390d5773a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-27be1a9e-b4ca-4412-aec9-18107afa1172",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras manga corta",
+        "colores": [
+          "#cb899b",
+          "#6b7b99"
+        ],
+        "descripcion": "Remera de calce oversized confeccionada en algodón con diseño a rayas horizontales en tonos rosa y azul. Posee cuello redondo, hombros caídos y mangas cortas holgadas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras manga corta",
+        "colores": [
+          "#cb899b",
+          "#6b7b99"
+        ],
+        "descripcion": "Remera de calce oversized confeccionada en algodón con diseño a rayas horizontales en tonos rosa y azul. Posee cuello redondo, hombros caídos y mangas cortas holgadas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.110Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c1bba2f8-7bb1-4892-9618-aaefcda40868",
+      "fileName": "25166752_a07f4d40-13e6-47db-a8c4-1040194540a9.jpg",
+      "folderName": "AEMI+CO",
+      "file": "c1bba2f8-7bb1-4892-9618-aaefcda40868.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-76c4d737-3325-4631-b9d8-2e9e34f0dd91",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas lila y marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras manga corta",
+        "colores": [
+          "#a18fb9",
+          "#63473c",
+          "#ece7d8"
+        ],
+        "descripcion": "Remera oversize confeccionada en algodón suave con diseño de rayas horizontales en lila y marrón. Cuenta con corte relajado, hombros caídos y cuello redondo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short beige",
+          "lentes de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas lila y marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras manga corta",
+        "colores": [
+          "#a18fb9",
+          "#63473c",
+          "#ece7d8"
+        ],
+        "descripcion": "Remera oversize confeccionada en algodón suave con diseño de rayas horizontales en lila y marrón. Cuenta con corte relajado, hombros caídos y cuello redondo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short beige",
+          "lentes de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.185Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7ff9b44d-fd77-45db-8fce-bf9028044d77",
+      "fileName": "25166752_ab1391b9-a544-4dfc-930c-0ec939eced91.jpg",
+      "folderName": "AEMI+CO",
+      "file": "7ff9b44d-fd77-45db-8fce-bf9028044d77.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4d5eadba-997a-4cd6-9806-d85b8f1395eb",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera rayada manga corta oversized",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#3d6383",
+          "#a89578"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón con un patrón de rayas horizontales en azul y beige. Presenta un calce holgado y relajado estilo oversized, ideal para combinar con jeans.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "gorra con visera",
+          "pantalón de jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera rayada manga corta oversized",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#3d6383",
+          "#a89578"
+        ],
+        "descripcion": "Remera de manga corta y cuello redondo confeccionada en algodón con un patrón de rayas horizontales en azul y beige. Presenta un calce holgado y relajado estilo oversized, ideal para combinar con jeans.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera rayada",
+        "prendasSecundarias": [
+          "gorra con visera",
+          "pantalón de jean"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.245Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b241380d-edaa-4eaf-9b50-473b2dffa149",
+      "fileName": "25166752_aef02294-623d-42eb-9b7a-48b0ab204562.jpg",
+      "folderName": "AEMI+CO",
+      "file": "b241380d-edaa-4eaf-9b50-473b2dffa149.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9a7e4ad9-6938-4823-b3cc-4c75171fb3cc",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas lila y marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#afa2ce",
+          "#53372b"
+        ],
+        "descripcion": "Remera holgada a rayas horizontales en tonos lila y marrón. Confeccionada en punto suave con cuello redondo, ideal para un look urbano y relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón de jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas lila y marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#afa2ce",
+          "#53372b"
+        ],
+        "descripcion": "Remera holgada a rayas horizontales en tonos lila y marrón. Confeccionada en punto suave con cuello redondo, ideal para un look urbano y relajado.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón de jean"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.343Z",
+      "errorDetail": null
+    },
+    {
+      "id": "04dce7c7-bcc5-4cad-a63b-2a71c3e5a192",
+      "fileName": "25166752_b220b4f0-3244-426e-b900-4cb691943932.jpg",
+      "folderName": "AEMI+CO",
+      "file": "04dce7c7-bcc5-4cad-a63b-2a71c3e5a192.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-99d9b58e-e200-42ff-a78b-d16b8af484d4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas rosa y beige",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e39bb0",
+          "#c8b698"
+        ],
+        "descripcion": "Remera de corte oversize con escote redondo y mangas cortas caídas. Confeccionada en algodón con diseño de rayas horizontales en tonos rosa y beige.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean crema"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas rosa y beige",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e39bb0",
+          "#c8b698"
+        ],
+        "descripcion": "Remera de corte oversize con escote redondo y mangas cortas caídas. Confeccionada en algodón con diseño de rayas horizontales en tonos rosa y beige.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean crema"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.409Z",
+      "errorDetail": null
+    },
+    {
+      "id": "dcb16a22-3d3d-4a22-939c-05c2e67c1849",
+      "fileName": "25166752_bafb392c-ed97-4ab3-af43-aa80e8759036.jpg",
+      "folderName": "AEMI+CO",
+      "file": "dcb16a22-3d3d-4a22-939c-05c2e67c1849.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-659e6e33-b91c-4c5c-89cf-f042021d2ca9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#eae7df"
+        ],
+        "descripcion": "Remera oversize de manga corta confeccionada en algodón con diseño de rayas horizontales, escote redondo y calce holgado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "gorra"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#eae7df"
+        ],
+        "descripcion": "Remera oversize de manga corta confeccionada en algodón con diseño de rayas horizontales, escote redondo y calce holgado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "gorra"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.424Z",
+      "errorDetail": null
+    },
+    {
+      "id": "408dd97d-ade5-4348-aa0e-136cc29550e3",
+      "fileName": "25166752_cce4239a-20ab-44c1-9e42-466324927292.jpg",
+      "folderName": "AEMI+CO",
+      "file": "408dd97d-ade5-4348-aa0e-136cc29550e3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-6726e3cb-2375-48fb-86f7-52519a823bde",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas rosa y marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e58bb3",
+          "#5c3b34"
+        ],
+        "descripcion": "Remera de corte oversize confeccionada en algodón con diseño de rayas horizontales en rosa y marrón. Posee cuello redondo y mangas cortas de caida relajada, ideal para un estilo urbano y cómodo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "jean",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas rosa y marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#e58bb3",
+          "#5c3b34"
+        ],
+        "descripcion": "Remera de corte oversize confeccionada en algodón con diseño de rayas horizontales en rosa y marrón. Posee cuello redondo y mangas cortas de caida relajada, ideal para un estilo urbano y cómodo.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "jean",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.482Z",
+      "errorDetail": null
+    },
+    {
+      "id": "990876a0-2c97-49a9-9b02-c5247b12468c",
+      "fileName": "25166752_fb8eee74-3a70-490e-bdee-4cb613e0e09d.jpg",
+      "folderName": "AEMI+CO",
+      "file": "990876a0-2c97-49a9-9b02-c5247b12468c.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e0fdbbeb-73a0-4e22-a72b-9ddf1b53c42f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera Oversized a Rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#1c1b1b"
+        ],
+        "descripcion": "Remera oversized de manga corta con hombros caídos y estampado a rayas horizontales en negro y crudo. Confeccionada en algodón suave, de calce holgado y cuello redondo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera Oversized a Rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#1c1b1b"
+        ],
+        "descripcion": "Remera oversized de manga corta con hombros caídos y estampado a rayas horizontales en negro y crudo. Confeccionada en algodón suave, de calce holgado y cuello redondo.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.577Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e4f5a8a9-96ca-47f7-8d2e-95166d9a9743",
+      "fileName": "25166752_ff76465b-c41d-4bb8-85c7-7b780a276336.jpg",
+      "folderName": "AEMI+CO",
+      "file": "e4f5a8a9-96ca-47f7-8d2e-95166d9a9743.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1a77fbb7-1ce3-44ea-9633-60a3e25cbdcf",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized rayada",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#dc92a6"
+        ],
+        "descripcion": "Remera oversized de manga corta y cuello redondo, confeccionada en algodón con estampado de rayas horizontales en tonos rosa y azul grisáceo. Ideal para lograr un estilo relajado y casual.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "jean oscuro",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized rayada",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#dc92a6"
+        ],
+        "descripcion": "Remera oversized de manga corta y cuello redondo, confeccionada en algodón con estampado de rayas horizontales en tonos rosa y azul grisáceo. Ideal para lograr un estilo relajado y casual.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "jean oscuro",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.645Z",
+      "errorDetail": null
+    },
+    {
+      "id": "1a74c7d1-1803-424a-bd4c-78314e7a26f0",
+      "fileName": "25366764_08725e44-33cf-4e13-9c9b-a5e81e5a2fee.jpg",
+      "folderName": "AEMI+CO",
+      "file": "1a74c7d1-1803-424a-bd4c-78314e7a26f0.jpg",
+      "estado": "error",
+      "error": "El análisis de Gemini vino incompleto: Falta al menos un color hex válido en \"colores\".",
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": null,
+      "ficha": {
+        "nombre": "25366764 08725e44 33cf 4e13 9c9b a5e81e5a2fee",
+        "categoriaInterna": null,
+        "subcategoria": "",
+        "colores": [],
+        "descripcion": "",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "",
+        "prendasSecundarias": [],
+        "confianza": null
+      },
+      "createdAt": "2026-09-30T12:24:53.658Z",
+      "errorDetail": "El análisis de Gemini vino incompleto: Falta al menos un color hex válido en \"colores\"."
+    },
+    {
+      "id": "18fb2c76-3138-4521-8f42-139384dc7e3f",
+      "fileName": "25366764_12a75040-865b-46fb-821d-8da4b5fbb61d.jpg",
+      "folderName": "AEMI+CO",
+      "file": "18fb2c76-3138-4521-8f42-139384dc7e3f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-48492529-562e-4581-9a55-26f64b7d7061",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera Oversized a Rayas Rosa y Verde",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#eea5c8",
+          "#9fe39f"
+        ],
+        "descripcion": "Remera de corte oversized confeccionada en tejido suave con estampado a rayas horizontales en tonos rosa y verde pastel. Posee cuello redondo y mangas cortas de hombro caído.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Remera oversized a rayas",
+        "prendasSecundarias": [
+          "lentes de sol",
+          "jean oscuro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera Oversized a Rayas Rosa y Verde",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras de manga corta",
+        "colores": [
+          "#eea5c8",
+          "#9fe39f"
+        ],
+        "descripcion": "Remera de corte oversized confeccionada en tejido suave con estampado a rayas horizontales en tonos rosa y verde pastel. Posee cuello redondo y mangas cortas de hombro caído.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Remera oversized a rayas",
+        "prendasSecundarias": [
+          "lentes de sol",
+          "jean oscuro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.718Z",
+      "errorDetail": null
+    },
+    {
+      "id": "1f55fdb8-0a2f-4e58-ae58-c4b499f80d54",
+      "fileName": "25366764_13a227d1-bfab-43ab-99d8-fe66ea7f2237.jpg",
+      "folderName": "AEMI+CO",
+      "file": "1f55fdb8-0a2f-4e58-ae58-c4b499f80d54.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-cb5fceda-14ff-48dc-8169-46c85eead697",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas verdes y crudo",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#324e2b"
+        ],
+        "descripcion": "Remera de calce holgado y cuello redondo con diseño de rayas horizontales en tono verde y crudo. Un básico versátil ideal para outfits urbanos y relajados.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón crudo"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas verdes y crudo",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#324e2b"
+        ],
+        "descripcion": "Remera de calce holgado y cuello redondo con diseño de rayas horizontales en tono verde y crudo. Un básico versátil ideal para outfits urbanos y relajados.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón crudo"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.818Z",
+      "errorDetail": null
+    },
+    {
+      "id": "02924a87-f919-4cf1-b256-6cf3532ec2bf",
+      "fileName": "25366764_22cdeba4-6081-486f-ab0f-3c9ee0a28862.jpg",
+      "folderName": "AEMI+CO",
+      "file": "02924a87-f919-4cf1-b256-6cf3532ec2bf.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-c9c15da5-9bb1-437f-a9f0-b4dfe0c1343f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas horizontales",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#9da0a5",
+          "#e8e8e8"
+        ],
+        "descripcion": "Remera de calce oversized confeccionada en punto de algodón con estampado de rayas horizontales en gris y blanco. Presenta cuello redondo, mangas cortas caídas y una silueta holgada ideal para un look casual.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "jean oscuro",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas horizontales",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#9da0a5",
+          "#e8e8e8"
+        ],
+        "descripcion": "Remera de calce oversized confeccionada en punto de algodón con estampado de rayas horizontales en gris y blanco. Presenta cuello redondo, mangas cortas caídas y una silueta holgada ideal para un look casual.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "jean oscuro",
+          "anteojos de sol"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.877Z",
+      "errorDetail": null
+    },
+    {
+      "id": "8666dedc-1916-436c-8331-c5bc1e2db7d9",
+      "fileName": "25366764_33b53315-2647-4840-97dc-a0ce2ade99af.jpg",
+      "folderName": "AEMI+CO",
+      "file": "8666dedc-1916-436c-8331-c5bc1e2db7d9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9be7fe6d-96cb-48e8-b0e8-30e127e7dd66",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera Oversized a Rayas Verde y Blanco",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras oversized",
+        "colores": [
+          "#1b4d2e",
+          "#f4f0ea"
+        ],
+        "descripcion": "Remera estilo oversized con diseño de rayas horizontales en verde y blanco. Cuenta con cuello redondo relajado y mangas amplias caídas, perfecta para un look urbano y relajado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera Oversized a Rayas Verde y Blanco",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras oversized",
+        "colores": [
+          "#1b4d2e",
+          "#f4f0ea"
+        ],
+        "descripcion": "Remera estilo oversized con diseño de rayas horizontales en verde y blanco. Cuenta con cuello redondo relajado y mangas amplias caídas, perfecta para un look urbano y relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "short de jean"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.897Z",
+      "errorDetail": null
+    },
+    {
+      "id": "66a7182b-aa55-4797-bae3-7ae207b90a1e",
+      "fileName": "25366764_3aec020e-647b-48fa-82f4-f99341f85a88.jpg",
+      "folderName": "AEMI+CO",
+      "file": "66a7182b-aa55-4797-bae3-7ae207b90a1e.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4d56c6ac-a46f-44ce-b703-79b63c6f76d5",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas azul y violeta",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#2c2e78"
+        ],
+        "descripcion": "Remera de calce holgado con diseño de rayas horizontales en tonos azul y violeta, confeccionada en algodón suave con cuello redondo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón crema"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas azul y violeta",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#2c2e78"
+        ],
+        "descripcion": "Remera de calce holgado con diseño de rayas horizontales en tonos azul y violeta, confeccionada en algodón suave con cuello redondo.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "pantalón crema"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:53.950Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e5356f31-26b8-4a8a-9226-ff9f625b7f46",
+      "fileName": "25366764_45804337-16b2-46c8-9772-711e655ae633.jpg",
+      "folderName": "AEMI+CO",
+      "file": "e5356f31-26b8-4a8a-9226-ff9f625b7f46.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ff5f38aa-7462-4bec-89c0-df727827a0fa",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas celeste y crema",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remera de manga corta",
+        "colores": [
+          "#82c3d2",
+          "#faf4db"
+        ],
+        "descripcion": "Remera holgada estilo oversize con diseño de rayas horizontales en celeste y crema. Cuenta con cuello redondo, manga corta cada e ideal para combinar con prendas urbanas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "jean",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas celeste y crema",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remera de manga corta",
+        "colores": [
+          "#82c3d2",
+          "#faf4db"
+        ],
+        "descripcion": "Remera holgada estilo oversize con diseño de rayas horizontales en celeste y crema. Cuenta con cuello redondo, manga corta cada e ideal para combinar con prendas urbanas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera a rayas",
+        "prendasSecundarias": [
+          "jean",
+          "anteojos de sol"
+        ],
+        "confianza": 0.98,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:54.048Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3b07c830-7042-4350-828b-0eecfa437cdc",
+      "fileName": "25366764_6ebe2814-726f-442f-b28b-6691591ec006.jpg",
+      "folderName": "AEMI+CO",
+      "file": "3b07c830-7042-4350-828b-0eecfa437cdc.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b1cf5c84-f26d-4086-a081-37132ad68c7b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas verde lima",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#a1e24d",
+          "#eff3d8"
+        ],
+        "descripcion": "Remera oversized de manga corta a rayas horizontales en tono verde lima y crema. Confeccionada en tejido suave de algodón, cuenta con cuello redondo y corte holgado ideal para un look casual y cómodo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas verde lima",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#a1e24d",
+          "#eff3d8"
+        ],
+        "descripcion": "Remera oversized de manga corta a rayas horizontales en tono verde lima y crema. Confeccionada en tejido suave de algodón, cuenta con cuello redondo y corte holgado ideal para un look casual y cómodo.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:54.113Z",
+      "errorDetail": null
+    },
+    {
+      "id": "830ca5b1-bc0c-466c-9509-6f66608314d8",
+      "fileName": "25366764_a6f73fb5-f8c6-4050-81e2-2853ff29d422.jpg",
+      "folderName": "AEMI+CO",
+      "file": "830ca5b1-bc0c-466c-9509-6f66608314d8.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-88557685-26e4-43ed-980d-b082d9cb4859",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas azul y blanca",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#2b3db3",
+          "#eaebf2"
+        ],
+        "descripcion": "Remera de corte oversized en tejido de algodón con estampado de rayas horizontales en tono azul y blanco. Cuenta con cuello redondo clásico y mangas cortas caídas de calce holgado, perfecta para lograr un estilo relajado e informal.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas azul y blanca",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#2b3db3",
+          "#eaebf2"
+        ],
+        "descripcion": "Remera de corte oversized en tejido de algodón con estampado de rayas horizontales en tono azul y blanco. Cuenta con cuello redondo clásico y mangas cortas caídas de calce holgado, perfecta para lograr un estilo relajado e informal.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:54.527Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e8703f47-9541-47fa-ac65-34baa75cf746",
+      "fileName": "25366764_d86afb25-31f8-4a41-bded-1d7a0d5e0930.jpg",
+      "folderName": "AEMI+CO",
+      "file": "e8703f47-9541-47fa-ac65-34baa75cf746.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-87725e7f-36a8-4589-a8e2-7ef2607c9149",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversize a rayas rojas y crema",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras a rayas",
+        "colores": [
+          "#c82829",
+          "#ece7dc"
+        ],
+        "descripcion": "Remera oversize de manga corta con estampado de rayas horizontales rojas y crema. Posee cuello redondo y calce suelto de hombros caídos para un estilo urbano y relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "gorra con visera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversize a rayas rojas y crema",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras a rayas",
+        "colores": [
+          "#c82829",
+          "#ece7dc"
+        ],
+        "descripcion": "Remera oversize de manga corta con estampado de rayas horizontales rojas y crema. Posee cuello redondo y calce suelto de hombros caídos para un estilo urbano y relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera oversize a rayas",
+        "prendasSecundarias": [
+          "short de jean",
+          "gorra con visera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:54.762Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3cd76101-6acf-4ec2-8fa6-5c905fdcb73e",
+      "fileName": "25366764_e4e503fc-335f-45ce-a150-66f450be8704.jpg",
+      "folderName": "AEMI+CO",
+      "file": "3cd76101-6acf-4ec2-8fa6-5c905fdcb73e.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f2616694-9fdd-4182-8279-ca5137568eff",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas amarillas y salmón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#fbeb67",
+          "#f38960"
+        ],
+        "descripcion": "Remera estilo oversized con manga corta caída y cuello redondo, confeccionada en tejido de punto con diseño de rayas horizontales en tonos amarillo y salmón.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas amarillas y salmón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#fbeb67",
+          "#f38960"
+        ],
+        "descripcion": "Remera estilo oversized con manga corta caída y cuello redondo, confeccionada en tejido de punto con diseño de rayas horizontales en tonos amarillo y salmón.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "pantalón negro",
+          "cinturón negro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:54.785Z",
+      "errorDetail": null
+    },
+    {
+      "id": "125b3801-e732-45f5-b112-c00bb58dbba8",
+      "fileName": "25366764_e9a27089-e20d-4951-a351-caf7200abd77.jpg",
+      "folderName": "AEMI+CO",
+      "file": "125b3801-e732-45f5-b112-c00bb58dbba8.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ff72c0a2-3187-41d3-852d-b56dad3c0548",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera oversized a rayas amarillas y blancas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "remeras",
+        "colores": [
+          "#c3ac3d",
+          "#f9f6ea"
+        ],
+        "descripcion": "Remera de manga corta y calce oversized con cuello redondo, confeccionada en tejido liviano con estampado de rayas horizontales en amarillo y blanco.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "anteojos de sol"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera oversized a rayas amarillas y blancas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "remeras",
+        "colores": [
+          "#c3ac3d",
+          "#f9f6ea"
+        ],
+        "descripcion": "Remera de manga corta y calce oversized con cuello redondo, confeccionada en tejido liviano con estampado de rayas horizontales en amarillo y blanco.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "remera oversized a rayas",
+        "prendasSecundarias": [
+          "pantalón blanco",
+          "anteojos de sol"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:24:54.798Z",
+      "errorDetail": null
+    }
+  ],
+  "updatedAt": "2026-09-30T16:21:41.652Z"
+}

@@ -1,0 +1,2348 @@
+{
+  "id": "d6d0e91d-e167-4385-9fb8-e59a7f82e487",
+  "name": "1 FASHION SS26",
+  "createdAt": "2026-09-30T12:26:09.810Z",
+  "items": [
+    {
+      "id": "63de9702-621b-4ba3-a059-c000ab963625",
+      "fileName": "23113471_b2e2aa24-9e1f-4181-b7fd-a9e7ebe2c94d.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "63de9702-621b-4ba3-a059-c000ab963625.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-b2995c3b-068b-4cb3-bb1c-697d6f538655",
+        "name": "Vestido largo estampado playero"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo playero estampado",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#dc4968",
+          "#c93b8c",
+          "#3f9dbb"
+        ],
+        "descripcion": "Vestido maxi playero con breteles finos y escote bajo en la espalda. Presenta un diseño suelto y fluido confeccionado en tejido liviano con estampado floral multicolor.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo estampado",
+        "prendasSecundarias": [
+          "collar dorado",
+          "anillo dorado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo playero estampado",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#dc4968",
+          "#c93b8c",
+          "#3f9dbb"
+        ],
+        "descripcion": "Vestido maxi playero con breteles finos y escote bajo en la espalda. Presenta un diseño suelto y fluido confeccionado en tejido liviano con estampado floral multicolor.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo estampado",
+        "prendasSecundarias": [
+          "collar dorado",
+          "anillo dorado"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.052Z",
+      "errorDetail": null
+    },
+    {
+      "id": "cdd38cb5-13a9-4931-9e26-2d87bdb38b34",
+      "fileName": "23113471_3cccc481-04c0-442a-8c08-91a37a9f35fc.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "cdd38cb5-13a9-4931-9e26-2d87bdb38b34.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b2995c3b-068b-4cb3-bb1c-697d6f538655",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo estampado playero",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#d84c72"
+        ],
+        "descripcion": "Vestido largo playero de calce suelto con estampado floral multicolor en tonos rosa, rojo y lila. Posee breteles finos, escote en V profundo y una caída fluida muy fresca para la temporada estival.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo",
+        "prendasSecundarias": [
+          "collar dorado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo estampado playero",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#d84c72"
+        ],
+        "descripcion": "Vestido largo playero de calce suelto con estampado floral multicolor en tonos rosa, rojo y lila. Posee breteles finos, escote en V profundo y una caída fluida muy fresca para la temporada estival.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo",
+        "prendasSecundarias": [
+          "collar dorado"
+        ],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.068Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ce126b70-8e80-4aa9-9fb2-fd9c09dd572b",
+      "fileName": "23884132_3a659990-6153-437d-a2b7-1e1bee59521a.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "ce126b70-8e80-4aa9-9fb2-fd9c09dd572b.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+        "name": "Pantalón de tul con apliques de strass"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón translúcido bordado",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones playeros",
+        "colores": [
+          "#3d2b1f"
+        ],
+        "descripcion": "Pantalón translúcido de red en tono marrón, confeccionado con delicados bordados de pedrería y motivos florales. Presenta tiro medio y calce holgado, ideal para lucir sobre trajes de baño.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón translúcido bordado",
+        "prendasSecundarias": [
+          "Corpiño de bikini",
+          "Brazalete"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón translúcido bordado",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones playeros",
+        "colores": [
+          "#3d2b1f"
+        ],
+        "descripcion": "Pantalón translúcido de red en tono marrón, confeccionado con delicados bordados de pedrería y motivos florales. Presenta tiro medio y calce holgado, ideal para lucir sobre trajes de baño.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón translúcido bordado",
+        "prendasSecundarias": [
+          "Corpiño de bikini",
+          "Brazalete"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.086Z",
+      "errorDetail": null
+    },
+    {
+      "id": "074af806-d42b-403a-9500-82ff14f62928",
+      "fileName": "23884132_41c32245-7943-4a5c-aa98-0f5a39955a26.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "074af806-d42b-403a-9500-82ff14f62928.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+        "name": "Pantalón de tul con apliques de strass"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón transparente con bordado de mostacillas",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones de fiesta",
+        "colores": [
+          "#2b1e1a"
+        ],
+        "descripcion": "Pantalón tiro alto de pierna ancha, confeccionado en tela semi transparente de tono marrón oscuro con intrincados bordados de mostacillas y pedrería en motivos florales. Una pieza elegante e impactante para looks de noche.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón bordado semi transparente",
+        "prendasSecundarias": [
+          "top musculosa blanco",
+          "sandalias negras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón transparente con bordado de mostacillas",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones de fiesta",
+        "colores": [
+          "#2b1e1a"
+        ],
+        "descripcion": "Pantalón tiro alto de pierna ancha, confeccionado en tela semi transparente de tono marrón oscuro con intrincados bordados de mostacillas y pedrería en motivos florales. Una pieza elegante e impactante para looks de noche.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón bordado semi transparente",
+        "prendasSecundarias": [
+          "top musculosa blanco",
+          "sandalias negras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.274Z",
+      "errorDetail": null
+    },
+    {
+      "id": "db95a3e7-a4e8-4d06-b42d-807c75c17693",
+      "fileName": "23884132_bae426cc-49b2-46d8-96bd-28a773daa824.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "db95a3e7-a4e8-4d06-b42d-807c75c17693.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+        "name": "Pantalón de tul con apliques de strass"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón de tul bordado con brillos",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones de tul",
+        "colores": [
+          "#4e3831"
+        ],
+        "descripcion": "Pantalón holgado de tul transparente color marrón, embellecido con delicados apliques y bordados de brillos en forma de estrellas. Presenta cintura elastizada para un calce cómodo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón de tul",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pantalón de tul bordado con brillos",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones de tul",
+        "colores": [
+          "#4e3831"
+        ],
+        "descripcion": "Pantalón holgado de tul transparente color marrón, embellecido con delicados apliques y bordados de brillos en forma de estrellas. Presenta cintura elastizada para un calce cómodo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón de tul",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.309Z",
+      "errorDetail": null
+    },
+    {
+      "id": "54119e79-a58d-4700-a173-8ff923b1c1c0",
+      "fileName": "23884132_c3ff7fff-91d1-4033-b918-972bd54b7076.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "54119e79-a58d-4700-a173-8ff923b1c1c0.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+        "name": "Pantalón de tul con apliques de strass"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón de tul bordado con pedrería",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones de fiesta",
+        "colores": [
+          "#3d2820",
+          "#c8b282"
+        ],
+        "descripcion": "Pantalón de tiro alto confeccionado en tul translúcido color marrón, totalmente intervenido con bordados de cuentas y brillos en motivos florales. De corte fluido y calce holgado, ideal para destacar en looks nocturnos de alto impacto.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón bordado",
+        "prendasSecundarias": [
+          "top blanco",
+          "sandalias negras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón de tul bordado con pedrería",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones de fiesta",
+        "colores": [
+          "#3d2820",
+          "#c8b282"
+        ],
+        "descripcion": "Pantalón de tiro alto confeccionado en tul translúcido color marrón, totalmente intervenido con bordados de cuentas y brillos en motivos florales. De corte fluido y calce holgado, ideal para destacar en looks nocturnos de alto impacto.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón bordado",
+        "prendasSecundarias": [
+          "top blanco",
+          "sandalias negras"
+        ],
+        "confianza": 0.98,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.330Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f5619333-a061-49ea-893b-acaf399ce2b6",
+      "fileName": "23884132_dc6eb5eb-aafe-4234-8020-5ec6a4b21de0.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "f5619333-a061-49ea-893b-acaf399ce2b6.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón de tul con apliques de strass",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "Pantalones de fiesta",
+        "colores": [
+          "#4a332c"
+        ],
+        "descripcion": "Pantalón ancho confeccionado en tul semitransparente color marrón, intervenido con bordados de strass y piedras brillantes formando motivos estelares. Presenta cintura elastizada para un calce cómodo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón de tul con strass",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pantalón de tul con apliques de strass",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Pantalones de fiesta",
+        "colores": [
+          "#4a332c"
+        ],
+        "descripcion": "Pantalón ancho confeccionado en tul semitransparente color marrón, intervenido con bordados de strass y piedras brillantes formando motivos estelares. Presenta cintura elastizada para un calce cómodo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Pantalón de tul con strass",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.514Z",
+      "errorDetail": null
+    },
+    {
+      "id": "83c03eb5-49ed-4b11-b8d0-85dd610b0c12",
+      "fileName": "23884132_ddfaaa43-c722-4a8a-a028-d70b9cb0143f.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "83c03eb5-49ed-4b11-b8d0-85dd610b0c12.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+        "name": "Pantalón de tul con apliques de strass"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top de tul con lentejuelas y mostacillas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops bordados",
+        "colores": [
+          "#61463d",
+          "#d2b06f",
+          "#8a8580"
+        ],
+        "descripcion": "Detalle de tejido en tul transparente tono marrón, embellecido con lentejuelas doradas y mostacillas que forman un diseño geométrico y floral brillante.",
+        "recorte": null,
+        "confianza": 0.85,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Top de tul bordado",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Top de tul con lentejuelas y mostacillas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops bordados",
+        "colores": [
+          "#61463d",
+          "#d2b06f",
+          "#8a8580"
+        ],
+        "descripcion": "Detalle de tejido en tul transparente tono marrón, embellecido con lentejuelas doradas y mostacillas que forman un diseño geométrico y floral brillante.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Top de tul bordado",
+        "prendasSecundarias": [],
+        "confianza": 0.85,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.542Z",
+      "errorDetail": null
+    },
+    {
+      "id": "284df9ab-d9f3-4e13-ad13-ea715efa3529",
+      "fileName": "23884132_ee1598eb-d2d5-4519-b81d-bd68f99e5b0f.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "284df9ab-d9f3-4e13-ad13-ea715efa3529.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+        "name": "Pantalón de tul con apliques de strass"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pollera de tul bordada con lentejuelas",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "polleras",
+        "colores": [
+          "#73534c",
+          "#c5b395",
+          "#2e2421"
+        ],
+        "descripcion": "Detalle de pollera con cintura elastizada, confeccionada en tul de tono marrón con intrincados bordados de mostacillas y lentejuelas doradas y plateadas.",
+        "recorte": null,
+        "confianza": 0.9,
+        "prendaCompleta": false,
+        "prendaPrincipal": "pollera de tul bordada",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pollera de tul bordada con lentejuelas",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "polleras",
+        "colores": [
+          "#73534c",
+          "#c5b395",
+          "#2e2421"
+        ],
+        "descripcion": "Detalle de pollera con cintura elastizada, confeccionada en tul de tono marrón con intrincados bordados de mostacillas y lentejuelas doradas y plateadas.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "pollera de tul bordada",
+        "prendasSecundarias": [],
+        "confianza": 0.9,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.561Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c99f36fd-2910-424b-89ac-8eff687d83d9",
+      "fileName": "23884132_fcac68c2-f911-4893-8dbb-f06f7d67105a.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "c99f36fd-2910-424b-89ac-8eff687d83d9.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+        "name": "Pantalón de tul con apliques de strass"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón de malla con strass",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones de fiesta",
+        "colores": [
+          "#3b2219",
+          "#281710",
+          "#c5a059"
+        ],
+        "descripcion": "Pantalón tiro alto confeccionado en malla transparente en tono marrón oscuro, intervenido con bordados de strass y apliques brillantes en patrón geométrico. Diseño de pierna ancha y calce fluido, ideal para destacar en eventos nocturnos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón de malla con strass",
+        "prendasSecundarias": [
+          "top marrón",
+          "sandalias doradas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón de malla con strass",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones de fiesta",
+        "colores": [
+          "#3b2219",
+          "#281710",
+          "#c5a059"
+        ],
+        "descripcion": "Pantalón tiro alto confeccionado en malla transparente en tono marrón oscuro, intervenido con bordados de strass y apliques brillantes en patrón geométrico. Diseño de pierna ancha y calce fluido, ideal para destacar en eventos nocturnos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón de malla con strass",
+        "prendasSecundarias": [
+          "top marrón",
+          "sandalias doradas"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.567Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ca3a8926-5fa4-4ed0-8078-8fd61476753c",
+      "fileName": "25083392_4e3be663-8077-45bb-bf5b-0423102fbf35.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "ca3a8926-5fa4-4ed0-8078-8fd61476753c.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-0344de3a-eea3-4e6e-a411-bba2e4494af8",
+        "name": "Pantalón wide leg fluido off-white"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón palazzo satinado marfil",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones palazzo",
+        "colores": [
+          "#f2eee5"
+        ],
+        "descripcion": "Pantalón de satinado fluido en tono marfil, con tiro alto y corte ancho palazzo de caída relajada. Elegante y versátil para outfits urbanos o de estación.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón satinado",
+        "prendasSecundarias": [
+          "remera blanca",
+          "suéter beige",
+          "cartera de mano",
+          "mocasines"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón palazzo satinado marfil",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones palazzo",
+        "colores": [
+          "#f2eee5"
+        ],
+        "descripcion": "Pantalón de satinado fluido en tono marfil, con tiro alto y corte ancho palazzo de caída relajada. Elegante y versátil para outfits urbanos o de estación.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón satinado",
+        "prendasSecundarias": [
+          "remera blanca",
+          "suéter beige",
+          "cartera de mano",
+          "mocasines"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.756Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7bf82218-e6e3-4941-8bd2-5bec15a1952a",
+      "fileName": "25083392_5a3f2002-1b2c-4de6-ad53-dc38133377d7.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "7bf82218-e6e3-4941-8bd2-5bec15a1952a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-86d177f0-1a4e-4be5-81bc-d7981a06f43c",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón satinado pata ancha marrón chocolate",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones de satén",
+        "colores": [
+          "#2e1d19"
+        ],
+        "descripcion": "Pantalón tiro alto confeccionado en tela satinada con pierna ancha y caída fluida. Ideal para armar conjuntos sofisticados y de tendencia.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón de satén",
+        "prendasSecundarias": [
+          "camisa celeste",
+          "cartera de mano",
+          "zapatos con puntera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón satinado pata ancha marrón chocolate",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones de satén",
+        "colores": [
+          "#2e1d19"
+        ],
+        "descripcion": "Pantalón tiro alto confeccionado en tela satinada con pierna ancha y caída fluida. Ideal para armar conjuntos sofisticados y de tendencia.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón de satén",
+        "prendasSecundarias": [
+          "camisa celeste",
+          "cartera de mano",
+          "zapatos con puntera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.821Z",
+      "errorDetail": null
+    },
+    {
+      "id": "94def0cf-18fb-455d-b080-3ef967e07547",
+      "fileName": "25083392_7b81460a-7536-4fae-a4c9-784d917fc83d.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "94def0cf-18fb-455d-b080-3ef967e07547.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0344de3a-eea3-4e6e-a411-bba2e4494af8",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón wide leg fluido off-white",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones fluidos",
+        "colores": [
+          "#efece6"
+        ],
+        "descripcion": "Pantalón ancho de tiro alto y caída fluida en tono off-white, ideal para lograr un look elegante y de estilo relajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón ancho",
+        "prendasSecundarias": [
+          "remera blanca",
+          "cartera de cuero",
+          "sweater beige",
+          "mocasines"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón wide leg fluido off-white",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones fluidos",
+        "colores": [
+          "#efece6"
+        ],
+        "descripcion": "Pantalón ancho de tiro alto y caída fluida en tono off-white, ideal para lograr un look elegante y de estilo relajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón ancho",
+        "prendasSecundarias": [
+          "remera blanca",
+          "cartera de cuero",
+          "sweater beige",
+          "mocasines"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.846Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e4c9e7f7-8a73-46c9-a432-3bd38b8a4f3a",
+      "fileName": "25083392_802c9539-e9ad-4404-9d8e-2ea743be6a10.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "e4c9e7f7-8a73-46c9-a432-3bd38b8a4f3a.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-6342b9ef-b47a-40a9-9a28-f18b58aff653",
+        "name": "Camisa oversize celeste de manga larga"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Camisa celeste oversized",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "shirt",
+        "gender": "mujer",
+        "subcategoria": "Camisas",
+        "colores": [
+          "#b2cde8",
+          "#2f1d19"
+        ],
+        "descripcion": "Camisa holgada de manga larga en tono celeste claro, confeccionada en tela liviana con cuello camisero, cartera de botones a tono y bolsillo en el frente. Una prenda atemporal y versátil con calce suelto.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "camisa celeste",
+        "prendasSecundarias": [
+          "pantalón satinado marrón",
+          "cartera de mano negra"
+        ]
+      },
+      "ficha": {
+        "nombre": "Camisa celeste oversized",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Camisas",
+        "colores": [
+          "#b2cde8",
+          "#2f1d19"
+        ],
+        "descripcion": "Camisa holgada de manga larga en tono celeste claro, confeccionada en tela liviana con cuello camisero, cartera de botones a tono y bolsillo en el frente. Una prenda atemporal y versátil con calce suelto.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "camisa celeste",
+        "prendasSecundarias": [
+          "pantalón satinado marrón",
+          "cartera de mano negra"
+        ],
+        "confianza": 0.95,
+        "garmentType": "shirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:10.986Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3be9cac2-e5c7-4dfd-a3cc-04f69846aeff",
+      "fileName": "25083392_8d90750b-e123-4e71-ab0c-434c54ee481d.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "3be9cac2-e5c7-4dfd-a3cc-04f69846aeff.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-0344de3a-eea3-4e6e-a411-bba2e4494af8",
+        "name": "Pantalón wide leg fluido off-white"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón fluido wide leg crema",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones",
+        "colores": [
+          "#f2f1ea"
+        ],
+        "descripcion": "Pantalón de vestir confeccionado en tela fluida con caída holgada y tiro alto. Un diseño minimalista y versátil de pierna ancha ideal para outfits urbanos y elegantes.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón wide leg",
+        "prendasSecundarias": [
+          "remera blanca",
+          "suéter sobre hombros",
+          "cartera de cuero",
+          "mocasines"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón fluido wide leg crema",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones",
+        "colores": [
+          "#f2f1ea"
+        ],
+        "descripcion": "Pantalón de vestir confeccionado en tela fluida con caída holgada y tiro alto. Un diseño minimalista y versátil de pierna ancha ideal para outfits urbanos y elegantes.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón wide leg",
+        "prendasSecundarias": [
+          "remera blanca",
+          "suéter sobre hombros",
+          "cartera de cuero",
+          "mocasines"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.051Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c7f970d2-0899-451f-8625-1c76fb6a300e",
+      "fileName": "25083392_bb047555-0f0d-49d9-817e-d54afe197a6a.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "c7f970d2-0899-451f-8625-1c76fb6a300e.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-6342b9ef-b47a-40a9-9a28-f18b58aff653",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Camisa oversize celeste de manga larga",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "shirt",
+        "gender": "mujer",
+        "subcategoria": "camisas",
+        "colores": [
+          "#9cbce2"
+        ],
+        "descripcion": "Camisa clásica celeste de corte oversize con bolsillo en el pecho y mangas largas. Un básico atemporal ideal para lograr outfits urbanos sofisticados.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "camisa celeste",
+        "prendasSecundarias": [
+          "pantalón satinado marrón",
+          "balerinas bicolor",
+          "mini cartera tejida",
+          "collar dorado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Camisa oversize celeste de manga larga",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "camisas",
+        "colores": [
+          "#9cbce2"
+        ],
+        "descripcion": "Camisa clásica celeste de corte oversize con bolsillo en el pecho y mangas largas. Un básico atemporal ideal para lograr outfits urbanos sofisticados.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "camisa celeste",
+        "prendasSecundarias": [
+          "pantalón satinado marrón",
+          "balerinas bicolor",
+          "mini cartera tejida",
+          "collar dorado"
+        ],
+        "confianza": 0.95,
+        "garmentType": "shirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.086Z",
+      "errorDetail": null
+    },
+    {
+      "id": "500ab91f-c260-4071-b94b-935a76b2d8e2",
+      "fileName": "25083392_e166fc11-1199-443a-bfde-f793a4f63479.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "500ab91f-c260-4071-b94b-935a76b2d8e2.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-0344de3a-eea3-4e6e-a411-bba2e4494af8",
+        "name": "Pantalón wide leg fluido off-white"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pantalón ancho satinado",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "trousers",
+        "gender": "mujer",
+        "subcategoria": "pantalones anchos",
+        "colores": [
+          "#faf7ef",
+          "#ffffff",
+          "#8c7c6d"
+        ],
+        "descripcion": "Pantalón de corte ancho y tiro alto en tejido satinado de caída fluida, ideal para un estilo sofisticado y urbano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón ancho satinado",
+        "prendasSecundarias": [
+          "remera blanca",
+          "suéter beige",
+          "cartera de mano",
+          "mocasines"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pantalón ancho satinado",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "pantalones anchos",
+        "colores": [
+          "#faf7ef",
+          "#ffffff",
+          "#8c7c6d"
+        ],
+        "descripcion": "Pantalón de corte ancho y tiro alto en tejido satinado de caída fluida, ideal para un estilo sofisticado y urbano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pantalón ancho satinado",
+        "prendasSecundarias": [
+          "remera blanca",
+          "suéter beige",
+          "cartera de mano",
+          "mocasines"
+        ],
+        "confianza": 0.95,
+        "garmentType": "trousers",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.218Z",
+      "errorDetail": null
+    },
+    {
+      "id": "899c6b90-8d12-44f9-97e6-3f6eed53be67",
+      "fileName": "25083392_f178fc2d-1ef4-4469-b3b8-f33b8c7c9582.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "899c6b90-8d12-44f9-97e6-3f6eed53be67.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-39131931-97a0-46db-a168-869f4ba0d816",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Remera blanca cuello redondo",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "tshirt",
+        "gender": "mujer",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Remera clásica de algodón blanco con cuello redondo y mangas cortas. De calce fluido y confección suave, es un básico infaltable para combinar en outfits urbanos y chic.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera blanca",
+        "prendasSecundarias": [
+          "suéter marrón",
+          "pantalón satinado blanco",
+          "cartera de cuero taupe"
+        ]
+      },
+      "ficha": {
+        "nombre": "Remera blanca cuello redondo",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Remeras",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Remera clásica de algodón blanco con cuello redondo y mangas cortas. De calce fluido y confección suave, es un básico infaltable para combinar en outfits urbanos y chic.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "remera blanca",
+        "prendasSecundarias": [
+          "suéter marrón",
+          "pantalón satinado blanco",
+          "cartera de cuero taupe"
+        ],
+        "confianza": 0.95,
+        "garmentType": "tshirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.280Z",
+      "errorDetail": null
+    },
+    {
+      "id": "95d690a4-ca9f-4a08-817e-ae2bf8b3fa7f",
+      "fileName": "25105429_09908000-d0c3-40b2-a8ec-9cf49a3ff906.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "95d690a4-ca9f-4a08-817e-ae2bf8b3fa7f.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-61dfae4b-394c-410f-8682-75eaff7f9be4",
+        "name": "Pollera corta cruzada a lunares"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minipollera a lunares",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "polleras",
+        "colores": [
+          "#1f1f1f",
+          "#ffffff"
+        ],
+        "descripcion": "Minipollera tiro alto a lunares blancos sobre fondo negro, de calce ajustado y confección estructurada, ideal para combinar con prendas básicas de verano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pollera a lunares",
+        "prendasSecundarias": [
+          "remera blanca",
+          "pulsera dorada"
+        ]
+      },
+      "ficha": {
+        "nombre": "Minipollera a lunares",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "polleras",
+        "colores": [
+          "#1f1f1f",
+          "#ffffff"
+        ],
+        "descripcion": "Minipollera tiro alto a lunares blancos sobre fondo negro, de calce ajustado y confección estructurada, ideal para combinar con prendas básicas de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pollera a lunares",
+        "prendasSecundarias": [
+          "remera blanca",
+          "pulsera dorada"
+        ],
+        "confianza": 0.95,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.326Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2c6cf907-2322-4ad4-b388-9dbd0938d689",
+      "fileName": "25105429_1256178c-cb32-448e-b6ef-230c30df325a.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "2c6cf907-2322-4ad4-b388-9dbd0938d689.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01 (2da pasada, imágenes regeneradas).",
+      "duplicateOf": {
+        "id": "import-f303e6d7-4c0c-4d89-b39b-0c743329d404",
+        "name": "Minifalda cruzada de jean con lunares"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pollera corta cruzada a lunares",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "polleras",
+        "colores": [
+          "#dc7374",
+          "#9c3a3b",
+          "#ece8e1"
+        ],
+        "descripcion": "Pollera corta de estilo cruzado en tono rosa coral con estampado de lunares a tono. Posee solapa frontal asimétrica con detalle de botón y tiro medio, ideal para un look fresco y veraniego.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pollera",
+        "prendasSecundarias": [
+          "remera blanca",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pollera corta cruzada a lunares",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "polleras",
+        "colores": [
+          "#dc7374",
+          "#9c3a3b",
+          "#ece8e1"
+        ],
+        "descripcion": "Pollera corta de estilo cruzado en tono rosa coral con estampado de lunares a tono. Posee solapa frontal asimétrica con detalle de botón y tiro medio, ideal para un look fresco y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pollera",
+        "prendasSecundarias": [
+          "remera blanca",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.455Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ff88c4ff-a0d3-431a-b177-fbaf92286ece",
+      "fileName": "25105429_257302ef-a6fd-4b54-bade-4a1a45ad6958.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "ff88c4ff-a0d3-431a-b177-fbaf92286ece.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-f303e6d7-4c0c-4d89-b39b-0c743329d404",
+        "name": "Minifalda cruzada de jean con lunares"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minipollera denim estampada con lunares",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Polleras",
+        "colores": [
+          "#cf7c7e",
+          "#9a4b4e"
+        ],
+        "descripcion": "Minipollera de denim en tono rosa lavado con estampado de lunares grandes a tono. Presenta un diseño ajustado de tiro alto con costuras visibles, ideal para un look casual y fresco.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "pollera de denim",
+        "prendasSecundarias": [
+          "campera de denim"
+        ]
+      },
+      "ficha": {
+        "nombre": "Minipollera denim estampada con lunares",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Polleras",
+        "colores": [
+          "#cf7c7e",
+          "#9a4b4e"
+        ],
+        "descripcion": "Minipollera de denim en tono rosa lavado con estampado de lunares grandes a tono. Presenta un diseño ajustado de tiro alto con costuras visibles, ideal para un look casual y fresco.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "pollera de denim",
+        "prendasSecundarias": [
+          "campera de denim"
+        ],
+        "confianza": 0.95,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.503Z",
+      "errorDetail": null
+    },
+    {
+      "id": "88e1e348-4cfb-4267-9755-ca5eeb79f13d",
+      "fileName": "25105429_7f68f5ea-0af4-4e67-b69f-068750474e0f.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "88e1e348-4cfb-4267-9755-ca5eeb79f13d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-65fd3efa-a2b9-4e17-b1ed-19fd02c4e914",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Campera cropped a lunares",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "camperas",
+        "colores": [
+          "#efeae1"
+        ],
+        "descripcion": "Campera corta con diseño de lunares a contraste, cuello solapa y manga larga. Ideal para combinar en un conjunto urbano y moderno.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "campera cropped a lunares",
+        "prendasSecundarias": [
+          "minifalda a lunares",
+          "zapatillas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Campera cropped a lunares",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "camperas",
+        "colores": [
+          "#efeae1"
+        ],
+        "descripcion": "Campera corta con diseño de lunares a contraste, cuello solapa y manga larga. Ideal para combinar en un conjunto urbano y moderno.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "campera cropped a lunares",
+        "prendasSecundarias": [
+          "minifalda a lunares",
+          "zapatillas"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.548Z",
+      "errorDetail": null
+    },
+    {
+      "id": "5a502483-7860-4736-97b3-25afb264aaef",
+      "fileName": "25105429_ac7da780-845d-4034-af37-44589dd37959.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "5a502483-7860-4736-97b3-25afb264aaef.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-db12db3c-944b-40b3-9a82-f41d1935ff81",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minipollera cruzada a lunares",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minipolleras",
+        "colores": [
+          "#eae5d8",
+          "#2d2826"
+        ],
+        "descripcion": "Minipollera cruzada confeccionada en gabardina rígida con estampado de lunares a contraste. Presenta un diseño de pretina asimétrica con solapa cruzada y detalle de botón metálico en el frente.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "minipollera cruzada a lunares",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minipollera cruzada a lunares",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minipolleras",
+        "colores": [
+          "#eae5d8",
+          "#2d2826"
+        ],
+        "descripcion": "Minipollera cruzada confeccionada en gabardina rígida con estampado de lunares a contraste. Presenta un diseño de pretina asimétrica con solapa cruzada y detalle de botón metálico en el frente.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "minipollera cruzada a lunares",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.560Z",
+      "errorDetail": null
+    },
+    {
+      "id": "177d18c5-9c95-4f7a-9abd-71cbd42b057e",
+      "fileName": "25105429_b089b168-28c0-448e-b623-9b233553ffda.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "177d18c5-9c95-4f7a-9abd-71cbd42b057e.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-61dfae4b-394c-410f-8682-75eaff7f9be4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pollera corta cruzada a lunares",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "polleras",
+        "colores": [
+          "#1b1b1d",
+          "#f0f0f2"
+        ],
+        "descripcion": "Pollera corta de tiro alto con diseño cruzado y estampado de lunares blancos sobre fondo negro, ideal para un look urbano y fresco.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pollera a lunares",
+        "prendasSecundarias": [
+          "remera blanca",
+          "zapatillas",
+          "cartera de hombro",
+          "accesorios"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pollera corta cruzada a lunares",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "polleras",
+        "colores": [
+          "#1b1b1d",
+          "#f0f0f2"
+        ],
+        "descripcion": "Pollera corta de tiro alto con diseño cruzado y estampado de lunares blancos sobre fondo negro, ideal para un look urbano y fresco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pollera a lunares",
+        "prendasSecundarias": [
+          "remera blanca",
+          "zapatillas",
+          "cartera de hombro",
+          "accesorios"
+        ],
+        "confianza": 0.95,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.690Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6a494915-6764-4a0c-b90f-652e52f59e27",
+      "fileName": "25105429_b5315641-3ba2-4aa5-9531-22e178c0153e.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "6a494915-6764-4a0c-b90f-652e52f59e27.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f303e6d7-4c0c-4d89-b39b-0c743329d404",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda cruzada de jean con lunares",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#d76e71"
+        ],
+        "descripcion": "Minifalda de denim cruzada con solapa asimétrica, abotonado frontal y estampado de lunares en tono rosa coral.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de jean",
+        "prendasSecundarias": [
+          "campera de jean",
+          "cartera",
+          "anillos"
+        ]
+      },
+      "ficha": {
+        "nombre": "Minifalda cruzada de jean con lunares",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#d76e71"
+        ],
+        "descripcion": "Minifalda de denim cruzada con solapa asimétrica, abotonado frontal y estampado de lunares en tono rosa coral.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de jean",
+        "prendasSecundarias": [
+          "campera de jean",
+          "cartera",
+          "anillos"
+        ],
+        "confianza": 0.95,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.722Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f043cf8b-49b0-47b5-bc19-495ea4031d8a",
+      "fileName": "25105429_c09c6ca5-bfa2-481e-8075-5fa144daf697.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "f043cf8b-49b0-47b5-bc19-495ea4031d8a.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-61dfae4b-394c-410f-8682-75eaff7f9be4",
+        "name": "Pollera corta cruzada a lunares"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minipollera cruzada a lunares",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Polleras",
+        "colores": [
+          "#2f3136",
+          "#ffffff"
+        ],
+        "descripcion": "Minipollera tiro alto con diseño cruzado y estampado a lunares blancos sobre fondo gris oscuro. Posee costuras a la vista y cierre mediante botón frontal, ideal para un look casual urbano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minipollera a lunares",
+        "prendasSecundarias": [
+          "remera blanca",
+          "zapatillas",
+          "collares"
+        ]
+      },
+      "ficha": {
+        "nombre": "Minipollera cruzada a lunares",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Polleras",
+        "colores": [
+          "#2f3136",
+          "#ffffff"
+        ],
+        "descripcion": "Minipollera tiro alto con diseño cruzado y estampado a lunares blancos sobre fondo gris oscuro. Posee costuras a la vista y cierre mediante botón frontal, ideal para un look casual urbano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minipollera a lunares",
+        "prendasSecundarias": [
+          "remera blanca",
+          "zapatillas",
+          "collares"
+        ],
+        "confianza": 0.95,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.771Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a1919b7a-94c9-4e9a-b50f-41bf2bf73c99",
+      "fileName": "25105429_d901894b-dfdc-49ae-a0ff-2ad9f4d2b63b.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "a1919b7a-94c9-4e9a-b50f-41bf2bf73c99.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-db12db3c-944b-40b3-9a82-f41d1935ff81",
+        "name": "Minipollera cruzada a lunares"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda estampada a lunares",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#ddd8cb"
+        ],
+        "descripcion": "Minifalda tiro alto confeccionada en denim de algodón con un clásico estampado de lunares a contraste y detalle de costuras vistas. Ideal para un look de media estación fresco y moderno.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "minifalda a lunares",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda estampada a lunares",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#ddd8cb"
+        ],
+        "descripcion": "Minifalda tiro alto confeccionada en denim de algodón con un clásico estampado de lunares a contraste y detalle de costuras vistas. Ideal para un look de media estación fresco y moderno.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "minifalda a lunares",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.799Z",
+      "errorDetail": null
+    },
+    {
+      "id": "bc2b6bab-c7d8-466c-9388-3b0fdea80698",
+      "fileName": "25105429_df4ee30b-58b2-4d18-ac8d-00f8e194d5f0.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "bc2b6bab-c7d8-466c-9388-3b0fdea80698.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-61dfae4b-394c-410f-8682-75eaff7f9be4",
+        "name": "Pollera corta cruzada a lunares"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minipollera cruzada a lunares",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minipolleras",
+        "colores": [
+          "#212121",
+          "#ffffff"
+        ],
+        "descripcion": "Minipollera cruzada de tiro alto confeccionada en tejido tipo denim negro con estampado de lunares blancos. Cuenta con solapa asimétrica frontal y cierre con botón metálico. Ideal para un look urbano y moderno.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Minipollera a lunares",
+        "prendasSecundarias": [
+          "camisa blanca"
+        ]
+      },
+      "ficha": {
+        "nombre": "Minipollera cruzada a lunares",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minipolleras",
+        "colores": [
+          "#212121",
+          "#ffffff"
+        ],
+        "descripcion": "Minipollera cruzada de tiro alto confeccionada en tejido tipo denim negro con estampado de lunares blancos. Cuenta con solapa asimétrica frontal y cierre con botón metálico. Ideal para un look urbano y moderno.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "Minipollera a lunares",
+        "prendasSecundarias": [
+          "camisa blanca"
+        ],
+        "confianza": 0.95,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.927Z",
+      "errorDetail": null
+    },
+    {
+      "id": "01779620-b1eb-4f72-a5ec-60b30dd562b2",
+      "fileName": "25105429_f4c4bd23-a57c-4219-a392-c2e6fbb39e63.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "01779620-b1eb-4f72-a5ec-60b30dd562b2.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-f303e6d7-4c0c-4d89-b39b-0c743329d404",
+        "name": "Minifalda cruzada de jean con lunares"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda cruzada con estampado de lunares",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#d77b7b",
+          "#a33e43"
+        ],
+        "descripcion": "Minifalda corta confeccionada en denim con lavado rojizo y estampado de lunares a tono. Presenta una cintura con diseño asimétrico y cruce frontal con botón metálico, aportando un estilo canchero y moderno.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda",
+        "prendasSecundarias": [
+          "campera de jean",
+          "cartera con cadena",
+          "anillo"
+        ]
+      },
+      "ficha": {
+        "nombre": "Minifalda cruzada con estampado de lunares",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#d77b7b",
+          "#a33e43"
+        ],
+        "descripcion": "Minifalda corta confeccionada en denim con lavado rojizo y estampado de lunares a tono. Presenta una cintura con diseño asimétrico y cruce frontal con botón metálico, aportando un estilo canchero y moderno.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda",
+        "prendasSecundarias": [
+          "campera de jean",
+          "cartera con cadena",
+          "anillo"
+        ],
+        "confianza": 0.95,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.954Z",
+      "errorDetail": null
+    },
+    {
+      "id": "bffd82a1-2c02-4d29-bd45-67bd6848cdc0",
+      "fileName": "25105429_f4cc106b-934c-439f-856b-e03ba779e2d5.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "bffd82a1-2c02-4d29-bd45-67bd6848cdc0.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-db12db3c-944b-40b3-9a82-f41d1935ff81",
+        "name": "Minipollera cruzada a lunares"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minipollera a lunares cruzada",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "minipolleras",
+        "colores": [
+          "#eae7df",
+          "#3e2c27"
+        ],
+        "descripcion": "Minipollera cruzada de tiro alto con estampado de lunares contrastantes. Confeccionada en gabardina de algodón con corte estructurado y solapa frontal, ideal para outfits urbanos de verano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minipollera a lunares",
+        "prendasSecundarias": [
+          "campera a lunares",
+          "top corto rojo",
+          "zapatillas deportivas",
+          "cartera de hombro negra",
+          "auriculares de vincha"
+        ]
+      },
+      "ficha": {
+        "nombre": "Minipollera a lunares cruzada",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "minipolleras",
+        "colores": [
+          "#eae7df",
+          "#3e2c27"
+        ],
+        "descripcion": "Minipollera cruzada de tiro alto con estampado de lunares contrastantes. Confeccionada en gabardina de algodón con corte estructurado y solapa frontal, ideal para outfits urbanos de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minipollera a lunares",
+        "prendasSecundarias": [
+          "campera a lunares",
+          "top corto rojo",
+          "zapatillas deportivas",
+          "cartera de hombro negra",
+          "auriculares de vincha"
+        ],
+        "confianza": 0.95,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:11.995Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3ce897b1-9e0c-4916-8c98-1ea5e4ad239e",
+      "fileName": "25334036_209f6d7c-b7a0-4a57-99c5-07d713222427.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "3ce897b1-9e0c-4916-8c98-1ea5e4ad239e.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "name": "Vestido corto halter de crochet"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto halter tejido al crochet",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos de verano",
+        "colores": [
+          "#f3ead8",
+          "#e2d2b8"
+        ],
+        "descripcion": "Vestido corto tejido al crochet en tono crema con escote halter. Presenta un entramado calado con textura y un delicado detalle de flecos con caracoles y cuentas en el ruedo, ideal para outfits veraniegos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto tejido",
+        "prendasSecundarias": [
+          "aros",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto halter tejido al crochet",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos de verano",
+        "colores": [
+          "#f3ead8",
+          "#e2d2b8"
+        ],
+        "descripcion": "Vestido corto tejido al crochet en tono crema con escote halter. Presenta un entramado calado con textura y un delicado detalle de flecos con caracoles y cuentas en el ruedo, ideal para outfits veraniegos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto tejido",
+        "prendasSecundarias": [
+          "aros",
+          "pulseras"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.029Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0feb0a44-4194-42af-9732-edafd2d180e9",
+      "fileName": "25334036_342fcc7f-44c8-4895-a7de-ca1fdc10e79d.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "0feb0a44-4194-42af-9732-edafd2d180e9.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "name": "Vestido corto halter de crochet"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto de crochet halter",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#efeae1",
+          "#d2c5b1"
+        ],
+        "descripcion": "Vestido corto tejido al crochet con escote halter y entramado calado. Presenta un ruedo con apliques de caracoles y dijes marinos, perfecto para outfits veraniegos y playeros.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto",
+        "prendasSecundarias": [
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto de crochet halter",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#efeae1",
+          "#d2c5b1"
+        ],
+        "descripcion": "Vestido corto tejido al crochet con escote halter y entramado calado. Presenta un ruedo con apliques de caracoles y dijes marinos, perfecto para outfits veraniegos y playeros.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto",
+        "prendasSecundarias": [
+          "pulseras"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.163Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f36612b6-d812-49d0-bbad-24ccd8b15f78",
+      "fileName": "25334036_78baf555-1237-4117-91d1-7f7226773768.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "f36612b6-d812-49d0-bbad-24ccd8b15f78.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "name": "Vestido corto halter de crochet"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto tejido calado halter",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos cortos",
+        "colores": [
+          "#f4f1e8"
+        ],
+        "descripcion": "Vestido corto tejido en trama calada con cuello halter y escote descubierto. Destaca por su ruedo adornado con apliques de caracoles y cuentas colgantes, ideal para un look fresco y veraniego.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto tejido",
+        "prendasSecundarias": [
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto tejido calado halter",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos cortos",
+        "colores": [
+          "#f4f1e8"
+        ],
+        "descripcion": "Vestido corto tejido en trama calada con cuello halter y escote descubierto. Destaca por su ruedo adornado con apliques de caracoles y cuentas colgantes, ideal para un look fresco y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto tejido",
+        "prendasSecundarias": [
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.188Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e168d0bb-47c5-4350-b141-014034a1fd5e",
+      "fileName": "25334036_7c05b40f-6e4d-41f6-9559-0920ecd20002.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "e168d0bb-47c5-4350-b141-014034a1fd5e.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "name": "Vestido corto halter de crochet"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto tejido halter",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#f4efe2"
+        ],
+        "descripcion": "Vestido corto tejido de calado artesanal con escote halter y lazo para atar al cuello. Posee espalda descubierta y detalle de apliques colgantes en el ruedo, ideal para un look veraniego y sofisticado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Vestido corto tejido",
+        "prendasSecundarias": [
+          "cartera de perlas",
+          "sandalias de taco",
+          "pulseras",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto tejido halter",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#f4efe2"
+        ],
+        "descripcion": "Vestido corto tejido de calado artesanal con escote halter y lazo para atar al cuello. Posee espalda descubierta y detalle de apliques colgantes en el ruedo, ideal para un look veraniego y sofisticado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Vestido corto tejido",
+        "prendasSecundarias": [
+          "cartera de perlas",
+          "sandalias de taco",
+          "pulseras",
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.216Z",
+      "errorDetail": null
+    },
+    {
+      "id": "062ed30d-9083-4040-96a7-ba51e098b6bb",
+      "fileName": "25334036_8af99bc9-d688-40e6-b3b0-56f693b5fb33.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "062ed30d-9083-4040-96a7-ba51e098b6bb.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "name": "Vestido corto halter de crochet"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto al crochet halter",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#f4efe6"
+        ],
+        "descripcion": "Vestido corto tejido al crochet en tono crema, con cuello halter y espalda al descubierto. Presenta entramado calado geométrico y detalle de pequeños flecos en el ruedo, ideal para días de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto al crochet",
+        "prendasSecundarias": [
+          "cartera de mano de perlas",
+          "sandalias con taco",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto al crochet halter",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#f4efe6"
+        ],
+        "descripcion": "Vestido corto tejido al crochet en tono crema, con cuello halter y espalda al descubierto. Presenta entramado calado geométrico y detalle de pequeños flecos en el ruedo, ideal para días de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto al crochet",
+        "prendasSecundarias": [
+          "cartera de mano de perlas",
+          "sandalias con taco",
+          "aros"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.283Z",
+      "errorDetail": null
+    },
+    {
+      "id": "1c67eae7-c957-4e56-8aa7-f2a709ecf673",
+      "fileName": "25334036_beb94ee8-e8a3-41db-a0af-2e1b8032ccc3.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "1c67eae7-c957-4e56-8aa7-f2a709ecf673.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "name": "Vestido corto halter de crochet"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto halter tejido al crochet",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#f3efe6"
+        ],
+        "descripcion": "Vestido corto de punto calado tejido al crochet en tono crudo, con escote halter para atar al cuello y detalle de caracoles colgantes en el ruedo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido tejido",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Vestido corto halter tejido al crochet",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#f3efe6"
+        ],
+        "descripcion": "Vestido corto de punto calado tejido al crochet en tono crudo, con escote halter para atar al cuello y detalle de caracoles colgantes en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido tejido",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.389Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d3f058f3-695d-4aaa-80f8-958304370379",
+      "fileName": "25334036_c1728c10-c6b8-4667-8690-904876468045.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "d3f058f3-695d-4aaa-80f8-958304370379.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "name": "Vestido corto halter de crochet"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto tejido halter espalda descubierta",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos de verano",
+        "colores": [
+          "#f3efe6"
+        ],
+        "descripcion": "Vestido mini tejido al crochet con cuello halter para atar y espalda totalmente al descubierto. Presenta un diseño de trama calada geométrica y un acabado en el ruedo decorado con caracoles y flecos colgantes.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto tejido",
+        "prendasSecundarias": [
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto tejido halter espalda descubierta",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos de verano",
+        "colores": [
+          "#f3efe6"
+        ],
+        "descripcion": "Vestido mini tejido al crochet con cuello halter para atar y espalda totalmente al descubierto. Presenta un diseño de trama calada geométrica y un acabado en el ruedo decorado con caracoles y flecos colgantes.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto tejido",
+        "prendasSecundarias": [
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.405Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6c2379ac-228b-48e9-9268-d84d87e4ed9b",
+      "fileName": "25334036_c5706805-3302-40d9-a68a-f503ea3d84b1.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "6c2379ac-228b-48e9-9268-d84d87e4ed9b.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "name": "Vestido corto halter de crochet"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto de crochet con escote halter",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#f0eae1"
+        ],
+        "descripcion": "Vestido corto ajustado tejido al crochet en tono crema. Cuenta con escote halter, trama calada geométrica y un acabado en el ruedo decorado con flecos y dijes marinos de conchillas. Ideal para un look veraniego y fresco.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido de crochet",
+        "prendasSecundarias": [
+          "aros",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto de crochet con escote halter",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#f0eae1"
+        ],
+        "descripcion": "Vestido corto ajustado tejido al crochet en tono crema. Cuenta con escote halter, trama calada geométrica y un acabado en el ruedo decorado con flecos y dijes marinos de conchillas. Ideal para un look veraniego y fresco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido de crochet",
+        "prendasSecundarias": [
+          "aros",
+          "pulseras"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.436Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e7f90d08-890f-49f5-bdd9-b78b1bc66bd6",
+      "fileName": "25334036_ca981e0b-8097-4e7d-903b-a50de927dbbf.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "e7f90d08-890f-49f5-bdd9-b78b1bc66bd6.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "name": "Vestido corto halter de crochet"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido tejido al crochet cuello halter",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos tejidos",
+        "colores": [
+          "#efe7d3"
+        ],
+        "descripcion": "Vestido corto tejido al crochet en tono marfil, con entramado calado geométrico en forma de rombos y escote halter con fina tira para atar.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "vestido tejido al crochet",
+        "prendasSecundarias": [
+          "aros",
+          "brazaletes"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido tejido al crochet cuello halter",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos tejidos",
+        "colores": [
+          "#efe7d3"
+        ],
+        "descripcion": "Vestido corto tejido al crochet en tono marfil, con entramado calado geométrico en forma de rombos y escote halter con fina tira para atar.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "vestido tejido al crochet",
+        "prendasSecundarias": [
+          "aros",
+          "brazaletes"
+        ],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.517Z",
+      "errorDetail": null
+    },
+    {
+      "id": "09232223-1c04-4c34-b32f-c5f1fcc87801",
+      "fileName": "25334036_cb125d48-2d3d-4c6d-b261-f4a22fd6e8d4.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "09232223-1c04-4c34-b32f-c5f1fcc87801.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto halter de crochet",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos",
+        "colores": [
+          "#f4efe6"
+        ],
+        "descripcion": "Vestido corto tejido al crochet con escote halter y detalle de apliques colgantes en el ruedo. Un diseño fresco y artesanal con estilo playero, ideal para la temporada primavera-verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido de crochet",
+        "prendasSecundarias": [
+          "sandalias"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto halter de crochet",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos",
+        "colores": [
+          "#f4efe6"
+        ],
+        "descripcion": "Vestido corto tejido al crochet con escote halter y detalle de apliques colgantes en el ruedo. Un diseño fresco y artesanal con estilo playero, ideal para la temporada primavera-verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido de crochet",
+        "prendasSecundarias": [
+          "sandalias"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.613Z",
+      "errorDetail": null
+    },
+    {
+      "id": "74475030-fe9e-4310-ae35-5040a304b7a5",
+      "fileName": "25334036_e253b4f2-f947-44cf-8276-da855b56bc5a.jpg",
+      "folderName": "1 FASHION SS26",
+      "file": "74475030-fe9e-4310-ae35-5040a304b7a5.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "name": "Vestido corto halter de crochet"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto al crochet escote halter",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#f2ebd9"
+        ],
+        "descripcion": "Vestido corto tejido al crochet en tono marfil con textura calada de rombos, escote halter y detalle de dijes colgantes en el ruedo. Ideal para un look de verano fresco y sofisticado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto",
+        "prendasSecundarias": [
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto al crochet escote halter",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#f2ebd9"
+        ],
+        "descripcion": "Vestido corto tejido al crochet en tono marfil con textura calada de rombos, escote halter y detalle de dijes colgantes en el ruedo. Ideal para un look de verano fresco y sofisticado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto",
+        "prendasSecundarias": [
+          "pulseras"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:12.633Z",
+      "errorDetail": null
+    }
+  ],
+  "updatedAt": "2026-09-30T16:22:07.109Z"
+}

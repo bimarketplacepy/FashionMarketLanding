@@ -158,16 +158,33 @@ function nameTokens(value = "") {
   );
 }
 
-function findDuplicate(nombre, categoriaInterna, records) {
+// Distancia RGB entre dos hex; null si alguno no es válido.
+function colorDistance(a, b) {
+  if (!/^#[0-9a-f]{6}$/i.test(a || "") || !/^#[0-9a-f]{6}$/i.test(b || "")) return null;
+  const rgb = (hex) => [1, 3, 5].map((offset) => Number.parseInt(hex.slice(offset, offset + 2), 16));
+  const [x, y] = [rgb(a), rgb(b)];
+  return Math.hypot(x[0] - y[0], x[1] - y[1], x[2] - y[2]);
+}
+
+// Dos prendas con nombre parecido pero color claramente distinto no son duplicadas
+// (ej. "Top escote cuadrado rojo" vs "Top corset blanco con escote cuadrado").
+const DISTINCT_COLOR = 90;
+
+// Un duplicado real es el mismo producto de la misma marca: con batchId sólo se
+// compara contra prendas importadas desde ese lote, y el nombre tiene que
+// coincidir en la mayoría de sus palabras (no en genéricas como "pantalón tiro alto").
+export function findDuplicate(nombre, categoriaInterna, records, color = null, batchId = null) {
   const tokens = nameTokens(nombre);
   if (!tokens.size) return null;
   let best = null;
   for (const record of records) {
     if (categoriaInterna && record.part !== categoriaInterna) continue;
+    if (batchId && record.importBatch?.id !== batchId) continue;
+    if ((colorDistance(color, record.color) ?? 0) > DISTINCT_COLOR) continue;
     const other = nameTokens(record.name);
     if (!other.size) continue;
     const shared = [...tokens].filter((token) => other.has(token)).length;
-    const score = shared / Math.min(tokens.size, other.size);
+    const score = shared / (batchId ? Math.max(tokens.size, other.size) : Math.min(tokens.size, other.size));
     if (shared >= 2 && score >= 0.6 && (!best || score > best.score)) best = { id: record.id, name: record.name, score: Math.round(score * 100) / 100 };
   }
   return best;
@@ -266,6 +283,8 @@ export function batchImportApi(options = {}) {
       ...item.ficha,
       nombre: result.nombre,
       categoriaInterna: result.categoriaInterna,
+      garmentType: result.garmentType,
+      gender: result.gender,
       subcategoria: result.subcategoria,
       colores: result.colores,
       descripcion: result.descripcion,
@@ -282,7 +301,7 @@ export function batchImportApi(options = {}) {
       warnings.push(`El nombre del archivo sugiere ${CATEGORY_LABELS_ES[hint.categoria]} ("${hint.keyword}") pero el análisis propuso otra categoría.`);
     }
     item.advertencia = warnings.length ? warnings.join(" ") : null;
-    item.duplicateOf = findDuplicate(result.nombre, result.categoriaInterna, records);
+    item.duplicateOf = findDuplicate(result.nombre, result.categoriaInterna, records, result.colores?.[0], batch.id);
     item.estado = "analizada";
     item.error = null;
     item.errorDetail = null;
@@ -599,7 +618,7 @@ export function batchImportApi(options = {}) {
         if (!verb && req.method === "PATCH") {
           const input = await body(req);
           patchFicha(item, input);
-          if (item.ficha.nombre) item.duplicateOf = findDuplicate(item.ficha.nombre, item.ficha.categoriaInterna, await loadLibrary());
+          if (item.ficha.nombre) item.duplicateOf = findDuplicate(item.ficha.nombre, item.ficha.categoriaInterna, await loadLibrary(), item.ficha.colores?.[0], batch.id);
           await saveBatch(batch);
           return json(res, 200, publicItem(item));
         }

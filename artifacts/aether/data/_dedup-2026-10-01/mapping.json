@@ -1,0 +1,4181 @@
+[
+ {
+  "removed": "import-3ac11b81-fd1b-426a-a695-aa988f4cbd7f",
+  "name": "Short negro casual con dobladillo",
+  "keptAs": "import-a5d8f57c-7f13-4018-9a6f-600a5ed4dffa",
+  "keptName": "Short chino negro con cinturón",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-cf427451-4397-4878-ab5c-b105cd7071dc",
+  "name": "Short negro con broderie y cordón",
+  "keptAs": "import-806f15d4-c955-49a3-aa32-4f0c63f07179",
+  "keptName": "Short de broderie negro con cintura elastizada",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-b2c529c6-7e71-44a1-acc8-eb89fd750a50",
+  "name": "Short negro de broderie con cintura elastizada",
+  "keptAs": "import-806f15d4-c955-49a3-aa32-4f0c63f07179",
+  "keptName": "Short de broderie negro con cintura elastizada",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-718fea73-4860-4163-a995-9bfd511d2474",
+  "name": "Pantalón sastre de tiro alto",
+  "keptAs": "import-a6572e79-2b6a-45d7-9038-c3e37b7a22e6",
+  "keptName": "Pantalón sastrero tiro alto negro",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-ab9946fe-ab9c-4425-8a03-e6446f0a5813",
+  "name": "Pantalón pinzado tiro alto verde oliva",
+  "keptAs": "import-c2ab1548-07bf-4eb3-885a-4769d28339f5",
+  "keptName": "Pantalón pinzado tiro alto verde oliva",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-b4dc3453-1754-43f0-867e-2112fcfb10e7",
+  "name": "Pantalón sastrero pinzado tiro alto",
+  "keptAs": "import-c2ab1548-07bf-4eb3-885a-4769d28339f5",
+  "keptName": "Pantalón pinzado tiro alto verde oliva",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-fd3f4886-90d1-400f-af63-26e6d37d4cd1",
+  "name": "Pantalón paperbag a rayas con cinturón",
+  "keptAs": "import-b32a89e1-4b16-4a3b-8a7e-0e15a572e1e7",
+  "keptName": "Pantalón palazzo a rayas con lazo",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-934a55e9-29a8-424c-b8bb-aa91bea2e784",
+  "name": "Pantalón Wide Leg Rayado con Cordón",
+  "keptAs": "import-ab6c0d28-7a7c-46e4-bc1b-9bd8b6e81440",
+  "keptName": "Pantalón palazzo a rayas con cordón",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-5a418974-ca98-43d5-998d-42fdebedb23b",
+  "name": "Minifalda a rayas verticales",
+  "keptAs": "import-1353afca-465c-4deb-a07e-5e3d08e7b70e",
+  "keptName": "Minipollera a rayas con botones",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-37eb84fb-210b-44ba-b692-389c4d3b1e2e",
+  "name": "Short Blanco de Gabardina con Cinturón",
+  "keptAs": "import-5bb39c35-6e22-49a1-9ceb-263d0f65f127",
+  "keptName": "Short tiro alto blanco con dobladillo",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-a6bb22bc-fe4a-4d37-91b6-e1c3c468fc19",
+  "name": "Short blanco de gabardina con dobladillo",
+  "keptAs": "import-5bb39c35-6e22-49a1-9ceb-263d0f65f127",
+  "keptName": "Short tiro alto blanco con dobladillo",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-783b865d-7c6b-461b-8963-ab6a6f91a44b",
+  "name": "Pantalón pinzado rojo con cinturón",
+  "keptAs": "import-6e600c21-4052-4c8a-bde2-cdf3fb3b2fd6",
+  "keptName": "Pantalón pinzado de vestir rojo",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-2c007bd2-469c-4723-ab5c-4bf6a877cc42",
+  "name": "Pantalón sastrero tiro alto rojo",
+  "keptAs": "import-6e600c21-4052-4c8a-bde2-cdf3fb3b2fd6",
+  "keptName": "Pantalón pinzado de vestir rojo",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-124ed932-984e-468f-a3d6-7c7d004d5cec",
+  "name": "Pantalón ancho pinzado terracota",
+  "keptAs": "import-6e600c21-4052-4c8a-bde2-cdf3fb3b2fd6",
+  "keptName": "Pantalón pinzado de vestir rojo",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-caa0f295-d583-4b25-95fc-4f6d28ba894b",
+  "name": "Short de gabardina beige",
+  "keptAs": "import-7ff7ba74-9814-48ba-bad3-0a976d344bcf",
+  "keptName": "Short de gabardina beige con cinturón",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-c95a1890-e535-45cc-80f8-33239ea4931a",
+  "name": "Short de gabardina beige",
+  "keptAs": "import-7ff7ba74-9814-48ba-bad3-0a976d344bcf",
+  "keptName": "Short de gabardina beige con cinturón",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-1bc5f83d-ce43-4806-9e8e-f72f25006996",
+  "name": "Short chino beige con dobladillo",
+  "keptAs": "import-2e159b6e-656b-4b81-be32-b6823969b676",
+  "keptName": "Short chino de algodón beige",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-5aeb99d9-f669-41c4-bf5c-e1d457a35cd8",
+  "name": "Pantalón sastrero pinzado beige",
+  "keptAs": "import-65085fee-1ad4-4748-a725-fff688ca431b",
+  "keptName": "Pantalón de vestir tiro alto beige",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-abf81cb1-9f4b-40d7-b9f2-1e0afc6e8472",
+  "name": "Short bordado con cintura elastizada",
+  "keptAs": "import-b1b17224-858e-49d0-a209-066d668bd90b",
+  "keptName": "Short con broderie y cintura elastizada",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-1e99af28-b472-4b3b-b12a-9914243943ef",
+  "name": "Short bordado con cintura elastizada",
+  "keptAs": "import-b1b17224-858e-49d0-a209-066d668bd90b",
+  "keptName": "Short con broderie y cintura elastizada",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-9008e737-db62-4879-a68c-00cb9f3f3e33",
+  "name": "Short blanco de broderie con elástico",
+  "keptAs": "import-b1282171-1dac-4879-a45a-116d1f2f0901",
+  "keptName": "Short blanco con bordado broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-7cc0f792-c9bd-438e-96ce-6d2b912fbd36",
+  "name": "Short de broderie con cintura elastizada",
+  "keptAs": "import-b1282171-1dac-4879-a45a-116d1f2f0901",
+  "keptName": "Short blanco con bordado broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-3464ec59-0f77-47ea-a59e-fd075a253269",
+  "name": "Short de gabardina azul marino con cinturón",
+  "keptAs": "import-77039433-6b23-4609-a89b-ebf981d2ea2f",
+  "keptName": "Short de gabardina azul marino",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-c776aa50-eec7-4900-93b9-94b2b5b9564a",
+  "name": "Pollera corta a rayas celeste y blanca",
+  "keptAs": "import-b426e694-7bde-4e43-91bb-acf3058da1a6",
+  "keptName": "Minifalda rayada con botones",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-5a7a98df-2349-4332-9982-9b76c0a61d61",
+  "name": "Minipollera rayada rosa",
+  "keptAs": "import-02f8ac77-cb6d-442b-8904-b874a407884d",
+  "keptName": "Minifalda abotonada a rayas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-aa221efc-24c6-4589-806f-4ab170f8d1aa",
+  "name": "Pollera corta a rayas rosada",
+  "keptAs": "import-02f8ac77-cb6d-442b-8904-b874a407884d",
+  "keptName": "Minifalda abotonada a rayas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-aa8b9e99-ba12-40a1-b893-f017dffc226f",
+  "name": "Short corto de vestir rojo",
+  "keptAs": "import-4a361783-955d-43ca-83b8-0d3b03927d2d",
+  "keptName": "Short básico rojo con dobladillo",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-cffe956b-7cdd-40c0-bd99-65b2009fa6f3",
+  "name": "Short chino rosa viejo con dobladillo",
+  "keptAs": "import-d1081b81-6f62-446c-b352-52ce603fa8ce",
+  "keptName": "Short de vestir rosa con cinturón",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-10b67368-13f5-4b9d-a796-4d0e0fe961af",
+  "name": "Short casual rosa",
+  "keptAs": "import-d1081b81-6f62-446c-b352-52ce603fa8ce",
+  "keptName": "Short de vestir rosa con cinturón",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-714c6558-e385-42eb-a32a-ada9bc76e441",
+  "name": "Short chino rosa con cinto",
+  "keptAs": "import-d1081b81-6f62-446c-b352-52ce603fa8ce",
+  "keptName": "Short de vestir rosa con cinturón",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-a41dc749-ca2e-460e-861d-fb5cab67fe2f",
+  "name": "Enterito negro sin mangas",
+  "keptAs": "import-409d6c5e-f684-4a63-bc6f-536346f11124",
+  "keptName": "Top sin mangas negro Active Basic",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-5ecd8a54-a8cc-4c59-aadb-f48175b9ab5c",
+  "name": "Remera básica cuello redondo negra",
+  "keptAs": "import-3b0915b5-d834-46b3-9ddd-d160496dcf7b",
+  "keptName": "Remera básica negra cuello redondo",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-44cab3ef-caf4-4012-b5f1-c0b91c8744aa",
+  "name": "Musculosa negra con vivo a contraste",
+  "keptAs": "import-cdbe1091-f326-4fbc-bed1-eb375ab7d775",
+  "keptName": "Top musculoso negro con vivos a contraste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-fcee5905-fb24-4441-99d7-5826386c001a",
+  "name": "Camisa manga corta de textura negra",
+  "keptAs": "import-32744aa2-a2c1-4bda-b692-3533bf5d6d06",
+  "keptName": "Camisa de manga corta negra texturizada",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-514e73bd-3cf3-4577-bcbf-75fad092df8d",
+  "name": "Camisa manga corta broderie negra",
+  "keptAs": "import-843392f0-3d7a-4e1c-ab8d-96544104a123",
+  "keptName": "Camisa manga corta con bordado broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-7e785c18-91d6-4f3d-adc1-850727bb3205",
+  "name": "Camisa de manga corta con bordado broderie",
+  "keptAs": "import-843392f0-3d7a-4e1c-ab8d-96544104a123",
+  "keptName": "Camisa manga corta con bordado broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-c67ae6c2-df40-4ee6-891a-c0954adf0707",
+  "name": "Camisa de manga corta broderie negra",
+  "keptAs": "import-843392f0-3d7a-4e1c-ab8d-96544104a123",
+  "keptName": "Camisa manga corta con bordado broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-f5482cf8-2ba5-42cf-a99e-54356fd3b2c0",
+  "name": "Camisa de manga corta negra con bordado broderie",
+  "keptAs": "import-843392f0-3d7a-4e1c-ab8d-96544104a123",
+  "keptName": "Camisa manga corta con bordado broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-9e9b19c9-2b51-47e5-842d-df8ef8ee7875",
+  "name": "Camisa manga corta bordada",
+  "keptAs": "import-6a5e3372-d6c3-4ff6-b612-6fffae9a68d9",
+  "keptName": "Camisa corta bordada con motivos marinos",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-45e0bc4a-5060-4d34-ac9c-5a9a9a189bfd",
+  "name": "Camisa de manga larga gris topo",
+  "keptAs": "import-97d09630-6368-48a1-b6c7-30c61d1cbac6",
+  "keptName": "Camisa lisa de manga larga",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-9c1a700f-6f43-4363-a229-32e4e384952c",
+  "name": "Camisa clásica manga larga taupe",
+  "keptAs": "import-97d09630-6368-48a1-b6c7-30c61d1cbac6",
+  "keptName": "Camisa lisa de manga larga",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-34efbaa0-3c99-448f-92f2-6933159d2f9f",
+  "name": "Camisa de manga larga gris topo",
+  "keptAs": "import-97d09630-6368-48a1-b6c7-30c61d1cbac6",
+  "keptName": "Camisa lisa de manga larga",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-e99f0def-3b7d-4b7e-b71d-22591cb5ac8b",
+  "name": "Camisa crop manga corta bordada taupe",
+  "keptAs": "import-b8f6277c-0753-4764-89fd-4afe9edb347e",
+  "keptName": "Camisa cropped manga corta estilo pijama",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-3b6cd1a6-7400-4575-8d90-adfbe6563275",
+  "name": "Camisa de manga corta con bordado festón",
+  "keptAs": "import-b8f6277c-0753-4764-89fd-4afe9edb347e",
+  "keptName": "Camisa cropped manga corta estilo pijama",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-c2a7956b-7e13-46b8-a69c-4c5a3a1ac630",
+  "name": "Camisa corta bordada marina",
+  "keptAs": "import-b8f6277c-0753-4764-89fd-4afe9edb347e",
+  "keptName": "Camisa cropped manga corta estilo pijama",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-6d83039b-2b8a-4a86-9d24-d11aad7ced64",
+  "name": "Remera básica gris melange",
+  "keptAs": "import-a8bdd9cc-4cab-43d2-acc1-8ff38302f10c",
+  "keptName": "Remera básica manga corta gris melange",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-b7d5a584-fc3c-4a7c-ad69-f759f3a6f5e3",
+  "name": "Remera básica manga corta gris melange",
+  "keptAs": "import-a8bdd9cc-4cab-43d2-acc1-8ff38302f10c",
+  "keptName": "Remera básica manga corta gris melange",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-1fff526e-2b82-42e5-be05-b4975d0624a2",
+  "name": "Remera básica manga corta gris melange",
+  "keptAs": "import-a8bdd9cc-4cab-43d2-acc1-8ff38302f10c",
+  "keptName": "Remera básica manga corta gris melange",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-dbfd67ad-319f-4b11-9e6a-9ba39bdabe26",
+  "name": "Top chaleco a rayas verticales",
+  "keptAs": "import-d98faab9-7e01-4a25-8725-89dfbce94434",
+  "keptName": "Top musculosa a rayas con botones",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-0ffc7953-d19b-48ba-94ff-def520ac08cf",
+  "name": "Top sin mangas a rayas",
+  "keptAs": "import-d98faab9-7e01-4a25-8725-89dfbce94434",
+  "keptName": "Top musculosa a rayas con botones",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-92b48a6f-80e9-4032-997b-3e1564f670f8",
+  "name": "Top sastrero a rayas",
+  "keptAs": "import-d98faab9-7e01-4a25-8725-89dfbce94434",
+  "keptName": "Top musculosa a rayas con botones",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-7b7adeb3-6790-4196-bad9-3e76dd4f1c8d",
+  "name": "Chomba tejida a rayas",
+  "keptAs": "import-24c5f074-294a-409a-8827-8d2f2a5b5562",
+  "keptName": "Remera polo tejida a rayas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-d61b9997-6628-4342-a438-1f6e17341896",
+  "name": "Chomba de manga corta a rayas",
+  "keptAs": "import-24c5f074-294a-409a-8827-8d2f2a5b5562",
+  "keptName": "Remera polo tejida a rayas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-b12c0651-47b3-4bf0-bb51-698d7ed00d23",
+  "name": "Chomba tejida a rayas",
+  "keptAs": "import-24c5f074-294a-409a-8827-8d2f2a5b5562",
+  "keptName": "Remera polo tejida a rayas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-a4ff76a2-8b2d-47dd-8da3-0e8cd2dc32cd",
+  "name": "Chomba tejida a rayas",
+  "keptAs": "import-24c5f074-294a-409a-8827-8d2f2a5b5562",
+  "keptName": "Remera polo tejida a rayas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-1257ae59-7d47-465c-9d53-0931a7ef2c7a",
+  "name": "Chomba a rayas de manga corta",
+  "keptAs": "import-24c5f074-294a-409a-8827-8d2f2a5b5562",
+  "keptName": "Remera polo tejida a rayas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-133a4c07-5de9-48c0-9d49-29d235763be2",
+  "name": "Chomba a rayas de manga corta",
+  "keptAs": "import-24c5f074-294a-409a-8827-8d2f2a5b5562",
+  "keptName": "Remera polo tejida a rayas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-1332aa53-0b57-469b-9405-9a04d2fc6792",
+  "name": "Chomba tejida rayada",
+  "keptAs": "import-46110ee8-74c4-4cbb-805b-bab7d252ad3f",
+  "keptName": "Chomba a rayas manga corta",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-709347ce-9e0e-4d99-998b-8f9bb0cd0c90",
+  "name": "Musculosa de tejido con detalles a contraste",
+  "keptAs": "import-5b7de0b7-c8ce-4444-b473-02c793757174",
+  "keptName": "Musculosa tejida con festón a contraste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-c38d050f-9dff-4191-8096-639ad55b5d91",
+  "name": "Musculosa tejida con vivo a contraste",
+  "keptAs": "import-5b7de0b7-c8ce-4444-b473-02c793757174",
+  "keptName": "Musculosa tejida con festón a contraste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-25c20247-5f8c-4655-a3b6-b9c1e8641d54",
+  "name": "Musculosa con ribete a contraste",
+  "keptAs": "import-5b7de0b7-c8ce-4444-b473-02c793757174",
+  "keptName": "Musculosa tejida con festón a contraste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-f9c70c51-a23d-4c6c-90d2-2efcfc92d6fa",
+  "name": "Blusa sin mangas con vivos a contraste",
+  "keptAs": "import-31b400a4-9cea-44ca-a85a-88174fd200b3",
+  "keptName": "Musculosa texturada con vivos a contraste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-37f458e1-1218-4dd8-b61e-2da2d1858e6a",
+  "name": "Remera básica blanca de manga corta",
+  "keptAs": "import-63181b92-a566-4033-878c-43e82f8397e2",
+  "keptName": "Remera básica blanca de manga corta",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-fdd7563b-04bc-4390-8b9f-3183737fe137",
+  "name": "Vestido maxi combinado a rayas",
+  "keptAs": "import-76237e69-a070-469e-bb2d-178d3c962c2b",
+  "keptName": "Vestido Maxi Combinado a Rayas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-a15cefcb-a91e-46d5-8582-708cff8ead7a",
+  "name": "Camisa blanca oversize de manga larga",
+  "keptAs": "import-153ab523-b7cd-42ca-9484-c6b6736be9b9",
+  "keptName": "Camisa blanca de lino con bolsillo",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-c2efa8dc-331f-4c24-87ba-0af31634c41f",
+  "name": "Camisa de broderie blanca",
+  "keptAs": "import-204757d1-fb43-4206-85ef-c1a7611dde07",
+  "keptName": "Camisa de manga corta con bordado broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-5dee07cb-1989-4e22-9fed-d27e2c3b3877",
+  "name": "Camisa de manga corta con bordado broderie",
+  "keptAs": "import-204757d1-fb43-4206-85ef-c1a7611dde07",
+  "keptName": "Camisa de manga corta con bordado broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-e1dd4918-4193-4080-96d7-aa0c1b2bd34b",
+  "name": "Camisa de manga corta con broderie",
+  "keptAs": "import-204757d1-fb43-4206-85ef-c1a7611dde07",
+  "keptName": "Camisa de manga corta con bordado broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-b595f3f2-186b-4633-92bd-4189b4c49be4",
+  "name": "Blusa de manga corta con bordado broderie",
+  "keptAs": "import-204757d1-fb43-4206-85ef-c1a7611dde07",
+  "keptName": "Camisa de manga corta con bordado broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-5152157c-256e-42b3-9362-51a09da4cd9b",
+  "name": "Camisa cropped de manga corta a rayas",
+  "keptAs": "import-d8cd5d0d-eca8-45c3-a7e7-e2c024f1dbd9",
+  "keptName": "Camisa cropped a rayas de manga corta",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-b5f2e910-78d2-4c4c-9281-3dd27e90cb5e",
+  "name": "Top corto a rayas verticales",
+  "keptAs": "import-b8645d72-4c6f-4176-9b27-238c8e21eb8a",
+  "keptName": "Top corto a rayas con breteles",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-18ad9df0-ee47-4105-b5f7-f0ac97c3c7be",
+  "name": "Remera básica visón",
+  "keptAs": "import-4ab1744c-938f-4354-8ce5-26f9a36b57ea",
+  "keptName": "Remera básica de manga corta visón",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-9db88950-3ca9-42e8-b623-a7de177ba966",
+  "name": "Remera básica beige cuello redondo",
+  "keptAs": "import-4ab1744c-938f-4354-8ce5-26f9a36b57ea",
+  "keptName": "Remera básica de manga corta visón",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-f2809c9d-0743-48d9-ac4a-11a9a42eb954",
+  "name": "Blusa musculosa beige con vivo negro",
+  "keptAs": "import-588b5256-470d-44c6-9a93-de4c0c328fb2",
+  "keptName": "Blusa sin mangas beige con vivos negros",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-e043f532-5831-4316-b9da-76204adae57b",
+  "name": "Musculosa beige con vivos a contraste",
+  "keptAs": "import-588b5256-470d-44c6-9a93-de4c0c328fb2",
+  "keptName": "Blusa sin mangas beige con vivos negros",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-9deded73-c696-49ea-8fe9-5d9cd193005b",
+  "name": "Top musculosa de punto amarillo con bordes festoneados",
+  "keptAs": "import-77417e82-305f-439f-9e2b-a0c2c0152fa4",
+  "keptName": "Musculosa tejida de hilo con vivo azul",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-2587f30d-87f6-43e3-b5d7-cbfa635dfbac",
+  "name": "Musculosa de punto amarilla con bordes festonados azules",
+  "keptAs": "import-77417e82-305f-439f-9e2b-a0c2c0152fa4",
+  "keptName": "Musculosa tejida de hilo con vivo azul",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-85a03c4c-1e7c-4b16-a8b1-5d16cf5b87f7",
+  "name": "Musculosa amarilla con detalle festonado azul",
+  "keptAs": "import-77417e82-305f-439f-9e2b-a0c2c0152fa4",
+  "keptName": "Musculosa tejida de hilo con vivo azul",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-2cab33bb-9ca3-41be-9dd3-3d0e48a37264",
+  "name": "Camisa corta con bordado broderie",
+  "keptAs": "import-526caa72-7e85-4996-957d-b0116c31860b",
+  "keptName": "Camisa de manga corta broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-0a5d1783-ddb5-4f2d-9fcb-cbba4c5bcf2c",
+  "name": "Camisa de manga corta con bordado broderie",
+  "keptAs": "import-526caa72-7e85-4996-957d-b0116c31860b",
+  "keptName": "Camisa de manga corta broderie",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-7247dbe7-0b14-4bfa-9790-159306e251a0",
+  "name": "Camisa de manga corta con bordado festón",
+  "keptAs": "import-7f3fefdd-01c7-42c1-8a4f-74d639f66959",
+  "keptName": "Camisa cropped con bordados marinos",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-44cdc61c-d678-4077-8872-e362455a2286",
+  "name": "Camisa cropped resort con bordados marinos",
+  "keptAs": "import-7f3fefdd-01c7-42c1-8a4f-74d639f66959",
+  "keptName": "Camisa cropped con bordados marinos",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-6ce08602-5e80-4088-bfd4-6db069a886e4",
+  "name": "Camisa holgada de lino",
+  "keptAs": "import-b5d3493a-b8af-4848-a86f-e87153c35a63",
+  "keptName": "Camisa clásica de lino de manga larga",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-6a144614-a5bc-4137-820e-a1cf5ba5b03d",
+  "name": "Camisa de manga larga lisa con bolsillo",
+  "keptAs": "import-b5d3493a-b8af-4848-a86f-e87153c35a63",
+  "keptName": "Camisa clásica de lino de manga larga",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-653c4f09-8c3e-4367-b769-19ef69e82ca5",
+  "name": "Camisa fluida off-white",
+  "keptAs": "import-b5d3493a-b8af-4848-a86f-e87153c35a63",
+  "keptName": "Camisa clásica de lino de manga larga",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-adb4b04b-2e83-4346-b7db-97d458a76b43",
+  "name": "Camisa de lino m/l off-white",
+  "keptAs": "import-b5d3493a-b8af-4848-a86f-e87153c35a63",
+  "keptName": "Camisa clásica de lino de manga larga",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-a5e74937-20f9-44ab-8f70-ec60e58a3941",
+  "name": "Camisa de manga corta a rayas amarillas y blancas",
+  "keptAs": "import-8e12aac7-73e1-47a5-8bcb-bf46cbfb15b7",
+  "keptName": "Camisa manga corta a rayas amarillas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-76a9cbfc-1de2-482d-9444-20438add2b1d",
+  "name": "Camisa manga corta a rayas amarillas",
+  "keptAs": "import-8e12aac7-73e1-47a5-8bcb-bf46cbfb15b7",
+  "keptName": "Camisa manga corta a rayas amarillas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-6704f199-da1f-4ad5-bbd2-2f44a89989c0",
+  "name": "Remera básica manga corta verde claro",
+  "keptAs": "import-acd4b313-a166-4077-b54c-3a81d31d7e6f",
+  "keptName": "Remera básica manga corta verde pastel",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-4de01add-d312-4e1c-b087-a3e48ced8807",
+  "name": "Remera básica manga corta verde pastel",
+  "keptAs": "import-acd4b313-a166-4077-b54c-3a81d31d7e6f",
+  "keptName": "Remera básica manga corta verde pastel",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-235ed618-9b47-4c6a-bff1-a7b856b4f4f8",
+  "name": "Camisa de manga corta de gasa texturada amarilla",
+  "keptAs": "import-45dd4162-c425-45e7-a8ef-fd3062be37fc",
+  "keptName": "Camisa manga corta bambula amarilla",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-3697978d-cae1-4929-8f9b-af5f5479db65",
+  "name": "Camisa texturada manga corta amarillo pastel",
+  "keptAs": "import-45dd4162-c425-45e7-a8ef-fd3062be37fc",
+  "keptName": "Camisa manga corta bambula amarilla",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-8bb75bf9-3efb-4620-98c9-3c3282499e96",
+  "name": "Camisa de manga corta de bambula amarillo pastel",
+  "keptAs": "import-45dd4162-c425-45e7-a8ef-fd3062be37fc",
+  "keptName": "Camisa manga corta bambula amarilla",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-9cf520f9-bdda-49d0-a219-f05f2f89941f",
+  "name": "Camisa pastel manga larga con bolsillo",
+  "keptAs": "import-dc51cf31-60a9-4e2a-a27b-c16e98ae046a",
+  "keptName": "Camisa lisa manga larga pastel",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-58b48158-62d2-4f7b-90dd-060a7573b80e",
+  "name": "Camisa estampada manga corta",
+  "keptAs": "import-ec7e9c4f-104f-4e64-af11-375e149a5669",
+  "keptName": "Camisa de manga corta estampada verde",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-f9a84de0-5056-497e-a5ab-ac07ac9f6488",
+  "name": "Camisa estampada de manga corta",
+  "keptAs": "import-ec7e9c4f-104f-4e64-af11-375e149a5669",
+  "keptName": "Camisa de manga corta estampada verde",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-da1b0d37-2080-4134-a1f1-8b6322767d83",
+  "name": "Camisa estampada manga corta",
+  "keptAs": "import-ec7e9c4f-104f-4e64-af11-375e149a5669",
+  "keptName": "Camisa de manga corta estampada verde",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-ed978b31-1751-48d2-84a3-6c3776b41eae",
+  "name": "Camisa estampada manga corta",
+  "keptAs": "import-ec7e9c4f-104f-4e64-af11-375e149a5669",
+  "keptName": "Camisa de manga corta estampada verde",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-2516a85c-6c38-4691-982e-3aeae4edf225",
+  "name": "Top sin mangas a rayas verticales",
+  "keptAs": "import-c00bef77-fb6d-4085-91c6-a6c2a284d65d",
+  "keptName": "Top sin mangas a rayas asimétrico",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-e9bad21d-70be-412f-a2c2-6a5b3c0cfa8a",
+  "name": "Top musculosa sastrero a rayas",
+  "keptAs": "import-c00bef77-fb6d-4085-91c6-a6c2a284d65d",
+  "keptName": "Top sin mangas a rayas asimétrico",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-644634bc-0276-441a-b16c-814f683a4daa",
+  "name": "Top sin mangas a rayas verticales",
+  "keptAs": "import-c00bef77-fb6d-4085-91c6-a6c2a284d65d",
+  "keptName": "Top sin mangas a rayas asimétrico",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-90f17d81-f43d-467f-814e-eb02045beaf8",
+  "name": "Top musculosa sastrero a rayas",
+  "keptAs": "import-c00bef77-fb6d-4085-91c6-a6c2a284d65d",
+  "keptName": "Top sin mangas a rayas asimétrico",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-10507a30-6b0a-47dc-ace0-7de16e992486",
+  "name": "Top de breteles a rayas",
+  "keptAs": "import-52fdbe5f-6714-46b2-887c-f428a904f692",
+  "keptName": "Top de breteles finos a rayas celestes y blancas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-1b348b8c-210c-4a2a-a7b0-29ca0450671a",
+  "name": "Top holgado a rayas celeste y blanco",
+  "keptAs": "import-52fdbe5f-6714-46b2-887c-f428a904f692",
+  "keptName": "Top de breteles finos a rayas celestes y blancas",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-705eba3e-05bc-44e9-8bb1-d54495ce69d8",
+  "name": "Camisa manga corta celeste con bordado de caracola",
+  "keptAs": "import-b50a6f58-1a18-4f82-9c26-3cb2bb2188e4",
+  "keptName": "Camisa corta bordada marina",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-8d08287f-22b6-4312-b5b3-e3b572bc5da7",
+  "name": "Camisa de manga corta celeste con bordados marinos",
+  "keptAs": "import-b50a6f58-1a18-4f82-9c26-3cb2bb2188e4",
+  "keptName": "Camisa corta bordada marina",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-95380c9b-0119-4c5c-aa6f-abba4d13837b",
+  "name": "Camisa celeste de manga larga",
+  "keptAs": "import-b42e6138-d012-4c0b-a07c-e18d1df605de",
+  "keptName": "Camisa clásica celeste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-be4793a0-35a3-4510-bf02-9a9084a8065d",
+  "name": "Camisa clásica celeste",
+  "keptAs": "import-b42e6138-d012-4c0b-a07c-e18d1df605de",
+  "keptName": "Camisa clásica celeste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-75601d22-65ae-43bc-a61f-cfa1ddc4072e",
+  "name": "Camisa celeste de manga larga",
+  "keptAs": "import-b42e6138-d012-4c0b-a07c-e18d1df605de",
+  "keptName": "Camisa clásica celeste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-6860f160-ba26-4a14-970c-1618cc174f8b",
+  "name": "Camisa celeste de manga larga",
+  "keptAs": "import-b42e6138-d012-4c0b-a07c-e18d1df605de",
+  "keptName": "Camisa clásica celeste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-965e911a-e585-4229-804d-f7e89bc76aa0",
+  "name": "Camisa celeste de manga larga",
+  "keptAs": "import-b42e6138-d012-4c0b-a07c-e18d1df605de",
+  "keptName": "Camisa clásica celeste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-2adfa4af-b50d-4b70-87e2-0c9840b733f6",
+  "name": "Musculosa celeste con vivo negro",
+  "keptAs": "import-3b54449d-61ac-4902-b8e7-480497df5e93",
+  "keptName": "Musculosa celeste con vivos negros",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-5b888f65-50d0-44d6-bbcf-ca54b00bf65a",
+  "name": "Musculosa celeste con vivo a contraste",
+  "keptAs": "import-3b54449d-61ac-4902-b8e7-480497df5e93",
+  "keptName": "Musculosa celeste con vivos negros",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-49a09441-db67-4643-b938-f4420ce040ec",
+  "name": "Remera básica celeste Active",
+  "keptAs": "import-9583ed4b-676d-479f-9dd3-a03071b03d7f",
+  "keptName": "Remera básica celeste",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-88e9e534-ba45-4a77-b0dd-ccac76e3451f",
+  "name": "Musculosa celeste con borde calado a contraste",
+  "keptAs": "import-34322255-9212-47b5-9408-beb93512480a",
+  "keptName": "Musculosa tejida con terminación festonada",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-739e8b37-340c-4f80-a395-cfbe32592d6d",
+  "name": "Top musculosa celeste con festón azul marino",
+  "keptAs": "import-34322255-9212-47b5-9408-beb93512480a",
+  "keptName": "Musculosa tejida con terminación festonada",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-65b8a70f-2e08-4a21-85e9-9accc52650c9",
+  "name": "Musculosa de Punto Celeste con Bordes Festonados",
+  "keptAs": "import-34322255-9212-47b5-9408-beb93512480a",
+  "keptName": "Musculosa tejida con terminación festonada",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-a421537b-254f-44bf-9c56-4baa10042ea0",
+  "name": "Camisa de manga corta de gasa azul",
+  "keptAs": "import-7965c4f9-38c7-4e11-ba25-d82803fd543c",
+  "keptName": "Camisa de manga corta azul estilo lounge",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-eaf44ce2-5966-4225-8233-a679c31ca443",
+  "name": "Camisa de manga corta de muselina azul",
+  "keptAs": "import-7965c4f9-38c7-4e11-ba25-d82803fd543c",
+  "keptName": "Camisa de manga corta azul estilo lounge",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-cc5f47b7-b159-4e9c-a279-6861f8b8f07d",
+  "name": "Camisa de gasa de manga corta fucsia",
+  "keptAs": "import-167b54e6-7c69-4d5c-be28-3aa3edd9c3a9",
+  "keptName": "Camisa fucsia de manga corta",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-714ddb7f-bdbf-4a73-9f31-23306e819923",
+  "name": "Top sin mangas a rayas rosa",
+  "keptAs": "import-831fcaf3-fcc7-4db0-bc3d-6233d8469fb1",
+  "keptName": "Top musculosa a rayas rosa",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-9c56c904-5150-476a-8734-b97ab472ea0e",
+  "name": "Remera básica rosa pastel",
+  "keptAs": "import-9b570966-e6b0-4bf8-a9e8-a0f1a3d37ee8",
+  "keptName": "Remera básica rosa pastel",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-66697dee-47e0-436c-879a-6f64d79aa005",
+  "name": "Camisa rosa oversized de manga larga",
+  "keptAs": "import-6af644ed-23b7-49ba-8d50-97ec17ff6ea1",
+  "keptName": "Camisa rosa de manga larga",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-7185bb1f-a4b5-44c7-b108-3fc0d52d62a6",
+  "name": "Camisa rosa de manga larga",
+  "keptAs": "import-6af644ed-23b7-49ba-8d50-97ec17ff6ea1",
+  "keptName": "Camisa rosa de manga larga",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-7a315bd1-4162-475c-8f80-ab473f0baed3",
+  "name": "Chaleco negro con tachas doradas",
+  "keptAs": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+  "keptName": "Chaleco negro con tachas doradas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-a656820e-4966-4798-b49c-221fdfcede84",
+  "name": "Chaleco negro con tachas doradas",
+  "keptAs": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+  "keptName": "Chaleco negro con tachas doradas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-6341f1a7-ae28-4571-a4ff-cf0a786f076b",
+  "name": "Chaleco negro con tachas doradas",
+  "keptAs": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+  "keptName": "Chaleco negro con tachas doradas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-fc394800-51b2-4bc3-b72f-c9a509e45d56",
+  "name": "Chaleco de gamuza con tachas",
+  "keptAs": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+  "keptName": "Chaleco negro con tachas doradas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-c8a1a502-a314-4c38-8cbf-a59bc673bb32",
+  "name": "Chaleco de gamuza negro",
+  "keptAs": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+  "keptName": "Chaleco negro con tachas doradas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-f49aaf0f-473c-4645-b653-3e117c658d50",
+  "name": "Chaleco de gamuza con tachas estilo texano",
+  "keptAs": "import-56a794bf-f533-464b-80b2-f547f9972073",
+  "keptName": "Chaleco de gamuza con tachas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-c6ed5b96-928a-4ac7-969e-9776bb26f647",
+  "name": "Chaleco de gamuza con tachas",
+  "keptAs": "import-56a794bf-f533-464b-80b2-f547f9972073",
+  "keptName": "Chaleco de gamuza con tachas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-9a14cb82-7887-4bdd-886d-43ee3376562e",
+  "name": "Chaleco corto de gamuza marrón",
+  "keptAs": "import-56a794bf-f533-464b-80b2-f547f9972073",
+  "keptName": "Chaleco de gamuza con tachas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-584ef484-6928-46e3-95f0-7a2f14e4b722",
+  "name": "Chaleco de gamuza con tachas",
+  "keptAs": "import-56a794bf-f533-464b-80b2-f547f9972073",
+  "keptName": "Chaleco de gamuza con tachas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-74b9eb96-b03a-46b7-b5b9-102ac3ef01b6",
+  "name": "Chaleco de gamuza con tachas",
+  "keptAs": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+  "keptName": "Chaleco de gamuza con tachas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-c23dd7a1-42e7-411e-a3bc-ef7126cc14ef",
+  "name": "Chaleco de gamuza con tachas",
+  "keptAs": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+  "keptName": "Chaleco de gamuza con tachas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-93d11d6b-f24e-4b8f-bbb0-08f7589972a6",
+  "name": "Chaleco de gamuza camel",
+  "keptAs": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+  "keptName": "Chaleco de gamuza con tachas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-eb6ac743-581c-47ac-8fc8-481b6cf553d1",
+  "name": "Chaleco de gamuza con tachas",
+  "keptAs": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+  "keptName": "Chaleco de gamuza con tachas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-b10ba42b-a0a7-48e5-aa55-0d8a46b32923",
+  "name": "Chaleco de gamuza con tachas",
+  "keptAs": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+  "keptName": "Chaleco de gamuza con tachas",
+  "batch": "LOVE TREE"
+ },
+ {
+  "removed": "import-1215ddea-1472-4135-b370-231048451ce3",
+  "name": "Pollera Larga Negra Fluida",
+  "keptAs": "import-746d07c8-50dd-438d-8c43-d1133e5b0a0f",
+  "keptName": "Pollera Larga Negra Fluida",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-5aa7278b-4194-4e42-a2aa-7417aa692ed3",
+  "name": "Pollera larga negra con cintura elastizada",
+  "keptAs": "import-746d07c8-50dd-438d-8c43-d1133e5b0a0f",
+  "keptName": "Pollera Larga Negra Fluida",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-ba5037b4-6ac4-4412-ae9b-8494d558e892",
+  "name": "Pollera maxi negra fluida",
+  "keptAs": "import-746d07c8-50dd-438d-8c43-d1133e5b0a0f",
+  "keptName": "Pollera Larga Negra Fluida",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-641a5ced-28df-403a-8db9-b932fa87b2a5",
+  "name": "Pollera larga blanca",
+  "keptAs": "import-2b207b9d-c7dd-4217-bdf7-442176efe63f",
+  "keptName": "Pollera Larga Blanca Rústica",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-abc23d8a-cef1-44db-8fe4-36c5c21644fc",
+  "name": "Pollera Larga Texturada Blanco Off",
+  "keptAs": "import-2b207b9d-c7dd-4217-bdf7-442176efe63f",
+  "keptName": "Pollera Larga Blanca Rústica",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-77600064-918d-493c-a693-ab1b2adf83c0",
+  "name": "Pollera maxi blanca arrugada",
+  "keptAs": "import-2b207b9d-c7dd-4217-bdf7-442176efe63f",
+  "keptName": "Pollera Larga Blanca Rústica",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-2033ef4d-6beb-4af9-a76f-940148d9e434",
+  "name": "Pollera larga de crepé elastizada",
+  "keptAs": "import-d5d27cba-18dd-49df-a9fc-a7fa11f12ff1",
+  "keptName": "Pollera larga plisada tono crudo",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-a59738e3-d741-4e95-aff0-1ccbde2ab8ff",
+  "name": "Pollera larga fluida crema",
+  "keptAs": "import-a7dcd432-df1c-46cd-863b-7b114ccc4fbc",
+  "keptName": "Pollera larga evasé crema",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-63ae61a0-861e-4c7b-b3ad-398860023123",
+  "name": "Pollera larga fluida crema",
+  "keptAs": "import-a7dcd432-df1c-46cd-863b-7b114ccc4fbc",
+  "keptName": "Pollera larga evasé crema",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-ae33bfd7-9f2c-45ba-81ad-41f3cdabcc99",
+  "name": "Maxi pollera fluida crema",
+  "keptAs": "import-a7dcd432-df1c-46cd-863b-7b114ccc4fbc",
+  "keptName": "Pollera larga evasé crema",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-16b9ca81-d36e-4754-ab73-fbe241e534dc",
+  "name": "Pollera maxi fluida crema",
+  "keptAs": "import-a7dcd432-df1c-46cd-863b-7b114ccc4fbc",
+  "keptName": "Pollera larga evasé crema",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-3d0f5efd-dd23-478d-8147-76d42c7bea19",
+  "name": "Pollera larga tiro alto crema",
+  "keptAs": "import-a7dcd432-df1c-46cd-863b-7b114ccc4fbc",
+  "keptName": "Pollera larga evasé crema",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-868ed2b6-c68a-40a3-8a94-d180b31111cc",
+  "name": "Pollera maxi fluida marrón",
+  "keptAs": "import-7e13b844-b625-4317-b4ca-377e5f9c338f",
+  "keptName": "Pollera Larga Plisada Marrón",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-af0c07d1-f6ff-4498-9a51-390d542c8349",
+  "name": "Pantalón Holgado de Gasa Blanco",
+  "keptAs": "import-cf462574-cbcf-48d4-84af-6c9ca07762a9",
+  "keptName": "Pantalón holgado de textura rústica",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-7796ebfa-7df1-499d-9f8a-d3f8b2cc119f",
+  "name": "Pollera Larga Fluida Verde Pastel",
+  "keptAs": "import-21f68230-aac7-4ea3-9632-73513caf85f7",
+  "keptName": "Pollera Maxi Tiro Alto Verde Menta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-7e2b5420-b902-45bb-99f4-a94b48154f5e",
+  "name": "Pollera maxi texturada verde pastel",
+  "keptAs": "import-21f68230-aac7-4ea3-9632-73513caf85f7",
+  "keptName": "Pollera Maxi Tiro Alto Verde Menta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-1fbe13a3-b929-46c9-b4cc-c7efaea25521",
+  "name": "Pollera maxi plisada verde menta",
+  "keptAs": "import-21f68230-aac7-4ea3-9632-73513caf85f7",
+  "keptName": "Pollera Maxi Tiro Alto Verde Menta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-868ecaf4-2edb-4794-9405-a565babe2fbf",
+  "name": "Pollera maxi verde agua",
+  "keptAs": "import-21f68230-aac7-4ea3-9632-73513caf85f7",
+  "keptName": "Pollera Maxi Tiro Alto Verde Menta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-f6b375b3-b833-4507-b9ce-c6aab220acdc",
+  "name": "Pollera larga plisada verde menta",
+  "keptAs": "import-21f68230-aac7-4ea3-9632-73513caf85f7",
+  "keptName": "Pollera Maxi Tiro Alto Verde Menta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-12f716a1-f412-4d77-97d2-65eca0995bf9",
+  "name": "Short de jean azul",
+  "keptAs": "import-70177be3-1e69-4580-a0a1-1e6078fb68ec",
+  "keptName": "Short sastrero azul marino",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-5dd549f6-f4ff-4a9e-b3df-df6df90715ca",
+  "name": "Pantalón palazzo azul",
+  "keptAs": "import-008c854e-b880-48cc-85bf-623d832a3a50",
+  "keptName": "Pantalón Wide Leg Azul",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-f8133af7-705b-4244-8d87-11836bd4884a",
+  "name": "Pantalón wide leg azul",
+  "keptAs": "import-008c854e-b880-48cc-85bf-623d832a3a50",
+  "keptName": "Pantalón Wide Leg Azul",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-e25620dc-7585-47d3-940f-2783d056a16f",
+  "name": "Pantalón wide leg denim con pinzas",
+  "keptAs": "import-008c854e-b880-48cc-85bf-623d832a3a50",
+  "keptName": "Pantalón Wide Leg Azul",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-653625c0-69ad-43aa-b06c-705bee38923e",
+  "name": "Pollera larga celeste plisada",
+  "keptAs": "import-583e9ad8-9512-40a8-97eb-bea72400b947",
+  "keptName": "Pollera larga de tiro alto celeste",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-8a369f45-7b4e-4a3c-adde-c8586a632804",
+  "name": "Pollera maxi celeste",
+  "keptAs": "import-583e9ad8-9512-40a8-97eb-bea72400b947",
+  "keptName": "Pollera larga de tiro alto celeste",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-5a5ad1b1-7899-48c9-b05e-f0cc5870f5e0",
+  "name": "Pollera Maxi Celeste con Cintura Elastizada",
+  "keptAs": "import-583e9ad8-9512-40a8-97eb-bea72400b947",
+  "keptName": "Pollera larga de tiro alto celeste",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-fa18b08e-4aa4-4c2d-b6db-6e4dcabdf93e",
+  "name": "Pollera maxi fluida celeste",
+  "keptAs": "import-583e9ad8-9512-40a8-97eb-bea72400b947",
+  "keptName": "Pollera larga de tiro alto celeste",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-d9591421-0055-4855-a06e-e9c9ce8c7121",
+  "name": "Pollera maxi rosa pastel",
+  "keptAs": "import-0edd4079-c6bf-4a35-851a-01445f85ece1",
+  "keptName": "Pollera Maxi Rosa Pastel",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-adc72258-d30a-4bbb-82d8-9f4df6695581",
+  "name": "Chaleco tejido negro con botones plateados",
+  "keptAs": "import-6effda3b-3f7c-472a-88a3-a6092fde6b93",
+  "keptName": "Top tejido sin mangas con botones",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-fb214b6d-3128-4072-96e0-14bc10d8902e",
+  "name": "Top tejido de punto negro con botones",
+  "keptAs": "import-6effda3b-3f7c-472a-88a3-a6092fde6b93",
+  "keptName": "Top tejido sin mangas con botones",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-0a137271-1b26-400c-8d4b-423c49b1bb0e",
+  "name": "Top Tejido Negro con Botones Metálicos",
+  "keptAs": "import-6effda3b-3f7c-472a-88a3-a6092fde6b93",
+  "keptName": "Top tejido sin mangas con botones",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-a2aee835-5efe-4f3f-9eb8-bb4462032376",
+  "name": "Top tejido sin mangas negro",
+  "keptAs": "import-6effda3b-3f7c-472a-88a3-a6092fde6b93",
+  "keptName": "Top tejido sin mangas con botones",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-5662288a-f9e2-4d05-8a5b-d5e40cb37a22",
+  "name": "Vestido maxi strapless negro",
+  "keptAs": "import-e993cfee-40e3-4eef-8920-a2cc8cfbe794",
+  "keptName": "Vestido largo strapless negro",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-31be24da-0fc7-4e3e-a7b2-7504d4328617",
+  "name": "Vestido strapless negro midi",
+  "keptAs": "import-e993cfee-40e3-4eef-8920-a2cc8cfbe794",
+  "keptName": "Vestido largo strapless negro",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-c72e5055-8062-4b60-8139-51bdbe438fa7",
+  "name": "Vestido largo strapless negro acanalado con volados",
+  "keptAs": "import-0c7a9ae3-6c17-4fb2-affb-a1ef9de7bdac",
+  "keptName": "Vestido largo strapless negro",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-469dc273-73c2-47c5-9e81-8300dfb5ca49",
+  "name": "Vestido largo strapless acanalado",
+  "keptAs": "import-0c7a9ae3-6c17-4fb2-affb-a1ef9de7bdac",
+  "keptName": "Vestido largo strapless negro",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-46e79e27-b93d-401a-a0cb-0434c800dd1d",
+  "name": "Crop top negro",
+  "keptAs": "import-cc84fc1c-7d47-42d8-9eb3-384c34bff1a9",
+  "keptName": "Crop Top Negro Silueta Boxy",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-d3a6a9d4-d650-48f7-b618-adf7ce0341c3",
+  "name": "Top negro sin mangas con lazo posterior",
+  "keptAs": "import-cc84fc1c-7d47-42d8-9eb3-384c34bff1a9",
+  "keptName": "Crop Top Negro Silueta Boxy",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-6ca0cca5-ab00-4e8c-885a-107b0ae3b661",
+  "name": "Blusa sin mangas a rayas",
+  "keptAs": "import-e425f08e-9f66-4da2-8431-84338346766b",
+  "keptName": "Blusa a rayas con cuello mao",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-59c2759e-89ff-4444-8d21-c42c9832f20b",
+  "name": "Blusa a rayas de manga corta",
+  "keptAs": "import-e425f08e-9f66-4da2-8431-84338346766b",
+  "keptName": "Blusa a rayas con cuello mao",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-d663456e-f2f1-4d53-8d3b-5589b1ed0078",
+  "name": "Blusa rayada cuello mao",
+  "keptAs": "import-0ef24a1d-6a9d-40d8-81c8-9eec22c436ba",
+  "keptName": "Blusa a rayas manga corta con cuello mao",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-1af0fbd3-2e16-4077-abe7-4b9b846aa67d",
+  "name": "Blusa a rayas de manga corta",
+  "keptAs": "import-0ef24a1d-6a9d-40d8-81c8-9eec22c436ba",
+  "keptName": "Blusa a rayas manga corta con cuello mao",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-b4cb01bc-a74b-4ff8-8620-1872251d29ae",
+  "name": "Blusa rayada manga corta",
+  "keptAs": "import-e397664f-60c7-4f9a-abb5-09064bd221a5",
+  "keptName": "Blusa a rayas manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-b9ef888b-e313-497c-a64f-0613134ce728",
+  "name": "Blusa manga corta rayada",
+  "keptAs": "import-e397664f-60c7-4f9a-abb5-09064bd221a5",
+  "keptName": "Blusa a rayas manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-10842fb2-f962-4d78-91d5-d5496c5f886f",
+  "name": "Camisa manga corta blanca",
+  "keptAs": "import-addcc828-a237-4488-a795-c8230b7beabd",
+  "keptName": "Camisa blanca de manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-54e86e56-9514-40e1-845e-14376e88513d",
+  "name": "Camisa de manga corta blanca",
+  "keptAs": "import-addcc828-a237-4488-a795-c8230b7beabd",
+  "keptName": "Camisa blanca de manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-bea996f2-8f86-4700-8942-534ffa97e0c7",
+  "name": "Blusa blanca de manga corta",
+  "keptAs": "import-addcc828-a237-4488-a795-c8230b7beabd",
+  "keptName": "Camisa blanca de manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-bf527b07-8815-4b4a-a991-36289f5f812a",
+  "name": "Camisa blanca de manga corta",
+  "keptAs": "import-addcc828-a237-4488-a795-c8230b7beabd",
+  "keptName": "Camisa blanca de manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-c1724704-9d32-4262-bb40-a193d77b5dd3",
+  "name": "Camisa de manga corta beige",
+  "keptAs": "import-61558c37-ad55-467d-85b5-b33e8445cf48",
+  "keptName": "Camisa beige de manga corta con dobladillo",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-1c01fc7a-abda-44dc-8c70-a7e1c6f9a671",
+  "name": "Blusa camisera manga corta beige",
+  "keptAs": "import-61558c37-ad55-467d-85b5-b33e8445cf48",
+  "keptName": "Camisa beige de manga corta con dobladillo",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-7f848fa0-ccac-4744-816c-1763d64c704c",
+  "name": "Camisa de manga corta beige",
+  "keptAs": "import-61558c37-ad55-467d-85b5-b33e8445cf48",
+  "keptName": "Camisa beige de manga corta con dobladillo",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-521ed727-c267-420b-93f9-da71dcaf89e5",
+  "name": "Camisa de manga corta beige",
+  "keptAs": "import-61558c37-ad55-467d-85b5-b33e8445cf48",
+  "keptName": "Camisa beige de manga corta con dobladillo",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-950fa085-9a7d-4923-8acf-ddfd41d9febc",
+  "name": "Vestido largo strapless blanco",
+  "keptAs": "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+  "keptName": "Vestido largo strapless nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-d5150486-8e64-4081-b0be-1059ca6d4cd4",
+  "name": "Vestido largo strapless blanco",
+  "keptAs": "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+  "keptName": "Vestido largo strapless nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-859268d2-da3c-40a7-97e8-1193a7dfda38",
+  "name": "Vestido largo strapless blanco",
+  "keptAs": "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+  "keptName": "Vestido largo strapless nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-86c1177a-69fb-4984-9e0f-40e7a2667812",
+  "name": "Vestido Maxi Strapless Blanco",
+  "keptAs": "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+  "keptName": "Vestido largo strapless nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-e72b1c89-5630-414c-9516-00a7010722e1",
+  "name": "Vestido largo strapless blanco",
+  "keptAs": "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+  "keptName": "Vestido largo strapless nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-1030e298-ed0f-447a-b372-5a8baeee96c8",
+  "name": "Vestido largo strapless blanco",
+  "keptAs": "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+  "keptName": "Vestido largo strapless nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-dc22b822-abe9-4e7f-8e2b-156bcc43da41",
+  "name": "Vestido largo strapless boho blanco",
+  "keptAs": "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+  "keptName": "Vestido largo strapless nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-6222744f-40d5-4eea-9db6-ff0cf0769b80",
+  "name": "Vestido maxi strapless blanco",
+  "keptAs": "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+  "keptName": "Vestido largo strapless nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-288b24f9-db78-4968-af9b-077b77f5ca30",
+  "name": "Vestido maxi strapless blanco",
+  "keptAs": "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+  "keptName": "Vestido largo strapless nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-17e313cd-6cf7-4362-bcca-7ad5408b458a",
+  "name": "Top cropped texturado café",
+  "keptAs": "import-12bd6d43-ebd5-4206-ab1c-a652c70fbc50",
+  "keptName": "Top cropped escote cuadrado marrón",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-4afd80c1-d5a5-4f2f-a92f-0f0927ff1be8",
+  "name": "Top cropped marrón de lino con botones",
+  "keptAs": "import-12bd6d43-ebd5-4206-ab1c-a652c70fbc50",
+  "keptName": "Top cropped escote cuadrado marrón",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-22263de0-8ee5-4d19-b754-827ca5d48514",
+  "name": "Top Musculosa Marrón de Lino",
+  "keptAs": "import-12bd6d43-ebd5-4206-ab1c-a652c70fbc50",
+  "keptName": "Top cropped escote cuadrado marrón",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-41868cf5-0ce4-4156-b27b-7a180cfb31ce",
+  "name": "Top cropped texturado marrón",
+  "keptAs": "import-12bd6d43-ebd5-4206-ab1c-a652c70fbc50",
+  "keptName": "Top cropped escote cuadrado marrón",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-fa490c54-bc51-4da2-8d71-30285b3404e8",
+  "name": "Vestido Marrón con Lazo en Espalda",
+  "keptAs": "import-9f084e94-bfd2-4bfc-a8a0-9bc350728c16",
+  "keptName": "Top crop marrón sin mangas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-0a2000bb-1d9f-4f09-921b-149f3ff3fcc9",
+  "name": "Blusa broderie con calados florales",
+  "keptAs": "import-549913ac-98e9-4f17-9b18-8269ebfed736",
+  "keptName": "Blusa calada bordada festoneada",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-e20f925d-5bec-4990-9f72-bd1c6f73dafc",
+  "name": "Blusa bordada con calados color marrón oliva",
+  "keptAs": "import-549913ac-98e9-4f17-9b18-8269ebfed736",
+  "keptName": "Blusa calada bordada festoneada",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-231262a0-61d9-42c6-90b8-3fcb5048a1b4",
+  "name": "Blusa sin mangas con bordado calado",
+  "keptAs": "import-549913ac-98e9-4f17-9b18-8269ebfed736",
+  "keptName": "Blusa calada bordada festoneada",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-cafa519f-599a-42dd-bdc6-e11167e612d2",
+  "name": "Blusa calada broderie marrón",
+  "keptAs": "import-549913ac-98e9-4f17-9b18-8269ebfed736",
+  "keptName": "Blusa calada bordada festoneada",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-f412ffad-b9cc-4a90-98cb-bc598d359009",
+  "name": "Top corto calado con bordados",
+  "keptAs": "import-549913ac-98e9-4f17-9b18-8269ebfed736",
+  "keptName": "Blusa calada bordada festoneada",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-4302891c-3fcf-4391-9096-68b81c8e1801",
+  "name": "Top crop de broderie calado",
+  "keptAs": "import-22652921-bf44-4a81-9ef4-42ccbf901365",
+  "keptName": "Top calado de broderie blanco",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-8f1ad2df-c5d7-4f1e-a258-7356d01df7f0",
+  "name": "Blusa corta de broderie con calados",
+  "keptAs": "import-22652921-bf44-4a81-9ef4-42ccbf901365",
+  "keptName": "Top calado de broderie blanco",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-74c213c9-3394-42e8-adfd-c6c031aba17e",
+  "name": "Top de broderie calado",
+  "keptAs": "import-22652921-bf44-4a81-9ef4-42ccbf901365",
+  "keptName": "Top calado de broderie blanco",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-67da8efa-616e-4c77-8731-b4c2f103df39",
+  "name": "Blusa corta calada estilo broderie",
+  "keptAs": "import-22652921-bf44-4a81-9ef4-42ccbf901365",
+  "keptName": "Top calado de broderie blanco",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-4cf5f963-d52a-4498-a984-b542c6d9661d",
+  "name": "Top Musculosa Beige con Botones",
+  "keptAs": "import-3efd52c6-8362-4bd9-8dee-f429a32cc99c",
+  "keptName": "Top sin mangas escote cuadrado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-e57124c1-d6bf-4490-b39f-ffaae2b9ba11",
+  "name": "Top cropped texturado escote cuadrado",
+  "keptAs": "import-3efd52c6-8362-4bd9-8dee-f429a32cc99c",
+  "keptName": "Top sin mangas escote cuadrado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-f182b0f2-4968-4101-870b-2fcd23e9d26a",
+  "name": "Top cropped de bambula crudo",
+  "keptAs": "import-3efd52c6-8362-4bd9-8dee-f429a32cc99c",
+  "keptName": "Top sin mangas escote cuadrado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-8d9950a4-e6ea-45a5-afb6-fbafe451bd36",
+  "name": "Top cropped de lino beige",
+  "keptAs": "import-3efd52c6-8362-4bd9-8dee-f429a32cc99c",
+  "keptName": "Top sin mangas escote cuadrado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-d15e8e85-1281-4085-ba37-ba1ea1bba96e",
+  "name": "Top musculosa crudo con botones en la espalda",
+  "keptAs": "import-3efd52c6-8362-4bd9-8dee-f429a32cc99c",
+  "keptName": "Top sin mangas escote cuadrado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-66dd787e-f0ef-4de4-9f8a-52864a181ae0",
+  "name": "Top cropped texturado",
+  "keptAs": "import-3c4ea3dc-a1a6-4a2e-a504-e51015e66b0d",
+  "keptName": "Top cropped texturizado con escote cuadrado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-de0d60b5-87f4-4929-9317-e7a739b12af1",
+  "name": "Top rústico con lazos laterales",
+  "keptAs": "import-cd19216e-b2a0-41c6-8bb6-4cdefd28b97b",
+  "keptName": "Top de lino con lazos laterales",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-df91dfe1-201c-4150-a9ad-4880447c34b0",
+  "name": "Top musculosa texturado con lazos",
+  "keptAs": "import-cd19216e-b2a0-41c6-8bb6-4cdefd28b97b",
+  "keptName": "Top de lino con lazos laterales",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-750c3e5f-0958-4a5b-a6a2-610348446f71",
+  "name": "Top de lino sin mangas con lazos laterales",
+  "keptAs": "import-41784b68-49dd-464a-af4f-38f419f71059",
+  "keptName": "Top musculosa de lino con lazos laterales",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-05009bd9-6787-4f7e-ac01-2772a2c74af5",
+  "name": "Top corto sin mangas con lazos",
+  "keptAs": "import-4257e1c0-0d78-40ff-842b-a75b8cfc722c",
+  "keptName": "Top cropped texturizado verde oliva",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-958898a4-feb6-461c-a82d-d6f8243fade4",
+  "name": "Top musculosa verde oliva con lazos",
+  "keptAs": "import-4257e1c0-0d78-40ff-842b-a75b8cfc722c",
+  "keptName": "Top cropped texturizado verde oliva",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-3d311311-88e1-420f-bdc2-ab5c4d222d4e",
+  "name": "Chaleco tejido de manga corta beige",
+  "keptAs": "import-1eaf0499-23e7-4aae-868f-054e1bed6a6a",
+  "keptName": "Top tejido de punto con botones",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-0ba3549e-4a87-4a84-9e2d-460f1da88671",
+  "name": "Chaleco tejido sin mangas crudo",
+  "keptAs": "import-7f5efa85-7224-47f4-acf0-f78a76ef6dc7",
+  "keptName": "Chaleco tejido de punto con botones enjoyados",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-0215d6e3-655b-4d60-8620-e8eed55512af",
+  "name": "Chaleco tejido de punto crudo",
+  "keptAs": "import-7f5efa85-7224-47f4-acf0-f78a76ef6dc7",
+  "keptName": "Chaleco tejido de punto con botones enjoyados",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-f4546e00-e98b-49ca-afa4-0cf75df0df5b",
+  "name": "Top tejido sin mangas crudo",
+  "keptAs": "import-7f5efa85-7224-47f4-acf0-f78a76ef6dc7",
+  "keptName": "Chaleco tejido de punto con botones enjoyados",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-d2345dca-fa83-40ab-9a74-1bf1b482e2db",
+  "name": "Cardigan tejido de manga corta amarillo pastel",
+  "keptAs": "import-753478e9-bf1d-4900-a394-fac381ea28b2",
+  "keptName": "Cardigan de hilo manga corta amarillo pastel",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-d2f16a1c-a215-4441-9761-5fa7631f3162",
+  "name": "Top tejido corto amarillo pastel",
+  "keptAs": "import-753478e9-bf1d-4900-a394-fac381ea28b2",
+  "keptName": "Cardigan de hilo manga corta amarillo pastel",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-0608a237-8f60-472e-bb0a-0329c15a2f9d",
+  "name": "Top tejido amarillo pastel con botones fantasía",
+  "keptAs": "import-753478e9-bf1d-4900-a394-fac381ea28b2",
+  "keptName": "Cardigan de hilo manga corta amarillo pastel",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-51ac681e-6be9-4823-ae78-48f412d07672",
+  "name": "Top tejido con botones",
+  "keptAs": "import-753478e9-bf1d-4900-a394-fac381ea28b2",
+  "keptName": "Cardigan de hilo manga corta amarillo pastel",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-d41593d7-9bd6-4e79-b050-67fea3fb8eb3",
+  "name": "Vestido midi estampado azulejos",
+  "keptAs": "import-7933e719-0bde-438e-8f84-bd3fa3b0748b",
+  "keptName": "Vestido largo estampado azulejos",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-c92c8203-5321-4fa3-8570-98171d4d2240",
+  "name": "Vestido Midi Estampado Azulejos",
+  "keptAs": "import-7933e719-0bde-438e-8f84-bd3fa3b0748b",
+  "keptName": "Vestido largo estampado azulejos",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-1394d3f3-4e5e-4282-bf1f-b57f5e7a3a3e",
+  "name": "Vestido largo strapless acanalado con volantes",
+  "keptAs": "import-b64cab24-fa41-4e2a-858d-b0dd65d653a3",
+  "keptName": "Vestido largo strapless de morley y calados",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-59ecf3ef-6df1-4414-902f-4b963cb20091",
+  "name": "Vestido midi strapless nido de abeja",
+  "keptAs": "import-6bb9940d-265f-4054-a889-4c6aaa33eee3",
+  "keptName": "Vestido strapless verde menta con nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-9348798e-8943-4b26-a2fe-467b53197d58",
+  "name": "Vestido Largo Strapless Verde Menta",
+  "keptAs": "import-6bb9940d-265f-4054-a889-4c6aaa33eee3",
+  "keptName": "Vestido strapless verde menta con nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-ca520759-0696-4fc8-8343-52c20d2af1bb",
+  "name": "Vestido strapless largo con nido de abeja y calados",
+  "keptAs": "import-6bb9940d-265f-4054-a889-4c6aaa33eee3",
+  "keptName": "Vestido strapless verde menta con nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-a7032889-31f0-4427-a430-21bdcbb7ade3",
+  "name": "Top strapless fruncido verde menta",
+  "keptAs": "import-6bb9940d-265f-4054-a889-4c6aaa33eee3",
+  "keptName": "Vestido strapless verde menta con nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-ed64f366-8517-4bd4-95df-77308785ff3f",
+  "name": "Vestido strapless con fruncido verde suave",
+  "keptAs": "import-6bb9940d-265f-4054-a889-4c6aaa33eee3",
+  "keptName": "Vestido strapless verde menta con nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-8c8c3e02-6fc3-49c3-be20-cab156e32589",
+  "name": "Top strapless verde menta con nido de abeja",
+  "keptAs": "import-6bb9940d-265f-4054-a889-4c6aaa33eee3",
+  "keptName": "Vestido strapless verde menta con nido de abeja",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-ece45a3f-78fc-4696-b9c6-5a69b1f70aec",
+  "name": "Top cropped verde agua",
+  "keptAs": "import-f67247c2-3953-481e-9631-95ea9af2e752",
+  "keptName": "Top cropped verde agua abullonado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-b6994a7a-79b6-457d-9fa4-72c170bacc09",
+  "name": "Blusa verde agua con lazo en la espalda",
+  "keptAs": "import-f67247c2-3953-481e-9631-95ea9af2e752",
+  "keptName": "Top cropped verde agua abullonado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-31cda1ca-7e25-4529-939a-112d4e6cbe3d",
+  "name": "Top cropped blanco sin mangas",
+  "keptAs": "import-db2e3235-f426-4d75-a0af-32eaa063e23c",
+  "keptName": "Top corto blanco sin mangas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-37504d3a-6f5e-4123-a873-79027c4c24d4",
+  "name": "Top blanco con lazo en la espalda",
+  "keptAs": "import-db2e3235-f426-4d75-a0af-32eaa063e23c",
+  "keptName": "Top corto blanco sin mangas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-e1b6ee97-0e57-4080-a463-04a9b02a8b07",
+  "name": "Crop top celeste sin mangas",
+  "keptAs": "import-58b9583c-9729-419d-a2d9-3db41238995b",
+  "keptName": "Crop top celeste sin mangas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-499f2fc7-00fe-4567-afaa-d122d8171783",
+  "name": "Vestido celeste sin mangas con lazo en espalda",
+  "keptAs": "import-58b9583c-9729-419d-a2d9-3db41238995b",
+  "keptName": "Crop top celeste sin mangas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-b2019e07-2c63-4195-b2fc-b348e458f464",
+  "name": "Blusa bordada celeste con lazos",
+  "keptAs": "import-c34b1bb8-2268-4b73-ba2c-4ba7102ebf02",
+  "keptName": "Blusa bordada celeste con lazos",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-bc124419-2d70-4e93-a43b-a464f08b9f71",
+  "name": "Blusa celeste con mangas abullonadas",
+  "keptAs": "import-c34b1bb8-2268-4b73-ba2c-4ba7102ebf02",
+  "keptName": "Blusa bordada celeste con lazos",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-e5a2a97a-61dd-4da6-99a0-f351962abe0f",
+  "name": "Camisa manga corta verde agua",
+  "keptAs": "import-e4826d0e-f442-4d72-8cec-d5b3718d53ac",
+  "keptName": "Blusa de manga corta verde agua",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-406404a2-bf3c-4be8-a5ed-13cdcf317bf3",
+  "name": "Camisa manguita corta menta",
+  "keptAs": "import-e4826d0e-f442-4d72-8cec-d5b3718d53ac",
+  "keptName": "Blusa de manga corta verde agua",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-a77aa49c-de06-471a-b762-9f1c252f8b46",
+  "name": "Camisa manga corta menta",
+  "keptAs": "import-e4826d0e-f442-4d72-8cec-d5b3718d53ac",
+  "keptName": "Blusa de manga corta verde agua",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-648f103c-5ad6-4246-91d0-9d4bacc5d9ae",
+  "name": "Camisa manga corta verde agua",
+  "keptAs": "import-e4826d0e-f442-4d72-8cec-d5b3718d53ac",
+  "keptName": "Blusa de manga corta verde agua",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-993993f5-6397-43ae-8258-8070a8202e9e",
+  "name": "Camisa de manga corta verde agua",
+  "keptAs": "import-e4826d0e-f442-4d72-8cec-d5b3718d53ac",
+  "keptName": "Blusa de manga corta verde agua",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-4c3b0f6f-ee39-40bf-a540-4af7bc974d04",
+  "name": "Camisa de manga corta azul marino",
+  "keptAs": "import-a1adc5fa-941c-41b1-a087-5e7a8c48b292",
+  "keptName": "Camisa de manga corta azul marino",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-dbc3dd6f-9153-4f01-97aa-8019c64ca68d",
+  "name": "Camisa manga corta azul marino",
+  "keptAs": "import-a1adc5fa-941c-41b1-a087-5e7a8c48b292",
+  "keptName": "Camisa de manga corta azul marino",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-8ba7a537-4036-4378-a694-48f003d4c0da",
+  "name": "Camisa de manga corta azul marino",
+  "keptAs": "import-a1adc5fa-941c-41b1-a087-5e7a8c48b292",
+  "keptName": "Camisa de manga corta azul marino",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-39d8ffc4-fb1f-4bf5-973a-9f681b1ffe01",
+  "name": "Vestido corto azul marino estilo túnica",
+  "keptAs": "import-e8327fea-5c5e-415c-8eda-964af00b5027",
+  "keptName": "Blusa denim manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-63f65a1e-5bda-4bc7-8210-02fc3f94f562",
+  "name": "Blusa corta de lino azul",
+  "keptAs": "import-e8327fea-5c5e-415c-8eda-964af00b5027",
+  "keptName": "Blusa denim manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-ac894220-6a65-46f3-abd1-67fc49935e5f",
+  "name": "Top cropped azul cuello barco",
+  "keptAs": "import-e8327fea-5c5e-415c-8eda-964af00b5027",
+  "keptName": "Blusa denim manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-c4de55f4-5853-46db-aab7-1289098b6aae",
+  "name": "Blusa de lino manga corta azul",
+  "keptAs": "import-e8327fea-5c5e-415c-8eda-964af00b5027",
+  "keptName": "Blusa denim manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-bd4e83ea-4379-4778-a03e-32461d5da755",
+  "name": "Top denim con botones en la espalda",
+  "keptAs": "import-e8327fea-5c5e-415c-8eda-964af00b5027",
+  "keptName": "Blusa denim manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-db3fa1b1-1123-4f35-ac2d-c6916eabe501",
+  "name": "Blusa corta denim",
+  "keptAs": "import-e8327fea-5c5e-415c-8eda-964af00b5027",
+  "keptName": "Blusa denim manga corta",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-d46ad50c-68e4-4f76-b150-390a4d74b8b9",
+  "name": "Top denim cropped con rayas diplomáticas",
+  "keptAs": "import-d004c927-9c44-45c2-bae7-dad2ac1cef2e",
+  "keptName": "Top de denim con rayas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-dd66acb5-6c4e-45cd-b60a-58bf26634cda",
+  "name": "Top de denim pinstripe",
+  "keptAs": "import-d004c927-9c44-45c2-bae7-dad2ac1cef2e",
+  "keptName": "Top de denim con rayas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-8bd4d2a8-e242-463a-9c28-fcc0b7e6c03e",
+  "name": "Top denim a rayas",
+  "keptAs": "import-d004c927-9c44-45c2-bae7-dad2ac1cef2e",
+  "keptName": "Top de denim con rayas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-5bf8ed3b-ac8f-4f11-af6d-f33b511f71a5",
+  "name": "Top Denim Rayado sin Mangas",
+  "keptAs": "import-d004c927-9c44-45c2-bae7-dad2ac1cef2e",
+  "keptName": "Top de denim con rayas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-3f280650-6178-4bee-a391-bf84b5a37613",
+  "name": "Top crop denim a rayas",
+  "keptAs": "import-d004c927-9c44-45c2-bae7-dad2ac1cef2e",
+  "keptName": "Top de denim con rayas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-3d2c8380-f8f9-4867-b8e9-0bbf013407b2",
+  "name": "Top denim rayado sin mangas",
+  "keptAs": "import-d004c927-9c44-45c2-bae7-dad2ac1cef2e",
+  "keptName": "Top de denim con rayas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-7a7c9403-f135-45b2-b693-dfef9b8449d2",
+  "name": "Top denim rayado con lazos",
+  "keptAs": "import-d004c927-9c44-45c2-bae7-dad2ac1cef2e",
+  "keptName": "Top de denim con rayas",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-d9d81b8e-7f9d-4ddd-a90f-0f7b398285e1",
+  "name": "Top sin mangas rosa con lazo en espalda",
+  "keptAs": "import-91bcd2bd-860e-4ce3-bc4c-29dd829ff99c",
+  "keptName": "Crop top rosa estructurado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-0574d1b7-b111-4f9c-871c-c042bc3389d4",
+  "name": "Top chaleco estampado frutas",
+  "keptAs": "import-e07d4f53-aaa2-4c75-a604-0af977f84801",
+  "keptName": "Top Chaleco Estampado Frutal",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-062896ed-5fec-4066-8177-be8dfd843751",
+  "name": "Blusa crop sin mangas crema",
+  "keptAs": "import-dc6f5ddf-a5a9-42fd-ad5b-f0de890b62bb",
+  "keptName": "Top Crop Manteca Holgado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-3fe884d2-cfe1-4bb5-b475-69c9215b5e79",
+  "name": "Blusa holgada con lazo en espalda",
+  "keptAs": "import-dc6f5ddf-a5a9-42fd-ad5b-f0de890b62bb",
+  "keptName": "Top Crop Manteca Holgado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-deaaa9e6-763b-4f9e-a29f-ce2249b6d5e0",
+  "name": "Top abullonado sin mangas manteca",
+  "keptAs": "import-dc6f5ddf-a5a9-42fd-ad5b-f0de890b62bb",
+  "keptName": "Top Crop Manteca Holgado",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-0660681a-8722-4e9a-ab4a-cff96a7e694c",
+  "name": "Bota texana caña alta negra",
+  "keptAs": "import-cf7693ce-35c4-40f9-81cb-df5ef95b911e",
+  "keptName": "Bota texana caña alta negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-ebb282fd-1cf5-41fa-a390-2b5cdbd85cf5",
+  "name": "Bota texana con estrellas negra",
+  "keptAs": "import-b0fe5096-2f26-4909-9d22-d7a3e96d8c7a",
+  "keptName": "Bota texana con estrellas negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-a47feb84-39c9-46b4-a61b-ce1aaa42f2ea",
+  "name": "Bota texana con estrellas negra",
+  "keptAs": "import-b0fe5096-2f26-4909-9d22-d7a3e96d8c7a",
+  "keptName": "Bota texana con estrellas negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-56567835-c488-45bb-aedd-63f2d072b51f",
+  "name": "Chinela calada negra",
+  "keptAs": "import-241a33ca-da5d-4154-8f1b-69aee720d314",
+  "keptName": "Chinela calada negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-75126c1f-7d11-494d-b32c-c06cea57c1a8",
+  "name": "Chinela con moño negra",
+  "keptAs": "import-c353262e-a4f0-413d-beb4-ac1ff9753bf7",
+  "keptName": "Chinela con moño negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-a0da6527-287e-4671-af56-785caecce75e",
+  "name": "Chinela con moño negra",
+  "keptAs": "import-c353262e-a4f0-413d-beb4-ac1ff9753bf7",
+  "keptName": "Chinela con moño negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-b3e969ec-eaf5-43c8-8fb7-333928eb2c6c",
+  "name": "Mule alpargata negra",
+  "keptAs": "import-5f89d9b3-c55a-45d8-9e49-611286bd1592",
+  "keptName": "Mule alpargata negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-901488ea-9a4b-4ebc-a34d-92b51da64a36",
+  "name": "Sandalia de taco bajo con tira en T negra",
+  "keptAs": "import-69a897db-7b38-49c6-bc13-98c0c7aa1084",
+  "keptName": "Sandalia de taco bajo con tira en T negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-37088d75-6296-48fe-a87c-6a3fd3c79c14",
+  "name": "Sandalia de taco bajo con tira en T negra",
+  "keptAs": "import-69a897db-7b38-49c6-bc13-98c0c7aa1084",
+  "keptName": "Sandalia de taco bajo con tira en T negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-fb642550-6a15-4805-bfdc-66f48eb7eebf",
+  "name": "Sandalia de taco fino negra",
+  "keptAs": "import-a18f0657-c822-430f-836e-c3ec57a20c5a",
+  "keptName": "Sandalia de taco fino negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-b02e1d2e-96b7-44c6-8349-fb4deb6b593c",
+  "name": "Bota texana con estrellas blanca",
+  "keptAs": "import-0f50b2f4-c984-43fd-aba2-178d8ae5b766",
+  "keptName": "Bota texana con estrellas blanca",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-8cdb2b40-8102-40f8-932e-9cd20f0f8853",
+  "name": "Bota texana con estrellas blanca",
+  "keptAs": "import-0f50b2f4-c984-43fd-aba2-178d8ae5b766",
+  "keptName": "Bota texana con estrellas blanca",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-3d5d21ce-d2b1-47fd-a014-927d8449bc5b",
+  "name": "Bota texana con estrellas blanca",
+  "keptAs": "import-0f50b2f4-c984-43fd-aba2-178d8ae5b766",
+  "keptName": "Bota texana con estrellas blanca",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-2a6eccfb-3fb5-49bc-aca9-66f1ce3dd81d",
+  "name": "Chinela calada blanca",
+  "keptAs": "import-cfe02ff2-714c-4edb-84a1-1af4f352a898",
+  "keptName": "Chinela calada blanca",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-74abc093-6401-450c-9491-2fc0001bb754",
+  "name": "Sandalia de taco fino blanca",
+  "keptAs": "import-1f0388c7-3a10-4890-9b18-ffd7f9ab4c13",
+  "keptName": "Sandalia de taco fino blanca",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-12c6657a-466f-4460-b30e-15383023ecb0",
+  "name": "Chinela calada chocolate",
+  "keptAs": "import-91c3cc85-89c1-490d-8970-62a6f545db1e",
+  "keptName": "Chinela calada chocolate",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-24be93ca-9667-4713-99d4-423bb4264754",
+  "name": "Chinela calada suela",
+  "keptAs": "import-7082c725-4e3e-4aeb-87c2-72ebcae16065",
+  "keptName": "Chinela calada suela",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-641d8c07-2ed6-46d5-82a0-e70b4ea365b9",
+  "name": "Chinela calada suela",
+  "keptAs": "import-eabee48b-3e2a-425a-aa72-fa4b3c4cb1ab",
+  "keptName": "Chinela calada suela",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-efcbf790-c2dd-47af-b083-a104ab54d2c9",
+  "name": "Sandalia de taco bajo con tira en T animal print",
+  "keptAs": "import-ed8be951-62e8-46dd-b310-75c21f21a86a",
+  "keptName": "Sandalia de taco bajo con tira en T animal print",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-00c6706c-bf7a-4e58-9130-23cea84e47ae",
+  "name": "Sandalia de taco bajo con tira en T animal print",
+  "keptAs": "import-ed8be951-62e8-46dd-b310-75c21f21a86a",
+  "keptName": "Sandalia de taco bajo con tira en T animal print",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-33466bb6-4fc6-446f-a8c0-81ae80d4d9c8",
+  "name": "Mule alpargata camel",
+  "keptAs": "import-a7797b7e-9a63-4439-8e69-f4ac08263f58",
+  "keptName": "Mule alpargata camel",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-c9e4610c-9bdd-40eb-b902-57c7b2cbbbfd",
+  "name": "Mule alpargata camel",
+  "keptAs": "import-a7797b7e-9a63-4439-8e69-f4ac08263f58",
+  "keptName": "Mule alpargata camel",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-7b1a8ef6-b905-4b9e-94c4-ac1586701b58",
+  "name": "Mule alpargata camel",
+  "keptAs": "import-a7797b7e-9a63-4439-8e69-f4ac08263f58",
+  "keptName": "Mule alpargata camel",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-4575fd87-c2b8-4996-b916-17c19b34c793",
+  "name": "Sandalia de taco bajo con tira en T camel",
+  "keptAs": "import-a88f7329-7201-4760-aeb0-0913f2a08fbd",
+  "keptName": "Sandalia de taco bajo con tira en T camel",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-7ce53f5b-bbab-487c-99f7-43306fc3e351",
+  "name": "Sandalia de taco bajo con tira en T camel",
+  "keptAs": "import-a88f7329-7201-4760-aeb0-0913f2a08fbd",
+  "keptName": "Sandalia de taco bajo con tira en T camel",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-9c300dd5-1950-4bd7-b6f7-dc4383d8503c",
+  "name": "Bota texana con estrellas taupe",
+  "keptAs": "import-5654d32c-99f1-4933-a22a-5db7bb6d52ac",
+  "keptName": "Bota texana con estrellas taupe",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-738bc469-c411-4ede-ae05-6b78aab6a7ec",
+  "name": "Bota texana con estrellas taupe",
+  "keptAs": "import-5654d32c-99f1-4933-a22a-5db7bb6d52ac",
+  "keptName": "Bota texana con estrellas taupe",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-52b1ba9a-acc6-411c-a64c-103cb56724c3",
+  "name": "Bota texana con estrellas taupe",
+  "keptAs": "import-5654d32c-99f1-4933-a22a-5db7bb6d52ac",
+  "keptName": "Bota texana con estrellas taupe",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-18716045-a350-4f0a-92ee-1051383a4c5a",
+  "name": "Bota texana con estrellas taupe",
+  "keptAs": "import-5654d32c-99f1-4933-a22a-5db7bb6d52ac",
+  "keptName": "Bota texana con estrellas taupe",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-9b5ef5e0-e6c8-42d5-9470-0b0182ffda11",
+  "name": "Bota texana con estrellas taupe",
+  "keptAs": "import-5654d32c-99f1-4933-a22a-5db7bb6d52ac",
+  "keptName": "Bota texana con estrellas taupe",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-05c42526-3a45-43dd-a8aa-f30d13822225",
+  "name": "Bota texana con estrellas taupe",
+  "keptAs": "import-5654d32c-99f1-4933-a22a-5db7bb6d52ac",
+  "keptName": "Bota texana con estrellas taupe",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-1e6937f6-af70-4d42-b0ea-7a2ee17be680",
+  "name": "Chinela calada dorada",
+  "keptAs": "import-35fba6e6-f4a3-4993-b7a2-5486fc2f56a0",
+  "keptName": "Chinela calada dorada",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-838f37e0-62fb-4b28-87d9-db1608f9f26f",
+  "name": "Chinela calada dorada",
+  "keptAs": "import-35fba6e6-f4a3-4993-b7a2-5486fc2f56a0",
+  "keptName": "Chinela calada dorada",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-ade5d292-af96-4cbf-9061-74c6c2df1a98",
+  "name": "Mule alpargata dorada",
+  "keptAs": "import-e412480d-269e-455c-a199-7a5175821ac9",
+  "keptName": "Mule alpargata dorada",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-abb0d663-4e16-4c6e-a12b-f460f23048c0",
+  "name": "Mule alpargata de rafia metalizada",
+  "keptAs": "import-7146aaeb-285d-42b8-8e41-089fce298b8d",
+  "keptName": "Mule alpargata de rafia metalizada",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-3a5f3276-b054-4ce7-b2a5-2fcabadc0ef3",
+  "name": "Sandalia de taco ancho nude",
+  "keptAs": "import-74ae2c7a-9d1c-492c-8fa3-b10725816b41",
+  "keptName": "Sandalia de taco ancho nude",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-cb41473f-2fbc-4982-a57e-e8335ae1eb77",
+  "name": "Sandalia de taco fino nude",
+  "keptAs": "import-57e9aa19-cabc-4563-883c-7b3394fd8f2b",
+  "keptName": "Sandalia de taco ancho nude",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-8abdf439-c7e5-4dce-be19-65b82306d8cd",
+  "name": "Chinela con caracoles terracota",
+  "keptAs": "import-ea9ebf57-0929-4b77-94e1-ee0f1562b7ec",
+  "keptName": "Chinela con caracoles terracota",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-312821cf-3312-4933-a1e7-531efa5d6ddd",
+  "name": "Chinela con caracoles natural",
+  "keptAs": "import-dcaf9551-10c3-423b-96e9-8788e42b8372",
+  "keptName": "Chinela con caracoles natural",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-2d0d7f09-476f-4b96-83f3-19e8cb3e0465",
+  "name": "Chinela con caracoles cruda",
+  "keptAs": "import-d6d95e53-b8d7-446a-8e67-a087802e8bed",
+  "keptName": "Chinela con caracoles cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-72bd78d7-5d9b-4ef2-b810-1940385003de",
+  "name": "Sandalia cuña de yute beige",
+  "keptAs": "import-905f67fd-922f-4f7c-8fee-bd9b30715804",
+  "keptName": "Sandalia cuña de yute beige",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-72cae57b-9fb2-4959-aea4-187c85323b45",
+  "name": "Sandalia de taco bajo con tira en T cruda",
+  "keptAs": "import-405772a3-67f0-4a7d-9928-66128707f57f",
+  "keptName": "Sandalia de taco bajo con tira en T cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-0c47f747-c051-42f0-aae3-dc7f525e59b2",
+  "name": "Sandalia de taco bajo con tira en T cruda",
+  "keptAs": "import-405772a3-67f0-4a7d-9928-66128707f57f",
+  "keptName": "Sandalia de taco bajo con tira en T cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-76e0b7fd-a902-44c7-8d35-c871a8a36063",
+  "name": "Sandalia de taco bajo con tira en T verde pistacho",
+  "keptAs": "import-e3f63ef1-1538-43ba-9cf5-b519f59db0c3",
+  "keptName": "Sandalia de taco bajo con tira en T verde pistacho",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-ec8ef109-012c-4521-8bf0-dc850ca28854",
+  "name": "Sandalia de taco bajo con tira en T rosa",
+  "keptAs": "import-25405c9d-8b27-4fd1-90b0-e32e817b6161",
+  "keptName": "Sandalia de taco bajo con tira en T rosa",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-dc606c01-b2d5-4633-b8d6-2691cac3b77e",
+  "name": "Mule alpargata verde agua",
+  "keptAs": "import-4f7defab-8879-4886-80eb-01b561508095",
+  "keptName": "Mule alpargata verde agua",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-897c62ad-0576-4423-9093-e84cd61a41e3",
+  "name": "Aros colgantes con dije de concha y estrella de mar",
+  "keptAs": "import-e01a2480-1db6-4daf-94d9-76c7c0709317",
+  "keptName": "Aros Colgantes con Dije de Concha y Estrella de Mar",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-d25bba8a-3945-411d-b22d-6a4fc9d340bc",
+  "name": "Aros colgantes con caracol y estrella de mar",
+  "keptAs": "import-e01a2480-1db6-4daf-94d9-76c7c0709317",
+  "keptName": "Aros Colgantes con Dije de Concha y Estrella de Mar",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-7483a57a-6b02-42b2-b1aa-64536479ba9d",
+  "name": "Aro colgante con dije de concha y estrella de mar",
+  "keptAs": "import-e01a2480-1db6-4daf-94d9-76c7c0709317",
+  "keptName": "Aros Colgantes con Dije de Concha y Estrella de Mar",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-0922ed53-dd80-4c72-b062-f88402a36020",
+  "name": "Cinturón boho de discos de cuero con apliques metálicos",
+  "keptAs": "import-9e46aa09-b153-4b94-bae0-62eb7d370da6",
+  "keptName": "Cinto ancho circular con hebilla dorada",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-ed1d25ca-2079-41df-b70c-2f897fa4450d",
+  "name": "Cinturón de discos de cuero con ojalillos y medallón dorado",
+  "keptAs": "import-9e46aa09-b153-4b94-bae0-62eb7d370da6",
+  "keptName": "Cinto ancho circular con hebilla dorada",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-f43bd289-751a-4ab1-9088-e96651f566f7",
+  "name": "Collar artesanal con caracoles y dije",
+  "keptAs": "import-f0831ebd-5f19-4dd8-b630-9827d7845855",
+  "keptName": "Collar playero con caracoles y dije",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-5019e527-b1c3-40a1-9375-97a73316f58f",
+  "name": "Collar playero con caracoles y dije marino",
+  "keptAs": "import-f0831ebd-5f19-4dd8-b630-9827d7845855",
+  "keptName": "Collar playero con caracoles y dije",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-5d522ef4-90ef-4bd9-bf50-aaee5b65e893",
+  "name": "Collar trenzado con caracoles y dije",
+  "keptAs": "import-f0831ebd-5f19-4dd8-b630-9827d7845855",
+  "keptName": "Collar playero con caracoles y dije",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-7ba3e540-1651-476c-8c1b-87d366c7d270",
+  "name": "Collar playero con caracoles y dije marino",
+  "keptAs": "import-f0831ebd-5f19-4dd8-b630-9827d7845855",
+  "keptName": "Collar playero con caracoles y dije",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-8abfffb2-2f59-4a16-be7e-56d392c1e1d8",
+  "name": "Collar de perlas con dijes dorados",
+  "keptAs": "import-4ccf6f47-4095-4401-bdac-ef04fb0b07d7",
+  "keptName": "Collar de perlas con dijes dorados",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-4b16ddb8-8fb7-4a43-aaf8-74258b48f883",
+  "name": "Collar de perlas con dijes marinos dorados",
+  "keptAs": "import-4ccf6f47-4095-4401-bdac-ef04fb0b07d7",
+  "keptName": "Collar de perlas con dijes dorados",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-a3b2230d-4727-4726-baed-7d337eeff31e",
+  "name": "Collar de Perlas con Dijes Dorados",
+  "keptAs": "import-4ccf6f47-4095-4401-bdac-ef04fb0b07d7",
+  "keptName": "Collar de perlas con dijes dorados",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-b25babe5-972c-4577-a9e3-aed319f0a854",
+  "name": "Collar de perlas con dijes dorados marinos",
+  "keptAs": "import-4ccf6f47-4095-4401-bdac-ef04fb0b07d7",
+  "keptName": "Collar de perlas con dijes dorados",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-4aa526cc-2c61-4abe-a5e2-e5231c518d42",
+  "name": "Pañuelo satinado a lunares",
+  "keptAs": "import-bd52f57d-1a5a-4429-a923-06d835828f5b",
+  "keptName": "Pañuelo cuadrado de satén con lunares",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-0f41d0d0-52dc-4621-94a6-da26e056a750",
+  "name": "Pañuelo satinado estampado ilustrado",
+  "keptAs": "import-f5ca1fe5-aa17-451d-81b7-e5499318f497",
+  "keptName": "Pañuelo cuadrado de seda estampado mariscos y limones",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-d6f21732-4258-4af1-97a6-52689bbdf6d1",
+  "name": "Pañuelo Satinado Estampado Marino",
+  "keptAs": "import-f5ca1fe5-aa17-451d-81b7-e5499318f497",
+  "keptName": "Pañuelo cuadrado de seda estampado mariscos y limones",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-9d83ca33-a889-49ac-a6ba-1acc4b69b08e",
+  "name": "Set de pulseras con cuentas y dije de estrella de mar",
+  "keptAs": "import-d5046e1f-6883-4361-bdc0-868a661e160c",
+  "keptName": "Set de pulseras combinadas con dijes marinos",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-bda6539a-1768-4ad9-9878-73c1d51f471c",
+  "name": "Set de pulseras veraniegas con dijes marinos",
+  "keptAs": "import-d5046e1f-6883-4361-bdc0-868a661e160c",
+  "keptName": "Set de pulseras combinadas con dijes marinos",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-079b4a82-a2d0-4479-ac94-bd5b6aa6ae3e",
+  "name": "Set de pulseras veraniegas con dijes marinos",
+  "keptAs": "import-812d081f-ce2a-410c-bff3-0aa8d4a593d8",
+  "keptName": "Set de pulseras con dijes marinos",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-946709ef-1809-467b-a772-3b8157584dfc",
+  "name": "Aros Dorados Abombados",
+  "keptAs": "import-4b5d9e02-0365-4654-a26b-932a6b0e49ce",
+  "keptName": "Set de aros dorados abultados",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-d679a3c1-772a-42dc-b303-8e6cd9942048",
+  "name": "Set de aros dorados variados",
+  "keptAs": "import-29297851-4f83-438c-8747-03f3f1245808",
+  "keptName": "Set de aros dorados Gold Dipped",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-fe8a2507-04bf-4ca1-a134-a5137f0ebbec",
+  "name": "Set de aros dorados con motivos marinos",
+  "keptAs": "import-3e6c71a0-9819-447f-a672-eca3fae3d584",
+  "keptName": "Set de aros dorados temática marina",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-02f1c1b8-6227-4de7-8bf3-902a23f51b81",
+  "name": "Set de aros dorados marinos",
+  "keptAs": "import-3e6c71a0-9819-447f-a672-eca3fae3d584",
+  "keptName": "Set de aros dorados temática marina",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-7ae2c8e9-8907-49ec-b34f-43c647340860",
+  "name": "Set de aros marinos dorados y perlas",
+  "keptAs": "import-9b55adfa-f442-4138-9aa1-717722e2db74",
+  "keptName": "Set de aros dorados con motivos marinos",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-e711d3db-20a4-470f-ae0d-ad8f1a1cec03",
+  "name": "Set de aros dorados con dijes de concha marina",
+  "keptAs": "import-9b55adfa-f442-4138-9aa1-717722e2db74",
+  "keptName": "Set de aros dorados con motivos marinos",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-6e4cb1fc-f37f-4236-a12c-6ac8ff37b7c2",
+  "name": "Sombrero de paja estilo vaquero",
+  "keptAs": "import-251a54b2-4745-4c43-a75c-3422da0cc3c4",
+  "keptName": "Sombrero cowboy de paja con tirante",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-a1ef4b08-4c89-45e7-8dfc-1a38916b7647",
+  "name": "Sombrero de paja estilo vaquero con calados",
+  "keptAs": "import-251a54b2-4745-4c43-a75c-3422da0cc3c4",
+  "keptName": "Sombrero cowboy de paja con tirante",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-7ddc7b27-4d64-4d8e-80e9-228cac83dd84",
+  "name": "Sombrero de paja tejido con cordón ajustador",
+  "keptAs": "import-251a54b2-4745-4c43-a75c-3422da0cc3c4",
+  "keptName": "Sombrero cowboy de paja con tirante",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-7a71b882-3131-428a-8020-1c2a38073d53",
+  "name": "Collar de cordón con dije de estrella de mar",
+  "keptAs": "import-4dba4cd7-4d4b-4bbb-a781-deebf9e983a2",
+  "keptName": "Collar de cordón trenzado con dije de estrella de mar",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-57de65bd-2bdc-4ba4-a41c-b9bacd119eac",
+  "name": "Collar cordón trenzado con dije estrella de mar",
+  "keptAs": "import-4dba4cd7-4d4b-4bbb-a781-deebf9e983a2",
+  "keptName": "Collar de cordón trenzado con dije de estrella de mar",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-d44c4962-acaf-44c0-9be9-8166cb1bf754",
+  "name": "Collar cordón con dije estrella de mar",
+  "keptAs": "import-4dba4cd7-4d4b-4bbb-a781-deebf9e983a2",
+  "keptName": "Collar de cordón trenzado con dije de estrella de mar",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-e347868f-ad9b-4ec4-8bd8-d763c9cc2d0d",
+  "name": "Aros argolla con dijes marinos",
+  "keptAs": "import-b073965e-2428-4192-820c-2cc4d68ae504",
+  "keptName": "Aros Argolla con Dijes de Pez y Almeja",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-02c0f94c-e2b2-44b8-b85d-dfcedcd908ad",
+  "name": "Aros de argolla con dijes de pez y almeja",
+  "keptAs": "import-b073965e-2428-4192-820c-2cc4d68ae504",
+  "keptName": "Aros Argolla con Dijes de Pez y Almeja",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-5f3c90a0-b3be-4bb1-93d4-496acf27748a",
+  "name": "Ojota negra con dijes marinos",
+  "keptAs": "import-52a154b8-2f78-4690-be2e-553fc1fd420b",
+  "keptName": "Ojotas negras con apliques de caracoles y estrellas de mar",
+  "batch": "LEMONADE SHOES SS26"
+ },
+ {
+  "removed": "import-f8063334-638a-46ca-84bf-b70d0099beeb",
+  "name": "Short de lino con cintura elastizada y detalle ondulado",
+  "keptAs": "import-51510025-f413-497c-9c21-0a871a4e7063",
+  "keptName": "Short de lino bordado con cordón",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-0105d65e-d462-43a6-b131-693c22607abb",
+  "name": "Short de lino oliva con bordado",
+  "keptAs": "import-51510025-f413-497c-9c21-0a871a4e7063",
+  "keptName": "Short de lino bordado con cordón",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-18ed1cad-8ef2-4b00-a11e-c62e2a3bc424",
+  "name": "Short de lino con bordado en ondas",
+  "keptAs": "import-aecabc1a-269d-423c-9968-a6c3abd7ac25",
+  "keptName": "Short de lino con bordado zigzag",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-71847a1b-5172-47c5-8dd3-477e374891a7",
+  "name": "Short de lino con bordado en el ruedo",
+  "keptAs": "import-aecabc1a-269d-423c-9968-a6c3abd7ac25",
+  "keptName": "Short de lino con bordado zigzag",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-54768237-8113-45e5-98dd-7ba1c52e24c0",
+  "name": "Short de lino con elástico y bordado",
+  "keptAs": "import-aecabc1a-269d-423c-9968-a6c3abd7ac25",
+  "keptName": "Short de lino con bordado zigzag",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-65484fae-c5e7-4633-8bab-abe420be647f",
+  "name": "Short de lino blanco con dobladillo a rayas",
+  "keptAs": "import-2141639c-83f7-4ae0-a627-03ac80621f27",
+  "keptName": "Short blanco con cordón y guardas a rayas",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-37573975-d068-4472-aaa7-e83b1770a046",
+  "name": "Short de lino crudo con cintura elastizada",
+  "keptAs": "import-ce69ffb5-6789-4d29-9154-787cda46b3a2",
+  "keptName": "Short de lino con bordado",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-424851a8-09ae-47cf-b297-9d15df87c64a",
+  "name": "Pantalón palazzo tiro alto elastizado",
+  "keptAs": "import-d8007853-de8c-4835-9476-9c98e876b442",
+  "keptName": "Pantalón palazzo fluido de tiro alto beige",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-96031533-da6e-4e9b-9d3a-c009c711e5a7",
+  "name": "Pantalón palazzo mostaza con cintura elastizada",
+  "keptAs": "import-d0149559-bebb-413c-bd03-e2d522be30ba",
+  "keptName": "Pantalón palazzo fluido mostaza",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-bffd85cc-3a08-41aa-bd61-b9cf9af3bb9d",
+  "name": "Short casual verde oliva con cintura elastizada",
+  "keptAs": "import-1757b792-e389-4cbd-9760-ec9c07b17724",
+  "keptName": "Short tiro alto con elástico y cordón",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-eea7bb7f-02fc-47db-aeaa-d26a4e460099",
+  "name": "Short liviano lila con cintura elástica",
+  "keptAs": "import-f3aab54b-0338-499a-adb6-2d34704d5dde",
+  "keptName": "Short lavanda con textura y detalle en ruedo",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-13950416-98ed-46ec-b649-117c98482c39",
+  "name": "Short verde con cordón y guarda zigzag",
+  "keptAs": "import-dd64f448-2453-42cb-a0c8-68fb01f6930c",
+  "keptName": "Short verde con cordón y bordado ondulado",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-6ec4a445-cf96-436c-8660-e7f5714e1876",
+  "name": "Short de lino verde con galón ondulado",
+  "keptAs": "import-dd64f448-2453-42cb-a0c8-68fb01f6930c",
+  "keptName": "Short verde con cordón y bordado ondulado",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-2df33f03-fb9b-4ab8-8dbe-e00ba35cc14c",
+  "name": "Pantalón palazzo verde tiro alto",
+  "keptAs": "import-29caa2b7-71a7-4588-9b20-849e7a0872a4",
+  "keptName": "Pantalón palazzo verde tiro alto con cintura elastizada",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-c10c4497-5eab-4dc5-9ae6-e74408976a56",
+  "name": "Pantalón palazzo tiro alto violeta",
+  "keptAs": "import-cc043305-6ad4-4207-a528-780694ae64f7",
+  "keptName": "Pantalón palazzo tiro alto con cintura elastizada",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-2db3926b-93e9-4d4e-a3c4-810b12177078",
+  "name": "Pantalón palazzo fluido bordeaux",
+  "keptAs": "import-37198cf7-5a12-40f7-980d-9ebf4fa5cb27",
+  "keptName": "Pantalón palazzo fluido plisado borravino",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-281964e7-7cc7-446e-b6ac-34a599d87e61",
+  "name": "Short rojo con bordado zig-zag",
+  "keptAs": "import-9b83855f-7414-4691-a358-44223f247796",
+  "keptName": "Short rojo con cintura elastizada y detalle bordado",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-7ed6c39c-6613-462f-ac7c-f82c532fab0a",
+  "name": "Short rojo con cintura elastizada y bordado",
+  "keptAs": "import-9b83855f-7414-4691-a358-44223f247796",
+  "keptName": "Short rojo con cintura elastizada y detalle bordado",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-900d316a-c567-4a55-a69b-fdb1a002df40",
+  "name": "Short rojo con detalle bordado",
+  "keptAs": "import-9b83855f-7414-4691-a358-44223f247796",
+  "keptName": "Short rojo con cintura elastizada y detalle bordado",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-1ddf2e68-45db-41de-840a-e0628074b3a2",
+  "name": "Blusa de lino negra con guardas a juego",
+  "keptAs": "import-92d08a4e-eef5-4950-87ed-ab9f04c66867",
+  "keptName": "Blusa negra con escote en V y bordados ondulados",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-e9e9bd25-1106-40a6-b83d-fcee23e85d51",
+  "name": "Blusa negra escote V con bordado a contraste",
+  "keptAs": "import-92d08a4e-eef5-4950-87ed-ab9f04c66867",
+  "keptName": "Blusa negra con escote en V y bordados ondulados",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-0286797c-c2f1-4a4b-b71b-6b12812cfc5c",
+  "name": "Blusa negra con escote V y guardas onduladas",
+  "keptAs": "import-92d08a4e-eef5-4950-87ed-ab9f04c66867",
+  "keptName": "Blusa negra con escote en V y bordados ondulados",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-17e14c56-3ef7-476b-8caa-6cb99c6098a3",
+  "name": "Top sin mangas a rayas verticales",
+  "keptAs": "import-8e226c97-c120-4d0b-97bb-c29b7138af72",
+  "keptName": "Musculosa a rayas con bolsillo",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-50390484-8893-486f-9261-6e118b117834",
+  "name": "Camisa sin mangas color malva",
+  "keptAs": "import-21597b28-8890-4eb3-ba10-a60702e872b4",
+  "keptName": "Blusa sin mangas con cuello malva",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-31c3cbf6-5be2-4f81-bce0-30cc160c4e0e",
+  "name": "Camisa sin mangas con cuello solapa",
+  "keptAs": "import-21597b28-8890-4eb3-ba10-a60702e872b4",
+  "keptName": "Blusa sin mangas con cuello malva",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-d62fc9d5-063e-49db-b362-3a6187d36e27",
+  "name": "Musculosa blanca con detalles bordados",
+  "keptAs": "import-8ff7dd5b-11b7-4afd-a08f-6b0ba3d1e3c7",
+  "keptName": "Top musculosa blanco con detalles a rayas",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-a3523758-9fda-4796-bfc9-4a082c6d39c8",
+  "name": "Musculosa holgada blanca con pespuntes",
+  "keptAs": "import-8ff7dd5b-11b7-4afd-a08f-6b0ba3d1e3c7",
+  "keptName": "Top musculosa blanco con detalles a rayas",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-27f5f3b3-594e-4b0c-bb78-351ac14ca0a2",
+  "name": "Blusa de lino con detalles bordados",
+  "keptAs": "import-86956ac1-e617-4976-a9eb-4113bee5c35e",
+  "keptName": "Blusa de lino con escote V y detalles festoneados",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-2b802b86-495c-4e73-b433-d171981f70f6",
+  "name": "Blusa de lino con cuello V y detalle bordado",
+  "keptAs": "import-ee4f6ced-527c-4c8a-bafb-f02f1e700b91",
+  "keptName": "Blusa de lino beige con guardas onduladas",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-1d7f8a15-4a01-43d8-ab6d-61d5102a7b25",
+  "name": "Blusa de lino beige con bordado ondulado",
+  "keptAs": "import-ee4f6ced-527c-4c8a-bafb-f02f1e700b91",
+  "keptName": "Blusa de lino beige con guardas onduladas",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-92ab1a54-3ab9-4598-846b-8be31ecc301e",
+  "name": "Blusa de lino bordada beige",
+  "keptAs": "import-a0c410dc-7bdb-41dd-8bdb-867885ec5112",
+  "keptName": "Blusa de lino escote V con bordados",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-fe84fdd5-6a86-4436-8a95-2a1aa5dc5030",
+  "name": "Blusa de lino crudo con bordado",
+  "keptAs": "import-a0c410dc-7bdb-41dd-8bdb-867885ec5112",
+  "keptName": "Blusa de lino escote V con bordados",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-8146d0a8-52f2-4904-9f52-38867192d7c7",
+  "name": "Top musculosa amarillo con breteles anchos",
+  "keptAs": "import-4f67b7fe-8b9c-48a9-aed8-a6a8c50295a6",
+  "keptName": "Musculosa holgada amarilla",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-b6c90a25-faef-4aea-8fd8-3488eddbdd18",
+  "name": "Camisa de lino verde con mangas abullonadas",
+  "keptAs": "import-dc82f0d9-73f9-45ec-bc70-ca3c069479ba",
+  "keptName": "Blusa verde con detalles de galón ondulado",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-5fbeecdd-5dd4-4c46-8d69-2761cad45be3",
+  "name": "Blusa verde con detalles ondulados",
+  "keptAs": "import-dc82f0d9-73f9-45ec-bc70-ca3c069479ba",
+  "keptName": "Blusa verde con detalles de galón ondulado",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-e1c0d0e9-b108-4b61-b3f5-15f648cb6dc4",
+  "name": "Blusa de lino verde con bordado zig-zag",
+  "keptAs": "import-dc82f0d9-73f9-45ec-bc70-ca3c069479ba",
+  "keptName": "Blusa verde con detalles de galón ondulado",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-db3731e4-61d5-45d3-940f-b5d355e39723",
+  "name": "Blusa de lino azul marino con detalles ondulados",
+  "keptAs": "import-5ef4ec22-9330-4c5a-bc0f-9dde2890efbb",
+  "keptName": "Blusa azul marino con escote V y detalles ondulados",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-77060cd0-fa26-422d-af5e-fadf6bd4b7f1",
+  "name": "Blusa camisera sin mangas rosa viejo",
+  "keptAs": "import-5176c7fa-a055-43f5-b220-067b47aa5de6",
+  "keptName": "Camisa sin mangas con cuello camisero malva",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-d90dfc90-5060-4758-b9c3-6694a05536ec",
+  "name": "Blusa roja con cuello camisero y bordados",
+  "keptAs": "import-ddafb941-6a6d-4ed3-86b5-6a3dd052c9c6",
+  "keptName": "Blusa roja con escote en V y detalles ondulados",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-b22733fd-0dd3-40b3-b145-8a42a46f4672",
+  "name": "Blusa de lino roja con vivos ondulados",
+  "keptAs": "import-ddafb941-6a6d-4ed3-86b5-6a3dd052c9c6",
+  "keptName": "Blusa roja con escote en V y detalles ondulados",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-4defdf7d-565a-4f42-94cd-f1d0d4d8f741",
+  "name": "Blusa roja con escote en V y detalles bordados",
+  "keptAs": "import-ddafb941-6a6d-4ed3-86b5-6a3dd052c9c6",
+  "keptName": "Blusa roja con escote en V y detalles ondulados",
+  "batch": "NAKED ZEBRA"
+ },
+ {
+  "removed": "import-e8023e06-1af8-45a2-91c0-bb316e5add11",
+  "name": "Pantalón ancho animal print con tiras",
+  "keptAs": "import-545ebbf2-c8f1-48a7-8c4a-d2629904d42d",
+  "keptName": "Pantalón wide leg animal print leopardo",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-0988aab0-de3e-4853-acd6-ba30bbbd54c7",
+  "name": "Top sin mangas estampado floral",
+  "keptAs": "import-3ded9f4f-4e7c-47c4-807b-9e7a2e377dab",
+  "keptName": "Chaleco estampado floral con lazos",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-c30c3edb-f032-4f6c-aaff-236ac5440399",
+  "name": "Top sin mangas floreado con microestampado",
+  "keptAs": "import-3ded9f4f-4e7c-47c4-807b-9e7a2e377dab",
+  "keptName": "Chaleco estampado floral con lazos",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-cad492ae-4688-4b70-bd5b-32f5830dd3ef",
+  "name": "Top estampado con lazos",
+  "keptAs": "import-3ded9f4f-4e7c-47c4-807b-9e7a2e377dab",
+  "keptName": "Chaleco estampado floral con lazos",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-3378b282-36d7-40d6-8686-aaa7c26061d7",
+  "name": "Top strapless a rayas con bordado",
+  "keptAs": "import-74bd22c6-159b-454e-ad54-6065c0e943d9",
+  "keptName": "Top Strapless a Rayas con Bordado Floral",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-49bd1286-00db-4c31-ab1b-d9202c6b31a3",
+  "name": "Top strapless a rayas con bordado calado",
+  "keptAs": "import-74bd22c6-159b-454e-ad54-6065c0e943d9",
+  "keptName": "Top Strapless a Rayas con Bordado Floral",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-ec86e758-ca09-44ed-87e2-d360ec623698",
+  "name": "Top Strapless Rayado con Nido de Abeja",
+  "keptAs": "import-46f7eb7d-9116-45e1-94d9-2f7e3670560c",
+  "keptName": "Top strapless peplum a rayas",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-12908543-c939-47aa-aa23-1312558b2546",
+  "name": "Top Strapless Rayado con Bordado Floral",
+  "keptAs": "import-46f7eb7d-9116-45e1-94d9-2f7e3670560c",
+  "keptName": "Top strapless peplum a rayas",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-24c41790-fb64-44c6-aac5-5f0c230126e8",
+  "name": "Top Strapless Rayado con Bordado Floral",
+  "keptAs": "import-46f7eb7d-9116-45e1-94d9-2f7e3670560c",
+  "keptName": "Top strapless peplum a rayas",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-765b7263-a22c-4536-8a39-a80b3d906b5a",
+  "name": "Blusa de gasa con volados en cuello y puños",
+  "keptAs": "import-8d899417-4e20-44cb-889d-1a3bb5914bbf",
+  "keptName": "Blusa de gasa con volados y lazo",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-f02f3b5b-00e3-4f07-9bbb-59fda1ca92e6",
+  "name": "Blusa boho de gasa con volados",
+  "keptAs": "import-8d899417-4e20-44cb-889d-1a3bb5914bbf",
+  "keptName": "Blusa de gasa con volados y lazo",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-d11f0194-b0c3-48bf-a480-88220128aa8e",
+  "name": "Remera Oversize Capri Estampada",
+  "keptAs": "import-083699ff-4d9e-4502-b52b-87d73aef6fb8",
+  "keptName": "Remera blanca oversized con estampa Capri",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-e9c3985b-61ce-4bc4-abcf-ac63344002b0",
+  "name": "Remera blanca gráfica Capri",
+  "keptAs": "import-083699ff-4d9e-4502-b52b-87d73aef6fb8",
+  "keptName": "Remera blanca oversized con estampa Capri",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-feb60156-ba98-4e2c-a054-09739fc1a2da",
+  "name": "Top strapless estampado floral",
+  "keptAs": "import-52f9c595-a498-4380-bd75-8b12216028e2",
+  "keptName": "Top strapless con estampado botánico",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-1ff05cc1-448a-487a-a5fd-a1294afa17c0",
+  "name": "Top strapless estampado floral",
+  "keptAs": "import-52f9c595-a498-4380-bd75-8b12216028e2",
+  "keptName": "Top strapless con estampado botánico",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-78c90b04-95ff-4312-987d-4d892fddf7fa",
+  "name": "Musculosa con rayas verticales marrón",
+  "keptAs": "import-75e0eb7e-24bb-4e94-87b7-f31b7993bdaa",
+  "keptName": "Top sin mangas a rayas verticales",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-5b04c5c7-4be5-424c-856d-4c0d751d3bb1",
+  "name": "Musculosa holgada a rayas verticales",
+  "keptAs": "import-75e0eb7e-24bb-4e94-87b7-f31b7993bdaa",
+  "keptName": "Top sin mangas a rayas verticales",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-31b06b30-7bb7-44b9-aa99-c134928558cb",
+  "name": "Top largo a rayas",
+  "keptAs": "import-75e0eb7e-24bb-4e94-87b7-f31b7993bdaa",
+  "keptName": "Top sin mangas a rayas verticales",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-ad1076e3-037a-403a-8f97-353c4d747d2a",
+  "name": "Top strapless a rayas multicolor",
+  "keptAs": "import-5d34f58e-225a-4bfb-bad3-8b8291719a3a",
+  "keptName": "Top strapless a rayas",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-f56e0280-3f0a-4f44-9d29-a567d0e93e96",
+  "name": "Top strapless rayado",
+  "keptAs": "import-5d34f58e-225a-4bfb-bad3-8b8291719a3a",
+  "keptName": "Top strapless a rayas",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-5fa89593-ebce-4bf2-a748-e50b4c2f7d47",
+  "name": "Top strapless estampado palmeras",
+  "keptAs": "import-b5702f87-26f7-4787-b207-5190ffd63254",
+  "keptName": "Top strapless estampado de palmeras",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-1d6af24a-7dd9-4a0b-8b33-c74d8e7a1c36",
+  "name": "Top Strapless Estampado Palma",
+  "keptAs": "import-b5702f87-26f7-4787-b207-5190ffd63254",
+  "keptName": "Top strapless estampado de palmeras",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-80224ccf-ec3c-4d0b-9b0f-17bb967974f6",
+  "name": "Top strapless estampado palmeras",
+  "keptAs": "import-b5702f87-26f7-4787-b207-5190ffd63254",
+  "keptName": "Top strapless estampado de palmeras",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-108bdbf0-b976-46b2-9bb5-cc9ca6db99da",
+  "name": "Top sin mangas estampado floral",
+  "keptAs": "import-ee40356f-dcb3-487a-ab2d-8123acb4915b",
+  "keptName": "Top floreado mostaza con lazos",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-cdb3f69b-14e3-40f5-a45f-e4579f0ffa46",
+  "name": "Top strapless estampado botánico",
+  "keptAs": "import-a722a2d5-a1d8-4890-a00d-ad95a5eb6336",
+  "keptName": "Top strapless estampado botánico",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-4ca328b3-89b8-49ce-b87a-67eaed754d88",
+  "name": "Top strapless estampado botánico",
+  "keptAs": "import-a722a2d5-a1d8-4890-a00d-ad95a5eb6336",
+  "keptName": "Top strapless estampado botánico",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-5cd9c8ad-d11f-4ca0-8f45-b2214da1c0d5",
+  "name": "Top musculosa con estampado floral",
+  "keptAs": "import-a041e52c-705c-432f-bb28-37e92782d69f",
+  "keptName": "Top chaleco estampado con lazos",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-6e4b8327-5873-4a20-ab3a-39b70e413325",
+  "name": "Remera oversized Positano celeste",
+  "keptAs": "import-4bc74ef2-c47b-4529-9ecf-2693d48f17ee",
+  "keptName": "Remera Positano Lover Celeste",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-9c491e9a-5342-4fd3-a267-714b95bc92e1",
+  "name": "Remera oversized Positano celeste",
+  "keptAs": "import-4bc74ef2-c47b-4529-9ecf-2693d48f17ee",
+  "keptName": "Remera Positano Lover Celeste",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-462968db-1302-4d7c-aa84-6c5302a9cdf8",
+  "name": "Remera oversized Positano celeste",
+  "keptAs": "import-4bc74ef2-c47b-4529-9ecf-2693d48f17ee",
+  "keptName": "Remera Positano Lover Celeste",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-a71a1c6b-f663-4df5-83f3-72d395e30ef9",
+  "name": "Top muscolosa estampado floral",
+  "keptAs": "import-e754f9bc-efed-4a9b-8cdd-84c2077f08ab",
+  "keptName": "Top Chaleco Estampado Floral con Lazos",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-022dbaf6-0df4-405c-8ced-713e3f20a6ee",
+  "name": "Chaleco denim estilo militar",
+  "keptAs": "import-619965d5-ec7c-4e3a-a0e6-c4fb2869a77a",
+  "keptName": "Chaleco denim de estilo militar",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-b9980689-09f6-4040-b777-ecd8f606af18",
+  "name": "Chaleco denim con bordes desflecados",
+  "keptAs": "import-619965d5-ec7c-4e3a-a0e6-c4fb2869a77a",
+  "keptName": "Chaleco denim de estilo militar",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-4cca4d6e-e92d-4eb7-81af-843b14367b08",
+  "name": "Chaleco de jean celeste",
+  "keptAs": "import-33fa6414-42d0-4698-9adf-686d2c5b756e",
+  "keptName": "Chaleco denim estilo militar",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-4f71c2c3-7021-4046-872b-79f0c2393d14",
+  "name": "Remera rayada manga corta",
+  "keptAs": "import-570a7988-3c19-43e7-8d49-aa9ab1ed9c31",
+  "keptName": "Remera a rayas manga corta",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-2c3400a0-151a-4e3f-b0fd-f587774af31e",
+  "name": "Remera Rayada Manga Corta",
+  "keptAs": "import-570a7988-3c19-43e7-8d49-aa9ab1ed9c31",
+  "keptName": "Remera a rayas manga corta",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-55c60367-afe9-4855-81b6-c522bc5a4b6e",
+  "name": "Remera a rayas horizontales",
+  "keptAs": "import-570a7988-3c19-43e7-8d49-aa9ab1ed9c31",
+  "keptName": "Remera a rayas manga corta",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-dd06ac7e-c873-42ab-bcc0-b17d70956c0a",
+  "name": "Remera a rayas oversized",
+  "keptAs": "import-e0fdbbeb-73a0-4e22-a72b-9ddf1b53c42f",
+  "keptName": "Remera Oversized a Rayas",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-8898fd23-10a1-49ac-8191-0cba4f398484",
+  "name": "Remera oversize a rayas",
+  "keptAs": "import-e0fdbbeb-73a0-4e22-a72b-9ddf1b53c42f",
+  "keptName": "Remera Oversized a Rayas",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-8a5bf1f2-28c5-4ad1-9b03-90897e3e0bbe",
+  "name": "Remera oversize a rayas marineras",
+  "keptAs": "import-e0fdbbeb-73a0-4e22-a72b-9ddf1b53c42f",
+  "keptName": "Remera Oversized a Rayas",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-ec40f975-3b9a-42eb-988b-31e1928f36cb",
+  "name": "Remera a rayas horizontales",
+  "keptAs": "import-68aed152-115f-4075-96be-7cc0d55d1d42",
+  "keptName": "Remera a rayas manga corta",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-7cf1a92b-340e-475b-8b67-83b6e2a10fa0",
+  "name": "Remera rayada de manga corta",
+  "keptAs": "import-68aed152-115f-4075-96be-7cc0d55d1d42",
+  "keptName": "Remera a rayas manga corta",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-9d10c269-31c0-4b5c-96f4-c29063748230",
+  "name": "Remera oversized a rayas",
+  "keptAs": "import-2e7f99cc-07b0-4680-9204-2168a41cba2d",
+  "keptName": "Remera oversized a rayas café y lila",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-e850517b-8836-457f-83b9-a7f18f346fe0",
+  "name": "Remera Oversize a Rayas Lila y Marrón",
+  "keptAs": "import-2e7f99cc-07b0-4680-9204-2168a41cba2d",
+  "keptName": "Remera oversized a rayas café y lila",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-76c4d737-3325-4631-b9d8-2e9e34f0dd91",
+  "name": "Remera oversize a rayas lila y marrón",
+  "keptAs": "import-2e7f99cc-07b0-4680-9204-2168a41cba2d",
+  "keptName": "Remera oversized a rayas café y lila",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-131b5498-3628-4037-9da1-98a6556581c3",
+  "name": "Remera oversize a rayas lilas y marrón",
+  "keptAs": "import-2e7f99cc-07b0-4680-9204-2168a41cba2d",
+  "keptName": "Remera oversized a rayas café y lila",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-9a7e4ad9-6938-4823-b3cc-4c75171fb3cc",
+  "name": "Remera oversize a rayas lila y marrón",
+  "keptAs": "import-2e7f99cc-07b0-4680-9204-2168a41cba2d",
+  "keptName": "Remera oversized a rayas café y lila",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-68533119-87d3-45d8-b3ca-6f2da058c6ff",
+  "name": "Remera a rayas marrón y blanco",
+  "keptAs": "import-5d1fe283-9971-4e4b-8664-d8e203b8831f",
+  "keptName": "Remera rayada manga corta marrón",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-fb85dfe1-b7ec-4cd7-9dbb-17f435674f26",
+  "name": "Remera a rayas marrón",
+  "keptAs": "import-5d1fe283-9971-4e4b-8664-d8e203b8831f",
+  "keptName": "Remera rayada manga corta marrón",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-659e6e33-b91c-4c5c-89cf-f042021d2ca9",
+  "name": "Remera oversize a rayas",
+  "keptAs": "import-97bb1ceb-cb0f-4c03-af27-2a9946cb012f",
+  "keptName": "Remera oversized a rayas",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-3ce82902-fd1e-4a0a-8723-a034c8cc4bcd",
+  "name": "Remera oversize a rayas horizontales",
+  "keptAs": "import-97bb1ceb-cb0f-4c03-af27-2a9946cb012f",
+  "keptName": "Remera oversized a rayas",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-4d5eadba-997a-4cd6-9806-d85b8f1395eb",
+  "name": "Remera rayada manga corta oversized",
+  "keptAs": "import-97bb1ceb-cb0f-4c03-af27-2a9946cb012f",
+  "keptName": "Remera oversized a rayas",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-fc9e2fbf-988c-4c0d-8670-65b667737cb4",
+  "name": "Remera a Rayas Off-White y Negra",
+  "keptAs": "import-43cd7ab4-bfb8-4ba1-9656-2e421c70fc79",
+  "keptName": "Remera rayada manga corta",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-b988d3b3-837f-443a-95c3-0070b02e76b1",
+  "name": "Remera rayada verde y crema",
+  "keptAs": "import-6afe311d-0ac5-4910-9638-1c6020971b4d",
+  "keptName": "Remera a rayas verde y crema",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-246719c3-408c-4a51-8d4b-4b3cd103e5f9",
+  "name": "Remera rayada verde y crema",
+  "keptAs": "import-6afe311d-0ac5-4910-9638-1c6020971b4d",
+  "keptName": "Remera a rayas verde y crema",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-c52b3dcb-b3f7-4c11-8ef5-b04c32d8b3b1",
+  "name": "Remera a rayas verde y amarilla",
+  "keptAs": "import-6afe311d-0ac5-4910-9638-1c6020971b4d",
+  "keptName": "Remera a rayas verde y crema",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-dd605aec-312d-4c49-8541-5b8904bf8fa5",
+  "name": "Remera rayada verde y amarilla",
+  "keptAs": "import-6afe311d-0ac5-4910-9638-1c6020971b4d",
+  "keptName": "Remera a rayas verde y crema",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-cb5fceda-14ff-48dc-8169-46c85eead697",
+  "name": "Remera oversize a rayas verdes y crudo",
+  "keptAs": "import-9be7fe6d-96cb-48e8-b0e8-30e127e7dd66",
+  "keptName": "Remera Oversized a Rayas Verde y Blanco",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-e6b589a4-86ee-4919-9c44-225de8b72c25",
+  "name": "Remera a rayas azul con detalles amarillos y rojos",
+  "keptAs": "import-459b1838-4866-4836-b2af-1d0ce2c3a413",
+  "keptName": "Remera a Rayas Marineras Azul y Amarilla",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-7d713dc2-d202-4350-ac21-a9ad44e39f1e",
+  "name": "Remera a rayas azul, roja y amarilla",
+  "keptAs": "import-459b1838-4866-4836-b2af-1d0ce2c3a413",
+  "keptName": "Remera a Rayas Marineras Azul y Amarilla",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-11b99192-8348-48df-be0b-308cdd58fc01",
+  "name": "Remera oversized a rayas",
+  "keptAs": "import-27be1a9e-b4ca-4412-aec9-18107afa1172",
+  "keptName": "Remera oversized a rayas",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-dac325df-5884-4e69-9290-9a712f826b5e",
+  "name": "Remera oversize a rayas horizontales",
+  "keptAs": "import-27be1a9e-b4ca-4412-aec9-18107afa1172",
+  "keptName": "Remera oversized a rayas",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-1a77fbb7-1ce3-44ea-9633-60a3e25cbdcf",
+  "name": "Remera oversized rayada",
+  "keptAs": "import-27be1a9e-b4ca-4412-aec9-18107afa1172",
+  "keptName": "Remera oversized a rayas",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-8da96843-357a-4e58-8c0c-1bb591b2aee0",
+  "name": "Remera oversize a rayas rosa y azul",
+  "keptAs": "import-27be1a9e-b4ca-4412-aec9-18107afa1172",
+  "keptName": "Remera oversized a rayas",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-5d12322a-26c5-4a3f-bb8c-aa11a67c9785",
+  "name": "Remera oversize rayada rosa y marrón",
+  "keptAs": "import-ad51dc94-2cc7-4f59-99a5-0c779d7c0625",
+  "keptName": "Remera oversize a rayas rosa y marrón",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-969777ae-6246-47b0-b4e6-735501f79fec",
+  "name": "Remera Oversized a Rayas Rosa y Marrón",
+  "keptAs": "import-ad51dc94-2cc7-4f59-99a5-0c779d7c0625",
+  "keptName": "Remera oversize a rayas rosa y marrón",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-6726e3cb-2375-48fb-86f7-52519a823bde",
+  "name": "Remera oversize a rayas rosa y marrón",
+  "keptAs": "import-ad51dc94-2cc7-4f59-99a5-0c779d7c0625",
+  "keptName": "Remera oversize a rayas rosa y marrón",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-361f54b3-f98b-4be1-a0e3-03b0ed34f0b9",
+  "name": "Remera oversize rayada rosa y beige",
+  "keptAs": "import-99d9b58e-e200-42ff-a78b-d16b8af484d4",
+  "keptName": "Remera oversize a rayas rosa y beige",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-5827b65f-3980-4fac-840f-aa659b2d0e68",
+  "name": "Remera oversize a rayas rosa y beige",
+  "keptAs": "import-99d9b58e-e200-42ff-a78b-d16b8af484d4",
+  "keptName": "Remera oversize a rayas rosa y beige",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-39ab90f6-c235-440a-a0ec-1a19078c60a3",
+  "name": "Remera oversize a rayas rosa y beige",
+  "keptAs": "import-99d9b58e-e200-42ff-a78b-d16b8af484d4",
+  "keptName": "Remera oversize a rayas rosa y beige",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-1ab446c6-e6f3-47b8-ac0b-0ec74ed9b2e2",
+  "name": "Remera a rayas rosa y beige",
+  "keptAs": "import-99d9b58e-e200-42ff-a78b-d16b8af484d4",
+  "keptName": "Remera oversize a rayas rosa y beige",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-1f2a5e28-c5da-44c6-bacf-f89330b068d0",
+  "name": "Remera a rayas rosa y marrón",
+  "keptAs": "import-f0189293-91e9-4ad5-a181-0d0a1b4b9b6e",
+  "keptName": "Remera rayada rosa y marrón",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-93fcffd5-b6f5-47cf-bc2c-1a7ab73020e0",
+  "name": "Remera Rayada Rosa y Marrón",
+  "keptAs": "import-f0189293-91e9-4ad5-a181-0d0a1b4b9b6e",
+  "keptName": "Remera rayada rosa y marrón",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-0c66651b-f0db-4007-ae7b-9e0da3c21601",
+  "name": "Remera rayada rosa",
+  "keptAs": "import-f0189293-91e9-4ad5-a181-0d0a1b4b9b6e",
+  "keptName": "Remera rayada rosa y marrón",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-3823963c-4a28-4481-b21c-b49c5b4d8dac",
+  "name": "Remera rayada manga corta rosa y marrón",
+  "keptAs": "import-f0189293-91e9-4ad5-a181-0d0a1b4b9b6e",
+  "keptName": "Remera rayada rosa y marrón",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-8985af74-093a-49a8-8277-7a83b59259ef",
+  "name": "Remera oversized a rayas rosa y blanca",
+  "keptAs": "import-1befee0a-6efd-4d55-ac3b-0efe7b116524",
+  "keptName": "Remera oversize a rayas rosa y blanca",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-506176bb-e83e-4986-9d8a-71c2178d01f4",
+  "name": "Remera oversize a rayas rosa y blanca",
+  "keptAs": "import-1befee0a-6efd-4d55-ac3b-0efe7b116524",
+  "keptName": "Remera oversize a rayas rosa y blanca",
+  "batch": "AEMI+CO"
+ },
+ {
+  "removed": "import-dab143c1-d930-4e8f-ae37-515d94bf1714",
+  "name": "Remera negra básica de manga corta",
+  "keptAs": "import-af817606-77ab-4e85-9075-fb60a9af8ad9",
+  "keptName": "Remera básica negra manga corta",
+  "batch": "ROSIO CLOTHING"
+ },
+ {
+  "removed": "import-341e67d9-da5a-4133-b462-86b6adb7eb09",
+  "name": "Musculosa morley marrón chocolate",
+  "keptAs": "import-aa41bafe-ce2d-46c2-8ce1-7b37d80cdefa",
+  "keptName": "Musculosa morley chocolate",
+  "batch": "ROSIO CLOTHING"
+ },
+ {
+  "removed": "import-507205ac-9eab-4879-8713-3218cdb164a8",
+  "name": "Musculosa morley marrón",
+  "keptAs": "import-aa41bafe-ce2d-46c2-8ce1-7b37d80cdefa",
+  "keptName": "Musculosa morley chocolate",
+  "batch": "ROSIO CLOTHING"
+ },
+ {
+  "removed": "import-0f6db7d4-d9fa-4e14-b515-0997c3977ef8",
+  "name": "Remera básica de manga corta marfil",
+  "keptAs": "import-66291810-3a82-4a51-8fb8-e50b9e0269b1",
+  "keptName": "Remera Manga Corta Crema",
+  "batch": "ROSIO CLOTHING"
+ },
+ {
+  "removed": "import-c15aefdc-b6c3-4e9c-8277-112fedd3dc21",
+  "name": "Remera básica manga corta marfil",
+  "keptAs": "import-66291810-3a82-4a51-8fb8-e50b9e0269b1",
+  "keptName": "Remera Manga Corta Crema",
+  "batch": "ROSIO CLOTHING"
+ },
+ {
+  "removed": "import-be55d776-6faa-4911-b695-7ebbbb213da0",
+  "name": "Bombacha de bikini blanca con lazos de cuentas",
+  "keptAs": "import-210c2abf-a429-4a1e-817f-4f6cedd6d044",
+  "keptName": "Bombacha de bikini blanca con lazos de cuentas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-df78af62-1ef3-47df-ba56-14491a1d25aa",
+  "name": "Bikini blanco con tiras de cuentas",
+  "keptAs": "import-b6cb3bd0-c792-4b81-8676-0a25bf611f38",
+  "keptName": "Bikini blanco con tiras de cuentas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-8687f52c-1576-44ab-90c8-40fb3f185561",
+  "name": "Bikini blanco con tiras de cuentas",
+  "keptAs": "import-b6cb3bd0-c792-4b81-8676-0a25bf611f38",
+  "keptName": "Bikini blanco con tiras de cuentas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-8a177783-852d-41ca-b06d-6b97f1809bbf",
+  "name": "Bikini blanco con tiras de cuentas",
+  "keptAs": "import-b6cb3bd0-c792-4b81-8676-0a25bf611f38",
+  "keptName": "Bikini blanco con tiras de cuentas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-ab0ec7c4-32e4-4cce-92df-24bb1c53ba4a",
+  "name": "Bikini blanco con tiras de cuentas",
+  "keptAs": "import-b6cb3bd0-c792-4b81-8676-0a25bf611f38",
+  "keptName": "Bikini blanco con tiras de cuentas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-b0e56502-ee55-4e8b-8a1d-b9e2d994080e",
+  "name": "Bikini blanco con tiras de cuentas",
+  "keptAs": "import-b6cb3bd0-c792-4b81-8676-0a25bf611f38",
+  "keptName": "Bikini blanco con tiras de cuentas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-34d4077e-3cc6-4df3-9473-d1488d2b6ad8",
+  "name": "Bombacha de bikini rayas amarillas",
+  "keptAs": "import-05c2aaed-2804-423b-8290-c9ba623ac5c0",
+  "keptName": "Bombacha de bikini rayas amarillas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-b3bf1d71-2be9-4e03-b8cf-acfe3c7c8416",
+  "name": "Bombacha de bikini rayas amarillas",
+  "keptAs": "import-05c2aaed-2804-423b-8290-c9ba623ac5c0",
+  "keptName": "Bombacha de bikini rayas amarillas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-c3d6a182-178e-430a-a15a-3b26183cd262",
+  "name": "Bikini estampado Salty con aros dorados",
+  "keptAs": "import-b19c19a1-49cf-4f96-b25a-abfcfa12e89e",
+  "keptName": "Bikini estampado Salty con aros dorados",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-ce94ae8f-ad06-49fc-8921-2a9db89969d4",
+  "name": "Bikini estampado Salty con aros dorados",
+  "keptAs": "import-b19c19a1-49cf-4f96-b25a-abfcfa12e89e",
+  "keptName": "Bikini estampado Salty con aros dorados",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-7388ca4b-c0f6-4d78-a4ae-ad42e3b6ec40",
+  "name": "Bikini estampado Salty con aros dorados",
+  "keptAs": "import-b19c19a1-49cf-4f96-b25a-abfcfa12e89e",
+  "keptName": "Bikini estampado Salty con aros dorados",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-1be8b65b-3cd5-41d5-bb5b-84298811cf13",
+  "name": "Bikini estampado Salty con aros dorados",
+  "keptAs": "import-b19c19a1-49cf-4f96-b25a-abfcfa12e89e",
+  "keptName": "Bikini estampado Salty con aros dorados",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-9ca19dd4-5ee1-4293-90bc-f62b45ed6fda",
+  "name": "Bikini estampado Salty con aros dorados",
+  "keptAs": "import-b19c19a1-49cf-4f96-b25a-abfcfa12e89e",
+  "keptName": "Bikini estampado Salty con aros dorados",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-e7be7396-efb7-435a-9932-e1e4e0c42582",
+  "name": "Bikini estampado Salty con aros dorados",
+  "keptAs": "import-b19c19a1-49cf-4f96-b25a-abfcfa12e89e",
+  "keptName": "Bikini estampado Salty con aros dorados",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-011cf50b-9416-48a1-b360-2cf05cba83e6",
+  "name": "Bikini triángulo rayas amarillas",
+  "keptAs": "import-3f745292-d4a2-4074-96dc-c849d72c41d2",
+  "keptName": "Bikini triángulo rayas amarillas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-fca2951c-1881-4ab9-940d-e6f3451f2f63",
+  "name": "Bikini triángulo rayas amarillas",
+  "keptAs": "import-b92e6cc2-07f4-4c7d-b0f0-78f267ee8a43",
+  "keptName": "Bikini triángulo rayas amarillas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-1d0894ea-12c9-408d-ba7b-d6c2a384e26e",
+  "name": "Bikini triángulo rayas amarillas",
+  "keptAs": "import-b92e6cc2-07f4-4c7d-b0f0-78f267ee8a43",
+  "keptName": "Bikini triángulo rayas amarillas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-92d10cad-1cf1-45bf-bc0b-26595ff956cd",
+  "name": "Bikini triángulo rayas amarillas",
+  "keptAs": "import-b2bae1e5-1d87-4b37-bc91-b0aa7bfa4dff",
+  "keptName": "Bikini triángulo rayas amarillas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-4e40ddad-6b2c-4060-bae6-927fdd9fcbe0",
+  "name": "Bikini triángulo rayas amarillas",
+  "keptAs": "import-b2bae1e5-1d87-4b37-bc91-b0aa7bfa4dff",
+  "keptName": "Bikini triángulo rayas amarillas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-45557039-e157-4a51-8da9-23f3155c3e7b",
+  "name": "Bikini triángulo tie-dye rosa y lima",
+  "keptAs": "import-953645ca-e35f-4120-9203-d74c852c3304",
+  "keptName": "Bikini triángulo tie-dye rosa y lima",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-8cf39592-02c5-4630-918a-ccb67a0a8e57",
+  "name": "Bikini triángulo tie-dye rosa y lima",
+  "keptAs": "import-953645ca-e35f-4120-9203-d74c852c3304",
+  "keptName": "Bikini triángulo tie-dye rosa y lima",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-bafc0276-395f-4ce0-96d9-f3dfab62a021",
+  "name": "Bikini triángulo tie-dye rosa y lima",
+  "keptAs": "import-953645ca-e35f-4120-9203-d74c852c3304",
+  "keptName": "Bikini triángulo tie-dye rosa y lima",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-be084950-7910-48e5-98dc-aad1f9a4dea3",
+  "name": "Bikini triángulo tie-dye rosa y lima",
+  "keptAs": "import-953645ca-e35f-4120-9203-d74c852c3304",
+  "keptName": "Bikini triángulo tie-dye rosa y lima",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-5d390b4a-f23f-49b1-925b-74c35f611359",
+  "name": "Bikini triángulo tie-dye rosa y lima",
+  "keptAs": "import-953645ca-e35f-4120-9203-d74c852c3304",
+  "keptName": "Bikini triángulo tie-dye rosa y lima",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-2430017b-9fb9-4a42-91a0-f02d78b39a9e",
+  "name": "Bikini triángulo tie-dye rosa y lima",
+  "keptAs": "import-953645ca-e35f-4120-9203-d74c852c3304",
+  "keptName": "Bikini triángulo tie-dye rosa y lima",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-ee79cb7a-153b-49f4-930c-18e848bf54c9",
+  "name": "Bikini triángulo tie-dye rosa y lima",
+  "keptAs": "import-953645ca-e35f-4120-9203-d74c852c3304",
+  "keptName": "Bikini triángulo tie-dye rosa y lima",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-ef22910f-a41b-4768-a6a9-a0e40ea52887",
+  "name": "Tabla de talles",
+  "keptAs": null,
+  "keptName": "(no es prenda)",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-6b83b5ed-c1d0-4b79-8bc7-291db17c1801",
+  "name": "Blusa calada de encaje bordado",
+  "keptAs": "import-f3cae53c-184d-4521-9c98-f969935aa773",
+  "keptName": "Blusa calada de encaje con bordado floral",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-421de65e-11cd-4a48-aff6-89a71da15148",
+  "name": "Blusa de encaje bordada blanca",
+  "keptAs": "import-f3cae53c-184d-4521-9c98-f969935aa773",
+  "keptName": "Blusa calada de encaje con bordado floral",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-1ac35764-7baa-4026-b8ef-af3d291e6c19",
+  "name": "Blusa de encaje bordada con festón",
+  "keptAs": "import-f3cae53c-184d-4521-9c98-f969935aa773",
+  "keptName": "Blusa calada de encaje con bordado floral",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-1604594f-f934-44b7-aecf-acf44fd865b0",
+  "name": "Blusa de encaje bordada con festón",
+  "keptAs": "import-f3cae53c-184d-4521-9c98-f969935aa773",
+  "keptName": "Blusa calada de encaje con bordado floral",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-e372917b-83a7-4fdf-a975-74538f055370",
+  "name": "Blusa de encaje bordada con mangas abullonadas",
+  "keptAs": "import-f3cae53c-184d-4521-9c98-f969935aa773",
+  "keptName": "Blusa calada de encaje con bordado floral",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-305121c3-d05f-4a67-be92-efd6199c226f",
+  "name": "Blusa de encaje bordado con mangas abuchonadas",
+  "keptAs": "import-f3cae53c-184d-4521-9c98-f969935aa773",
+  "keptName": "Blusa calada de encaje con bordado floral",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-5a1ee6f5-aa7d-47e8-8c24-902389cbae32",
+  "name": "Blusa de encaje con calados y bordados florales",
+  "keptAs": "import-f3cae53c-184d-4521-9c98-f969935aa773",
+  "keptName": "Blusa calada de encaje con bordado floral",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-1bd7b56e-27ea-4163-9329-a047ddc8e1d6",
+  "name": "Blusa de encaje bordado con terminación festoneada",
+  "keptAs": "import-b65b8b68-3dad-4ecf-9948-6160e1026699",
+  "keptName": "Blusa de encaje bordado con mangas cortas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-d1bccb44-63c0-40fc-9608-0517fb379d29",
+  "name": "Blusa de encaje bordada crema",
+  "keptAs": "import-b65b8b68-3dad-4ecf-9948-6160e1026699",
+  "keptName": "Blusa de encaje bordado con mangas cortas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-4ab5256e-7868-45f2-8280-0384441f93ba",
+  "name": "Blusa de encaje bordada en tono marfil",
+  "keptAs": "import-b65b8b68-3dad-4ecf-9948-6160e1026699",
+  "keptName": "Blusa de encaje bordado con mangas cortas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-a07669ba-bac7-4a3d-bee3-d24715ec9b87",
+  "name": "Blusa de encaje bordado crema",
+  "keptAs": "import-b65b8b68-3dad-4ecf-9948-6160e1026699",
+  "keptName": "Blusa de encaje bordado con mangas cortas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-ed51fcfd-5907-4d01-88e2-4ff056a43d16",
+  "name": "Blusa de encaje bordado con terminación festoneada",
+  "keptAs": "import-b65b8b68-3dad-4ecf-9948-6160e1026699",
+  "keptName": "Blusa de encaje bordado con mangas cortas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-f549385e-d7f4-4e6e-ab10-bbe728d75834",
+  "name": "Blusa de encaje bordada con mangas abullonadas",
+  "keptAs": "import-b65b8b68-3dad-4ecf-9948-6160e1026699",
+  "keptName": "Blusa de encaje bordado con mangas cortas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-02255fe1-8feb-48c4-a796-054bfa446df1",
+  "name": "Blusa de encaje bordada romántica",
+  "keptAs": "import-b65b8b68-3dad-4ecf-9948-6160e1026699",
+  "keptName": "Blusa de encaje bordado con mangas cortas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-f2ae81f5-e235-4c31-b929-bae18d97f3bb",
+  "name": "Blusa broderie blanca con mangas abullonadas",
+  "keptAs": "import-dabde868-e51a-484e-82df-b2b4c061e27f",
+  "keptName": "Blusa de broderie blanca con volados",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-5d8a6fa3-efb8-45cb-ae3f-c44008059bbd",
+  "name": "Blusa de broderie blanca con mangas abullonadas",
+  "keptAs": "import-dabde868-e51a-484e-82df-b2b4c061e27f",
+  "keptName": "Blusa de broderie blanca con volados",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-e43dab1d-2559-4290-8963-e4cfaa7e0268",
+  "name": "Blusa de broderie blanca",
+  "keptAs": "import-dabde868-e51a-484e-82df-b2b4c061e27f",
+  "keptName": "Blusa de broderie blanca con volados",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-ab501b44-f248-43de-aa10-925fbfdacfcb",
+  "name": "Blusa de broderie blanca con mangas abullonadas",
+  "keptAs": "import-dabde868-e51a-484e-82df-b2b4c061e27f",
+  "keptName": "Blusa de broderie blanca con volados",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-94fe9168-e032-4441-9fc3-3ce7a0b8dd2c",
+  "name": "Blusa de broderie blanca con mangas abullonadas",
+  "keptAs": "import-dabde868-e51a-484e-82df-b2b4c061e27f",
+  "keptName": "Blusa de broderie blanca con volados",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-66413a3a-9713-45d9-81e0-84de36752fbb",
+  "name": "Blusa blanca de broderie con mangas abullonadas",
+  "keptAs": "import-dabde868-e51a-484e-82df-b2b4c061e27f",
+  "keptName": "Blusa de broderie blanca con volados",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-5ac3f398-5e8e-4d7a-bda2-452e4f3ede48",
+  "name": "Blusa de broderie blanca con mangas cortas",
+  "keptAs": "import-dabde868-e51a-484e-82df-b2b4c061e27f",
+  "keptName": "Blusa de broderie blanca con volados",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-c171c7f6-0f39-4385-a2eb-abe090bdb039",
+  "name": "Blusa Romántica Broderie Crema",
+  "keptAs": "import-c7755a47-b2e7-4639-946c-74d86c5463a3",
+  "keptName": "Blusa bordada romántica con mangas abullonadas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-c52b0cfd-16a4-4c8f-a891-ef6c84765aba",
+  "name": "Blusa de broderie calada en tono marfil",
+  "keptAs": "import-c7755a47-b2e7-4639-946c-74d86c5463a3",
+  "keptName": "Blusa bordada romántica con mangas abullonadas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-7c595fad-6117-4c87-a5d0-b7502d60ac3d",
+  "name": "Blusa de broderie con mangas abullonadas",
+  "keptAs": "import-c7755a47-b2e7-4639-946c-74d86c5463a3",
+  "keptName": "Blusa bordada romántica con mangas abullonadas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-bc5b9611-6041-4bc9-8b51-d851bc3620f6",
+  "name": "Blusa romántica con broderie y nido de abeja",
+  "keptAs": "import-c7755a47-b2e7-4639-946c-74d86c5463a3",
+  "keptName": "Blusa bordada romántica con mangas abullonadas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-d10a6147-fb52-4ae1-b88f-0e8219f204fc",
+  "name": "Blusa bordada con mangas abuchonadas",
+  "keptAs": "import-c7755a47-b2e7-4639-946c-74d86c5463a3",
+  "keptName": "Blusa bordada romántica con mangas abullonadas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-1ce711b6-5309-4da3-8bbb-41b8021a7bfd",
+  "name": "Blusa broderie peplum hueso",
+  "keptAs": "import-c7755a47-b2e7-4639-946c-74d86c5463a3",
+  "keptName": "Blusa bordada romántica con mangas abullonadas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-10314874-d832-4328-a0d3-cb10c3d29f62",
+  "name": "Blusa bordada broderie crema",
+  "keptAs": "import-c7755a47-b2e7-4639-946c-74d86c5463a3",
+  "keptName": "Blusa bordada romántica con mangas abullonadas",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-5f0073d2-26a9-4ba4-b19f-a8aac09d71d9",
+  "name": "Top de jean bordado",
+  "keptAs": "import-e2d43597-3981-49f9-ac74-01172b412933",
+  "keptName": "Chaleco de jean bordado boho",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-c2f84f96-4bdd-45de-b973-238e09f0c3a6",
+  "name": "Chaleco de Jean Bordado con Puntilla",
+  "keptAs": "import-e2d43597-3981-49f9-ac74-01172b412933",
+  "keptName": "Chaleco de jean bordado boho",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-702605a1-f806-4766-84cc-3e623bd79435",
+  "name": "Top cropped de jean con bordados",
+  "keptAs": "import-e2d43597-3981-49f9-ac74-01172b412933",
+  "keptName": "Chaleco de jean bordado boho",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-8c96b9c1-5ed8-4246-ab33-89f07d5c4fbd",
+  "name": "Chaleco denim bordado boho",
+  "keptAs": "import-e2d43597-3981-49f9-ac74-01172b412933",
+  "keptName": "Chaleco de jean bordado boho",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-781e79c3-7661-4867-bf04-de88637a92d2",
+  "name": "Chaleco de jean bordado",
+  "keptAs": "import-e2d43597-3981-49f9-ac74-01172b412933",
+  "keptName": "Chaleco de jean bordado boho",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-91d33c03-9c22-4228-b930-744c310faeba",
+  "name": "Chaleco denim bordado",
+  "keptAs": "import-e2d43597-3981-49f9-ac74-01172b412933",
+  "keptName": "Chaleco de jean bordado boho",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-ea2d0129-b4fa-42e0-ac00-9d256b7066ac",
+  "name": "Chaleco de jean bordado estilo boho",
+  "keptAs": "import-e2d43597-3981-49f9-ac74-01172b412933",
+  "keptName": "Chaleco de jean bordado boho",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-5e2e98d8-2ae1-4407-b546-3c8920df0e7d",
+  "name": "Chaleco denim bordado",
+  "keptAs": "import-e2d43597-3981-49f9-ac74-01172b412933",
+  "keptName": "Chaleco de jean bordado boho",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-f8e230b6-e41a-4e54-80f6-8691ae5042af",
+  "name": "Chaleco de jean bordado boho",
+  "keptAs": "import-e2d43597-3981-49f9-ac74-01172b412933",
+  "keptName": "Chaleco de jean bordado boho",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-e854fa05-7790-47e2-b1ef-39a8106cb9fd",
+  "name": "Sandalias Planas con Moño Caramelo",
+  "keptAs": "import-77d32300-4bb3-425f-ba9a-ce98534b01e7",
+  "keptName": "Sandalia Baja Chata con Moño Suela",
+  "batch": "CALZADOS MP COMPANY"
+ },
+ {
+  "removed": "import-f12faa27-5517-4423-9095-6be4d0afa85e",
+  "name": "Minifalda de lentejuelas rojas",
+  "keptAs": "import-36619d20-6433-4a1a-95a0-d854970b824b",
+  "keptName": "Minifalda de lentejuelas roja",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-135fec4a-0458-409c-9198-4299a88cd7a5",
+  "name": "Top strapless con lunares",
+  "keptAs": "import-622f8b2e-f85b-44b3-be59-9ed5b24b4885",
+  "keptName": "Top strapless peplum a lunares",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-a1abf4a5-1729-4248-9025-98ccec0f4a32",
+  "name": "Vestido largo strapless floreado",
+  "keptAs": "import-025d7ed0-9c89-4999-8d41-403c192c3295",
+  "keptName": "Vestido largo strapless floreado",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-41f193dc-8a55-4fc2-ae42-3206a21a7fa5",
+  "name": "Vestido largo strapless estampado floral",
+  "keptAs": "import-025d7ed0-9c89-4999-8d41-403c192c3295",
+  "keptName": "Vestido largo strapless floreado",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-0c72f718-1459-464f-b767-d4c0876a269b",
+  "name": "Corpiño de bikini acanalado marrón",
+  "keptAs": "import-50936f02-eb0b-4642-b331-5ae4191fafa6",
+  "keptName": "Bikini marrón acanalado con detalles dorados",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-f84b044e-7b5a-4b28-b960-07c794a67fa9",
+  "name": "Bikini de dos piezas marrón acanalado",
+  "keptAs": "import-50936f02-eb0b-4642-b331-5ae4191fafa6",
+  "keptName": "Bikini marrón acanalado con detalles dorados",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-5542fb3d-6ad5-40ec-9861-36035a364c2d",
+  "name": "Corpiño de bikini acanalado marrón",
+  "keptAs": "import-50936f02-eb0b-4642-b331-5ae4191fafa6",
+  "keptName": "Bikini marrón acanalado con detalles dorados",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-5e61473c-c657-4564-b98f-b42bffe0ad44",
+  "name": "Vestido largo tejido con breteles finos",
+  "keptAs": "import-81a6bf80-eba8-4a0d-83b8-259eaef5e342",
+  "keptName": "Vestido largo tejido al crochet con recorte",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-81b1ded7-a52f-47f4-8885-0ed7fdc6ab59",
+  "name": "Vestido midi strapless tejido crochet",
+  "keptAs": "import-81a6bf80-eba8-4a0d-83b8-259eaef5e342",
+  "keptName": "Vestido largo tejido al crochet con recorte",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-9f9cdf89-7961-4caa-b529-8b0bad5d1ebd",
+  "name": "Vestido largo de crochet strapless",
+  "keptAs": "import-81a6bf80-eba8-4a0d-83b8-259eaef5e342",
+  "keptName": "Vestido largo tejido al crochet con recorte",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-9a570231-630c-4ebc-9a1a-00509884a241",
+  "name": "Vestido largo strapless de crochet con detalle",
+  "keptAs": "import-81a6bf80-eba8-4a0d-83b8-259eaef5e342",
+  "keptName": "Vestido largo tejido al crochet con recorte",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-398e3c66-d128-4469-8706-17bf60013a34",
+  "name": "Vestido largo tejido de punto",
+  "keptAs": "import-81a6bf80-eba8-4a0d-83b8-259eaef5e342",
+  "keptName": "Vestido largo tejido al crochet con recorte",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-bfa88409-a448-4226-a01e-cc381c1f65e9",
+  "name": "Vestido largo de crochet con aplique de estrella",
+  "keptAs": "import-81a6bf80-eba8-4a0d-83b8-259eaef5e342",
+  "keptName": "Vestido largo tejido al crochet con recorte",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-5485f6fc-ad3c-4b08-95c2-60376398e83f",
+  "name": "Vestido strapless de crochet con aplique",
+  "keptAs": "import-81a6bf80-eba8-4a0d-83b8-259eaef5e342",
+  "keptName": "Vestido largo tejido al crochet con recorte",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-db3d796d-3fc6-432e-b474-1c51a728587f",
+  "name": "Vestido mini satinado con encaje",
+  "keptAs": "import-2d2f8d8d-5710-41f9-bdbe-c18d80177452",
+  "keptName": "Vestido corto satinado con encaje",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-bf087e95-ffdb-4889-8c15-23b2b12dcced",
+  "name": "Vestido corto satinado con encaje",
+  "keptAs": "import-11821f2d-cf76-460d-bca3-6504ca1a0714",
+  "keptName": "Vestido corto satinado con encaje",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-2e3994e7-82ae-48a7-a0a9-148060992e20",
+  "name": "Enterito corto strapless estampado tropical",
+  "keptAs": "import-a8c99337-b8fd-454f-85cf-d0b171dac6e9",
+  "keptName": "Top Strapless Estampado Botánico",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-fb7b2151-ea38-4029-92f4-3b9ad05d73f4",
+  "name": "Vestido maxi estampado botánico",
+  "keptAs": "import-c9a838f3-0ce3-4ce4-8263-c50d39eb1101",
+  "keptName": "Vestido largo estampado botánico",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-fe6a8f50-a18b-4741-a84d-b749c2ac4b26",
+  "name": "Vestido largo estampado tropical",
+  "keptAs": "import-c9a838f3-0ce3-4ce4-8263-c50d39eb1101",
+  "keptName": "Vestido largo estampado botánico",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-cd798dde-e4ca-454e-b58f-a2d1b257c9cd",
+  "name": "Vestido largo strapless a rayas",
+  "keptAs": "import-89ffa9c1-5b90-45c5-9dea-d60f0ce28f8c",
+  "keptName": "Vestido largo strapless a rayas",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-0e5d9b8c-a51c-4545-8d96-ce9acaab28a8",
+  "name": "Vestido largo strapless a rayas",
+  "keptAs": "import-89ffa9c1-5b90-45c5-9dea-d60f0ce28f8c",
+  "keptName": "Vestido largo strapless a rayas",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-4b854c90-43e4-47e0-8f7d-6229ada52669",
+  "name": "Vestido largo strapless a rayas",
+  "keptAs": "import-89ffa9c1-5b90-45c5-9dea-d60f0ce28f8c",
+  "keptName": "Vestido largo strapless a rayas",
+  "batch": "core in fashion"
+ },
+ {
+  "removed": "import-ff2bc512-8901-47f6-9f72-29fa8d9e4b2d",
+  "name": "Minipollera a lunares",
+  "keptAs": "import-61dfae4b-394c-410f-8682-75eaff7f9be4",
+  "keptName": "Pollera corta cruzada a lunares",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-99ca013c-b754-43d9-b519-866d023aa198",
+  "name": "Minipollera cruzada a lunares",
+  "keptAs": "import-61dfae4b-394c-410f-8682-75eaff7f9be4",
+  "keptName": "Pollera corta cruzada a lunares",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-a0ed463a-4534-4c0e-b7fe-233a7e79e743",
+  "name": "Minipollera cruzada a lunares",
+  "keptAs": "import-61dfae4b-394c-410f-8682-75eaff7f9be4",
+  "keptName": "Pollera corta cruzada a lunares",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-b5c20fa0-e05b-43b6-b096-b26a871ef0f6",
+  "name": "Pantalón transparente con bordado de mostacillas",
+  "keptAs": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+  "keptName": "Pantalón de tul con apliques de strass",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-dbdd73bc-b729-4749-8083-7f3c54364c54",
+  "name": "Pantalón de tul bordado con brillos",
+  "keptAs": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+  "keptName": "Pantalón de tul con apliques de strass",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-06202960-0d84-4c87-b73f-6318ad4a79d7",
+  "name": "Pollera de tul bordada con lentejuelas",
+  "keptAs": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+  "keptName": "Pantalón de tul con apliques de strass",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-bbb8f007-5f7c-4127-bc95-10c183b32d6c",
+  "name": "Pantalón de malla con strass",
+  "keptAs": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+  "keptName": "Pantalón de tul con apliques de strass",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-f2abf7fc-6dae-4825-8810-ff9fc3a0dddd",
+  "name": "Pantalón translúcido bordado",
+  "keptAs": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+  "keptName": "Pantalón de tul con apliques de strass",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-13fa5df6-da6b-4f0a-9709-ce1153bc2fcd",
+  "name": "Pantalón de tul bordado con pedrería",
+  "keptAs": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+  "keptName": "Pantalón de tul con apliques de strass",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-31fb4083-172d-4796-b4c3-ab8fb3c71145",
+  "name": "Top de tul con lentejuelas y mostacillas",
+  "keptAs": "import-334e9bc2-aa63-47e8-bc09-d5014ec82921",
+  "keptName": "Pantalón de tul con apliques de strass",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-c60219be-7140-47c4-9768-61f59e2281e7",
+  "name": "Minifalda estampada a lunares",
+  "keptAs": "import-db12db3c-944b-40b3-9a82-f41d1935ff81",
+  "keptName": "Minipollera cruzada a lunares",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-6a333ba7-ef8a-4b70-90d4-b08000fc627a",
+  "name": "Minipollera a lunares cruzada",
+  "keptAs": "import-db12db3c-944b-40b3-9a82-f41d1935ff81",
+  "keptName": "Minipollera cruzada a lunares",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-b4c2d948-d07a-4ec2-8c48-d0f4acfae652",
+  "name": "Minifalda cruzada con estampado de lunares",
+  "keptAs": "import-f303e6d7-4c0c-4d89-b39b-0c743329d404",
+  "keptName": "Minifalda cruzada de jean con lunares",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-3f20cee1-a465-4c77-9cdc-dff715ebdff0",
+  "name": "Minipollera denim estampada con lunares",
+  "keptAs": "import-f303e6d7-4c0c-4d89-b39b-0c743329d404",
+  "keptName": "Minifalda cruzada de jean con lunares",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-e458ed65-fbd8-4c04-816c-9e73a21c2fa5",
+  "name": "Pantalón palazzo satinado marfil",
+  "keptAs": "import-0344de3a-eea3-4e6e-a411-bba2e4494af8",
+  "keptName": "Pantalón wide leg fluido off-white",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-c9e09ea5-cf06-4d90-83e1-2d6f95bc2c89",
+  "name": "Pantalón ancho satinado",
+  "keptAs": "import-0344de3a-eea3-4e6e-a411-bba2e4494af8",
+  "keptName": "Pantalón wide leg fluido off-white",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-e351b5c2-4ed0-4175-aa71-368c51925aca",
+  "name": "Pantalón fluido wide leg crema",
+  "keptAs": "import-0344de3a-eea3-4e6e-a411-bba2e4494af8",
+  "keptName": "Pantalón wide leg fluido off-white",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-647697c9-712d-4421-a76c-b8a33e5a5db5",
+  "name": "Vestido tejido al crochet cuello halter",
+  "keptAs": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+  "keptName": "Vestido corto halter de crochet",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-e104d53a-ce1c-45a2-870c-ed8d122a3090",
+  "name": "Vestido corto al crochet escote halter",
+  "keptAs": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+  "keptName": "Vestido corto halter de crochet",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-63069e7f-015e-45c5-b692-6a1e22ad3599",
+  "name": "Vestido corto halter tejido al crochet",
+  "keptAs": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+  "keptName": "Vestido corto halter de crochet",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-848e4d75-e303-47f0-9871-cde3e72f6051",
+  "name": "Vestido corto de crochet halter",
+  "keptAs": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+  "keptName": "Vestido corto halter de crochet",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-3101008a-da98-4945-8fff-40f663ea04f0",
+  "name": "Vestido corto de crochet con escote halter",
+  "keptAs": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+  "keptName": "Vestido corto halter de crochet",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-18be4428-90b0-48a3-b3dc-5e3227a35c2a",
+  "name": "Vestido corto tejido halter",
+  "keptAs": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+  "keptName": "Vestido corto halter de crochet",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-5fc283a1-6c58-4311-ac7d-6d370e4e30ec",
+  "name": "Vestido corto halter tejido al crochet",
+  "keptAs": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+  "keptName": "Vestido corto halter de crochet",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-70acddd6-540c-44bf-892e-c056ea8d5a4d",
+  "name": "Vestido corto tejido halter espalda descubierta",
+  "keptAs": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+  "keptName": "Vestido corto halter de crochet",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-38659fb6-1672-4951-a3c7-e09105102eef",
+  "name": "Vestido corto al crochet halter",
+  "keptAs": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+  "keptName": "Vestido corto halter de crochet",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-f4551e9a-8477-4c02-9c25-7a25d9aefe64",
+  "name": "Vestido corto tejido calado halter",
+  "keptAs": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+  "keptName": "Vestido corto halter de crochet",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-321866c5-b005-4fd3-94ca-635e3f373533",
+  "name": "Camisa celeste oversized",
+  "keptAs": "import-6342b9ef-b47a-40a9-9a28-f18b58aff653",
+  "keptName": "Camisa oversize celeste de manga larga",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-4878822a-87be-4e28-aafa-c7654b40496d",
+  "name": "Vestido largo playero estampado",
+  "keptAs": "import-b2995c3b-068b-4cb3-bb1c-697d6f538655",
+  "keptName": "Vestido largo estampado playero",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-53408612-4423-48ed-959b-68feef7d21fa",
+  "name": "Tabla de talles",
+  "keptAs": null,
+  "keptName": "(no es prenda)",
+  "batch": "ADORA"
+ },
+ {
+  "removed": "import-bf666ff6-94e0-4503-80ba-78e7351de87f",
+  "name": "Guía de medidas de collares",
+  "keptAs": null,
+  "keptName": "(no es prenda)",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-d64fe3d2-1e03-4f4c-a06f-bbb6eaeb556d",
+  "name": "Guía de largos de collar",
+  "keptAs": null,
+  "keptName": "(no es prenda)",
+  "batch": "FAME ACCESORIES"
+ }
+]

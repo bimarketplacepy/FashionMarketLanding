@@ -566,7 +566,7 @@ export function ItemViewer({ item, modelImage, onClose, onSave, onDelete, onRege
   return (
     <div className="viewer-overlay" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && requestClose()}>
     <div className="viewer-entry">
-    <aside className={`viewer editing${hasModeledImage ? " has-modeled-image" : ""}${shaking ? " shake" : ""}`} role="dialog" aria-modal="true" aria-label="Prenda seleccionada">
+    <aside className={`viewer editing${hasModeledImage ? " has-modeled-image" : ""}${shaking ? " shake" : ""}`} data-lenis-prevent role="dialog" aria-modal="true" aria-label="Prenda seleccionada">
       <button className="viewer-icon-close" type="button" onClick={requestClose} aria-label="Cerrar editor" ref={closeButtonRef}>
         <X size={24} weight="light" aria-hidden="true" />
       </button>

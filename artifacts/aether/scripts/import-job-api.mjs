@@ -163,6 +163,8 @@ Avoid: person, body, skin, hair, mannequin, hanger, props, other garments, retai
 Critical: Use no ${chromaKey} anywhere in the garment. Produce exactly one complete garment with a crisp, separable outer silhouette.`;
 }
 
+const EDGE_SPILL_RADIUS = 6;
+
 function cleanupTolerance(value) {
   const parsed = Number(value);
   return Number.isFinite(parsed) ? Math.max(18, Math.min(110, Math.round(parsed))) : 46;
@@ -184,6 +186,78 @@ function removeKeyedSpill(data, index, keyedChannels, neutralLevel) {
   }
 }
 
+// Franja de `radius` px alrededor del fondo (máscara de píxeles transparentes, dilatada).
+// El derrame del chroma solo existe en el borde de la prenda: limpiarlo en el interior
+// le saca el canal clave a la tela (amarillo → durazno, menta/salvia → gris con fondo verde).
+function chromaEdgeBand(transparent, width, height, radius) {
+  const horizontal = new Uint8Array(width * height);
+  for (let y = 0; y < height; y += 1) {
+    const row = y * width;
+    let count = 0;
+    for (let x = 0; x < Math.min(width, radius); x += 1) count += transparent[row + x];
+    for (let x = 0; x < width; x += 1) {
+      if (x + radius < width) count += transparent[row + x + radius];
+      if (x - radius - 1 >= 0) count -= transparent[row + x - radius - 1];
+      horizontal[row + x] = count > 0 ? 1 : 0;
+    }
+  }
+  const band = new Uint8Array(width * height);
+  for (let x = 0; x < width; x += 1) {
+    let count = 0;
+    for (let y = 0; y < Math.min(height, radius); y += 1) count += horizontal[(y * width) + x];
+    for (let y = 0; y < height; y += 1) {
+      if (y + radius < height) count += horizontal[((y + radius) * width) + x];
+      if (y - radius - 1 >= 0) count -= horizontal[((y - radius - 1) * width) + x];
+      band[(y * width) + x] = count > 0 ? 1 : 0;
+    }
+  }
+  return band;
+}
+
+function transparentEdgeBand(data, info, radius) {
+  const transparent = new Uint8Array(info.width * info.height);
+  for (let index = 0, pixel = 0; index < data.length; index += 4, pixel += 1) transparent[pixel] = data[index + 3] === 0 ? 1 : 0;
+  return chromaEdgeBand(transparent, info.width, info.height, radius);
+}
+
+// El modelo a veces pinta el fondo en un tono del color clave más oscuro o lavado que
+// el chroma exacto (queda fuera de la tolerancia). Se marca como fondo toda región de
+// píxeles claramente del tono clave (canal clave alto, canales neutros bajos) que toque
+// el borde de la imagen o sea un hueco grande (interior de aros, cinturones calados).
+function markOffKeyBackground(data, info, keyed, keyedChannels, neutralChannels) {
+  if (!keyedChannels.length || !neutralChannels.length) return;
+  const { width, height } = info;
+  const total = width * height;
+  const chromaLike = new Uint8Array(total);
+  for (let index = 0, pixel = 0; index < data.length; index += 4, pixel += 1) {
+    if (keyed[pixel]) { chromaLike[pixel] = 1; continue; }
+    const keyedLevel = Math.min(...keyedChannels.map((channel) => data[index + channel]));
+    const neutralMax = Math.max(...neutralChannels.map((channel) => data[index + channel]));
+    chromaLike[pixel] = keyedLevel > 60 && neutralMax < keyedLevel * 0.6 ? 1 : 0;
+  }
+  const seen = new Uint8Array(total);
+  const queue = new Int32Array(total);
+  const minHole = Math.round(total * 0.0002);
+  for (let start = 0; start < total; start += 1) {
+    if (!chromaLike[start] || seen[start]) continue;
+    let head = 0;
+    let tail = 0;
+    let touchesBorder = false;
+    queue[tail++] = start;
+    seen[start] = 1;
+    while (head < tail) {
+      const pixel = queue[head++];
+      const x = pixel % width;
+      const y = (pixel - x) / width;
+      if (x === 0 || y === 0 || x === width - 1 || y === height - 1) touchesBorder = true;
+      for (const next of [x > 0 ? pixel - 1 : -1, x < width - 1 ? pixel + 1 : -1, y > 0 ? pixel - width : -1, y < height - 1 ? pixel + width : -1]) {
+        if (next >= 0 && chromaLike[next] && !seen[next]) { seen[next] = 1; queue[tail++] = next; }
+      }
+    }
+    if (touchesBorder || tail >= minHole) for (let i = 0; i < tail; i += 1) keyed[queue[i]] = 1;
+  }
+}
+
 export async function processChromaBackground(bytes, key, options = {}) {
   const tolerance = cleanupTolerance(options.tolerance);
   const feather = 80;
@@ -191,13 +265,24 @@ export async function processChromaBackground(bytes, key, options = {}) {
   const keyedChannels = target.map((channel, index) => channel > 200 ? index : null).filter((index) => index !== null);
   const neutralChannels = target.map((channel, index) => channel < 55 ? index : null).filter((index) => index !== null);
   const { data, info } = await sharp(bytes).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
-  for (let index = 0; index < data.length; index += 4) {
+  const keyed = new Uint8Array(info.width * info.height);
+  for (let index = 0, pixel = 0; index < data.length; index += 4, pixel += 1) {
     const distance = Math.sqrt(
       ((data[index] - target[0]) ** 2)
       + ((data[index + 1] - target[1]) ** 2)
       + ((data[index + 2] - target[2]) ** 2),
     );
-    if (distance <= tolerance) {
+    keyed[pixel] = distance <= tolerance ? 1 : 0;
+  }
+  markOffKeyBackground(data, info, keyed, keyedChannels, neutralChannels);
+  const edge = chromaEdgeBand(keyed, info.width, info.height, EDGE_SPILL_RADIUS);
+  for (let index = 0, pixel = 0; index < data.length; index += 4, pixel += 1) {
+    const distance = Math.sqrt(
+      ((data[index] - target[0]) ** 2)
+      + ((data[index + 1] - target[1]) ** 2)
+      + ((data[index + 2] - target[2]) ** 2),
+    );
+    if (distance <= tolerance || keyed[pixel]) {
       data[index] = 0;
       data[index + 1] = 0;
       data[index + 2] = 0;
@@ -205,8 +290,8 @@ export async function processChromaBackground(bytes, key, options = {}) {
     } else {
       if (distance < tolerance + feather) data[index + 3] = Math.round(data[index + 3] * ((distance - tolerance) / feather));
       const keyedLevel = keyedChannels.reduce((total, channel) => total + data[index + channel], 0) / keyedChannels.length;
-      const neutralLevel = neutralChannels.reduce((total, channel) => total + data[index + channel], 0) / neutralChannels.length;
-      const spill = Math.max(0, keyedLevel - neutralLevel);
+      const neutralLevel = Math.max(...neutralChannels.map((channel) => data[index + channel]));
+      const spill = edge[pixel] ? Math.max(0, keyedLevel - neutralLevel) : 0;
       if (spill > 0) {
         const spillAlpha = Math.max(0, 1 - (Math.max(0, spill - 4) / 150));
         data[index + 3] = Math.round(data[index + 3] * spillAlpha);
@@ -220,10 +305,10 @@ export async function processChromaBackground(bytes, key, options = {}) {
       }
     }
   }
-  for (let index = 0; index < data.length; index += 4) {
-    if (data[index + 3] === 0) continue;
+  for (let index = 0, pixel = 0; index < data.length; index += 4, pixel += 1) {
+    if (data[index + 3] === 0 || !edge[pixel]) continue;
     const keyedLevel = keyedChannels.reduce((total, channel) => total + data[index + channel], 0) / keyedChannels.length;
-    const neutralLevel = neutralChannels.reduce((total, channel) => total + data[index + channel], 0) / neutralChannels.length;
+    const neutralLevel = Math.max(...neutralChannels.map((channel) => data[index + channel]));
     const residualSpill = Math.max(0, keyedLevel - neutralLevel);
     if (residualSpill > 0) {
       removeKeyedSpill(data, index, keyedChannels, neutralLevel);
@@ -232,10 +317,11 @@ export async function processChromaBackground(bytes, key, options = {}) {
   const keyedOutput = await sharp(data, { raw: info }).png().toBuffer();
   const framedOutput = await frameTransparentGarment(keyedOutput);
   const { data: framedData, info: framedInfo } = await sharp(framedOutput).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
-  for (let index = 0; index < framedData.length; index += 4) {
-    if (framedData[index + 3] === 0) continue;
+  const framedEdge = transparentEdgeBand(framedData, framedInfo, EDGE_SPILL_RADIUS);
+  for (let index = 0, pixel = 0; index < framedData.length; index += 4, pixel += 1) {
+    if (framedData[index + 3] === 0 || !framedEdge[pixel]) continue;
     const keyedLevel = keyedChannels.reduce((total, channel) => total + framedData[index + channel], 0) / keyedChannels.length;
-    const neutralLevel = neutralChannels.reduce((total, channel) => total + framedData[index + channel], 0) / neutralChannels.length;
+    const neutralLevel = Math.max(...neutralChannels.map((channel) => framedData[index + channel]));
     const residualSpill = Math.max(0, keyedLevel - neutralLevel);
     if (residualSpill <= 0) continue;
     removeKeyedSpill(framedData, index, keyedChannels, neutralLevel);
@@ -291,13 +377,14 @@ async function verifyNoChromaSpill(bytes, key) {
   const target = [1, 3, 5].map((offset) => Number.parseInt(key.slice(offset, offset + 2), 16));
   const keyedChannels = target.map((channel, index) => channel > 200 ? index : null).filter((index) => index !== null);
   const neutralChannels = target.map((channel, index) => channel < 55 ? index : null).filter((index) => index !== null);
-  const { data } = await sharp(bytes).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const { data, info } = await sharp(bytes).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const edge = transparentEdgeBand(data, info, EDGE_SPILL_RADIUS);
   let contaminatedPixels = 0;
   let maxSpill = 0;
-  for (let index = 0; index < data.length; index += 4) {
-    if (data[index + 3] === 0) continue;
+  for (let index = 0, pixel = 0; index < data.length; index += 4, pixel += 1) {
+    if (data[index + 3] === 0 || !edge[pixel]) continue;
     const keyedLevel = keyedChannels.reduce((total, channel) => total + data[index + channel], 0) / keyedChannels.length;
-    const neutralLevel = neutralChannels.reduce((total, channel) => total + data[index + channel], 0) / neutralChannels.length;
+    const neutralLevel = Math.max(...neutralChannels.map((channel) => data[index + channel]));
     const spill = Math.max(0, keyedLevel - neutralLevel);
     maxSpill = Math.max(maxSpill, spill);
     if (spill > 1.5) contaminatedPixels += 1;
@@ -524,6 +611,7 @@ export function wardrobeImportApi(options = {}) {
           record.sizes = input.sizes.filter((size) => typeof size === "string").map((size) => size.trim().slice(0, 12)).filter(Boolean).slice(0, 12);
         }
         if (typeof input.description === "string") record.description = input.description.trim().slice(0, 600);
+        if (typeof input.active === "boolean") record.active = input.active;
         if (GENDERS.has(input.gender)) record.gender = inferGarmentGender({ ...record, gender: input.gender });
         record.palette = [record.color, record.secondaryColor].filter(Boolean);
         await atomicJson(importedFile, records);

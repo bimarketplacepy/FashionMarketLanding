@@ -1,0 +1,1026 @@
+{
+  "id": "f3b1802f-3e71-4f8d-8113-d180976b9fb7",
+  "name": "LOVE TREE",
+  "createdAt": "2026-09-30T12:27:40.341Z",
+  "items": [
+    {
+      "id": "fd016e5a-b61d-41a7-ae38-3e76dac21e2a",
+      "fileName": "24987008_283f8297-66df-47f0-b6a5-b6f1c3a32a88.jpg",
+      "folderName": "LOVE TREE",
+      "file": "fd016e5a-b61d-41a7-ae38-3e76dac21e2a.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-56a794bf-f533-464b-80b2-f547f9972073",
+        "name": "Chaleco de gamuza con tachas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco corto de gamuza marrón",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#4d3728"
+        ],
+        "descripcion": "Chaleco sin mangas confeccionado en tela símil gamuza tono marrón oscuro. Presenta un corte recto, escote sisa y acabado suave, ideal para lograr un look sofisticado de media estación.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza",
+        "prendasSecundarias": [
+          "pantalón de gamuza"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco corto de gamuza marrón",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#4d3728"
+        ],
+        "descripcion": "Chaleco sin mangas confeccionado en tela símil gamuza tono marrón oscuro. Presenta un corte recto, escote sisa y acabado suave, ideal para lograr un look sofisticado de media estación.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza",
+        "prendasSecundarias": [
+          "pantalón de gamuza"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:40.562Z",
+      "errorDetail": null
+    },
+    {
+      "id": "97514014-d92f-406e-82dd-a92e855e495d",
+      "fileName": "24987008_0607dfde-27f1-44b5-9571-6536eb91d8e4.jpg",
+      "folderName": "LOVE TREE",
+      "file": "97514014-d92f-406e-82dd-a92e855e495d.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+        "name": "Chaleco de gamuza con tachas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "chalecos",
+        "colores": [
+          "#a57038",
+          "#8b572a"
+        ],
+        "descripcion": "Chaleco corto confeccionado en gamuza sintética color suela, decorado con tachas metálicas en relieve a lo largo de las solapas y el ruedo. Un ítem de estilo bohemio ideal para complementar looks en capas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza con tachas",
+        "prendasSecundarias": [
+          "pantalón de gamuza",
+          "top blanco",
+          "sombrero negro",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "chalecos",
+        "colores": [
+          "#a57038",
+          "#8b572a"
+        ],
+        "descripcion": "Chaleco corto confeccionado en gamuza sintética color suela, decorado con tachas metálicas en relieve a lo largo de las solapas y el ruedo. Un ítem de estilo bohemio ideal para complementar looks en capas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza con tachas",
+        "prendasSecundarias": [
+          "pantalón de gamuza",
+          "top blanco",
+          "sombrero negro",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:40.567Z",
+      "errorDetail": null
+    },
+    {
+      "id": "226798c9-0da7-4217-ae79-1d2b0d56da2c",
+      "fileName": "24987008_0de6018a-3d50-4f4e-a608-06a84c7e4413.jpg",
+      "folderName": "LOVE TREE",
+      "file": "226798c9-0da7-4217-ae79-1d2b0d56da2c.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+        "name": "Chaleco de gamuza con tachas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza camel",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#9e6c3b"
+        ],
+        "descripcion": "Chaleco sin mangas confeccionado en gamuza en tono suela, con vista posterior limpia y corte estructurado. Un básico canchero e ideal para combinar en capas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza",
+        "prendasSecundarias": [
+          "pantalón de gamuza"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza camel",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#9e6c3b"
+        ],
+        "descripcion": "Chaleco sin mangas confeccionado en gamuza en tono suela, con vista posterior limpia y corte estructurado. Un básico canchero e ideal para combinar en capas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza",
+        "prendasSecundarias": [
+          "pantalón de gamuza"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:40.575Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b38d9a88-242b-4c6f-b481-d01b89ee3d6a",
+      "fileName": "24987008_28ff4748-b742-491a-b875-7f62c553d7c2.jpg",
+      "folderName": "LOVE TREE",
+      "file": "b38d9a88-242b-4c6f-b481-d01b89ee3d6a.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+        "name": "Chaleco negro con tachas doradas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco negro con tachas doradas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#1a1a1c"
+        ],
+        "descripcion": "Chaleco sin mangas entallado en color negro, decorado con bordes de tachas doradas en contraste. Un diseño canchero y sofisticado, ideal para superponer con tops y shorts.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco con tachas",
+        "prendasSecundarias": [
+          "top blanco",
+          "short negro",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco negro con tachas doradas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#1a1a1c"
+        ],
+        "descripcion": "Chaleco sin mangas entallado en color negro, decorado con bordes de tachas doradas en contraste. Un diseño canchero y sofisticado, ideal para superponer con tops y shorts.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco con tachas",
+        "prendasSecundarias": [
+          "top blanco",
+          "short negro",
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:40.781Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d2a0886c-8637-498c-9130-059494439014",
+      "fileName": "24987008_327c77cf-e86c-4dac-8956-d18504c622cd.jpg",
+      "folderName": "LOVE TREE",
+      "file": "d2a0886c-8637-498c-9130-059494439014.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+        "name": "Chaleco negro con tachas doradas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#1b1c20",
+          "#e3e4e8",
+          "#b0925a"
+        ],
+        "descripcion": "Chaleco negro de acabado tipo gamuza con detalle de tachas doradas aplicadas en los bordes. Una prenda de estilo boho chic ideal para levantar cualquier look básico.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "chaleco",
+        "prendasSecundarias": [
+          "top blanco",
+          "collar dorado",
+          "pantalón negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#1b1c20",
+          "#e3e4e8",
+          "#b0925a"
+        ],
+        "descripcion": "Chaleco negro de acabado tipo gamuza con detalle de tachas doradas aplicadas en los bordes. Una prenda de estilo boho chic ideal para levantar cualquier look básico.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "chaleco",
+        "prendasSecundarias": [
+          "top blanco",
+          "collar dorado",
+          "pantalón negro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:40.795Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e3ea5ff7-5dde-446b-8d90-1b2f3bf8eefb",
+      "fileName": "24987008_4e4ee8c7-4f30-45c6-8875-55ebc7442a22.jpg",
+      "folderName": "LOVE TREE",
+      "file": "e3ea5ff7-5dde-446b-8d90-1b2f3bf8eefb.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-56a794bf-f533-464b-80b2-f547f9972073",
+        "name": "Chaleco de gamuza con tachas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#523b2b",
+          "#997a47"
+        ],
+        "descripcion": "Chaleco corto de gamuza en tono marrón con apliques de tachas metálicas doradas en los bordes. Un diseño con onda bohemia ideal para combinar con tops básicos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza con tachas",
+        "prendasSecundarias": [
+          "top blanco",
+          "pantalón de gamuza",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#523b2b",
+          "#997a47"
+        ],
+        "descripcion": "Chaleco corto de gamuza en tono marrón con apliques de tachas metálicas doradas en los bordes. Un diseño con onda bohemia ideal para combinar con tops básicos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza con tachas",
+        "prendasSecundarias": [
+          "top blanco",
+          "pantalón de gamuza",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:40.809Z",
+      "errorDetail": null
+    },
+    {
+      "id": "484211de-3ea0-46b7-a57e-7cf0d5438a41",
+      "fileName": "24987008_52841efb-b6ac-4e65-b8c7-9d3c0f287c9f.jpg",
+      "folderName": "LOVE TREE",
+      "file": "484211de-3ea0-46b7-a57e-7cf0d5438a41.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-56a794bf-f533-464b-80b2-f547f9972073",
+        "name": "Chaleco de gamuza con tachas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza con tachas estilo texano",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#4a2e1a",
+          "#f2ece9"
+        ],
+        "descripcion": "Chaleco ajustado confeccionado en tela símil gamuza marrón, decorado con tachas doradas a lo largo de los bordes delanteros. Presenta corte sin mangas y diseño estilo texano, ideal para superponer sobre tops o musculosas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza",
+        "prendasSecundarias": [
+          "musculosa blanca",
+          "pantalón de gamuza",
+          "sombrero texano",
+          "dije"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza con tachas estilo texano",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#4a2e1a",
+          "#f2ece9"
+        ],
+        "descripcion": "Chaleco ajustado confeccionado en tela símil gamuza marrón, decorado con tachas doradas a lo largo de los bordes delanteros. Presenta corte sin mangas y diseño estilo texano, ideal para superponer sobre tops o musculosas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza",
+        "prendasSecundarias": [
+          "musculosa blanca",
+          "pantalón de gamuza",
+          "sombrero texano",
+          "dije"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.014Z",
+      "errorDetail": null
+    },
+    {
+      "id": "5757a58b-78b5-4548-80e4-cfd352593daa",
+      "fileName": "24987008_5d853607-40bf-4db2-ba8d-9f0a4b19c8be.jpg",
+      "folderName": "LOVE TREE",
+      "file": "5757a58b-78b5-4548-80e4-cfd352593daa.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-56a794bf-f533-464b-80b2-f547f9972073",
+        "name": "Chaleco de gamuza con tachas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#4a3427"
+        ],
+        "descripcion": "Chaleco sin mangas confeccionado en gamuza marrón con apliques de tachas doradas sobre el frente y el dobladillo. De corte estilo western o vaquero, ideal para sumar textura y personalidad a cualquier outfit.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco",
+        "prendasSecundarias": [
+          "pantalón",
+          "top blanco",
+          "sombrero vaquero",
+          "zapatos",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#4a3427"
+        ],
+        "descripcion": "Chaleco sin mangas confeccionado en gamuza marrón con apliques de tachas doradas sobre el frente y el dobladillo. De corte estilo western o vaquero, ideal para sumar textura y personalidad a cualquier outfit.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco",
+        "prendasSecundarias": [
+          "pantalón",
+          "top blanco",
+          "sombrero vaquero",
+          "zapatos",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.074Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0efc97f1-fe97-4574-8e0f-6e82cdf79307",
+      "fileName": "24987008_76a57ac6-8565-4f86-98bc-b9822800eea1.jpg",
+      "folderName": "LOVE TREE",
+      "file": "0efc97f1-fe97-4574-8e0f-6e82cdf79307.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+        "name": "Chaleco negro con tachas doradas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza negro",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#1c1c1e"
+        ],
+        "descripcion": "Chaleco confeccionado en gamuza sintética de color negro, diseñado sin mangas y con corte recto, ideal para complementar outfits de estación intermedia.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza negro",
+        "prendasSecundarias": [
+          "short negro con tachas",
+          "aros dorados"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza negro",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#1c1c1e"
+        ],
+        "descripcion": "Chaleco confeccionado en gamuza sintética de color negro, diseñado sin mangas y con corte recto, ideal para complementar outfits de estación intermedia.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza negro",
+        "prendasSecundarias": [
+          "short negro con tachas",
+          "aros dorados"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.084Z",
+      "errorDetail": null
+    },
+    {
+      "id": "78b5b89e-63ce-45e6-9c94-b594506a39cd",
+      "fileName": "24987008_7e7ee1e5-d82e-478c-b1cc-c6b7d01df682.jpg",
+      "folderName": "LOVE TREE",
+      "file": "78b5b89e-63ce-45e6-9c94-b594506a39cd.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-56a794bf-f533-464b-80b2-f547f9972073",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "chalecos",
+        "colores": [
+          "#4e3629"
+        ],
+        "descripcion": "Chaleco corto de gamuza sintética en tono marrón con detalle de tachas metálicas doradas en los bordes y el frente. Presenta un corte abierto sin mangas, de estilo boho-western ideal para armar outfits urbanos en capas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza con tachas",
+        "prendasSecundarias": [
+          "short de gamuza",
+          "musculosa blanca",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "chalecos",
+        "colores": [
+          "#4e3629"
+        ],
+        "descripcion": "Chaleco corto de gamuza sintética en tono marrón con detalle de tachas metálicas doradas en los bordes y el frente. Presenta un corte abierto sin mangas, de estilo boho-western ideal para armar outfits urbanos en capas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza con tachas",
+        "prendasSecundarias": [
+          "short de gamuza",
+          "musculosa blanca",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.237Z",
+      "errorDetail": null
+    },
+    {
+      "id": "42c332b2-1787-4a96-a945-942bb912df70",
+      "fileName": "24987008_82952fb6-3880-4ad6-948a-6cb65a23acd1.jpg",
+      "folderName": "LOVE TREE",
+      "file": "42c332b2-1787-4a96-a945-942bb912df70.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+        "name": "Chaleco de gamuza con tachas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#9a6b3c"
+        ],
+        "descripcion": "Chaleco confeccionado en tela tipo gamuza color suela con apliques de tachas doradas en los bordes. Presenta un corte entallado y frente abierto, perfecto para armar conjuntos urbanos o de estilo boho.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza",
+        "prendasSecundarias": [
+          "short de gamuza",
+          "top acanalado blanco",
+          "zapatos de taco negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#9a6b3c"
+        ],
+        "descripcion": "Chaleco confeccionado en tela tipo gamuza color suela con apliques de tachas doradas en los bordes. Presenta un corte entallado y frente abierto, perfecto para armar conjuntos urbanos o de estilo boho.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza",
+        "prendasSecundarias": [
+          "short de gamuza",
+          "top acanalado blanco",
+          "zapatos de taco negro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.296Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6af00d02-1290-4fb4-87e6-e8aafcfea53f",
+      "fileName": "24987008_9004b792-65b2-4103-86e3-d64ef5fb041f.jpg",
+      "folderName": "LOVE TREE",
+      "file": "6af00d02-1290-4fb4-87e6-e8aafcfea53f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#a26b38"
+        ],
+        "descripcion": "Chaleco femenino de gamuza sintética en tono suela, destacado por la aplicación de tachas metálicas doradas en los bordes. De corte abierto y estilo texano, perfecto para combinar en capas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza",
+        "prendasSecundarias": [
+          "top blanco acanalado",
+          "pantalón de gamuza",
+          "collar dorado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#a26b38"
+        ],
+        "descripcion": "Chaleco femenino de gamuza sintética en tono suela, destacado por la aplicación de tachas metálicas doradas en los bordes. De corte abierto y estilo texano, perfecto para combinar en capas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza",
+        "prendasSecundarias": [
+          "top blanco acanalado",
+          "pantalón de gamuza",
+          "collar dorado"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.305Z",
+      "errorDetail": null
+    },
+    {
+      "id": "01a7239a-c479-416c-86bb-8132ef468b88",
+      "fileName": "24987008_97be6ab3-f959-4677-8341-d59f50f47aea.jpg",
+      "folderName": "LOVE TREE",
+      "file": "01a7239a-c479-416c-86bb-8132ef468b88.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco negro con tachas doradas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#b5945b"
+        ],
+        "descripcion": "Chaleco sin mangas en color negro, decorado con tachas metálicas doradas distribuidas a lo largo de los solapas y solapines formando patrones geométricos. Una prenda ideal para sumar personalidad y estilo boho-chic a tu look.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco negro con tachas",
+        "prendasSecundarias": [
+          "musculosa blanca",
+          "short negro con tachas",
+          "collar dorado",
+          "aros dorados"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco negro con tachas doradas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#b5945b"
+        ],
+        "descripcion": "Chaleco sin mangas en color negro, decorado con tachas metálicas doradas distribuidas a lo largo de los solapas y solapines formando patrones geométricos. Una prenda ideal para sumar personalidad y estilo boho-chic a tu look.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco negro con tachas",
+        "prendasSecundarias": [
+          "musculosa blanca",
+          "short negro con tachas",
+          "collar dorado",
+          "aros dorados"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.313Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a66ed3bc-79d8-435e-a8b9-e9c364e3cf83",
+      "fileName": "24987008_d267861e-ab5b-4c6d-b01c-8abcf853d2d4.jpg",
+      "folderName": "LOVE TREE",
+      "file": "a66ed3bc-79d8-435e-a8b9-e9c364e3cf83.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+        "name": "Chaleco de gamuza con tachas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#a26e38",
+          "#8c582b"
+        ],
+        "descripcion": "Chaleco corto confeccionado en gamuza tono suela, destacado por detalles de tachas metálicas envejecidas en bordes y solapa. Un ítem de estilo boho ideal para combinar sobre tops o remeras.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza con tachas",
+        "prendasSecundarias": [
+          "musculosa blanca",
+          "pantalón de gamuza",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#a26e38",
+          "#8c582b"
+        ],
+        "descripcion": "Chaleco corto confeccionado en gamuza tono suela, destacado por detalles de tachas metálicas envejecidas en bordes y solapa. Un ítem de estilo boho ideal para combinar sobre tops o remeras.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de gamuza con tachas",
+        "prendasSecundarias": [
+          "musculosa blanca",
+          "pantalón de gamuza",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.465Z",
+      "errorDetail": null
+    },
+    {
+      "id": "da15af12-82c7-4ad3-b36c-c30bd077b01d",
+      "fileName": "24987008_d42c0e74-ad17-40fb-a4a9-2da1ddf20e98.jpg",
+      "folderName": "LOVE TREE",
+      "file": "da15af12-82c7-4ad3-b36c-c30bd077b01d.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+        "name": "Chaleco negro con tachas doradas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco negro con tachas doradas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#1c1b1f",
+          "#ba9752"
+        ],
+        "descripcion": "Chaleco negro corto de diseño abierto con aplicación de tachas doradas en bordes, ideal para combinar en un conjunto de noche o estilo casual sofisticado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco negro con tachas",
+        "prendasSecundarias": [
+          "pantalón negro con tachas",
+          "top blanco acanalado",
+          "zapatos de taco alto",
+          "aros dorados",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco negro con tachas doradas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#1c1b1f",
+          "#ba9752"
+        ],
+        "descripcion": "Chaleco negro corto de diseño abierto con aplicación de tachas doradas en bordes, ideal para combinar en un conjunto de noche o estilo casual sofisticado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco negro con tachas",
+        "prendasSecundarias": [
+          "pantalón negro con tachas",
+          "top blanco acanalado",
+          "zapatos de taco alto",
+          "aros dorados",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.521Z",
+      "errorDetail": null
+    },
+    {
+      "id": "94247697-dfa0-48d5-b4ab-14962c698085",
+      "fileName": "24987008_e4bb3d05-45f8-4892-a560-6ef6e2c26aaa.jpg",
+      "folderName": "LOVE TREE",
+      "file": "94247697-dfa0-48d5-b4ab-14962c698085.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-ad9ca623-856d-4b9e-b0fe-ab02b28eb9d7",
+        "name": "Chaleco negro con tachas doradas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco negro con tachas doradas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#181818"
+        ],
+        "descripcion": "Chaleco corto sin mangas en color negro con detalle de tachas doradas en el frente y ruedo. Un modelo canchero ideal para combinar en capas y destacar tu outfit.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco negro con tachas",
+        "prendasSecundarias": [
+          "short negro con tachas",
+          "top blanco",
+          "zapatos de taco negros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco negro con tachas doradas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#181818"
+        ],
+        "descripcion": "Chaleco corto sin mangas en color negro con detalle de tachas doradas en el frente y ruedo. Un modelo canchero ideal para combinar en capas y destacar tu outfit.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco negro con tachas",
+        "prendasSecundarias": [
+          "short negro con tachas",
+          "top blanco",
+          "zapatos de taco negros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.528Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7087e570-ab9b-4e21-9d36-547354f3bc6a",
+      "fileName": "24987008_ed8668a6-da3c-4c54-a06f-8fb08ae8a283.jpg",
+      "folderName": "LOVE TREE",
+      "file": "7087e570-ab9b-4e21-9d36-547354f3bc6a.jpg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-654ae459-6e2f-4b28-a64d-2e05b1fec680",
+        "name": "Chaleco de gamuza con tachas"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#8c5a2b",
+          "#1c1c1c",
+          "#ffffff"
+        ],
+        "descripcion": "Chaleco de gamuza sintética tono suela con detalles de tachas aplicadas en el frente y contornos. Diseño abierto sin mangas de estilo boho.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Chaleco de gamuza con tachas",
+        "prendasSecundarias": [
+          "Pantalón de gamuza",
+          "Top acanalado blanco",
+          "Sombrero negro",
+          "Zapatos negros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de gamuza con tachas",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#8c5a2b",
+          "#1c1c1c",
+          "#ffffff"
+        ],
+        "descripcion": "Chaleco de gamuza sintética tono suela con detalles de tachas aplicadas en el frente y contornos. Diseño abierto sin mangas de estilo boho.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Chaleco de gamuza con tachas",
+        "prendasSecundarias": [
+          "Pantalón de gamuza",
+          "Top acanalado blanco",
+          "Sombrero negro",
+          "Zapatos negros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:41.535Z",
+      "errorDetail": null
+    }
+  ],
+  "updatedAt": "2026-09-30T16:22:09.786Z"
+}

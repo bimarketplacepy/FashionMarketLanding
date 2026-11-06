@@ -1,0 +1,324 @@
+[
+ {
+  "removed": "import-acd4b313-a166-4077-b54c-3a81d31d7e6f",
+  "name": "Remera básica manga corta verde pastel",
+  "keptAs": "import-2f1d4f61-8604-4d0a-9578-bcf9c68fb6fa",
+  "keptName": "Remera básica de manga corta verde claro",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-53cb72f9-a4dd-4f94-9db9-a6ba2b5be53a",
+  "name": "Camisa de manga corta texturada azul",
+  "keptAs": "import-7965c4f9-38c7-4e11-ba25-d82803fd543c",
+  "keptName": "Camisa de manga corta azul estilo lounge",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-409d6c5e-f684-4a63-bc6f-536346f11124",
+  "name": "Top sin mangas negro Active Basic",
+  "keptAs": "import-1fa642a0-9c4f-425a-afe3-faa710f3ba2c",
+  "keptName": "Top corto musculosa negro",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-2e159b6e-656b-4b81-be32-b6823969b676",
+  "name": "Short chino de algodón beige",
+  "keptAs": "import-7ff7ba74-9814-48ba-bad3-0a976d344bcf",
+  "keptName": "Short de gabardina beige con cinturón",
+  "batch": "ACTIVE BASIC"
+ },
+ {
+  "removed": "import-03b9ede3-233c-4723-a598-6cf3159521af",
+  "name": "Pantalón jean recto verde oliva",
+  "keptAs": "import-0eb21245-abf9-47f9-b7a4-cb36838aeacc",
+  "keptName": "Jean Wide Leg Verde Oliva",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-17065050-815e-4e43-8048-a425fabbb668",
+  "name": "Top de lino con lazos laterales verde oliva",
+  "keptAs": "import-4257e1c0-0d78-40ff-842b-a75b8cfc722c",
+  "keptName": "Top cropped texturizado verde oliva",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-3296408b-446e-44f6-b2eb-3b92a2a395fe",
+  "name": "Vestido largo strapless crema",
+  "keptAs": "import-b64cab24-fa41-4e2a-858d-b0dd65d653a3",
+  "keptName": "Vestido largo strapless de morley y calados",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-958813d3-20c2-48f6-9166-5646ea6ab588",
+  "name": "Top tejido abotonado crudo",
+  "keptAs": "import-7f5efa85-7224-47f4-acf0-f78a76ef6dc7",
+  "keptName": "Chaleco tejido de punto con botones enjoyados",
+  "batch": "BLUPEPPER SS26"
+ },
+ {
+  "removed": "import-7275ab8b-9a73-452c-a0b2-3b0a994f2c52",
+  "name": "Bota texana con estrellas negra",
+  "keptAs": "import-b0fe5096-2f26-4909-9d22-d7a3e96d8c7a",
+  "keptName": "Bota texana con estrellas negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-5f89d9b3-c55a-45d8-9e49-611286bd1592",
+  "name": "Mule alpargata negra",
+  "keptAs": "import-7e0fde89-a2d0-4d2a-8c8a-e828c829a9e0",
+  "keptName": "Mule alpargata negra",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-ee9a94b7-5fd5-4995-bfca-89c752e07a62",
+  "name": "Mule alpargata verde agua",
+  "keptAs": "import-f226f9a4-ed47-4e89-9570-7db68fe3c430",
+  "keptName": "Mule alpargata verde agua",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-5c178b47-8ba0-42da-95bc-47f87982d065",
+  "name": "Mule alpargata verde agua",
+  "keptAs": "import-f226f9a4-ed47-4e89-9570-7db68fe3c430",
+  "keptName": "Mule alpargata verde agua",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-4f7defab-8879-4886-80eb-01b561508095",
+  "name": "Mule alpargata verde agua",
+  "keptAs": "import-f226f9a4-ed47-4e89-9570-7db68fe3c430",
+  "keptName": "Mule alpargata verde agua",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-5fa60bfd-ef01-4e91-a397-04b621f07a0e",
+  "name": "Sandalia cuña de yute beige",
+  "keptAs": "import-905f67fd-922f-4f7c-8fee-bd9b30715804",
+  "keptName": "Sandalia cuña de yute beige",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-f6b907c5-0b82-474a-b012-3edfe4d61d17",
+  "name": "Sandalia cuña de yute beige",
+  "keptAs": "import-905f67fd-922f-4f7c-8fee-bd9b30715804",
+  "keptName": "Sandalia cuña de yute beige",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-7817b287-b98c-40f2-934a-7cb498b757ae",
+  "name": "Sandalia cuña de yute beige",
+  "keptAs": "import-905f67fd-922f-4f7c-8fee-bd9b30715804",
+  "keptName": "Sandalia cuña de yute beige",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-797457c4-9461-467c-9cb5-748c497fb558",
+  "name": "Sandalia cuña de yute dorada",
+  "keptAs": "import-95c882a2-4296-44d5-8a6f-c95d1acc7d96",
+  "keptName": "Sandalia cuña de yute dorada",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-21219c55-4ff6-4f78-90db-6ccc3b986920",
+  "name": "Chinela calada chocolate",
+  "keptAs": "import-91c3cc85-89c1-490d-8970-62a6f545db1e",
+  "keptName": "Chinela calada chocolate",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-82f8d287-13d3-4e75-873d-773c493804c5",
+  "name": "Chinela calada chocolate",
+  "keptAs": "import-91c3cc85-89c1-490d-8970-62a6f545db1e",
+  "keptName": "Chinela calada chocolate",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-fa170df0-e623-4fb5-ad1c-1d368b295551",
+  "name": "Chinela calada suela",
+  "keptAs": "import-eabee48b-3e2a-425a-aa72-fa4b3c4cb1ab",
+  "keptName": "Chinela calada suela",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-8a38fd2c-115d-42c2-bb52-76c267b3fadb",
+  "name": "Chinela calada dorada",
+  "keptAs": "import-35fba6e6-f4a3-4993-b7a2-5486fc2f56a0",
+  "keptName": "Chinela calada dorada",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-2ef455ba-eb93-4f2f-b22f-a64bf9924ac9",
+  "name": "Sandalia de taco fino nude",
+  "keptAs": "import-57e9aa19-cabc-4563-883c-7b3394fd8f2b",
+  "keptName": "Sandalia de taco ancho nude",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-21689f70-8331-4cfa-ae11-b23e72eef11e",
+  "name": "Bota texana caña alta marrón",
+  "keptAs": "import-0e62b9bc-4185-4cd9-b9af-38233b5fcf38",
+  "keptName": "Bota texana caña alta marrón",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-85e984b9-4d5e-491e-8997-ef746311218a",
+  "name": "Chinela con caracoles terracota",
+  "keptAs": "import-d6d95e53-b8d7-446a-8e67-a087802e8bed",
+  "keptName": "Chinela con caracoles cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-dcaf9551-10c3-423b-96e9-8788e42b8372",
+  "name": "Chinela con caracoles natural",
+  "keptAs": "import-d6d95e53-b8d7-446a-8e67-a087802e8bed",
+  "keptName": "Chinela con caracoles cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-2fbfcde7-9b48-47e2-ac20-0becd76e2d3a",
+  "name": "Chinela con caracoles cruda",
+  "keptAs": "import-d6d95e53-b8d7-446a-8e67-a087802e8bed",
+  "keptName": "Chinela con caracoles cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-a7321fb5-a7dd-4edd-a00f-2a5fca6ccc13",
+  "name": "Chinela con caracoles cruda",
+  "keptAs": "import-d6d95e53-b8d7-446a-8e67-a087802e8bed",
+  "keptName": "Chinela con caracoles cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-ee7e4864-8c80-4070-bb94-cfc0dc508b6d",
+  "name": "Chinela con caracoles cruda",
+  "keptAs": "import-d6d95e53-b8d7-446a-8e67-a087802e8bed",
+  "keptName": "Chinela con caracoles cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-07422eba-7324-4bda-9bcb-691129d0ea89",
+  "name": "Sandalia de taco bajo con tira en T verde pistacho",
+  "keptAs": "import-405772a3-67f0-4a7d-9928-66128707f57f",
+  "keptName": "Sandalia de taco bajo con tira en T cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-bc6d4698-1746-4178-b7ef-0d90f93b72fa",
+  "name": "Sandalia de taco bajo con tira en T cruda",
+  "keptAs": "import-405772a3-67f0-4a7d-9928-66128707f57f",
+  "keptName": "Sandalia de taco bajo con tira en T cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-956f40a8-3dd4-49af-b18b-82ec72d5e015",
+  "name": "Sandalia de taco bajo con tira en T cruda",
+  "keptAs": "import-405772a3-67f0-4a7d-9928-66128707f57f",
+  "keptName": "Sandalia de taco bajo con tira en T cruda",
+  "batch": "CCOCCI SS26"
+ },
+ {
+  "removed": "import-43155a3f-864b-4cea-87ad-cf92ec8a4046",
+  "name": "Sandalias bajas negras con ojales metálicos",
+  "keptAs": "import-84926273-cb72-4e2d-8103-b985710dae8a",
+  "keptName": "Sandalias bajas de charol con ojalillos",
+  "batch": "CJ SHOES"
+ },
+ {
+  "removed": "import-50775049-e5ae-4608-9e20-b99e5a0d39c2",
+  "name": "Ojotas de goma con apliques marinos y strass",
+  "keptAs": "import-d169d702-8d84-4dcf-a19b-b36f3c9cee0a",
+  "keptName": "Ojotas con apliques marinos y dijes",
+  "batch": "LEMONADE SHOES SS26"
+ },
+ {
+  "removed": "import-bf939d60-cc28-4034-b4d6-583b425a83a9",
+  "name": "Sombrero Texano Calado de Paja",
+  "keptAs": "import-43613265-c096-436d-8c58-c2ba95e7196e",
+  "keptName": "Sombrero cowboy de paja tejido",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-9665a25a-3837-48ff-88ce-21f474efb884",
+  "name": "Cinturón Ancho con Círculos y Apliques Dorados",
+  "keptAs": "import-2b45c5cb-8e03-4c2f-b80e-0a72bcece441",
+  "keptName": "Cinturón de discos azul marino con apliques dorados",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-9686e856-b04e-49d1-944d-d25ca6810392",
+  "name": "Set de aros marinos dorados y plateados",
+  "keptAs": "import-3e6c71a0-9819-447f-a672-eca3fae3d584",
+  "keptName": "Set de aros dorados temática marina",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-98c815af-01f8-414e-9082-5d7b1c65e0dd",
+  "name": "Aros Argolla Dorados con Dijes de Pez de Cerámica y Concha",
+  "keptAs": "import-8acded9f-d6e5-450e-8eb3-0f33386a9e19",
+  "keptName": "Aros Argollas Doradas con Dije Pez y Abanico",
+  "batch": "FAME ACCESORIES"
+ },
+ {
+  "removed": "import-657f0968-27ee-4037-98c3-817e92239cd0",
+  "name": "Chaleco militar blanco con botones",
+  "keptAs": "import-407808da-cbcb-443d-8c89-a1dbf01bc0ba",
+  "keptName": "Chaleco militar de jean blanco",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-0d852b62-01b8-4f60-8c75-5331c91a5750",
+  "name": "Body Strapless Liso Pack x3",
+  "keptAs": "import-9346efd8-912e-4c9d-91a4-ecab711bf3df",
+  "keptName": "Body strapless blanco",
+  "batch": "DINAMIC FASHION"
+ },
+ {
+  "removed": "import-c2866828-213a-4bc5-b00d-59f9c613a684",
+  "name": "Top cropped de morley con breteles finos",
+  "keptAs": "import-aeb3450c-2295-4ec7-bbcd-481bffee9b29",
+  "keptName": "Top Musculosa Blanco con Escote Fruncido",
+  "batch": "DINAMIC FASHION"
+ },
+ {
+  "removed": "import-eb9b561a-276a-41b4-add3-92f41536821d",
+  "name": "Pollera corta cruzada a lunares",
+  "keptAs": "import-f303e6d7-4c0c-4d89-b39b-0c743329d404",
+  "keptName": "Minifalda cruzada de jean con lunares",
+  "batch": "1 FASHION SS26"
+ },
+ {
+  "removed": "import-3f9ba424-32fc-40d6-b8b8-19508212f45a",
+  "name": "Bikini triángulo rayas amarillas",
+  "keptAs": "import-b2bae1e5-1d87-4b37-bc91-b0aa7bfa4dff",
+  "keptName": "Bikini triángulo rayas amarillas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-3a042133-b12b-4b77-8892-f98924bf1e00",
+  "name": "Bikini triángulo tie-dye rosa y lima",
+  "keptAs": "import-953645ca-e35f-4120-9203-d74c852c3304",
+  "keptName": "Bikini triángulo tie-dye rosa y lima",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-dfece905-93f4-46fd-9b30-ed775322ab97",
+  "name": "Bikini triángulo rayas amarillas",
+  "keptAs": "import-3f745292-d4a2-4074-96dc-c849d72c41d2",
+  "keptName": "Bikini triángulo rayas amarillas",
+  "batch": "SUNDAY BRUNCH SS26"
+ },
+ {
+  "removed": "import-ba1e0302-7c72-486b-ad5f-58af2a0a5823",
+  "name": "Tabla de talles de pantalón",
+  "keptAs": null,
+  "keptName": "(no es prenda)",
+  "batch": "SOLI ECHO"
+ },
+ {
+  "removed": "import-f0dfd213-2137-42b4-b5c4-5b4a9b59a1a4",
+  "name": "Cinturón clásico con hebilla",
+  "keptAs": null,
+  "keptName": "(no es prenda)",
+  "batch": "FAME ACCESORIES"
+ }
+]

@@ -75,6 +75,49 @@ async function collectDropped(dataTransfer) {
   return { files, folder };
 }
 
+// Descomprime un .zip en el navegador y devuelve sus imágenes como File, con la
+// carpeta inmediata de cada una. Así un zip grande se sube imagen por imagen en
+// vez de viajar entero como un único JSON en base64 (que los proxies cortan).
+async function readZipImages(zip) {
+  const tailSize = Math.min(zip.size, 22 + 65535);
+  const tail = new DataView(await zip.slice(zip.size - tailSize).arrayBuffer());
+  let eocd = -1;
+  for (let index = tailSize - 22; index >= 0; index -= 1) {
+    if (tail.getUint32(index, true) === 0x06054b50) { eocd = index; break; }
+  }
+  if (eocd < 0) throw new Error(`"${zip.name}" no es un archivo ZIP válido.`);
+  const count = tail.getUint16(eocd + 10, true);
+  const dirSize = tail.getUint32(eocd + 12, true);
+  const dirOffset = tail.getUint32(eocd + 16, true);
+  if (count === 0xffff || dirOffset === 0xffffffff) throw new Error(`"${zip.name}" usa formato ZIP64; comprimilo de nuevo en partes más chicas.`);
+  const dir = new DataView(await zip.slice(dirOffset, dirOffset + dirSize).arrayBuffer());
+  const decoder = new TextDecoder();
+  const images = [];
+  let ignored = 0;
+  let offset = 0;
+  for (let index = 0; index < count && offset + 46 <= dir.byteLength; index += 1) {
+    if (dir.getUint32(offset, true) !== 0x02014b50) break;
+    const method = dir.getUint16(offset + 10, true);
+    const compressedSize = dir.getUint32(offset + 20, true);
+    const nameLength = dir.getUint16(offset + 28, true);
+    const extraLength = dir.getUint16(offset + 30, true);
+    const commentLength = dir.getUint16(offset + 32, true);
+    const localOffset = dir.getUint32(offset + 42, true);
+    const name = decoder.decode(new Uint8Array(dir.buffer, offset + 46, nameLength)).replaceAll("\\", "/");
+    offset += 46 + nameLength + extraLength + commentLength;
+    if (name.endsWith("/")) continue;
+    const parts = name.split("/").filter(Boolean);
+    const base = parts[parts.length - 1] || "";
+    if (name.includes("__MACOSX") || !isImage({ name: base }) || (method !== 0 && method !== 8)) { ignored += 1; continue; }
+    const header = new DataView(await zip.slice(localOffset, localOffset + 30).arrayBuffer());
+    const dataStart = localOffset + 30 + header.getUint16(26, true) + header.getUint16(28, true);
+    const raw = zip.slice(dataStart, dataStart + compressedSize);
+    const blob = method === 0 ? raw : await new Response(raw.stream().pipeThrough(new DecompressionStream("deflate-raw"))).blob();
+    images.push({ file: new File([blob], base), folder: parts.length > 1 ? parts[parts.length - 2] : null });
+  }
+  return { images, ignored };
+}
+
 // Sube tareas de a 4 en paralelo, informando progreso.
 async function pool(tasks, onProgress, size = 4) {
   let index = 0;
@@ -282,34 +325,35 @@ export function BatchImportPanel({ onBack }) {
     setError("");
     const images = entries.filter(({ file }) => isImage(file));
     const zips = entries.filter(({ file }) => isZip(file));
-    const ignored = entries.length - images.length - zips.length;
+    let ignored = entries.length - images.length - zips.length;
     if (!images.length && !zips.length) {
       setNotice(`0 subidas, ${entries.length} ignoradas (solo jpg, jpeg, png, webp o zip).`);
       return;
     }
     try {
+      if (zips.length) setNotice(`Descomprimiendo ${zips.length === 1 ? zips[0].file.name : `${zips.length} archivos .zip`}…`);
+      for (const { file } of zips) {
+        const extracted = await readZipImages(file);
+        images.push(...extracted.images);
+        ignored += extracted.ignored;
+      }
+      if (!images.length) {
+        setNotice(`0 subidas, ${ignored} ignoradas (el .zip no tenía imágenes jpg, jpeg, png o webp).`);
+        return;
+      }
       const name = suggestedName || (zips[0] ? zips[0].file.name.replace(/\.zip$/i, "") : null) || `Lote ${new Date().toLocaleString("es")}`;
       const created = await api(API, { method: "POST", body: JSON.stringify({ name }) });
       let agregadas = 0;
-      let ignoradasServer = 0;
-      setUpload({ done: 0, total: images.length + zips.length });
-      const tasks = [
-        ...images.map(({ file, folder }) => async () => {
-          const imageDataUrl = await fileToDataUrl(file);
-          await api(`${API}/${created.id}/images`, { method: "POST", body: JSON.stringify({ imageDataUrl, fileName: file.name, folderName: folder }) });
-          agregadas += 1;
-        }),
-        ...zips.map(({ file }) => async () => {
-          const zipDataUrl = await fileToDataUrl(file);
-          const result = await api(`${API}/${created.id}/zip`, { method: "POST", body: JSON.stringify({ zipDataUrl }) });
-          agregadas += result.agregadas;
-          ignoradasServer += result.ignoradas;
-        }),
-      ];
+      setUpload({ done: 0, total: images.length });
+      const tasks = images.map(({ file, folder }) => async () => {
+        const imageDataUrl = await fileToDataUrl(file);
+        await api(`${API}/${created.id}/images`, { method: "POST", body: JSON.stringify({ imageDataUrl, fileName: file.name, folderName: folder }) });
+        agregadas += 1;
+      });
       const results = await pool(tasks, (done, total) => setUpload({ done, total }));
-      const failed = results.filter((result) => result?.error).length;
+      const failures = results.filter((result) => result?.error);
       setUpload(null);
-      setNotice(`${agregadas} subidas, ${ignored + ignoradasServer + failed} ignoradas.`);
+      setNotice(`${agregadas} subidas, ${ignored + failures.length} ignoradas.${failures.length ? ` Error: ${failures[0].error}` : ""}`);
       await refreshBatches();
       setActiveId(created.id);
       setTab("activas");

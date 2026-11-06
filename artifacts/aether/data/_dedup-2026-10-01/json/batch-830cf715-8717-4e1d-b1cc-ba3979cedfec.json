@@ -1,0 +1,2484 @@
+{
+  "id": "830cf715-8717-4e1d-b1cc-ba3979cedfec",
+  "name": "ADORA",
+  "createdAt": "2026-09-30T12:25:20.972Z",
+  "items": [
+    {
+      "id": "bc900ba6-5b70-40f3-b475-4da7528c3270",
+      "fileName": "04c21ae3-910c-4ff1-908e-4f1b83265580.jpg",
+      "folderName": "ADORA",
+      "file": "bc900ba6-5b70-40f3-b475-4da7528c3270.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a07669ba-bac7-4a3d-bee3-d24715ec9b87",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordado crema",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas de encaje",
+        "colores": [
+          "#f3eee7",
+          "#dfd7c8"
+        ],
+        "descripcion": "Blusa de encaje semitransparente en tono crema con delicado bordado floral en relieve, mangas cortas abullonadas con terminaciones festoneadas y ruedo trabajado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de encaje bordado",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordado crema",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas de encaje",
+        "colores": [
+          "#f3eee7",
+          "#dfd7c8"
+        ],
+        "descripcion": "Blusa de encaje semitransparente en tono crema con delicado bordado floral en relieve, mangas cortas abullonadas con terminaciones festoneadas y ruedo trabajado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de encaje bordado",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:21.266Z",
+      "errorDetail": null
+    },
+    {
+      "id": "15e0b666-721a-4f58-8e2b-04bb3f06ca91",
+      "fileName": "0473cd05-aa20-4a31-96da-99337c4df9c2.jpg",
+      "folderName": "ADORA",
+      "file": "15e0b666-721a-4f58-8e2b-04bb3f06ca91.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-10314874-d832-4328-a0d3-cb10c3d29f62",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa bordada broderie crema",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f7f4eb"
+        ],
+        "descripcion": "Blusa holgada en tono crema con detalles bordados en broderie, mangas cortas, escote redondo con puntilla y zócalo calado en el ruedo. Un diseño fresco y femenino de estilo romántico.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "pulsera",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa bordada broderie crema",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f7f4eb"
+        ],
+        "descripcion": "Blusa holgada en tono crema con detalles bordados en broderie, mangas cortas, escote redondo con puntilla y zócalo calado en el ruedo. Un diseño fresco y femenino de estilo romántico.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "pulsera",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:21.270Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d02c1fe0-ed3f-44ff-bd37-ceab0c8db3ba",
+      "fileName": "0ad38ef1-0dbb-4586-833f-97effd4aac53.jpg",
+      "folderName": "ADORA",
+      "file": "d02c1fe0-ed3f-44ff-bd37-ceab0c8db3ba.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e2d43597-3981-49f9-ac74-01172b412933",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de jean bordado boho",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3b619d"
+        ],
+        "descripcion": "Chaleco de jean estilo boho con bordados florales calados y terminaciones en crochet. Presenta escote en V y cierre frontal con botones.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Chaleco de jean bordado",
+        "prendasSecundarias": [
+          "Musculosa negra",
+          "Short de jean gastado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de jean bordado boho",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3b619d"
+        ],
+        "descripcion": "Chaleco de jean estilo boho con bordados florales calados y terminaciones en crochet. Presenta escote en V y cierre frontal con botones.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Chaleco de jean bordado",
+        "prendasSecundarias": [
+          "Musculosa negra",
+          "Short de jean gastado"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:21.541Z",
+      "errorDetail": null
+    },
+    {
+      "id": "fb296351-da91-442a-8aa7-6e5fefb32950",
+      "fileName": "223615ac-fca0-4956-bc02-90282157f4af.jpg",
+      "folderName": "ADORA",
+      "file": "fb296351-da91-442a-8aa7-6e5fefb32950.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-53408612-4423-48ed-959b-68feef7d21fa",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Tabla de talles",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "other",
+        "gender": "mujer",
+        "subcategoria": "Guía de talles",
+        "colores": [
+          "#666666",
+          "#b38c8f"
+        ],
+        "descripcion": "Guía de talles ilustrada con medidas de busto, cintura, cadera y tiro para prendas superiores e inferiores.",
+        "recorte": null,
+        "confianza": 0.9,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Tabla de talles",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Tabla de talles",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Guía de talles",
+        "colores": [
+          "#666666",
+          "#b38c8f"
+        ],
+        "descripcion": "Guía de talles ilustrada con medidas de busto, cintura, cadera y tiro para prendas superiores e inferiores.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Tabla de talles",
+        "prendasSecundarias": [],
+        "confianza": 0.9,
+        "garmentType": "other",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:21.618Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0cdf4c74-c5a5-4536-bec5-40898ce69616",
+      "fileName": "23e95d79-26f7-477f-93d6-31bb4813e218.jpg",
+      "folderName": "ADORA",
+      "file": "0cdf4c74-c5a5-4536-bec5-40898ce69616.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ef22910f-a41b-4768-a6a9-a0e40ea52887",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Tabla de talles",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "other",
+        "gender": "mujer",
+        "subcategoria": "Guía de talles",
+        "colores": [
+          "#ffffff",
+          "#8c8c8c"
+        ],
+        "descripcion": "Tabla informativa de talles para prendas femeninas con especificaciones de medidas para busto, cintura, cadera y tiro.",
+        "recorte": null,
+        "confianza": 0.9,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Tabla de talles",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Tabla de talles",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Guía de talles",
+        "colores": [
+          "#ffffff",
+          "#8c8c8c"
+        ],
+        "descripcion": "Tabla informativa de talles para prendas femeninas con especificaciones de medidas para busto, cintura, cadera y tiro.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Tabla de talles",
+        "prendasSecundarias": [],
+        "confianza": 0.9,
+        "garmentType": "other",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:21.811Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ee45f1a6-7333-4bb4-afb4-ca8e2f7116af",
+      "fileName": "30eeccaa-45a2-4951-ae43-f1510d403457.jpg",
+      "folderName": "ADORA",
+      "file": "ee45f1a6-7333-4bb4-afb4-ca8e2f7116af.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f8e230b6-e41a-4e54-80f6-8691ae5042af",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de jean bordado boho",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "chalecos",
+        "colores": [
+          "#3c6ea6",
+          "#eae3d2"
+        ],
+        "descripcion": "Chaleco de jean sin mangas con bordado floral artesanal en tono marfil y terminaciones en puntilla tejida. Posee cierre frontal con botones y corte suelto de estilo boho chic.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean bordado",
+        "prendasSecundarias": [
+          "top negro",
+          "short de jean",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de jean bordado boho",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "chalecos",
+        "colores": [
+          "#3c6ea6",
+          "#eae3d2"
+        ],
+        "descripcion": "Chaleco de jean sin mangas con bordado floral artesanal en tono marfil y terminaciones en puntilla tejida. Posee cierre frontal con botones y corte suelto de estilo boho chic.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean bordado",
+        "prendasSecundarias": [
+          "top negro",
+          "short de jean",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:21.880Z",
+      "errorDetail": null
+    },
+    {
+      "id": "935ffa46-75a9-4e91-b649-e412bef846a9",
+      "fileName": "31380fba-ce62-484d-aaf4-8b11cd8528ac.jpg",
+      "folderName": "ADORA",
+      "file": "935ffa46-75a9-4e91-b649-e412bef846a9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d10a6147-fb52-4ae1-b88f-0e8219f204fc",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa bordada con mangas abuchonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f4f0e8"
+        ],
+        "descripcion": "Blusa romántica en tono crema con detalles bordados, escote redondo y mangas cortas abuchonadas. Presenta un delicado trabajo de fruncidos en el pecho y terminación calada en el ruedo, ideal para lograr un estilo fresco y boho.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa bordada crema",
+        "prendasSecundarias": [
+          "short de jean",
+          "botas crema",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa bordada con mangas abuchonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f4f0e8"
+        ],
+        "descripcion": "Blusa romántica en tono crema con detalles bordados, escote redondo y mangas cortas abuchonadas. Presenta un delicado trabajo de fruncidos en el pecho y terminación calada en el ruedo, ideal para lograr un estilo fresco y boho.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa bordada crema",
+        "prendasSecundarias": [
+          "short de jean",
+          "botas crema",
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:21.937Z",
+      "errorDetail": null
+    },
+    {
+      "id": "08c3b9ae-9845-472b-888d-1c1387e6a869",
+      "fileName": "37c84572-10f5-4e5e-b648-1d983c44efde.jpg",
+      "folderName": "ADORA",
+      "file": "08c3b9ae-9845-472b-888d-1c1387e6a869.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ab501b44-f248-43de-aa10-925fbfdacfcb",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de broderie blanca con mangas abullonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa romántica blanca confeccionada en tela bordada tipo broderie. Cuenta con mangas cortas abullonadas, escote redondo con detalle de puntilla, elásticos fruncidos en el torso y ruedo festoneado calado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "collar",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de broderie blanca con mangas abullonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa romántica blanca confeccionada en tela bordada tipo broderie. Cuenta con mangas cortas abullonadas, escote redondo con detalle de puntilla, elásticos fruncidos en el torso y ruedo festoneado calado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "collar",
+          "aros"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.094Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ba62f60c-f6ac-44df-bfcf-4ca5bfbc01f1",
+      "fileName": "43e85550-23aa-417e-8c18-b7f67351a03d.jpg",
+      "folderName": "ADORA",
+      "file": "ba62f60c-f6ac-44df-bfcf-4ca5bfbc01f1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-c171c7f6-0f39-4385-a2eb-abe090bdb039",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa Romántica Broderie Crema",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de manga corta",
+        "colores": [
+          "#f3eee3"
+        ],
+        "descripcion": "Blusa holgada confeccionada en tela bordada estilo broderie de color crema. Posee escote redondo, detalle de fruncido en el pecho, mangas cortas abullonadas y ruedo festoneado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa bordada",
+        "prendasSecundarias": [
+          "short de jean",
+          "aritos",
+          "collar",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa Romántica Broderie Crema",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de manga corta",
+        "colores": [
+          "#f3eee3"
+        ],
+        "descripcion": "Blusa holgada confeccionada en tela bordada estilo broderie de color crema. Posee escote redondo, detalle de fruncido en el pecho, mangas cortas abullonadas y ruedo festoneado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa bordada",
+        "prendasSecundarias": [
+          "short de jean",
+          "aritos",
+          "collar",
+          "pulsera"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.165Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c9cda0a6-df7e-491a-a110-7a1112d8a927",
+      "fileName": "48851c0a-bc52-4992-8ac4-2be145b19865.jpg",
+      "folderName": "ADORA",
+      "file": "c9cda0a6-df7e-491a-a110-7a1112d8a927.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8c96b9c1-5ed8-4246-ab33-89f07d5c4fbd",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco denim bordado boho",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "chalecos",
+        "colores": [
+          "#eae6df"
+        ],
+        "descripcion": "Chaleco de jean azul con bordados florales en tono crudo, detalles de crochet en los bordes y cierre frontal con botones de madera.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco denim bordado",
+        "prendasSecundarias": [
+          "musculosa negra",
+          "short de jean",
+          "pulsera",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco denim bordado boho",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "chalecos",
+        "colores": [
+          "#eae6df"
+        ],
+        "descripcion": "Chaleco de jean azul con bordados florales en tono crudo, detalles de crochet en los bordes y cierre frontal con botones de madera.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco denim bordado",
+        "prendasSecundarias": [
+          "musculosa negra",
+          "short de jean",
+          "pulsera",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.174Z",
+      "errorDetail": null
+    },
+    {
+      "id": "896134ed-fe40-4fdc-ae8c-a3569af93404",
+      "fileName": "4cf0f83c-0769-439d-9cb7-5c0690aef689.jpg",
+      "folderName": "ADORA",
+      "file": "896134ed-fe40-4fdc-ae8c-a3569af93404.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ea2d0129-b4fa-42e0-ac00-9d256b7066ac",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de jean bordado estilo boho",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3a6094",
+          "#e5dcd0",
+          "#1c1c1e"
+        ],
+        "descripcion": "Chaleco corto de jean con entredós calado y bordados florales en blanco. Presenta corte sin mangas, escote en V y botones frontales estilo rústico.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean bordado",
+        "prendasSecundarias": [
+          "musculosa negra",
+          "short de jean",
+          "aros",
+          "collar",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de jean bordado estilo boho",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3a6094",
+          "#e5dcd0",
+          "#1c1c1e"
+        ],
+        "descripcion": "Chaleco corto de jean con entredós calado y bordados florales en blanco. Presenta corte sin mangas, escote en V y botones frontales estilo rústico.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean bordado",
+        "prendasSecundarias": [
+          "musculosa negra",
+          "short de jean",
+          "aros",
+          "collar",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.238Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4dfbe293-fb66-43d7-9f40-f1f3a333464c",
+      "fileName": "4d318063-94a1-4e74-b4ff-4b3bc5d30d4e.jpg",
+      "folderName": "ADORA",
+      "file": "4dfbe293-fb66-43d7-9f40-f1f3a333464c.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1bd7b56e-27ea-4163-9329-a047ddc8e1d6",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordado con terminación festoneada",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f2ece1"
+        ],
+        "descripcion": "Blusa de encaje en tono marfil con bordados florales, cuello redondo, mangas cortas levemente abullonadas y dobladillo festoneado. Una prenda delicada y romántica, perfecta para armar looks veraniegos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "cadena"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordado con terminación festoneada",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f2ece1"
+        ],
+        "descripcion": "Blusa de encaje en tono marfil con bordados florales, cuello redondo, mangas cortas levemente abullonadas y dobladillo festoneado. Una prenda delicada y romántica, perfecta para armar looks veraniegos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "cadena"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.384Z",
+      "errorDetail": null
+    },
+    {
+      "id": "324b8e5b-7005-4d96-ae44-383b52d5453a",
+      "fileName": "68fca34b-d11d-45e2-a436-788bde25fd7c.jpg",
+      "folderName": "ADORA",
+      "file": "324b8e5b-7005-4d96-ae44-383b52d5453a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5f0073d2-26a9-4ba4-b19f-a8aac09d71d9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top de jean bordado",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops de jean",
+        "colores": [
+          "#2d5182"
+        ],
+        "descripcion": "Top corto de jean sin mangas con bordados florales en tono blanco en la espalda y terminaciones festoneadas tejido al crochet.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top de jean bordado",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top de jean bordado",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops de jean",
+        "colores": [
+          "#2d5182"
+        ],
+        "descripcion": "Top corto de jean sin mangas con bordados florales en tono blanco en la espalda y terminaciones festoneadas tejido al crochet.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top de jean bordado",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.533Z",
+      "errorDetail": null
+    },
+    {
+      "id": "373aa4a1-3661-4709-9b61-f3d75f610aa7",
+      "fileName": "7775abab-bbdc-4e66-a5e2-12c6c86afe24.jpg",
+      "folderName": "ADORA",
+      "file": "373aa4a1-3661-4709-9b61-f3d75f610aa7.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f549385e-d7f4-4e6e-ab10-bbe728d75834",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordada con mangas abullonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#f5f2eb"
+        ],
+        "descripcion": "Blusa delicada confeccionada en encaje floral bordado sobre tul transparente, en tono marfil. Presenta escote redondo, mangas cortas abullonadas y bordes festoneados en el ruedo que le aportan un toque romántico y femenino.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "anillo"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordada con mangas abullonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#f5f2eb"
+        ],
+        "descripcion": "Blusa delicada confeccionada en encaje floral bordado sobre tul transparente, en tono marfil. Presenta escote redondo, mangas cortas abullonadas y bordes festoneados en el ruedo que le aportan un toque romántico y femenino.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "anillo"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.590Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ce4236cc-a6cc-4424-b6fa-cc1db44db862",
+      "fileName": "783667ca-8036-47df-87a3-22164bb642a1.jpg",
+      "folderName": "ADORA",
+      "file": "ce4236cc-a6cc-4424-b6fa-cc1db44db862.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ed51fcfd-5907-4d01-88e2-4ff056a43d16",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordado con terminación festoneada",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#f4efea"
+        ],
+        "descripcion": "Blusa de encaje semitransparente con delicados bordados florales, mangas cortas con vuelo y terminación festoneada en el ruedo. Un diseño de estilo romántico y fresco, perfecto para combinar con prendas de tiro alto.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "collar dorado",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordado con terminación festoneada",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#f4efea"
+        ],
+        "descripcion": "Blusa de encaje semitransparente con delicados bordados florales, mangas cortas con vuelo y terminación festoneada en el ruedo. Un diseño de estilo romántico y fresco, perfecto para combinar con prendas de tiro alto.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "collar dorado",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.651Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a16e2206-d785-42ab-931b-adcb98d2c5ae",
+      "fileName": "7ad36bb4-e7f1-4c3e-aa9e-908e1c8253f6.jpg",
+      "folderName": "ADORA",
+      "file": "a16e2206-d785-42ab-931b-adcb98d2c5ae.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5a1ee6f5-aa7d-47e8-8c24-902389cbae32",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje con calados y bordados florales",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa blanca de encaje traslúcido con delicados bordados florales, escote redondo, mangas cortas abullonadas con elástico y terminación festoneada en dobladillo. Un diseño romántico y fresco ideal para armar un look delicado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de encaje blanca",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "anillo"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje con calados y bordados florales",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa blanca de encaje traslúcido con delicados bordados florales, escote redondo, mangas cortas abullonadas con elástico y terminación festoneada en dobladillo. Un diseño romántico y fresco ideal para armar un look delicado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de encaje blanca",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "anillo"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.812Z",
+      "errorDetail": null
+    },
+    {
+      "id": "493ea472-8f01-4c81-957f-396e060d5c9f",
+      "fileName": "872219dd-bc76-43ff-8979-9c553aeadb14.jpg",
+      "folderName": "ADORA",
+      "file": "493ea472-8f01-4c81-957f-396e060d5c9f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-bc5b9611-6041-4bc9-8b51-d851bc3620f6",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa romántica con broderie y nido de abeja",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas de manga corta",
+        "colores": [
+          "#f5f1e6",
+          "#e8dfc8"
+        ],
+        "descripcion": "Blusa femenina en tono marfil confeccionada en tela liviana con bordados broderie, detalle de elástico fruncido en el torax y terminaciones con puntilla. Presenta mangas cortas y un corte evase holgado, perfecto para un look fresco y romántico.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie marfil",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collar",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa romántica con broderie y nido de abeja",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas de manga corta",
+        "colores": [
+          "#f5f1e6",
+          "#e8dfc8"
+        ],
+        "descripcion": "Blusa femenina en tono marfil confeccionada en tela liviana con bordados broderie, detalle de elástico fruncido en el torax y terminaciones con puntilla. Presenta mangas cortas y un corte evase holgado, perfecto para un look fresco y romántico.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie marfil",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collar",
+          "pulsera"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.902Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b38e64b4-0897-4ba3-b9a3-535f0670e1a5",
+      "fileName": "88520f2e-49b3-421e-9da7-4511cc8fe9b4.jpg",
+      "folderName": "ADORA",
+      "file": "b38e64b4-0897-4ba3-b9a3-535f0670e1a5.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-c2f84f96-4bdd-45de-b973-238e09f0c3a6",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de Jean Bordado con Puntilla",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3b6197"
+        ],
+        "descripcion": "Chaleco denim corto sin mangas con bordados florales blancos, terminaciones en puntilla al crochet y abotonadura frontal. Un diseño de estilo boho ideal para combinar en días cálidos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean bordado",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de Jean Bordado con Puntilla",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3b6197"
+        ],
+        "descripcion": "Chaleco denim corto sin mangas con bordados florales blancos, terminaciones en puntilla al crochet y abotonadura frontal. Un diseño de estilo boho ideal para combinar en días cálidos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean bordado",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.912Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f8d6daf4-dbc4-4aac-b68b-9e30005689c3",
+      "fileName": "8ecb5061-5cb5-4704-ad21-f4cfea6835a1.jpg",
+      "folderName": "ADORA",
+      "file": "f8d6daf4-dbc4-4aac-b68b-9e30005689c3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1ac35764-7baa-4026-b8ef-af3d291e6c19",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordada con festón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa de encaje translúcido con bordados florales, mangas abullonadas y terminaciones caladas en festón. Un diseño de estilo romántico ideal para combinar con prendas de tiro alto.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "anillo"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordada con festón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa de encaje translúcido con bordados florales, mangas abullonadas y terminaciones caladas en festón. Un diseño de estilo romántico ideal para combinar con prendas de tiro alto.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "anillo"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:22.987Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c0743298-7601-4999-be82-ff7a39c1e94e",
+      "fileName": "91aed225-6eb5-45fa-99ab-a8cd749310d2.jpg",
+      "folderName": "ADORA",
+      "file": "c0743298-7601-4999-be82-ff7a39c1e94e.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f3cae53c-184d-4521-9c98-f969935aa773",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa calada de encaje con bordado floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#f5f5f5"
+        ],
+        "descripcion": "Blusa romántica de encaje traslúcido con bordados florales, bordes festoneados y mangas tres cuartos abullonadas. Una prenda delicada y fresca para destacar cualquier conjunto.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "anillo",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa calada de encaje con bordado floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#f5f5f5"
+        ],
+        "descripcion": "Blusa romántica de encaje traslúcido con bordados florales, bordes festoneados y mangas tres cuartos abullonadas. Una prenda delicada y fresca para destacar cualquier conjunto.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "anillo",
+          "pulsera"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.122Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c349436c-a791-4b9b-a8af-fe5d2bf8985f",
+      "fileName": "926107f9-9830-4584-a098-93efd7ab063d.jpg",
+      "folderName": "ADORA",
+      "file": "c349436c-a791-4b9b-a8af-fe5d2bf8985f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4ab5256e-7868-45f2-8280-0384441f93ba",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordada en tono marfil",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas de encaje",
+        "colores": [
+          "#f4f0e6"
+        ],
+        "descripcion": "Blusa de encaje semi transparente con bordados delicados, mangas cortas abullonadas y terminaciones caladas en los bordes. Un diseño romántico ideal para combinar con prendas urbanas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "botas cortas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordada en tono marfil",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas de encaje",
+        "colores": [
+          "#f4f0e6"
+        ],
+        "descripcion": "Blusa de encaje semi transparente con bordados delicados, mangas cortas abullonadas y terminaciones caladas en los bordes. Un diseño romántico ideal para combinar con prendas urbanas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "botas cortas"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.243Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c3966d63-a947-43b1-8c3e-e256eeb32745",
+      "fileName": "92d325e0-3743-4584-8ea0-8318f992ca17.jpg",
+      "folderName": "ADORA",
+      "file": "c3966d63-a947-43b1-8c3e-e256eeb32745.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-7c595fad-6117-4c87-a5d0-b7502d60ac3d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de broderie con mangas abullonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f4efe6"
+        ],
+        "descripcion": "Blusa romántica en tono crema con detalles de broderie, mangas cortas abullonadas, fruncido en el pecho y ruedo calado festoneado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collar",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de broderie con mangas abullonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f4efe6"
+        ],
+        "descripcion": "Blusa romántica en tono crema con detalles de broderie, mangas cortas abullonadas, fruncido en el pecho y ruedo calado festoneado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collar",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.255Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6f75c3ba-65c6-4759-85b2-ad776a1faa57",
+      "fileName": "9f06b312-8ce7-400a-9730-ac47cad64c7e.jpg",
+      "folderName": "ADORA",
+      "file": "6f75c3ba-65c6-4759-85b2-ad776a1faa57.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-91d33c03-9c22-4228-b930-744c310faeba",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco denim bordado",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3c6091",
+          "#e5dfd3"
+        ],
+        "descripcion": "Chaleco de jean sin mangas con bordados florales en contraste, detalles de puntilla tejida en los bordes y cierre frontal con botones. Un diseño boho chic de calce entallado y largo cropped.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco denim bordado",
+        "prendasSecundarias": [
+          "short de jean con roturas",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco denim bordado",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3c6091",
+          "#e5dfd3"
+        ],
+        "descripcion": "Chaleco de jean sin mangas con bordados florales en contraste, detalles de puntilla tejida en los bordes y cierre frontal con botones. Un diseño boho chic de calce entallado y largo cropped.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco denim bordado",
+        "prendasSecundarias": [
+          "short de jean con roturas",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.326Z",
+      "errorDetail": null
+    },
+    {
+      "id": "39c3d00b-bb52-478f-9960-ac8d6f5e10c7",
+      "fileName": "afd760c5-6b3a-459e-b639-ffbea40db472.jpg",
+      "folderName": "ADORA",
+      "file": "39c3d00b-bb52-478f-9960-ac8d6f5e10c7.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5e2e98d8-2ae1-4407-b546-3c8920df0e7d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco denim bordado",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3d6195"
+        ],
+        "descripcion": "Chaleco de jean azul con bordados florales contrastantes en blanco, escote en V y diseño sin mangas. Ideal para sumar un toque boho a cualquier look casual.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean bordado",
+        "prendasSecundarias": [
+          "musculosa negra",
+          "short de jean",
+          "sandalias de taco"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco denim bordado",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#3d6195"
+        ],
+        "descripcion": "Chaleco de jean azul con bordados florales contrastantes en blanco, escote en V y diseño sin mangas. Ideal para sumar un toque boho a cualquier look casual.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean bordado",
+        "prendasSecundarias": [
+          "musculosa negra",
+          "short de jean",
+          "sandalias de taco"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.385Z",
+      "errorDetail": null
+    },
+    {
+      "id": "659486aa-6341-471b-9021-e4a79c4515a8",
+      "fileName": "b136d11b-0f54-4f63-85e8-6fff7a8b1451.jpg",
+      "folderName": "ADORA",
+      "file": "659486aa-6341-471b-9021-e4a79c4515a8.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-dabde868-e51a-484e-82df-b2b4c061e27f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de broderie blanca con volados",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f7f5f0"
+        ],
+        "descripcion": "Blusa romántica de broderie en color blanco, con mangas cortas abullonadas, detalles bordados calados y terminación de puntilla en el ruedo. Presenta recortes fruncidos que le otorgan soltura y vuelo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de broderie blanca con volados",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f7f5f0"
+        ],
+        "descripcion": "Blusa romántica de broderie en color blanco, con mangas cortas abullonadas, detalles bordados calados y terminación de puntilla en el ruedo. Presenta recortes fruncidos que le otorgan soltura y vuelo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collar"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.509Z",
+      "errorDetail": null
+    },
+    {
+      "id": "522d1d7b-6df7-4725-85d2-47b884a4284d",
+      "fileName": "b289879f-b42a-4ed4-910e-314b00758f3e.jpg",
+      "folderName": "ADORA",
+      "file": "522d1d7b-6df7-4725-85d2-47b884a4284d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-94fe9168-e032-4441-9fc3-3ce7a0b8dd2c",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de broderie blanca con mangas abullonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa de broderie en color blanco con cuello redondo, mangas cortas abullonadas y detalle de vuelo en el ruedo. Un diseño fresco y romántico, ideal para combinar con prendas de jean.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie blanca",
+        "prendasSecundarias": [
+          "short de jean",
+          "joyería"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de broderie blanca con mangas abullonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa de broderie en color blanco con cuello redondo, mangas cortas abullonadas y detalle de vuelo en el ruedo. Un diseño fresco y romántico, ideal para combinar con prendas de jean.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie blanca",
+        "prendasSecundarias": [
+          "short de jean",
+          "joyería"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.573Z",
+      "errorDetail": null
+    },
+    {
+      "id": "55e35688-5ee2-441b-9168-d67fc92a8916",
+      "fileName": "b4b0eec2-d19a-42a6-8298-365c8879ed75.jpg",
+      "folderName": "ADORA",
+      "file": "55e35688-5ee2-441b-9168-d67fc92a8916.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-02255fe1-8feb-48c4-a796-054bfa446df1",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordada romántica",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#f5f2eb",
+          "#ece6d8"
+        ],
+        "descripcion": "Blusa de encaje transparente con delicados bordados florales y bordes festoneados. Presenta mangas cortas abuchonadas con detalle de volados en los puños, ideal para lograr un look romántico y veraniego.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordada romántica",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#f5f2eb",
+          "#ece6d8"
+        ],
+        "descripcion": "Blusa de encaje transparente con delicados bordados florales y bordes festoneados. Presenta mangas cortas abuchonadas con detalle de volados en los puños, ideal para lograr un look romántico y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "collar"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.635Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f19fbe9f-30dd-48ff-a942-074553f786cc",
+      "fileName": "b7573c39-68fe-48a6-a0d5-0994fba9f3c9.jpg",
+      "folderName": "ADORA",
+      "file": "f19fbe9f-30dd-48ff-a942-074553f786cc.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-702605a1-f806-4766-84cc-3e623bd79435",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top cropped de jean con bordados",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops bordados",
+        "colores": [
+          "#3b629b"
+        ],
+        "descripcion": "Top estilo chaleco sin mangas confeccionado en denim azul, destacado por sus bordados florales calados en la espalda y terminaciones de puntilla en escote y ruedo. Un diseño fresco de estética boho.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top de jean bordado",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top cropped de jean con bordados",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops bordados",
+        "colores": [
+          "#3b629b"
+        ],
+        "descripcion": "Top estilo chaleco sin mangas confeccionado en denim azul, destacado por sus bordados florales calados en la espalda y terminaciones de puntilla en escote y ruedo. Un diseño fresco de estética boho.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top de jean bordado",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.695Z",
+      "errorDetail": null
+    },
+    {
+      "id": "25f56271-d345-498b-8002-6159a16238b8",
+      "fileName": "bb3c2850-e34f-4273-883d-4fdc5d64598a.jpg",
+      "folderName": "ADORA",
+      "file": "25f56271-d345-498b-8002-6159a16238b8.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-c7755a47-b2e7-4639-946c-74d86c5463a3",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa bordada romántica con mangas abullonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de manga corta",
+        "colores": [
+          "#f7f3e9"
+        ],
+        "descripcion": "Blusa romántica confeccionada en tela ligera de tono marfil, con detalles de bordado broderie, escote redondo con puntilla, nido de abeja fruncido en el busto y mangas cortas abullonadas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa bordada",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collares",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa bordada romántica con mangas abullonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de manga corta",
+        "colores": [
+          "#f7f3e9"
+        ],
+        "descripcion": "Blusa romántica confeccionada en tela ligera de tono marfil, con detalles de bordado broderie, escote redondo con puntilla, nido de abeja fruncido en el busto y mangas cortas abullonadas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa bordada",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collares",
+          "pulseras"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.775Z",
+      "errorDetail": null
+    },
+    {
+      "id": "5bc3c1a4-e51b-4e70-80db-ecaf04eb2a08",
+      "fileName": "c243e4f6-831f-4095-9639-6670cee64897.jpg",
+      "folderName": "ADORA",
+      "file": "5bc3c1a4-e51b-4e70-80db-ecaf04eb2a08.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5ac3f398-5e8e-4d7a-bda2-452e4f3ede48",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de broderie blanca con mangas cortas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f6f4f0"
+        ],
+        "descripcion": "Blusa de broderie en color blanco con mangas cortas abullonadas y detalle de festón en el ruedo. Presenta delicados bordados florales y cuello con puntilla, vista desde la espalda. Ideal para un look fresco y primaveral.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de broderie blanca con mangas cortas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f6f4f0"
+        ],
+        "descripcion": "Blusa de broderie en color blanco con mangas cortas abullonadas y detalle de festón en el ruedo. Presenta delicados bordados florales y cuello con puntilla, vista desde la espalda. Ideal para un look fresco y primaveral.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.843Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2ac3d9dd-10c3-46b0-a680-3755e37e52e6",
+      "fileName": "c501a814-6371-4a97-8ec4-3a8aa0fe6072.jpg",
+      "folderName": "ADORA",
+      "file": "2ac3d9dd-10c3-46b0-a680-3755e37e52e6.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-421de65e-11cd-4a48-aff6-89a71da15148",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordada blanca",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas de encaje",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa blanca calada en encaje con bordados florales y transparencias. Cuenta con cuello redondo, mangas cortas abullonadas y terminación festoneada en el ruedo y los puños.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de encaje blanca",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordada blanca",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas de encaje",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa blanca calada en encaje con bordados florales y transparencias. Cuenta con cuello redondo, mangas cortas abullonadas y terminación festoneada en el ruedo y los puños.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de encaje blanca",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.904Z",
+      "errorDetail": null
+    },
+    {
+      "id": "51429cc4-98c4-4294-95b1-d39cb28beb01",
+      "fileName": "cdf59d7e-b936-4902-bd8e-2df53a94bc37.jpg",
+      "folderName": "ADORA",
+      "file": "51429cc4-98c4-4294-95b1-d39cb28beb01.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e43dab1d-2559-4290-8963-e4cfaa7e0268",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de broderie blanca",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa holgada de broderie en color blanco, con escote redondo, mangas cortas y textura bordada con calados. Presenta terminación festonada en el ruedo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "pulsera",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de broderie blanca",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa holgada de broderie en color blanco, con escote redondo, mangas cortas y textura bordada con calados. Presenta terminación festonada en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "pulsera",
+          "collar"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:23.972Z",
+      "errorDetail": null
+    },
+    {
+      "id": "817c8797-ce70-4989-aef1-2a3bbf74b0d1",
+      "fileName": "ce030cff-abd2-4542-b9e5-7aa71a33fcca.jpg",
+      "folderName": "ADORA",
+      "file": "817c8797-ce70-4989-aef1-2a3bbf74b0d1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-6b83b5ed-c1d0-4b79-8bc7-291db17c1801",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa calada de encaje bordado",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa romántica confeccionada en encaje traslúcido con delicados bordados florales y detalles festoneados en el dobladillo y las mangas. Presenta escote redondo y mangas cortas estilo princesa.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje blanca",
+        "prendasSecundarias": [
+          "short de jean",
+          "botas blancas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa calada de encaje bordado",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa romántica confeccionada en encaje traslúcido con delicados bordados florales y detalles festoneados en el dobladillo y las mangas. Presenta escote redondo y mangas cortas estilo princesa.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje blanca",
+        "prendasSecundarias": [
+          "short de jean",
+          "botas blancas"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.043Z",
+      "errorDetail": null
+    },
+    {
+      "id": "05f53904-a88a-45b7-8e42-d361a6ed42c1",
+      "fileName": "cf576d8f-561d-484f-a708-7cadc9be7f93.jpg",
+      "folderName": "ADORA",
+      "file": "05f53904-a88a-45b7-8e42-d361a6ed42c1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f2ae81f5-e235-4c31-b929-bae18d97f3bb",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa broderie blanca con mangas abullonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas de broderie",
+        "colores": [
+          "#f6f6f6"
+        ],
+        "descripcion": "Blusa romántica en tono blanco confeccionada en tela broderie con calados florales. Presenta cuello redondo con detalles de puntilla, corte evaseé con pliegues en el busto, mangas cortas abullonadas y dobladillo festoneado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean destruido",
+          "collar",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa broderie blanca con mangas abullonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas de broderie",
+        "colores": [
+          "#f6f6f6"
+        ],
+        "descripcion": "Blusa romántica en tono blanco confeccionada en tela broderie con calados florales. Presenta cuello redondo con detalles de puntilla, corte evaseé con pliegues en el busto, mangas cortas abullonadas y dobladillo festoneado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean destruido",
+          "collar",
+          "pulsera"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.123Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ac79942f-1b12-4b9f-ac82-4a8beed33de9",
+      "fileName": "d3c95f42-b3bf-44ea-ba62-ee444972cd93.jpg",
+      "folderName": "ADORA",
+      "file": "ac79942f-1b12-4b9f-ac82-4a8beed33de9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1ce711b6-5309-4da3-8bbb-41b8021a7bfd",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa broderie peplum hueso",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f5f0eb"
+        ],
+        "descripcion": "Blusa de broderie en tono hueso con escote redondo, mangas cortas abullonadas, entalle en la cintura con caída peplum y detalles de bordado calado. Una prenda romántica y fresca ideal para días cálidos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collar",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa broderie peplum hueso",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f5f0eb"
+        ],
+        "descripcion": "Blusa de broderie en tono hueso con escote redondo, mangas cortas abullonadas, entalle en la cintura con caída peplum y detalles de bordado calado. Una prenda romántica y fresca ideal para días cálidos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collar",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.208Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ae61ba27-3ae6-450b-83cd-9ecd133238ae",
+      "fileName": "da0b08e0-04d2-40e3-9edf-ed8900b96994.jpg",
+      "folderName": "ADORA",
+      "file": "ae61ba27-3ae6-450b-83cd-9ecd133238ae.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-781e79c3-7661-4867-bf04-de88637a92d2",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chaleco de jean bordado",
+        "categoria": "jackets",
+        "categoriaInterna": "wholebody_up",
+        "garmentType": "jacket",
+        "gender": "mujer",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#ebe8e1",
+          "#1c1c1d"
+        ],
+        "descripcion": "Chaleco corto de jean azul con bordados florales en blanco y detalles calados en los bordes. Diseño sin mangas con escote en V, ideal para sumar estilo a un look urbano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean",
+        "prendasSecundarias": [
+          "short de jean",
+          "musculosa negra",
+          "sandalias de taco"
+        ]
+      },
+      "ficha": {
+        "nombre": "Chaleco de jean bordado",
+        "categoriaInterna": "wholebody_up",
+        "subcategoria": "Chalecos",
+        "colores": [
+          "#ebe8e1",
+          "#1c1c1d"
+        ],
+        "descripcion": "Chaleco corto de jean azul con bordados florales en blanco y detalles calados en los bordes. Diseño sin mangas con escote en V, ideal para sumar estilo a un look urbano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chaleco de jean",
+        "prendasSecundarias": [
+          "short de jean",
+          "musculosa negra",
+          "sandalias de taco"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jacket",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.260Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c45f6627-852b-4871-b74f-7133bcdf258d",
+      "fileName": "db475f12-e483-424f-98a0-189fb7ca76a5.jpg",
+      "folderName": "ADORA",
+      "file": "c45f6627-852b-4871-b74f-7133bcdf258d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e372917b-83a7-4fdf-a975-74538f055370",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordada con mangas abullonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa romántica de encaje blanco traslúcido con detalles de bordado floral y terminaciones festoneadas. Cuenta con cuello redondo y mangas cortas abullonadas con elástico en los puños.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje bordada",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "anillo"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordada con mangas abullonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa romántica de encaje blanco traslúcido con detalles de bordado floral y terminaciones festoneadas. Cuenta con cuello redondo y mangas cortas abullonadas con elástico en los puños.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje bordada",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "anillo"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.310Z",
+      "errorDetail": null
+    },
+    {
+      "id": "81fb3bc0-6742-4c02-b65a-4be81c584035",
+      "fileName": "e30bdc1b-ab1f-4325-8697-8709b878de0b.jpg",
+      "folderName": "ADORA",
+      "file": "81fb3bc0-6742-4c02-b65a-4be81c584035.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1604594f-f934-44b7-aecf-acf44fd865b0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordada con festón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#ffffff",
+          "#f5f2eb"
+        ],
+        "descripcion": "Blusa semitransparente de encaje blanco con delicados bordados florales, mangas abullonadas y bordes festoneados. Un diseño romántico y fresco ideal para armar outfits de estación.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordada con festón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#ffffff",
+          "#f5f2eb"
+        ],
+        "descripcion": "Blusa semitransparente de encaje blanco con delicados bordados florales, mangas abullonadas y bordes festoneados. Un diseño romántico y fresco ideal para armar outfits de estación.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.387Z",
+      "errorDetail": null
+    },
+    {
+      "id": "96656d45-77db-49c2-8efd-581e34d1e23e",
+      "fileName": "eb2f3cd4-40a0-41e0-9555-c2eff0760f5d.jpg",
+      "folderName": "ADORA",
+      "file": "96656d45-77db-49c2-8efd-581e34d1e23e.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-c52b0cfd-16a4-4c8f-a891-ef6c84765aba",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de broderie calada en tono marfil",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de broderie",
+        "colores": [
+          "#f4efe6"
+        ],
+        "descripcion": "Blusa romántica de manga corta abullonada en tono marfil, confeccionada con delicado bordado tipo broderie en toda la prenda y terminación festoneada en el ruedo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "collares",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de broderie calada en tono marfil",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de broderie",
+        "colores": [
+          "#f4efe6"
+        ],
+        "descripcion": "Blusa romántica de manga corta abullonada en tono marfil, confeccionada con delicado bordado tipo broderie en toda la prenda y terminación festoneada en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "collares",
+          "pulsera"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.475Z",
+      "errorDetail": null
+    },
+    {
+      "id": "fceafb1f-6869-4804-81db-674afbe4eee2",
+      "fileName": "ec741885-ab1c-4b8c-ada0-c3c8148abe75.jpg",
+      "folderName": "ADORA",
+      "file": "fceafb1f-6869-4804-81db-674afbe4eee2.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-305121c3-d05f-4a67-be92-efd6199c226f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordado con mangas abuchonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa romántica de encaje traslúcido con bordado floral en tono blanco. Presenta cuello redondo, mangas cortas abuchonadas con elástico y terminaciones con scallops o bordes festoneados. Perfecta para un look fresco y elegante.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "anillo"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordado con mangas abuchonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Blusa romántica de encaje traslúcido con bordado floral en tono blanco. Presenta cuello redondo, mangas cortas abuchonadas con elástico y terminaciones con scallops o bordes festoneados. Perfecta para un look fresco y elegante.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "anillo"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.537Z",
+      "errorDetail": null
+    },
+    {
+      "id": "bfbbe4b0-168c-4d03-adcf-5c05e4ae5a65",
+      "fileName": "f30c02c0-928e-47c4-8a59-0288165e7258.jpg",
+      "folderName": "ADORA",
+      "file": "bfbbe4b0-168c-4d03-adcf-5c05e4ae5a65.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-66413a3a-9713-45d9-81e0-84de36752fbb",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa blanca de broderie con mangas abullonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f5f3ed"
+        ],
+        "descripcion": "Blusa holgada de color blanco confeccionada con detalles de bordado broderie, escote redondo y mangas cortas abullonadas con terminación elástica. Presenta un ruedo festoneado calado, ideal para un estilo fresco y romántico.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collares",
+          "pulsera",
+          "anillos"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa blanca de broderie con mangas abullonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f5f3ed"
+        ],
+        "descripcion": "Blusa holgada de color blanco confeccionada con detalles de bordado broderie, escote redondo y mangas cortas abullonadas con terminación elástica. Presenta un ruedo festoneado calado, ideal para un estilo fresco y romántico.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "aros",
+          "collares",
+          "pulsera",
+          "anillos"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.611Z",
+      "errorDetail": null
+    },
+    {
+      "id": "183cfcb4-2464-402b-a68a-43fe33ca272f",
+      "fileName": "f42b1062-3aa1-4109-83d4-006bf03d5d4e.jpg",
+      "folderName": "ADORA",
+      "file": "183cfcb4-2464-402b-a68a-43fe33ca272f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b65b8b68-3dad-4ecf-9948-6160e1026699",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordado con mangas cortas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f4efe6"
+        ],
+        "descripcion": "Blusa romántica confeccionada en encaje transparente con delicado bordado floral, cuello redondo y mangas cortas abullonadas. Destaca por sus dobladillos con terminación en festón, perfecta para un look fresco y femenino.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "collar",
+          "anillos"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordado con mangas cortas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "blusas",
+        "colores": [
+          "#f4efe6"
+        ],
+        "descripcion": "Blusa romántica confeccionada en encaje transparente con delicado bordado floral, cuello redondo y mangas cortas abullonadas. Destaca por sus dobladillos con terminación en festón, perfecta para un look fresco y femenino.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "collar",
+          "anillos"
+        ],
+        "confianza": 0.98,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.666Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7077de89-aa12-448c-8943-931e2f93f50f",
+      "fileName": "f9b95c10-aae4-4b23-baf1-37dee2fa5356.jpg",
+      "folderName": "ADORA",
+      "file": "7077de89-aa12-448c-8943-931e2f93f50f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d1bccb44-63c0-40fc-9608-0517fb379d29",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de encaje bordada crema",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#f3efe6"
+        ],
+        "descripcion": "Blusa delicada de encaje floral en tono crema, con dobladillo festoneado, mangas cortas abullonadas y cuello redondo. Perfecta para un estilo romántico y fresco.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de encaje bordada crema",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas de encaje",
+        "colores": [
+          "#f3efe6"
+        ],
+        "descripcion": "Blusa delicada de encaje floral en tono crema, con dobladillo festoneado, mangas cortas abullonadas y cuello redondo. Perfecta para un estilo romántico y fresco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de encaje",
+        "prendasSecundarias": [
+          "short de jean",
+          "pulsera",
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.767Z",
+      "errorDetail": null
+    },
+    {
+      "id": "80347965-a909-429f-bea1-e797c85f5a02",
+      "fileName": "fbe4a116-f231-4fba-b345-d3f5be6fba98.jpg",
+      "folderName": "ADORA",
+      "file": "80347965-a909-429f-bea1-e797c85f5a02.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5d8a6fa3-efb8-45cb-ae3f-c44008059bbd",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Blusa de broderie blanca con mangas abullonadas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "blouse",
+        "gender": "mujer",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f8f8f6"
+        ],
+        "descripcion": "Blusa de estilo romántico confeccionada en tela bordada de broderie blanca, con cuello redondo, mangas cortas abullonadas y detelles calados en el ruedo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "botas texanas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Blusa de broderie blanca con mangas abullonadas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Blusas",
+        "colores": [
+          "#f8f8f6"
+        ],
+        "descripcion": "Blusa de estilo romántico confeccionada en tela bordada de broderie blanca, con cuello redondo, mangas cortas abullonadas y detelles calados en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Blusa de broderie",
+        "prendasSecundarias": [
+          "short de jean",
+          "botas texanas"
+        ],
+        "confianza": 0.95,
+        "garmentType": "blouse",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:24.847Z",
+      "errorDetail": null
+    }
+  ],
+  "updatedAt": "2026-09-30T16:21:07.669Z"
+}

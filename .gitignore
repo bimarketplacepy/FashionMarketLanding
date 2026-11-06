@@ -52,3 +52,11 @@ Thumbs.db
 artifacts/aether/fotos-ss26/
 
 .env
+
+# Binarios pesados de respaldo (quedan en disco / archivo, no en git):
+# fotos crudas de los lotes y copias de imágenes de las pasadas de deduplicación.
+artifacts/aether/data/batches/*/*.jpg
+artifacts/aether/data/batches/*/*.jpeg
+artifacts/aether/data/_dedup-*/**/*.png
+artifacts/aether/data/_dedup-*/**/*.jpg
+artifacts/aether/data/_dedup-*/**/*.webp

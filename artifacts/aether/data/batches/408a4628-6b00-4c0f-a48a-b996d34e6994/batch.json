@@ -1,0 +1,2013 @@
+{
+  "id": "408a4628-6b00-4c0f-a48a-b996d34e6994",
+  "name": "CALZADOS MP COMPANY",
+  "createdAt": "2026-09-30T12:26:44.688Z",
+  "items": [
+    {
+      "id": "db3eec36-7ddb-4fe4-abe4-3cd040562a57",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.05.59 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "db3eec36-7ddb-4fe4-abe4-3cd040562a57.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f770608a-e523-46d1-bf23-257ebdc819cc",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas negras con strass",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#1f1f1f"
+        ],
+        "descripcion": "Ojotas negras de diseño veraniego con tiras decoradas con apliques brillantes tipo strass y plantilla con relieve. Perfectas para un estilo cómodo y fresco en días de calor.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas negras con strass",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#1f1f1f"
+        ],
+        "descripcion": "Ojotas negras de diseño veraniego con tiras decoradas con apliques brillantes tipo strass y plantilla con relieve. Perfectas para un estilo cómodo y fresco en días de calor.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:44.920Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b9964efa-23a6-4fd5-8725-46ad715db121",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.05.31 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "b9964efa-23a6-4fd5-8725-46ad715db121.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-304bda8a-a1e4-4136-bc61-b7ccb420b147",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas beige con tiras de strass",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#d7c8b5"
+        ],
+        "descripcion": "Ojotas de verano color nude beige con suela texturada de punta cuadrada y tiras finas decoradas con apliques brillosos de strass.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas beige con tiras de strass",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#d7c8b5"
+        ],
+        "descripcion": "Ojotas de verano color nude beige con suela texturada de punta cuadrada y tiras finas decoradas con apliques brillosos de strass.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:44.940Z",
+      "errorDetail": null
+    },
+    {
+      "id": "10a593e8-0d8b-4650-91ae-5861d2c53201",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.06.22 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "10a593e8-0d8b-4650-91ae-5861d2c53201.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-87a72bc2-d150-4b92-bb2e-5bc931d29bb2",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas nude con strass",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "ojotas",
+        "colores": [
+          "#d1b298"
+        ],
+        "descripcion": "Ojotas de goma en tono nude con punta cuadrada y textura en la plantilla. Poseen tiras finas embellecidas con delicados apliques de strass que aportan un toque de brillo elegante y veraniego.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas nude con strass",
+        "categoriaInterna": "shoes",
+        "subcategoria": "ojotas",
+        "colores": [
+          "#d1b298"
+        ],
+        "descripcion": "Ojotas de goma en tono nude con punta cuadrada y textura en la plantilla. Poseen tiras finas embellecidas con delicados apliques de strass que aportan un toque de brillo elegante y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.144Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c39b11d4-4f24-4a02-84f2-6cbb8124cd75",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.12.16 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "c39b11d4-4f24-4a02-84f2-6cbb8124cd75.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8a40d509-7f3d-4772-8b4b-bb8284dc6a96",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas de goma con tiras de estrás rosa",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#d5a4a7"
+        ],
+        "descripcion": "Ojotas de goma en tono rosa con plantilla texturada y tiras finas engalanadas con apliques de estrás brillante. Presentan un moderno diseño de punta cuadrada, ideales para lucir un estilo fresco y delicado en los días de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas de goma con tiras de estrás rosa",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#d5a4a7"
+        ],
+        "descripcion": "Ojotas de goma en tono rosa con plantilla texturada y tiras finas engalanadas con apliques de estrás brillante. Presentan un moderno diseño de punta cuadrada, ideales para lucir un estilo fresco y delicado en los días de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.166Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b63db622-176f-4dee-88b9-ab0e6dd788e8",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.12.41 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "b63db622-176f-4dee-88b9-ab0e6dd788e8.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9ebd3bab-3a0a-42d3-ba19-6d4c25b99ef3",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas de goma con tiras de strass",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#a56c42"
+        ],
+        "descripcion": "Ojotas veraniegas con base de goma texturada y plantilla de punta cuadrada. Cuentan con tiras finas con apliques de strass brillantes y detalle de nudo central.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas de goma con tiras de strass",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#a56c42"
+        ],
+        "descripcion": "Ojotas veraniegas con base de goma texturada y plantilla de punta cuadrada. Cuentan con tiras finas con apliques de strass brillantes y detalle de nudo central.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.178Z",
+      "errorDetail": null
+    },
+    {
+      "id": "72397cab-0704-4624-bd26-71aae12700f4",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.13.32 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "72397cab-0704-4624-bd26-71aae12700f4.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a416f607-f5ef-4724-adf0-f6cd94ad0b9f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas Nude con Aplique Ámbar",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "ojotas",
+        "colores": [
+          "#e1b899",
+          "#c8631a",
+          "#e0b755"
+        ],
+        "descripcion": "Ojotas en tono nude con plantilla texturada y aplique central de piedra tipo ámbar con marco dorado. Un calzado fresco, liviano y sofisticado para los días de calor.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas Nude con Aplique Ámbar",
+        "categoriaInterna": "shoes",
+        "subcategoria": "ojotas",
+        "colores": [
+          "#e1b899",
+          "#c8631a",
+          "#e0b755"
+        ],
+        "descripcion": "Ojotas en tono nude con plantilla texturada y aplique central de piedra tipo ámbar con marco dorado. Un calzado fresco, liviano y sofisticado para los días de calor.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.361Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2eb907fe-0a28-43a5-815e-13db76c2148a",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.13.56 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "2eb907fe-0a28-43a5-815e-13db76c2148a.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-edaaa528-333e-460c-b139-d5b943ff8f96",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas de goma beige punta cuadrada",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#d4b595"
+        ],
+        "descripcion": "Ojotas de goma en tono beige nude con finas tiras y plantilla texturada. Cuentan con un diseño moderno de punta cuadrada, super livianas y cómodas para el verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas de goma beige punta cuadrada",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#d4b595"
+        ],
+        "descripcion": "Ojotas de goma en tono beige nude con finas tiras y plantilla texturada. Cuentan con un diseño moderno de punta cuadrada, super livianas y cómodas para el verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.386Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b671441c-8c3a-41fa-b7be-c81027235c7f",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.14.25 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "b671441c-8c3a-41fa-b7be-c81027235c7f.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b8ca135d-dc91-4575-8d44-87747f492192",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas de goma beige con punta cuadrada",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#d1c4a5"
+        ],
+        "descripcion": "Ojotas de goma en tono beige nude con diseño de punta cuadrada y tiras delgadas. Cuentan con plantilla textured e inscripción de la marca. Ideales para un look veraniego cómodo y fresco.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas de goma beige con punta cuadrada",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#d1c4a5"
+        ],
+        "descripcion": "Ojotas de goma en tono beige nude con diseño de punta cuadrada y tiras delgadas. Cuentan con plantilla textured e inscripción de la marca. Ideales para un look veraniego cómodo y fresco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.402Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7b67e8e4-b12f-4178-9d8d-d1ac5972723c",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.14.43 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "7b67e8e4-b12f-4178-9d8d-d1ac5972723c.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-31dda104-26e4-42ee-bc16-d151e763d928",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas negras con punta cuadrada",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "ojotas",
+        "colores": [
+          "#1b1b1b"
+        ],
+        "descripcion": "Ojotas negras de goma con tira fina delgada y plantilla texturada. Presentan un diseño moderno de punta cuadrada y detalle de marca dorado en la plantilla.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas negras con punta cuadrada",
+        "categoriaInterna": "shoes",
+        "subcategoria": "ojotas",
+        "colores": [
+          "#1b1b1b"
+        ],
+        "descripcion": "Ojotas negras de goma con tira fina delgada y plantilla texturada. Presentan un diseño moderno de punta cuadrada y detalle de marca dorado en la plantilla.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.406Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6a6e02ec-2349-4713-9afd-11b8f6eecfc5",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.14.59 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "6a6e02ec-2349-4713-9afd-11b8f6eecfc5.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-21a224f0-40a5-47a1-a3f1-a36d54e67435",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas Sua Cia Tono Suela",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#8a5a36"
+        ],
+        "descripcion": "Ojotas de goma en tono suela con tiras finas y textura geométrica en la plantilla. Ideales para un estilo fresco y cómodo en días de calor.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas Sua Cia Tono Suela",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#8a5a36"
+        ],
+        "descripcion": "Ojotas de goma en tono suela con tiras finas y textura geométrica en la plantilla. Ideales para un estilo fresco y cómodo en días de calor.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.578Z",
+      "errorDetail": null
+    },
+    {
+      "id": "95e634ec-cecc-45d8-9a83-38bcc9a403a7",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.15.11 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "95e634ec-cecc-45d8-9a83-38bcc9a403a7.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f9125ea9-baeb-4c5d-b381-b3aeb40e268d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas Marrón Oscuro Punta Cuadrada",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#3b2723"
+        ],
+        "descripcion": "Ojotas clásicas en color marrón oscuro con punta cuadrada moderna, tira fina de agarre al tono y plantilla texturada antideslizante con logo de la marca. Ideales para el verano, cómodas y livianas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas Marrón Oscuro Punta Cuadrada",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#3b2723"
+        ],
+        "descripcion": "Ojotas clásicas en color marrón oscuro con punta cuadrada moderna, tira fina de agarre al tono y plantilla texturada antideslizante con logo de la marca. Ideales para el verano, cómodas y livianas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "ojotas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.607Z",
+      "errorDetail": null
+    },
+    {
+      "id": "8d245ded-220b-4e9d-9cfa-3227448bf4ea",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.16.33 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "8d245ded-220b-4e9d-9cfa-3227448bf4ea.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-25012e86-34fb-4ddf-a2f9-eb80eccbd0c7",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Ojotas con tiras de strass verde oliva",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#515b43",
+          "#b38062"
+        ],
+        "descripcion": "Ojotas confeccionadas en goma verde oliva con diseño de punta cuadrada y textura en la plantilla. Poseen tiras finas decoradas con strass en tono cobrizo, combinando comodidad y un toque de brillo ideal para el verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Ojotas con strass",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Ojotas con tiras de strass verde oliva",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Ojotas",
+        "colores": [
+          "#515b43",
+          "#b38062"
+        ],
+        "descripcion": "Ojotas confeccionadas en goma verde oliva con diseño de punta cuadrada y textura en la plantilla. Poseen tiras finas decoradas con strass en tono cobrizo, combinando comodidad y un toque de brillo ideal para el verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Ojotas con strass",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.625Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b5cf2365-0fe8-464b-a30c-91c3d65bcd07",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.19.39 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "b5cf2365-0fe8-464b-a30c-91c3d65bcd07.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9b2ad9a7-0e08-4127-9a5b-d99576bb4aa9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia baja marrón con tachas",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#4a281e"
+        ],
+        "descripcion": "Sandalia baja confeccionada en símil cuero marrón oscuro con tiras finas, apliques de tachas doradas y ajuste mediante hebilla al tobillo. Ideal para un look fresco y cómodo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia baja",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia baja marrón con tachas",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#4a281e"
+        ],
+        "descripcion": "Sandalia baja confeccionada en símil cuero marrón oscuro con tiras finas, apliques de tachas doradas y ajuste mediante hebilla al tobillo. Ideal para un look fresco y cómodo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia baja",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.641Z",
+      "errorDetail": null
+    },
+    {
+      "id": "354cb876-d0eb-42fe-9b12-b84059d6e3df",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.20.04 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "354cb876-d0eb-42fe-9b12-b84059d6e3df.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0ea007f9-37c5-4329-989e-c32bfde1b848",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia de taco bloque con tiras y estampado de serpiente",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "heels",
+        "gender": "mujer",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#5c3a21"
+        ],
+        "descripcion": "Sandalia de vestir con taco bloque medio y textura simil serpiente en tonos marrones. Cuenta con diseño de tiras cruzadas sobre la capellada, sujeción para el dedo y tira al tobillo con hebilla metálica ajustable.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia de taco",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia de taco bloque con tiras y estampado de serpiente",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#5c3a21"
+        ],
+        "descripcion": "Sandalia de vestir con taco bloque medio y textura simil serpiente en tonos marrones. Cuenta con diseño de tiras cruzadas sobre la capellada, sujeción para el dedo y tira al tobillo con hebilla metálica ajustable.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia de taco",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "heels",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.794Z",
+      "errorDetail": null
+    },
+    {
+      "id": "9d94ea7c-e9d1-488e-9722-4571fdee1ed7",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.21.09 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "9d94ea7c-e9d1-488e-9722-4571fdee1ed7.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0bff253c-d322-4524-8ea6-146a5780a3cc",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalias Bajas Marrones con Tiras para Atar",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias bajas",
+        "colores": [
+          "#6e371c",
+          "#d3a953",
+          "#9c5e3b"
+        ],
+        "descripcion": "Sandalias bajas estilo romana en cuero marrón, con diseño dedo (ojota), tiras finas para atar alrededor del tobillo y apliques metálicos dorados. Un calzado versátil, cómodo y super canchero para lucir en días cálidos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalias marrones",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalias Bajas Marrones con Tiras para Atar",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias bajas",
+        "colores": [
+          "#6e371c",
+          "#d3a953",
+          "#9c5e3b"
+        ],
+        "descripcion": "Sandalias bajas estilo romana en cuero marrón, con diseño dedo (ojota), tiras finas para atar alrededor del tobillo y apliques metálicos dorados. Un calzado versátil, cómodo y super canchero para lucir en días cálidos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalias marrones",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.822Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d1f7c26d-1029-4aa4-aa10-6116fe4562fc",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.22.11 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "d1f7c26d-1029-4aa4-aa10-6116fe4562fc.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-77d32300-4bb3-425f-ba9a-ce98534b01e7",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia Baja Chata con Moño Suela",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias bajas",
+        "colores": [
+          "#b06b36"
+        ],
+        "descripcion": "Sandalia baja tipo chinela en tono suela con capellada protagonizada por un moño voluminoso y elegante. Presenta plantilla al tono con costura perimetral vista y suela chata, ideal para un estilo fresco, relajado y femenino.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia baja",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia Baja Chata con Moño Suela",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias bajas",
+        "colores": [
+          "#b06b36"
+        ],
+        "descripcion": "Sandalia baja tipo chinela en tono suela con capellada protagonizada por un moño voluminoso y elegante. Presenta plantilla al tono con costura perimetral vista y suela chata, ideal para un estilo fresco, relajado y femenino.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia baja",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.846Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4558f141-261c-4aad-a49a-94966b0f813e",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.22.23 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "4558f141-261c-4aad-a49a-94966b0f813e.jpeg",
+      "estado": "descartada",
+      "error": null,
+      "advertencia": "Duplicado de otra prenda del lote: eliminado en la limpieza del 2026-10-01.",
+      "duplicateOf": {
+        "id": "import-77d32300-4bb3-425f-ba9a-ce98534b01e7",
+        "name": "Sandalia Baja Chata con Moño Suela"
+      },
+      "targetGarment": null,
+      "importedId": null,
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalias Planas con Moño Caramelo",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias planas",
+        "colores": [
+          "#a6633c"
+        ],
+        "descripcion": "Sandalias bajas sin talón en tono caramelo, destacadas por un gran moño satinado sobre la capellada. Una opción cómoda, fresca y elegante para el verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalias planas con moño",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalias Planas con Moño Caramelo",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias planas",
+        "colores": [
+          "#a6633c"
+        ],
+        "descripcion": "Sandalias bajas sin talón en tono caramelo, destacadas por un gran moño satinado sobre la capellada. Una opción cómoda, fresca y elegante para el verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalias planas con moño",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:45.867Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6f66a889-6628-47de-b349-eb18d7ce010b",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.22.44 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "6f66a889-6628-47de-b349-eb18d7ce010b.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-c0c3ac9e-d876-426e-ad34-30ec1e6a964b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalias Bajas Nude con Flor y Tiras",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#e2c5b2",
+          "#8c573a"
+        ],
+        "descripcion": "Sandalias bajas de tono nude con aplique de flor en el empeine y tiras finas ajustables al tobillo. Poseen suela plana en color suela marrón, ideales para complementar outfits veraniegos y frescos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalias bajas con flor",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalias Bajas Nude con Flor y Tiras",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#e2c5b2",
+          "#8c573a"
+        ],
+        "descripcion": "Sandalias bajas de tono nude con aplique de flor en el empeine y tiras finas ajustables al tobillo. Poseen suela plana en color suela marrón, ideales para complementar outfits veraniegos y frescos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalias bajas con flor",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.008Z",
+      "errorDetail": null
+    },
+    {
+      "id": "392bab0e-3f1b-47e5-8a5e-39371ffe3aae",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.23.09 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "392bab0e-3f1b-47e5-8a5e-39371ffe3aae.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d9718de0-2160-45b2-b4ac-7a8e780e1f8f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia Mule Plataforma de Ráfia",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias con plataforma",
+        "colores": [
+          "#d3b58d",
+          "#e3c7a5",
+          "#bfa075"
+        ],
+        "descripcion": "Sandalia tipo mule con capellada ancha y plataforma con revestimiento de tejido de ráfia en tono beige. Cuenta con aplique metálico dorado decorativo y plantilla confort al tono, ideal para lucir en looks de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia mule con plataforma",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia Mule Plataforma de Ráfia",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias con plataforma",
+        "colores": [
+          "#d3b58d",
+          "#e3c7a5",
+          "#bfa075"
+        ],
+        "descripcion": "Sandalia tipo mule con capellada ancha y plataforma con revestimiento de tejido de ráfia en tono beige. Cuenta con aplique metálico dorado decorativo y plantilla confort al tono, ideal para lucir en looks de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia mule con plataforma",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.042Z",
+      "errorDetail": null
+    },
+    {
+      "id": "30f0aa60-5078-488c-8c98-75c36f3de4ca",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.23.44 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "30f0aa60-5078-488c-8c98-75c36f3de4ca.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-bebef9b9-f912-4ba6-9ab5-982ec22169c4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia baja con tira transparente",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias bajas",
+        "colores": [
+          "#e5c2af",
+          "#98613f"
+        ],
+        "descripcion": "Sandalia baja estilo ojota confeccionada con tira de vinilo transparente y plantilla sintética en tono beige nude. Cuenta con suela fina, perfecta para un look veraniego cómodo y fresco.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia baja",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia baja con tira transparente",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias bajas",
+        "colores": [
+          "#e5c2af",
+          "#98613f"
+        ],
+        "descripcion": "Sandalia baja estilo ojota confeccionada con tira de vinilo transparente y plantilla sintética en tono beige nude. Cuenta con suela fina, perfecta para un look veraniego cómodo y fresco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia baja",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.067Z",
+      "errorDetail": null
+    },
+    {
+      "id": "faa6bf6d-f2ad-4fac-b6ba-2b0fa0ce2a1b",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.24.10 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "faa6bf6d-f2ad-4fac-b6ba-2b0fa0ce2a1b.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-7da5436b-accb-429d-b71a-c2c818cade66",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia de taco con pulsera al tobillo",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "heels",
+        "gender": "mujer",
+        "subcategoria": "Sandalias de taco",
+        "colores": [
+          "#1c1b1d",
+          "#e2c3a4"
+        ],
+        "descripcion": "Sandalia elegante de vestir en tono negro, diseñada con una fina tira frontal y pulsera regulable al tobillo. Su taco medio estilizado y plantilla acolchada en color nude ofrecen máxima comodidad para looks de noche o eventos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia de taco",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia de taco con pulsera al tobillo",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias de taco",
+        "colores": [
+          "#1c1b1d",
+          "#e2c3a4"
+        ],
+        "descripcion": "Sandalia elegante de vestir en tono negro, diseñada con una fina tira frontal y pulsera regulable al tobillo. Su taco medio estilizado y plantilla acolchada en color nude ofrecen máxima comodidad para looks de noche o eventos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia de taco",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "heels",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.095Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c2eaed5a-2328-417e-8832-cf69e498a9f7",
+      "fileName": "WhatsApp Image 2026-08-21 at 1.24.24 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "c2eaed5a-2328-417e-8832-cf69e498a9f7.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9fc17108-8c2a-4bd6-b7ee-3f85b0583323",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia de taco con pulsera suela",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "heels",
+        "gender": "mujer",
+        "subcategoria": "Sandalias de taco",
+        "colores": [
+          "#b26a37"
+        ],
+        "descripcion": "Sandalia fina en color suela con tira capellada simple y ajuste de pulsera al tobillo con hebilla metálica. Posee taco medio y plantilla confort, ideal para complementar outfits de vestir o fiesta.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia de taco",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia de taco con pulsera suela",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias de taco",
+        "colores": [
+          "#b26a37"
+        ],
+        "descripcion": "Sandalia fina en color suela con tira capellada simple y ajuste de pulsera al tobillo con hebilla metálica. Posee taco medio y plantilla confort, ideal para complementar outfits de vestir o fiesta.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia de taco",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "heels",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.220Z",
+      "errorDetail": null
+    },
+    {
+      "id": "88642c0c-65af-4900-9ad8-bd82391c9e48",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.38.33 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "88642c0c-65af-4900-9ad8-bd82391c9e48.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5924d804-352e-406a-ab89-c26bb47c91e6",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia beige de taco bajo con pulsera",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "heels",
+        "gender": "mujer",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#f3dcc3",
+          "#d9b48f"
+        ],
+        "descripcion": "Sandalia de taco bajo cuadrado en tono nude beige. Cuenta con una capellada de tira ancha con textura labrada y tira cruzada al tobillo con hebilla ajustable, ideal para combinar comodidad y estilo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia beige de taco bajo con pulsera",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#f3dcc3",
+          "#d9b48f"
+        ],
+        "descripcion": "Sandalia de taco bajo cuadrado en tono nude beige. Cuenta con una capellada de tira ancha con textura labrada y tira cruzada al tobillo con hebilla ajustable, ideal para combinar comodidad y estilo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "heels",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.259Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7ce4a998-f4c5-4bce-b21b-40e382f60c2d",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.40.04 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "7ce4a998-f4c5-4bce-b21b-40e382f60c2d.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4647916a-de14-4b46-9fec-be5f99acad40",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Chatita Destalonada Verde Oliva con Moño",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Chatitas destalonadas",
+        "colores": [
+          "#8c9980"
+        ],
+        "descripcion": "Chatitas destalonadas de punta fina en tono verde oliva, confeccionadas en eco cuero suave, con detalle de moño y herrajes dorados en la capellada y tira con hebilla en el talón.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chatita destalonada",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Chatita Destalonada Verde Oliva con Moño",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Chatitas destalonadas",
+        "colores": [
+          "#8c9980"
+        ],
+        "descripcion": "Chatitas destalonadas de punta fina en tono verde oliva, confeccionadas en eco cuero suave, con detalle de moño y herrajes dorados en la capellada y tira con hebilla en el talón.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "chatita destalonada",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.284Z",
+      "errorDetail": null
+    },
+    {
+      "id": "89ebe0ed-1f28-4053-bb27-23c748cf3b87",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.40.50 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "89ebe0ed-1f28-4053-bb27-23c748cf3b87.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0fd3a900-5a42-44e5-a7c6-7c174d2dcdfb",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia de taco bajo nude con strass",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "heels",
+        "gender": "mujer",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#dcae91"
+        ],
+        "descripcion": "Sandalia fina en tono nude con taco bloque bajo, pulsera ajustable al tobillo con hebilla y tiras cruzadas con detalles de strass brillantes en la capellada.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia de taco bajo nude con strass",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#dcae91"
+        ],
+        "descripcion": "Sandalia fina en tono nude con taco bloque bajo, pulsera ajustable al tobillo con hebilla y tiras cruzadas con detalles de strass brillantes en la capellada.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "heels",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.320Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c0785be3-86ca-4efb-a855-687f0096dcaf",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.41.24 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "c0785be3-86ca-4efb-a855-687f0096dcaf.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a0b672ee-c28f-4c0b-9e57-267d229dfae4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia baja tiras cruzadas negra",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#1a1a1a"
+        ],
+        "descripcion": "Sandalia baja negra confeccionada con tiras finas cruzadas y detalle de aplique ovalado central. Cuenta con taco bajo cuadrado, plantilla a tono claro y cierre mediante tira con hebilla ajustables al tobillo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia baja tiras cruzadas negra",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#1a1a1a"
+        ],
+        "descripcion": "Sandalia baja negra confeccionada con tiras finas cruzadas y detalle de aplique ovalado central. Cuenta con taco bajo cuadrado, plantilla a tono claro y cierre mediante tira con hebilla ajustables al tobillo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.436Z",
+      "errorDetail": null
+    },
+    {
+      "id": "76eeb1cf-39b0-4426-95ff-f94458e03090",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.41.56 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "76eeb1cf-39b0-4426-95ff-f94458e03090.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-32088f4b-1be2-4a2f-96e0-c7cc8ea5690d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia baja negra con tachas y hebilla dorada",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#1e1d20"
+        ],
+        "descripcion": "Sandalia baja urbana con tiras cruzadas y faja regulable con hebilla metálica. Confeccionada en material sintético negro con apliques de tachas doradas redondeadas y plantilla anatómica. Ideal para un look cómodo y canchero de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia baja",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia baja negra con tachas y hebilla dorada",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#1e1d20"
+        ],
+        "descripcion": "Sandalia baja urbana con tiras cruzadas y faja regulable con hebilla metálica. Confeccionada en material sintético negro con apliques de tachas doradas redondeadas y plantilla anatómica. Ideal para un look cómodo y canchero de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia baja",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.481Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ad8b9819-6fe9-4057-8f00-6632147ac42d",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.43.29 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "ad8b9819-6fe9-4057-8f00-6632147ac42d.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-777a4ec9-2aae-4882-8fb5-4f5519acb43d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia Ojota con Plataforma",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#d19f68"
+        ],
+        "descripcion": "Sandalia tipo ojota en color negro con tira ancha acolchada y base de plataforma con acabado estilo corcho. Un calzado cómodo y versátil ideal para completar tus looks de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia ojota con plataforma",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia Ojota con Plataforma",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias",
+        "colores": [
+          "#d19f68"
+        ],
+        "descripcion": "Sandalia tipo ojota en color negro con tira ancha acolchada y base de plataforma con acabado estilo corcho. Un calzado cómodo y versátil ideal para completar tus looks de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia ojota con plataforma",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.506Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f2ca9006-c481-4250-8764-33868aeda7c1",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.44.46 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "f2ca9006-c481-4250-8764-33868aeda7c1.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-625eea02-6a00-477e-96c8-2424a61c09be",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia Chata Nude con Aplique Dorado",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias chatas",
+        "colores": [
+          "#e3c7aa"
+        ],
+        "descripcion": "Sandalia chata de tiras finas en tono nude con puntera cuadrada y detalle de aplique metálico circular dorado. Cuenta con agarre al tobillo mediante pulsera ajustable con hebilla, ideal para sumar elegancia y comodidad a tus outfits de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia chata",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia Chata Nude con Aplique Dorado",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias chatas",
+        "colores": [
+          "#e3c7aa"
+        ],
+        "descripcion": "Sandalia chata de tiras finas en tono nude con puntera cuadrada y detalle de aplique metálico circular dorado. Cuenta con agarre al tobillo mediante pulsera ajustable con hebilla, ideal para sumar elegancia y comodidad a tus outfits de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia chata",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.550Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d223b03f-f855-4d6a-89c2-2de3edebded6",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.45.31 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "d223b03f-f855-4d6a-89c2-2de3edebded6.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f4469b53-be75-47bf-98dc-2127e4b5df4a",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia chata negra con aplique dorado",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias chatas",
+        "colores": [
+          "#1a1a1a",
+          "#c6a15c"
+        ],
+        "descripcion": "Sandalia baja confeccionada en tiras finas de color negro, con cierre de hebilla regulable al tobillo y detalle metálico circular dorado en la parte frontal. Ideal para un look fresco y elegante.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia chata",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia chata negra con aplique dorado",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias chatas",
+        "colores": [
+          "#1a1a1a",
+          "#c6a15c"
+        ],
+        "descripcion": "Sandalia baja confeccionada en tiras finas de color negro, con cierre de hebilla regulable al tobillo y detalle metálico circular dorado en la parte frontal. Ideal para un look fresco y elegante.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia chata",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.649Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e4d25534-8799-466f-a8e4-3b0c7fd26b6a",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.46.05 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "e4d25534-8799-466f-a8e4-3b0c7fd26b6a.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-13c1a90c-c690-448a-be74-b5ecf9afb55a",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Mocasín verde pistacho con hebilla dorada",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Mocasines",
+        "colores": [
+          "#855c39",
+          "#d3ad52"
+        ],
+        "descripcion": "Mocasín femenino en tono verde pistacho confeccionado en material de acabado liso. Presenta un elegante aplique de cadena metálica dorada en la capellada y suela plana en color marrón, ideal para un estilo urbano sofisticado y cómodo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "mocasín verde",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Mocasín verde pistacho con hebilla dorada",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Mocasines",
+        "colores": [
+          "#855c39",
+          "#d3ad52"
+        ],
+        "descripcion": "Mocasín femenino en tono verde pistacho confeccionado en material de acabado liso. Presenta un elegante aplique de cadena metálica dorada en la capellada y suela plana en color marrón, ideal para un estilo urbano sofisticado y cómodo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "mocasín verde",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.697Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3f52bb42-8a4e-4921-a3f0-47eb6e02e3b8",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.47.07 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "3f52bb42-8a4e-4921-a3f0-47eb6e02e3b8.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1770c9e8-9c6c-46ff-a532-b6c0bd26f4ff",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia chata nude con tachas doradas",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias chatas",
+        "colores": [
+          "#e3c1a8",
+          "#cfa356"
+        ],
+        "descripcion": "Sandalia chata confeccionada en tono nude con tiras finas texturizadas adornadas con tachas esféricas doradas. Presenta plantilla suave y suela plana, ideal para lucir cómoda y elegante.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia chata",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia chata nude con tachas doradas",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias chatas",
+        "colores": [
+          "#e3c1a8",
+          "#cfa356"
+        ],
+        "descripcion": "Sandalia chata confeccionada en tono nude con tiras finas texturizadas adornadas con tachas esféricas doradas. Presenta plantilla suave y suela plana, ideal para lucir cómoda y elegante.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia chata",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.729Z",
+      "errorDetail": null
+    },
+    {
+      "id": "bd7a0417-c30d-4f7f-a8d8-6cc56fa0257e",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.47.24 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "bd7a0417-c30d-4f7f-a8d8-6cc56fa0257e.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-331912a8-81aa-497c-b282-f7991f3b2458",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia chata negra con tachas doradas",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias chatas",
+        "colores": [
+          "#1c1c1c",
+          "#d4af37"
+        ],
+        "descripcion": "Sandalia chata en color negro con tiras finas texturizadas y apliques de tachas doradas esféricas. Cuenta con plantilla confort y puntera cuadrada, un calzado liviano y canchero para lucir todos los días.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia chata",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia chata negra con tachas doradas",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias chatas",
+        "colores": [
+          "#1c1c1c",
+          "#d4af37"
+        ],
+        "descripcion": "Sandalia chata en color negro con tiras finas texturizadas y apliques de tachas doradas esféricas. Cuenta con plantilla confort y puntera cuadrada, un calzado liviano y canchero para lucir todos los días.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia chata",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.774Z",
+      "errorDetail": null
+    },
+    {
+      "id": "58d5e180-be7a-4fd9-84af-aa6f4f2415da",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.47.51 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "58d5e180-be7a-4fd9-84af-aa6f4f2415da.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-613c4807-a4cc-4aa1-bb21-130dd40ba2cd",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Balerina de red marrón con moño",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Balerinas",
+        "colores": [
+          "#573930"
+        ],
+        "descripcion": "Balerina confeccionada en tejido de red respirable de color marrón, con ribetes a tono, delicado moño frontal y dije dorado. Un modelo plano, fresco y cómodo, ideal para destacar outfits casuales o urbanos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "balerina",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Balerina de red marrón con moño",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Balerinas",
+        "colores": [
+          "#573930"
+        ],
+        "descripcion": "Balerina confeccionada en tejido de red respirable de color marrón, con ribetes a tono, delicado moño frontal y dije dorado. Un modelo plano, fresco y cómodo, ideal para destacar outfits casuales o urbanos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "balerina",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.863Z",
+      "errorDetail": null
+    },
+    {
+      "id": "41868df0-8b06-4f77-a840-0328da04570a",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.48.24 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "41868df0-8b06-4f77-a840-0328da04570a.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a2ae1033-cd3f-4f1d-bf63-fec1a5abdd2c",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia Mule Negra con Hebilla Dorada",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "heels",
+        "gender": "mujer",
+        "subcategoria": "Sandalias de taco",
+        "colores": [
+          "#1b1b1b"
+        ],
+        "descripcion": "Sandalia tipo mule confeccionada en color negro, con faja doble y gran detalle de hebilla dorada en la tira superior. Presenta taco ancho de altura media y punta cuadrada, perfecta para lograr un look sofisticado y cómodo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia mule negra",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia Mule Negra con Hebilla Dorada",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias de taco",
+        "colores": [
+          "#1b1b1b"
+        ],
+        "descripcion": "Sandalia tipo mule confeccionada en color negro, con faja doble y gran detalle de hebilla dorada en la tira superior. Presenta taco ancho de altura media y punta cuadrada, perfecta para lograr un look sofisticado y cómodo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia mule negra",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "heels",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.914Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f9838a59-2872-4ede-9359-5f3b77588e59",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.48.58 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "f9838a59-2872-4ede-9359-5f3b77588e59.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-beaaefee-5fbb-4c0b-8003-67ff65c25c5b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Mocasines en textura trenzada verde lima",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Mocasines",
+        "colores": [
+          "#d0dd86"
+        ],
+        "descripcion": "Mocasines planos para mujer en tono verde lima pastel, diseñados con acabado de textura estilo trenzado y aplique de hebilla dorada en el empeine. Cuentan con puntera estilizada y taco bajo, combinando elegancia y comodidad para un look casual sofisticado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Mocasines",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Mocasines en textura trenzada verde lima",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Mocasines",
+        "colores": [
+          "#d0dd86"
+        ],
+        "descripcion": "Mocasines planos para mujer en tono verde lima pastel, diseñados con acabado de textura estilo trenzado y aplique de hebilla dorada en el empeine. Cuentan con puntera estilizada y taco bajo, combinando elegancia y comodidad para un look casual sofisticado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Mocasines",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:46.950Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4aff9d2e-43bb-4365-aa5a-6af2d982c4de",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.49.32 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "4aff9d2e-43bb-4365-aa5a-6af2d982c4de.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1998b9cf-e3d2-44d1-9aa8-1fa98f5af519",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia taco ancho camel con hebilla",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "heels",
+        "gender": "mujer",
+        "subcategoria": "Sandalias de taco",
+        "colores": [
+          "#c87e41"
+        ],
+        "descripcion": "Sandalia con taco ancho en tono camel, diseño de tiras finas cruzadas, agarre de dedo y correa en el empeine con hebilla dorada.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia de taco",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia taco ancho camel con hebilla",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias de taco",
+        "colores": [
+          "#c87e41"
+        ],
+        "descripcion": "Sandalia con taco ancho en tono camel, diseño de tiras finas cruzadas, agarre de dedo y correa en el empeine con hebilla dorada.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia de taco",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "heels",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:47.006Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d1f1a374-4e1a-4d97-86d7-e039165b572e",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.49.48 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "d1f1a374-4e1a-4d97-86d7-e039165b572e.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ee1172a9-ebbf-4ba2-a18a-778559a89398",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia de Taco Ancho Negra con Tiras y Hebilla",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "heels",
+        "gender": "mujer",
+        "subcategoria": "sandalias",
+        "colores": [
+          "#1a1a1a"
+        ],
+        "descripcion": "Sandalia de taco cuadrado bajo en color negro, con diseño de tira para el dedo y correa ajustable con hebilla dorada.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia de Taco Ancho Negra con Tiras y Hebilla",
+        "categoriaInterna": "shoes",
+        "subcategoria": "sandalias",
+        "colores": [
+          "#1a1a1a"
+        ],
+        "descripcion": "Sandalia de taco cuadrado bajo en color negro, con diseño de tira para el dedo y correa ajustable con hebilla dorada.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "heels",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:47.083Z",
+      "errorDetail": null
+    },
+    {
+      "id": "21cdf50f-1f28-4a31-82e0-3a279094840b",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.50.24 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "21cdf50f-1f28-4a31-82e0-3a279094840b.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-88a1d7b1-2431-4247-9623-1d797207b770",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia chata suela con tiras de strass",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias chatas",
+        "colores": [
+          "#c0824e",
+          "#d8b48b"
+        ],
+        "descripcion": "Sandalia chata confeccionada en tono suela con tiras finas cruzadas sobre el empeine adornadas con apliques de strass. Incluye tira en el tobillo con hebilla regulable para mayor ajuste.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia chata suela con tiras de strass",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias chatas",
+        "colores": [
+          "#c0824e",
+          "#d8b48b"
+        ],
+        "descripcion": "Sandalia chata confeccionada en tono suela con tiras finas cruzadas sobre el empeine adornadas con apliques de strass. Incluye tira en el tobillo con hebilla regulable para mayor ajuste.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalia",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:47.130Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a106fe87-eef7-4e60-be64-42eb618a9598",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.50.36 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "a106fe87-eef7-4e60-be64-42eb618a9598.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8e7d6677-48a5-4626-b6b9-4106193c6f1f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalias Chatitas Negras con Tiras de Strass",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias bajas",
+        "colores": [
+          "#222327",
+          "#8b8d91"
+        ],
+        "descripcion": "Sandalias bajas tipo chatitas de color negro, diseñadas con delicadas tiras finas cruzadas en la capellada con detalles de strass brillantes y ajuste de hebilla al tobillo. Ideales para combinar comodidad y elegancia en días calurosos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalias bajas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalias Chatitas Negras con Tiras de Strass",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias bajas",
+        "colores": [
+          "#222327",
+          "#8b8d91"
+        ],
+        "descripcion": "Sandalias bajas tipo chatitas de color negro, diseñadas con delicadas tiras finas cruzadas en la capellada con detalles de strass brillantes y ajuste de hebilla al tobillo. Ideales para combinar comodidad y elegancia en días calurosos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sandalias bajas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:47.174Z",
+      "errorDetail": null
+    },
+    {
+      "id": "bc4db8bd-d754-4044-bff7-9fb4bc543661",
+      "fileName": "WhatsApp Image 2026-08-21 at 12.50.53 PM.jpeg",
+      "folderName": "CALZADOS MP COMPANY",
+      "file": "bc4db8bd-d754-4044-bff7-9fb4bc543661.jpeg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5e4efedd-c71e-4678-b701-c34c4ed30d2b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sandalia baja nude con tiras de strass",
+        "categoria": "shoes",
+        "categoriaInterna": "shoes",
+        "garmentType": "shoes",
+        "gender": "mujer",
+        "subcategoria": "Sandalias bajas",
+        "colores": [
+          "#f1ddd0"
+        ],
+        "descripcion": "Sandalia chata en tono nude confeccionada con tiras finas cruzadas, detalle de apliques con brillo tipo strass y ajuste mediante hebilla en el tobillo. Una opción delicada, cómoda y elegante para el verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia baja",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sandalia baja nude con tiras de strass",
+        "categoriaInterna": "shoes",
+        "subcategoria": "Sandalias bajas",
+        "colores": [
+          "#f1ddd0"
+        ],
+        "descripcion": "Sandalia chata en tono nude confeccionada con tiras finas cruzadas, detalle de apliques con brillo tipo strass y ajuste mediante hebilla en el tobillo. Una opción delicada, cómoda y elegante para el verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sandalia baja",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "shoes",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:26:47.241Z",
+      "errorDetail": null
+    }
+  ],
+  "updatedAt": "2026-09-30T16:20:43.216Z"
+}

@@ -4,6 +4,7 @@
 //   pnpm --filter @workspace/aether run regenerate-garments             # todo el catálogo
 //   pnpm --filter @workspace/aether run regenerate-garments -- <id>...  # solo esos items
 //   pnpm --filter @workspace/aether run regenerate-garments -- --pausa 8000
+//   pnpm --filter @workspace/aether run regenerate-garments -- --importadas   # solo lo importado por lotes
 //
 // Fuente: data/imported-originals/<id>-garment.png (el recorte original de la foto);
 // si no hay backup usa la imagen actual. Salida: data/imported/<id>-garment.png.
@@ -58,7 +59,11 @@ const library = JSON.parse(await readFile(path.join(DATA, "library.json"), "utf8
 const manifest = JSON.parse(await readFile(MANIFEST, "utf8").catch(() => '{"entries":{}}'));
 await mkdir(ORIGINALS, { recursive: true });
 
-const pending = library.filter((item) => (!ONLY.size || ONLY.has(item.id)) && manifest.entries[item.id]?.status !== "done");
+// --importadas: solo prendas que entraron por lotes (fotos crudas), sin tocar el catálogo previo.
+const ONLY_BATCHES = ARGS.includes("--importadas");
+const pending = library.filter((item) => (!ONLY.size || ONLY.has(item.id))
+  && (!ONLY_BATCHES || item.importBatch)
+  && manifest.entries[item.id]?.status !== "done");
 console.log(`${pending.length} prendas por regenerar con la API (${ai.name}).`);
 
 let quotaStrikes = 0;

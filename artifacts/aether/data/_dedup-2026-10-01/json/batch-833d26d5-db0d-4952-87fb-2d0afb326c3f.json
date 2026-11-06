@@ -1,0 +1,2808 @@
+{
+  "id": "833d26d5-db0d-4952-87fb-2d0afb326c3f",
+  "name": "core in fashion",
+  "createdAt": "2026-09-30T12:27:11.303Z",
+  "items": [
+    {
+      "id": "22091b9a-cf60-4af7-9f43-c13223b716f9",
+      "fileName": "25462610_205b6da9-06b2-4126-b49e-807ef23de5b9.jpg",
+      "folderName": "core in fashion",
+      "file": "22091b9a-cf60-4af7-9f43-c13223b716f9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-fb7b2151-ea38-4029-92f4-3b9ad05d73f4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido maxi estampado botánico",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos largos",
+        "colores": [
+          "#f2ece4",
+          "#5b6db5",
+          "#5a3b2a"
+        ],
+        "descripcion": "Vestido largo de breteles finos y corte holgado con caída fluida. Destaca por su estampado botánico en tonos azul y marrón sobre un fondo crema, perfecto para un look fresco y casual.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo",
+        "prendasSecundarias": [
+          "sandalias",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido maxi estampado botánico",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos largos",
+        "colores": [
+          "#f2ece4",
+          "#5b6db5",
+          "#5a3b2a"
+        ],
+        "descripcion": "Vestido largo de breteles finos y corte holgado con caída fluida. Destaca por su estampado botánico en tonos azul y marrón sobre un fondo crema, perfecto para un look fresco y casual.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo",
+        "prendasSecundarias": [
+          "sandalias",
+          "pulseras"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:11.530Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4037ee39-dd6d-415e-a4d1-940e88ec4854",
+      "fileName": "25462610_bdc9c8b8-020e-4357-8807-8c96e13effef.jpg",
+      "folderName": "core in fashion",
+      "file": "4037ee39-dd6d-415e-a4d1-940e88ec4854.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-fe6a8f50-a18b-4741-a84d-b749c2ac4b26",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo estampado tropical",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#f4ede4",
+          "#5a3825",
+          "#5c68b4"
+        ],
+        "descripcion": "Vestido largo tipo solero con estampado botánico en tonos azul y marrón sobre fondo crema. Posee breteles finos y detalle fruncido de nido de abeja en la parte posterior para un calce cómodo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo",
+        "prendasSecundarias": [
+          "sandalias",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo estampado tropical",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#f4ede4",
+          "#5a3825",
+          "#5c68b4"
+        ],
+        "descripcion": "Vestido largo tipo solero con estampado botánico en tonos azul y marrón sobre fondo crema. Posee breteles finos y detalle fruncido de nido de abeja en la parte posterior para un calce cómodo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo",
+        "prendasSecundarias": [
+          "sandalias",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:11.544Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a87f068d-d92d-4ce9-8b72-7f7d983c61d4",
+      "fileName": "25462610_bfa78431-6b44-456a-bd4a-513e3b026015.jpg",
+      "folderName": "core in fashion",
+      "file": "a87f068d-d92d-4ce9-8b72-7f7d983c61d4.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-c9a838f3-0ce3-4ce4-8263-c50d39eb1101",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo estampado botánico",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos soleros",
+        "colores": [
+          "#efece6"
+        ],
+        "descripcion": "Vestido largo de breteles finos con escote recto y estampado botánico en tonos azul y marrón sobre fondo claro. Una opción fresca y elegante ideal para el verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo",
+        "prendasSecundarias": [
+          "sandalias",
+          "collar",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo estampado botánico",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos soleros",
+        "colores": [
+          "#efece6"
+        ],
+        "descripcion": "Vestido largo de breteles finos con escote recto y estampado botánico en tonos azul y marrón sobre fondo claro. Una opción fresca y elegante ideal para el verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo",
+        "prendasSecundarias": [
+          "sandalias",
+          "collar",
+          "pulsera"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:11.553Z",
+      "errorDetail": null
+    },
+    {
+      "id": "efacb0aa-a2b6-4143-8366-e74b8bf7d6bf",
+      "fileName": "25475590_15a1ad55-2a63-4862-b705-bcb3fb9451ca.jpg",
+      "folderName": "core in fashion",
+      "file": "efacb0aa-a2b6-4143-8366-e74b8bf7d6bf.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a1abf4a5-1729-4248-9025-98ccec0f4a32",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo strapless floreado",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#452e22"
+        ],
+        "descripcion": "Vestido largo estilo strapless confeccionado en tela ligera con estampado floral en tonos celeste y amarillo sobre fondo marrón. Un diseño fresco y holgado, ideal para un look veraniego.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Vestido largo strapless",
+        "prendasSecundarias": [
+          "sandalias"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo strapless floreado",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#452e22"
+        ],
+        "descripcion": "Vestido largo estilo strapless confeccionado en tela ligera con estampado floral en tonos celeste y amarillo sobre fondo marrón. Un diseño fresco y holgado, ideal para un look veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Vestido largo strapless",
+        "prendasSecundarias": [
+          "sandalias"
+        ],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:11.763Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7431edbd-582b-415a-bf82-be7110282957",
+      "fileName": "25475590_4f795b00-fde6-4ca3-a9f6-e1d2d0b1e356.jpg",
+      "folderName": "core in fashion",
+      "file": "7431edbd-582b-415a-bf82-be7110282957.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-41f193dc-8a55-4fc2-ae42-3206a21a7fa5",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo strapless estampado floral",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#4a3326",
+          "#9cbfd8"
+        ],
+        "descripcion": "Vestido largo estilo strapless con escote recto, confeccionado en tejido liviano con estampado floral en tonos celeste y amarillo sobre fondo marrón chocolate.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo strapless",
+        "prendasSecundarias": [
+          "sandalias",
+          "collar",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo strapless estampado floral",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#4a3326",
+          "#9cbfd8"
+        ],
+        "descripcion": "Vestido largo estilo strapless con escote recto, confeccionado en tejido liviano con estampado floral en tonos celeste y amarillo sobre fondo marrón chocolate.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo strapless",
+        "prendasSecundarias": [
+          "sandalias",
+          "collar",
+          "aros"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:11.776Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a9704595-2d63-4ebf-b5fa-c0498212aa96",
+      "fileName": "25475590_bc4215e1-77aa-4f56-8c35-0446e121ff1a.jpg",
+      "folderName": "core in fashion",
+      "file": "a9704595-2d63-4ebf-b5fa-c0498212aa96.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-025d7ed0-9c89-4999-8d41-403c192c3295",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo strapless floreado",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos largos",
+        "colores": [
+          "#3d2b25"
+        ],
+        "descripcion": "Vestido largo estilo strapless confeccionado en tejido ligero de caída fluida. Presenta un vistoso estampado floral en tonos celeste y amarillo suave sobre fondo marrón dark. Ideal para un look fresco y relajado de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo",
+        "prendasSecundarias": [
+          "sandalias",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo strapless floreado",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos largos",
+        "colores": [
+          "#3d2b25"
+        ],
+        "descripcion": "Vestido largo estilo strapless confeccionado en tejido ligero de caída fluida. Presenta un vistoso estampado floral en tonos celeste y amarillo suave sobre fondo marrón dark. Ideal para un look fresco y relajado de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo",
+        "prendasSecundarias": [
+          "sandalias",
+          "collar"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:11.792Z",
+      "errorDetail": null
+    },
+    {
+      "id": "9154f2f7-440b-40ac-b20b-2ab16829b60a",
+      "fileName": "25509101_6c825265-f298-4d25-8328-c826249c93d9.jpg",
+      "folderName": "core in fashion",
+      "file": "9154f2f7-440b-40ac-b20b-2ab16829b60a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4b854c90-43e4-47e0-8f7d-6229ada52669",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo strapless a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos",
+        "colores": [
+          "#527cb9"
+        ],
+        "descripcion": "Vestido largo strapless con pechera elastizada en nido de abeja y falda fluida. Presenta un estampado de rayas verticales en tonos azul, marrón y crema, ideal para un look fresco y veraniego.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo strapless",
+        "prendasSecundarias": [
+          "sandalias",
+          "collar",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo strapless a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos",
+        "colores": [
+          "#527cb9"
+        ],
+        "descripcion": "Vestido largo strapless con pechera elastizada en nido de abeja y falda fluida. Presenta un estampado de rayas verticales en tonos azul, marrón y crema, ideal para un look fresco y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo strapless",
+        "prendasSecundarias": [
+          "sandalias",
+          "collar",
+          "pulsera"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:11.993Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f5b85fff-28b6-40c3-a5bc-67a05d0b7798",
+      "fileName": "25509101_8b144e5e-70e8-4e43-8492-6d4870618eed.jpg",
+      "folderName": "core in fashion",
+      "file": "f5b85fff-28b6-40c3-a5bc-67a05d0b7798.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0e5d9b8c-a51c-4545-8d96-ce9acaab28a8",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo strapless a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#5283b8",
+          "#493427",
+          "#dfd6c4"
+        ],
+        "descripcion": "Vestido largo strapless con estampado de rayas multicolores en sentido vertical. Destaca por su pechera elavisada en nido de abeja que proporciona un calce ajustado y cómodo, y una caída fluida y holgada.",
+        "recorte": null,
+        "confianza": 0.96,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo a rayas",
+        "prendasSecundarias": [
+          "sandalias de taco",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo strapless a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#5283b8",
+          "#493427",
+          "#dfd6c4"
+        ],
+        "descripcion": "Vestido largo strapless con estampado de rayas multicolores en sentido vertical. Destaca por su pechera elavisada en nido de abeja que proporciona un calce ajustado y cómodo, y una caída fluida y holgada.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo a rayas",
+        "prendasSecundarias": [
+          "sandalias de taco",
+          "pulseras"
+        ],
+        "confianza": 0.96,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:11.999Z",
+      "errorDetail": null
+    },
+    {
+      "id": "657d8738-6030-4b4c-8bd7-8b68e91ebb54",
+      "fileName": "25509101_c2727341-2e94-4eec-8a58-a8c1ef64c0ae.jpg",
+      "folderName": "core in fashion",
+      "file": "657d8738-6030-4b4c-8bd7-8b68e91ebb54.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-89ffa9c1-5b90-45c5-9dea-d60f0ce28f8c",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo strapless a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#4b82cb",
+          "#32251d",
+          "#d9d0c1"
+        ],
+        "descripcion": "Vestido largo strapless de corte fluido con torso elastizado en nido de abeja y estampa de rayas verticales multicolor. Ideal para un look fresco de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo strapless",
+        "prendasSecundarias": [
+          "sandalias",
+          "pulseras",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo strapless a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#4b82cb",
+          "#32251d",
+          "#d9d0c1"
+        ],
+        "descripcion": "Vestido largo strapless de corte fluido con torso elastizado en nido de abeja y estampa de rayas verticales multicolor. Ideal para un look fresco de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo strapless",
+        "prendasSecundarias": [
+          "sandalias",
+          "pulseras",
+          "collar"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.010Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2c0fa21c-0105-4034-8cf2-073b80733a9b",
+      "fileName": "25509101_f38a3a14-b733-4b48-9055-07de8d249072.jpg",
+      "folderName": "core in fashion",
+      "file": "2c0fa21c-0105-4034-8cf2-073b80733a9b.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-cd798dde-e4ca-454e-b58f-a2d1b257c9cd",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo strapless a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#4b80be",
+          "#402b1b",
+          "#ebe2cd"
+        ],
+        "descripcion": "Vestido largo escote strapless con elástizado tipo nido de abeja en el busto y estampado de rayas verticales en tonos azul, marrón y beige. Perfecta prenda fresca y elegante para el verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo a rayas",
+        "prendasSecundarias": [
+          "sandalias de plataforma",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo strapless a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos largos",
+        "colores": [
+          "#4b80be",
+          "#402b1b",
+          "#ebe2cd"
+        ],
+        "descripcion": "Vestido largo escote strapless con elástizado tipo nido de abeja en el busto y estampado de rayas verticales en tonos azul, marrón y beige. Perfecta prenda fresca y elegante para el verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo a rayas",
+        "prendasSecundarias": [
+          "sandalias de plataforma",
+          "pulsera"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.014Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c89b0469-71a9-4f13-8c6d-891d352134f1",
+      "fileName": "25514096_362e97d3-9270-460f-bdcc-b4bfa466d1d9.jpg",
+      "folderName": "core in fashion",
+      "file": "c89b0469-71a9-4f13-8c6d-891d352134f1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a8d6e929-de04-499b-9d79-bf87abdf1ed6",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless con estampado de palmeras",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#524636",
+          "#a4b759"
+        ],
+        "descripcion": "Top strapless de corte evassé con estampado tropical de palmeras en tonos verde y marrón.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless estampado",
+        "prendasSecundarias": [
+          "short estampado",
+          "sandalias bajas",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless con estampado de palmeras",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#524636",
+          "#a4b759"
+        ],
+        "descripcion": "Top strapless de corte evassé con estampado tropical de palmeras en tonos verde y marrón.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless estampado",
+        "prendasSecundarias": [
+          "short estampado",
+          "sandalias bajas",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.253Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0db91783-5e39-42c2-9263-d296915ea493",
+      "fileName": "25514096_730aca91-a5d2-4196-b2ce-31611f3bdad5.jpg",
+      "folderName": "core in fashion",
+      "file": "0db91783-5e39-42c2-9263-d296915ea493.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a193476d-89a7-49c6-9409-4e750b1bd2ab",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless a rayas",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#4b80c3"
+        ],
+        "descripcion": "Top estilo palabra de honor suelto con estampado de rayas verticales en tonos azul, marrón y oliva. Confeccionado en tejido fresco y liviano, ideal para armar un conjunto relajado de verano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a rayas",
+        "prendasSecundarias": [
+          "short a rayas",
+          "ojotas",
+          "pulsera",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless a rayas",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#4b80c3"
+        ],
+        "descripcion": "Top estilo palabra de honor suelto con estampado de rayas verticales en tonos azul, marrón y oliva. Confeccionado en tejido fresco y liviano, ideal para armar un conjunto relajado de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a rayas",
+        "prendasSecundarias": [
+          "short a rayas",
+          "ojotas",
+          "pulsera",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.267Z",
+      "errorDetail": null
+    },
+    {
+      "id": "93b349e6-4340-4c31-ab21-69b8dfa40a12",
+      "fileName": "25514096_cba895ae-2d8e-49cc-952d-91d6f1444c9b.jpg",
+      "folderName": "core in fashion",
+      "file": "93b349e6-4340-4c31-ab21-69b8dfa40a12.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8cacd887-30e1-4e67-aaf0-e7ee5cd1ac70",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless estampado tropical",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "top strapless",
+        "colores": [
+          "#faf6f0"
+        ],
+        "descripcion": "Top strapless corte evasé confeccionado en tejido liviano con estampado tropical foliaje en tonos marrón y azul sobre fondo crudo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless estampado",
+        "prendasSecundarias": [
+          "short estampado",
+          "collar",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless estampado tropical",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "top strapless",
+        "colores": [
+          "#faf6f0"
+        ],
+        "descripcion": "Top strapless corte evasé confeccionado en tejido liviano con estampado tropical foliaje en tonos marrón y azul sobre fondo crudo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless estampado",
+        "prendasSecundarias": [
+          "short estampado",
+          "collar",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.479Z",
+      "errorDetail": null
+    },
+    {
+      "id": "56b3a60e-1931-4bd1-9a09-f2c6ce37e456",
+      "fileName": "25514100_43b14ee8-1af3-4eec-a282-780a8d31a361.jpg",
+      "folderName": "core in fashion",
+      "file": "56b3a60e-1931-4bd1-9a09-f2c6ce37e456.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a8c99337-b8fd-454f-85cf-d0b171dac6e9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top Strapless Estampado Botánico",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#ebe6db",
+          "#4f5538",
+          "#9e5d49"
+        ],
+        "descripcion": "Top strapless holgado con estampado botánico en tonos verde oliva y terracota sobre fondo crema. Incluye prácticos bolsillos laterales y un corte fresco ideal para armar conjuntos veraniegos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless estampado",
+        "prendasSecundarias": [
+          "short estampado",
+          "pulseras",
+          "collar"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top Strapless Estampado Botánico",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#ebe6db",
+          "#4f5538",
+          "#9e5d49"
+        ],
+        "descripcion": "Top strapless holgado con estampado botánico en tonos verde oliva y terracota sobre fondo crema. Incluye prácticos bolsillos laterales y un corte fresco ideal para armar conjuntos veraniegos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless estampado",
+        "prendasSecundarias": [
+          "short estampado",
+          "pulseras",
+          "collar"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.490Z",
+      "errorDetail": null
+    },
+    {
+      "id": "da1b9c12-1ef3-4e24-8ccd-02f7127cbc53",
+      "fileName": "25514100_54423e07-2b0d-4d96-9c07-eab16fafdb40.jpg",
+      "folderName": "core in fashion",
+      "file": "da1b9c12-1ef3-4e24-8ccd-02f7127cbc53.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-135fec4a-0458-409c-9198-4299a88cd7a5",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless con lunares",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Top strapless",
+        "colores": [
+          "#1a1a1a"
+        ],
+        "descripcion": "Top strapless estilo palabra de honor en color negro con estampado de lunares blancos y espalda nido de abeja elastizada.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless con lunares",
+        "prendasSecundarias": [
+          "short negro",
+          "aros dorados",
+          "pulseras"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless con lunares",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Top strapless",
+        "colores": [
+          "#1a1a1a"
+        ],
+        "descripcion": "Top strapless estilo palabra de honor en color negro con estampado de lunares blancos y espalda nido de abeja elastizada.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless con lunares",
+        "prendasSecundarias": [
+          "short negro",
+          "aros dorados",
+          "pulseras"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.496Z",
+      "errorDetail": null
+    },
+    {
+      "id": "bb5f9b94-0b9d-48db-b25c-a2dead780636",
+      "fileName": "25514100_7d155023-829c-42c6-91a6-b9e3a5bd7a64.jpg",
+      "folderName": "core in fashion",
+      "file": "bb5f9b94-0b9d-48db-b25c-a2dead780636.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b96d5735-b7af-4e0c-b6aa-c70b973e62f2",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless a lunares marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#4d2e28",
+          "#ffffff"
+        ],
+        "descripcion": "Top strapless holgado en tono marrón chocolate con estampado de lunares blancos. Un diseño fresco y veraniego con cayente fluido.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a lunares",
+        "prendasSecundarias": [
+          "short a juego",
+          "pulseras",
+          "collar",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless a lunares marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Tops strapless",
+        "colores": [
+          "#4d2e28",
+          "#ffffff"
+        ],
+        "descripcion": "Top strapless holgado en tono marrón chocolate con estampado de lunares blancos. Un diseño fresco y veraniego con cayente fluido.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a lunares",
+        "prendasSecundarias": [
+          "short a juego",
+          "pulseras",
+          "collar",
+          "aros"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.705Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4c07b7af-b604-42d4-8e2c-900ec548695b",
+      "fileName": "25514100_99e68161-66bd-488f-b0ee-0f07169c69a6.jpg",
+      "folderName": "core in fashion",
+      "file": "4c07b7af-b604-42d4-8e2c-900ec548695b.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-622f8b2e-f85b-44b3-be59-9ed5b24b4885",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Top strapless peplum a lunares",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#1d1b1c",
+          "#ffffff"
+        ],
+        "descripcion": "Top strapless confeccionado en tejido liviano negro con estampado de lunares en contraste. Presenta escote recto, calce entallado y ruedo con vuelo estilo peplum.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a lunares",
+        "prendasSecundarias": [
+          "short a lunares",
+          "aros dorados",
+          "collar dorado",
+          "pulsera",
+          "anillo dorado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Top strapless peplum a lunares",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "tops strapless",
+        "colores": [
+          "#1d1b1c",
+          "#ffffff"
+        ],
+        "descripcion": "Top strapless confeccionado en tejido liviano negro con estampado de lunares en contraste. Presenta escote recto, calce entallado y ruedo con vuelo estilo peplum.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "top strapless a lunares",
+        "prendasSecundarias": [
+          "short a lunares",
+          "aros dorados",
+          "collar dorado",
+          "pulsera",
+          "anillo dorado"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.712Z",
+      "errorDetail": null
+    },
+    {
+      "id": "87cfa376-8f96-4045-b474-40feb16c7958",
+      "fileName": "25737332_0469f44c-ab43-49e4-92d7-04751ff35afe.jpg",
+      "folderName": "core in fashion",
+      "file": "87cfa376-8f96-4045-b474-40feb16c7958.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f971ebf8-1544-46c2-9d98-5d1575b80318",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda de Lentejuelas Crema",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "minifaldas",
+        "colores": [
+          "#fbf6ee",
+          "#efe2d3"
+        ],
+        "descripcion": "Minifalda al cuerpo completamente bordada con lentejuelas e paillettes circulares en tono marfil. Un diseño glamoroso y brillante ideal para destacar en eventos o salidas nocturnas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda de Lentejuelas Crema",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "minifaldas",
+        "colores": [
+          "#fbf6ee",
+          "#efe2d3"
+        ],
+        "descripcion": "Minifalda al cuerpo completamente bordada con lentejuelas e paillettes circulares en tono marfil. Un diseño glamoroso y brillante ideal para destacar en eventos o salidas nocturnas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.722Z",
+      "errorDetail": null
+    },
+    {
+      "id": "14960782-bdb9-4ef8-9296-5fc0c0b5a5b1",
+      "fileName": "25514100_b874d420-936b-43c9-965b-9fc1eea723c0.jpg",
+      "folderName": "core in fashion",
+      "file": "14960782-bdb9-4ef8-9296-5fc0c0b5a5b1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-2e3994e7-82ae-48a7-a0a9-148060992e20",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Enterito corto strapless estampado tropical",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "jumpsuit",
+        "gender": "mujer",
+        "subcategoria": "Enteritos",
+        "colores": [
+          "#f0eae1",
+          "#4a543a",
+          "#a36a57"
+        ],
+        "descripcion": "Enterito corto estilo strapless con estampado botánico de hojas y espalda elastizada en nido de abeja. Presenta zócalo estampado en el ruedo y calce holgado, ideal para días calurosos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "enterito corto",
+        "prendasSecundarias": [
+          "sandalias",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Enterito corto strapless estampado tropical",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Enteritos",
+        "colores": [
+          "#f0eae1",
+          "#4a543a",
+          "#a36a57"
+        ],
+        "descripcion": "Enterito corto estilo strapless con estampado botánico de hojas y espalda elastizada en nido de abeja. Presenta zócalo estampado en el ruedo y calce holgado, ideal para días calurosos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "enterito corto",
+        "prendasSecundarias": [
+          "sandalias",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jumpsuit",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.728Z",
+      "errorDetail": null
+    },
+    {
+      "id": "1ad8ba40-2abb-41fe-85c0-e25573e8d7df",
+      "fileName": "25737332_09a31186-4c23-46ae-b385-6ebcb13c7c3e.jpg",
+      "folderName": "core in fashion",
+      "file": "1ad8ba40-2abb-41fe-85c0-e25573e8d7df.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b9632a36-fd01-45db-8f51-1469da281869",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda de lentejuelas celeste",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "minifaldas",
+        "colores": [
+          "#c3d3f6"
+        ],
+        "descripcion": "Minifalda recta confeccionada íntegramente con lentejuelas circulares en tono celeste pastel. Un diseño de fiesta brillante e ideal para destacar tu outfit de noche.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda de lentejuelas celeste",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "minifaldas",
+        "colores": [
+          "#c3d3f6"
+        ],
+        "descripcion": "Minifalda recta confeccionada íntegramente con lentejuelas circulares en tono celeste pastel. Un diseño de fiesta brillante e ideal para destacar tu outfit de noche.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.921Z",
+      "errorDetail": null
+    },
+    {
+      "id": "02b777ac-35fb-45a8-9b97-576a03919531",
+      "fileName": "25737332_1f4161fa-7dda-491c-93fd-a4b2890da210.jpg",
+      "folderName": "core in fashion",
+      "file": "02b777ac-35fb-45a8-9b97-576a03919531.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-6b5106d2-984e-46cd-88fa-992f42ce64f3",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minipollera de lentejuelas amarilla",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minipolleras",
+        "colores": [
+          "#ffe76a"
+        ],
+        "descripcion": "Minipollera confeccionada totalmente con lentejuelas redondas en tono amarillo claro con acabado brillante, ideal para salir o un look de fiesta.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minipollera de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minipollera de lentejuelas amarilla",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minipolleras",
+        "colores": [
+          "#ffe76a"
+        ],
+        "descripcion": "Minipollera confeccionada totalmente con lentejuelas redondas en tono amarillo claro con acabado brillante, ideal para salir o un look de fiesta.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minipollera de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.941Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0ef9ceb6-3f8a-4793-a6b0-367a5a3d5086",
+      "fileName": "25737332_36b85ea6-f688-4b42-9b44-9c1b2c2d88dc.jpg",
+      "folderName": "core in fashion",
+      "file": "0ef9ceb6-3f8a-4793-a6b0-367a5a3d5086.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0856a432-a9ae-4a25-aa2f-5135e77f443d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minipollera de lentejuelas rosa",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "polleras de fiesta",
+        "colores": [
+          "#f2a8d9"
+        ],
+        "descripcion": "Minipollera tiro medio confeccionada con aplicación total de lentejuelas en tono rosa claro, ideal para armar outfits de noche y fiesta.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minipollera de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minipollera de lentejuelas rosa",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "polleras de fiesta",
+        "colores": [
+          "#f2a8d9"
+        ],
+        "descripcion": "Minipollera tiro medio confeccionada con aplicación total de lentejuelas en tono rosa claro, ideal para armar outfits de noche y fiesta.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minipollera de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:12.959Z",
+      "errorDetail": null
+    },
+    {
+      "id": "307412b0-b89d-4f44-9756-f2376061f8ba",
+      "fileName": "25737332_39feea60-d624-4e2c-a39e-8e38566cd876.jpg",
+      "folderName": "core in fashion",
+      "file": "307412b0-b89d-4f44-9756-f2376061f8ba.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b432b61f-11e5-4b76-8a62-e8a04a920c21",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda con lentejuelas azul marino",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#201a48",
+          "#3730a3",
+          "#111328"
+        ],
+        "descripcion": "Minifalda de tiro medio completamente bordada con lentejuelas brillantes en tonos azul marino y violeta, finalizada con pretina fina a tono.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda con lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda con lentejuelas azul marino",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#201a48",
+          "#3730a3",
+          "#111328"
+        ],
+        "descripcion": "Minifalda de tiro medio completamente bordada con lentejuelas brillantes en tonos azul marino y violeta, finalizada con pretina fina a tono.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda con lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.143Z",
+      "errorDetail": null
+    },
+    {
+      "id": "59b48738-f42c-46ad-a941-7c6a305a32e2",
+      "fileName": "25737332_3aca6fed-0dbc-4f18-813e-b5c7cfdf7765.jpg",
+      "folderName": "core in fashion",
+      "file": "59b48738-f42c-46ad-a941-7c6a305a32e2.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5326e0bb-cec8-4ff5-b4e7-2c4b741fa1d4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda con lentejuelas bronce",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#a56c5c"
+        ],
+        "descripcion": "Minifalda de tiro medio totalmente bordada con lentejuelas circulares en tono bronce y cintura elastizada negra, ideal para salidas y eventos nocturnos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda con lentejuelas bronce",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#a56c5c"
+        ],
+        "descripcion": "Minifalda de tiro medio totalmente bordada con lentejuelas circulares en tono bronce y cintura elastizada negra, ideal para salidas y eventos nocturnos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.162Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2ca88e2b-708b-4c10-b65a-6e5a6e19c4ac",
+      "fileName": "25737332_42a57902-bd79-4f29-b613-960a9cc75a0c.jpg",
+      "folderName": "core in fashion",
+      "file": "2ca88e2b-708b-4c10-b65a-6e5a6e19c4ac.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-37cac9ad-2ed5-4704-948c-21c2716cfb1b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda de Lentejuelas Fucsia",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#e5007d"
+        ],
+        "descripcion": "Minifalda de tiro alto con confección íntegra en lentejuelas circulares fucsias de acabado brillante, perfecta para armar looks de noche y fiesta.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda de Lentejuelas Fucsia",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#e5007d"
+        ],
+        "descripcion": "Minifalda de tiro alto con confección íntegra en lentejuelas circulares fucsias de acabado brillante, perfecta para armar looks de noche y fiesta.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.191Z",
+      "errorDetail": null
+    },
+    {
+      "id": "5a6695bf-0a1b-4a89-8914-8a4a331de0a1",
+      "fileName": "25737332_761caa37-40f8-4f4b-b590-84bc8d61a6bb.jpg",
+      "folderName": "core in fashion",
+      "file": "5a6695bf-0a1b-4a89-8914-8a4a331de0a1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-59345dc6-929b-480a-862e-b7243107a609",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda de lentejuelas champagne",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#d3c1ad"
+        ],
+        "descripcion": "Minifalda al cuerpo completamente bordada con lentejuelas circulares en tono beige champagne. Cuenta con pretina lisa y es ideal para armar un look de noche sofisticado y festivo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda de lentejuelas champagne",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#d3c1ad"
+        ],
+        "descripcion": "Minifalda al cuerpo completamente bordada con lentejuelas circulares en tono beige champagne. Cuenta con pretina lisa y es ideal para armar un look de noche sofisticado y festivo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.361Z",
+      "errorDetail": null
+    },
+    {
+      "id": "0596de38-0bd4-4f80-a333-59499ea0c871",
+      "fileName": "25737332_85cc5766-dec1-4605-b981-5f1af5b800c3.jpg",
+      "folderName": "core in fashion",
+      "file": "0596de38-0bd4-4f80-a333-59499ea0c871.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-36619d20-6433-4a1a-95a0-d854970b824b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda de lentejuelas roja",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#d0021b",
+          "#8b0000"
+        ],
+        "descripcion": "Minifalda de fiesta confeccionada íntegramente con lentejuelas rojas brillantes y pretina fina al tono. Un diseño de alto impacto, ideal para armar looks de noche deslumbrantes.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda de lentejuelas roja",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#d0021b",
+          "#8b0000"
+        ],
+        "descripcion": "Minifalda de fiesta confeccionada íntegramente con lentejuelas rojas brillantes y pretina fina al tono. Un diseño de alto impacto, ideal para armar looks de noche deslumbrantes.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.384Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b9a2cedf-f9c9-401a-8792-d044ff406aca",
+      "fileName": "25737332_ae7270de-a823-493e-a0d0-6ee06573b1ae.jpg",
+      "folderName": "core in fashion",
+      "file": "b9a2cedf-f9c9-401a-8792-d044ff406aca.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-dba72ece-1551-4f89-8596-468b740dc4e0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minipollera con lentejuelas",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "minipollleras",
+        "colores": [
+          "#8c8275",
+          "#bbb3a5",
+          "#524b42"
+        ],
+        "descripcion": "Minipollera tiro alto bordada íntegramente con lentejuelas circulares en tonos neutros y metalizados. Un diseño brillante y audaz, ideal para armar un outfit de noche con mucho estilo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pollera con lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minipollera con lentejuelas",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "minipollleras",
+        "colores": [
+          "#8c8275",
+          "#bbb3a5",
+          "#524b42"
+        ],
+        "descripcion": "Minipollera tiro alto bordada íntegramente con lentejuelas circulares en tonos neutros y metalizados. Un diseño brillante y audaz, ideal para armar un outfit de noche con mucho estilo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pollera con lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.425Z",
+      "errorDetail": null
+    },
+    {
+      "id": "056581b8-e6b3-47f7-9044-f74fd8145796",
+      "fileName": "25737332_b3e70698-c589-4acf-a97f-4560d4e1fee4.jpg",
+      "folderName": "core in fashion",
+      "file": "056581b8-e6b3-47f7-9044-f74fd8145796.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-655bfb24-806a-4aea-ab81-4d4a16777edc",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda de lentejuelas plateadas",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#c0c0c0",
+          "#e0e0e0",
+          "#808080"
+        ],
+        "descripcion": "Minifalda de tiro medio confeccionada con lentejuelas circulares grandes en tono plateado con acabado metalizado, ideal para un look de fiesta.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda de lentejuelas plateadas",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#c0c0c0",
+          "#e0e0e0",
+          "#808080"
+        ],
+        "descripcion": "Minifalda de tiro medio confeccionada con lentejuelas circulares grandes en tono plateado con acabado metalizado, ideal para un look de fiesta.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.613Z",
+      "errorDetail": null
+    },
+    {
+      "id": "35d204eb-8541-4435-9cb5-999b0e8129c9",
+      "fileName": "25737332_d03be6b7-6755-4e34-8578-93b51b93ebeb.jpg",
+      "folderName": "core in fashion",
+      "file": "35d204eb-8541-4435-9cb5-999b0e8129c9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-290b31bd-7d32-4807-adce-87e422fa42bb",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Suéter de hilo celeste oversize",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "sweater",
+        "gender": "mujer",
+        "subcategoria": "suéteres",
+        "colores": [
+          "#a0c0dc"
+        ],
+        "descripcion": "Suéter tejido en hilo de color celeste con manga tres cuartos estilo raglán y cuello redondo. Posee calce holgado, ideal para combinar en un look casual y elegante.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "suéter celeste",
+        "prendasSecundarias": [
+          "pollera con apliques",
+          "collar de cuentas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Suéter de hilo celeste oversize",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "suéteres",
+        "colores": [
+          "#a0c0dc"
+        ],
+        "descripcion": "Suéter tejido en hilo de color celeste con manga tres cuartos estilo raglán y cuello redondo. Posee calce holgado, ideal para combinar en un look casual y elegante.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "suéter celeste",
+        "prendasSecundarias": [
+          "pollera con apliques",
+          "collar de cuentas"
+        ],
+        "confianza": 0.95,
+        "garmentType": "sweater",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.693Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d159bda6-3bb3-40b8-ab27-d64eeb8c56ae",
+      "fileName": "25737332_dea6a4b4-d103-4655-aee8-dc20473bfafc.jpg",
+      "folderName": "core in fashion",
+      "file": "d159bda6-3bb3-40b8-ab27-d64eeb8c56ae.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4ea8f8ad-45e9-4fc8-94b9-f10618fd123c",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minipollera de lentejuelas bronce",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minipolleras",
+        "colores": [
+          "#b86d43",
+          "#e3a072",
+          "#7d3d1b"
+        ],
+        "descripcion": "Minipollera al cuerpo confeccionada con apliques de grandes lentejuelas circulares en tono bronce metalizado. Posee cintura elastizada y brillo intenso, ideal para destacar en outfits de noche.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minipollera de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minipollera de lentejuelas bronce",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minipolleras",
+        "colores": [
+          "#b86d43",
+          "#e3a072",
+          "#7d3d1b"
+        ],
+        "descripcion": "Minipollera al cuerpo confeccionada con apliques de grandes lentejuelas circulares en tono bronce metalizado. Posee cintura elastizada y brillo intenso, ideal para destacar en outfits de noche.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minipollera de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.855Z",
+      "errorDetail": null
+    },
+    {
+      "id": "5f54a263-5b0d-44eb-b851-54934356d55a",
+      "fileName": "25737332_ee4ff148-3bd7-4610-93e8-3732d7b377c6.jpg",
+      "folderName": "core in fashion",
+      "file": "5f54a263-5b0d-44eb-b851-54934356d55a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f12faa27-5517-4423-9095-6be4d0afa85e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda de lentejuelas rojas",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#d7001a"
+        ],
+        "descripcion": "Minifalda recta totalmente bordada con lentejuelas circulares rojas de alto brillo, perfecta para outfits nocturnos o de fiesta.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda de lentejuelas rojas",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#d7001a"
+        ],
+        "descripcion": "Minifalda recta totalmente bordada con lentejuelas circulares rojas de alto brillo, perfecta para outfits nocturnos o de fiesta.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.904Z",
+      "errorDetail": null
+    },
+    {
+      "id": "bb1a0aea-c028-42a2-b296-3c5c6d470701",
+      "fileName": "25737332_ff452174-aea1-46f7-a463-35962051d1c2.jpg",
+      "folderName": "core in fashion",
+      "file": "bb1a0aea-c028-42a2-b296-3c5c6d470701.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-df2f37f0-79fb-4066-9368-e9080d9465d0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Minifalda con lentejuelas negra",
+        "categoria": "bottoms",
+        "categoriaInterna": "lowerbody",
+        "garmentType": "skirt",
+        "gender": "mujer",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#111111"
+        ],
+        "descripcion": "Minifalda de tiro medio confeccionada en tejido bordado con grandes lentejuelas circulares de tono negro, ideal para sumar brillo y estilo a tu outfit de noche.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Minifalda con lentejuelas negra",
+        "categoriaInterna": "lowerbody",
+        "subcategoria": "Minifaldas",
+        "colores": [
+          "#111111"
+        ],
+        "descripcion": "Minifalda de tiro medio confeccionada en tejido bordado con grandes lentejuelas circulares de tono negro, ideal para sumar brillo y estilo a tu outfit de noche.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "minifalda de lentejuelas",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "skirt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:13.928Z",
+      "errorDetail": null
+    },
+    {
+      "id": "cbf08cf9-bb30-474d-8397-5e0a9ef17251",
+      "fileName": "25757116_1fbb1ec2-0c00-4df9-bf51-f67d50d96129.jpg",
+      "folderName": "core in fashion",
+      "file": "cbf08cf9-bb30-474d-8397-5e0a9ef17251.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f84b044e-7b5a-4b28-b960-07c794a67fa9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Bikini de dos piezas marrón acanalado",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "other",
+        "gender": "mujer",
+        "subcategoria": "Trajes de baño",
+        "colores": [
+          "#4a3022",
+          "#ffffff"
+        ],
+        "descripcion": "Bikini de dos piezas confeccionado en tela acanalada color marrón chocolate. Corpiño de triángulo con tazas forradas en blanco y herraje metálico en el centro, acompañado de bombacha colaless con tiras finas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "bikini",
+        "prendasSecundarias": [
+          "sombrero de paja"
+        ]
+      },
+      "ficha": {
+        "nombre": "Bikini de dos piezas marrón acanalado",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Trajes de baño",
+        "colores": [
+          "#4a3022",
+          "#ffffff"
+        ],
+        "descripcion": "Bikini de dos piezas confeccionado en tela acanalada color marrón chocolate. Corpiño de triángulo con tazas forradas en blanco y herraje metálico en el centro, acompañado de bombacha colaless con tiras finas.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "bikini",
+        "prendasSecundarias": [
+          "sombrero de paja"
+        ],
+        "confianza": 0.95,
+        "garmentType": "other",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.070Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a6389034-705e-4656-817c-2dcaefd3b56d",
+      "fileName": "25757116_38d34ddf-4b7d-46ad-aeaa-4122d927d3b8.jpg",
+      "folderName": "core in fashion",
+      "file": "a6389034-705e-4656-817c-2dcaefd3b56d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-50936f02-eb0b-4642-b331-5ae4191fafa6",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Bikini marrón acanalado con detalles dorados",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "other",
+        "gender": "mujer",
+        "subcategoria": "trajes de baño",
+        "colores": [
+          "#4a2e2b",
+          "#3a221e"
+        ],
+        "descripcion": "Set de bikini de dos piezas en tejido acanalado color marrón. El corpiño es de triangulito con breteles finos y aplique metálico circular en el centro. La bombacha haciendo juego incluye apliques dorados en los laterales.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "bikini de dos piezas",
+        "prendasSecundarias": [
+          "sombrero de paja"
+        ]
+      },
+      "ficha": {
+        "nombre": "Bikini marrón acanalado con detalles dorados",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "trajes de baño",
+        "colores": [
+          "#4a2e2b",
+          "#3a221e"
+        ],
+        "descripcion": "Set de bikini de dos piezas en tejido acanalado color marrón. El corpiño es de triangulito con breteles finos y aplique metálico circular en el centro. La bombacha haciendo juego incluye apliques dorados en los laterales.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "bikini de dos piezas",
+        "prendasSecundarias": [
+          "sombrero de paja"
+        ],
+        "confianza": 0.95,
+        "garmentType": "other",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.085Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6dd72788-2b7c-4963-b5f0-58046b62bf4d",
+      "fileName": "25757116_6feceee0-d716-4883-8adf-2d91870e454a.jpg",
+      "folderName": "core in fashion",
+      "file": "6dd72788-2b7c-4963-b5f0-58046b62bf4d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0c72f718-1459-464f-b767-d4c0876a269b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Corpiño de bikini acanalado marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "trajes de baño",
+        "colores": [
+          "#4d2e1d"
+        ],
+        "descripcion": "Corpiño de bikini triangular confeccionado en tejido acanalado de tono marrón chocolate, con un elegante herraje dorado en el centro y breteles finos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "corpiño de bikini",
+        "prendasSecundarias": [
+          "bombacha de bikini",
+          "collar",
+          "aros",
+          "pulsera"
+        ]
+      },
+      "ficha": {
+        "nombre": "Corpiño de bikini acanalado marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "trajes de baño",
+        "colores": [
+          "#4d2e1d"
+        ],
+        "descripcion": "Corpiño de bikini triangular confeccionado en tejido acanalado de tono marrón chocolate, con un elegante herraje dorado en el centro y breteles finos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "corpiño de bikini",
+        "prendasSecundarias": [
+          "bombacha de bikini",
+          "collar",
+          "aros",
+          "pulsera"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.138Z",
+      "errorDetail": null
+    },
+    {
+      "id": "eebacf10-8910-4fce-9ae3-f3ebc725be57",
+      "fileName": "25757116_db960d62-87b9-4a27-aea2-469f071470d7.jpg",
+      "folderName": "core in fashion",
+      "file": "eebacf10-8910-4fce-9ae3-f3ebc725be57.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5542fb3d-6ad5-40ec-9861-36035a364c2d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Corpiño de bikini acanalado marrón",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "top",
+        "gender": "mujer",
+        "subcategoria": "trajes de baño",
+        "colores": [
+          "#4b3224",
+          "#c89f5a"
+        ],
+        "descripcion": "Corpiño de bikini estilo triángulo en confección acanalada tono marrón chocolate, con breteles finos y aplique metálico dorado en el centro.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "corpiño de bikini",
+        "prendasSecundarias": [
+          "bombacha de bikini"
+        ]
+      },
+      "ficha": {
+        "nombre": "Corpiño de bikini acanalado marrón",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "trajes de baño",
+        "colores": [
+          "#4b3224",
+          "#c89f5a"
+        ],
+        "descripcion": "Corpiño de bikini estilo triángulo en confección acanalada tono marrón chocolate, con breteles finos y aplique metálico dorado en el centro.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "corpiño de bikini",
+        "prendasSecundarias": [
+          "bombacha de bikini"
+        ],
+        "confianza": 0.95,
+        "garmentType": "top",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.164Z",
+      "errorDetail": null
+    },
+    {
+      "id": "eba249a2-9d45-428e-a80d-7aa88bdf9cdf",
+      "fileName": "25771900_28fd7010-da89-4b05-905f-44dcd6e07e84.jpg",
+      "folderName": "core in fashion",
+      "file": "eba249a2-9d45-428e-a80d-7aa88bdf9cdf.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9a570231-630c-4ebc-9a1a-00509884a241",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo strapless de crochet con detalle",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos de crochet",
+        "colores": [
+          "#d5c4af",
+          "#c4b19a"
+        ],
+        "descripcion": "Vestido largo ajustado confeccionado en tejido calado tipo crochet de tono beige. Diseño strapless con escote en gota adornado con una estrella de mar dorada y una tajo lateral alto que aporta movimiento.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo de crochet",
+        "prendasSecundarias": [
+          "cartera de mano",
+          "pulseras",
+          "sandalias"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo strapless de crochet con detalle",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos de crochet",
+        "colores": [
+          "#d5c4af",
+          "#c4b19a"
+        ],
+        "descripcion": "Vestido largo ajustado confeccionado en tejido calado tipo crochet de tono beige. Diseño strapless con escote en gota adornado con una estrella de mar dorada y una tajo lateral alto que aporta movimiento.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo de crochet",
+        "prendasSecundarias": [
+          "cartera de mano",
+          "pulseras",
+          "sandalias"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.289Z",
+      "errorDetail": null
+    },
+    {
+      "id": "438dd312-7730-46d1-beab-e487012aab30",
+      "fileName": "25771900_507763be-224a-476f-8896-3d7d75252312.jpg",
+      "folderName": "core in fashion",
+      "file": "438dd312-7730-46d1-beab-e487012aab30.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5e61473c-c657-4564-b98f-b42bffe0ad44",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo tejido con breteles finos",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos",
+        "colores": [
+          "#c3b8a7"
+        ],
+        "descripcion": "Vestido largo al cuerpo confeccionado en tejido de punto calado color beige. Posee breteles finos y un calce entallado ideal para lucir en la temporada estival.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo tejido",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Vestido largo tejido con breteles finos",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos",
+        "colores": [
+          "#c3b8a7"
+        ],
+        "descripcion": "Vestido largo al cuerpo confeccionado en tejido de punto calado color beige. Posee breteles finos y un calce entallado ideal para lucir en la temporada estival.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo tejido",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.302Z",
+      "errorDetail": null
+    },
+    {
+      "id": "840cd486-d7e4-4a38-b153-07742ba695c4",
+      "fileName": "25771900_5b84d3f6-21a0-418e-b6d8-8e4da85feed9.jpg",
+      "folderName": "core in fashion",
+      "file": "840cd486-d7e4-4a38-b153-07742ba695c4.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9f9cdf89-7961-4caa-b529-8b0bad5d1ebd",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo de crochet strapless",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos maxi",
+        "colores": [
+          "#d3c3ad"
+        ],
+        "descripcion": "Vestido maxi tejido al crochet en tono beige, de corte ajustado al cuerpo y escote strapless. Presenta un detalle cut out en el centro del busto con aplique de estrella de mar dorada y un tajo lateral pronunciado que aporta frescura y soltura.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Vestido largo de crochet",
+        "prendasSecundarias": [
+          "cartera de mano blanca",
+          "sandalias ojotas blancas",
+          "pulsera dorada",
+          "anillo dorado"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo de crochet strapless",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos maxi",
+        "colores": [
+          "#d3c3ad"
+        ],
+        "descripcion": "Vestido maxi tejido al crochet en tono beige, de corte ajustado al cuerpo y escote strapless. Presenta un detalle cut out en el centro del busto con aplique de estrella de mar dorada y un tajo lateral pronunciado que aporta frescura y soltura.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Vestido largo de crochet",
+        "prendasSecundarias": [
+          "cartera de mano blanca",
+          "sandalias ojotas blancas",
+          "pulsera dorada",
+          "anillo dorado"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.367Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d8b0c045-5d40-405b-a4c3-9341c6141a1c",
+      "fileName": "25771900_7462acde-9edb-4def-816f-172d1049c024.jpg",
+      "folderName": "core in fashion",
+      "file": "d8b0c045-5d40-405b-a4c3-9341c6141a1c.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-bfa88409-a448-4226-a01e-cc381c1f65e9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo de crochet con aplique de estrella",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos de crochet",
+        "colores": [
+          "#e2d2bc",
+          "#efe3d2"
+        ],
+        "descripcion": "Vestido maxi tejido al crochet en tono beige crema, con escote strapless estilo strapless, abertura cut out en el busto con detalle decorativo de estrella de mar y tajito lateral.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo de crochet",
+        "prendasSecundarias": [
+          "cartera blanca",
+          "sandalias blancas",
+          "pulseras doradas"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido largo de crochet con aplique de estrella",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos de crochet",
+        "colores": [
+          "#e2d2bc",
+          "#efe3d2"
+        ],
+        "descripcion": "Vestido maxi tejido al crochet en tono beige crema, con escote strapless estilo strapless, abertura cut out en el busto con detalle decorativo de estrella de mar y tajito lateral.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo de crochet",
+        "prendasSecundarias": [
+          "cartera blanca",
+          "sandalias blancas",
+          "pulseras doradas"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.405Z",
+      "errorDetail": null
+    },
+    {
+      "id": "054b836f-73b4-4cfe-9415-e026a99bc678",
+      "fileName": "25771900_a5c061a4-abba-4155-8308-db0ad2d7c097.jpg",
+      "folderName": "core in fashion",
+      "file": "054b836f-73b4-4cfe-9415-e026a99bc678.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-81a6bf80-eba8-4a0d-83b8-259eaef5e342",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo tejido al crochet con recorte",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos",
+        "colores": [
+          "#e5d9c8"
+        ],
+        "descripcion": "Vestido largo entallado de tejido calado tipo crochet en tono beige ecru. Presenta breteles finos, escote recto con recorte ovalado central y detalle de aplique dorado con forma de estrella de mar, ideal para un look veraniego y fresco.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido tejido",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Vestido largo tejido al crochet con recorte",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos",
+        "colores": [
+          "#e5d9c8"
+        ],
+        "descripcion": "Vestido largo entallado de tejido calado tipo crochet en tono beige ecru. Presenta breteles finos, escote recto con recorte ovalado central y detalle de aplique dorado con forma de estrella de mar, ideal para un look veraniego y fresco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido tejido",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.506Z",
+      "errorDetail": null
+    },
+    {
+      "id": "db51b6df-f38b-49f2-87c7-11b7bee1bddb",
+      "fileName": "25771900_e4c7ed5f-550d-4ee3-8edf-b787899f9dea.jpg",
+      "folderName": "core in fashion",
+      "file": "db51b6df-f38b-49f2-87c7-11b7bee1bddb.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5485f6fc-ad3c-4b08-95c2-60376398e83f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido strapless de crochet con aplique",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos",
+        "colores": [
+          "#e0d2c0"
+        ],
+        "descripcion": "Vestido largo strapless en tejido calado color beige, con detalle de gota en el pecho, aplique de estrella de mar dorada y tajo lateral.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "vestido strapless de crochet",
+        "prendasSecundarias": [
+          "cartera blanca"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido strapless de crochet con aplique",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos",
+        "colores": [
+          "#e0d2c0"
+        ],
+        "descripcion": "Vestido largo strapless en tejido calado color beige, con detalle de gota en el pecho, aplique de estrella de mar dorada y tajo lateral.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "vestido strapless de crochet",
+        "prendasSecundarias": [
+          "cartera blanca"
+        ],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.525Z",
+      "errorDetail": null
+    },
+    {
+      "id": "058ee2f7-709d-484c-a6e5-50fa2cbf64b0",
+      "fileName": "25771900_ed914a24-ba2e-4af6-85f1-c4634e54fe03.jpg",
+      "folderName": "core in fashion",
+      "file": "058ee2f7-709d-484c-a6e5-50fa2cbf64b0.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-81b1ded7-a52f-47f4-8885-0ed7fdc6ab59",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido midi strapless tejido crochet",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos midi",
+        "colores": [
+          "#d3c5ab"
+        ],
+        "descripcion": "Vestido midi strapless tejido al crochet en tono beige. Posee un calce ajustado al cuerpo que resalta la silueta y escote palabra de honor. Un diseño fresco y sofisticado, ideal para días y noches de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido midi tejido",
+        "prendasSecundarias": [
+          "cartera de mano blanca",
+          "sandalias de taco alto"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido midi strapless tejido crochet",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos midi",
+        "colores": [
+          "#d3c5ab"
+        ],
+        "descripcion": "Vestido midi strapless tejido al crochet en tono beige. Posee un calce ajustado al cuerpo que resalta la silueta y escote palabra de honor. Un diseño fresco y sofisticado, ideal para días y noches de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido midi tejido",
+        "prendasSecundarias": [
+          "cartera de mano blanca",
+          "sandalias de taco alto"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.597Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a42aab85-14b4-49b8-a12d-63b4bd4683b4",
+      "fileName": "25771900_f2188cf6-14b2-4acd-ac6c-481e4b1f26cb.jpg",
+      "folderName": "core in fashion",
+      "file": "a42aab85-14b4-49b8-a12d-63b4bd4683b4.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-398e3c66-d128-4469-8706-17bf60013a34",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido largo tejido de punto",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos tejidos",
+        "colores": [
+          "#d3c8b4"
+        ],
+        "descripcion": "Vestido largo entallado confeccionado en tejido de punto con textura calada. Posee breteles finos y tajo lateral que aporta frescura y soltura al andar, ideal para un look veraniego sofisticado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo tejido",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Vestido largo tejido de punto",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos tejidos",
+        "colores": [
+          "#d3c8b4"
+        ],
+        "descripcion": "Vestido largo entallado confeccionado en tejido de punto con textura calada. Posee breteles finos y tajo lateral que aporta frescura y soltura al andar, ideal para un look veraniego sofisticado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido largo tejido",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.637Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a6e669bb-1f43-4dc8-a47f-86198b9a5aa0",
+      "fileName": "25771922_116d9aca-1ba9-43e7-870d-349c21e93fe8.jpg",
+      "folderName": "core in fashion",
+      "file": "a6e669bb-1f43-4dc8-a47f-86198b9a5aa0.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-11821f2d-cf76-460d-bca3-6504ca1a0714",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto satinado con encaje",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos cortos",
+        "colores": [
+          "#595c2b",
+          "#3e342d"
+        ],
+        "descripcion": "Vestido corto sin mangas confeccionado en tela satinada verde oliva. Presenta un corte recto, escote redondo y terminación con aplique de encaje al tono en el ruedo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto satinado",
+        "prendasSecundarias": [
+          "botas altas de gamuza",
+          "cartera de hombro",
+          "aros"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto satinado con encaje",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos cortos",
+        "colores": [
+          "#595c2b",
+          "#3e342d"
+        ],
+        "descripcion": "Vestido corto sin mangas confeccionado en tela satinada verde oliva. Presenta un corte recto, escote redondo y terminación con aplique de encaje al tono en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto satinado",
+        "prendasSecundarias": [
+          "botas altas de gamuza",
+          "cartera de hombro",
+          "aros"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.732Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2d07a244-4247-4c1e-b4dc-36b8bd9730d0",
+      "fileName": "25771922_4aaaee7f-90ca-4c3e-b0cd-a0a7cca75041.jpg",
+      "folderName": "core in fashion",
+      "file": "2d07a244-4247-4c1e-b4dc-36b8bd9730d0.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-15d3da66-8b16-4715-8488-851f2cb46eb8",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido mini satinado con encaje",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos cortos",
+        "colores": [
+          "#f3e5a2"
+        ],
+        "descripcion": "Vestido corto de silueta recta confeccionado en tela satinada color amarillo claro, con escote a la base, sin mangas y finas terminaciones de encaje festoneado en el dobladillo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Vestido mini satinado con encaje",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos cortos",
+        "colores": [
+          "#f3e5a2"
+        ],
+        "descripcion": "Vestido corto de silueta recta confeccionado en tela satinada color amarillo claro, con escote a la base, sin mangas y finas terminaciones de encaje festoneado en el dobladillo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.745Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ce6cf750-e98c-4afb-8564-6407e8a24e01",
+      "fileName": "25771922_4e9de091-403f-431c-a731-6bf0bb4eaf28.jpg",
+      "folderName": "core in fashion",
+      "file": "ce6cf750-e98c-4afb-8564-6407e8a24e01.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a6ec8a41-c77e-4c60-818d-f216906e0c11",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto lencero con encaje",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "vestidos cortos",
+        "colores": [
+          "#5c1b20"
+        ],
+        "descripcion": "Vestido corto de estilo lencero confeccionado en tela satinada color bordó, con escote redondo, diseño sin mangas y detalle de encaje al tono en el ruedo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido lencero",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Vestido corto lencero con encaje",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "vestidos cortos",
+        "colores": [
+          "#5c1b20"
+        ],
+        "descripcion": "Vestido corto de estilo lencero confeccionado en tela satinada color bordó, con escote redondo, diseño sin mangas y detalle de encaje al tono en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido lencero",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.822Z",
+      "errorDetail": null
+    },
+    {
+      "id": "013b19dd-a6d3-44b8-8a80-495c54cff66b",
+      "fileName": "25771922_72a3fbc4-4663-46bf-82e9-39da0d2e916c.jpg",
+      "folderName": "core in fashion",
+      "file": "013b19dd-a6d3-44b8-8a80-495c54cff66b.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-db3d796d-3fc6-432e-b474-1c51a728587f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido mini satinado con encaje",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#ede5d8"
+        ],
+        "descripcion": "Vestido corto satinado de cuello redondo y sin mangas, con elegante detalle de encaje floral calado en el ruedo. Una prenda delicada y sofisticada de estilo lencero ideal para eventos de noche.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido mini satinado",
+        "prendasSecundarias": [
+          "cartera de mano",
+          "zapatos de cuero",
+          "collar con dije"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido mini satinado con encaje",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#ede5d8"
+        ],
+        "descripcion": "Vestido corto satinado de cuello redondo y sin mangas, con elegante detalle de encaje floral calado en el ruedo. Una prenda delicada y sofisticada de estilo lencero ideal para eventos de noche.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido mini satinado",
+        "prendasSecundarias": [
+          "cartera de mano",
+          "zapatos de cuero",
+          "collar con dije"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.865Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a44ed643-27d9-4516-97a2-a20b9f315f1f",
+      "fileName": "25771922_c3450bdb-fb29-4452-ad40-e1069bb9bdb5.jpg",
+      "folderName": "core in fashion",
+      "file": "a44ed643-27d9-4516-97a2-a20b9f315f1f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5ee08be0-d1e5-4176-a92c-881b55e970c4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto satinado con encaje",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#0d0e10",
+          "#ebeae6"
+        ],
+        "descripcion": "Vestido corto de silueta recta y diseño sin mangas, elaborado en tejido satinado negro con terminación inferior de encaje en contraste blanco. Una opción elegante para eventos nocturnos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto con encaje",
+        "prendasSecundarias": [
+          "cartera de mano",
+          "reloj"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto satinado con encaje",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#0d0e10",
+          "#ebeae6"
+        ],
+        "descripcion": "Vestido corto de silueta recta y diseño sin mangas, elaborado en tejido satinado negro con terminación inferior de encaje en contraste blanco. Una opción elegante para eventos nocturnos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto con encaje",
+        "prendasSecundarias": [
+          "cartera de mano",
+          "reloj"
+        ],
+        "confianza": 0.98,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.947Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f4a4fc90-e1f4-4b1a-9909-758d879d2066",
+      "fileName": "25771922_dfa00019-2268-417e-9b77-481e9ea7ba2a.jpg",
+      "folderName": "core in fashion",
+      "file": "f4a4fc90-e1f4-4b1a-9909-758d879d2066.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-2d2f8d8d-5710-41f9-bdbe-c18d80177452",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto satinado con encaje",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#e3d5c5"
+        ],
+        "descripcion": "Vestido corto satinado en tono champagne, con diseño sin mangas y escote redondo. Destaca por su ruedo festoneado con detalle de encaje al tono, ideal para un look elegante y fresco.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto satinado",
+        "prendasSecundarias": [
+          "collar con dije"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto satinado con encaje",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#e3d5c5"
+        ],
+        "descripcion": "Vestido corto satinado en tono champagne, con diseño sin mangas y escote redondo. Destaca por su ruedo festoneado con detalle de encaje al tono, ideal para un look elegante y fresco.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido corto satinado",
+        "prendasSecundarias": [
+          "collar con dije"
+        ],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:14.963Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e78acf63-1261-4cc1-843b-ede3067b0dbd",
+      "fileName": "25771922_ec6be1f2-1fd3-4fe8-bc27-e6125177fa57.jpg",
+      "folderName": "core in fashion",
+      "file": "e78acf63-1261-4cc1-843b-ede3067b0dbd.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-bf087e95-ffdb-4889-8c15-23b2b12dcced",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Vestido corto satinado con encaje",
+        "categoria": "tops",
+        "categoriaInterna": "upperbody",
+        "garmentType": "dress",
+        "gender": "mujer",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#5c6234",
+          "#484c28",
+          "#3b312a"
+        ],
+        "descripcion": "Vestido corto sin mangas confeccionado en tejido satinado verde oliva, de corte suelto y terminación con delicada puntilla de encaje al tono en el ruedo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido satinado con encaje",
+        "prendasSecundarias": [
+          "botas altas de gamuza"
+        ]
+      },
+      "ficha": {
+        "nombre": "Vestido corto satinado con encaje",
+        "categoriaInterna": "upperbody",
+        "subcategoria": "Vestidos cortos",
+        "colores": [
+          "#5c6234",
+          "#484c28",
+          "#3b312a"
+        ],
+        "descripcion": "Vestido corto sin mangas confeccionado en tejido satinado verde oliva, de corte suelto y terminación con delicada puntilla de encaje al tono en el ruedo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "vestido satinado con encaje",
+        "prendasSecundarias": [
+          "botas altas de gamuza"
+        ],
+        "confianza": 0.95,
+        "garmentType": "dress",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:27:15.052Z",
+      "errorDetail": null
+    }
+  ],
+  "updatedAt": "2026-09-30T16:21:12.933Z"
+}

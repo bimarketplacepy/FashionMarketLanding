@@ -1,6 +1,10 @@
-import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
 const CatalogContext = createContext(null);
+
+// Las prendas con active:false (p. ej. la colección FW26) siguen en el catálogo
+// para el admin, pero no se muestran en la tienda ni en el probador.
+export const isActiveItem = (item) => item.active !== false;
 
 // Catálogo compartido entre todas las páginas. Las ediciones del admin
 // persisten en el servidor (PATCH), sin capas de localStorage.
@@ -47,6 +51,21 @@ export function CatalogProvider({ children }) {
     return saved;
   }, []);
 
+  const setItemsActive = useCallback(async (ids, active) => {
+    const saved = await Promise.all(ids.map(async (id) => {
+      const response = await fetch(`/api/import/wardrobe/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ active }),
+      });
+      const record = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(record.error || "No se pudo actualizar la prenda.");
+      return record;
+    }));
+    const byId = new Map(saved.map((record) => [record.id, record]));
+    setItems((current) => current.map((item) => byId.has(item.id) ? { ...item, ...byId.get(item.id) } : item));
+  }, []);
+
   const deleteItem = useCallback(async (id) => {
     const response = await fetch(`/api/import/wardrobe/${id}`, { method: "DELETE" });
     if (!response.ok && response.status !== 404) throw new Error("No se pudo eliminar la prenda.");
@@ -62,8 +81,10 @@ export function CatalogProvider({ children }) {
     setItems((current) => current.map((item) => item.id === id ? { ...item, modeledImage } : item));
   }, []);
 
+  const activeItems = useMemo(() => items.filter(isActiveItem), [items]);
+
   return (
-    <CatalogContext.Provider value={{ items, loading, error, setError, saveItem, deleteItem, addImportedItem, attachImportedModeledImage, refreshCatalog }}>
+    <CatalogContext.Provider value={{ items: activeItems, allItems: items, setItemsActive, loading, error, setError, saveItem, deleteItem, addImportedItem, attachImportedModeledImage, refreshCatalog }}>
       {children}
     </CatalogContext.Provider>
   );

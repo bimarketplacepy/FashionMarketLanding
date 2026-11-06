@@ -1,0 +1,4134 @@
+{
+  "id": "86bc5951-a4b1-4309-a51a-c6e276feb831",
+  "name": "FAME ACCESORIES",
+  "createdAt": "2026-09-30T12:25:36.431Z",
+  "items": [
+    {
+      "id": "c1e1a3bc-48d2-41f1-b8e4-050df9d2934b",
+      "fileName": "18545994_2541f993-bf31-4b74-8298-dff3d714cab2.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "c1e1a3bc-48d2-41f1-b8e4-050df9d2934b.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-251a54b2-4745-4c43-a75c-3422da0cc3c4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sombrero cowboy de paja con tirante",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "hat",
+        "gender": "unisex",
+        "subcategoria": "Sombreros",
+        "colores": [
+          "#d7b272"
+        ],
+        "descripcion": "Sombrero estilo texano o cowboy tejido en paja de tono beige natural. Cuenta con guardas caladas ventiladas alrededor de la copa y barbijo regulable con tope de ajuste. Ideal para protegerse del sol con estilo veraniego.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero de paja",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sombrero cowboy de paja con tirante",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Sombreros",
+        "colores": [
+          "#d7b272"
+        ],
+        "descripcion": "Sombrero estilo texano o cowboy tejido en paja de tono beige natural. Cuenta con guardas caladas ventiladas alrededor de la copa y barbijo regulable con tope de ajuste. Ideal para protegerse del sol con estilo veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero de paja",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "hat",
+        "gender": "unisex"
+      },
+      "createdAt": "2026-09-30T12:25:36.650Z",
+      "errorDetail": null
+    },
+    {
+      "id": "dea91ed2-7be4-44c6-9b14-939d50e4e791",
+      "fileName": "18545994_4a2779a7-9cfd-49b9-a664-965fdff39090.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "dea91ed2-7be4-44c6-9b14-939d50e4e791.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4c084291-68a8-4d2a-a8f5-bc05a95131f0",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sombrero cowboy de paja con cordón",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "hat",
+        "gender": "mujer",
+        "subcategoria": "Sombreros",
+        "colores": [
+          "#d8c29d"
+        ],
+        "descripcion": "Sombrero estilo cowboy confeccionado en paja tejida tono beige natural. Presenta calados calados decorativos en la copa y ala, y cordón ajustable con traba para mayor comodidad. Un accesorio veraniego infaltable para protegerte del sol con estilo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sombrero de paja",
+        "prendasSecundarias": [
+          "Camisa de lino"
+        ]
+      },
+      "ficha": {
+        "nombre": "Sombrero cowboy de paja con cordón",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Sombreros",
+        "colores": [
+          "#d8c29d"
+        ],
+        "descripcion": "Sombrero estilo cowboy confeccionado en paja tejida tono beige natural. Presenta calados calados decorativos en la copa y ala, y cordón ajustable con traba para mayor comodidad. Un accesorio veraniego infaltable para protegerte del sol con estilo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Sombrero de paja",
+        "prendasSecundarias": [
+          "Camisa de lino"
+        ],
+        "confianza": 0.98,
+        "garmentType": "hat",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:36.659Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7f0d7c0c-461a-4275-b7c4-8da3e48b8bec",
+      "fileName": "18545994_5018c150-97ca-4f0d-9b2b-85658d05c352.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "7f0d7c0c-461a-4275-b7c4-8da3e48b8bec.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-bf939d60-cc28-4034-b4d6-583b425a83a9",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sombrero Texano Calado de Paja",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "hat",
+        "gender": "unisex",
+        "subcategoria": "sombreros",
+        "colores": [
+          "#795738",
+          "#212227",
+          "#e1d2bd"
+        ],
+        "descripcion": "Sombrero estilo texano confeccionado en paja trenzada con diseño calado y cordón ajustador decorativo. Un accesorio fresco y versátil, ideal para protegerse del sol con mucho estilo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero texano de paja",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sombrero Texano Calado de Paja",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "sombreros",
+        "colores": [
+          "#795738",
+          "#212227",
+          "#e1d2bd"
+        ],
+        "descripcion": "Sombrero estilo texano confeccionado en paja trenzada con diseño calado y cordón ajustador decorativo. Un accesorio fresco y versátil, ideal para protegerse del sol con mucho estilo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero texano de paja",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "hat",
+        "gender": "unisex"
+      },
+      "createdAt": "2026-09-30T12:25:36.864Z",
+      "errorDetail": null
+    },
+    {
+      "id": "9ff97628-6fa5-4446-b459-8d5e6f05e104",
+      "fileName": "18545994_62dc9336-bc96-4750-94b6-beadcb20c13c.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "9ff97628-6fa5-4446-b459-8d5e6f05e104.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-7ddc7b27-4d64-4d8e-80e9-228cac83dd84",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sombrero de paja tejido con cordón ajustador",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "hat",
+        "gender": "unisex",
+        "subcategoria": "Sombreros",
+        "colores": [
+          "#d3aa5e"
+        ],
+        "descripcion": "Sombrero de paja con trama calada en el ala, badana interna acolchada y cordón de ajuste con traba. Diseñado para ofrecer protección solar y frescura con un toque artesanal.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sombrero de paja tejido con cordón ajustador",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Sombreros",
+        "colores": [
+          "#d3aa5e"
+        ],
+        "descripcion": "Sombrero de paja con trama calada en el ala, badana interna acolchada y cordón de ajuste con traba. Diseñado para ofrecer protección solar y frescura con un toque artesanal.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "hat",
+        "gender": "unisex"
+      },
+      "createdAt": "2026-09-30T12:25:36.884Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e5980654-59f8-48da-b5b0-904ad2d41379",
+      "fileName": "18545994_8d385740-e0ea-46dd-afad-68ab6e51c44f.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "e5980654-59f8-48da-b5b0-904ad2d41379.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-6e4cb1fc-f37f-4236-a12c-6ac8ff37b7c2",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sombrero de paja estilo vaquero",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "hat",
+        "gender": "mujer",
+        "subcategoria": "sombreros",
+        "colores": [
+          "#c39b5c"
+        ],
+        "descripcion": "Sombrero de paja con tejido calado y ala ancha estilo cowboy, que incluye cordón ajustable al cuello. Perfecto para días de sol y looks de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero de paja",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sombrero de paja estilo vaquero",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "sombreros",
+        "colores": [
+          "#c39b5c"
+        ],
+        "descripcion": "Sombrero de paja con tejido calado y ala ancha estilo cowboy, que incluye cordón ajustable al cuello. Perfecto para días de sol y looks de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero de paja",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "hat",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:36.898Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3403346a-632d-4be2-a919-a2308e5c6beb",
+      "fileName": "18545994_d4ee93e2-8447-45ee-a9db-4bc8d78238a4.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "3403346a-632d-4be2-a919-a2308e5c6beb.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a1ef4b08-4c89-45e7-8dfc-1a38916b7647",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sombrero de paja estilo vaquero con calados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "hat",
+        "gender": "mujer",
+        "subcategoria": "Sombreros",
+        "colores": [
+          "#c89b58"
+        ],
+        "descripcion": "Sombrero tejido en paja con detalles de calados en el ala y la copa. Presenta un diseño de estilo texano ideal para complementar looks veraniegos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "sombrero",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sombrero de paja estilo vaquero con calados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Sombreros",
+        "colores": [
+          "#c89b58"
+        ],
+        "descripcion": "Sombrero tejido en paja con detalles de calados en el ala y la copa. Presenta un diseño de estilo texano ideal para complementar looks veraniegos.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "sombrero",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "hat",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.091Z",
+      "errorDetail": null
+    },
+    {
+      "id": "960f572a-9c02-441b-b8d0-4fda3b4445f0",
+      "fileName": "18545994_e6e02f1c-883f-4311-bba6-d036eebb5037.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "960f572a-9c02-441b-b8d0-4fda3b4445f0.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-43613265-c096-436d-8c58-c2ba95e7196e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sombrero cowboy de paja tejido",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "hat",
+        "gender": "unisex",
+        "subcategoria": "sombreros",
+        "colores": [
+          "#8c5d3b"
+        ],
+        "descripcion": "Sombrero estilo cowboy de paja tejida en tono marrón con detalles calados en la copa y cordón ajustable.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero cowboy",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sombrero cowboy de paja tejido",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "sombreros",
+        "colores": [
+          "#8c5d3b"
+        ],
+        "descripcion": "Sombrero estilo cowboy de paja tejida en tono marrón con detalles calados en la copa y cordón ajustable.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero cowboy",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "hat",
+        "gender": "unisex"
+      },
+      "createdAt": "2026-09-30T12:25:37.111Z",
+      "errorDetail": null
+    },
+    {
+      "id": "30af8a8b-c1d6-4469-9b0d-f04c76e59538",
+      "fileName": "18545994_f16a90d4-371e-474b-9b31-a9908408b037.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "30af8a8b-c1d6-4469-9b0d-f04c76e59538.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-3909a08f-1fe4-4c99-9e88-5e363baf9e65",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Sombrero cowboy de paja tejido",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "hat",
+        "gender": "unisex",
+        "subcategoria": "Sombreros",
+        "colores": [
+          "#303032"
+        ],
+        "descripcion": "Sombrero estilo cowboy tejido en color negro con detalles calados y cordón ajustable al cuello. Un accesorio fresco y canchero ideal para protegerte del sol.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Sombrero cowboy de paja tejido",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Sombreros",
+        "colores": [
+          "#303032"
+        ],
+        "descripcion": "Sombrero estilo cowboy tejido en color negro con detalles calados y cordón ajustable al cuello. Un accesorio fresco y canchero ideal para protegerte del sol.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "sombrero",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "hat",
+        "gender": "unisex"
+      },
+      "createdAt": "2026-09-30T12:25:37.174Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d5fb00ed-a9ea-49c9-9766-1f3b25e86042",
+      "fileName": "22378877_1c8e600a-fc46-4dc2-afed-b440bfbf7a38.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "d5fb00ed-a9ea-49c9-9766-1f3b25e86042.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-946709ef-1809-467b-a772-3b8157584dfc",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aros Dorados Abombados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#e3c065",
+          "#1c1a18",
+          "#cbb892"
+        ],
+        "descripcion": "Aros dorados de diseño abombado y acabado espejado brillante. Un accesorio elegante y en tendencia ideal para sumar sofisticación a tu outfit.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros dorados",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aros Dorados Abombados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#e3c065",
+          "#1c1a18",
+          "#cbb892"
+        ],
+        "descripcion": "Aros dorados de diseño abombado y acabado espejado brillante. Un accesorio elegante y en tendencia ideal para sumar sofisticación a tu outfit.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros dorados",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.314Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e81a015b-090d-4d8a-b7d6-5b97b02c3148",
+      "fileName": "22378877_6a1e2ac3-d48c-4290-b730-eea2dd97f43a.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "e81a015b-090d-4d8a-b7d6-5b97b02c3148.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4b5d9e02-0365-4654-a26b-932a6b0e49ce",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros dorados abultados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "aros",
+        "colores": [
+          "#dca346"
+        ],
+        "descripcion": "Set de aros con baño dorado de diseño abultado y acabado brillante, acompañados por abridores con detalle de strass.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros dorados abultados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "aros",
+        "colores": [
+          "#dca346"
+        ],
+        "descripcion": "Set de aros con baño dorado de diseño abultado y acabado brillante, acompañados por abridores con detalle de strass.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.324Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f336959d-71cc-4d33-abf2-85fe9e702560",
+      "fileName": "23741212_22194922-e802-47c7-9b61-1314fc2695e4.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "f336959d-71cc-4d33-abf2-85fe9e702560.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-29297851-4f83-438c-8747-03f3f1245808",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros dorados Gold Dipped",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "aros",
+        "colores": [
+          "#d5b258"
+        ],
+        "descripcion": "Set de aros y argollitas doradas en variados diseños texturados y lisos. Incluye piezas con detalles labrados y micro circonias incrustadas, ideales para combinar en múltiples perforaciones.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros dorados Gold Dipped",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "aros",
+        "colores": [
+          "#d5b258"
+        ],
+        "descripcion": "Set de aros y argollitas doradas en variados diseños texturados y lisos. Incluye piezas con detalles labrados y micro circonias incrustadas, ideales para combinar en múltiples perforaciones.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.401Z",
+      "errorDetail": null
+    },
+    {
+      "id": "069d1e37-9df5-452b-94e2-6a31b09f3495",
+      "fileName": "23741212_250c510a-849a-44b2-baf8-122343639405.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "069d1e37-9df5-452b-94e2-6a31b09f3495.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d679a3c1-772a-42dc-b303-8e6cd9942048",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros dorados variados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4af37",
+          "#1a1a1a"
+        ],
+        "descripcion": "Set de aros argolla y earcuffs dorados con variados relieves y strass, perfecto para combinar en un look moderno.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros dorados variados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4af37",
+          "#1a1a1a"
+        ],
+        "descripcion": "Set de aros argolla y earcuffs dorados con variados relieves y strass, perfecto para combinar en un look moderno.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.425Z",
+      "errorDetail": null
+    },
+    {
+      "id": "1ab8e469-5d9a-4d2d-9d43-bae3896d58d9",
+      "fileName": "23741212_a57d0808-e4a8-4a96-a828-27cefea27c8b.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "1ab8e469-5d9a-4d2d-9d43-bae3896d58d9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-c4b9bdac-9d33-4144-9735-8633ea061f68",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros argollas dorados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#e3ba48",
+          "#c79a2b",
+          "#f5ece1"
+        ],
+        "descripcion": "Set de aros argollas dorados con diferentes relieves, acabados lisos y detalles de strass. Un conjunto moderno y sofisticado ideal para combinar en tu día a día.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros argollas dorados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#e3ba48",
+          "#c79a2b",
+          "#f5ece1"
+        ],
+        "descripcion": "Set de aros argollas dorados con diferentes relieves, acabados lisos y detalles de strass. Un conjunto moderno y sofisticado ideal para combinar en tu día a día.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.530Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a01b31dd-107d-48be-b94e-b276777c5238",
+      "fileName": "23863047_265aa321-3194-4775-869c-e4b29f3f3df4.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "a01b31dd-107d-48be-b94e-b276777c5238.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-3e6c71a0-9819-447f-a672-eca3fae3d584",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros dorados temática marina",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "aros",
+        "colores": [
+          "#e5c158",
+          "#f5f0eb"
+        ],
+        "descripcion": "Set variado de aros y abridores dorados con dijes de inspiración marina como estrellas de mar, caracoles, peces y detalles de perlas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros dorados temática marina",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "aros",
+        "colores": [
+          "#e5c158",
+          "#f5f0eb"
+        ],
+        "descripcion": "Set variado de aros y abridores dorados con dijes de inspiración marina como estrellas de mar, caracoles, peces y detalles de perlas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.540Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d314492b-129e-42f3-aeed-72f687f6cb96",
+      "fileName": "23863047_616beadc-f285-45d6-af84-380ab7361e08.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "d314492b-129e-42f3-aeed-72f687f6cb96.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-02f1c1b8-6227-4de7-8bf3-902a23f51b81",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros dorados marinos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "aros",
+        "colores": [
+          "#d4af37",
+          "#f8f5e9"
+        ],
+        "descripcion": "Set de aros y piercings dorados con dijes de estilo marino, incluyendo caracoles, estrellas de mar, peces y detalles en perlas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Set de aros dorados",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros dorados marinos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "aros",
+        "colores": [
+          "#d4af37",
+          "#f8f5e9"
+        ],
+        "descripcion": "Set de aros y piercings dorados con dijes de estilo marino, incluyendo caracoles, estrellas de mar, peces y detalles en perlas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Set de aros dorados",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.635Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6fba0d49-3030-42b2-915a-e0717dd4c48b",
+      "fileName": "23863047_88773d66-83b5-49ce-85b6-d6ad425b7ec3.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "6fba0d49-3030-42b2-915a-e0717dd4c48b.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9686e856-b04e-49d1-944d-d25ca6810392",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros marinos dorados y plateados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4af37",
+          "#c0c0c0",
+          "#ffffff"
+        ],
+        "descripcion": "Set variado de aros e trepadores con temática marina, con apliques de estrellas de mar, caracoles, pececitos y detalles en perlas. Incluye versiones en acabado dorado y plateado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Set de aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros marinos dorados y plateados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4af37",
+          "#c0c0c0",
+          "#ffffff"
+        ],
+        "descripcion": "Set variado de aros e trepadores con temática marina, con apliques de estrellas de mar, caracoles, pececitos y detalles en perlas. Incluye versiones en acabado dorado y plateado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Set de aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.657Z",
+      "errorDetail": null
+    },
+    {
+      "id": "94673a9d-189e-4a82-a9ca-d59b49c7a1a5",
+      "fileName": "23863047_c6f12c3a-7d2c-4490-9f74-ae0fa64e9392.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "94673a9d-189e-4a82-a9ca-d59b49c7a1a5.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-fe8a2507-04bf-4ca1-a134-a5137f0ebbec",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros dorados con motivos marinos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "aros",
+        "colores": [
+          "#d1b26f"
+        ],
+        "descripcion": "Set de aros y abridores dorados con diseños marinos que incluyen peces, caracoles, estrellas de mar y detalles de perlas. Un accesorio delicado y veraniego ideal para combinar.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros dorados con motivos marinos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "aros",
+        "colores": [
+          "#d1b26f"
+        ],
+        "descripcion": "Set de aros y abridores dorados con diseños marinos que incluyen peces, caracoles, estrellas de mar y detalles de perlas. Un accesorio delicado y veraniego ideal para combinar.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.745Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f9587241-2438-4dd1-947e-1d04463fa972",
+      "fileName": "23863047_d5592595-60a8-40d6-b5bf-693475c8caf2.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "f9587241-2438-4dd1-947e-1d04463fa972.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-854d66b8-e7d1-4d10-b0a6-00fbbddeca0d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros marinos plateados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "aros",
+        "colores": [
+          "#c0c0c0"
+        ],
+        "descripcion": "Set variado de aros plateados con tematica marina, incluyendo dijes de peces, estrellas de mar, caracoles y perlas fantasia.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros marinos plateados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "aros",
+        "colores": [
+          "#c0c0c0"
+        ],
+        "descripcion": "Set variado de aros plateados con tematica marina, incluyendo dijes de peces, estrellas de mar, caracoles y perlas fantasia.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.763Z",
+      "errorDetail": null
+    },
+    {
+      "id": "012184a7-c4d0-4e6b-89aa-b4f8585c05e2",
+      "fileName": "24251251_07c81d6b-c81b-4360-ae3b-0fa87c5d0d1a.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "012184a7-c4d0-4e6b-89aa-b4f8585c05e2.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b073965e-2428-4192-820c-2cc4d68ae504",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aros Argolla con Dijes de Pez y Almeja",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#e24b2a",
+          "#d4af37",
+          "#ffffff"
+        ],
+        "descripcion": "Aros tipo argolla dorados con dije de pez esmaltado en color naranja y blanco, junto a una delicada almeja metálica. Un accesorio ideal para darle un toque veraniego a tu outfit.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aros Argolla con Dijes de Pez y Almeja",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#e24b2a",
+          "#d4af37",
+          "#ffffff"
+        ],
+        "descripcion": "Aros tipo argolla dorados con dije de pez esmaltado en color naranja y blanco, junto a una delicada almeja metálica. Un accesorio ideal para darle un toque veraniego a tu outfit.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.866Z",
+      "errorDetail": null
+    },
+    {
+      "id": "24d89c18-dbd9-483b-a548-d786845c4f92",
+      "fileName": "24251251_2266a235-abb8-48f5-8515-e40416d25a61.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "24d89c18-dbd9-483b-a548-d786845c4f92.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e347868f-ad9b-4ec4-8bd8-d763c9cc2d0d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aros argolla con dijes marinos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#e63b2b",
+          "#d4af37",
+          "#ffffff"
+        ],
+        "descripcion": "Argolla dorada de diseño veraniego con dijes colgantes de pez en tono rojo y vieira dorada. Un detalle divertido y fresco para sumar textura a tu look.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "aro",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aros argolla con dijes marinos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#e63b2b",
+          "#d4af37",
+          "#ffffff"
+        ],
+        "descripcion": "Argolla dorada de diseño veraniego con dijes colgantes de pez en tono rojo y vieira dorada. Un detalle divertido y fresco para sumar textura a tu look.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "aro",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.889Z",
+      "errorDetail": null
+    },
+    {
+      "id": "16223463-9a75-478e-9039-73e42ab4d80f",
+      "fileName": "24251251_aa0b8b79-75f7-4b5c-9584-145fd2cfeb54.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "16223463-9a75-478e-9039-73e42ab4d80f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-02c0f94c-e2b2-44b8-b85d-dfcedcd908ad",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aros de argolla con dijes de pez y almeja",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "aros",
+        "colores": [
+          "#eb2a2e"
+        ],
+        "descripcion": "Aros estilo argolla dorada con dije de pez esmaltado en rojo y dije metálico con forma de almeja. Un accesorio fresco e ideal para darle un toque divertido a tus looks.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros de argolla",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aros de argolla con dijes de pez y almeja",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "aros",
+        "colores": [
+          "#eb2a2e"
+        ],
+        "descripcion": "Aros estilo argolla dorada con dije de pez esmaltado en rojo y dije metálico con forma de almeja. Un accesorio fresco e ideal para darle un toque divertido a tus looks.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros de argolla",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.968Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b2a2ca76-0770-4fb8-93ea-615ba98cfe44",
+      "fileName": "24251251_bc4fc1f6-c5e5-47a1-9c08-980d2383fa80.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "b2a2ca76-0770-4fb8-93ea-615ba98cfe44.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-2cbe1846-7faf-4b1b-87e6-2346887080fa",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aros argolla dorados con dijes de pez y caracol",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4b26f",
+          "#ffffff",
+          "#284a8a"
+        ],
+        "descripcion": "Aros de formato argolla dorados con dije colgante con forma de pez realizado en cerámica con detalles pintados en azul y blanco, acompañado por un pequeño dije de caracol metálico dorado. Un accesorio de estilo marinero y veraniego.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros argolla con dijes",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aros argolla dorados con dijes de pez y caracol",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4b26f",
+          "#ffffff",
+          "#284a8a"
+        ],
+        "descripcion": "Aros de formato argolla dorados con dije colgante con forma de pez realizado en cerámica con detalles pintados en azul y blanco, acompañado por un pequeño dije de caracol metálico dorado. Un accesorio de estilo marinero y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros argolla con dijes",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:37.984Z",
+      "errorDetail": null
+    },
+    {
+      "id": "02fbb072-1226-4550-960b-fde16fd052c5",
+      "fileName": "24251251_d682dbe8-4f5a-4fd3-a5d3-047c393ea350.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "02fbb072-1226-4550-960b-fde16fd052c5.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-98c815af-01f8-414e-9082-5d7b1c65e0dd",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aros Argolla Dorados con Dijes de Pez de Cerámica y Concha",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4af37",
+          "#d32f2f",
+          "#1e88e5"
+        ],
+        "descripcion": "Set de aros estilo argolla finas en tono dorado, detallados con dijes colgantes de peces en cerámica esmaltada y aplique con forma de concha marina. Un accesorio fresco, divertido y veraniego perfecto para darle un toque de color a tu look.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros de argolla",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aros Argolla Dorados con Dijes de Pez de Cerámica y Concha",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4af37",
+          "#d32f2f",
+          "#1e88e5"
+        ],
+        "descripcion": "Set de aros estilo argolla finas en tono dorado, detallados con dijes colgantes de peces en cerámica esmaltada y aplique con forma de concha marina. Un accesorio fresco, divertido y veraniego perfecto para darle un toque de color a tu look.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros de argolla",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.091Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ee4132e6-4431-4c71-8876-1f582b47630f",
+      "fileName": "24251251_fe6388a5-ee47-43f5-9764-f95347f5258a.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "ee4132e6-4431-4c71-8876-1f582b47630f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8acded9f-d6e5-450e-8eb3-0f33386a9e19",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aros Argollas Doradas con Dije Pez y Abanico",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "aros",
+        "colores": [
+          "#d4af37",
+          "#e39a7c"
+        ],
+        "descripcion": "Aros tipo argolla dorados decorados con dijes de pez de cerámica esmaltada en tonos durazno y detalles de abanicos dorados. Perfectos para darle un toque fresco y original a cualquier atuendo.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aros Argollas Doradas con Dije Pez y Abanico",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "aros",
+        "colores": [
+          "#d4af37",
+          "#e39a7c"
+        ],
+        "descripcion": "Aros tipo argolla dorados decorados con dijes de pez de cerámica esmaltada en tonos durazno y detalles de abanicos dorados. Perfectos para darle un toque fresco y original a cualquier atuendo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.119Z",
+      "errorDetail": null
+    },
+    {
+      "id": "a7f0cb34-f301-400e-a98d-8acf2c3f0268",
+      "fileName": "24276450_317d9fcc-ded3-4b75-b524-2d5d0765cb8b.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "a7f0cb34-f301-400e-a98d-8acf2c3f0268.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-7ba3e540-1651-476c-8c1b-87d366c7d270",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar playero con caracoles y dije marino",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#7fa0cd",
+          "#f5f3ed",
+          "#d8b35a"
+        ],
+        "descripcion": "Collar de estilo veraniego confeccionado en hilo trenzado celeste y dorado, decorado con caracoles naturales tipo buzios y un dije colgante con detalle marino engarzado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [
+          "top blanco"
+        ]
+      },
+      "ficha": {
+        "nombre": "Collar playero con caracoles y dije marino",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#7fa0cd",
+          "#f5f3ed",
+          "#d8b35a"
+        ],
+        "descripcion": "Collar de estilo veraniego confeccionado en hilo trenzado celeste y dorado, decorado con caracoles naturales tipo buzios y un dije colgante con detalle marino engarzado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [
+          "top blanco"
+        ],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.182Z",
+      "errorDetail": null
+    },
+    {
+      "id": "9745923c-474f-4ab1-a8ba-7ed9607a5bb4",
+      "fileName": "24276450_321cce1f-dcab-4e36-b939-c9a5ee6e16d7.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "9745923c-474f-4ab1-a8ba-7ed9607a5bb4.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d64fe3d2-1e03-4f4c-a06f-bbb6eaeb556d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Guía de largos de collar",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "collares",
+        "colores": [
+          "#333333"
+        ],
+        "descripcion": "Guía ilustrativa de medidas y largos de collares sobre busto, con referencias desde 16 hasta 36 pulgadas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "guía de largos de collar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Guía de largos de collar",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "collares",
+        "colores": [
+          "#333333"
+        ],
+        "descripcion": "Guía ilustrativa de medidas y largos de collares sobre busto, con referencias desde 16 hasta 36 pulgadas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "guía de largos de collar",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.204Z",
+      "errorDetail": null
+    },
+    {
+      "id": "1e813846-9969-4b25-b8dd-57a542ef6bb0",
+      "fileName": "24276450_760b3306-3319-41c1-a983-8059f7f087e3.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "1e813846-9969-4b25-b8dd-57a542ef6bb0.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5d522ef4-90ef-4bd9-bf50-aaee5b65e893",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar trenzado con caracoles y dije",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#ffffff",
+          "#8db4e2",
+          "#d4af37"
+        ],
+        "descripcion": "Collar estilo veraniego confeccionado en cordón trenzado con hilo celeste, azul y dorado, detalles de caracoles caribeños y dije medalla esmaltado.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Collar trenzado con caracoles y dije",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#ffffff",
+          "#8db4e2",
+          "#d4af37"
+        ],
+        "descripcion": "Collar estilo veraniego confeccionado en cordón trenzado con hilo celeste, azul y dorado, detalles de caracoles caribeños y dije medalla esmaltado.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.315Z",
+      "errorDetail": null
+    },
+    {
+      "id": "1b2a1415-bb87-4458-9624-aef2fdfa1af3",
+      "fileName": "24276450_8e49da36-6645-4060-985c-b95adfc8322a.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "1b2a1415-bb87-4458-9624-aef2fdfa1af3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5019e527-b1c3-40a1-9375-97a73316f58f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar playero con caracoles y dije marino",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "collares",
+        "colores": [
+          "#ffffff",
+          "#d4af37"
+        ],
+        "descripcion": "Collar de estilo veraniego confeccionado con cordón trenzado en tonos celestes y dorados, apliques de caracoles blancos y un dije triangular con motivo marino. Posee cadena extensible dorada con cierre mosquetón.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Collar playero con caracoles y dije marino",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "collares",
+        "colores": [
+          "#ffffff",
+          "#d4af37"
+        ],
+        "descripcion": "Collar de estilo veraniego confeccionado con cordón trenzado en tonos celestes y dorados, apliques de caracoles blancos y un dije triangular con motivo marino. Posee cadena extensible dorada con cierre mosquetón.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.342Z",
+      "errorDetail": null
+    },
+    {
+      "id": "987d71c3-8ff9-4c3b-864d-5b40ce152ce6",
+      "fileName": "24276450_b0d6d1b4-f7fe-4e07-bcdd-3d408c9fae63.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "987d71c3-8ff9-4c3b-864d-5b40ce152ce6.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f43bd289-751a-4ab1-9088-e96651f566f7",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar artesanal con caracoles y dije",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#ffffff",
+          "#8ea4d2",
+          "#d1b26e"
+        ],
+        "descripcion": "Collar estilo playero confeccionado con cordón trenzado en tonos azul y blanco, apliques de caracoles estilo buzio y un dije dorado triangular en el centro.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [
+          "top negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Collar artesanal con caracoles y dije",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#ffffff",
+          "#8ea4d2",
+          "#d1b26e"
+        ],
+        "descripcion": "Collar estilo playero confeccionado con cordón trenzado en tonos azul y blanco, apliques de caracoles estilo buzio y un dije dorado triangular en el centro.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [
+          "top negro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.399Z",
+      "errorDetail": null
+    },
+    {
+      "id": "95fec406-fb0c-4783-b073-dd3eeab90978",
+      "fileName": "24276450_cffe7402-ecca-4566-abdf-f28fdd792ba6.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "95fec406-fb0c-4783-b073-dd3eeab90978.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f0831ebd-5f19-4dd8-b630-9827d7845855",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar playero con caracoles y dije",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#8baed0"
+        ],
+        "descripcion": "Collar estilo veraniego confeccionado con hilo trenzado en tonos celestes y dorados, detalles de caracoles bucios naturales y dije triangular decorado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Collar playero con caracoles y dije",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#8baed0"
+        ],
+        "descripcion": "Collar estilo veraniego confeccionado con hilo trenzado en tonos celestes y dorados, detalles de caracoles bucios naturales y dije triangular decorado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.419Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3464c110-7bbe-4871-929f-7179643b652b",
+      "fileName": "24412343_05b900ce-7c3f-4b39-b90d-e30ce12d024c.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "3464c110-7bbe-4871-929f-7179643b652b.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f0dfd213-2137-42b4-b5c4-5b4a9b59a1a4",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón clásico con hebilla",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "unisex",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#000000",
+          "#ffffff"
+        ],
+        "descripcion": "Diseño esquemático de cinturón con hebilla metálica rectangular y detalle de medidas de talle.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Cinturón clásico con hebilla",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#000000",
+          "#ffffff"
+        ],
+        "descripcion": "Diseño esquemático de cinturón con hebilla metálica rectangular y detalle de medidas de talle.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "belt",
+        "gender": "unisex"
+      },
+      "createdAt": "2026-09-30T12:25:38.540Z",
+      "errorDetail": null
+    },
+    {
+      "id": "97e1beea-d794-4964-883b-9bfd0e029bef",
+      "fileName": "24412343_23df0f46-581f-4c2e-9060-7f9b871600f2.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "97e1beea-d794-4964-883b-9bfd0e029bef.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ed1d25ca-2079-41df-b70c-2f897fa4450d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón de discos de cuero con ojalillos y medallón dorado",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#b88a5e",
+          "#d1a751",
+          "#1e1d22"
+        ],
+        "descripcion": "Cinturón con un diseño protagónico de eslabones circulares en cuero grabado tono suela, detallado con ojalillos metálicos y apliques circulares dorados con relieve estilizado. Un accesorio clave para acentuar la cintura y elevar cualquier look nocturno o urbano.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Cinturón de discos de cuero con ojalillos y medallón dorado",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#b88a5e",
+          "#d1a751",
+          "#1e1d22"
+        ],
+        "descripcion": "Cinturón con un diseño protagónico de eslabones circulares en cuero grabado tono suela, detallado con ojalillos metálicos y apliques circulares dorados con relieve estilizado. Un accesorio clave para acentuar la cintura y elevar cualquier look nocturno o urbano.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.576Z",
+      "errorDetail": null
+    },
+    {
+      "id": "909f0322-611c-46dd-a491-4f921b320d6f",
+      "fileName": "24412343_42147559-ba85-4c4c-ae26-cf4cbf36d54d.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "909f0322-611c-46dd-a491-4f921b320d6f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-fcb89c71-67a5-46d7-bb27-c5e4ea70e83e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón metálico plateado con discos calados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#c0c0c0"
+        ],
+        "descripcion": "Cinturón metálico de diseño exclusivo formado por discos plateados con perforaciones caladas, broche labrado central y caída vertical estilizada sobre el frente. Perfecta opción para destacar vestidos y prendas lisas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "cinturón plateado",
+        "prendasSecundarias": [
+          "vestido negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón metálico plateado con discos calados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#c0c0c0"
+        ],
+        "descripcion": "Cinturón metálico de diseño exclusivo formado por discos plateados con perforaciones caladas, broche labrado central y caída vertical estilizada sobre el frente. Perfecta opción para destacar vestidos y prendas lisas.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "cinturón plateado",
+        "prendasSecundarias": [
+          "vestido negro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.617Z",
+      "errorDetail": null
+    },
+    {
+      "id": "2f8ce8ef-0a06-488c-86ef-452b2b39af1a",
+      "fileName": "24412343_45bda608-3b82-4688-b0e3-431e50589166.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "2f8ce8ef-0a06-488c-86ef-452b2b39af1a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-7439b6e9-b99d-4b89-b313-9568fec14c3d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón Boho con Discos Calados y Hebilla Plateada",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#a16c4b",
+          "#c4c6c9",
+          "#18181a"
+        ],
+        "descripcion": "Cinturón de estilo boho confeccionado en discos de ecocuero marrón con ojalillos y remaches metálicos. Posee una gran hebilla central plateada con grabados de inspiración tribal y una tira colgante decorativa que resalta el talle con un toque vanguardista.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón Boho con Discos Calados y Hebilla Plateada",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#a16c4b",
+          "#c4c6c9",
+          "#18181a"
+        ],
+        "descripcion": "Cinturón de estilo boho confeccionado en discos de ecocuero marrón con ojalillos y remaches metálicos. Posee una gran hebilla central plateada con grabados de inspiración tribal y una tira colgante decorativa que resalta el talle con un toque vanguardista.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.645Z",
+      "errorDetail": null
+    },
+    {
+      "id": "83f5e861-00c8-4511-b92b-38cfcdecd7c4",
+      "fileName": "24412343_67cb521e-fe5c-4655-a86b-e6462cddf9d0.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "83f5e861-00c8-4511-b92b-38cfcdecd7c4.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-5659a5fc-9236-4cab-91ef-9c83f0af0162",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón de discos calados con hebilla metálica",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Cinturón faja para mujer confeccionado con discos circulares calados en color blanco, apliques metálicos tipo remache y gran hebilla circular labrada de estilo étnico.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón de discos blanco",
+        "prendasSecundarias": [
+          "vestido negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón de discos calados con hebilla metálica",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Cinturón faja para mujer confeccionado con discos circulares calados en color blanco, apliques metálicos tipo remache y gran hebilla circular labrada de estilo étnico.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón de discos blanco",
+        "prendasSecundarias": [
+          "vestido negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.770Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c6a63bb7-4a7d-4724-b779-7af46f88f937",
+      "fileName": "24412343_7fffebca-e5f9-4561-b448-0746b8dc021a.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "c6a63bb7-4a7d-4724-b779-7af46f88f937.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1c5142f2-1489-4108-a38c-286a5b9fd6ef",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón rojo con apliques de círculos y medallón dorado",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#d32f2f",
+          "#d4af37"
+        ],
+        "descripcion": "Cinturón de diseño protagonista elaborado con discos en tono rojo con ojales calados y detalles dorados. Presenta un medallón central grabado y una caída vertical decorativa ideal para elevar vestidos o túnicas simples.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón rojo con apliques de círculos y medallón dorado",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#d32f2f",
+          "#d4af37"
+        ],
+        "descripcion": "Cinturón de diseño protagonista elaborado con discos en tono rojo con ojales calados y detalles dorados. Presenta un medallón central grabado y una caída vertical decorativa ideal para elevar vestidos o túnicas simples.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.813Z",
+      "errorDetail": null
+    },
+    {
+      "id": "47bd378e-16a0-4dca-a383-9ca9d8fdc6a1",
+      "fileName": "24412343_8177abcf-cc1a-49f0-9e5b-c695560b6621.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "47bd378e-16a0-4dca-a383-9ca9d8fdc6a1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9e46aa09-b153-4b94-bae0-62eb7d370da6",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinto ancho circular con hebilla dorada",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#b88b67",
+          "#d5ac5a"
+        ],
+        "descripcion": "Cinturón ancho de diseño geométrico compuesto por discos de ecocuero con ojalillos y tachas. Cuenta con una hebilla central dorada de grabado étnico y una caída vertical decorativa.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinto ancho circular con hebilla dorada",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#b88b67",
+          "#d5ac5a"
+        ],
+        "descripcion": "Cinturón ancho de diseño geométrico compuesto por discos de ecocuero con ojalillos y tachas. Cuenta con una hebilla central dorada de grabado étnico y una caída vertical decorativa.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.848Z",
+      "errorDetail": null
+    },
+    {
+      "id": "944b7a72-06d9-4db9-b80d-2f01c5efa0a3",
+      "fileName": "24412343_89d545d4-45dc-434a-b282-6096182f998b.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "944b7a72-06d9-4db9-b80d-2f01c5efa0a3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-21dbde92-e21d-4737-93c0-c5018d71d45f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón de cueros y tachas circulares",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#1b1b1c"
+        ],
+        "descripcion": "Cinturón confeccionado en símil cuero negro con medallones circulares, ojalillos metálicos y aplique labrado plateado en el centro. Un accesorio de estilo bohemio ideal para marcar la cintura sobre vestidos o túnicas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Cinturón con medallones metálicos",
+        "prendasSecundarias": [
+          "vestido negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón de cueros y tachas circulares",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#1b1b1c"
+        ],
+        "descripcion": "Cinturón confeccionado en símil cuero negro con medallones circulares, ojalillos metálicos y aplique labrado plateado en el centro. Un accesorio de estilo bohemio ideal para marcar la cintura sobre vestidos o túnicas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Cinturón con medallones metálicos",
+        "prendasSecundarias": [
+          "vestido negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:38.872Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b1269600-a1bd-4c46-81e8-854c9c886f7e",
+      "fileName": "24412343_916f9b53-23c2-470f-80b6-216b3cc0e2aa.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "b1269600-a1bd-4c46-81e8-854c9c886f7e.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0922ed53-dd80-4c72-b062-f88402a36020",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón boho de discos de cuero con apliques metálicos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "cinturones",
+        "colores": [
+          "#8c5e3c"
+        ],
+        "descripcion": "Cinturón estilo boho chic confeccionado con discos de cuero en tono suela, acentuado con conchos de metal tallado y detalles de tachas caladas. Ideal para combinar con prendas de encaje o vestidos sueltos.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón de cuero",
+        "prendasSecundarias": [
+          "camisa de encaje blanca",
+          "pollera de encaje cream"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón boho de discos de cuero con apliques metálicos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "cinturones",
+        "colores": [
+          "#8c5e3c"
+        ],
+        "descripcion": "Cinturón estilo boho chic confeccionado con discos de cuero en tono suela, acentuado con conchos de metal tallado y detalles de tachas caladas. Ideal para combinar con prendas de encaje o vestidos sueltos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón de cuero",
+        "prendasSecundarias": [
+          "camisa de encaje blanca",
+          "pollera de encaje cream"
+        ],
+        "confianza": 0.95,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.000Z",
+      "errorDetail": null
+    },
+    {
+      "id": "bb2b77ec-de59-4f37-97ee-fde87cb026ac",
+      "fileName": "24412343_9261caab-4dc1-4d50-a009-fac73794891a.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "bb2b77ec-de59-4f37-97ee-fde87cb026ac.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-1dbb3b5e-0752-4cc4-8bb9-d70f6698eba6",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón de discos calados suela",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#c88e6a"
+        ],
+        "descripcion": "Cinturón confeccionado con eslabones circulares calados en tono suela. Un accesorio moderno y versátil, ideal para definir la cintura en vestidos, túnicas o conjuntos de tiro alto.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Cinturón de discos calados suela",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#c88e6a"
+        ],
+        "descripcion": "Cinturón confeccionado con eslabones circulares calados en tono suela. Un accesorio moderno y versátil, ideal para definir la cintura en vestidos, túnicas o conjuntos de tiro alto.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.045Z",
+      "errorDetail": null
+    },
+    {
+      "id": "9a00c6f8-6451-4a81-a9b0-15e23e5fa848",
+      "fileName": "24412343_d0b82bf8-8b69-4943-889f-b58548adbcde.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "9a00c6f8-6451-4a81-a9b0-15e23e5fa848.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9665a25a-3837-48ff-88ce-21f474efb884",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón Ancho con Círculos y Apliques Dorados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#1a1a1c",
+          "#cba258"
+        ],
+        "descripcion": "Cinturón ancho de formato articulado con medallones circulares en simil cuero negro, ojalillos metálicos y gran aplique central dorado de estilo labrado. Ideal para definir la cintura sobre vestidos o túnicas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Cinturón articulado con apliques dorados",
+        "prendasSecundarias": [
+          "Vestido negro corto"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón Ancho con Círculos y Apliques Dorados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Cinturones",
+        "colores": [
+          "#1a1a1c",
+          "#cba258"
+        ],
+        "descripcion": "Cinturón ancho de formato articulado con medallones circulares en simil cuero negro, ojalillos metálicos y gran aplique central dorado de estilo labrado. Ideal para definir la cintura sobre vestidos o túnicas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Cinturón articulado con apliques dorados",
+        "prendasSecundarias": [
+          "Vestido negro corto"
+        ],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.067Z",
+      "errorDetail": null
+    },
+    {
+      "id": "c0cf702a-3fbf-4dbe-ae47-4033b132ee98",
+      "fileName": "24412343_d9706e3a-dbc4-4463-88fe-e4d5a44e1c27.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "c0cf702a-3fbf-4dbe-ae47-4033b132ee98.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-2b45c5cb-8e03-4c2f-b80e-0a72bcece441",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón de discos azul marino con apliques dorados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "cinturones de vestir",
+        "colores": [
+          "#1c2a44",
+          "#d4b168"
+        ],
+        "descripcion": "Diseño exclusivo de cinturón elaborado con discos de ecocuero azul marino, ojalillos y tachas doradas. Cuenta con una hebilla central circular con relieve grabado y una tira colgante vertical decorativa que aporta un toque único a cualquier conjunto.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón de discos azul marino con apliques dorados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "cinturones de vestir",
+        "colores": [
+          "#1c2a44",
+          "#d4b168"
+        ],
+        "descripcion": "Diseño exclusivo de cinturón elaborado con discos de ecocuero azul marino, ojalillos y tachas doradas. Cuenta con una hebilla central circular con relieve grabado y una tira colgante vertical decorativa que aporta un toque único a cualquier conjunto.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.096Z",
+      "errorDetail": null
+    },
+    {
+      "id": "085f0fa4-8715-4aef-975a-3424e0dad421",
+      "fileName": "24412343_dc444fc9-821b-4e74-946e-80edb038eb6f.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "085f0fa4-8715-4aef-975a-3424e0dad421.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-167cce71-af49-43f4-adae-4273d7a43f7b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón de discos en eco-cuero suela con medallón",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "cinturones",
+        "colores": [
+          "#d3af56"
+        ],
+        "descripcion": "Cinturón de impacto de estilo boho chic, confeccionado con discos de eco-cuero en tono suela con ojalillos y remaches metálicos. Destaca por su gran medallón central dorado con grabados y una caida vertical de discos que estiliza la figura. Ideal para complementar vestidos o túnicas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "cinturón de discos",
+        "prendasSecundarias": [
+          "vestido corto negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón de discos en eco-cuero suela con medallón",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "cinturones",
+        "colores": [
+          "#d3af56"
+        ],
+        "descripcion": "Cinturón de impacto de estilo boho chic, confeccionado con discos de eco-cuero en tono suela con ojalillos y remaches metálicos. Destaca por su gran medallón central dorado con grabados y una caida vertical de discos que estiliza la figura. Ideal para complementar vestidos o túnicas.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "cinturón de discos",
+        "prendasSecundarias": [
+          "vestido corto negro"
+        ],
+        "confianza": 0.95,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.234Z",
+      "errorDetail": null
+    },
+    {
+      "id": "34e2e319-2c6e-49ab-8d0f-0ae8e2be85dc",
+      "fileName": "24412343_ed0ebbcc-7150-4dc1-8722-7b9725627e50.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "34e2e319-2c6e-49ab-8d0f-0ae8e2be85dc.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e333b05e-7599-4ad7-bce1-e1cf989f81aa",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón de círculos calados con hebilla metálica",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "cinturones",
+        "colores": [
+          "#e3b2b0",
+          "#cbb06b",
+          "#19181c"
+        ],
+        "descripcion": "Cinturón ancho de diseño protagonista con discos en tono rosa empolvado, apliques de ojales metálicos, tachas doradas y gran hebilla circular labrada con caída vertical.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón de círculos calados con hebilla metálica",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "cinturones",
+        "colores": [
+          "#e3b2b0",
+          "#cbb06b",
+          "#19181c"
+        ],
+        "descripcion": "Cinturón ancho de diseño protagonista con discos en tono rosa empolvado, apliques de ojales metálicos, tachas doradas y gran hebilla circular labrada con caída vertical.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.275Z",
+      "errorDetail": null
+    },
+    {
+      "id": "9d836f96-ba26-4355-8088-d8122fa1703c",
+      "fileName": "24412343_f0508219-a21b-446e-a238-bc80e61f8610.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "9d836f96-ba26-4355-8088-d8122fa1703c.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-51dde956-13b6-4526-a349-7a1bfc0695ab",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón bohemio suela con círculos y apliques metálicos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "cinturones",
+        "colores": [
+          "#1c1b1f"
+        ],
+        "descripcion": "Cinturón llamativo de estilo boho confeccionado en tono suela con discos troquelados, ojalillos y apliques metálicos plateados. Cuenta con una hebilla circular labrada de gran tamaño y una caída vertical decorativa, ideal para definir la cintura sobre un vestido.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón bohemio suela con círculos y apliques metálicos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "cinturones",
+        "colores": [
+          "#1c1b1f"
+        ],
+        "descripcion": "Cinturón llamativo de estilo boho confeccionado en tono suela con discos troquelados, ojalillos y apliques metálicos plateados. Cuenta con una hebilla circular labrada de gran tamaño y una caída vertical decorativa, ideal para definir la cintura sobre un vestido.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón",
+        "prendasSecundarias": [
+          "vestido negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.295Z",
+      "errorDetail": null
+    },
+    {
+      "id": "d607585f-7a18-466a-bb48-8050c89e7c80",
+      "fileName": "24412343_fe11eeb4-e1c6-4640-a71d-0d5a56c42a81.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "d607585f-7a18-466a-bb48-8050c89e7c80.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8c2a8906-d648-41d2-81c5-8490aaae6e82",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Cinturón metálico dorado con discos calados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "belt",
+        "gender": "mujer",
+        "subcategoria": "cinturones",
+        "colores": [
+          "#d4af37"
+        ],
+        "descripcion": "Cinturón de estilo bohemio elaborado con discos metálicos dorados calados y trabajados en relieve, con caída vertical frontal. Un accesorio protagónico perfecto para resaltar vestidos y túnicas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón dorado",
+        "prendasSecundarias": [
+          "vestido negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Cinturón metálico dorado con discos calados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "cinturones",
+        "colores": [
+          "#d4af37"
+        ],
+        "descripcion": "Cinturón de estilo bohemio elaborado con discos metálicos dorados calados y trabajados en relieve, con caída vertical frontal. Un accesorio protagónico perfecto para resaltar vestidos y túnicas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "cinturón dorado",
+        "prendasSecundarias": [
+          "vestido negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "belt",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.321Z",
+      "errorDetail": null
+    },
+    {
+      "id": "f5666ba8-7bc0-477a-bd3c-319e18acf95d",
+      "fileName": "25061317_097fa09f-7d14-4cde-b066-cbf7b3e341d9.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "f5666ba8-7bc0-477a-bd3c-319e18acf95d.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-40de678e-c87c-4010-ad50-3a5d7aa5257c",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de pulseras con dijes marinos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Pulseras",
+        "colores": [
+          "#d5b064"
+        ],
+        "descripcion": "Set de pulseras multicapa confeccionadas con cuentas, perlas y dijes dorados con forma de estrella de mar y caracol. Un accesorio delicado e ideal para sumar un toque veraniego a tu look.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de pulseras",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de pulseras con dijes marinos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pulseras",
+        "colores": [
+          "#d5b064"
+        ],
+        "descripcion": "Set de pulseras multicapa confeccionadas con cuentas, perlas y dijes dorados con forma de estrella de mar y caracol. Un accesorio delicado e ideal para sumar un toque veraniego a tu look.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de pulseras",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.466Z",
+      "errorDetail": null
+    },
+    {
+      "id": "dcc0bd86-9320-4edd-b5f2-4b72a0f81859",
+      "fileName": "25061317_5e9343ff-3a4f-424f-b9ea-41b7fccb44b1.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "dcc0bd86-9320-4edd-b5f2-4b72a0f81859.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d5046e1f-6883-4361-bdc0-868a661e160c",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de pulseras combinadas con dijes marinos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "pulseras",
+        "colores": [
+          "#d1a550"
+        ],
+        "descripcion": "Set de pulseras elastizadas de estilo playero, elaboradas con cuentas multicolores, mostacillas doradas, perlas y dijes metálicos de estrella de mar y caracoles.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de pulseras",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de pulseras combinadas con dijes marinos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "pulseras",
+        "colores": [
+          "#d1a550"
+        ],
+        "descripcion": "Set de pulseras elastizadas de estilo playero, elaboradas con cuentas multicolores, mostacillas doradas, perlas y dijes metálicos de estrella de mar y caracoles.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de pulseras",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.498Z",
+      "errorDetail": null
+    },
+    {
+      "id": "654b2a17-c775-4ba9-8f24-06b5288abcc1",
+      "fileName": "25061317_8e8b82ad-6621-40d5-9253-48e0e603132a.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "654b2a17-c775-4ba9-8f24-06b5288abcc1.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-079b4a82-a2d0-4479-ac94-bd5b6aa6ae3e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de pulseras veraniegas con dijes marinos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "pulseras",
+        "colores": [
+          "#d4af37",
+          "#f4f0ea"
+        ],
+        "descripcion": "Set de pulseras multicapa combinadas con cuentas doradas, perlas blancas y dijes en forma de estrella de mar y caracoles. Un accesorio delicado e ideal para sumar un toque playero y sofisticado a tu estilo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de pulseras",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de pulseras veraniegas con dijes marinos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "pulseras",
+        "colores": [
+          "#d4af37",
+          "#f4f0ea"
+        ],
+        "descripcion": "Set de pulseras multicapa combinadas con cuentas doradas, perlas blancas y dijes en forma de estrella de mar y caracoles. Un accesorio delicado e ideal para sumar un toque playero y sofisticado a tu estilo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de pulseras",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.510Z",
+      "errorDetail": null
+    },
+    {
+      "id": "af9b8f87-7e2a-4888-997d-d5eb39455a56",
+      "fileName": "25061317_8fe5389c-4f7e-4bb6-a4cb-0365c23635e9.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "af9b8f87-7e2a-4888-997d-d5eb39455a56.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9d83ca33-a889-49ac-a6ba-1acc4b69b08e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de pulseras con cuentas y dije de estrella de mar",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Pulseras",
+        "colores": [
+          "#d4af37"
+        ],
+        "descripcion": "Set de pulseras multicapa elaboradas con cuentas doradas, mostacillas en tonos pastel y dijes marinos de estrella de mar y caracoles. Un accesorio delicado y fresco ideal para sumar a tu look veraniego.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Set de pulseras",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de pulseras con cuentas y dije de estrella de mar",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pulseras",
+        "colores": [
+          "#d4af37"
+        ],
+        "descripcion": "Set de pulseras multicapa elaboradas con cuentas doradas, mostacillas en tonos pastel y dijes marinos de estrella de mar y caracoles. Un accesorio delicado y fresco ideal para sumar a tu look veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Set de pulseras",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.543Z",
+      "errorDetail": null
+    },
+    {
+      "id": "388b00e2-b631-4d22-907c-50f4d029720f",
+      "fileName": "25061317_a20ea763-20b2-4348-ac22-64a28802fa34.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "388b00e2-b631-4d22-907c-50f4d029720f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-812d081f-ce2a-410c-bff3-0aa8d4a593d8",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de pulseras con dijes marinos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "pulseras",
+        "colores": [
+          "#d4af37",
+          "#8c837b"
+        ],
+        "descripcion": "Set de pulseras elastizadas combinadas con cuentas doradas, perlas y dijes de temática marina con formas de caracol y estrella de mar. Ideal para lucir un estilo fresco y veraniego.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de pulseras",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de pulseras con dijes marinos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "pulseras",
+        "colores": [
+          "#d4af37",
+          "#8c837b"
+        ],
+        "descripcion": "Set de pulseras elastizadas combinadas con cuentas doradas, perlas y dijes de temática marina con formas de caracol y estrella de mar. Ideal para lucir un estilo fresco y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de pulseras",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.698Z",
+      "errorDetail": null
+    },
+    {
+      "id": "9f73f3f5-5e29-4a97-9c19-c2cefbfa4df3",
+      "fileName": "25061317_a7e03ef3-87ab-41c9-8c74-88dd5a7167be.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "9f73f3f5-5e29-4a97-9c19-c2cefbfa4df3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-bda6539a-1768-4ad9-9878-73c1d51f471c",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de pulseras veraniegas con dijes marinos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Pulseras",
+        "colores": [
+          "#d4af37",
+          "#f5d5c5",
+          "#fbf8f5"
+        ],
+        "descripcion": "Set de pulseras elastizadas de estilo playero que combina cuentas doradas, mostacillas en tonos pasteles y dijes metálicos en forma de estrella de mar y caracoles. Un accesorio delicado e ideal para complementar outfits veraniegos.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de pulseras",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de pulseras veraniegas con dijes marinos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pulseras",
+        "colores": [
+          "#d4af37",
+          "#f5d5c5",
+          "#fbf8f5"
+        ],
+        "descripcion": "Set de pulseras elastizadas de estilo playero que combina cuentas doradas, mostacillas en tonos pasteles y dijes metálicos en forma de estrella de mar y caracoles. Un accesorio delicado e ideal para complementar outfits veraniegos.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de pulseras",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.714Z",
+      "errorDetail": null
+    },
+    {
+      "id": "970ac13e-390a-4056-9ef7-52a7349aea94",
+      "fileName": "25253882_039152a4-c06a-4786-a837-fb7ef614e59e.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "970ac13e-390a-4056-9ef7-52a7349aea94.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-bf666ff6-94e0-4503-80ba-78e7351de87f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Guía de medidas de collares",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#222222",
+          "#ffffff"
+        ],
+        "descripcion": "Gráfico de referencia para largos de collares sobre maniquí con especificación de medidas en pulgadas.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Guía de medidas de collares",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#222222",
+          "#ffffff"
+        ],
+        "descripcion": "Gráfico de referencia para largos de collares sobre maniquí con especificación de medidas en pulgadas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.737Z",
+      "errorDetail": null
+    },
+    {
+      "id": "dd8b8560-d3f9-489b-8241-93b7dfcf8833",
+      "fileName": "25253882_51539284-8cc9-47be-9f9a-856a39890d3f.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "dd8b8560-d3f9-489b-8241-93b7dfcf8833.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-8abfffb2-2f59-4a16-be7e-56d392c1e1d8",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar de perlas con dijes dorados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Collar corto confeccionado con cuentas de perlas sintéticas blancas y variados dijes dorados de inspiración marina y romántica. Ideal para aportar un toque sofisticado y veraniego a tus looks.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Collar de perlas con dijes",
+        "prendasSecundarias": [
+          "Top negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Collar de perlas con dijes dorados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Collar corto confeccionado con cuentas de perlas sintéticas blancas y variados dijes dorados de inspiración marina y romántica. Ideal para aportar un toque sofisticado y veraniego a tus looks.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Collar de perlas con dijes",
+        "prendasSecundarias": [
+          "Top negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.764Z",
+      "errorDetail": null
+    },
+    {
+      "id": "36a7579d-332d-4e1e-a420-ecd794ee430a",
+      "fileName": "25253882_6c8d75fb-6833-46bf-ae5f-c35ca95b3dfd.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "36a7579d-332d-4e1e-a420-ecd794ee430a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-a3b2230d-4727-4726-baed-7d337eeff31e",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar de Perlas con Dijes Dorados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#f4f3ee",
+          "#d8b26e"
+        ],
+        "descripcion": "Collar corto compuesto por perlas de fantasía y una variedad de dijes colgantes dorados de inspiración marina y veraniega. Ideal para darle un toque sofisticado y canchero a tus outfits diarios.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar de perlas",
+        "prendasSecundarias": [
+          "remera celeste"
+        ]
+      },
+      "ficha": {
+        "nombre": "Collar de Perlas con Dijes Dorados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#f4f3ee",
+          "#d8b26e"
+        ],
+        "descripcion": "Collar corto compuesto por perlas de fantasía y una variedad de dijes colgantes dorados de inspiración marina y veraniega. Ideal para darle un toque sofisticado y canchero a tus outfits diarios.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar de perlas",
+        "prendasSecundarias": [
+          "remera celeste"
+        ],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.924Z",
+      "errorDetail": null
+    },
+    {
+      "id": "94729187-4381-4a95-b388-3452a03dfcb2",
+      "fileName": "25253882_aaa63a81-a880-4bca-a025-58f161bea772.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "94729187-4381-4a95-b388-3452a03dfcb2.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4b16ddb8-8fb7-4a43-aaf8-74258b48f883",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar de perlas con dijes marinos dorados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#ffffff",
+          "#dcae5a"
+        ],
+        "descripcion": "Collar corto de cuentas simil perla con variados dijes colgantes de acabado dorado con motivos de mar, sol y corazón. Un accesorio canchero y delicado para completar tu look de temporada.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Collar de perlas con dijes marinos dorados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#ffffff",
+          "#dcae5a"
+        ],
+        "descripcion": "Collar corto de cuentas simil perla con variados dijes colgantes de acabado dorado con motivos de mar, sol y corazón. Un accesorio canchero y delicado para completar tu look de temporada.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.934Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e0e0ff95-7e61-449f-865c-77472b2ff91a",
+      "fileName": "25253882_b2c7231e-6ef3-4678-a08d-48ccad55cb28.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "e0e0ff95-7e61-449f-865c-77472b2ff91a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b25babe5-972c-4577-a9e3-aed319f0a854",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar de perlas con dijes dorados marinos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#f8f6f0"
+        ],
+        "descripcion": "Collar corto de perlas de fantasía acompañado de charms o dijes colgantes dorados con motivos marinos y veraniegos como peces, estrella de mar, sol y corazón. Incluye cierre de mosquetón y cadena extensible para ajustar la medida.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Collar de perlas con dijes",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Collar de perlas con dijes dorados marinos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#f8f6f0"
+        ],
+        "descripcion": "Collar corto de perlas de fantasía acompañado de charms o dijes colgantes dorados con motivos marinos y veraniegos como peces, estrella de mar, sol y corazón. Incluye cierre de mosquetón y cadena extensible para ajustar la medida.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Collar de perlas con dijes",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.971Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7e16dbaf-d228-4734-ab73-47e7c4d2e81f",
+      "fileName": "25253882_c1a2552f-6f90-4f92-baa5-08ac6b02c0d8.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "7e16dbaf-d228-4734-ab73-47e7c4d2e81f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4ccf6f47-4095-4401-bdac-ef04fb0b07d7",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar de perlas con dijes dorados",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#ffffff",
+          "#d9b468"
+        ],
+        "descripcion": "Collar corto confeccionado con perlas blancas y delicados dijes dorados de motivos marinos y veraniegos como pez, estrella de mar, sol y caracol. Posee cierre de mosquetón y cadena de extensión para regular el largo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar de perlas con dijes",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Collar de perlas con dijes dorados",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#ffffff",
+          "#d9b468"
+        ],
+        "descripcion": "Collar corto confeccionado con perlas blancas y delicados dijes dorados de motivos marinos y veraniegos como pez, estrella de mar, sol y caracol. Posee cierre de mosquetón y cadena de extensión para regular el largo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar de perlas con dijes",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:39.985Z",
+      "errorDetail": null
+    },
+    {
+      "id": "812ab821-5707-45e3-8881-9f60a1139855",
+      "fileName": "25308196_6ad52c43-c7d5-422f-b18a-902370cc15d5.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "812ab821-5707-45e3-8881-9f60a1139855.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-7483a57a-6b02-42b2-b1aa-64536479ba9d",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aro colgante con dije de concha y estrella de mar",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#f4efea"
+        ],
+        "descripcion": "Aro colgante de diseño playero con base circular de madera, dije de concha marina blanca y aplique central de estrella de mar dorada.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Aro colgante",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aro colgante con dije de concha y estrella de mar",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#f4efea"
+        ],
+        "descripcion": "Aro colgante de diseño playero con base circular de madera, dije de concha marina blanca y aplique central de estrella de mar dorada.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Aro colgante",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.163Z",
+      "errorDetail": null
+    },
+    {
+      "id": "3b87196a-6ede-430f-b09f-98a8f7e5e8b9",
+      "fileName": "25308196_8c4e3280-6659-4f8d-b947-0b591c09610c.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "3b87196a-6ede-430f-b09f-98a8f7e5e8b9.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d25bba8a-3945-411d-b22d-6a4fc9d340bc",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aros colgantes con caracol y estrella de mar",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "aros",
+        "colores": [
+          "#f4f0e8"
+        ],
+        "descripcion": "Aros colgantes de diseño playero con base ovalada de madera, dije de caracol blanco con acabado nacarado y aplique de estrella de mar dorada.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aros colgantes con caracol y estrella de mar",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "aros",
+        "colores": [
+          "#f4f0e8"
+        ],
+        "descripcion": "Aros colgantes de diseño playero con base ovalada de madera, dije de caracol blanco con acabado nacarado y aplique de estrella de mar dorada.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.208Z",
+      "errorDetail": null
+    },
+    {
+      "id": "b2a2dde0-d33a-402b-a501-210be66e87d0",
+      "fileName": "25308196_c48e0bf0-2cfc-4fa3-8846-a2500673b63e.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "b2a2dde0-d33a-402b-a501-210be66e87d0.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e01a2480-1db6-4daf-94d9-76c7c0709317",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aros Colgantes con Dije de Concha y Estrella de Mar",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#000000",
+          "#c58b4e",
+          "#d8a82a"
+        ],
+        "descripcion": "Aros colgantes estilo marinero con dije principal en forma de concha de mar con acabado acrílico y apliques de estrella de mar en tono dorado, sobre una base de acrílico con textura imitación madera. Un accesorio veraniego y femenino.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Aros colgantes de concha y estrella de mar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aros Colgantes con Dije de Concha y Estrella de Mar",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#000000",
+          "#c58b4e",
+          "#d8a82a"
+        ],
+        "descripcion": "Aros colgantes estilo marinero con dije principal en forma de concha de mar con acabado acrílico y apliques de estrella de mar en tono dorado, sobre una base de acrílico con textura imitación madera. Un accesorio veraniego y femenino.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Aros colgantes de concha y estrella de mar",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.221Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e619ad47-c6a5-435d-a982-8b615d15df3f",
+      "fileName": "25308196_c4aa4046-eece-45a7-a8f1-7fea1e9501a9.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "e619ad47-c6a5-435d-a982-8b615d15df3f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-897c62ad-0576-4423-9093-e84cd61a41e3",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Aros colgantes con dije de concha y estrella de mar",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#5e3b27",
+          "#f3efea",
+          "#cca352"
+        ],
+        "descripcion": "Aros colgantes de estilo marinero con base ovalada de madera, dije de concha marina en tono nacarado y aplique central de estrella de mar dorada.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aro",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Aros colgantes con dije de concha y estrella de mar",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#5e3b27",
+          "#f3efea",
+          "#cca352"
+        ],
+        "descripcion": "Aros colgantes de estilo marinero con base ovalada de madera, dije de concha marina en tono nacarado y aplique central de estrella de mar dorada.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aro",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.371Z",
+      "errorDetail": null
+    },
+    {
+      "id": "fa3e83e9-e21d-484f-8e87-5950a04db029",
+      "fileName": "25585804_64ad08d3-6d88-476c-86d7-6e1103ec5e13.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "fa3e83e9-e21d-484f-8e87-5950a04db029.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ee86cf1c-7ca5-47a9-a05b-d7d1c0fc953b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo cuadrado estampado mariscos y limones",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#00a5e3",
+          "#f09224",
+          "#e8f4f8"
+        ],
+        "descripcion": "Pañuelo cuadrado ilustrado con diseño de inspiración mediterránea, estampados de frutos de mar, limones y un borde azul celeste decorado.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo cuadrado estampado mariscos y limones",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#00a5e3",
+          "#f09224",
+          "#e8f4f8"
+        ],
+        "descripcion": "Pañuelo cuadrado ilustrado con diseño de inspiración mediterránea, estampados de frutos de mar, limones y un borde azul celeste decorado.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.393Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ba847981-da27-4fb0-91d1-87caea8f3f85",
+      "fileName": "25585804_9525cfdb-6bba-498e-b6b1-b0659bf78d05.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "ba847981-da27-4fb0-91d1-87caea8f3f85.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-0f41d0d0-52dc-4621-94a6-da26e056a750",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo satinado estampado ilustrado",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#f17373",
+          "#3b82e6",
+          "#ffffff"
+        ],
+        "descripcion": "Pañuelo satinado corto con diseño ilustrado multicolor sobre fondo claro. Ideal para usar en el cuello, el cabello o atado a tu cartera favorita.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo satinado estampado ilustrado",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#f17373",
+          "#3b82e6",
+          "#ffffff"
+        ],
+        "descripcion": "Pañuelo satinado corto con diseño ilustrado multicolor sobre fondo claro. Ideal para usar en el cuello, el cabello o atado a tu cartera favorita.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.432Z",
+      "errorDetail": null
+    },
+    {
+      "id": "5acd641a-1956-4f0d-9244-9ad015ed9a6f",
+      "fileName": "25585804_a63e8c67-e806-402d-b8fd-a6754b36af0b.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "5acd641a-1956-4f0d-9244-9ad015ed9a6f.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d6f21732-4258-4af1-97a6-52689bbdf6d1",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo Satinado Estampado Marino",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#e882a2",
+          "#f6f5fa",
+          "#ecc533"
+        ],
+        "descripcion": "Pañuelo satinado liviano con estampado ilustrado de inspiración marina y limones sobre fondo rosa y blanco. Presenta borde en tono rosa con sutil entramado de estrellas, ideal para darle un toque fresco y sofisticado a cualquier outfit.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [
+          "blazer negro",
+          "top negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Pañuelo Satinado Estampado Marino",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#e882a2",
+          "#f6f5fa",
+          "#ecc533"
+        ],
+        "descripcion": "Pañuelo satinado liviano con estampado ilustrado de inspiración marina y limones sobre fondo rosa y blanco. Presenta borde en tono rosa con sutil entramado de estrellas, ideal para darle un toque fresco y sofisticado a cualquier outfit.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [
+          "blazer negro",
+          "top negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.455Z",
+      "errorDetail": null
+    },
+    {
+      "id": "e2b1f724-c788-4917-8555-6d64954ced72",
+      "fileName": "25585804_e6f489ea-4582-4685-afe8-5cc91a1ae6a0.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "e2b1f724-c788-4917-8555-6d64954ced72.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d4c2c5de-1242-4c29-bfa9-3d0f9f532ffc",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo cuadrado estampado marino y cítricos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "pañuelos",
+        "colores": [
+          "#3e976c",
+          "#e85d56",
+          "#eeb739"
+        ],
+        "descripcion": "Pañuelo cuadrado confeccionado en tejido liviano de acabado satinado. Presenta un diseño ilustrado de inspiración marina con mariscos, limones y guardas geométricas con borde verde. Ideal para usar en el cuello, como accesorio de cartera o en el cabello.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo cuadrado estampado marino y cítricos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "pañuelos",
+        "colores": [
+          "#3e976c",
+          "#e85d56",
+          "#eeb739"
+        ],
+        "descripcion": "Pañuelo cuadrado confeccionado en tejido liviano de acabado satinado. Presenta un diseño ilustrado de inspiración marina con mariscos, limones y guardas geométricas con borde verde. Ideal para usar en el cuello, como accesorio de cartera o en el cabello.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.601Z",
+      "errorDetail": null
+    },
+    {
+      "id": "17131359-b1c4-4f4c-b00d-4e86fe3d2cdc",
+      "fileName": "25585804_ec391ab8-5401-4b91-8f50-f333fa320fd8.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "17131359-b1c4-4f4c-b00d-4e86fe3d2cdc.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-f5ca1fe5-aa17-451d-81b7-e5499318f497",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo cuadrado de seda estampado mariscos y limones",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#e35c5c",
+          "#fadcd9",
+          "#ead032"
+        ],
+        "descripcion": "Pañuelo cuadrado satinado con ilustrativos motivos marinos, limones y guardas geométricas en tonos rosados, rojos, azules y amarillos. Perfecto para usar al cuello, en la cabeza o como accesorio en la cartera.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo cuadrado de seda estampado mariscos y limones",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#e35c5c",
+          "#fadcd9",
+          "#ead032"
+        ],
+        "descripcion": "Pañuelo cuadrado satinado con ilustrativos motivos marinos, limones y guardas geométricas en tonos rosados, rojos, azules y amarillos. Perfecto para usar al cuello, en la cabeza o como accesorio en la cartera.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.628Z",
+      "errorDetail": null
+    },
+    {
+      "id": "1b395b32-06ba-4b52-bb9e-4c2ccb43bd20",
+      "fileName": "25640172_42d937bf-73cc-4aa4-a80b-bc1c29983b0e.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "1b395b32-06ba-4b52-bb9e-4c2ccb43bd20.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-9b55adfa-f442-4138-9aa1-717722e2db74",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros dorados con motivos marinos",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4af37",
+          "#ffffff"
+        ],
+        "descripcion": "Set variado de aros dorados de inspiración marina con dijes de conchitas, estrellas de mar y apliques de perlas sintetizadas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Set de aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros dorados con motivos marinos",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4af37",
+          "#ffffff"
+        ],
+        "descripcion": "Set variado de aros dorados de inspiración marina con dijes de conchitas, estrellas de mar y apliques de perlas sintetizadas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Set de aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.665Z",
+      "errorDetail": null
+    },
+    {
+      "id": "462612ae-ade7-4a7b-b914-269889112c78",
+      "fileName": "25640172_d48b96b2-8c0b-4456-be1c-395d5dc5dbfe.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "462612ae-ade7-4a7b-b914-269889112c78.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-e711d3db-20a4-470f-ae0d-ad8f1a1cec03",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros dorados con dijes de concha marina",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4af37",
+          "#f3f0ec"
+        ],
+        "descripcion": "Elegantes aros dorados combinados con dijes colgantes de resina en forma de concha marina perlada, perfectos para lucir un estilo fresco y veraniego.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros con dije de concha marina",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros dorados con dijes de concha marina",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Aros",
+        "colores": [
+          "#d4af37",
+          "#f3f0ec"
+        ],
+        "descripcion": "Elegantes aros dorados combinados con dijes colgantes de resina en forma de concha marina perlada, perfectos para lucir un estilo fresco y veraniego.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "aros con dije de concha marina",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.690Z",
+      "errorDetail": null
+    },
+    {
+      "id": "5d4b3c05-9adc-4c1d-878d-f0c0b687e55c",
+      "fileName": "25640172_f6c78e92-bcbf-46d6-a137-a8e89c9efb9c.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "5d4b3c05-9adc-4c1d-878d-f0c0b687e55c.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-7ae2c8e9-8907-49ec-b34f-43c647340860",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Set de aros marinos dorados y perlas",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "aros",
+        "colores": [
+          "#d4af37",
+          "#ffffff"
+        ],
+        "descripcion": "Set de aros dorados con temática marina, que incluye dijes con formas de caracoles, estrellas de mar y detalles con perlas sintéticas blancas.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Set de aros marinos dorados y perlas",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "aros",
+        "colores": [
+          "#d4af37",
+          "#ffffff"
+        ],
+        "descripcion": "Set de aros dorados con temática marina, que incluye dijes con formas de caracoles, estrellas de mar y detalles con perlas sintéticas blancas.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "set de aros",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.835Z",
+      "errorDetail": null
+    },
+    {
+      "id": "8a102605-aae8-4b74-9c31-5458005c1191",
+      "fileName": "25761091_043628f3-efc7-4ce1-9254-c8304aef8bea.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "8a102605-aae8-4b74-9c31-5458005c1191.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d90676ce-b839-42f9-a70b-f3c344752fac",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo satinado estampado a lunares",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#8c5938",
+          "#ffffff",
+          "#1e2a3c"
+        ],
+        "descripcion": "Pañuelo de satén de textura suave con estampado clásico de lunares en contraste. Un accesorio versátil y elegante para complementar cualquier outfit.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo satinado estampado a lunares",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#8c5938",
+          "#ffffff",
+          "#1e2a3c"
+        ],
+        "descripcion": "Pañuelo de satén de textura suave con estampado clásico de lunares en contraste. Un accesorio versátil y elegante para complementar cualquier outfit.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.882Z",
+      "errorDetail": null
+    },
+    {
+      "id": "18ccff62-9bc2-4753-8004-debff65612b8",
+      "fileName": "25761091_0bd96a9f-1556-4ddc-8f63-63e29aa6ca0d.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "18ccff62-9bc2-4753-8004-debff65612b8.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-efdccbea-13c4-488b-a5bf-ad63249d0a80",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo cuadrado estampado a lunares",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Pañuelo cuadrado confeccionado en tela satinada con estampado clásico de lunares blancos sobre fondo beige. Ideal para sumar un toque sofisticado y versátil a tus outfits.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo cuadrado estampado a lunares",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#ffffff"
+        ],
+        "descripcion": "Pañuelo cuadrado confeccionado en tela satinada con estampado clásico de lunares blancos sobre fondo beige. Ideal para sumar un toque sofisticado y versátil a tus outfits.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.906Z",
+      "errorDetail": null
+    },
+    {
+      "id": "324118c4-182d-45df-9ec7-65383c7cee57",
+      "fileName": "25761091_608bd29b-e1f3-4bf2-8a9b-93f0a85a582d.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "324118c4-182d-45df-9ec7-65383c7cee57.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-b163caa9-4320-4c31-b5b0-eaa87e3764d1",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo cuadrado satinado con estampado de lunares",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#9a7753",
+          "#ffffff"
+        ],
+        "descripcion": "Pañuelo cuadrado de acabado satinado en tono marrón claro con diseño de lunares blancos en degradé. Un accesorio versátil e ideal para sumar elegancia a cualquier look.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo cuadrado satinado con estampado de lunares",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#9a7753",
+          "#ffffff"
+        ],
+        "descripcion": "Pañuelo cuadrado de acabado satinado en tono marrón claro con diseño de lunares blancos en degradé. Un accesorio versátil e ideal para sumar elegancia a cualquier look.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:40.940Z",
+      "errorDetail": null
+    },
+    {
+      "id": "374c7b87-9065-4f50-8831-524585b1c5a3",
+      "fileName": "25761091_76e868bf-7cff-4dc7-accc-0a90e7ba6bc4.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "374c7b87-9065-4f50-8831-524585b1c5a3.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-ed978957-e04c-4263-add2-ffed2f50678f",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo cuadrado a lunares",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#222938",
+          "#ddf0eb"
+        ],
+        "descripcion": "Pañuelo de satén cuadrado en tono azul marino con estampado de lunares de distintos tamaños, perfecto para complementar tu look con un toque clásico y elegante.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo cuadrado a lunares",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#222938",
+          "#ddf0eb"
+        ],
+        "descripcion": "Pañuelo de satén cuadrado en tono azul marino con estampado de lunares de distintos tamaños, perfecto para complementar tu look con un toque clásico y elegante.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:41.073Z",
+      "errorDetail": null
+    },
+    {
+      "id": "6529bfd8-9bc7-4828-a698-905d0c624876",
+      "fileName": "25761091_8af6600e-afc5-4f84-9c94-705273aff097.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "6529bfd8-9bc7-4828-a698-905d0c624876.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4aa526cc-2c61-4abe-a5e2-e5231c518d42",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo satinado a lunares",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#a07346",
+          "#ffffff"
+        ],
+        "descripcion": "Pañuelo confeccionado en tela satinada de tono marrón con un diseño clásico de lunares blancos en contraste.",
+        "recorte": null,
+        "confianza": 0.95,
+        "prendaCompleta": false,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo satinado a lunares",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#a07346",
+          "#ffffff"
+        ],
+        "descripcion": "Pañuelo confeccionado en tela satinada de tono marrón con un diseño clásico de lunares blancos en contraste.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.95,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:41.150Z",
+      "errorDetail": null
+    },
+    {
+      "id": "4d82beef-5c71-445f-829c-1ba767d20547",
+      "fileName": "25761091_abd64ffc-704e-42c5-b578-3bd498436f57.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "4d82beef-5c71-445f-829c-1ba767d20547.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-bd52f57d-1a5a-4429-a923-06d835828f5b",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo cuadrado de satén con lunares",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#9e7348",
+          "#ffffff"
+        ],
+        "descripcion": "Pañuelo cuadrado confeccionado en tejido liviano con acabado satinado. Presenta un estampado clásico de lunares en blanco sobre fondo marrón, perfecto para sumar un toque sofisticado a cualquier atuendo.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo cuadrado de satén con lunares",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#9e7348",
+          "#ffffff"
+        ],
+        "descripcion": "Pañuelo cuadrado confeccionado en tejido liviano con acabado satinado. Presenta un estampado clásico de lunares en blanco sobre fondo marrón, perfecto para sumar un toque sofisticado a cualquier atuendo.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:41.646Z",
+      "errorDetail": null
+    },
+    {
+      "id": "72e47fee-03c4-485f-8f38-c4a791b7d102",
+      "fileName": "25761091_f41b22e5-8010-4858-8f55-5abf86fb9394.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "72e47fee-03c4-485f-8f38-c4a791b7d102.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-854c95d6-7212-4471-822f-a2ab1ed090b8",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Pañuelo cuadrado de satén con estampado de lunares",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "scarf",
+        "gender": "mujer",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#ffffff",
+          "#000000"
+        ],
+        "descripcion": "Pañuelo cuadrado confeccionado en tela de acabado satinado con diseño de lunares en blanco y negro. Un accesorio versátil ideal para lucir en el cuello, peinado o cartera.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Pañuelo cuadrado de satén con estampado de lunares",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Pañuelos",
+        "colores": [
+          "#ffffff",
+          "#000000"
+        ],
+        "descripcion": "Pañuelo cuadrado confeccionado en tela de acabado satinado con diseño de lunares en blanco y negro. Un accesorio versátil ideal para lucir en el cuello, peinado o cartera.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "pañuelo",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "scarf",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:42.267Z",
+      "errorDetail": null
+    },
+    {
+      "id": "9b688c1d-a7de-48be-8941-7528d12e0d00",
+      "fileName": "25800662_07a65994-7627-4b9a-b58b-087ea51fecda.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "9b688c1d-a7de-48be-8941-7528d12e0d00.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": "Prenda incompleta en foto — revisar; conviene reemplazar la imagen.",
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-d44c4962-acaf-44c0-9be9-8166cb1bf754",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar cordón con dije estrella de mar",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "collares",
+        "colores": [
+          "#f4f1ea",
+          "#d6b46a"
+        ],
+        "descripcion": "Collar de cordón trenzado en tono marfil con un gran dije de estrella de mar metálico dorado con textura. Ideal para complementar looks de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": false,
+        "prendaPrincipal": "collar con dije de estrella de mar",
+        "prendasSecundarias": [
+          "top blanco"
+        ]
+      },
+      "ficha": {
+        "nombre": "Collar cordón con dije estrella de mar",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "collares",
+        "colores": [
+          "#f4f1ea",
+          "#d6b46a"
+        ],
+        "descripcion": "Collar de cordón trenzado en tono marfil con un gran dije de estrella de mar metálico dorado con textura. Ideal para complementar looks de verano.",
+        "precio": null,
+        "prendaCompleta": false,
+        "prendaPrincipal": "collar con dije de estrella de mar",
+        "prendasSecundarias": [
+          "top blanco"
+        ],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:42.290Z",
+      "errorDetail": null
+    },
+    {
+      "id": "7fb1f819-1afe-416a-a59e-f245e0e1930a",
+      "fileName": "25800662_323f4aa4-5d2e-4e87-a1cb-5a7ad5aa0f0c.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "7fb1f819-1afe-416a-a59e-f245e0e1930a.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-57de65bd-2bdc-4ba4-a41c-b9bacd119eac",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar cordón trenzado con dije estrella de mar",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "collares",
+        "colores": [
+          "#f3efe6",
+          "#d4b46a"
+        ],
+        "descripcion": "Collar corto de cordón satinado trenzado en tono marfil con un imponente dije en forma de estrella de mar en acabado dorado martillado. Posee cierre de mosquetón con cadena regulable.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Collar cordón trenzado con dije estrella de mar",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "collares",
+        "colores": [
+          "#f3efe6",
+          "#d4b46a"
+        ],
+        "descripcion": "Collar corto de cordón satinado trenzado en tono marfil con un imponente dije en forma de estrella de mar en acabado dorado martillado. Posee cierre de mosquetón con cadena regulable.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:42.703Z",
+      "errorDetail": null
+    },
+    {
+      "id": "ca94adfb-d446-4220-91ee-3472016b15ec",
+      "fileName": "25800662_4de72390-854d-4ca9-89d6-82bee2a45ad3.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "ca94adfb-d446-4220-91ee-3472016b15ec.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-4dba4cd7-4d4b-4bbb-a781-deebf9e983a2",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar de cordón trenzado con dije de estrella de mar",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "collares",
+        "colores": [
+          "#fdfdfc",
+          "#e0c383"
+        ],
+        "descripcion": "Collar corto con cordón textil trenzado en tono marfil y un gran dije central de estrella de mar metálica en acabado dorado con textura martillada. Posee cierre con mosquetón y cadenita de ajuste.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": []
+      },
+      "ficha": {
+        "nombre": "Collar de cordón trenzado con dije de estrella de mar",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "collares",
+        "colores": [
+          "#fdfdfc",
+          "#e0c383"
+        ],
+        "descripcion": "Collar corto con cordón textil trenzado en tono marfil y un gran dije central de estrella de mar metálica en acabado dorado con textura martillada. Posee cierre con mosquetón y cadenita de ajuste.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "collar",
+        "prendasSecundarias": [],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:43.651Z",
+      "errorDetail": null
+    },
+    {
+      "id": "be04ec57-fe60-4e87-b280-1b4b0185ff97",
+      "fileName": "25800662_b54e3907-ff6a-4326-aee4-24f4bbf56087.jpg",
+      "folderName": "FAME ACCESORIES",
+      "file": "be04ec57-fe60-4e87-b280-1b4b0185ff97.jpg",
+      "estado": "importada",
+      "error": null,
+      "advertencia": null,
+      "duplicateOf": null,
+      "targetGarment": null,
+      "importedId": "import-7a71b882-3131-428a-8020-1c2a38073d53",
+      "analysisRaw": {
+        "archivo": null,
+        "nombre": "Collar de cordón con dije de estrella de mar",
+        "categoria": "accessories",
+        "categoriaInterna": "accessories_up",
+        "garmentType": "jewelry",
+        "gender": "mujer",
+        "subcategoria": "Collares",
+        "colores": [
+          "#d4b26f",
+          "#ebe4d8",
+          "#161518"
+        ],
+        "descripcion": "Collar corto con cordón trenzado satinado en tono marfil y dije grande de estrella de mar dorada con textura martillada. Un accesorio llamativo ideal para destacar tus looks de verano.",
+        "recorte": null,
+        "confianza": 0.98,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Collar con dije de estrella de mar",
+        "prendasSecundarias": [
+          "top negro"
+        ]
+      },
+      "ficha": {
+        "nombre": "Collar de cordón con dije de estrella de mar",
+        "categoriaInterna": "accessories_up",
+        "subcategoria": "Collares",
+        "colores": [
+          "#d4b26f",
+          "#ebe4d8",
+          "#161518"
+        ],
+        "descripcion": "Collar corto con cordón trenzado satinado en tono marfil y dije grande de estrella de mar dorada con textura martillada. Un accesorio llamativo ideal para destacar tus looks de verano.",
+        "precio": null,
+        "prendaCompleta": true,
+        "prendaPrincipal": "Collar con dije de estrella de mar",
+        "prendasSecundarias": [
+          "top negro"
+        ],
+        "confianza": 0.98,
+        "garmentType": "jewelry",
+        "gender": "mujer"
+      },
+      "createdAt": "2026-09-30T12:25:43.682Z",
+      "errorDetail": null
+    }
+  ],
+  "updatedAt": "2026-09-30T16:21:21.519Z"
+}
