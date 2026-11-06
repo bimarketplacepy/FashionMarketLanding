@@ -190,9 +190,12 @@
 
 /* Ficha de look / prenda */
 .ed-sheet-backdrop { display: grid; place-items: center; padding: 16px; }
-.ed-sheet { position: relative; width: min(1180px, 100%); max-height: calc(100dvh - 32px); overflow-y: auto; background: var(--ed-ivory); color: var(--ed-ink); border-radius: 22px; padding: clamp(18px, 3vw, 36px); font-family: var(--ed-sans); animation: ed-rise .45s var(--ed-spring); }
-.ed-sheet__close { position: sticky; top: 0; float: right; z-index: 2; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--ed-ink); background: var(--ed-ivory); color: var(--ed-ink); font: 600 .75rem/1 var(--ed-sans); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
-.ed-sheet__grid { display: grid; grid-template-columns: 88px minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(16px, 3vw, 40px); align-items: start; clear: both; padding-top: 8px; }
+.ed-sheet { --pad-x: clamp(18px, 3vw, 36px); --pad-y: clamp(18px, 3vw, 36px); position: relative; width: min(1180px, 100%); max-height: calc(100dvh - 32px); overflow-y: auto; background: var(--ed-ivory); color: var(--ed-ink); border-radius: 22px; padding: var(--pad-y) var(--pad-x); font-family: var(--ed-sans); animation: ed-rise .45s var(--ed-spring); }
+/* "Cerrar" vive en una barra fija con fondo: al scrollear, el contenido pasa por
+   debajo en vez de quedar tapado por un botón flotante. */
+.ed-sheet__close { position: sticky; top: calc(var(--pad-y) * -1); z-index: 2; display: flex; align-items: center; justify-content: flex-end; gap: 8px; width: calc(100% + var(--pad-x) * 2); min-height: 56px; margin: calc(var(--pad-y) * -1) calc(var(--pad-x) * -1) 8px; padding: 12px var(--pad-x); border: 0; border-bottom: 1px solid var(--ed-grey-1); border-radius: 22px 22px 0 0; background: var(--ed-ivory); color: var(--ed-ink); font: 600 .75rem/1 var(--ed-sans); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
+.ed-sheet__close:hover { color: var(--ed-accent); }
+.ed-sheet__grid { display: grid; grid-template-columns: 88px minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(16px, 3vw, 40px); align-items: start; padding-top: 8px; }
 .ed-sheet__grid:not(:has(.ed-sheet__thumbs)) { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
 .ed-sheet__thumbs { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .ed-sheet__thumbs button { display: block; width: 100%; aspect-ratio: 4 / 5; border-radius: 12px; border: 1px solid transparent; background: var(--ed-paper); cursor: pointer; padding: 6px; }
@@ -213,8 +216,10 @@
 .ed-sheet__related { margin-top: clamp(28px, 4vw, 48px); padding-top: 24px; border-top: 1px solid var(--ed-grey-1); }
 .ed-sheet__related ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
 .ed-sheet__related button { width: 100%; border: 0; background: none; padding: 0; cursor: pointer; display: grid; gap: 8px; text-align: left; color: inherit; font: 500 .8rem/1.2 var(--ed-sans); }
-.ed-mini-look { display: grid; grid-template-rows: 1.1fr 1.1fr .6fr; height: 220px; padding: 10px; border-radius: 14px; background: var(--ed-paper); transition: transform .4s var(--ed-spring); }
-.ed-mini-look img { width: 100%; height: 100%; object-fit: contain; }
+/* minmax(0, …): sin esto las filas crecen al alto natural de cada imagen y
+   las prendas se desbordan de la tarjeta (se pisaban en mobile). */
+.ed-mini-look { display: grid; grid-template-rows: minmax(0, 1.1fr) minmax(0, 1.1fr) minmax(0, .6fr); gap: 4px; height: 250px; padding: 12px; border-radius: 14px; background: var(--ed-paper); overflow: hidden; transition: transform .4s var(--ed-spring); }
+.ed-mini-look img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
 .ed-sheet__related button:hover .ed-mini-look { transform: translateY(-4px); }
 
 /* Mobile primero: la fila y el perchero pasan a swipe con scroll-snap */
@@ -245,12 +250,13 @@
   .ed-rack__name { opacity: 1; transform: none; }
   .ed-footer__grid { grid-template-columns: minmax(0, 1fr); }
   .ed-sheet-backdrop { padding: 0; place-items: end stretch; }
-  .ed-sheet { max-height: 94dvh; border-radius: 22px 22px 0 0; padding: 18px 16px calc(env(safe-area-inset-bottom, 0px) + 24px); }
+  .ed-sheet { --pad-x: 16px; --pad-y: 18px; max-height: 94dvh; border-radius: 22px 22px 0 0; padding: 18px 16px calc(env(safe-area-inset-bottom, 0px) + 24px); }
   .ed-sheet__grid, .ed-sheet__grid:not(:has(.ed-sheet__thumbs)) { grid-template-columns: minmax(0, 1fr); }
   .ed-sheet__thumbs { grid-auto-flow: column; grid-auto-columns: 72px; overflow-x: auto; order: 2; }
   .ed-sheet__stage { order: 1; }
   .ed-sheet__info { order: 3; }
   .ed-sheet__related ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ed-mini-look { height: 236px; padding: 10px; }
   .ed-selection-fab span { display: none; }
   .ed-selection-fab { padding-left: 14px; }
 }
