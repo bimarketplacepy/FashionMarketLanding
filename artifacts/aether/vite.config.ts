@@ -8,6 +8,7 @@ import { batchImportApi } from "./scripts/batch-import-api.mjs";
 import { outfitApi } from "./scripts/outfit-api.mjs";
 import { responsiveImageApi } from "./scripts/responsive-image-api.mjs";
 import { garmentRegenerationApi } from "./scripts/garment-regeneration-api.mjs";
+import { adminAuthApi } from "./scripts/admin-auth.mjs";
 
 const rawPort = process.env.PORT;
 
@@ -39,6 +40,7 @@ export default defineConfig(async ({ mode }) => {
     react(),
     tailwindcss(),
     runtimeErrorOverlay(),
+    adminAuthApi({ env }),
     responsiveImageApi(),
     wardrobeImportApi({ env }),
     batchImportApi({ env }),

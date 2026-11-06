@@ -1,9 +1,8 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Redirect, Route, Switch, useLocation } from "wouter";
 import { useLenis } from "./aether/useLenis";
 import { useGtmPageViews } from "./analytics/useGtmPageViews";
 import { CatalogProvider } from "./fashion/catalog-context.jsx";
-import { AdminPage } from "./fashion/AdminPage.jsx";
 import { App as FashionMarketApp } from "./fashion/StandaloneApp.jsx";
 
 const VIEW_PATHS: Record<string, string> = {
@@ -17,6 +16,18 @@ type FashionRouteProps = {
   view: "home" | "collection" | "wardrobe";
   tryOnInitialSection?: "suggestions" | "builder" | "profile";
 };
+
+// El panel se carga aparte: su código (editor, importación por lotes) no entra
+// en el bundle público.
+const AdminPage = lazy(() => import("./fashion/AdminPage.jsx"));
+
+function AdminRoute() {
+  return (
+    <Suspense fallback={<p className="status">Cargando panel…</p>}>
+      <AdminPage />
+    </Suspense>
+  );
+}
 
 function FashionRoute({ view, tryOnInitialSection }: FashionRouteProps) {
   const [, navigate] = useLocation();
@@ -53,7 +64,7 @@ export default function App() {
         <Route path="/outfit">
           <Redirect to="/probador?seccion=builder" replace />
         </Route>
-        <Route path="/admin" component={AdminPage} />
+        <Route path="/admin" component={AdminRoute} />
         <Route>
           <FashionRoute view="home" />
         </Route>

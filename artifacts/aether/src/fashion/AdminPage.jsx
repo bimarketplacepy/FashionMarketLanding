@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLocation } from "wouter";
 import { Eye, EyeSlash, FolderOpen, LockKey, SignOut, SpinnerGap } from "@phosphor-icons/react";
 import { isActiveItem, useCatalog } from "./catalog-context.jsx";
@@ -8,11 +8,20 @@ import { BatchImportPanel } from "./batch-import.jsx";
 import "./styles.css";
 import "./shop.css";
 
-const KEY_STORAGE = "fm-admin-key-v1";
-
-// Clave del panel: se configura con VITE_ADMIN_KEY (.env local, Secret en el deploy).
-// A propósito no hay clave por defecto: sin la variable el panel queda cerrado.
-const ADMIN_KEY = import.meta.env.VITE_ADMIN_KEY || "";
+// La clave del panel se valida en el servidor (ADMIN_KEY, nunca en el bundle):
+// el login devuelve una cookie httpOnly de corta duración y las rutas de
+// escritura del catálogo la exigen.
+async function adminSession(method, body) {
+  const response = await fetch("/api/admin/session", {
+    method,
+    credentials: "same-origin",
+    headers: body ? { "Content-Type": "application/json" } : undefined,
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(result.error || "No se pudo validar la sesión.");
+  return result;
+}
 
 const ADMIN_TABS = [
   ["all", "Todo"],
@@ -27,19 +36,21 @@ const ADMIN_TABS = [
 function AdminLogin({ onAuthed }) {
   const [key, setKey] = useState("");
   const [error, setError] = useState("");
+  const [sending, setSending] = useState(false);
 
-  const submit = (event) => {
+  const submit = async (event) => {
     event.preventDefault();
-    if (!ADMIN_KEY) {
-      setError("El panel no tiene clave configurada (falta VITE_ADMIN_KEY).");
-      return;
+    setSending(true);
+    setError("");
+    try {
+      await adminSession("POST", { key });
+      setKey("");
+      onAuthed();
+    } catch (loginError) {
+      setError(loginError.message);
+    } finally {
+      setSending(false);
     }
-    if (key !== ADMIN_KEY) {
-      setError("Clave incorrecta.");
-      return;
-    }
-    sessionStorage.setItem(KEY_STORAGE, key);
-    onAuthed(key);
   };
 
   return (
@@ -57,16 +68,20 @@ function AdminLogin({ onAuthed }) {
           autoFocus
         />
         {error && <p className="admin-login-error" role="alert">{error}</p>}
-        <button className="retail-primary-button" type="submit" disabled={!key}>Entrar</button>
+        <button className="retail-primary-button" type="submit" disabled={!key || sending}>{sending ? "Validando…" : "Entrar"}</button>
       </form>
     </div>
   );
 }
 
-export function AdminPage() {
+export default function AdminPage() {
   const [, navigate] = useLocation();
   const { allItems: items, setItemsActive, loading, error: catalogError, saveItem, deleteItem, refreshCatalog } = useCatalog();
-  const [adminKey, setAdminKey] = useState(() => sessionStorage.getItem(KEY_STORAGE) || "");
+  // null = verificando, false = sin sesión, true = sesión válida.
+  const [authed, setAuthed] = useState(null);
+  useEffect(() => {
+    adminSession("GET").then((session) => setAuthed(Boolean(session.authenticated))).catch(() => setAuthed(false));
+  }, []);
   const [category, setCategory] = useState("all");
   const [collection, setCollection] = useState("all");
   const [busy, setBusy] = useState(false);
@@ -112,7 +127,8 @@ export function AdminPage() {
     }
   };
 
-  if (!adminKey || adminKey !== ADMIN_KEY) return <AdminLogin onAuthed={setAdminKey} />;
+  if (authed === null) return <p className="status"><SpinnerGap className="spin" size={16} /> Verificando sesión…</p>;
+  if (!authed) return <AdminLogin onAuthed={() => setAuthed(true)} />;
 
   return (
     <div className="app-shell retail-wardrobe admin-page">
@@ -123,7 +139,7 @@ export function AdminPage() {
           <button
             className="retail-outline-button"
             type="button"
-            onClick={() => { sessionStorage.removeItem(KEY_STORAGE); setAdminKey(""); }}
+            onClick={() => { adminSession("DELETE").finally(() => setAuthed(false)); }}
           ><SignOut size={16} /> Salir</button>
         </div>
       </header>

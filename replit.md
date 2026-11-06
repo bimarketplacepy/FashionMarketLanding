@@ -2,13 +2,15 @@
 
 Landing del sector Moda de un retailer: intro cinematográfica (ex-AETHER) + landing editorial + catálogo público con fichas de producto + outfit builder + vestidor virtual con IA + panel de administración. SIN precios ni flujo de compra/pedidos (pedido explícito del usuario, julio 2026: se quitó todo lo relacionado a precio y compra).
 
+**Precios**: el soporte de precio (en guaraníes, `formatPriceGs`) existe pero está apagado con `showPrices: false` en `artifacts/aether/data/site-config.json`. Con el flag apagado ni la ficha, ni las sugerencias, ni el importador por lotes muestran precio; el campo `price` se conserva en `library.json`.
+
 ## Rutas (wouter, julio 2026)
 
 - `/` — landing editorial de temporada, sin controles de demo ni accesos administrativos.
 - `/catalogo` — colección pública separada del probador. Cada tarjeta abre la ficha de producto (`ProductSheet.jsx`: atributos en español, talles, colores y carrusel "Combina con" de `sugerencias.js`); `?producto=<id>` la abre directo (enlace compartible, se mantiene con replaceState). "Agregar a mi outfit" guarda el borrador (`outfit-draft.js`, localStorage) y el builder del probador lo siembra al montar y lo sincroniza al cambiar.
 - `/probador` — probador virtual con tres secciones: "Looks sugeridos", "Crear un look" y "Mi modelo".
 - `/outfit` — ruta histórica; redirige a `/probador?seccion=builder`.
-- `/admin` — panel con clave simple validada en el cliente (`VITE_ADMIN_KEY`, fallback `fw2026`, sessionStorage): editor de prendas `ItemViewer` (nombre/categoría/género/talles/descripción/colores/tags) + "Administrar catálogo" para importar. El editor y la importación NO son accesibles desde las vistas públicas.
+- `/admin` — panel cargado con `lazy()` (no entra al bundle público). La clave se valida en el servidor: `ADMIN_KEY` (Secret / `artifacts/aether/.env`, sin prefijo `VITE_`, sin valor por defecto) → `POST /api/admin/session` emite la cookie httpOnly firmada `fm_admin` (8 h, SameSite=Strict). Todas las rutas de `/api/import/*` (salvo `GET wardrobe` y `GET library/:file`), `/api/batches` y `/api/garment-regeneration` exigen esa sesión (`scripts/admin-auth.mjs`, montado en Vite y en el api-server). **En el deployment hay que cargar `ADMIN_KEY` en Secrets.**
 
 ## Run & Operate
 

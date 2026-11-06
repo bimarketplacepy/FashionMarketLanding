@@ -28,3 +28,16 @@ declare module "*/scripts/responsive-image-api.mjs" {
     maxAge?: number;
   }): (req: IncomingMessage, res: ServerResponse) => void | Promise<void>;
 }
+
+declare module "*/scripts/admin-auth.mjs" {
+  import type { IncomingMessage, ServerResponse } from "node:http";
+
+  export function createAdminHandler(options?: {
+    env?: Record<string, string | undefined>;
+    secure?: boolean;
+  }): (
+    req: IncomingMessage,
+    res: ServerResponse,
+    next: (err?: unknown) => void,
+  ) => void | Promise<void>;
+}

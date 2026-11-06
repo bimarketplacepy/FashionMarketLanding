@@ -5,6 +5,7 @@ import {
 } from "@phosphor-icons/react";
 import { useCatalog } from "./catalog-context.jsx";
 import { formatPriceGs, PART_LABELS } from "./format.js";
+import { SHOW_PRICES } from "../site-config.js";
 import "./batch-import.css";
 
 const API = "/api/batches";
@@ -155,7 +156,7 @@ function CatalogPreview({ item, batchId }) {
       <span className="wd-piece-caption"><span>{item.ficha?.nombre || item.fileName}</span></span>
       <span className="bi-preview-meta">
         {item.ficha?.categoriaInterna ? PART_LABELS[item.ficha.categoriaInterna] : "Sin categoría"}
-        {typeof item.ficha?.precio === "number" ? ` · ${formatPriceGs(item.ficha.precio)}` : ""}
+        {SHOW_PRICES && typeof item.ficha?.precio === "number" ? ` · ${formatPriceGs(item.ficha.precio)}` : ""}
       </span>
       {item.ficha?.colores?.length > 0 && (
         <span className="bi-swatches">{item.ficha.colores.map((color) => <i key={color} style={{ background: color }} title={color} />)}</span>
@@ -230,7 +231,7 @@ function ItemCard({ item, batchId, config, busy, onPatch, onAction }) {
                 <button className="bi-color-add" type="button" onClick={() => setColor((draft.colores || []).length, "#888888")} aria-label="Agregar color"><Plus size={12} /></button>
               )}
             </div>
-            <label><span>Precio (₲)</span>
+            {SHOW_PRICES && <label><span>Precio (₲)</span>
               <input
                 inputMode="numeric"
                 placeholder="Sin precio"
@@ -238,7 +239,7 @@ function ItemCard({ item, batchId, config, busy, onPatch, onAction }) {
                 onChange={(event) => setDraft({ ...draft, precio: event.target.value.replaceAll(/[^0-9]/g, "") })}
                 onBlur={() => commit({ precio: draft.precio === "" || draft.precio === null ? null : Number(draft.precio) })}
               />
-            </label>
+            </label>}
             <label className="bi-field-wide"><span>Descripción</span>
               <textarea rows="2" value={draft.descripcion || ""} onChange={(event) => setDraft({ ...draft, descripcion: event.target.value })} onBlur={() => commit({ descripcion: draft.descripcion })} />
             </label>

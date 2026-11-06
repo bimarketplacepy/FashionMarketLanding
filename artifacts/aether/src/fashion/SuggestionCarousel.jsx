@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check } from "@phosphor-icons/react";
 import { formatPriceGs } from "./format.js";
+import { SHOW_PRICES } from "../site-config.js";
 
 // Outfits guardados, compartidos entre fichas (para el +1 de "aparecen juntas").
 let outfitsCache = null;
@@ -89,7 +90,7 @@ export function SuggestionCarousel({ title, suggestions, ready = true, action = 
                 </span>
                 {deColeccion && <span className="sc-origin">De la colección</span>}
                 <span className="sc-name">{item.name}</span>
-                <span className="sc-price">{typeof item.price === "number" ? formatPriceGs(item.price) : ""}</span>
+                <span className="sc-price">{SHOW_PRICES && typeof item.price === "number" ? formatPriceGs(item.price) : ""}</span>
                 <span className="sc-action">{action === "add" ? "Agregar" : "Ver prenda"}</span>
               </button>
             ))}

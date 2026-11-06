@@ -13,6 +13,7 @@ import cookieParser from "cookie-parser";
 import { Router, type IRouter, type Request, type Response } from "express";
 import { createTryonHandler } from "../../../aether/scripts/outfit-api.mjs";
 import { createIpxHandler } from "../../../aether/scripts/responsive-image-api.mjs";
+import { createAdminHandler } from "../../../aether/scripts/admin-auth.mjs";
 import { createPgOutfitStore } from "./pgStore";
 import { tryonSession, sessionOf } from "./session";
 import { aetherProxy } from "../middlewares/aetherProxy";
@@ -99,6 +100,15 @@ export function tryonRouter(): IRouter {
       res.status(404).json({ error: "Not found" });
     }
   });
+
+  // Sesión del panel /admin (clave en ADMIN_KEY, cookie httpOnly firmada) y
+  // custodia de las rutas de escritura: sin sesión válida responden 401 antes
+  // de llegar al 503 de abajo.
+  const adminAuth = createAdminHandler({
+    env: process.env,
+    secure: process.env["REPLIT_DEPLOYMENT"] === "1",
+  });
+  router.use((req, res, next) => adminAuth(req, res, next));
 
   router.use(ADMIN_ONLY_PREFIXES, (_req: Request, res: Response) => {
     res.status(503).json({

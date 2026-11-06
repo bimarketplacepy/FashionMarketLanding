@@ -7,6 +7,7 @@ import http from "node:http";
 // reenvían al servidor de Aether para que la landing funcione sin :3000.
 const AETHER_API_PREFIXES = [
   "/api/import/",
+  "/api/admin/",
   "/api/batches",
   "/api/tryon/",
   "/api/garment-regeneration",

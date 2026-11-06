@@ -6,6 +6,7 @@ import { addToDraft } from "./outfit-draft.js";
 import { sugerirPrendas } from "./sugerencias.js";
 import { SuggestionCarousel, useSavedOutfits } from "./SuggestionCarousel.jsx";
 import { formatPriceGs, GARMENT_TYPE_LABELS, MATERIAL_LABELS, PART_LABELS, SEASON_LABELS, SILHOUETTE_LABELS } from "./format.js";
+import { SHOW_PRICES } from "../site-config.js";
 import "./shop.css";
 
 // Ficha comercial de solo lectura que ve el público al hacer click en una prenda.
@@ -70,7 +71,7 @@ export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
             <div className="product-sheet-info">
               <p className="product-part">{PART_LABELS[item.part] || "Prenda"}</p>
               <h2>{item.name}</h2>
-              {typeof item.price === "number" && <p className="product-price">{formatPriceGs(item.price)}</p>}
+              {SHOW_PRICES && typeof item.price === "number" && <p className="product-price">{formatPriceGs(item.price)}</p>}
               {item.description && <p className="product-description">{item.description}</p>}
 
               <dl className="product-attrs">
