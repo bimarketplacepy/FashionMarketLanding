@@ -7,6 +7,7 @@ import { ItemViewer } from "./ItemViewer.jsx";
 import { BatchImportPanel } from "./batch-import.jsx";
 import "./styles.css";
 import "./shop.css";
+import { GarmentImage } from "./GarmentImage.jsx";
 
 // La clave del panel se valida en el servidor (ADMIN_KEY, nunca en el bundle):
 // el login devuelve una cookie httpOnly de corta duración y las rutas de
@@ -184,7 +185,7 @@ export default function AdminPage() {
                 return (
                   <div className={`admin-grid-item${active ? "" : " is-inactive"}`} key={item.id}>
                     <button className="admin-grid-open" type="button" onClick={() => setSelectedId(item.id)}>
-                      <img src={item.thumbnail || item.image} alt="" loading="lazy" />
+                      <GarmentImage item={item} sizes="150px" />
                       <span>{item.name}</span>
                     </button>
                     <div className="admin-grid-status">

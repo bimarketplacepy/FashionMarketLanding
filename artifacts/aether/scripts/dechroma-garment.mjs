@@ -26,10 +26,11 @@ import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 import { processChromaBackground } from "./import-job-api.mjs";
+import { ORIGINALS_DIR } from "./private-paths.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const IMPORTED = path.join(ROOT, "data", "imported");
-const BACKUP = path.join(ROOT, "data", "imported-originals");
+const BACKUP = ORIGINALS_DIR;
 const LIBRARY = path.join(ROOT, "data", "library.json");
 
 // Umbrales del matte. Medidos sobre los recortes afectados: el cuero/tela cae en

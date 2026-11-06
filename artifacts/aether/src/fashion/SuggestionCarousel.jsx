@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check } from "@phosphor-icons/react";
 import { formatPriceGs } from "./format.js";
 import { SHOW_PRICES } from "../site-config.js";
+import { GarmentImage } from "./GarmentImage.jsx";
 
 // Outfits guardados, compartidos entre fichas (para el +1 de "aparecen juntas").
 let outfitsCache = null;
@@ -85,7 +86,7 @@ export function SuggestionCarousel({ title, suggestions, ready = true, action = 
                 aria-label={action === "add" ? `Agregar ${item.name}` : `Ver ${item.name}`}
               >
                 <span className="sc-art">
-                  <img src={item.thumbnail || item.image} alt="" loading="lazy" />
+                  <GarmentImage item={item} sizes="160px" />
                   {addedId === item.id && <span className="sc-check"><Check size={20} weight="light" /></span>}
                 </span>
                 {deColeccion && <span className="sc-origin">De la colección</span>}

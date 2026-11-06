@@ -112,6 +112,24 @@ export function createTryonHandler({ root, env = {}, store, resolveSession = () 
   const libraryFile = path.join(dataDir, "library.json");
   const publicDir = path.resolve(root, "public");
 
+  // Fuente de cada prenda para la IA: el PNG maestro (sólo en el workspace) o,
+  // en el deployment, la variante WebP más grande de public/garments (también
+  // copiada a dist/public en el build). normalizeImage la convierte a PNG.
+  async function readGarmentSource(garment) {
+    const filename = path.basename(new URL(garment.image, "http://localhost").pathname);
+    try {
+      return await readFile(path.join(dataDir, "imported", filename));
+    } catch (error) {
+      const set = garment.imageSet;
+      if (error.code !== "ENOENT" || !set) throw error;
+      const largest = `${path.basename(set.src)}.${set.hash}-${Math.max(...set.widths)}.webp`;
+      for (const dir of [path.join(publicDir, "garments"), path.resolve(root, "dist/public/garments")]) {
+        try { return await readFile(path.join(dir, largest)); } catch { /* siguiente */ }
+      }
+      throw error;
+    }
+  }
+
   function presetProfile(preset, styleId, previous = {}) {
     const style = findModelStyle(preset, styleId);
     return {
@@ -267,8 +285,7 @@ export function createTryonHandler({ root, env = {}, store, resolveSession = () 
         const images = [{ data: await readFile(presetFile), name: "model-preset.webp" }];
         for (const garment of garments) {
           if (!PARTS.has(garment.part)) continue;
-          const filename = path.basename(new URL(garment.image, "http://localhost").pathname);
-          images.push({ data: await readFile(path.join(dataDir, "imported", filename)), name: `${garment.part}.png` });
+          images.push({ data: await readGarmentSource(garment), name: `${garment.part}.png` });
         }
         const bytes = await ai.generateImage({
           purpose: "outfit",

@@ -14,11 +14,12 @@ import { mkdir, readFile, writeFile, copyFile, access } from "node:fs/promises";
 import path from "node:path";
 import { createAIProvider } from "./ai-provider.mjs";
 import { buildGarmentPrompt, removeChromaBackground } from "./import-job-api.mjs";
+import { ORIGINALS_DIR } from "./private-paths.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const DATA = path.join(ROOT, "data");
 const IMPORTED = path.join(DATA, "imported");
-const ORIGINALS = path.join(DATA, "imported-originals");
+const ORIGINALS = ORIGINALS_DIR;
 const MANIFEST = path.join(DATA, "garment-regen.json");
 
 const ARGS = process.argv.slice(2);

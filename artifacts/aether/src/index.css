@@ -19,3 +19,5 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+/* <picture> de GarmentImage: no altera el layout pensado para <img>. */
+.garment-picture { display: contents; }

@@ -13,6 +13,7 @@ import { effectiveProfileGender, garmentCoverage, garmentFitsModel, inferGarment
 import { defaultModelPreset, findModelPreset, findModelStyle, presetsForGender } from "../../shared/model-presets.mjs";
 import { readDraft, writeDraft } from "./outfit-draft.js";
 import "./virtual-tryon.css";
+import { GarmentImage } from "./GarmentImage.jsx";
 
 const PARTS = [
   ["upperbody", "Superior"],
@@ -244,7 +245,7 @@ function GarmentRail({ children }) {
 function GarmentMini({ item }) {
   return (
     <div className="garment-mini" title={item.name}>
-      <img src={item.thumbnail || item.image} alt="" />
+      <GarmentImage item={item} sizes="120px" />
       <span>{item.name}</span>
     </div>
   );
@@ -507,7 +508,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
                   <legend>{label} <small>{part === "wholebody" ? "alternativa" : (["upperbody", "lowerbody"].includes(part) ? "obligatorio sin vestido" : "opcional")}</small></legend>
                   <GarmentRail>
                     {!["upperbody", "lowerbody"].includes(part) && <button className={!builder[part] ? "active empty-option" : "empty-option"} type="button" onClick={() => selectBuilderGarment(part, null)}>Sin {label.toLowerCase()}</button>}
-                    {genderItems.filter((item) => item.part === part).map((item) => <button className={builder[part] === item.id ? "active" : ""} key={item.id} type="button" onClick={() => selectBuilderGarment(part, item.id)}><img src={item.thumbnail || item.image} alt="" /><span>{item.name}</span></button>)}
+                    {genderItems.filter((item) => item.part === part).map((item) => <button className={builder[part] === item.id ? "active" : ""} key={item.id} type="button" onClick={() => selectBuilderGarment(part, item.id)}><GarmentImage item={item} sizes="120px" /><span>{item.name}</span></button>)}
                   </GarmentRail>
                 </fieldset>
               ))}
@@ -632,7 +633,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
 
       {lookReady && (
         <div className="look-ready__backdrop" onClick={() => setLookReady(null)}>
-          <div className="look-ready" data-lenis-prevent role="dialog" aria-modal="true" aria-labelledby="look-ready-title" onClick={(event) => event.stopPropagation()}>
+          <div className="look-ready" role="dialog" aria-modal="true" aria-labelledby="look-ready-title" onClick={(event) => event.stopPropagation()}>
             <span className="look-ready__icon"><Check size={22} weight="bold" /></span>
             <h3 id="look-ready-title">Se generó tu look</h3>
             <p>{lookReady.name} ya está disponible en tus pruebas.</p>

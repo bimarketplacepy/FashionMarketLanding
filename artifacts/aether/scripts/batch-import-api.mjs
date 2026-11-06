@@ -16,6 +16,7 @@ import {
 } from "./services/vision-provider.mjs";
 import { inferGarmentGender, normalizeGarmentType } from "../shared/garment-gender.mjs";
 import { withLibraryLock } from "./library-lock.mjs";
+import { BATCHES_DIR } from "./private-paths.mjs";
 import { importDefaults } from "./site-config.mjs";
 
 const ASSET_ROOT = "/api/batches/assets";
@@ -689,7 +690,7 @@ export function batchImportApi(options = {}) {
     async configResolved(config) {
       root = config.root;
       const dataDir = path.resolve(root, setting("WARDROBE_DATA_DIR", "data"));
-      batchesDir = path.join(dataDir, "batches");
+      batchesDir = BATCHES_DIR;
       libraryFile = path.join(dataDir, "library.json");
       libraryAssetDir = path.join(dataDir, "imported");
       await mkdir(batchesDir, { recursive: true });
