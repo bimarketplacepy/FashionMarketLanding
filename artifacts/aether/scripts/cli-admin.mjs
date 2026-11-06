@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 
 function readAdminKey() {
-  if (process.env.ADMIN_KEY) return process.env.ADMIN_KEY;
+  if (process.env.ADMIN_KEY) return process.env.ADMIN_KEY.trim();
   try {
     const env = readFileSync(path.resolve(import.meta.dirname, "../.env"), "utf8");
     const line = env.split(/\r?\n/).find((entry) => entry.startsWith("ADMIN_KEY="));

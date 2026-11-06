@@ -18,8 +18,10 @@ const ADMIN_PREFIXES = ["/api/import/", "/api/batches", "/api/garment-regenerati
 // Lecturas públicas: alimentan el catálogo y el probador.
 const PUBLIC_READS = [/^\/api\/import\/wardrobe$/, /^\/api\/import\/library\/[\w.-]+$/];
 
+// Secrets de Replit (process.env) primero; el .env del workspace es sólo
+// respaldo. Ojo: un Secret nuevo llega a los procesos recién al reiniciarlos.
 function keyOf(env) {
-  return String(env?.ADMIN_KEY || process.env.ADMIN_KEY || "");
+  return String(process.env.ADMIN_KEY || env?.ADMIN_KEY || "").trim();
 }
 
 function signingKey(adminKey) {
@@ -132,7 +134,7 @@ export function createAdminHandler({ env = process.env, secure = false } = {}) {
         const ip = String(req.headers["x-forwarded-for"] || req.socket?.remoteAddress || "").split(",")[0].trim();
         if (tooManyAttempts(ip)) return sendJson(res, 429, { error: "Demasiados intentos. Probá de nuevo en unos minutos." });
         const input = await readBody(req).catch(() => ({}));
-        if (typeof input.key !== "string" || !safeEqual(input.key, adminKey)) {
+        if (typeof input.key !== "string" || !safeEqual(input.key.trim(), adminKey)) {
           recordFailure(ip);
           return sendJson(res, 401, { error: "Clave incorrecta." });
         }
