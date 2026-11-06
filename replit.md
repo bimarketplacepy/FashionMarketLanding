@@ -36,7 +36,7 @@ Paleta marfil `#F3F1EC` / tinta `#151515` / grises / acento terracota `#A4482A` 
 - `GET /api/landing` (`scripts/landing-payload.mjs`): looks y perchero armados en el servidor con campos mínimos (~11 KB gzip). La landing no descarga el catálogo completo; `CatalogProvider` sólo pide `/api/catalog` cuando una vista lo usa.
 - `index.html` precarga `/api/landing` o `/api/catalog` según la ruta, y en build (`scripts/landing-preload-plugin.mjs`) agrega la precarga AVIF de las prendas del primer look (LCP). GTM se carga diferido (después de `load`, en idle); los page views quedan en `dataLayer` hasta que carga.
 - Ficha de look/prenda (`LookSheet.jsx`): miniaturas, imagen grande, descripción real, swatches con nombre de color (`color-names.js`, el más cercano al hex), piezas con checkbox y talle, "También te puede gustar".
-- "Tu selección" (`selection.jsx`, `SelectionDrawer.jsx`): botón flotante con contador, modal con talle/cantidad/quitar, "Descargar selección" (.txt) y consulta. Se guarda en localStorage (try/catch) con un resumen de cada prenda. **WhatsApp**: `contact.whatsapp` en `site-config.json` (número internacional sin "+"); mientras sea `null` se ofrece "Consultar por email" (`info@marketplace.com.py`).
+- "Tu selección" (`selection.jsx`, `SelectionDrawer.jsx`): botón flotante con contador, modal con talle/cantidad/quitar, "Descargar selección" (.txt) y consulta. Se guarda en localStorage (try/catch) con un resumen de cada prenda. **WhatsApp**: `contact.whatsapp` en `site-config.json` (hoy `595981203891`, número provisorio) y `contact.whatsappGreeting`. El enlace usa el formato `https://api.whatsapp.com/send/?phone=…&text=…&type=phone_number&app_absent=0` (`whatsappUrl()` en `src/site-config.js`): el footer manda el saludo solo y "Tu selección" lo completa con las piezas. Con `whatsapp: null` se ofrece "Consultar por email".
 - Colección y probador se cargan con `lazy()`.
 
 ## Admin y seguridad
@@ -58,8 +58,8 @@ Paleta marfil `#F3F1EC` / tinta `#151515` / grises / acento terracota `#A4482A` 
 
 ## Qué se excluye del deploy
 
-- `.replitignore` (formato .dockerignore; lo generó Replit, pero su documentación no lo describe: **confirmar el tamaño de la imagen en el primer publish**): `.local`, `data/imported/`, `data/claude-inbox/`, `data/jobs/`, `data/garment-regeneration/`, `data/_backups/`, `fotos-ss26/`, `attached_assets/`.
-- Respaldos movidos fuera de `artifacts/` a `.local/aether-archive/` (`batches/` con las fotos crudas de los lotes, `imported-originals/`, `_dedup-2026-10-01*`). Copia verificada en App Storage bajo `archivo/2026-11-06/` (3.103 archivos, 1.011 MB; `scripts/maintenance/archive-to-storage.mjs`). Las rutas salen de `scripts/private-paths.mjs` (`AETHER_PRIVATE_DATA` las redefine).
+- `.replitignore` (formato .dockerignore; lo generó Replit, pero su documentación no lo describe: **confirmar el tamaño de la imagen en el primer publish**): `.local`, `.config/` (incluye la instalación global de Claude Code, ~323 MB), `data/imported/`, `data/claude-inbox/`, `data/jobs/`, `data/garment-regeneration/`, `data/_backups/`, `fotos-ss26/`, `attached_assets/`.
+- Respaldos: la copia completa está en App Storage bajo `archivo/2026-11-06/` (3.103 archivos, 1.011 MB, verificada; `scripts/maintenance/archive-to-storage.mjs`): fotos crudas de los lotes, `imported-originals/` y `_dedup-2026-10-01*`. La copia local se borró el 2026-11-06 salvo los 5 lotes con prendas analizadas sin importar (37), que siguen en `.local/aether-archive/batches/` para poder terminarlos desde `/admin`. `imported-originals/` local quedó vacío: `regenerate-garments` usa la imagen actual como fuente y `dechroma` vuelve a respaldar al usarse. Las rutas salen de `scripts/private-paths.mjs` (`AETHER_PRIVATE_DATA` las redefine).
 - Producción sólo necesita `data/library.json`, `data/site-config.json`, `public/` (incluye `public/garments`) y el build.
 
 ## Run & Operate

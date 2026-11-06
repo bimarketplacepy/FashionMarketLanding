@@ -68,3 +68,11 @@ Detalle de las mediciones:
 10. **Looks generados por algoritmo.** Usan armonía de color y estampa compartida. Si querés curarlos a mano, el siguiente paso natural es una lista fija en la config.
 11. **Rama `ss26-rediseno`.** Todo quedó en esta rama, no en `main`. Para publicar: merge a `main` (o publicar desde la rama) y reiniciar el workflow "API Server", que corre el bundle de `dist/`.
 12. **Reel de Instagram de referencia.** No se pudo importar: Instagram devuelve la página, no el video. El diseño sigue la especificación escrita. Si dejás el `.mp4` en `attached_assets/`, lo analizo y ajusto.
+
+## Seguimiento (2026-11-06, después de la revisión)
+
+1. `ADMIN_KEY` cargada en Secrets del deployment (confirmado).
+2. WhatsApp provisorio: `595981203891` con el saludo "Hola, quisiera consultar…" en el formato de api.whatsapp.com. Está en "Tu selección" (con la lista de piezas) y en el footer.
+3. `.replitignore` se prueba en el próximo publish.
+4. `.config/npm/node_global` es la instalación global de Claude Code (323 MB). La app no la usa: se excluye del deploy con `.config/` en `.replitignore`. No se movió de lugar, porque eso rompería Claude Code en el workspace. Desplegable estimado: ~390 MB.
+5. Copia local de respaldos borrada después de reverificar App Storage (3.103 de 3.103 archivos). Se conservaron los 5 lotes con 37 prendas analizadas sin importar (58 MB): ROSIO CLOTHING 2, DINAMIC FASHION 5, ACTIVE BASIC 28, BLUPEPPER SS26 1 (error), AEMI+CO 1 (error).

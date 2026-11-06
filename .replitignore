@@ -16,3 +16,6 @@ artifacts/aether/data/garment-regeneration/
 artifacts/aether/data/_backups/
 artifacts/aether/fotos-ss26/
 attached_assets/
+# Configuración local del workspace: incluye la instalación global de Claude Code
+# (.config/npm/node_global, ~323 MB), que la app no usa en producción.
+.config/

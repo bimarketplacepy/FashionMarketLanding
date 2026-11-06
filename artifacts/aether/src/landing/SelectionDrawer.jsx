@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useRef } from "react";
 import { DownloadSimple, EnvelopeSimple, Minus, Plus, ShoppingBagOpen, Trash, WhatsappLogo, X } from "@phosphor-icons/react";
 import { GarmentImage } from "../fashion/GarmentImage.jsx";
-import { CONTACT, SEASON_LABEL } from "../site-config.js";
+import { CONTACT, SEASON_LABEL, whatsappUrl } from "../site-config.js";
 import { useSelection } from "./selection.jsx";
 
 function selectionText(lines) {
   const body = lines.map(({ item, entry }) => `• ${item.name}${entry.size ? ` — talle ${entry.size}` : ""} — cantidad ${entry.qty}`).join("\n");
-  return `Hola, quiero consultar por estas piezas de ${SEASON_LABEL}:\n\n${body}\n`;
+  return `${CONTACT.whatsappGreeting.replace(/…$/, "")} por estas piezas de ${SEASON_LABEL}:\n\n${body}\n`;
 }
 
 function downloadSelection(text) {
@@ -88,7 +88,7 @@ export function SelectionDrawer() {
             </ul>
             <footer className="ed-drawer__actions">
               {CONTACT.whatsapp ? (
-                <a className="ed-pill ed-pill--solid" href={`https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(text)}`} target="_blank" rel="noreferrer"><WhatsappLogo size={18} /> Consultar por WhatsApp</a>
+                <a className="ed-pill ed-pill--solid" href={whatsappUrl(text)} target="_blank" rel="noreferrer"><WhatsappLogo size={18} /> Consultar por WhatsApp</a>
               ) : (
                 <a className="ed-pill ed-pill--solid" href={`mailto:${CONTACT.email}?subject=${encodeURIComponent("Consulta por mi selección")}&body=${encodeURIComponent(text)}`}><EnvelopeSimple size={18} /> Consultar por email</a>
               )}

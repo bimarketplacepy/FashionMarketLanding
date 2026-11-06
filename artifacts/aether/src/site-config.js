@@ -32,4 +32,11 @@ export function warnEmptySection(name, list) {
 export const CONTACT = {
   whatsapp: typeof config.contact?.whatsapp === "string" && /^\d{8,15}$/.test(config.contact.whatsapp) ? config.contact.whatsapp : null,
   email: config.contact?.email || "info@marketplace.com.py",
+  whatsappGreeting: config.contact?.whatsappGreeting || "Hola, quisiera consultar…",
 };
+
+// Enlace de WhatsApp en el formato de api.whatsapp.com que usa la tienda.
+export function whatsappUrl(text = CONTACT.whatsappGreeting) {
+  const params = new URLSearchParams({ phone: CONTACT.whatsapp, text, type: "phone_number", app_absent: "0" });
+  return `https://api.whatsapp.com/send/?${params}`;
+}

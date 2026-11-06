@@ -1,4 +1,4 @@
-import { SEASON_LABEL } from "../site-config.js";
+import { CONTACT, SEASON_LABEL, whatsappUrl } from "../site-config.js";
 import { STORE } from "./store-info.js";
 
 export function EditorialFooter({ navigate }) {
@@ -18,6 +18,7 @@ export function EditorialFooter({ navigate }) {
         </div>
         <div>
           <h2>Contacto</h2>
+          {CONTACT.whatsapp && <a href={whatsappUrl()} target="_blank" rel="noreferrer">WhatsApp</a>}
           <a href={`mailto:${STORE.email}`}>{STORE.email}</a>
           <a href={STORE.instagramUrl} target="_blank" rel="noreferrer">Instagram {STORE.instagramLabel}</a>
           <a href={STORE.facebookUrl} target="_blank" rel="noreferrer">Facebook {STORE.facebookLabel}</a>

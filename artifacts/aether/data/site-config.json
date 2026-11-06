@@ -9,8 +9,9 @@
   "showPrices": false,
   "currency": "PYG",
   "contact": {
-    "whatsapp": null,
-    "email": "info@marketplace.com.py"
+    "whatsapp": "595981203891",
+    "email": "info@marketplace.com.py",
+    "whatsappGreeting": "Hola, quisiera consultar…"
   },
   "promotions": [
     {
