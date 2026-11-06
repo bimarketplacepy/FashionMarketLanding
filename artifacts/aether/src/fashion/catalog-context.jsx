@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 
 const CatalogContext = createContext(null);
 
-// Las prendas con active:false (p. ej. la colección FW26) siguen en el catálogo
+// Las prendas con active:false (p. ej. una colección de temporada pasada) siguen en el catálogo
 // para el admin, pero no se muestran en la tienda ni en el probador.
 export const isActiveItem = (item) => item.active !== false;
 
@@ -52,17 +52,16 @@ export function CatalogProvider({ children }) {
   }, []);
 
   const setItemsActive = useCallback(async (ids, active) => {
-    const saved = await Promise.all(ids.map(async (id) => {
-      const response = await fetch(`/api/import/wardrobe/${id}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ active }),
-      });
-      const record = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(record.error || "No se pudo actualizar la prenda.");
-      return record;
-    }));
-    const byId = new Map(saved.map((record) => [record.id, record]));
+    // Una sola escritura en el servidor para todo el bloque: con un PATCH por
+    // prenda en paralelo, las escrituras de library.json se pisaban.
+    const response = await fetch("/api/import/wardrobe/active", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ids, active }),
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(result.error || "No se pudieron actualizar las prendas.");
+    const byId = new Map((result.records || []).map((record) => [record.id, record]));
     setItems((current) => current.map((item) => byId.has(item.id) ? { ...item, ...byId.get(item.id) } : item));
   }, []);
 

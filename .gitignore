@@ -60,3 +60,5 @@ artifacts/aether/data/batches/*/*.jpeg
 artifacts/aether/data/_dedup-*/**/*.png
 artifacts/aether/data/_dedup-*/**/*.jpg
 artifacts/aether/data/_dedup-*/**/*.webp
+# Backups locales de library.json antes de migraciones masivas
+artifacts/aether/data/_backups/

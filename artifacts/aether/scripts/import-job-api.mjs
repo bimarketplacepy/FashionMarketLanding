@@ -4,6 +4,8 @@ import path from "node:path";
 import sharp from "sharp";
 import { createAIProvider } from "./ai-provider.mjs";
 import { GARMENT_GENDERS, inferGarmentGender, normalizeGarmentType, partForGarmentType } from "../shared/garment-gender.mjs";
+import { withLibraryLock } from "./library-lock.mjs";
+import { importDefaults } from "./site-config.mjs";
 
 const API_ROOT = "/api/import/jobs";
 const ASSET_ROOT = "/api/import/assets";
@@ -473,6 +475,7 @@ export function wardrobeImportApi(options = {}) {
       modeledImage = `${LIBRARY_ASSET_ROOT}/${modeledName}`;
     }
     const metadata = job.metadata || {};
+    return withLibraryLock(async () => {
     const records = await loadImported();
     const existing = records.find((record) => record.id === id);
     const garmentType = normalizeGarmentType(metadata.garmentType, metadata.part);
@@ -486,7 +489,7 @@ export function wardrobeImportApi(options = {}) {
       secondaryColor: metadata.secondaryColor || null,
       palette: [metadata.color, metadata.secondaryColor].filter(Boolean),
       tags: Array.isArray(metadata.tags) ? metadata.tags : [],
-      season: metadata.season || "all",
+      season: metadata.season || existing?.season || importDefaults().season,
       material: metadata.material || "mixed",
       silhouette: metadata.silhouette || "regular",
       weight: metadata.weight || "medium",
@@ -499,10 +502,13 @@ export function wardrobeImportApi(options = {}) {
       gender: inferGarmentGender({ ...metadata, gender: metadata.gender || existing?.gender }),
       sizes: existing?.sizes || DEFAULT_SIZES[part] || ["Único"],
       description: existing?.description || "",
+      collection: existing?.collection || importDefaults().collection,
+      active: existing?.active ?? true,
     };
     const next = [...records.filter((item) => item.id !== id), record];
     await atomicJson(importedFile, next);
     return record;
+    });
   }
 
   async function generate(job, stageName) {
@@ -591,10 +597,11 @@ export function wardrobeImportApi(options = {}) {
       const wardrobePatchMatch = url.pathname.match(/^\/api\/import\/wardrobe\/(import-[a-f0-9-]{36})$/i);
       if (wardrobePatchMatch && req.method === "PATCH") {
         const id = wardrobePatchMatch[1];
+        const input = await body(req);
+        const result = await withLibraryLock(async () => {
         const records = await loadImported();
         const record = records.find((item) => item.id === id);
-        if (!record) return json(res, 404, { error: "Imported wardrobe item not found" });
-        const input = await body(req);
+        if (!record) return null;
         if (typeof input.name === "string" && input.name.trim()) record.name = input.name.trim().slice(0, 120);
         if (PARTS.has(input.part)) record.part = input.part;
         if (typeof input.garmentType === "string") record.garmentType = normalizeGarmentType(input.garmentType, record.part);
@@ -615,15 +622,36 @@ export function wardrobeImportApi(options = {}) {
         if (GENDERS.has(input.gender)) record.gender = inferGarmentGender({ ...record, gender: input.gender });
         record.palette = [record.color, record.secondaryColor].filter(Boolean);
         await atomicJson(importedFile, records);
-        return json(res, 200, record);
+        return record;
+        });
+        if (!result) return json(res, 404, { error: "Imported wardrobe item not found" });
+        return json(res, 200, result);
+      }
+      // Activar / desactivar en bloque (p. ej. una colección entera) en una sola escritura.
+      if (url.pathname === "/api/import/wardrobe/active" && req.method === "POST") {
+        const input = await body(req);
+        if (!Array.isArray(input.ids) || typeof input.active !== "boolean") return json(res, 400, { error: "Se espera { ids: string[], active: boolean }." });
+        const ids = new Set(input.ids.filter((id) => typeof id === "string"));
+        const updated = await withLibraryLock(async () => {
+          const records = await loadImported();
+          const changed = records.filter((record) => ids.has(record.id));
+          for (const record of changed) record.active = input.active;
+          if (changed.length) await atomicJson(importedFile, records);
+          return changed;
+        });
+        return json(res, 200, { updated: updated.length, records: updated });
       }
       const wardrobeDeleteMatch = url.pathname.match(/^\/api\/import\/wardrobe\/(import-[a-f0-9-]{36})$/i);
       if (wardrobeDeleteMatch && req.method === "DELETE") {
         const id = wardrobeDeleteMatch[1];
-        const records = await loadImported();
-        const next = records.filter((record) => record.id !== id);
-        if (next.length === records.length) return json(res, 404, { error: "Imported wardrobe item not found" });
-        await atomicJson(importedFile, next);
+        const removed = await withLibraryLock(async () => {
+          const records = await loadImported();
+          const next = records.filter((record) => record.id !== id);
+          if (next.length === records.length) return false;
+          await atomicJson(importedFile, next);
+          return true;
+        });
+        if (!removed) return json(res, 404, { error: "Imported wardrobe item not found" });
         await Promise.all([
           rm(path.join(libraryAssetDir, `${id}-garment.png`), { force: true }),
           rm(path.join(libraryAssetDir, `${id}-modeled.png`), { force: true }),

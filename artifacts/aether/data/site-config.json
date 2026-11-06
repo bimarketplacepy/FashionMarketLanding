@@ -1,0 +1,21 @@
+{
+  "activeSeason": "SS26",
+  "seasonLabel": "Primavera – Verano 2026",
+  "seasonShortLabel": "Primavera – Verano '26",
+  "importDefaults": {
+    "collection": "SS26",
+    "season": "summer"
+  },
+  "showPrices": false,
+  "currency": "PYG",
+  "promotions": [
+    {
+      "id": "winter-sale-2026",
+      "title": "Winter Sale · Hasta 50% Off",
+      "text": "Hasta el 31 de agosto, una selección de prendas de invierno con hasta 50% de descuento.",
+      "startsAt": null,
+      "endsAt": "2026-08-31T23:59:59-04:00",
+      "collection": "FW26"
+    }
+  ]
+}

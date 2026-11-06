@@ -9,6 +9,7 @@ import { ProductSheet } from "./ProductSheet.jsx";
 import { MATERIAL_LABELS, SEASON_LABELS, SILHOUETTE_LABELS } from "./format.js";
 import { GARMENT_TYPES, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
 import { isActiveItem } from "./catalog-context.jsx";
+import { ACTIVE_SEASON, SEASON_LABEL, activePromotions, warnEmptySection } from "../site-config.js";
 import "./styles.css";
 
 const STORAGE_KEY = "open-wardrobe-edits-v1";
@@ -42,7 +43,7 @@ const DEMO_THEMES = {
 
 const DEMO_DEFAULTS = {
   brand: "FASHION MARKET",
-  eyebrow: "Nueva temporada · Otoño – Invierno 2026",
+  eyebrow: `Nueva temporada · ${SEASON_LABEL}`,
   headline: "Tu estilo,",
   highlight: "mejor elegido.",
   description: "Descubrí la colección de esta temporada y probá combinaciones pensadas especialmente para vos.",
@@ -694,7 +695,7 @@ function RetailFooter({ brand, tagline }) {
       <div className="retail-footer__top">
         <div className="brand-mark"><BrandLogo /><small>By Marketplace</small></div>
         <p>{tagline}</p>
-        <small>Otoño — Invierno 2026</small>
+        <small>{SEASON_LABEL}</small>
       </div>
       <div className="retail-footer__columns">
         <section>
@@ -834,28 +835,24 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
     return (modeled.length >= 3 ? modeled : items).slice(0, 3);
   }, [items]);
 
-  // Selección del Winter Sale: prioriza season "winter" y después prendas aptas
-  // para frío (climates "cold"), dejando fuera los accesorios.
-  const winterItems = useMemo(() => {
-    const winterScore = (item) => {
-      if (item.season === "winter") return 0;
-      if (!(item.climates || []).includes("cold")) return null;
-      if (item.weight === "heavy") return 1;
-      return item.weight === "medium" ? 2 : 3;
-    };
+  // Selección de temporada: prendas activas de la colección vigente (sin
+  // accesorios), una por nombre, priorizando las que tienen foto modelada.
+  const seasonItems = useMemo(() => {
     const seenNames = new Set();
-    return items
-      .filter((item) => !String(item.part || "").startsWith("accessories"))
-      .map((item) => ({ item, score: winterScore(item) }))
-      .filter(({ item, score }) => {
-        if (score === null || seenNames.has(item.name)) return false;
+    const list = items
+      .filter((item) => item.collection === ACTIVE_SEASON && !String(item.part || "").startsWith("accessories"))
+      .filter((item) => {
+        if (seenNames.has(item.name)) return false;
         seenNames.add(item.name);
         return true;
       })
-      .sort((a, b) => a.score - b.score)
-      .slice(0, 14)
-      .map(({ item }) => item);
-  }, [items]);
+      .sort((a, b) => Number(Boolean(b.modeledImage)) - Number(Boolean(a.modeledImage)))
+      .slice(0, 14);
+    if (!loading) warnEmptySection("Selección de temporada", list);
+    return list;
+  }, [items, loading]);
+
+  const promotions = useMemo(() => activePromotions(items), [items]);
 
   const activeTheme = DEMO_THEMES[demo.theme];
   const themeStyle = { "--ink": activeTheme.ink, "--cream": activeTheme.cream, "--acid": activeTheme.accent, "--muted": activeTheme.muted, "--deep": activeTheme.deep, "--accent-ink": activeTheme.accentInk };
@@ -926,46 +923,42 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
           </section>
 
           <section className="season-story" id="temporada">
-            <div className="season-story__image"><img src="/fashion/look-camel.png" alt="Look de la temporada otoño invierno 2026" /></div>
+            <div className="season-story__image"><img src="/fashion/look-camel.png" alt="Look editorial de la temporada" /></div>
             <div className="season-story__copy">
-              <p className="retail-kicker">Otoño — Invierno 2026</p>
-              <h2>La temporada se construye en capas.</h2>
-              <p>Descubrí una edición pensada para acompañarte del día a la noche: tonos tierra, acentos profundos y texturas que suman presencia sin perder comodidad.</p>
-              <dl>
-                <div><dt>Paleta</dt><dd>Arena, vino, azul noche y marfil.</dd></div>
-                <div><dt>Siluetas</dt><dd>Volúmenes relajados y líneas definidas.</dd></div>
-                <div><dt>Materiales</dt><dd>Denim, tejidos suaves y abrigos con estructura.</dd></div>
-              </dl>
+              <p className="retail-kicker">{SEASON_LABEL}</p>
+              <h2>La temporada, pieza por pieza.</h2>
+              <p>Recorré la colección {ACTIVE_SEASON}: prendas, calzado y accesorios seleccionados para esta temporada, listos para combinar en el probador.</p>
             </div>
           </section>
 
-          <section className="winter-sale" id="winter-sale" aria-label="Winter Sale">
-            <p className="retail-kicker"><Sparkle size={15} weight="fill" /> Winter Sale · Hasta 50% Off</p>
-            <h2>El invierno, <em>con hasta 50% off.</em></h2>
-            <p>Hasta el 31 de agosto, una selección de prendas de invierno con hasta 50% de descuento. Piezas pensadas para durar, en una ocasión que no.</p>
-            <button className="retail-text-link winter-sale__link" type="button" onClick={() => openCollection()}>
-              Descubrí la selección <ArrowRight size={16} />
-            </button>
-          </section>
+          {promotions.map((promo) => (
+            <section className="season-promo" id={`promo-${promo.id}`} key={promo.id} aria-label={promo.title}>
+              <p className="retail-kicker"><Sparkle size={15} weight="fill" /> {promo.title}</p>
+              <p>{promo.text}</p>
+              <button className="retail-text-link season-promo__link" type="button" onClick={() => openCollection()}>
+                Descubrí la selección <ArrowRight size={16} />
+              </button>
+            </section>
+          ))}
 
-          {winterItems.length > 3 && (
-            <section className="winter-carousel" aria-label="Prendas seleccionadas del Winter Sale">
-              <div className="winter-carousel__track" style={{ "--marquee-duration": `${winterItems.length * 4}s` }}>
+          {seasonItems.length > 3 && (
+            <section className="season-carousel" aria-label={`Prendas seleccionadas de ${SEASON_LABEL}`}>
+              <div className="season-carousel__track" style={{ "--marquee-duration": `${seasonItems.length * 4}s` }}>
                 {[0, 1].map((copy) => (
-                  <div className="winter-carousel__group" key={copy} aria-hidden={copy === 1 || undefined}>
-                    {winterItems.map((item) => (
+                  <div className="season-carousel__group" key={copy} aria-hidden={copy === 1 || undefined}>
+                    {seasonItems.map((item) => (
                       <button
-                        className="winter-carousel__card"
+                        className="season-carousel__card"
                         type="button"
                         key={`${copy}-${item.id}`}
                         tabIndex={copy === 1 ? -1 : undefined}
                         onClick={() => { openProduct(item.id); openCollection(); }}
                         aria-label={`Ver ${item.name} en la colección`}
                       >
-                        <span className="winter-carousel__image">
+                        <span className="season-carousel__image">
                           <OptimizedImage src={item.thumbnail || item.image} alt="" sizes="200px" breakpoints={[160, 240, 320]} />
                         </span>
-                        <span className="winter-carousel__name">{item.name}</span>
+                        <span className="season-carousel__name">{item.name}</span>
                       </button>
                     ))}
                   </div>
@@ -1018,7 +1011,7 @@ export function App({ initialView = "home", onNavigate, tryOnInitialSection = "s
         </header>
         <main className="public-catalog">
           <header className="public-catalog__heading">
-            <div><p className="retail-kicker">Otoño — Invierno 2026</p><h1>Conocé la colección.</h1></div>
+            <div><p className="retail-kicker">{SEASON_LABEL}</p><h1>Conocé la colección.</h1></div>
             <p>Explorá las prendas disponibles esta temporada. Después vas a poder combinarlas libremente desde el probador.</p>
           </header>
           <nav className="catalog-filters" aria-label="Filtrá la colección">

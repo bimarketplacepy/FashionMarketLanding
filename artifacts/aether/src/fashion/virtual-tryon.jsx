@@ -482,7 +482,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
             <p>Evaluamos color, silueta, materiales, capas, ocasión, temporada y clima. Nunca mostramos dos combinaciones iguales.</p>
           </div>
           <div className="tryon-filterbar">
-            <label><span>Temporada</span><select value={filters.season} onChange={(event) => setFilters({ ...filters, season: event.target.value })}>{FILTERS.seasons.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
+            <label><span>Temporada</span><select value={filters.season} onChange={(event) => setFilters({ ...filters, season: event.target.value })}>{FILTERS.seasons.filter(([id]) => id === "all" || items.some((item) => item.season === id)).map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
             <label><span>Ocasión</span><select value={filters.occasion} onChange={(event) => setFilters({ ...filters, occasion: event.target.value })}>{FILTERS.occasions.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
             <label><span>Clima</span><select value={filters.climate} onChange={(event) => setFilters({ ...filters, climate: event.target.value })}>{FILTERS.climates.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
             <label><span>Cantidad</span><select value={count} onChange={(event) => setCount(Number(event.target.value))}>{[3, 6, 9, 12].map((value) => <option key={value} value={value}>{value} looks</option>)}</select></label>

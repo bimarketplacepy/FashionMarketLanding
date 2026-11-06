@@ -15,6 +15,8 @@ import {
   parseAnalysisResults,
 } from "./services/vision-provider.mjs";
 import { inferGarmentGender, normalizeGarmentType } from "../shared/garment-gender.mjs";
+import { withLibraryLock } from "./library-lock.mjs";
+import { importDefaults } from "./site-config.mjs";
 
 const ASSET_ROOT = "/api/batches/assets";
 const LIBRARY_ASSET_ROOT = "/api/import/library";
@@ -370,7 +372,11 @@ export function batchImportApi(options = {}) {
   }
 
   // Importa un item aprobado al catálogo real (library.json).
-  async function importItem(batch, item, { unifyWith = null, force = false } = {}) {
+  function importItem(batch, item, options = {}) {
+    return withLibraryLock(() => importItemUnlocked(batch, item, options));
+  }
+
+  async function importItemUnlocked(batch, item, { unifyWith = null, force = false } = {}) {
     if (!item.ficha?.nombre || !item.ficha.categoriaInterna) {
       throw Object.assign(new Error("La ficha necesita nombre y categoría antes de importar."), { status: 409 });
     }
@@ -417,7 +423,7 @@ export function batchImportApi(options = {}) {
       secondaryColor: ficha.colores[1] || null,
       palette: ficha.colores.length ? ficha.colores : ["#d8d0c2"],
       tags: [ficha.subcategoria].filter(Boolean).map((tag) => tag.toLowerCase().slice(0, 40)),
-      season: "all",
+      season: importDefaults().season,
       material: "mixed",
       silhouette: "regular",
       weight: "medium",
@@ -437,6 +443,8 @@ export function batchImportApi(options = {}) {
       sizes: DEFAULT_SIZES[ficha.categoriaInterna] || ["Único"],
       description: ficha.descripcion || "",
       price: Number.isFinite(ficha.precio) ? ficha.precio : null,
+      collection: importDefaults().collection,
+      active: true,
       importBatch: { id: batch.id, name: batch.name },
       importedAt: new Date().toISOString(),
       analysis: item.analysisRaw || null,
