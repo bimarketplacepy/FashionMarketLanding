@@ -106,6 +106,27 @@
       "status": "accepted",
       "createdAt": "2026-08-05T17:52:32.123Z",
       "updatedAt": "2026-08-05T17:52:49.510Z"
+    },
+    {
+      "id": "look-f27da1c0-debc-4596-a1f0-eb4562953b0a",
+      "name": "Mi combinación",
+      "occasion": "casual",
+      "season": "autumn",
+      "climate": "mild",
+      "garmentIds": [
+        "import-9c2a1b4f-ea42-43c8-a68c-cb8517d9b760",
+        "import-956022dc-862e-4dd4-8b70-f60fd37180c5",
+        "import-407808da-cbcb-443d-8c89-a1dbf01bc0ba",
+        "import-70196b84-3094-41f9-a967-539373a50d4a"
+      ],
+      "reason": "Combinación creada libremente con prendas del catálogo seleccionado.",
+      "score": 100,
+      "source": "manual",
+      "favorite": false,
+      "image": "/api/tryon/images/look-f27da1c0-debc-4596-a1f0-eb4562953b0a.png",
+      "status": "accepted",
+      "createdAt": "2026-11-06T19:20:56.505Z",
+      "updatedAt": "2026-11-06T19:21:19.761Z"
     }
   ]
 }

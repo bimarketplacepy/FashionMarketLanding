@@ -1,15 +1,15 @@
 {
   "mode": "preset",
   "gender": "mujer",
-  "complexion": "curvy",
-  "skinTone": "clara",
-  "preset": "mujer-europea-clara",
-  "style": "castano-medio-29-34",
-  "hairColor": "castano-claro",
-  "hairLength": "medio",
+  "complexion": "atletica",
+  "skinTone": "media-calida",
+  "preset": "mujer-americana-calida",
+  "style": "castano-largo-24-28",
+  "hairColor": "castano",
+  "hairLength": "largo",
   "hairTexture": "ondulado",
-  "ageRange": "29–34",
-  "modelUrl": "/fashion/models/ai/mujer-europea-clara.webp",
-  "appearance": "Rasgos europeos diversos",
-  "updatedAt": "2026-07-30T19:56:06.927Z"
+  "ageRange": "24–28",
+  "modelUrl": "/fashion/models/ai/mujer-americana-calida.webp",
+  "appearance": "Rasgos norteamericanos diversos",
+  "updatedAt": "2026-11-06T19:20:26.817Z"
 }

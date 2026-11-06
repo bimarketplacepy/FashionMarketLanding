@@ -45,7 +45,8 @@ Paleta marfil `#F3F1EC` / tinta `#151515` / grises / acento terracota `#A4482A` 
 - `POST /api/admin/session` valida la clave (comparación en tiempo constante, 10 intentos fallidos por IP cada 15 min) y emite la cookie httpOnly firmada `fm_admin` (HMAC, 8 h, SameSite=Strict, Secure en deployment). `GET` consulta la sesión, `DELETE` cierra.
 - Exigen sesión: todo `/api/import/*` salvo `GET /api/import/wardrobe` y `GET /api/import/library/:file`, más `/api/batches` y `/api/garment-regeneration`. Implementado en `scripts/admin-auth.mjs`, montado como plugin de Vite y en el api-server.
 - Scripts de línea de comandos (`import-catalog`, `reclassify-parts`) se autentican con el header `X-Admin-Key` (leen `ADMIN_KEY` de env o `.env`, ver `scripts/cli-admin.mjs`).
-- **Al publicar: cargar `ADMIN_KEY` en Secrets del deployment.**
+- Prioridad: **Secrets (`process.env.ADMIN_KEY`) gana sobre `artifacts/aether/.env`** (respaldo con el valor del viejo `VITE_ADMIN_KEY`). Un Secret nuevo llega a los procesos recién al reiniciar la app (Stop → Run); la contraseña es el valor del Secret.
+- `ADMIN_KEY` ya está cargada en Secrets del deployment (confirmado 2026-11-06).
 
 ## Imágenes de prendas
 
@@ -61,6 +62,12 @@ Paleta marfil `#F3F1EC` / tinta `#151515` / grises / acento terracota `#A4482A` 
 - `.replitignore` (formato .dockerignore; lo generó Replit, pero su documentación no lo describe: **confirmar el tamaño de la imagen en el primer publish**): `.local`, `.config/` (incluye la instalación global de Claude Code, ~323 MB), `data/imported/`, `data/claude-inbox/`, `data/jobs/`, `data/garment-regeneration/`, `data/_backups/`, `fotos-ss26/`, `attached_assets/`.
 - Respaldos: la copia completa está en App Storage bajo `archivo/2026-11-06/` (3.103 archivos, 1.011 MB, verificada; `scripts/maintenance/archive-to-storage.mjs`): fotos crudas de los lotes, `imported-originals/` y `_dedup-2026-10-01*`. La copia local se borró el 2026-11-06 salvo los 5 lotes con prendas analizadas sin importar (37), que siguen en `.local/aether-archive/batches/` para poder terminarlos desde `/admin`. `imported-originals/` local quedó vacío: `regenerate-garments` usa la imagen actual como fuente y `dechroma` vuelve a respaldar al usarse. Las rutas salen de `scripts/private-paths.mjs` (`AETHER_PRIVATE_DATA` las redefine).
 - Producción sólo necesita `data/library.json`, `data/site-config.json`, `public/` (incluye `public/garments`) y el build.
+
+## Estado de la rama y pendientes (2026-11-06)
+
+- Todo el rediseño está en la rama `ss26-rediseno`, sin mergear ni publicar. Informe: `reports/informe-final.md`.
+- Pendientes y decisiones abiertas: `.agents/memory/pendientes-usuario.md` (WhatsApp definitivo, clave vieja en `.env`, 5 lotes con 37 prendas sin importar, reel de referencia, verificar `.replitignore` en el primer publish).
+- Memoria del proyecto (lecciones y contexto): `.agents/memory/MEMORY.md`.
 
 ## Run & Operate
 
@@ -93,5 +100,5 @@ Paleta marfil `#F3F1EC` / tinta `#151515` / grises / acento terracota `#A4482A` 
 - `ipx` pide `sharp@^0.32.6`; está forzado a `^0.35.3` con el override `ipx>sharp` en `pnpm-workspace.yaml`. No quitarlo.
 - `sharp` es dependencia explícita del api-server (esbuild lo externaliza).
 - `scripts/free-port.mjs` corre antes de los dev servers porque Replit puede dejar procesos huérfanos con el puerto tomado.
-- Cambios en `vite.config.ts` o `.env` reinician Vite solos; cambios en el api-server requieren reiniciar el workflow "API Server" (corre el bundle de `dist/`).
+- Cambios en `vite.config.ts` o `.env` reinician Vite solos; cambios en el api-server requieren reiniciar el workflow "API Server" (corre el bundle de `dist/`). Síntoma típico si no se reinicia: "no aparecen las prendas" (`/api/landing` y `/api/catalog` dan 404 vía 8080).
 - El schema JSON para Gemini se sanea con `geminiSchema()` en `scripts/ai-provider.mjs`.
