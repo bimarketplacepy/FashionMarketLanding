@@ -7,13 +7,14 @@
 // persistencia en Postgres en vez de archivos.
 
 import path from "node:path";
-import { readFile, stat } from "node:fs/promises";
+import { readdir, readFile, stat } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import cookieParser from "cookie-parser";
 import { Router, type IRouter, type Request, type Response } from "express";
 import { createTryonHandler } from "../../../aether/scripts/outfit-api.mjs";
 import { createIpxHandler } from "../../../aether/scripts/responsive-image-api.mjs";
 import { createAdminHandler } from "../../../aether/scripts/admin-auth.mjs";
+import { toPublicCatalog } from "../../../aether/scripts/public-catalog.mjs";
 import { createPgOutfitStore } from "./pgStore";
 import { tryonSession, sessionOf } from "./session";
 import { aetherProxy } from "../middlewares/aetherProxy";
@@ -66,6 +67,21 @@ export function tryonRouter(): IRouter {
   // de importación queda detrás del 503 de abajo.
   const libraryFile = path.resolve(AETHER_ROOT, "data/library.json");
   const libraryAssetDir = path.resolve(AETHER_ROOT, "data/imported");
+  const garmentDirs = [
+    path.resolve(AETHER_ROOT, "dist/public/garments"),
+    path.resolve(AETHER_ROOT, "public/garments"),
+  ];
+  async function largestGarmentVariant(stem: string): Promise<string | null> {
+    for (const dir of garmentDirs) {
+      const names = await readdir(dir).catch(() => [] as string[]);
+      const matches = names
+        .filter((name) => name.startsWith(`${stem}.`) && name.endsWith(".webp"))
+        .map((name) => ({ name, width: Number(/-(\d+)\.webp$/.exec(name)?.[1] ?? 0) }))
+        .sort((a, b) => b.width - a.width);
+      if (matches[0]) return path.join(dir, matches[0].name);
+    }
+    return null;
+  }
 
   router.get("/api/import/wardrobe", async (_req: Request, res: Response) => {
     try {
@@ -76,6 +92,20 @@ export function tryonRouter(): IRouter {
         return;
       }
       logger.error({ err: error }, "No se pudo leer library.json");
+      res.status(500).json({ error: "No pudimos cargar la colección." });
+    }
+  });
+
+  // Catálogo público liviano (prendas activas, campos públicos). Se arma una
+  // vez por proceso: library.json sólo cambia al republicar.
+  let publicCatalogJson: string | null = null;
+  router.get("/api/catalog", async (_req: Request, res: Response) => {
+    try {
+      publicCatalogJson ??= JSON.stringify(toPublicCatalog(JSON.parse(await readFile(libraryFile, "utf8"))));
+      res.setHeader("Cache-Control", "public, max-age=300");
+      res.type("application/json").send(publicCatalogJson);
+    } catch (error) {
+      logger.error({ err: error }, "No se pudo armar el catálogo público");
       res.status(500).json({ error: "No pudimos cargar la colección." });
     }
   });
@@ -97,6 +127,16 @@ export function tryonRouter(): IRouter {
       res.setHeader("Content-Type", "image/png");
       res.end(await readFile(file));
     } catch {
+      // Los PNG maestros no viajan al deployment: se sirve la variante WebP más
+      // grande de la prenda (public/garments, copiada a dist/public en el build).
+      const stem = path.basename(String(req.params["file"])).replace(/\.png$/i, "");
+      const variant = await largestGarmentVariant(stem);
+      if (variant) {
+        res.setHeader("Cache-Control", "public, max-age=86400");
+        res.setHeader("Content-Type", "image/webp");
+        res.end(await readFile(variant));
+        return;
+      }
       res.status(404).json({ error: "Not found" });
     }
   });

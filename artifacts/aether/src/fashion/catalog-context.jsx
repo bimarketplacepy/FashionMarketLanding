@@ -8,14 +8,16 @@ export const isActiveItem = (item) => item.active !== false;
 
 // Catálogo compartido entre todas las páginas. Las ediciones del admin
 // persisten en el servidor (PATCH), sin capas de localStorage.
-export function CatalogProvider({ children }) {
+// scope "public": /api/catalog (sólo prendas activas, campos públicos).
+// scope "admin": /api/import/wardrobe (catálogo completo, para el panel).
+export function CatalogProvider({ children, scope = "public" }) {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
   const refreshCatalog = useCallback(() => {
     setLoading(true);
-    fetch("/api/import/wardrobe", { cache: "no-store" })
+    fetch(scope === "admin" ? "/api/import/wardrobe" : "/api/catalog", { cache: "no-store" })
       .then((response) => {
         if (!response.ok) throw new Error("No se pudo cargar el catálogo.");
         return response.json();
@@ -23,7 +25,7 @@ export function CatalogProvider({ children }) {
       .then(setItems)
       .catch((requestError) => setError(requestError.message))
       .finally(() => setLoading(false));
-  }, []);
+  }, [scope]);
 
   useEffect(() => {
     refreshCatalog();

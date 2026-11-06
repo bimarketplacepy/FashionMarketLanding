@@ -6,6 +6,7 @@ import { createAIProvider } from "./ai-provider.mjs";
 import { GARMENT_GENDERS, inferGarmentGender, normalizeGarmentType, partForGarmentType } from "../shared/garment-gender.mjs";
 import { withLibraryLock } from "./library-lock.mjs";
 import { importDefaults } from "./site-config.mjs";
+import { toPublicCatalog } from "./public-catalog.mjs";
 
 const API_ROOT = "/api/import/jobs";
 const ASSET_ROOT = "/api/import/assets";
@@ -586,6 +587,10 @@ export function wardrobeImportApi(options = {}) {
 
   async function handler(req, res, next) {
     const url = new URL(req.url, "http://localhost");
+    if (url.pathname === "/api/catalog" && req.method === "GET") {
+      try { return json(res, 200, toPublicCatalog(await loadImported())); }
+      catch (error) { return json(res, 500, { error: error.message }); }
+    }
     if (!url.pathname.startsWith("/api/import/")) return next();
     try {
       if (url.pathname === "/api/import/wardrobe" && req.method === "GET") {

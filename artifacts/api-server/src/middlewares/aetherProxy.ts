@@ -8,6 +8,7 @@ import http from "node:http";
 const AETHER_API_PREFIXES = [
   "/api/import/",
   "/api/admin/",
+  "/api/catalog",
   "/api/batches",
   "/api/tryon/",
   "/api/garment-regeneration",
