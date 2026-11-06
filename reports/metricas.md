@@ -33,3 +33,9 @@
 | SS26 | summer | inactiva | 16 |
 | SS26 | all | inactiva | 1 |
 | (sin colección) | all | activa | 552 |
+
+## Después (fase 6) — resumen
+
+Ver `informe-final.md` para la tabla completa. Bundle JS principal 241,4 kB (75,6 kB gzip);
+prendas 800w WebP 53,5 KB / AVIF 23,9 KB promedio; Lighthouse mobile (mediana simulada)
+Performance 95, LCP 2,4 s, CLS 0,008, Accesibilidad 100.
