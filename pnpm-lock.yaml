@@ -173,6 +173,9 @@ importers:
       '@fontsource/instrument-serif':
         specifier: 5.2.8
         version: 5.2.8
+      '@fontsource/italiana':
+        specifier: 5.2.8
+        version: 5.2.8
       '@phosphor-icons/react':
         specifier: ^2.1.10
         version: 2.1.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -655,6 +658,9 @@ packages:
 
   '@fontsource/instrument-serif@5.2.8':
     resolution: {integrity: sha512-s+bkz+syj2rO00Rmq9g0P+PwuLig33DR1xDR8pTWmovH1pUjwnncrFk++q9mmOex8fUQ7oW80gPpPDaw7V1MMw==}
+
+  '@fontsource/italiana@5.2.8':
+    resolution: {integrity: sha512-BRsTEjkWwuRwbv65op5Kt3q4vvmDsyHzpiay80qXs75tol75JJ4c2vgtgbW316GHI2pBNNCaP0qMKVFOehSqEQ==}
 
   '@gerrit0/mini-shiki@3.23.0':
     resolution: {integrity: sha512-bEMORlG0cqdjVyCEuU0cDQbORWX+kYCeo0kV1lbxF5bt4r7SID2l9bqsxJEM0zndaxpOUT7riCyIVEuqq/Ynxg==}
@@ -3890,6 +3896,8 @@ snapshots:
   '@fontsource-variable/instrument-sans@5.3.0': {}
 
   '@fontsource/instrument-serif@5.2.8': {}
+
+  '@fontsource/italiana@5.2.8': {}
 
   '@gerrit0/mini-shiki@3.23.0':
     dependencies:

@@ -1,16 +1,20 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { ArrowLeft, ArrowRight, CoatHanger } from "@phosphor-icons/react";
-import { OptimizedImage } from "./OptimizedImage.jsx";
 import { addToDraft } from "./outfit-draft.js";
 import { sugerirPrendas } from "./sugerencias.js";
 import { SuggestionCarousel, useSavedOutfits } from "./SuggestionCarousel.jsx";
 import { formatPriceGs, GARMENT_TYPE_LABELS, MATERIAL_LABELS, PART_LABELS, SEASON_LABELS, SILHOUETTE_LABELS } from "./format.js";
 import { SHOW_PRICES } from "../site-config.js";
+import { useSelection } from "../landing/selection.jsx";
 import "./shop.css";
+import { GarmentImage } from "./GarmentImage.jsx";
 
 // Ficha comercial de solo lectura que ve el público al hacer click en una prenda.
 export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
+  const selection = useSelection();
+  const [inSelection, setInSelection] = useState(false);
+  useEffect(() => setInSelection(false), [item.id]);
   const [, navigate] = useLocation();
   const closeButtonRef = useRef(null);
   const sheetRef = useRef(null);
@@ -53,18 +57,17 @@ export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
   return (
     <div className="viewer-overlay" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
       <div className="viewer-entry">
-        <aside className="viewer product-sheet" data-lenis-prevent role="dialog" aria-modal="true" aria-label={item.name} ref={sheetRef}>
+        <aside className="viewer product-sheet" role="dialog" aria-modal="true" aria-label={item.name} ref={sheetRef}>
           <button className="sheet-back" type="button" onClick={onBack || onClose} ref={closeButtonRef}>
             <ArrowLeft size={14} /> {onBack ? "Volver" : "Volver al catálogo"}
           </button>
 
           <div className="product-sheet-layout">
             <div className="product-sheet-art">
-              <OptimizedImage
-                src={item.image}
+              <GarmentImage
+                item={item}
                 alt={item.name}
                 sizes="(max-width: 860px) 84vw, 420px"
-                breakpoints={[240, 320, 480, 640, 800]}
                 priority
               />
             </div>
@@ -93,9 +96,14 @@ export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
                 )}
               </dl>
 
-              <button className="retail-primary-button product-add" type="button" onClick={addToOutfit}>
-                <CoatHanger size={17} /> Agregar a mi outfit
-              </button>
+              <div className="product-actions">
+                <button className="retail-primary-button product-add" type="button" onClick={addToOutfit}>
+                  <CoatHanger size={17} /> Agregar a mi outfit
+                </button>
+                <button className="retail-outline-button product-add" type="button" onClick={() => { selection.add(item); setInSelection(true); }}>
+                  {inSelection ? "En tu selección" : "Agregar a tu selección"}
+                </button>
+              </div>
               {added && (
                 <p className="product-added" role="status">
                   Agregada a tu outfit.

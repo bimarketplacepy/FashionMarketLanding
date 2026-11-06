@@ -3,14 +3,24 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
 
-const FILE = path.resolve(import.meta.dirname, "../data/site-config.json");
+// Desde los plugins de Vite el archivo está en ../data; desde el bundle del
+// api-server (artifacts/api-server/dist) está en ../../aether/data.
+const CANDIDATES = [
+  process.env.AETHER_ROOT && path.resolve(process.env.AETHER_ROOT, "data/site-config.json"),
+  path.resolve(import.meta.dirname, "../data/site-config.json"),
+  path.resolve(import.meta.dirname, "../../aether/data/site-config.json"),
+].filter(Boolean);
 
 export function readSiteConfig() {
-  try {
-    return JSON.parse(readFileSync(FILE, "utf8"));
-  } catch {
-    return {};
+  for (const file of CANDIDATES) {
+    try {
+      return JSON.parse(readFileSync(file, "utf8"));
+    } catch {
+      // siguiente candidato
+    }
   }
+  console.warn("[site-config] No se encontró data/site-config.json");
+  return {};
 }
 
 // Colección y temporada que reciben las prendas nuevas al entrar al catálogo.

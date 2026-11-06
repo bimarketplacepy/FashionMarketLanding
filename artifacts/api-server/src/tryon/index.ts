@@ -9,12 +9,14 @@
 import path from "node:path";
 import { readdir, readFile, stat } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
+import { gzipSync } from "node:zlib";
 import cookieParser from "cookie-parser";
 import { Router, type IRouter, type Request, type Response } from "express";
 import { createTryonHandler } from "../../../aether/scripts/outfit-api.mjs";
 import { createIpxHandler } from "../../../aether/scripts/responsive-image-api.mjs";
 import { createAdminHandler } from "../../../aether/scripts/admin-auth.mjs";
 import { toPublicCatalog } from "../../../aether/scripts/public-catalog.mjs";
+import { buildLandingPayload } from "../../../aether/scripts/landing-payload.mjs";
 import { createPgOutfitStore } from "./pgStore";
 import { tryonSession, sessionOf } from "./session";
 import { aetherProxy } from "../middlewares/aetherProxy";
@@ -98,17 +100,36 @@ export function tryonRouter(): IRouter {
 
   // Catálogo público liviano (prendas activas, campos públicos). Se arma una
   // vez por proceso: library.json sólo cambia al republicar.
-  let publicCatalogJson: string | null = null;
-  router.get("/api/catalog", async (_req: Request, res: Response) => {
-    try {
-      publicCatalogJson ??= JSON.stringify(toPublicCatalog(JSON.parse(await readFile(libraryFile, "utf8"))));
-      res.setHeader("Cache-Control", "public, max-age=300");
-      res.type("application/json").send(publicCatalogJson);
-    } catch (error) {
-      logger.error({ err: error }, "No se pudo armar el catálogo público");
-      res.status(500).json({ error: "No pudimos cargar la colección." });
-    }
-  });
+  // Respuestas JSON derivadas de library.json, armadas una vez por proceso
+  // (library.json sólo cambia al republicar) y guardadas también comprimidas.
+  type CachedJson = { json: Buffer; gzip: Buffer };
+  const jsonCache = new Map<string, CachedJson>();
+  function cachedJsonRoute(route: string, build: (records: Array<Record<string, unknown>>) => unknown) {
+    router.get(route, async (req: Request, res: Response) => {
+      try {
+        let cached = jsonCache.get(route);
+        if (!cached) {
+          const json = Buffer.from(JSON.stringify(build(JSON.parse(await readFile(libraryFile, "utf8")))));
+          cached = { json, gzip: gzipSync(json, { level: 9 }) };
+          jsonCache.set(route, cached);
+        }
+        res.setHeader("Cache-Control", "public, max-age=300");
+        res.setHeader("Vary", "Accept-Encoding");
+        res.type("application/json");
+        if (/\bgzip\b/.test(String(req.headers["accept-encoding"] ?? ""))) {
+          res.setHeader("Content-Encoding", "gzip");
+          res.end(cached.gzip);
+          return;
+        }
+        res.end(cached.json);
+      } catch (error) {
+        logger.error({ err: error, route }, "No se pudo armar la respuesta del catálogo");
+        res.status(500).json({ error: "No pudimos cargar la colección." });
+      }
+    });
+  }
+  cachedJsonRoute("/api/catalog", toPublicCatalog);
+  cachedJsonRoute("/api/landing", buildLandingPayload);
 
   router.get("/api/import/library/:file", async (req: Request, res: Response) => {
     const file = path.join(libraryAssetDir, path.basename(String(req.params["file"])));

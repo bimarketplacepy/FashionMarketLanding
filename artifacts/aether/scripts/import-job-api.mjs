@@ -7,6 +7,7 @@ import { GARMENT_GENDERS, inferGarmentGender, normalizeGarmentType, partForGarme
 import { withLibraryLock } from "./library-lock.mjs";
 import { importDefaults } from "./site-config.mjs";
 import { toPublicCatalog } from "./public-catalog.mjs";
+import { buildLandingPayload } from "./landing-payload.mjs";
 
 const API_ROOT = "/api/import/jobs";
 const ASSET_ROOT = "/api/import/assets";
@@ -587,6 +588,10 @@ export function wardrobeImportApi(options = {}) {
 
   async function handler(req, res, next) {
     const url = new URL(req.url, "http://localhost");
+    if (url.pathname === "/api/landing" && req.method === "GET") {
+      try { return json(res, 200, buildLandingPayload(await loadImported())); }
+      catch (error) { return json(res, 500, { error: error.message }); }
+    }
     if (url.pathname === "/api/catalog" && req.method === "GET") {
       try { return json(res, 200, toPublicCatalog(await loadImported())); }
       catch (error) { return json(res, 500, { error: error.message }); }

@@ -9,6 +9,7 @@ import { outfitApi } from "./scripts/outfit-api.mjs";
 import { responsiveImageApi } from "./scripts/responsive-image-api.mjs";
 import { garmentRegenerationApi } from "./scripts/garment-regeneration-api.mjs";
 import { adminAuthApi } from "./scripts/admin-auth.mjs";
+import { landingPreloadPlugin } from "./scripts/landing-preload-plugin.mjs";
 
 const rawPort = process.env.PORT;
 
@@ -41,6 +42,7 @@ export default defineConfig(async ({ mode }) => {
     tailwindcss(),
     runtimeErrorOverlay(),
     adminAuthApi({ env }),
+    landingPreloadPlugin({ root: import.meta.dirname }),
     responsiveImageApi(),
     wardrobeImportApi({ env }),
     batchImportApi({ env }),

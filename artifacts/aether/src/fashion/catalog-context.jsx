@@ -14,10 +14,13 @@ export function CatalogProvider({ children, scope = "public" }) {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  // Se pide recién cuando alguna vista lo usa: la landing no necesita el
+  // catálogo completo (tiene su propio payload, /api/landing).
+  const [requested, setRequested] = useState(false);
 
   const refreshCatalog = useCallback(() => {
     setLoading(true);
-    fetch(scope === "admin" ? "/api/import/wardrobe" : "/api/catalog", { cache: "no-store" })
+    (scope === "admin" ? fetch("/api/import/wardrobe", { cache: "no-store" }) : fetch("/api/catalog"))
       .then((response) => {
         if (!response.ok) throw new Error("No se pudo cargar el catálogo.");
         return response.json();
@@ -28,8 +31,8 @@ export function CatalogProvider({ children, scope = "public" }) {
   }, [scope]);
 
   useEffect(() => {
-    refreshCatalog();
-  }, [refreshCatalog]);
+    if (requested) refreshCatalog();
+  }, [requested, refreshCatalog]);
 
   const saveItem = useCallback(async (updatedItem) => {
     const response = await fetch(`/api/import/wardrobe/${updatedItem.id}`, {
@@ -85,7 +88,7 @@ export function CatalogProvider({ children, scope = "public" }) {
   const activeItems = useMemo(() => items.filter(isActiveItem), [items]);
 
   return (
-    <CatalogContext.Provider value={{ items: activeItems, allItems: items, setItemsActive, loading, error, setError, saveItem, deleteItem, addImportedItem, attachImportedModeledImage, refreshCatalog }}>
+    <CatalogContext.Provider value={{ request: setRequested, items: activeItems, allItems: items, setItemsActive, loading, error, setError, saveItem, deleteItem, addImportedItem, attachImportedModeledImage, refreshCatalog }}>
       {children}
     </CatalogContext.Provider>
   );
@@ -94,5 +97,7 @@ export function CatalogProvider({ children, scope = "public" }) {
 export function useCatalog() {
   const context = useContext(CatalogContext);
   if (!context) throw new Error("useCatalog debe usarse dentro de CatalogProvider");
+  const { request } = context;
+  useEffect(() => { request(true); }, [request]);
   return context;
 }

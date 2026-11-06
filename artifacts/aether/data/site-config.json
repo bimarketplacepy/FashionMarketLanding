@@ -8,6 +8,10 @@
   },
   "showPrices": false,
   "currency": "PYG",
+  "contact": {
+    "whatsapp": null,
+    "email": "info@marketplace.com.py"
+  },
   "promotions": [
     {
       "id": "winter-sale-2026",

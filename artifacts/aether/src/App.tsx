@@ -3,13 +3,19 @@ import { Redirect, Route, Switch, useLocation } from "wouter";
 import { useGtmPageViews } from "./analytics/useGtmPageViews";
 import { CatalogProvider } from "./fashion/catalog-context.jsx";
 import { HomePage } from "./landing/HomePage.jsx";
-import { CollectionPage } from "./landing/CollectionPage.jsx";
-import { TryOnPage } from "./landing/TryOnPage.jsx";
 import { SelectionProvider } from "./landing/selection.jsx";
 
 // El panel se carga aparte: su código (editor, importación por lotes) no entra
 // en el bundle público.
 const AdminPage = lazy(() => import("./fashion/AdminPage.jsx"));
+// Colección y probador (ficha, sugerencias, vestidor) también van aparte: la
+// landing carga sólo lo suyo.
+const CollectionPage = lazy(() => import("./landing/CollectionPage.jsx").then((module) => ({ default: module.CollectionPage })));
+const TryOnPage = lazy(() => import("./landing/TryOnPage.jsx").then((module) => ({ default: module.TryOnPage })));
+
+function PageFallback() {
+  return <p className="status" style={{ padding: 24 }}>Cargando…</p>;
+}
 
 function AdminRoute() {
   return (
@@ -39,6 +45,7 @@ export default function App() {
     <CatalogProvider>
       <SelectionProvider>
       <ScrollToTop />
+      <Suspense fallback={<PageFallback />}>
       <Switch>
         <Route path="/catalogo">
           <CollectionPage navigate={navigate} />
@@ -54,6 +61,7 @@ export default function App() {
           <HomePage navigate={navigate} />
         </Route>
       </Switch>
+      </Suspense>
       </SelectionProvider>
     </CatalogProvider>
   );

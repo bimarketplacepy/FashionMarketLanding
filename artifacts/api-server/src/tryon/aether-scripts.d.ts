@@ -45,3 +45,7 @@ declare module "*/scripts/admin-auth.mjs" {
 declare module "*/scripts/public-catalog.mjs" {
   export function toPublicCatalog(records: Array<Record<string, unknown>>): Array<Record<string, unknown>>;
 }
+
+declare module "*/scripts/landing-payload.mjs" {
+  export function buildLandingPayload(records: Array<Record<string, unknown>>): unknown;
+}

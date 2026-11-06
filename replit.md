@@ -27,6 +27,18 @@ Fuente única de la temporada y de lo que se publica. La lee el front en build (
 
 El catálogo viene **sólo** de `CatalogProvider` (`src/fashion/catalog-context.jsx`): `scope="public"` pide `GET /api/catalog` (prendas activas, campos públicos, ~0,5 MB) y el admin usa `scope="admin"` → `GET /api/import/wardrobe` (library.json completo). No hay capas de localStorage para ediciones: la fuente de verdad es el servidor.
 
+## Landing editorial (noviembre 2026)
+
+Paleta marfil `#F3F1EC` / tinta `#151515` / grises / acento terracota `#A4482A` (de la paleta SS26, oscurecido para AA). Tipografía: Instrument Serif (títulos) + Instrument Sans (interfaz), self-hosted con @fontsource (`font-display: swap`); Italiana sólo para el logo. Sin Three.js, sin Framer Motion (se quitó por peso): transiciones CSS con curva tipo spring. `prefers-reduced-motion` → sin blur, sin rotaciones, marquee quieto.
+
+- `src/landing/HomePage.jsx` compone: `HeroLooks` (la fila de la temporada: looks con profundidad, selector Conjuntos/Vestidos/Playa, panel con piezas y swatches, navegación con hover, click, flechas y swipe; en mobile scroll-snap y panel tipo bottom sheet), `Marquee` (mensajes reales de la tienda), `GarmentRack` (perchero 3D con modo foco), CTA al probador y `EditorialFooter` (wordmark gigante).
+- Looks: no hay fotos de modelos SS26, así que `src/landing/looks.js` arma conjuntos de 2 a 4 prendas reales por armonía de color (`armoniaColor` de `sugerencias.js`) y palabras compartidas del nombre (misma estampa/línea). Determinístico. El perchero toma 12 prendas "colgables" variadas.
+- `GET /api/landing` (`scripts/landing-payload.mjs`): looks y perchero armados en el servidor con campos mínimos (~11 KB gzip). La landing no descarga el catálogo completo; `CatalogProvider` sólo pide `/api/catalog` cuando una vista lo usa.
+- `index.html` precarga `/api/landing` o `/api/catalog` según la ruta, y en build (`scripts/landing-preload-plugin.mjs`) agrega la precarga AVIF de las prendas del primer look (LCP). GTM se carga diferido (después de `load`, en idle); los page views quedan en `dataLayer` hasta que carga.
+- Ficha de look/prenda (`LookSheet.jsx`): miniaturas, imagen grande, descripción real, swatches con nombre de color (`color-names.js`, el más cercano al hex), piezas con checkbox y talle, "También te puede gustar".
+- "Tu selección" (`selection.jsx`, `SelectionDrawer.jsx`): botón flotante con contador, modal con talle/cantidad/quitar, "Descargar selección" (.txt) y consulta. Se guarda en localStorage (try/catch) con un resumen de cada prenda. **WhatsApp**: `contact.whatsapp` en `site-config.json` (número internacional sin "+"); mientras sea `null` se ofrece "Consultar por email" (`info@marketplace.com.py`).
+- Colección y probador se cargan con `lazy()`.
+
 ## Admin y seguridad
 
 - Clave en `ADMIN_KEY` (Secrets en el deployment, `artifacts/aether/.env` en el workspace). **Sin prefijo `VITE_`** (nunca llega al bundle) y sin valor por defecto: sin la variable el panel queda cerrado.

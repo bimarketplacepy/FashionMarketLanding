@@ -1,8 +1,9 @@
 @import "tailwindcss";
+@import "@fontsource/italiana/400.css";
 
 @theme inline {
   --font-display: "Italiana", serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
 
 body {

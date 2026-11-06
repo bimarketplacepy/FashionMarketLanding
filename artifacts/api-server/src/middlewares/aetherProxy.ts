@@ -9,6 +9,7 @@ const AETHER_API_PREFIXES = [
   "/api/import/",
   "/api/admin/",
   "/api/catalog",
+  "/api/landing",
   "/api/batches",
   "/api/tryon/",
   "/api/garment-regeneration",
