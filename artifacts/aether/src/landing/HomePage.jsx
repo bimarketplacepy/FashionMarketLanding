@@ -4,7 +4,7 @@ import { BrandLogo } from "../fashion/BrandLogo.jsx";
 import { ACTIVE_SEASON, activePromotions, warnEmptySection } from "../site-config.js";
 import { EditorialFooter } from "./EditorialFooter.jsx";
 import { GarmentRack } from "./GarmentRack.jsx";
-import { HeroLooks, lookLabel } from "./HeroLooks.jsx";
+import { HeroLooks, lookLabel, orderedPieces } from "./HeroLooks.jsx";
 import { LookSheet } from "./LookSheet.jsx";
 import { Marquee } from "./Marquee.jsx";
 import { SelectionButton, SelectionDrawer } from "./SelectionDrawer.jsx";
@@ -32,9 +32,18 @@ function useLandingData() {
 
 const EMPTY_LOOKS = {};
 
+// Fotos en modelo y prendas apiladas no se mezclan en una misma fila: si una
+// familia tiene al menos 3 looks con foto aprobada, se muestran sólo esos.
+function preferModelLooks(looks) {
+  return Object.fromEntries(Object.entries(looks).map(([family, list]) => {
+    const withModel = list.filter((look) => look.model);
+    return [family, withModel.length >= 3 ? withModel : list.map(({ model, ...look }) => look)];
+  }));
+}
+
 export function HomePage({ navigate }) {
   const { loading, data } = useLandingData();
-  const looksByFamily = data?.looks || EMPTY_LOOKS;
+  const looksByFamily = useMemo(() => (data?.looks ? preferModelLooks(data.looks) : EMPTY_LOOKS), [data]);
   const allLooks = useMemo(
     () => LOOK_FAMILIES.flatMap((family) => (looksByFamily[family.id] || []).map((look, index) => ({ ...look, title: lookLabel(look, index), eyebrow: familyLabel(family.id) }))),
     [looksByFamily],
@@ -54,7 +63,7 @@ export function HomePage({ navigate }) {
 
   const openLook = useCallback((look) => {
     const full = allLooks.find((candidate) => candidate.id === look.id) || look;
-    setSheet({ title: full.title, eyebrow: `${full.eyebrow} · ${ACTIVE_SEASON}`, pieces: full.pieces, related: relatedFor(full.id, full.family) });
+    setSheet({ title: full.title, eyebrow: `${full.eyebrow} · ${ACTIVE_SEASON}`, pieces: orderedPieces(full), model: full.model || null, look: full, related: relatedFor(full.id, full.family) });
   }, [allLooks, relatedFor]);
 
   const openItem = useCallback((item) => {

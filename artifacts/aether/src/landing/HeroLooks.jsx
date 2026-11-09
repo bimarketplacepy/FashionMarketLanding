@@ -18,7 +18,7 @@ function SeasonTitle() {
 
 export const lookLabel = (look, index) => `Look ${String(index + 1).padStart(2, "0")}`;
 
-function orderedPieces(look) {
+export function orderedPieces(look) {
   return [...look.pieces].sort((a, b) => (PART_ORDER[a.part] ?? 9) - (PART_ORDER[b.part] ?? 9));
 }
 
@@ -26,9 +26,41 @@ function isMobileLayout() {
   return typeof window !== "undefined" && window.matchMedia("(max-width: 760px)").matches;
 }
 
-// Un look: prendas apiladas de arriba hacia abajo, como una silueta.
-function LookFigure({ look, priority }) {
+// Foto del look sobre un avatar IA (scripts/generate-look-models.mjs) con los
+// puntos numerados de cada prenda. El marco tiene la proporción de la imagen,
+// así los puntos (0–1) caen sobre la prenda a cualquier tamaño.
+export function LookModelFrame({ look, pieces, sizes, priority = false, showSpots = false, onSpot, activeId }) {
+  const { model } = look;
+  const set = model.imageSet;
+  // Los puntos aparecen cuando la foto ya cargó (si no, flotan sobre el vacío).
+  const [loaded, setLoaded] = useState(false);
+  const onImageRef = useCallback((node) => { if (node?.complete && node.naturalWidth) setLoaded(true); }, []);
+  return (
+    <span className="ed-model-frame" style={{ aspectRatio: `${set.width} / ${set.height}` }}>
+      <GarmentImage item={{ imageSet: set, name: model.name }} alt={`Look completo en modelo virtual: ${pieces.map((piece) => piece.name).join(", ")}`} sizes={sizes} priority={priority} ref={onImageRef} onLoad={() => setLoaded(true)} />
+      {showSpots && loaded && pieces.map((piece, index) => {
+        const spot = model.hotspots.find((entry) => entry.garmentId === piece.id);
+        if (!spot) return null;
+        const style = { left: `${spot.x * 100}%`, top: `${spot.y * 100}%` };
+        const className = `ed-spot${activeId === piece.id ? " is-active" : ""}`;
+        return onSpot
+          ? <button key={piece.id} type="button" className={className} style={style} onClick={() => onSpot(index)} aria-label={`${index + 1}: ver ${piece.name}`}>{index + 1}</button>
+          : <span key={piece.id} className={className} style={style} aria-hidden="true">{index + 1}</span>;
+      })}
+    </span>
+  );
+}
+
+// Un look: la foto en modelo si existe; si no, prendas apiladas como silueta.
+function LookFigure({ look, priority, active }) {
   const pieces = orderedPieces(look);
+  if (look.model) {
+    return (
+      <span className="ed-look-figure ed-look-figure--model">
+        <LookModelFrame look={look} pieces={pieces} sizes="(max-width: 760px) 72vw, 420px" priority={priority} showSpots={active} />
+      </span>
+    );
+  }
   const isDress = pieces.some((piece) => piece.garmentType === "dress" || piece.part === "wholebody");
   return (
     <span className={`ed-look-figure${isDress ? " is-dress" : ""}`}>
@@ -116,6 +148,7 @@ export function HeroLooks({ looksByFamily, onOpenLook, loading = false }) {
   }
   const current = looks[active] || looks[0];
   const pieces = orderedPieces(current);
+  const withModels = looks.every((look) => look.model);
   const swatches = lookSwatches(pieces);
 
   return (
@@ -133,7 +166,7 @@ export function HeroLooks({ looksByFamily, onOpenLook, loading = false }) {
 
       <div className="ed-hero__body">
         <div
-          className="ed-row"
+          className={`ed-row${withModels ? " has-models" : ""}`}
           role="group"
           aria-roledescription="carrusel"
           aria-label={`Looks de ${SEASON_SHORT_LABEL}. Usá las flechas para recorrerlos.`}
@@ -165,7 +198,7 @@ export function HeroLooks({ looksByFamily, onOpenLook, loading = false }) {
                   }}
                   onMouseLeave={() => clearTimeout(hoverTimer.current)}
                 >
-                  <LookFigure look={look} priority={offset === 0} />
+                  <LookFigure look={look} priority={offset === 0} active={offset === 0} />
                 </button>
               );
             })}
@@ -175,13 +208,15 @@ export function HeroLooks({ looksByFamily, onOpenLook, loading = false }) {
             <span className="ed-counter" aria-live="polite">{String(active + 1).padStart(2, "0")} / {String(looks.length).padStart(2, "0")}</span>
             <button className="ed-icon-button" type="button" onClick={() => go(active + 1)} disabled={active === looks.length - 1} aria-label="Look siguiente"><ArrowRight size={18} /></button>
           </div>
+          {withModels && <p className="ed-ai-note">Modelos virtuales: imágenes generadas con IA a partir de las prendas reales.</p>}
         </div>
 
         <aside className="ed-look-panel" aria-label={`Piezas del ${lookLabel(current, active)}`}>
           <p className="ed-eyebrow">{lookLabel(current, active)} · {families.find((family) => family.id === familyId)?.label}</p>
           <ul className="ed-look-panel__pieces">
-            {pieces.map((piece) => (
+            {pieces.map((piece, index) => (
               <li key={piece.id}>
+                {current.model && <span className="ed-num" aria-hidden="true">{index + 1}</span>}
                 <span className="ed-thumb"><GarmentImage item={piece} alt="" sizes="64px" /></span>
                 <span>{piece.name}</span>
               </li>

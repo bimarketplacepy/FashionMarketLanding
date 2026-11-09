@@ -2,13 +2,17 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Check, X } from "@phosphor-icons/react";
 import { GarmentImage } from "../fashion/GarmentImage.jsx";
 import { colorName, lookSwatches } from "./color-names.js";
+import { LookModelFrame } from "./HeroLooks.jsx";
 import { useSelection } from "./selection.jsx";
 
 // Ficha de un look (varias piezas) o de una prenda suelta (look de una pieza).
-// sheet = { title, eyebrow, pieces, related: [{ id, title, pieces }] }
+// sheet = { title, eyebrow, pieces, model?, look?, related: [{ id, title, pieces, model? }] }
+// Con `model` (foto del look en un avatar IA) la ficha arranca en la foto
+// completa (current = -1) con puntos numerados que llevan a cada prenda.
 export function LookSheet({ sheet, onClose, onOpenRelated }) {
   const { add, setOpen } = useSelection();
-  const [current, setCurrent] = useState(0);
+  const firstView = sheet.model ? -1 : 0;
+  const [current, setCurrent] = useState(firstView);
   const [checked, setChecked] = useState(() => new Set(sheet.pieces.map((piece) => piece.id)));
   const [sizes, setSizes] = useState({});
   const [added, setAdded] = useState(false);
@@ -16,7 +20,7 @@ export function LookSheet({ sheet, onClose, onOpenRelated }) {
   const dialogRef = useRef(null);
 
   useEffect(() => {
-    setCurrent(0);
+    setCurrent(sheet.model ? -1 : 0);
     setChecked(new Set(sheet.pieces.map((piece) => piece.id)));
     setSizes({});
     setAdded(false);
@@ -36,9 +40,11 @@ export function LookSheet({ sheet, onClose, onOpenRelated }) {
     };
   }, [onClose]);
 
+  const showModel = Boolean(sheet.model) && current === -1;
   const piece = sheet.pieces[current] || sheet.pieces[0];
   const swatches = useMemo(() => lookSwatches(sheet.pieces), [sheet]);
-  const description = sheet.pieces.map((entry) => entry.description).find(Boolean);
+  // La descripción es la de la prenda principal (no la del accesorio, que va primero en la lista).
+  const description = [...sheet.pieces].sort((a, b) => (a.part === "accessories_up") - (b.part === "accessories_up")).map((entry) => entry.description).find(Boolean);
   const single = sheet.pieces.length === 1;
 
   const toggle = (id) => setChecked((set) => {
@@ -59,6 +65,13 @@ export function LookSheet({ sheet, onClose, onOpenRelated }) {
         <div className="ed-sheet__grid">
           {!single && (
             <ul className="ed-sheet__thumbs" aria-label="Piezas del look">
+              {sheet.model && (
+                <li>
+                  <button type="button" className={`ed-sheet__thumb-model${showModel ? " is-active" : ""}`} aria-pressed={showModel} onClick={() => setCurrent(-1)} aria-label="Ver el look completo">
+                    <GarmentImage item={{ imageSet: sheet.model.imageSet, name: sheet.model.name }} alt="" sizes="80px" />
+                  </button>
+                </li>
+              )}
               {sheet.pieces.map((entry, index) => (
                 <li key={entry.id}>
                   <button type="button" className={index === current ? "is-active" : ""} aria-pressed={index === current} onClick={() => setCurrent(index)} aria-label={`Ver ${entry.name}`}>
@@ -68,10 +81,17 @@ export function LookSheet({ sheet, onClose, onOpenRelated }) {
               ))}
             </ul>
           )}
-          <figure className="ed-sheet__stage" key={piece.id}>
-            <GarmentImage item={piece} alt={piece.name} sizes="(max-width: 760px) 90vw, 46vw" priority />
-            <figcaption>{piece.name}</figcaption>
-          </figure>
+          {showModel ? (
+            <figure className="ed-sheet__stage ed-sheet__stage--model" key="model">
+              <LookModelFrame look={sheet} pieces={sheet.pieces} sizes="(max-width: 760px) 80vw, 40vw" priority showSpots onSpot={setCurrent} />
+              <figcaption>Imagen generada con IA · Modelo virtual {sheet.model.name}. Tocá un número para ver la prenda.</figcaption>
+            </figure>
+          ) : (
+            <figure className="ed-sheet__stage" key={piece.id}>
+              <GarmentImage item={piece} alt={piece.name} sizes="(max-width: 760px) 90vw, 46vw" priority />
+              <figcaption>{piece.name}</figcaption>
+            </figure>
+          )}
           <div className="ed-sheet__info">
             {sheet.eyebrow && <p className="ed-eyebrow">{sheet.eyebrow}</p>}
             <h2 id="ed-sheet-title" className="ed-title">{sheet.title}</h2>
@@ -81,8 +101,9 @@ export function LookSheet({ sheet, onClose, onOpenRelated }) {
             </ul>
             <fieldset className="ed-sheet__pieces">
               <legend>{single ? "Talle" : "Piezas de este look"}</legend>
-              {sheet.pieces.map((entry) => (
+              {sheet.pieces.map((entry, index) => (
                 <div className="ed-sheet__piece" key={entry.id}>
+                  {sheet.model && <button type="button" className={`ed-num${current === index ? " is-active" : ""}`} onClick={() => setCurrent(index)} aria-label={`Ver ${entry.name}`}>{index + 1}</button>}
                   {!single && (
                     <label className="ed-check">
                       <input type="checkbox" checked={checked.has(entry.id)} onChange={() => toggle(entry.id)} />
@@ -117,9 +138,15 @@ export function LookSheet({ sheet, onClose, onOpenRelated }) {
               {sheet.related.map((look) => (
                 <li key={look.id}>
                   <button type="button" onClick={() => onOpenRelated(look)} aria-label={`${look.title}: ${look.pieces.map((entry) => entry.name).join(", ")}`}>
-                    <span className="ed-mini-look">
-                      {look.pieces.slice(0, 3).map((entry) => <GarmentImage key={entry.id} item={entry} alt="" sizes="120px" />)}
-                    </span>
+                    {look.model ? (
+                      <span className="ed-mini-look ed-mini-look--model">
+                        <GarmentImage item={{ imageSet: look.model.imageSet, name: look.model.name }} alt="" sizes="160px" />
+                      </span>
+                    ) : (
+                      <span className="ed-mini-look">
+                        {look.pieces.slice(0, 3).map((entry) => <GarmentImage key={entry.id} item={entry} alt="" sizes="120px" />)}
+                      </span>
+                    )}
                     <span>{look.title}</span>
                   </button>
                 </li>

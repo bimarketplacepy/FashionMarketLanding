@@ -5,3 +5,4 @@
 - [Imágenes de prendas](imagenes-prendas.md) — correr optimize-images tras importar; prebuild verifica; <source> ocultos en GarmentImage.
 - [Respaldos en App Storage](respaldos-app-storage.md) — archivo/2026-11-06/ (1.011 MB); local sólo quedan 5 lotes pendientes.
 - [Preferencias del usuario](preferencias-usuario.md) — español, no inventar contenido, dry-run + backup, no borrar sin confirmar, fases con commit.
+- [Looks en modelo](looks-en-modelo.md) — looks de la landing sobre avatares IA (decisión 2026-11-09); generar → recortar → puntos → optimizar → revisar → aprobar.

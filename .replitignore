@@ -10,6 +10,7 @@
 # IA son sólo del workspace. Los respaldos (fotos crudas de lotes, originales,
 # deduplicación) ya viven en .local/aether-archive y en App Storage.
 artifacts/aether/data/imported/
+artifacts/aether/data/look-models/
 artifacts/aether/data/claude-inbox/
 artifacts/aether/data/jobs/
 artifacts/aether/data/garment-regeneration/

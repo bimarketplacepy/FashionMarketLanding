@@ -76,3 +76,22 @@ Detalle de las mediciones:
 3. `.replitignore` se prueba en el próximo publish.
 4. `.config/npm/node_global` es la instalación global de Claude Code (323 MB). La app no la usa: se excluye del deploy con `.config/` en `.replitignore`. No se movió de lugar, porque eso rompería Claude Code en el workspace. Desplegable estimado: ~390 MB.
 5. Copia local de respaldos borrada después de reverificar App Storage (3.103 de 3.103 archivos). Se conservaron los 5 lotes con 37 prendas analizadas sin importar (58 MB): ROSIO CLOTHING 2, DINAMIC FASHION 5, ACTIVE BASIC 28, BLUPEPPER SS26 1 (error), AEMI+CO 1 (error).
+
+## Looks en modelo (2026-11-09)
+
+Referencia: los 3 reels de App Storage `reel/`. Tienen una fila de personas con profundidad, puntos numerados sobre cada prenda y un perchero con modo foco (este último ya estaba). Decisión del usuario: vestir los looks sobre los avatares IA del probador.
+
+- 21 looks (7 por familia) generados con Gemini sobre las 8 variantes de avatar de mujer, con las prendas reales como referencia. Fondo recortado con rembg y puntos numerados ubicados por Gemini.
+- Revisión manual de cada foto contra sus prendas: 19 salieron bien al primer intento. En 2 looks de playa la bombacha de bikini salió de tiro alto: se reforzó el prompt, se regeneraron y se aprobaron. Sólo se publican las fotos aprobadas.
+- La landing lo rotula: "Modelos virtuales: imágenes generadas con IA a partir de las prendas reales". La ficha dice "Imagen generada con IA · Modelo virtual …".
+- Peso por foto (800w): AVIF 36 KB / WebP 47 KB.
+
+| Lighthouse mobile simulado (mediana de 3) | Antes (6/11) | Ahora |
+|---|---|---|
+| Performance | 95 | 97 |
+| LCP | 2,4 s | 2,4 s |
+| CLS | 0,008 | 0,008 |
+| Accesibilidad | 100 | 100 |
+| Peso total de la landing | 373 KB | 405 KB |
+
+Capturas: `capturas/d-7-looks-en-modelo.png`, `capturas/d-8-ficha-puntos.png`, `capturas/m-7-looks-en-modelo.png`. Sin scroll horizontal ni errores de consola, en 1440 px y en 390 px.

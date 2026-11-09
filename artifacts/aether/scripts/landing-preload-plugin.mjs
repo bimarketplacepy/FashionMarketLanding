@@ -8,8 +8,10 @@ import { buildLandingPayload } from "./landing-payload.mjs";
 
 const MOBILE = "(max-width: 760px)";
 
-function preloadsFor(pieces, sizes, media) {
-  return pieces.filter((piece) => piece.imageSet).map((piece) => {
+function preloadsFor(look, sizes, media) {
+  // Con foto en modelo, el LCP es esa foto; si no, las prendas apiladas.
+  const sources = look.model ? [look.model] : look.pieces;
+  return sources.filter((piece) => piece.imageSet).map((piece) => {
     const set = piece.imageSet;
     return {
       media,
@@ -32,14 +34,16 @@ export function landingPreloadPlugin({ root }) {
         this.warn?.(`No se pudo armar la precarga de la landing: ${error.message}`);
         return [];
       }
-      const firstFamily = Object.values(payload.looks).find((list) => list.length) || [];
+      // Mismo criterio que HomePage (preferModelLooks): con 3+ fotos en modelo, sólo esas.
+      const firstFamily = (Object.values(payload.looks).find((list) => list.length) || [])
+        .filter((look, _, list) => (list.filter((entry) => entry.model).length >= 3 ? look.model : true));
       if (!firstFamily.length) return [];
       // Mismo criterio que HeroLooks: mobile arranca en el primero, escritorio en el del medio.
       const mobileLook = firstFamily[0];
       const desktopLook = firstFamily[Math.floor(firstFamily.length / 2)];
       const links = [
-        ...preloadsFor(mobileLook.pieces, "45vw", MOBILE),
-        ...preloadsFor(desktopLook.pieces, "240px", "(min-width: 761px)"),
+        ...preloadsFor(mobileLook, mobileLook.model ? "72vw" : "45vw", MOBILE),
+        ...preloadsFor(desktopLook, desktopLook.model ? "420px" : "240px", "(min-width: 761px)"),
       ];
       const script = `(function(){if(location.pathname!=="/")return;var l=${JSON.stringify(links)};for(var i=0;i<l.length;i++){var e=document.createElement("link");e.rel="preload";e.as="image";e.fetchPriority="high";for(var k in l[i])e.setAttribute(k,l[i][k]);document.head.appendChild(e);}})();`;
       return [{ tag: "script", children: script, injectTo: "head" }];
