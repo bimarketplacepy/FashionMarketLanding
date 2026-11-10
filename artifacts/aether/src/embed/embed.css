@@ -42,3 +42,9 @@
    sticky debajo del header de la tienda. */
 :host .retail-wardrobe { padding-top: 0; }
 :host .wardrobe-topbar { position: sticky; top: var(--fm-top, 0px); }
+
+/* Colección dentro de Odoo: como la grilla de la tienda, máximo 3 por fila
+   (en pantallas angostas quedan las 2 columnas de la hoja base). */
+@media (min-width: 821px) {
+  :host .public-product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
