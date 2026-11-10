@@ -4,6 +4,7 @@ import { GarmentImage } from "../fashion/GarmentImage.jsx";
 import { colorName, lookSwatches } from "./color-names.js";
 import { LookModelFrame } from "./HeroLooks.jsx";
 import { useSelection } from "./selection.jsx";
+import { useScope } from "../embed/scope.jsx";
 
 // Ficha de un look (varias piezas) o de una prenda suelta (look de una pieza).
 // sheet = { title, eyebrow, pieces, model?, look?, related: [{ id, title, pieces, model? }] }
@@ -11,6 +12,8 @@ import { useSelection } from "./selection.jsx";
 // completa (current = -1) con puntos numerados que llevan a cada prenda.
 export function LookSheet({ sheet, onClose, onOpenRelated }) {
   const { add, setOpen } = useSelection();
+  // Embebida en Odoo: cada pieza enlaza a su ficha de la tienda.
+  const { productUrls } = useScope();
   const firstView = sheet.model ? -1 : 0;
   const [current, setCurrent] = useState(firstView);
   const [checked, setChecked] = useState(() => new Set(sheet.pieces.map((piece) => piece.id)));
@@ -109,6 +112,9 @@ export function LookSheet({ sheet, onClose, onOpenRelated }) {
                       <input type="checkbox" checked={checked.has(entry.id)} onChange={() => toggle(entry.id)} />
                       <span>{entry.name}<small>{colorName(entry.color)}</small></span>
                     </label>
+                  )}
+                  {productUrls[entry.id] && (
+                    <a className="ed-shop-link" href={productUrls[entry.id]}>Ver en la tienda</a>
                   )}
                   {(entry.sizes || []).length > 0 && (
                     <label className="ed-size">

@@ -9,6 +9,8 @@ import { LookSheet } from "./LookSheet.jsx";
 import { Marquee } from "./Marquee.jsx";
 import { SelectionButton, SelectionDrawer } from "./SelectionDrawer.jsx";
 import { LOOK_FAMILIES } from "./looks.js";
+import { engineFetch } from "../embed/base.js";
+import { scopeLanding, useScope } from "../embed/scope.jsx";
 import "./landing.css";
 
 function familyLabel(id) {
@@ -21,7 +23,7 @@ function useLandingData() {
   const [state, setState] = useState({ loading: true, data: null });
   useEffect(() => {
     let alive = true;
-    fetch("/api/landing")
+    engineFetch("/api/landing")
       .then((response) => (response.ok ? response.json() : Promise.reject(new Error(String(response.status)))))
       .then((data) => alive && setState({ loading: false, data }))
       .catch(() => alive && setState({ loading: false, data: null }));
@@ -42,7 +44,10 @@ function preferModelLooks(looks) {
 }
 
 export function HomePage({ navigate }) {
-  const { loading, data } = useLandingData();
+  const { allowed } = useScope();
+  const { loading, data: rawData } = useLandingData();
+  // En una categoría de Odoo: sólo looks y perchero con prendas de esa categoría.
+  const data = useMemo(() => scopeLanding(rawData, allowed), [rawData, allowed]);
   const looksByFamily = useMemo(() => (data?.looks ? preferModelLooks(data.looks) : EMPTY_LOOKS), [data]);
   const allLooks = useMemo(
     () => LOOK_FAMILIES.flatMap((family) => (looksByFamily[family.id] || []).map((look, index) => ({ ...look, title: lookLabel(look, index), eyebrow: familyLabel(family.id) }))),

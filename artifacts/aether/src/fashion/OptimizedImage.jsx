@@ -1,9 +1,11 @@
 import { forwardRef } from "react";
 import { Image } from "@unpic/react";
+import { engineUrl } from "../embed/base.js";
 
 // Bajo /api para que en el deployment el router lo mande al api-server, que es
 // quien monta ipx en producción (ahí no corre ningún servidor de Vite).
-const IPX_OPTIONS = { ipx: { baseURL: "/api/_ipx" } };
+// Se arma al pintar: embebida en Odoo el prefijo del motor se define al montar.
+const ipxOptions = () => ({ ipx: { baseURL: engineUrl("/api/_ipx") } });
 const DEFAULT_BREAKPOINTS = [160, 240, 320, 480, 640, 800, 960, 1280];
 
 function sourcePath(src) {
@@ -25,7 +27,7 @@ export const OptimizedImage = forwardRef(function OptimizedImage({
   const normalizedSource = sourcePath(src);
 
   if (!normalizedSource || normalizedSource.startsWith("data:") || normalizedSource.startsWith("blob:") || normalizedSource.startsWith("/api/")) {
-    return <img ref={ref} src={src} alt={alt} sizes={sizes} loading={loading || (priority ? "eager" : "lazy")} decoding={decoding || "async"} {...props} />;
+    return <img ref={ref} src={engineUrl(src)} alt={alt} sizes={sizes} loading={loading || (priority ? "eager" : "lazy")} decoding={decoding || "async"} {...props} />;
   }
 
   return (
@@ -34,7 +36,7 @@ export const OptimizedImage = forwardRef(function OptimizedImage({
       src={normalizedSource}
       alt={alt}
       fallback="ipx"
-      options={IPX_OPTIONS}
+      options={ipxOptions()}
       operations={{ ipx: { quality } }}
       layout="fullWidth"
       unstyled

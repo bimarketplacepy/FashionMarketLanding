@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Valores iniciales: se editan en Ajustes → Técnico → Parámetros del sistema.
+         noupdate: actualizar el módulo no pisa lo que se configuró. -->
+    <data noupdate="1">
+        <!-- Dominio público del motor (deployment de Replit), sin barra final.
+             Ej.: https://probador.tutienda.com.py — vacío = la experiencia queda apagada. -->
+        <record id="param_engine_url" model="ir.config_parameter">
+            <field name="key">website_fashion_market.engine_url</field>
+            <field name="value"> </field>
+        </record>
+        <!-- 1 = la API del motor pasa por el proxy /fm/ de Odoo (recomendado).
+             0 = el navegador llama directo al motor (requiere FM_EMBED_ORIGINS en el motor). -->
+        <record id="param_use_proxy" model="ir.config_parameter">
+            <field name="key">website_fashion_market.use_proxy</field>
+            <field name="value">1</field>
+        </record>
+        <!-- Segundos que el proxy espera al motor (una prueba virtual tarda 20–60 s). -->
+        <record id="param_proxy_timeout" model="ir.config_parameter">
+            <field name="key">website_fashion_market.proxy_timeout</field>
+            <field name="value">150</field>
+        </record>
+    </data>
+</odoo>

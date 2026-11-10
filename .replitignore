@@ -20,3 +20,6 @@ attached_assets/
 # Configuración local del workspace: incluye la instalación global de Claude Code
 # (.config/npm/node_global, ~323 MB), que la app no usa en producción.
 .config/
+
+# Módulo de Odoo: se instala en Odoo, no viaja al deployment del motor
+odoo/

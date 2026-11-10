@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node scripts/free-port.mjs && vite --config vite.config.ts --host 0.0.0.0",
     "prebuild": "node scripts/optimize-garment-images.mjs --verify",
-    "build": "vite build --config vite.config.ts",
+    "build": "vite build --config vite.config.ts && vite build --config vite.embed.config.ts",
     "serve": "vite preview --config vite.config.ts --host 0.0.0.0",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "import-catalog": "node scripts/import-catalog.mjs",
@@ -14,7 +14,9 @@
     "regenerate-garments": "node scripts/regenerate-garments.mjs",
     "reclassify-parts": "node scripts/reclassify-parts.mjs",
     "generate-models": "node scripts/generate-models.mjs",
-    "optimize-images": "node scripts/optimize-garment-images.mjs"
+    "optimize-images": "node scripts/optimize-garment-images.mjs",
+    "build:embed": "vite build --config vite.embed.config.ts",
+    "odoo-sync": "node scripts/odoo-sync.mjs"
   },
   "devDependencies": {
     "@replit/vite-plugin-cartographer": "catalog:",

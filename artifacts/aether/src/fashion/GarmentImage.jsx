@@ -5,15 +5,17 @@
 // con AVIF y WebP en varios anchos, ancho y alto explícitos (sin saltos de
 // layout), carga diferida y decodificación asíncrona. Sin imageSet cae al PNG
 // original (`thumbnail` / `image`), que sólo existe en el workspace.
+import { engineUrl } from "../embed/base.js";
+
 export function garmentSrcSet(set, format) {
-  return set.widths.map((width) => `${set.src}.${set.hash}-${width}.${format} ${width}w`).join(", ");
+  return set.widths.map((width) => `${engineUrl(set.src)}.${set.hash}-${width}.${format} ${width}w`).join(", ");
 }
 
 export function garmentFallbackSrc(item, width = 800) {
   const set = item?.imageSet;
-  if (!set) return item?.thumbnail || item?.image || "";
+  if (!set) return engineUrl(item?.thumbnail || item?.image || "");
   const best = set.widths.find((candidate) => candidate >= width) || set.widths[set.widths.length - 1];
-  return `${set.src}.${set.hash}-${best}.webp`;
+  return `${engineUrl(set.src)}.${set.hash}-${best}.webp`;
 }
 
 export function GarmentImage({
@@ -34,7 +36,7 @@ export function GarmentImage({
     return (
       <img
         className={imgClassName}
-        src={item?.thumbnail || item?.image}
+        src={engineUrl(item?.thumbnail || item?.image)}
         alt={label}
         loading={loading}
         decoding="async"

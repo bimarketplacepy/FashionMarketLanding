@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Check } from "@phosphor-icons/react";
 import { formatPriceGs } from "./format.js";
 import { SHOW_PRICES } from "../site-config.js";
 import { GarmentImage } from "./GarmentImage.jsx";
+import { engineFetch } from "../embed/base.js";
 
 // Outfits guardados, compartidos entre fichas (para el +1 de "aparecen juntas").
 let outfitsCache = null;
@@ -12,7 +13,7 @@ export function useSavedOutfits() {
   const [state, setState] = useState(() => ({ outfits: outfitsCache || [], ready: Boolean(outfitsCache) }));
   useEffect(() => {
     if (outfitsCache) return;
-    outfitsPromise ||= fetch("/api/tryon/outfits")
+    outfitsPromise ||= engineFetch("/api/tryon/outfits")
       .then((response) => (response.ok ? response.json() : { outfits: [] }))
       .then((collection) => { outfitsCache = collection.outfits || []; return outfitsCache; })
       .catch(() => { outfitsCache = []; return outfitsCache; });

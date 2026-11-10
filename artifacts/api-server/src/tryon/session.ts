@@ -9,6 +9,7 @@
 
 import { randomUUID } from "node:crypto";
 import type { Request, Response, NextFunction } from "express";
+import { embedOrigins } from "../embed";
 
 export const SESSION_COOKIE = "fm_sid";
 const MAX_AGE_DAYS = 30;
@@ -38,9 +39,12 @@ export function tryonSession(options: { secure: boolean }) {
 
     // Se reemite siempre para que la ventana de 30 días se renueve mientras la
     // persona siga usando el probador.
+    // Modo directo de Odoo (FM_EMBED_ORIGINS): la tienda está en otro dominio
+    // y la cookie viaja en fetch con credenciales sólo con SameSite=None.
+    const crossSite = options.secure && embedOrigins().length > 0;
     res.cookie(SESSION_COOKIE, sessionId, {
       httpOnly: true,
-      sameSite: "lax",
+      sameSite: crossSite ? "none" : "lax",
       secure: options.secure,
       maxAge: MAX_AGE_MS,
       path: "/",

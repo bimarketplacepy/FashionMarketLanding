@@ -243,6 +243,7 @@ button.ed-num:hover, .ed-num.is-active { background: var(--ed-ink); border-color
 .ed-sheet__desc { margin: 0; color: var(--ed-ink-soft); line-height: 1.6; font-size: .95rem; }
 .ed-sheet__pieces { border: 0; margin: 0; padding: 0; display: grid; gap: 10px; }
 .ed-sheet__pieces legend { padding: 0; margin-bottom: 10px; font: 600 .75rem/1 var(--ed-sans); letter-spacing: .16em; text-transform: uppercase; color: var(--ed-grey-3); }
+.ed-shop-link { flex: none; font-size: 0.8rem; color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .ed-sheet__piece { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--ed-grey-1); }
 .ed-check { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: .88rem; line-height: 1.35; }
 .ed-check input { width: 18px; height: 18px; margin-top: 1px; accent-color: var(--ed-ink); flex: 0 0 auto; }

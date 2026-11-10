@@ -40,6 +40,16 @@ Paleta marfil `#F3F1EC` / tinta `#151515` / grises / acento terracota `#A4482A` 
 - "Tu selección" (`selection.jsx`, `SelectionDrawer.jsx`): botón flotante con contador, modal con talle/cantidad/quitar, "Descargar selección" (.txt) y consulta. Se guarda en localStorage (try/catch) con un resumen de cada prenda. **WhatsApp**: `contact.whatsapp` en `site-config.json` (hoy `595981203891`, número provisorio) y `contact.whatsappGreeting`. El enlace usa el formato `https://api.whatsapp.com/send/?phone=…&text=…&type=phone_number&app_absent=0` (`whatsappUrl()` en `src/site-config.js`): el footer manda el saludo solo y "Tu selección" lo completa con las piezas. Con `whatsapp: null` se ofrece "Consultar por email".
 - Colección y probador se cargan con `lazy()`.
 
+## Tienda Odoo 19 (noviembre 2026)
+
+La experiencia completa se embebe en la categoría web **Moda** de la tienda Odoo 19 (y subcategorías), con las prendas publicadas ahí. Guía: `reports/odoo19-moda-end-to-end.md`.
+
+- Widget: `src/embed/` (`<fm-moda>`, `<fm-probar>`, Shadow DOM, rutas por hash) → `vite.embed.config.ts` → `dist/public/embed/` (incluido en `pnpm run build`). Lo sirve el api-server en `/api/embed/*` con CORS.
+- `src/embed/base.js`: todo `fetch` a la API usa `engineFetch()` y toda imagen `engineUrl()`. Sin prefijo la app propia no cambia; **código nuevo que pida `/api/...` o pinte imágenes del motor tiene que usarlos** o se rompe dentro de Odoo.
+- Vínculo prenda ↔ producto: Referencia interna = id de la prenda. `scripts/odoo-sync.mjs` (API JSON-2, dry-run → `--aplicar` con backup; Secrets `ODOO_URL`, `ODOO_DB`, `ODOO_API_KEY`). Correrlo después de `optimize-images`.
+- Módulo Odoo: `odoo/website_fashion_market/` (fuera del deploy): campo `fm_experience` en la categoría, reemplazo de la grilla, botón en la ficha, proxy `/fm/api/{landing,catalog,tryon/*}`.
+- `/api/tryon/generate` tiene límite diario (`TRYON_MAX_PER_SESSION_DAY` 15, `TRYON_MAX_PER_IP_DAY` 60) en `api-server/src/tryon/limits.ts`. `FM_EMBED_ORIGINS` habilita el modo directo (sin módulo).
+
 ## Admin y seguridad
 
 - Clave en `ADMIN_KEY` (Secrets en el deployment, `artifacts/aether/.env` en el workspace). **Sin prefijo `VITE_`** (nunca llega al bundle) y sin valor por defecto: sin la variable el panel queda cerrado.

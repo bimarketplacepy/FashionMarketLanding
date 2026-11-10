@@ -19,6 +19,7 @@ import { toPublicCatalog } from "../../../aether/scripts/public-catalog.mjs";
 import { buildLandingPayload } from "../../../aether/scripts/landing-payload.mjs";
 import { createPgOutfitStore } from "./pgStore";
 import { tryonSession, sessionOf } from "./session";
+import { generationLimit } from "./limits";
 import { aetherProxy } from "../middlewares/aetherProxy";
 import { logger } from "../lib/logger";
 
@@ -192,6 +193,8 @@ export function tryonRouter(): IRouter {
     cookieParser(),
     tryonSession({ secure: process.env["REPLIT_DEPLOYMENT"] === "1" }),
   );
+  // Después de la sesión (cuenta por fm_sid) y antes del handler que llama a Gemini.
+  router.use(generationLimit());
   router.use((req, res, next) => handler(req, res, next));
 
   logger.info({ root: AETHER_ROOT, store: "postgres" }, "Vestidor montado en api-server (sesión por visitante)");

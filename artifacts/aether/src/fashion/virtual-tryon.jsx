@@ -14,6 +14,7 @@ import { defaultModelPreset, findModelPreset, findModelStyle, presetsForGender }
 import { readDraft, writeDraft } from "./outfit-draft.js";
 import "./virtual-tryon.css";
 import { GarmentImage } from "./GarmentImage.jsx";
+import { engineFetch, engineUrl } from "../embed/base.js";
 
 const PARTS = [
   ["upperbody", "Superior"],
@@ -64,7 +65,7 @@ const WEIGHT = { light: 1, medium: 2, heavy: 3 };
 const NEUTRAL_SATURATION = 0.16;
 
 function request(path, options) {
-  return fetch(path, {
+  return engineFetch(path, {
     ...options,
     headers: { "Content-Type": "application/json", ...(options?.headers || {}) },
   }).then(async (response) => {
@@ -257,7 +258,7 @@ function OutfitCard({ outfit, onGenerate, onSave, busy, saved }) {
     <article className="tryon-look-card">
       <div className="tryon-look-visual">
         {outfit.image
-          ? <img className="generated-look" src={outfit.image} alt={`Prueba virtual de ${outfit.name}`} />
+          ? <img className="generated-look" src={engineUrl(outfit.image)} alt={`Prueba virtual de ${outfit.name}`} />
           : <div className="garment-composition">{outfit.garments.map((item) => <GarmentMini item={item} key={item.id} />)}</div>}
         <div className="match-score"><Sparkle size={12} weight="fill" /> {outfit.score}% compatible</div>
         <button className={`look-heart${saved ? " active" : ""}`} type="button" onClick={() => onSave(outfit)} aria-label="Guardá el look"><Heart size={18} weight={saved ? "fill" : "regular"} /></button>
@@ -565,7 +566,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
               <div className="model-preset-grid">
                 {availablePresets.map((preset) => (
                   <button key={preset.id} className={`model-preset-card${selectedPreset.id === preset.id ? " active" : ""}`} type="button" onClick={() => selectPreset(preset)}>
-                    <img src={preset.thumbnail} alt="" loading="lazy" />
+                    <img src={engineUrl(preset.thumbnail)} alt="" loading="lazy" />
                     <span><strong>{preset.label}</strong><small>{preset.skinToneLabel}</small></span>
                     <em>{preset.appearance}</em>
                   </button>
@@ -613,7 +614,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
             <button className="tryon-primary" type="button" onClick={saveProfile}><Check size={17} /> Usá a {selectedPreset.label} y mirá combinaciones</button>
           </div>
           <div className="profile-image preset-profile-image ready" aria-live="polite">
-            <img key={`${selectedPreset.id}-${selectedStyle.id}`} src={selectedStyle.image} alt={`Modelo IA ${selectedPreset.label}: ${selectedPreset.appearance}, pelo ${selectedStyle.hairColorLabel} ${selectedStyle.hairTextureLabel}`} />
+            <img key={`${selectedPreset.id}-${selectedStyle.id}`} src={engineUrl(selectedStyle.image)} alt={`Modelo IA ${selectedPreset.label}: ${selectedPreset.appearance}, pelo ${selectedStyle.hairColorLabel} ${selectedStyle.hairTextureLabel}`} />
             <div className="preset-profile-caption">
               <span><Check weight="bold" /> Vista previa instantánea</span>
               <h3>{selectedPreset.label}</h3>
@@ -627,7 +628,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
       {!!compatibleSavedOutfits.filter((item) => item.image).length && (section === "suggestions" || section === "builder") && (
         <section className="saved-looks" id="looks-generados">
           <div><p>Tus pruebas</p><h2>Looks generados</h2></div>
-          <div>{compatibleSavedOutfits.filter((item) => item.image).map((outfit) => <figure key={outfit.id}><img src={outfit.image} alt={outfit.name} /><figcaption>{outfit.name}</figcaption></figure>)}</div>
+          <div>{compatibleSavedOutfits.filter((item) => item.image).map((outfit) => <figure key={outfit.id}><img src={engineUrl(outfit.image)} alt={outfit.name} /><figcaption>{outfit.name}</figcaption></figure>)}</div>
         </section>
       )}
 
@@ -641,9 +642,11 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
               <button
                 className="tryon-primary"
                 type="button"
-                onClick={() => {
+                onClick={(event) => {
+                  // getRootNode(): embebida en Odoo vive dentro de un shadow root.
+                  const root = event.currentTarget.getRootNode();
                   setLookReady(null);
-                  document.getElementById("looks-generados")?.scrollIntoView({ behavior: "smooth" });
+                  (root.getElementById ? root : document).getElementById("looks-generados")?.scrollIntoView({ behavior: "smooth" });
                 }}
               >Ver el look</button>
               <button className="tryon-secondary" type="button" onClick={() => setLookReady(null)}>Seguir explorando</button>

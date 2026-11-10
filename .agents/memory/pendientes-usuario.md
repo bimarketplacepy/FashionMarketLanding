@@ -11,3 +11,4 @@ metadata:
 - **5 lotes con 37 prendas sin importar** en `.local/aether-archive/batches/` (hay una 6ª carpeta, LOVE TREE, sin nada pendiente: se puede borrar con permiso) (ver [[respaldos-app-storage]]).
 - **Reels de referencia** (App Storage `reel/`): resueltos el 2026-11-09. El usuario eligió vestir los looks sobre los avatares IA (ver [[looks-en-modelo]]).
 - Aprobado por el usuario: sin intro "FASHION MARKET", selector Conjuntos/Vestidos/Playa, sin Framer Motion ni Lenis, GTM diferido, `.config/` fuera del deploy (es la instalación global de Claude Code).
+- **Odoo 19** (2026-11-10): confirmar hosting (Odoo.sh/on-prem → módulo; Online → modo directo), dominio `probador.<dominio>`, si ya hay productos cargados (Referencia interna) y límites diarios del probador. Instalar primero en staging. Ver [[odoo-integracion]].

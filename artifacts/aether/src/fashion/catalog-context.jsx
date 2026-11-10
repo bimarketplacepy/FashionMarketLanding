@@ -1,4 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { engineFetch } from "../embed/base.js";
+import { inScope, useScope } from "../embed/scope.jsx";
 
 const CatalogContext = createContext(null);
 
@@ -12,6 +14,8 @@ export const isActiveItem = (item) => item.active !== false;
 // scope "admin": /api/import/wardrobe (catálogo completo, para el panel).
 export function CatalogProvider({ children, scope = "public" }) {
   const [items, setItems] = useState([]);
+  // Embebida en una categoría de Odoo: sólo las prendas publicadas ahí.
+  const { allowed } = useScope();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   // Se pide recién cuando alguna vista lo usa: la landing no necesita el
@@ -20,15 +24,15 @@ export function CatalogProvider({ children, scope = "public" }) {
 
   const refreshCatalog = useCallback(() => {
     setLoading(true);
-    (scope === "admin" ? fetch("/api/import/wardrobe", { cache: "no-store" }) : fetch("/api/catalog"))
+    (scope === "admin" ? fetch("/api/import/wardrobe", { cache: "no-store" }) : engineFetch("/api/catalog"))
       .then((response) => {
         if (!response.ok) throw new Error("No se pudo cargar el catálogo.");
         return response.json();
       })
-      .then(setItems)
+      .then((records) => setItems(scope === "admin" ? records : records.filter((item) => inScope(allowed, item.id))))
       .catch((requestError) => setError(requestError.message))
       .finally(() => setLoading(false));
-  }, [scope]);
+  }, [scope, allowed]);
 
   useEffect(() => {
     if (requested) refreshCatalog();

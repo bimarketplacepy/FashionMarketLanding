@@ -7,12 +7,14 @@ import { SuggestionCarousel, useSavedOutfits } from "./SuggestionCarousel.jsx";
 import { formatPriceGs, GARMENT_TYPE_LABELS, MATERIAL_LABELS, PART_LABELS, SEASON_LABELS, SILHOUETTE_LABELS } from "./format.js";
 import { SHOW_PRICES } from "../site-config.js";
 import { useSelection } from "../landing/selection.jsx";
+import { useScope } from "../embed/scope.jsx";
 import "./shop.css";
 import { GarmentImage } from "./GarmentImage.jsx";
 
 // Ficha comercial de solo lectura que ve el público al hacer click en una prenda.
 export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
   const selection = useSelection();
+  const { productUrls } = useScope();
   const [inSelection, setInSelection] = useState(false);
   useEffect(() => setInSelection(false), [item.id]);
   const [, navigate] = useLocation();
@@ -103,6 +105,9 @@ export function ProductSheet({ item, items, onClose, onOpen, onBack }) {
                 <button className="retail-outline-button product-add" type="button" onClick={() => { selection.add(item); setInSelection(true); }}>
                   {inSelection ? "En tu selección" : "Agregar a tu selección"}
                 </button>
+                {productUrls[item.id] && (
+                  <a className="retail-outline-button product-add" href={productUrls[item.id]}>Ver en la tienda <ArrowRight size={13} /></a>
+                )}
               </div>
               {added && (
                 <p className="product-added" role="status">
