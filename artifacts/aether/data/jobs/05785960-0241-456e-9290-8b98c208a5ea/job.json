@@ -1,0 +1,86 @@
+{
+  "id": "05785960-0241-456e-9290-8b98c208a5ea",
+  "status": "active",
+  "metadata": {
+    "name": "Calzón de bikini estampado floral",
+    "part": "lowerbody",
+    "garmentType": "other",
+    "gender": "mujer",
+    "color": "#f2e8d5",
+    "secondaryColor": "#6ab883",
+    "tags": [
+      "sunday brunch",
+      "ss26",
+      "bikini",
+      "estampado",
+      "playa"
+    ],
+    "season": "summer",
+    "material": "synthetic",
+    "silhouette": "fitted",
+    "weight": "light",
+    "climates": [
+      "warm"
+    ],
+    "occasions": [
+      "beach",
+      "casual"
+    ],
+    "boundingBox": {
+      "x": 477,
+      "y": 573,
+      "width": 270,
+      "height": 102
+    }
+  },
+  "stages": {
+    "crop": {
+      "status": "approved",
+      "decision": "approved",
+      "attempts": 0,
+      "assetUrl": "/api/import/assets/05785960-0241-456e-9290-8b98c208a5ea/crop.png",
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": "2026-09-29T19:27:38.923Z"
+    },
+    "garment": {
+      "status": "review",
+      "decision": null,
+      "attempts": 1,
+      "assetUrl": "/api/import/assets/05785960-0241-456e-9290-8b98c208a5ea/garment-1.png",
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": "2026-09-29T19:27:47.321Z",
+      "chromaKey": "#00ff00"
+    },
+    "modeled": {
+      "status": "pending",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": null,
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": null
+    }
+  },
+  "createdAt": "2026-09-29T19:27:26.861Z",
+  "updatedAt": "2026-09-29T19:27:47.321Z",
+  "internal": {
+    "originalFile": "original.png",
+    "cropFile": "crop.png",
+    "originalMime": "image/png"
+  },
+  "originalAssetUrl": "/api/import/assets/05785960-0241-456e-9290-8b98c208a5ea/original.png"
+}

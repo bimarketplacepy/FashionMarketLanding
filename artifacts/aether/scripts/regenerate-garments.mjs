@@ -4,6 +4,7 @@
 //   pnpm --filter @workspace/aether run regenerate-garments             # todo el catálogo
 //   pnpm --filter @workspace/aether run regenerate-garments -- <id>...  # solo esos items
 //   pnpm --filter @workspace/aether run regenerate-garments -- --pausa 8000
+//   pnpm --filter @workspace/aether run regenerate-garments -- --importadas   # solo lo importado por lotes
 //
 // Fuente: data/imported-originals/<id>-garment.png (el recorte original de la foto);
 // si no hay backup usa la imagen actual. Salida: data/imported/<id>-garment.png.
@@ -13,11 +14,12 @@ import { mkdir, readFile, writeFile, copyFile, access } from "node:fs/promises";
 import path from "node:path";
 import { createAIProvider } from "./ai-provider.mjs";
 import { buildGarmentPrompt, removeChromaBackground } from "./import-job-api.mjs";
+import { ORIGINALS_DIR } from "./private-paths.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const DATA = path.join(ROOT, "data");
 const IMPORTED = path.join(DATA, "imported");
-const ORIGINALS = path.join(DATA, "imported-originals");
+const ORIGINALS = ORIGINALS_DIR;
 const MANIFEST = path.join(DATA, "garment-regen.json");
 
 const ARGS = process.argv.slice(2);
@@ -58,7 +60,11 @@ const library = JSON.parse(await readFile(path.join(DATA, "library.json"), "utf8
 const manifest = JSON.parse(await readFile(MANIFEST, "utf8").catch(() => '{"entries":{}}'));
 await mkdir(ORIGINALS, { recursive: true });
 
-const pending = library.filter((item) => (!ONLY.size || ONLY.has(item.id)) && manifest.entries[item.id]?.status !== "done");
+// --importadas: solo prendas que entraron por lotes (fotos crudas), sin tocar el catálogo previo.
+const ONLY_BATCHES = ARGS.includes("--importadas");
+const pending = library.filter((item) => (!ONLY.size || ONLY.has(item.id))
+  && (!ONLY_BATCHES || item.importBatch)
+  && manifest.entries[item.id]?.status !== "done");
 console.log(`${pending.length} prendas por regenerar con la API (${ai.name}).`);
 
 let quotaStrikes = 0;

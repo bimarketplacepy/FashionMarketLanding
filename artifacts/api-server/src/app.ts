@@ -3,7 +3,8 @@ import cors from "cors";
 import pinoHttp from "pino-http";
 import router from "./routes";
 import { logger } from "./lib/logger";
-import { aetherProxy } from "./middlewares/aetherProxy";
+import { tryonRouter } from "./tryon";
+import { embedRouter } from "./embed";
 
 const app: Express = express();
 
@@ -26,7 +27,12 @@ app.use(
     },
   }),
 );
-app.use(aetherProxy);
+// Antes de express.json(): los handlers del vestidor leen el body crudo del
+// stream, igual que cuando corren como middlewares de Vite.
+// Widget para Odoo (y CORS del modo directo) antes que el vestidor: el
+// preflight OPTIONS tiene que responderse antes de llegar a los handlers.
+app.use(embedRouter());
+app.use(tryonRouter());
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

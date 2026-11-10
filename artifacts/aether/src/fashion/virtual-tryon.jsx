@@ -1,5 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
+  CaretLeft,
+  CaretRight,
   Check,
   Heart,
   MagicWand,
@@ -7,9 +9,12 @@ import {
   SpinnerGap,
   UserCircle,
 } from "@phosphor-icons/react";
-import { effectiveProfileGender, garmentFitsModel, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
+import { effectiveProfileGender, garmentCoverage, garmentFitsModel, inferGarmentGender, normalizeGarmentType } from "../../shared/garment-gender.mjs";
 import { defaultModelPreset, findModelPreset, findModelStyle, presetsForGender } from "../../shared/model-presets.mjs";
+import { readDraft, writeDraft } from "./outfit-draft.js";
 import "./virtual-tryon.css";
+import { GarmentImage } from "./GarmentImage.jsx";
+import { engineFetch, engineUrl } from "../embed/base.js";
 
 const PARTS = [
   ["upperbody", "Superior"],
@@ -60,7 +65,7 @@ const WEIGHT = { light: 1, medium: 2, heavy: 3 };
 const NEUTRAL_SATURATION = 0.16;
 
 function request(path, options) {
-  return fetch(path, {
+  return engineFetch(path, {
     ...options,
     headers: { "Content-Type": "application/json", ...(options?.headers || {}) },
   }).then(async (response) => {
@@ -120,8 +125,12 @@ function metadata(item) {
 function buildSuggestions(sourceItems, filters, count) {
   const items = sourceItems.map(metadata);
   const byPart = Object.fromEntries(PARTS.map(([part]) => [part, items.filter((item) => item.part === part)]));
-  const hasTwoPieceBase = byPart.upperbody.length && byPart.lowerbody.length;
-  if (!hasTwoPieceBase && !byPart.wholebody.length) return [];
+  // Las polleras viven en la sección wholebody pero combinan como prenda inferior;
+  // solo vestidos y enterizos funcionan como base completa de un look.
+  const onePieces = byPart.wholebody.filter((item) => garmentCoverage(item) === "full");
+  const bottoms = [...byPart.lowerbody, ...byPart.wholebody.filter((item) => garmentCoverage(item) === "bottom")];
+  const hasTwoPieceBase = byPart.upperbody.length && bottoms.length;
+  if (!hasTwoPieceBase && !onePieces.length) return [];
   const candidates = [];
   const outers = [null, ...byPart.wholebody_up];
   const shoes = [null, ...byPart.shoes];
@@ -172,10 +181,10 @@ function buildSuggestions(sourceItems, filters, count) {
 
   if (hasTwoPieceBase) {
     for (const top of byPart.upperbody) {
-      for (const bottom of byPart.lowerbody) addBase([top, bottom], `${top.name || "Superior"} + ${bottom.name || "Inferior"}`);
+      for (const bottom of bottoms) addBase([top, bottom], `${top.name || "Superior"} + ${bottom.name || "Inferior"}`);
     }
   }
-  for (const onePiece of byPart.wholebody) addBase([onePiece], onePiece.name || "Vestido / enterizo");
+  for (const onePiece of onePieces) addBase([onePiece], onePiece.name || "Vestido / enterizo");
 
   const usage = new Map();
   const chosen = [];
@@ -195,10 +204,49 @@ function buildSuggestions(sourceItems, filters, count) {
   return chosen;
 }
 
+// Fila horizontal de prendas del builder, con flechas para avanzar sin
+// depender del gesto de scroll (clave en móvil, donde la fila es más larga
+// que la pantalla).
+function GarmentRail({ children }) {
+  const trackRef = useRef(null);
+  const [canScroll, setCanScroll] = useState({ left: false, right: false });
+  const updateArrows = useCallback(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    setCanScroll({
+      left: track.scrollLeft > 4,
+      right: track.scrollLeft + track.clientWidth < track.scrollWidth - 4,
+    });
+  }, []);
+  useEffect(() => {
+    updateArrows();
+    const track = trackRef.current;
+    if (!track || typeof ResizeObserver === "undefined") return undefined;
+    const observer = new ResizeObserver(updateArrows);
+    observer.observe(track);
+    return () => observer.disconnect();
+  }, [updateArrows, children]);
+  const scroll = (direction) => {
+    const track = trackRef.current;
+    if (track) track.scrollBy({ left: direction * track.clientWidth * 0.8, behavior: "smooth" });
+  };
+  return (
+    <div className="builder-rail">
+      <div className="builder-options" ref={trackRef} onScroll={updateArrows}>{children}</div>
+      {(canScroll.left || canScroll.right) && (
+        <>
+          <button className="builder-rail__arrow builder-rail__arrow--left" type="button" disabled={!canScroll.left} onClick={() => scroll(-1)} aria-label="Prendas anteriores"><CaretLeft size={16} weight="bold" /></button>
+          <button className="builder-rail__arrow builder-rail__arrow--right" type="button" disabled={!canScroll.right} onClick={() => scroll(1)} aria-label="Más prendas"><CaretRight size={16} weight="bold" /></button>
+        </>
+      )}
+    </div>
+  );
+}
+
 function GarmentMini({ item }) {
   return (
     <div className="garment-mini" title={item.name}>
-      <img src={item.thumbnail || item.image} alt="" />
+      <GarmentImage item={item} sizes="120px" />
       <span>{item.name}</span>
     </div>
   );
@@ -210,7 +258,7 @@ function OutfitCard({ outfit, onGenerate, onSave, busy, saved }) {
     <article className="tryon-look-card">
       <div className="tryon-look-visual">
         {outfit.image
-          ? <img className="generated-look" src={outfit.image} alt={`Prueba virtual de ${outfit.name}`} />
+          ? <img className="generated-look" src={engineUrl(outfit.image)} alt={`Prueba virtual de ${outfit.name}`} />
           : <div className="garment-composition">{outfit.garments.map((item) => <GarmentMini item={item} key={item.id} />)}</div>}
         <div className="match-score"><Sparkle size={12} weight="fill" /> {outfit.score}% compatible</div>
         <button className={`look-heart${saved ? " active" : ""}`} type="button" onClick={() => onSave(outfit)} aria-label="Guardá el look"><Heart size={18} weight={saved ? "fill" : "regular"} /></button>
@@ -237,12 +285,29 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
   const [count, setCount] = useState(6);
   const [suggestions, setSuggestions] = useState([]);
   const [savedOutfits, setSavedOutfits] = useState([]);
-  const [builder, setBuilder] = useState({});
+  // El builder arranca con el borrador que dejó la ficha de producto
+  // ("Agregar a mi outfit") y lo mantiene sincronizado para el camino inverso.
+  const [builder, setBuilder] = useState(() => {
+    const seeded = {};
+    for (const [part, value] of Object.entries(readDraft())) {
+      if (value && typeof value.id === "string") seeded[part] = value.id;
+    }
+    // Misma exclusividad que selectBuilderGarment: enterizo pisa superior+inferior.
+    if (seeded.wholebody) {
+      delete seeded.upperbody;
+      delete seeded.lowerbody;
+    }
+    return seeded;
+  });
+  useEffect(() => {
+    writeDraft(Object.fromEntries(Object.entries(builder).filter(([, id]) => id).map(([part, id]) => [part, { id }])));
+  }, [builder]);
   const [config, setConfig] = useState({ hasApiKey: false, hasModelReference: false, provider: "gemini", generationMode: "api", profile: null });
   const [modelDraft, setModelDraft] = useState(DEFAULT_MODEL);
   const [busyId, setBusyId] = useState(null);
   const [notice, setNotice] = useState("");
   const [error, setError] = useState("");
+  const [lookReady, setLookReady] = useState(null);
   const normalizedItems = useMemo(() => items.map(metadata), [items]);
   const modelGender = effectiveProfileGender(modelDraft);
   const genderItems = useMemo(() => normalizedItems.filter((item) => garmentFitsModel(item, modelGender)), [normalizedItems, modelGender]);
@@ -343,12 +408,16 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
       const complete = { ...generated, garments: generated.garmentIds.map((id) => normalizedItems.find((item) => item.id === id)).filter(Boolean) };
       setSuggestions((current) => current.map((item) => item.combinationKey === outfit.combinationKey ? { ...item, ...complete } : item));
       setSavedOutfits((current) => [...current.filter((item) => item.id !== generated.id), generated]);
-      setNotice(generated.status === "queued_chat"
-        ? "Tu prueba quedó en proceso. La imagen aparecerá acá cuando esté lista."
-        : "Tu prueba virtual está lista.");
+      if (generated.status === "queued_chat") {
+        setNotice("Tu prueba quedó en proceso. La imagen aparecerá acá cuando esté lista.");
+      } else {
+        setNotice("");
+        setLookReady({ name: complete.name });
+      }
     } catch (generationError) {
       console.error("No se pudo generar la prueba virtual", generationError);
-      setError(generationError.status === 400
+      if (generationError.status === 409) setSection("profile");
+      setError(generationError.status >= 400 && generationError.status < 500 && generationError.message
         ? generationError.message
         : "No pudimos generar tu prueba. Intentá nuevamente en unos minutos.");
       setNotice("");
@@ -364,7 +433,12 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
     });
   };
   const manualGarments = PARTS.map(([part]) => genderItems.find((item) => item.id === builder[part])).filter(Boolean);
-  const manualReady = Boolean(builder.wholebody || (builder.upperbody && builder.lowerbody));
+  const manualWhole = genderItems.find((item) => item.id === builder.wholebody) || null;
+  const manualWholeCoverage = manualWhole ? garmentCoverage(manualWhole) : null;
+  const manualReady = Boolean(
+    manualWholeCoverage === "full"
+    || (builder.upperbody && (builder.lowerbody || manualWholeCoverage === "bottom")),
+  );
   const manualOutfit = manualReady ? {
     id: `manual-${manualGarments.map((item) => item.id).join("-")}`,
     name: "Mi combinación",
@@ -410,7 +484,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
             <p>Evaluamos color, silueta, materiales, capas, ocasión, temporada y clima. Nunca mostramos dos combinaciones iguales.</p>
           </div>
           <div className="tryon-filterbar">
-            <label><span>Temporada</span><select value={filters.season} onChange={(event) => setFilters({ ...filters, season: event.target.value })}>{FILTERS.seasons.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
+            <label><span>Temporada</span><select value={filters.season} onChange={(event) => setFilters({ ...filters, season: event.target.value })}>{FILTERS.seasons.filter(([id]) => id === "all" || items.some((item) => item.season === id)).map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
             <label><span>Ocasión</span><select value={filters.occasion} onChange={(event) => setFilters({ ...filters, occasion: event.target.value })}>{FILTERS.occasions.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
             <label><span>Clima</span><select value={filters.climate} onChange={(event) => setFilters({ ...filters, climate: event.target.value })}>{FILTERS.climates.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
             <label><span>Cantidad</span><select value={count} onChange={(event) => setCount(Number(event.target.value))}>{[3, 6, 9, 12].map((value) => <option key={value} value={value}>{value} looks</option>)}</select></label>
@@ -433,10 +507,10 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
               {PARTS.map(([part, label]) => (
                 <fieldset key={part}>
                   <legend>{label} <small>{part === "wholebody" ? "alternativa" : (["upperbody", "lowerbody"].includes(part) ? "obligatorio sin vestido" : "opcional")}</small></legend>
-                  <div className="builder-options">
+                  <GarmentRail>
                     {!["upperbody", "lowerbody"].includes(part) && <button className={!builder[part] ? "active empty-option" : "empty-option"} type="button" onClick={() => selectBuilderGarment(part, null)}>Sin {label.toLowerCase()}</button>}
-                    {genderItems.filter((item) => item.part === part).map((item) => <button className={builder[part] === item.id ? "active" : ""} key={item.id} type="button" onClick={() => selectBuilderGarment(part, item.id)}><img src={item.thumbnail || item.image} alt="" /><span>{item.name}</span></button>)}
-                  </div>
+                    {genderItems.filter((item) => item.part === part).map((item) => <button className={builder[part] === item.id ? "active" : ""} key={item.id} type="button" onClick={() => selectBuilderGarment(part, item.id)}><GarmentImage item={item} sizes="120px" /><span>{item.name}</span></button>)}
+                  </GarmentRail>
                 </fieldset>
               ))}
             </div>
@@ -492,7 +566,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
               <div className="model-preset-grid">
                 {availablePresets.map((preset) => (
                   <button key={preset.id} className={`model-preset-card${selectedPreset.id === preset.id ? " active" : ""}`} type="button" onClick={() => selectPreset(preset)}>
-                    <img src={preset.thumbnail} alt="" loading="lazy" />
+                    <img src={engineUrl(preset.thumbnail)} alt="" loading="lazy" />
                     <span><strong>{preset.label}</strong><small>{preset.skinToneLabel}</small></span>
                     <em>{preset.appearance}</em>
                   </button>
@@ -540,7 +614,7 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
             <button className="tryon-primary" type="button" onClick={saveProfile}><Check size={17} /> Usá a {selectedPreset.label} y mirá combinaciones</button>
           </div>
           <div className="profile-image preset-profile-image ready" aria-live="polite">
-            <img key={`${selectedPreset.id}-${selectedStyle.id}`} src={selectedStyle.image} alt={`Modelo IA ${selectedPreset.label}: ${selectedPreset.appearance}, pelo ${selectedStyle.hairColorLabel} ${selectedStyle.hairTextureLabel}`} />
+            <img key={`${selectedPreset.id}-${selectedStyle.id}`} src={engineUrl(selectedStyle.image)} alt={`Modelo IA ${selectedPreset.label}: ${selectedPreset.appearance}, pelo ${selectedStyle.hairColorLabel} ${selectedStyle.hairTextureLabel}`} />
             <div className="preset-profile-caption">
               <span><Check weight="bold" /> Vista previa instantánea</span>
               <h3>{selectedPreset.label}</h3>
@@ -551,11 +625,34 @@ export function VirtualTryOn({ items, initialSection = "suggestions" }) {
         </section>
       )}
 
-      {!!compatibleSavedOutfits.filter((item) => item.image).length && section === "suggestions" && (
-        <section className="saved-looks">
+      {!!compatibleSavedOutfits.filter((item) => item.image).length && (section === "suggestions" || section === "builder") && (
+        <section className="saved-looks" id="looks-generados">
           <div><p>Tus pruebas</p><h2>Looks generados</h2></div>
-          <div>{compatibleSavedOutfits.filter((item) => item.image).map((outfit) => <figure key={outfit.id}><img src={outfit.image} alt={outfit.name} /><figcaption>{outfit.name}</figcaption></figure>)}</div>
+          <div>{compatibleSavedOutfits.filter((item) => item.image).map((outfit) => <figure key={outfit.id}><img src={engineUrl(outfit.image)} alt={outfit.name} /><figcaption>{outfit.name}</figcaption></figure>)}</div>
         </section>
+      )}
+
+      {lookReady && (
+        <div className="look-ready__backdrop" onClick={() => setLookReady(null)}>
+          <div className="look-ready" role="dialog" aria-modal="true" aria-labelledby="look-ready-title" onClick={(event) => event.stopPropagation()}>
+            <span className="look-ready__icon"><Check size={22} weight="bold" /></span>
+            <h3 id="look-ready-title">Se generó tu look</h3>
+            <p>{lookReady.name} ya está disponible en tus pruebas.</p>
+            <div className="look-ready__actions">
+              <button
+                className="tryon-primary"
+                type="button"
+                onClick={(event) => {
+                  // getRootNode(): embebida en Odoo vive dentro de un shadow root.
+                  const root = event.currentTarget.getRootNode();
+                  setLookReady(null);
+                  (root.getElementById ? root : document).getElementById("looks-generados")?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >Ver el look</button>
+              <button className="tryon-secondary" type="button" onClick={() => setLookReady(null)}>Seguir explorando</button>
+            </div>
+          </div>
+        </div>
       )}
     </main>
   );

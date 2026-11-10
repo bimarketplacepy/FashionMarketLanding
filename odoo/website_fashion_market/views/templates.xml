@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Categoría con la experiencia activada (o subcategoría): reemplaza la grilla
+         estándar. Las búsquedas y filtros siguen usando website_sale.products. -->
+    <template id="fashion_category" name="Fashion Market: categoría de moda">
+        <t t-call="website.layout">
+            <t t-set="additional_title" t-value="category.name"/>
+            <div id="wrap" class="o_fm_page">
+                <div class="oe_structure oe_empty" id="oe_structure_fm_category_top"/>
+                <fm-moda t-att-data-base="fm['base']" t-att-data-assets="fm['assets']" t-att-data-view="fm_view">
+                    <script type="application/json" class="fm-scope" t-out="fm_scope_json"/>
+                    <!-- Contenido del documento (no se ve con el widget cargado: queda fuera
+                         del shadow root). Sirve a buscadores y a quien navega sin JavaScript. -->
+                    <section class="fm-seo-list container py-5">
+                        <h1 class="h2 mb-4" t-out="category.name"/>
+                        <div t-if="category.website_description" t-field="category.website_description"/>
+                        <ul class="list-unstyled row">
+                            <li t-foreach="products" t-as="product" class="col-6 col-md-3 mb-3">
+                                <a t-att-href="product.website_url" t-out="product.name"/>
+                            </li>
+                        </ul>
+                        <p t-if="not products">Todavía no hay prendas publicadas en esta categoría.</p>
+                    </section>
+                </fm-moda>
+                <div class="oe_structure oe_empty" id="oe_structure_fm_category_bottom"/>
+            </div>
+            <link rel="preconnect" t-att-href="fm['assets']" crossorigin=""/>
+            <script type="module" t-att-src="fm['script']" crossorigin=""/>
+        </t>
+    </template>
+
+    <!-- Ficha de producto: "Probalo en un modelo" para las prendas del motor. -->
+    <template id="product_fm_probar" inherit_id="website_sale.product" name="Fashion Market: probalo en un modelo">
+        <xpath expr="//div[@id='o_wsale_product_details_content']" position="inside">
+            <t t-set="fm_probar" t-value="product._fm_probar_values()"/>
+            <t t-if="fm_probar">
+                <fm-probar t-att-data-base="fm_probar['base']" t-att-data-assets="fm_probar['assets']"
+                           t-att-data-garment="fm_probar['garment']" t-att-data-moda-url="fm_probar['moda_url']"/>
+                <script type="module" t-att-src="fm_probar['script']" crossorigin=""/>
+            </t>
+        </xpath>
+    </template>
+</odoo>

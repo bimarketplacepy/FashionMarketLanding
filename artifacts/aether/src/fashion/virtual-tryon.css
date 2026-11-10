@@ -60,15 +60,27 @@
 .tryon-empty button { background: #1b1d19; color: white; border: 0; padding: 13px 18px; cursor: pointer; }
 .builder-layout { display: grid; grid-template-columns: 1fr minmax(310px, .42fr); gap: 30px; align-items: start; }
 .builder-selectors { min-width: 0; }
-.builder-selectors fieldset { border: 0; border-top: 1px solid #c8c1b5; margin: 0; padding: 22px 0; }
+/* min-inline-size: 0 anula el min-content por defecto del fieldset; sin esto,
+   la fila de prendas ensancha la página entera en vez de scrollear adentro. */
+.builder-selectors fieldset { border: 0; border-top: 1px solid #c8c1b5; margin: 0; padding: 22px 0; min-inline-size: 0; }
 .builder-selectors legend { padding: 0 16px 0 0; font-family: Georgia, serif; font-size: 1.35rem; }
 .builder-selectors legend small { font-family: "Instrument Sans Variable", sans-serif; text-transform: uppercase; letter-spacing: .08em; font-size: .52rem; color: #77746d; }
-.builder-options { display: flex; gap: 10px; overflow-x: auto; padding: 4px 2px 8px; }
-.builder-options button { flex: 0 0 118px; height: 145px; border: 1px solid #d3ccc0; background: #f9f6f0; padding: 7px; display: flex; flex-direction: column; cursor: pointer; }
+.builder-rail { position: relative; min-width: 0; }
+.builder-rail__arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid #c8c1b5; border-radius: 50%; background: rgba(250, 247, 240, .96); color: #1b1d19; cursor: pointer; box-shadow: 0 4px 14px rgba(0, 0, 0, .14); }
+.builder-rail__arrow--left { left: -4px; }
+.builder-rail__arrow--right { right: -4px; }
+.builder-rail__arrow:disabled { opacity: .3; cursor: default; }
+.builder-options { display: flex; gap: 10px; overflow-x: auto; padding: 4px 2px 8px; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.builder-options::-webkit-scrollbar { display: none; }
+.builder-options > button { scroll-snap-align: start; }
+/* Todas las tarjetas ocupan exactamente el mismo campo: alto fijo, imagen de
+   alto fijo y nombre con espacio reservado de dos líneas (clamp + min-height),
+   así un nombre largo nunca agranda ni desalinea la tarjeta. */
+.builder-options button { flex: 0 0 118px; height: 164px; border: 1px solid #d3ccc0; background: #f9f6f0; padding: 7px; display: flex; flex-direction: column; cursor: pointer; overflow: hidden; }
 .builder-options button.active { outline: 2px solid #1b1d19; outline-offset: 1px; }
-.builder-options img { width: 100%; height: 106px; object-fit: contain; }
-.builder-options span { font-size: .62rem; margin-top: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.builder-options .empty-option { justify-content: center; align-items: center; height: 145px; color: #77736b; }
+.builder-options img { width: 100%; height: 102px; flex: 0 0 102px; object-fit: contain; }
+.builder-options span { font-size: .62rem; line-height: 1.3; margin-top: 6px; min-height: 2.6em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.builder-options .empty-option { justify-content: center; align-items: center; height: 164px; color: #77736b; }
 .builder-preview { position: sticky; top: 108px; background: #20221e; color: white; padding: 24px; }
 .builder-preview > p { text-transform: uppercase; letter-spacing: .12em; font-size: .58rem; color: #b4be89; }
 .builder-preview h3 { font-family: Georgia, serif; font-size: 1.7rem; font-weight: 400; margin: 0 0 18px; }
@@ -109,6 +121,14 @@
 .saved-looks figure { margin: 0; }
 .saved-looks img { width: 100%; aspect-ratio: 1; object-fit: cover; }
 .saved-looks figcaption { padding-top: 8px; font-size: .75rem; }
+.look-ready__backdrop { position: fixed; inset: 0; z-index: 120; background: rgba(27, 29, 25, .55); display: grid; place-items: center; padding: 20px; }
+.look-ready { background: #f4f0e8; color: #1b1d19; max-width: 380px; width: 100%; padding: 34px 30px 28px; text-align: center; box-shadow: 0 26px 70px rgba(0, 0, 0, .4); }
+.look-ready__icon { width: 46px; height: 46px; margin: 0 auto 16px; display: grid; place-items: center; border-radius: 50%; background: #747b50; color: #f6f1e8; }
+.look-ready h3 { margin: 0 0 8px; font-family: Georgia, serif; font-size: 1.7rem; font-weight: 400; letter-spacing: -.03em; }
+.look-ready p { margin: 0 0 22px; font-size: .82rem; line-height: 1.5; color: #55564e; }
+.look-ready__actions { display: flex; flex-direction: column; gap: 4px; }
+.look-ready__actions .tryon-primary { width: 100%; margin: 0; }
+.look-ready__actions .tryon-secondary { width: 100%; }
 @media (max-width: 1050px) {
   .tryon-look-grid { grid-template-columns: 1fr; }
   .tryon-catalog-grid { grid-template-columns: repeat(4, 1fr); }
@@ -229,4 +249,34 @@
   .model-preset-grid { grid-template-columns: 1fr; }
   .model-style-grid { grid-template-columns: 1fr 1fr; }
   .preset-profile-image { min-height: 560px; }
+}
+
+/* Probador compacto para teléfonos */
+@media (max-width: 560px) {
+  .tryon-header { padding: 24px 16px 14px; }
+  .tryon-header h1 { font-size: clamp(1.9rem, 9vw, 2.6rem); }
+  .tryon-tabs { padding: 0 16px; }
+  .tryon-tabs button { padding: 12px 11px; font-size: .8rem; }
+  .tryon-notice { margin: 14px 16px 0; }
+  .tryon-section { padding: 26px 16px 44px; }
+  .tryon-section-heading { margin-bottom: 22px; }
+  .tryon-section-heading h2, .profile-copy h2, .saved-looks h2 { font-size: clamp(1.6rem, 8vw, 2.2rem); }
+  .tryon-filterbar label { padding: 10px 12px; }
+  .tryon-primary, .tryon-secondary { min-height: 42px; }
+  .tryon-look-card, .tryon-look-visual { min-height: 0; }
+  .tryon-look-visual { aspect-ratio: 1; }
+  .profile-image { min-height: 340px; }
+  .preset-profile-image { min-height: 430px; }
+  .preset-profile-caption { inset: auto 10px 10px; padding: 11px 12px; }
+  .preset-profile-caption h3 { font-size: 1.4rem; }
+  .saved-looks { padding: 38px 16px 52px; }
+  .saved-looks > div:last-child { gap: 10px; margin-top: 20px; }
+  .look-ready { max-height: calc(100dvh - 40px); overflow-y: auto; padding: 26px 22px 22px; }
+  .builder-selectors fieldset { padding: 16px 0; }
+  .builder-selectors legend { font-size: 1.1rem; }
+  .builder-options button { flex-basis: 96px; height: 142px; padding: 6px; }
+  .builder-options img { height: 78px; flex-basis: 78px; }
+  .builder-options span { font-size: .58rem; }
+  .builder-options .empty-option { height: 142px; font-size: .68rem; }
+  .builder-rail__arrow { width: 30px; height: 30px; }
 }

@@ -8,6 +8,7 @@ import { GARMENT_TYPES, inferGarmentGender, normalizeGarmentType } from "../../s
 
 const TYPES = [
   { id: "upperbody", label: "Prendas superiores", singular: "Prenda superior" },
+  { id: "wholebody", label: "Vestidos y enterizos", singular: "Vestido o enterizo" },
   { id: "wholebody_up", label: "Abrigos", singular: "Abrigo" },
   { id: "lowerbody", label: "Prendas inferiores", singular: "Prenda inferior" },
   { id: "accessories_up", label: "Accesorios", singular: "Accesorio" },

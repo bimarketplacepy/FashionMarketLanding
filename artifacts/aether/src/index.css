@@ -1,8 +1,9 @@
 @import "tailwindcss";
+@import "@fontsource/italiana/400.css";
 
 @theme inline {
   --font-display: "Italiana", serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
 
 body {
@@ -19,3 +20,8 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+/* <picture> de GarmentImage: no altera el layout pensado para <img>. */
+.garment-picture { display: contents; }
+/* Con display: contents los <source> pasarían a ser ítems de grid/flex vacíos;
+   ocultarlos no cambia qué formato elige el navegador. */
+.garment-picture > source { display: none; }

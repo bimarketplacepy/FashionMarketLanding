@@ -1,632 +1,594 @@
 {
   "entries": {
-    "catalogo/remeras/remera-test.jpg": {
-      "status": "done",
-      "items": 1,
-      "at": "2026-07-28T14:44:24.444Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/CALZADOS/17841575_43720d06-fc7d-4ba9-935e-a8872084a0a2.jpg": {
-      "status": "done",
-      "items": 1,
-      "at": "2026-07-28T14:56:55.502Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/CALZADOS/19439429_c651e6cb-4110-45b4-83a6-8278704b86ac.jpg": {
-      "status": "done",
-      "items": 1,
-      "at": "2026-07-28T14:58:45.247Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/CALZADOS/19439458_cd77f9ab-c454-451d-9b98-b6de86d9996e.jpg": {
-      "status": "done",
-      "items": 1,
-      "at": "2026-07-28T14:59:02.826Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/CALZADOS/22673200_3e0572fc-e19b-484f-83c1-6ba7ff0ac5dd.jpg": {
-      "status": "done",
-      "items": 1,
-      "at": "2026-07-28T14:59:18.425Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/CALZADOS/22851204_b501ca2a-f6c6-4b07-af6b-5366effaeb26.jpg": {
-      "status": "done",
-      "items": 3,
-      "at": "2026-07-28T14:59:34.538Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/CALZADOS/24092913_05abe0fe-0c81-47c8-86b1-72d49dd9dca1.jpg": {
-      "status": "done",
-      "items": 1,
-      "at": "2026-07-28T14:59:46.848Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/1 FASHION/24025732_01e854aa-4326-42d8-abdf-0eaea2cda2b6.jpg": {
-      "status": "done",
-      "items": 3,
-      "at": "2026-07-28T15:00:29.414Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/1 FASHION/24206461_6e8ba188-a4a3-4ee0-b8dc-7b8a01e036b8.jpg": {
+    "local:fw2026/the workshop/20751995_47ae8fef-8395-4afd-8dc7-1569729540a9.png": {
       "status": "done",
       "items": 4,
-      "at": "2026-07-28T15:00:47.774Z"
+      "at": "2026-08-03T19:31:53.047Z"
     },
-    "FOTOS SELECCIONADAS FW2026/1 FASHION/24718394_38183b3a-7c25-4e45-8cf5-3438398dace3.jpg": {
+    "local:fw2026/the workshop/21869551_3807e738-49f4-4064-b14b-d826a65203ff.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:32:34.775Z"
+    },
+    "local:fw2026/the workshop/22392802_0a1c2523-4020-4beb-a489-a9cf65982df1.png": {
       "status": "done",
       "items": 4,
-      "at": "2026-07-28T15:01:10.037Z"
+      "at": "2026-08-03T19:33:22.013Z"
     },
-    "FOTOS SELECCIONADAS FW2026/1 FASHION/24718403_241c6688-e1b2-4a6f-b249-1f8ff0d3d42e.jpg": {
-      "status": "done",
-      "items": 3,
-      "at": "2026-07-28T15:01:29.412Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/1 FASHION/24782892_40f0b9d2-e0f7-41ad-8f8c-b8ac1c4bedcb.jpg": {
+    "local:fw2026/the workshop/22498500_6b54fb5e-31b8-4f58-abc5-a04289adcff9.png": {
       "status": "done",
       "items": 2,
-      "at": "2026-07-28T15:01:46.461Z"
+      "at": "2026-08-03T19:33:49.783Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/22010644_d9a1965d-f35a-4fdc-a4f7-c274dd310b05.jpg": {
+    "local:fw2026/the workshop/22789520_b1a6e13a-9cf7-44d2-a3a3-226949d7b80a.png": {
       "status": "done",
       "items": 3,
-      "at": "2026-07-28T15:02:05.585Z"
+      "at": "2026-08-03T19:34:31.855Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/22400751_77ba90c3-b0bd-4cc1-ac0e-1c540dba5333.jpg": {
+    "local:fw2026/the workshop/23585156_ab152c93-705a-468c-96e9-0a44e4d1a414.png": {
       "status": "done",
-      "items": 5,
-      "at": "2026-07-28T15:02:27.348Z"
+      "items": 2,
+      "at": "2026-08-03T19:35:00.941Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/22880442_147e3a85-6ffe-4b07-b2c3-3939344fed48.jpg": {
+    "local:fw2026/the workshop/24127226_28a6c51b-a3ac-4fc2-a435-0966f2ea5759.png": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-08-03T19:35:24.637Z"
+    },
+    "local:fw2026/the workshop/24169448_34564db3-a306-4a8f-b59a-d7667938f19d.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:36:00.532Z"
+    },
+    "local:fw2026/the workshop/24169463_05851294-d3c5-48e3-a333-251a2dc16f3a.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:36:30.758Z"
+    },
+    "local:fw2026/the workshop/24175302_15430d0e-67d5-4540-9386-bbf21fb21e8f.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:36:59.003Z"
+    },
+    "local:fw2026/the workshop/24251372_240c06be-6650-4296-91b0-09ed10e2369b.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:37:27.910Z"
+    },
+    "local:fw2026/sunday edition/24508422_6615e809-4548-49a6-92ea-ed10e676be5e.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:38:13.068Z"
+    },
+    "local:fw2026/sunday edition/24562566_486dfbd1-2021-4cef-8bcb-93e64bc3f8d5.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:38:45.385Z"
+    },
+    "local:fw2026/soli echo/24800408_2149d30a-0086-4550-8161-323f8521edbc.png": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-08-03T19:39:03.906Z"
+    },
+    "local:fw2026/soli echo/24807315_00a63179-ae1e-47fd-ac53-71af6f794776.png": {
       "status": "done",
       "items": 4,
-      "at": "2026-07-28T15:02:50.823Z"
+      "at": "2026-08-03T19:39:52.992Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/24085298_72b3f2e9-04ae-4a9f-9764-4865d45e5d20.jpg": {
+    "local:fw2026/salty/23971012_6ad6ac4b-e98e-422b-8b4a-bd4b2842a50c.png": {
       "status": "done",
       "items": 3,
-      "at": "2026-07-28T15:03:11.457Z"
+      "at": "2026-08-03T19:40:34.549Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/24102033_692674d4-b080-419a-a31c-a0d19ffc7ff4.jpg": {
+    "local:fw2026/salty/24337705_2433908f-2d82-4a4c-9efb-7b4fb99a44c4.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:41:17.248Z"
+    },
+    "local:fw2026/salty/24844036_083a2842-9080-4e40-be3a-cceaf9b9112c.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:41:53.983Z"
+    },
+    "local:fw2026/salty/388886e4-f946-4ca7-b33c-04ccd10ad615.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:42:35.750Z"
+    },
+    "local:fw2026/salty/7029785e-9eb4-4019-b45c-43e7f91bdef4.png": {
       "status": "done",
       "items": 2,
-      "at": "2026-07-28T15:03:33.548Z"
+      "at": "2026-08-03T19:43:06.593Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/24122274_1f862151-5054-4fce-a8d8-120efde49835.jpg": {
-      "status": "done",
-      "items": 3,
-      "at": "2026-07-28T15:03:52.221Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/24231191_50bb11f3-4582-43ca-bf98-ed6bc7db0a5e.jpg": {
-      "status": "done",
-      "items": 3,
-      "at": "2026-07-28T15:04:13.785Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/24323984_7fdc990b-c7fa-4a30-8ea6-db03936809fd.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:50.502Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/24451191_339efb39-738b-4083-a51c-d961a48a45b8.jpg": {
-      "status": "done",
-      "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:50.553Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/24515712_06392d18-495d-4bf9-b22d-abf8afa5145d.jpg": {
+    "local:fw2026/salty/cd987e97-145b-4671-899a-ee48de879e7a.png": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:50.645Z"
+      "at": "2026-08-03T19:43:35.036Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/24562322_0721833d-0b13-42bc-98af-b475f8d4fb7b.jpg": {
+    "local:fw2026/salty/d3a7d0ac-9ce6-447f-b9fd-35d3e81110ab.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:44:20.765Z"
+    },
+    "local:fw2026/risen jeans/22177127_6eaf8401-9a1b-4ca0-a346-a737ec9a88b7.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:45:02.026Z"
+    },
+    "local:fw2026/risen jeans/24365083_2dc001a6-288b-479d-8f86-c5082b18093a.png": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:50.727Z"
+      "at": "2026-08-03T19:45:32.384Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/4ea38bfe-ac59-4d16-bb95-c7d249228282.jpg": {
+    "local:fw2026/risen jeans/24451397_7df253a1-f9e7-4263-ad79-1a2b98e30004.png": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:50.822Z"
+      "at": "2026-08-03T19:46:07.443Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/626ada6a-494c-4760-ad16-fdaa1ff68bd9.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:50.973Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/72db72ef-a833-4c79-b78c-b07ddddbc4e9.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:51.119Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/9aa00321-d448-431d-b427-94352f05c3f8.jpg": {
+    "local:fw2026/risen jeans/24594431_53d1d977-8b35-4154-88d8-121ae92cd0fc.png": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:51.221Z"
+      "at": "2026-08-03T19:46:37.572Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/9f2c4005-241f-4f9f-9e7a-3e844170e5a8.jpg": {
-      "status": "done",
-      "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:51.284Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/b43d3791-3d97-4b40-8362-d68ea1c1af37.jpg": {
+    "local:fw2026/organic/24458918_05296434-1918-4b3e-b222-4e6c25052990.png": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:51.379Z"
+      "at": "2026-08-03T19:47:05.257Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/cc3239e4-961d-47bd-8763-05b34f02390a.jpg": {
+    "local:fw2026/mine/18706160_18f2f3ea-eb45-40af-81d2-f992a05cfb30.png": {
       "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:51.521Z"
+      "items": 4,
+      "at": "2026-08-03T19:47:54.574Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/dea4a00b-d175-41ee-ae32-7c90dae87bca.jpg": {
+    "local:fw2026/mine/22074345_1bee6e83-61e9-47d7-8dda-a5bf96e05dd1.png": {
       "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:51.655Z"
+      "items": 2,
+      "at": "2026-08-03T19:48:23.732Z"
     },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/e5917fce-2d7e-4f37-a63e-a875fef2e652.jpg": {
-      "status": "done",
-      "items": 5,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:51.857Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/e9a0f3cb-deb9-4191-9ab7-669b6e683e5c.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:51.974Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/BLUPEPPER - CASUAL/model-reference.png": {
+    "local:fw2026/mine/22156050_358837c9-69f8-49a1-93d2-c8ffb7055ebb.png": {
       "status": "failed",
-      "error": "Internal server error",
-      "at": "2026-07-28T15:06:22.655Z"
+      "error": "fetch failed",
+      "at": "2026-08-03T19:48:32.617Z"
     },
-    "FOTOS SELECCIONADAS FW2026/DE VAVE/23066840_07798474-70a0-4ab0-9f37-48cb2dabae6a.jpg": {
+    "local:fw2026/mine/22958279_b561eef4-0180-4f6c-b9c5-eef367a8b03f.png": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.030Z"
+      "at": "2026-08-03T19:49:01.936Z"
     },
-    "FOTOS SELECCIONADAS FW2026/DE VAVE/24227521_8a5734d8-cd87-4576-9296-e1d94098b363.jpg": {
+    "local:fw2026/mine/23070295_004cd4f6-e7f1-4214-a41b-232974da2e1f.png": {
       "status": "done",
       "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.050Z"
+      "at": "2026-08-03T19:49:19.840Z"
     },
-    "FOTOS SELECCIONADAS FW2026/DE VAVE/24864095_070512f1-7308-4e4c-9a2b-1fc2c6e60027.jpg": {
-      "status": "done",
-      "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.075Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/EMORY PARK FW 2026 - PARTY/24111798_1bee4e01-2a9e-4fb9-9b15-73a9ca8a1683.jpg": {
+    "local:fw2026/mine/23071117_545dd33a-1a48-4545-9335-9ac3ae98067b.png": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.135Z"
+      "at": "2026-08-03T19:49:48.549Z"
     },
-    "FOTOS SELECCIONADAS FW2026/EMORY PARK FW 2026 - PARTY/24268976_0554b3ff-c171-4d51-a870-4efb23739968.jpg": {
+    "local:fw2026/mine/23100829_130ec2cd-72ae-4f30-826d-522bc943662b.png": {
+      "status": "failed",
+      "error": "fetch failed",
+      "at": "2026-08-03T19:49:57.975Z"
+    },
+    "local:fw2026/mine/23843849_07e8b3d5-ecde-465a-b403-1faa78df6f54.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:50:29.496Z"
+    },
+    "local:fw2026/iris casual/24199799_f706df4f-661f-4f7e-883d-12ed58c06139.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:50:58.755Z"
+    },
+    "local:fw2026/iris casual/24450787_97003407-7fdf-4a25-b4ea-28dab4926b38.png": {
       "status": "done",
       "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.233Z"
+      "at": "2026-08-03T19:51:35.627Z"
     },
-    "FOTOS SELECCIONADAS FW2026/EMORY PARK FW 2026 - PARTY/24269041_04d2429c-bec8-4e2b-b617-42e2b778636f.jpg": {
-      "status": "done",
-      "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.270Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/EMORY PARK FW 2026 - PARTY/24310983_24157184-5cb9-412f-b7f6-ccbe7986e74f.jpg": {
+    "local:fw2026/iris casual/24646170_589cad4c-2907-4a8e-90d2-7d19fa60b5f3.png": {
       "status": "done",
       "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.339Z"
+      "at": "2026-08-03T19:52:13.844Z"
     },
-    "FOTOS SELECCIONADAS FW2026/FAME ACCESORIOS/21898109_1e5b0b8a-d349-4ba9-9fee-06d714a364fb.jpg": {
+    "local:fw2026/iris casual/24687520_6daec21a-0bd1-4460-b3a4-ad5d2b098db0.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:52:42.594Z"
+    },
+    "local:fw2026/iris casual/24768372_068fdaed-309d-403b-9799-2e7558242f79.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:53:15.310Z"
+    },
+    "local:fw2026/hyfve fw 2026/0167c24b-a011-4fbc-9e2f-452b59df322c.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:54:00.078Z"
+    },
+    "local:fw2026/hyfve fw 2026/2bf2c432-6a9e-4f1e-8728-b0897543c9f1.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:54:42.580Z"
+    },
+    "local:fw2026/hyfve fw 2026/2fd546a7-f3b3-4c73-9456-e15db4fbd445.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:55:14.457Z"
+    },
+    "local:fw2026/hyfve fw 2026/3a638d8d-616a-483c-b682-883280513744.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:55:59.201Z"
+    },
+    "local:fw2026/hyfve fw 2026/3ffeb310-3d67-46cc-ba0a-6afac0f3bea2.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:56:34.728Z"
+    },
+    "local:fw2026/hyfve fw 2026/4cb3a83a-1c26-40fa-a91c-2a6c93c54499.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:57:04.630Z"
+    },
+    "local:fw2026/hyfve fw 2026/8fbe9f37-1c3a-4c79-9d3c-105d34f87a75.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T19:57:39.497Z"
+    },
+    "local:fw2026/hyfve fw 2026/c261c314-9c8a-4d7a-bb6c-2e68bb475860.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:58:23.820Z"
+    },
+    "local:fw2026/hyfve fw 2026/cc9f28aa-e9c1-4f1d-b090-2deced41fe18.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:59:10.512Z"
+    },
+    "local:fw2026/hyfve fw 2026/fc9bb4b5-0245-4b9d-a3ed-e2e579857a1f.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T19:59:50.223Z"
+    },
+    "local:fw2026/gilli/24258964_8f239716-e5ca-48fe-aefb-9694e424eb75.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T20:00:20.480Z"
+    },
+    "local:fw2026/gilli/24476552_1831b4c2-11bb-4599-bc56-8c03692c9e93.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T20:01:05.042Z"
+    },
+    "local:fw2026/gigio/21673405_0cc231ac-ee30-47eb-b0d0-6d1044738e41.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T20:01:37.216Z"
+    },
+    "local:fw2026/gigio/22749490_7c92d81c-f514-45ac-86c8-4dd36bc44d46.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T20:02:05.452Z"
+    },
+    "local:fw2026/gigio/22960727_4025cdb2-5929-49f1-ad93-4f08e9dfc571.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T20:02:49.743Z"
+    },
+    "local:fw2026/gigio/23481702_128085ef-5fae-4e48-a60d-20d9ffc29a15.png": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-08-03T20:03:34.548Z"
+    },
+    "local:fw2026/gigio/23600872_21a6e7b4-ca30-423e-9d8a-55ed9ba058cb.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T20:04:02.940Z"
+    },
+    "local:fw2026/gigio/24169083_3051a2d5-c71d-41f6-970c-0d4ad27aec63.png": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-08-03T20:04:31.959Z"
+    },
+    "local:fw2026/fame accesorios/21898109_1e5b0b8a-d349-4ba9-9fee-06d714a364fb.png": {
       "status": "done",
       "items": 4,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.506Z"
+      "at": "2026-08-03T20:05:17.912Z"
     },
-    "FOTOS SELECCIONADAS FW2026/FAME ACCESORIOS/22378902_e3fdf8da-58f6-437c-b51c-1c2cd2750610.jpg": {
+    "local:fw2026/fame accesorios/22378902_e3fdf8da-58f6-437c-b51c-1c2cd2750610.png": {
       "status": "done",
       "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.554Z"
+      "at": "2026-08-03T20:05:38.129Z"
     },
-    "FOTOS SELECCIONADAS FW2026/FAME ACCESORIOS/22654896_b7779ad1-424e-4e7f-979d-4d4b66a7322b.jpg": {
+    "local:fw2026/fame accesorios/22654896_b7779ad1-424e-4e7f-979d-4d4b66a7322b.png": {
       "status": "done",
       "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.598Z"
+      "at": "2026-08-03T20:05:57.529Z"
     },
-    "FOTOS SELECCIONADAS FW2026/FAME ACCESORIOS/23741212_22194922-e802-47c7-9b61-1314fc2695e4.jpg": {
+    "local:fw2026/fame accesorios/23741212_22194922-e802-47c7-9b61-1314fc2695e4.png": {
       "status": "done",
       "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.638Z"
+      "at": "2026-08-03T20:06:21.820Z"
     },
-    "FOTOS SELECCIONADAS FW2026/FAME ACCESORIOS/24409544_e8dae511-f348-460a-9022-6f0cfefbf71c.jpg": {
+    "local:fw2026/fame accesorios/24409544_e8dae511-f348-460a-9022-6f0cfefbf71c.png": {
       "status": "done",
       "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.720Z"
+      "at": "2026-08-03T20:06:59.801Z"
     },
-    "FOTOS SELECCIONADAS FW2026/FAME ACCESORIOS/24696168_0e9cb824-d30d-4f07-a3b7-996976cf9758.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.849Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/FAME ACCESORIOS/24790047_7b8d143b-fe0f-46fd-8ce2-af6ac76aa9e2.jpg": {
+    "local:fw2026/fame accesorios/24696168_0e9cb824-d30d-4f07-a3b7-996976cf9758.png": {
       "status": "done",
       "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.894Z"
+      "at": "2026-08-03T20:07:18.461Z"
     },
-    "FOTOS SELECCIONADAS FW2026/FAME ACCESORIOS/24790150_b7a242d5-f610-4210-a9ef-b97754aa8914.jpg": {
+    "local:fw2026/fame accesorios/24790047_7b8d143b-fe0f-46fd-8ce2-af6ac76aa9e2.png": {
       "status": "done",
       "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.950Z"
+      "at": "2026-08-03T20:07:38.542Z"
     },
-    "FOTOS SELECCIONADAS FW2026/FAME ACCESORIOS/24851949_9224dd38-f714-40f7-82c9-492dd05c6eec.jpg": {
+    "local:fw2026/fame accesorios/24790150_b7a242d5-f610-4210-a9ef-b97754aa8914.png": {
       "status": "done",
       "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:52.968Z"
+      "at": "2026-08-03T20:08:01.438Z"
     },
-    "FOTOS SELECCIONADAS FW2026/GIGIO (LOOKS SEÑORAS)/21673405_0cc231ac-ee30-47eb-b0d0-6d1044738e41.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.033Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/GIGIO (LOOKS SEÑORAS)/22749490_7c92d81c-f514-45ac-86c8-4dd36bc44d46.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.160Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/GIGIO (LOOKS SEÑORAS)/22960727_4025cdb2-5929-49f1-ad93-4f08e9dfc571.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.270Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/GIGIO (LOOKS SEÑORAS)/23481702_128085ef-5fae-4e48-a60d-20d9ffc29a15.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.348Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/GIGIO (LOOKS SEÑORAS)/23600872_21a6e7b4-ca30-423e-9d8a-55ed9ba058cb.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.434Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/GIGIO (LOOKS SEÑORAS)/24169083_3051a2d5-c71d-41f6-970c-0d4ad27aec63.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.511Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/GILLI - SEÑORA/24258964_8f239716-e5ca-48fe-aefb-9694e424eb75.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.612Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/GILLI - SEÑORA/24476552_1831b4c2-11bb-4599-bc56-8c03692c9e93.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.694Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/HYFVE FW 2026/0167c24b-a011-4fbc-9e2f-452b59df322c.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.805Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/HYFVE FW 2026/2bf2c432-6a9e-4f1e-8728-b0897543c9f1.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.927Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/HYFVE FW 2026/2fd546a7-f3b3-4c73-9456-e15db4fbd445.jpg": {
+    "local:fw2026/fame accesorios/24851949_9224dd38-f714-40f7-82c9-492dd05c6eec.png": {
       "status": "done",
       "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:53.970Z"
+      "at": "2026-08-03T20:08:19.478Z"
     },
-    "FOTOS SELECCIONADAS FW2026/HYFVE FW 2026/3a638d8d-616a-483c-b682-883280513744.jpg": {
+    "local:fw2026/emory park fw 2026/24111798_1bee4e01-2a9e-4fb9-9b15-73a9ca8a1683.png": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.045Z"
+      "at": "2026-08-03T20:08:49.853Z"
     },
-    "FOTOS SELECCIONADAS FW2026/HYFVE FW 2026/3ffeb310-3d67-46cc-ba0a-6afac0f3bea2.jpg": {
+    "local:fw2026/emory park fw 2026/24268976_0554b3ff-c171-4d51-a870-4efb23739968.png": {
       "status": "done",
       "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.148Z"
+      "at": "2026-08-03T20:09:33.013Z"
     },
-    "FOTOS SELECCIONADAS FW2026/HYFVE FW 2026/4cb3a83a-1c26-40fa-a91c-2a6c93c54499.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.247Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/HYFVE FW 2026/8fbe9f37-1c3a-4c79-9d3c-105d34f87a75.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.345Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/HYFVE FW 2026/c261c314-9c8a-4d7a-bb6c-2e68bb475860.jpg": {
+    "local:fw2026/emory park fw 2026/24269041_04d2429c-bec8-4e2b-b617-42e2b778636f.png": {
       "status": "done",
       "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.436Z"
+      "at": "2026-08-03T20:10:19.947Z"
     },
-    "FOTOS SELECCIONADAS FW2026/HYFVE FW 2026/cc9f28aa-e9c1-4f1d-b090-2deced41fe18.jpg": {
+    "local:fw2026/emory park fw 2026/24310983_24157184-5cb9-412f-b7f6-ccbe7986e74f.png": {
       "status": "done",
       "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.521Z"
+      "at": "2026-08-03T20:11:00.029Z"
     },
-    "FOTOS SELECCIONADAS FW2026/HYFVE FW 2026/fc9bb4b5-0245-4b9d-a3ed-e2e579857a1f.jpg": {
+    "local:fw2026/de vave/23066840_07798474-70a0-4ab0-9f37-48cb2dabae6a.png": {
       "status": "done",
       "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.604Z"
+      "at": "2026-08-03T20:11:42.039Z"
     },
-    "FOTOS SELECCIONADAS FW2026/IRIS CASUAL/24199799_f706df4f-661f-4f7e-883d-12ed58c06139.jpg": {
+    "local:fw2026/de vave/24227521_8a5734d8-cd87-4576-9296-e1d94098b363.png": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-08-03T20:12:03.849Z"
+    },
+    "local:fw2026/de vave/24864095_070512f1-7308-4e4c-9a2b-1fc2c6e60027.png": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-08-03T20:12:22.695Z"
+    },
+    "17841575_43720d06-fc7d-4ba9-935e-a8872084a0a2.jpg": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-08-05T17:39:49.241Z"
+    },
+    "19439429_c651e6cb-4110-45b4-83a6-8278704b86ac.jpg": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-08-05T17:40:10.746Z"
+    },
+    "19439458_cd77f9ab-c454-451d-9b98-b6de86d9996e.jpg": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-08-05T17:40:30.533Z"
+    },
+    "22673200_3e0572fc-e19b-484f-83c1-6ba7ff0ac5dd.jpg": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-08-05T17:40:49.517Z"
+    },
+    "22851204_b9ce091a-ba35-4a19-afc1-6955dc352f8b.jpg": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-08-05T17:41:08.681Z"
+    },
+    "24092913_914a6f7c-6f4c-499e-bb71-4b878b763146.jpg": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-08-05T17:41:27.932Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/03535ad0-3d7a-42d3-840b-b4b8fd0530e4.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.718Z"
+      "at": "2026-09-29T18:59:20.108Z"
     },
-    "FOTOS SELECCIONADAS FW2026/IRIS CASUAL/24450787_97003407-7fdf-4a25-b4ea-28dab4926b38.jpg": {
+    "local:SS26/SUNDAY BRUNCH/08376e86-5780-4a69-97fd-ac075c270e27.jpg": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-09-29T19:00:11.455Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/0a59df86-94a3-4851-a1b2-4954bc020e9f.jpg": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-09-29T19:01:00.927Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/0f3fcdc2-6961-4848-b37b-75b040e6f188.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.777Z"
+      "at": "2026-09-29T19:01:34.075Z"
     },
-    "FOTOS SELECCIONADAS FW2026/IRIS CASUAL/24646170_589cad4c-2907-4a8e-90d2-7d19fa60b5f3.jpg": {
+    "local:SS26/SUNDAY BRUNCH/1003e80b-1fde-451e-a702-802acbf1043b.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.849Z"
+      "at": "2026-09-29T19:02:12.316Z"
     },
-    "FOTOS SELECCIONADAS FW2026/IRIS CASUAL/24687520_6daec21a-0bd1-4460-b3a4-ad5d2b098db0.jpg": {
+    "local:SS26/SUNDAY BRUNCH/12f81d37-39f8-4db7-9b69-7a461648bacc.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.920Z"
+      "at": "2026-09-29T19:02:46.783Z"
     },
-    "FOTOS SELECCIONADAS FW2026/IRIS CASUAL/24768372_068fdaed-309d-403b-9799-2e7558242f79.jpg": {
+    "local:SS26/SUNDAY BRUNCH/1533bcbb-86f7-42f3-9162-664aa0b07000.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:54.978Z"
+      "at": "2026-09-29T19:03:28.115Z"
     },
-    "FOTOS SELECCIONADAS FW2026/MINE - SEÑORA CASUAL/18706160_18f2f3ea-eb45-40af-81d2-f992a05cfb30.jpg": {
+    "local:SS26/SUNDAY BRUNCH/15d84942-85a2-4f82-984f-584c39f40538.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:04:06.501Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/16a70ad6-1175-4ac1-82da-19d32f960497.jpg": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-09-29T19:04:53.477Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/17fa28ff-e914-43fc-b7dd-4d4807ca66ab.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:05:29.365Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/25343083_16ecbf75-0dfc-4b57-b148-9f0d87c04700.jpg": {
+      "status": "done",
+      "items": 1,
+      "at": "2026-09-29T19:05:54.142Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/25343083_222b4401-4f61-48b5-ba39-299cd6dae516.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:06:30.924Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/25343083_2555103c-f381-4737-8e7c-52bf8c6fd01a.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:07:11.290Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/25344396_584f67bf-0257-4d58-8e7a-0386a53f6486.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:07:49.599Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/25638114_3eb020b0-1d62-432d-a9bb-f79c01149b0a.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:08:29.562Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/25638114_ac215de9-5951-45e8-b2fa-a70677cd7593.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:09:11.481Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/25748457_3db32fe7-ca83-4105-b32a-b2a071fdf5df.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:10:56.413Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/25748457_d94e4b5d-c7c7-41d3-bf9e-122a02c7a6d3.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:11:28.667Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/26f45e07-1856-4fb1-86b9-5672eccbe61a.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:12:07.753Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/317a798b-5d4c-4e7b-84e0-55a501149285.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:12:43.668Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/3f78ab3b-b464-4432-b378-91835544dd2f.jpg": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-09-29T19:13:27.561Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/42f81bfa-154a-43a9-a9ef-cbd215266876.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:14:04.940Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/4b33b581-f794-4bd4-9f56-685f24e782a3.jpg": {
+      "status": "done",
+      "items": 3,
+      "at": "2026-09-29T19:14:51.312Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/4f923a30-5807-4a69-9f61-d6e5271fb97d.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:15:32.993Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/5041e3d4-bf2a-4726-bbd6-06520caa4e9e.jpg": {
       "status": "done",
       "items": 4,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.160Z"
+      "at": "2026-09-29T19:16:33.104Z"
     },
-    "FOTOS SELECCIONADAS FW2026/MINE - SEÑORA CASUAL/22074345_1bee6e83-61e9-47d7-8dda-a5bf96e05dd1.jpg": {
+    "local:SS26/SUNDAY BRUNCH/547cd73f-2bde-4c13-b839-4c05e6b739a8.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.250Z"
+      "at": "2026-09-29T19:17:08.134Z"
     },
-    "FOTOS SELECCIONADAS FW2026/MINE - SEÑORA CASUAL/22156050_358837c9-69f8-49a1-93d2-c8ffb7055ebb.jpg": {
+    "local:SS26/SUNDAY BRUNCH/5b5c2012-5675-4015-ad02-934f1a4b892c.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.318Z"
+      "at": "2026-09-29T19:17:44.130Z"
     },
-    "FOTOS SELECCIONADAS FW2026/MINE - SEÑORA CASUAL/22958279_b561eef4-0180-4f6c-b9c5-eef367a8b03f.jpg": {
+    "local:SS26/SUNDAY BRUNCH/600c621f-d39f-4e14-a028-140bf3f04406.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.418Z"
+      "at": "2026-09-29T19:18:17.690Z"
     },
-    "FOTOS SELECCIONADAS FW2026/MINE - SEÑORA CASUAL/23070295_004cd4f6-e7f1-4214-a41b-232974da2e1f.jpg": {
-      "status": "done",
-      "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.483Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/MINE - SEÑORA CASUAL/23071117_545dd33a-1a48-4545-9335-9ac3ae98067b.jpg": {
+    "local:SS26/SUNDAY BRUNCH/6e8c96ed-b2f6-4061-938b-50b603f424ae.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.572Z"
+      "at": "2026-09-29T19:18:51.792Z"
     },
-    "FOTOS SELECCIONADAS FW2026/MINE - SEÑORA CASUAL/23100829_130ec2cd-72ae-4f30-826d-522bc943662b.jpg": {
+    "local:SS26/SUNDAY BRUNCH/71c4881b-dcb1-4e34-a60a-98bc267e343a.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.640Z"
+      "at": "2026-09-29T19:19:25.793Z"
     },
-    "FOTOS SELECCIONADAS FW2026/MINE - SEÑORA CASUAL/23843849_07e8b3d5-ecde-465a-b403-1faa78df6f54.jpg": {
+    "local:SS26/SUNDAY BRUNCH/789bc1ed-2b91-41c3-aa59-eff53f3b89aa.jpg": {
       "status": "done",
-      "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.687Z"
+      "items": 2,
+      "at": "2026-09-29T19:20:03.388Z"
     },
-    "FOTOS SELECCIONADAS FW2026/ORGANIC (CORTAR CARA)/24458918_05296434-1918-4b3e-b222-4e6c25052990.jpg": {
+    "local:SS26/SUNDAY BRUNCH/7b81490e-158f-4f98-b0d1-9ae35c315c41.jpg": {
       "status": "done",
-      "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.730Z"
+      "items": 2,
+      "at": "2026-09-29T19:20:36.638Z"
     },
-    "FOTOS SELECCIONADAS FW2026/RISEN JEANS/22177127_6eaf8401-9a1b-4ca0-a346-a737ec9a88b7.jpg": {
+    "local:SS26/SUNDAY BRUNCH/7e934723-e450-46a4-9d79-e1e94c07cd3f.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:21:13.878Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/8459abdb-9995-4ef2-b656-cfee592f801c.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:21:49.945Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/84ea50b4-e225-4a7a-8597-cf59adf8d8e5.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:22:26.754Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/88757b6e-0bc2-4ad7-9d87-08c5ab2d5f68.jpg": {
+      "status": "done",
+      "items": 2,
+      "at": "2026-09-29T19:25:40.279Z"
+    },
+    "local:SS26/SUNDAY BRUNCH/88d0662c-731b-47b3-95b0-3185dae9010f.jpg": {
       "status": "done",
       "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.821Z"
+      "at": "2026-09-29T19:26:34.694Z"
     },
-    "FOTOS SELECCIONADAS FW2026/RISEN JEANS/24365083_2dc001a6-288b-479d-8f86-c5082b18093a.jpg": {
-      "status": "done",
-      "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.865Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/RISEN JEANS/24451397_7df253a1-f9e7-4263-ad79-1a2b98e30004.jpg": {
+    "local:SS26/SUNDAY BRUNCH/8b87725c-665b-48fd-88ab-c3913c3fa92c.jpg": {
       "status": "done",
       "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:55.935Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/RISEN JEANS/24594431_53d1d977-8b35-4154-88d8-121ae92cd0fc.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.000Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SALTY (PARTY ELIMINAR FONDO, ACLARAR PIEL)/23971012_6ad6ac4b-e98e-422b-8b4a-bd4b2842a50c.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.114Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SALTY (PARTY ELIMINAR FONDO, ACLARAR PIEL)/24337705_2433908f-2d82-4a4c-9efb-7b4fb99a44c4.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.254Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SALTY (PARTY ELIMINAR FONDO, ACLARAR PIEL)/24844036_083a2842-9080-4e40-be3a-cceaf9b9112c.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.336Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SALTY (PARTY ELIMINAR FONDO, ACLARAR PIEL)/388886e4-f946-4ca7-b33c-04ccd10ad615.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.462Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SALTY (PARTY ELIMINAR FONDO, ACLARAR PIEL)/7029785e-9eb4-4019-b45c-43e7f91bdef4.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.535Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SALTY (PARTY ELIMINAR FONDO, ACLARAR PIEL)/cd987e97-145b-4671-899a-ee48de879e7a.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.613Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SALTY (PARTY ELIMINAR FONDO, ACLARAR PIEL)/d3a7d0ac-9ce6-447f-b9fd-35d3e81110ab.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.724Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SOLI ECHO/24800408_2149d30a-0086-4550-8161-323f8521edbc.jpg": {
-      "status": "done",
-      "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.760Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SOLI ECHO/24807315_00a63179-ae1e-47fd-ac53-71af6f794776.jpg": {
-      "status": "done",
-      "items": 4,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.911Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/24508422_6615e809-4548-49a6-92ea-ed10e676be5e.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:56.997Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/24562566_486dfbd1-2021-4cef-8bcb-93e64bc3f8d5.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.085Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/20751995_47ae8fef-8395-4afd-8dc7-1569729540a9.jpg": {
-      "status": "done",
-      "items": 4,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.229Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/21869551_3807e738-49f4-4064-b14b-d826a65203ff.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.332Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/22392802_0a1c2523-4020-4beb-a489-a9cf65982df1.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.408Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/22498500_6b54fb5e-31b8-4f58-abc5-a04289adcff9.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.475Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/22789520_b1a6e13a-9cf7-44d2-a3a3-226949d7b80a.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.585Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/23585156_ab152c93-705a-468c-96e9-0a44e4d1a414.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.662Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/24127226_28a6c51b-a3ac-4fc2-a435-0966f2ea5759.jpg": {
-      "status": "done",
-      "items": 1,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.704Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/24169448_34564db3-a306-4a8f-b59a-d7667938f19d.jpg": {
-      "status": "done",
-      "items": 3,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.801Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/24169463_05851294-d3c5-48e3-a333-251a2dc16f3a.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.888Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/24175302_15430d0e-67d5-4540-9386-bbf21fb21e8f.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:57.950Z"
-    },
-    "FOTOS SELECCIONADAS FW2026/SUNDAY EDITION/THE WORKSHOP - CASUAL/24251372_240c06be-6650-4296-91b0-09ed10e2369b.jpg": {
-      "status": "done",
-      "items": 2,
-      "via": "claude-code",
-      "at": "2026-07-29T12:10:58.020Z"
+      "at": "2026-09-29T19:27:12.900Z"
     }
   }
 }

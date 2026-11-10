@@ -29,6 +29,26 @@ export const CATEGORY_LABELS_ES = {
 
 const HEX = /^#[0-9a-f]{6}$/i;
 
+// La IA a veces devuelve "#FFF", "ffffff", "#ffffffff" o el nombre del color.
+const COLOR_NAMES = {
+  negro: "#1a1a1a", black: "#1a1a1a", blanco: "#f7f7f5", white: "#f7f7f5", crudo: "#efe6d8", beige: "#dcc7ae",
+  gris: "#9a9a9a", gray: "#9a9a9a", grey: "#9a9a9a", marron: "#6b4428", brown: "#6b4428", camel: "#c19a6b",
+  rojo: "#b3262e", red: "#b3262e", bordo: "#7a1e24", rosa: "#f2b8c6", pink: "#f2b8c6", fucsia: "#d63384",
+  naranja: "#e8762b", orange: "#e8762b", amarillo: "#f2d24b", yellow: "#f2d24b", verde: "#4f8a4b", green: "#4f8a4b",
+  azul: "#2f4f8f", blue: "#2f4f8f", celeste: "#8fb8de", violeta: "#7b5ea7", lila: "#b9a2d6", purple: "#7b5ea7",
+  dorado: "#d4b77a", gold: "#d4b77a", plateado: "#c9ccd1", silver: "#c9ccd1", nude: "#d9a583",
+};
+
+function normalizeColor(value) {
+  if (typeof value !== "string") return null;
+  const text = value.trim().toLowerCase();
+  const hex = text.match(/#?\b([0-9a-f]{6})(?:[0-9a-f]{2})?\b|#([0-9a-f]{3})\b/);
+  if (hex?.[1]) return `#${hex[1]}`;
+  if (hex?.[2]) return `#${[...hex[2]].map((digit) => digit + digit).join("")}`;
+  const name = stripAccents(text).split(/[\s/-]+/).find((word) => COLOR_NAMES[word]);
+  return name ? COLOR_NAMES[name] : null;
+}
+
 // Pistas de categoría en el nombre de archivo o carpeta. El nombre manda
 // sobre lo que se ve en la foto (regla central del importador).
 const FILE_HINTS = [
@@ -107,7 +127,7 @@ export function validateAnalysis(raw) {
   if (INTERNAL_TO_PUBLIC[categoria]) categoria = INTERNAL_TO_PUBLIC[categoria];
   if (!PUBLIC_CATEGORIES.includes(categoria)) return { error: `Categoría inválida: "${raw.categoria || "(vacía)"}".` };
   const colores = Array.isArray(raw.colores)
-    ? raw.colores.filter((color) => typeof color === "string" && HEX.test(color.trim())).map((color) => color.trim().toLowerCase()).slice(0, 3)
+    ? [...new Set(raw.colores.map(normalizeColor).filter((color) => color && HEX.test(color)))].slice(0, 3)
     : [];
   if (!colores.length) return { error: "Falta al menos un color hex válido en \"colores\"." };
   const recorte = raw.recorte && typeof raw.recorte === "object" && !Array.isArray(raw.recorte)
@@ -138,13 +158,49 @@ export function validateAnalysis(raw) {
   };
 }
 
+// Repara lo que suele romper un JSON copiado de una terminal o un chat:
+// comillas tipográficas, texto antes/después del array y saltos de línea
+// que la terminal insertó al cortar líneas largas dentro de los strings.
+function repairPastedJson(text) {
+  let s = text.replace(/[“”]/g, '"').replace(/ /g, " ");
+  const start = s.search(/[[{]/);
+  const end = Math.max(s.lastIndexOf("]"), s.lastIndexOf("}"));
+  if (start >= 0 && end > start) s = s.slice(start, end + 1);
+  let out = "";
+  let inString = false;
+  for (let i = 0; i < s.length; i += 1) {
+    const ch = s[i];
+    if (inString) {
+      if (ch === "\\") { out += ch + (s[i + 1] ?? ""); i += 1; continue; }
+      if (ch === '"') inString = false;
+      // Un corte de línea dentro de un string es de la terminal: se descarta
+      // junto con la sangría que la acompaña.
+      if (ch === "\n" || ch === "\r") { while (s[i + 1] === " " || s[i + 1] === "\n" || s[i + 1] === "\r") i += 1; continue; }
+      out += ch;
+    } else {
+      if (ch === '"') inString = true;
+      // Corte en medio de un literal (tr\n  ue, 12\n  3): se vuelve a unir.
+      if ((ch === "\n" || ch === "\r") && /[\w.-]/.test(out.at(-1) || "")) {
+        let j = i + 1;
+        while (s[j] === " " || s[j] === "\n" || s[j] === "\r") j += 1;
+        if (/[\w.-]/.test(s[j] || "")) { i = j - 1; continue; }
+      }
+      out += ch;
+    }
+  }
+  return out;
+}
+
 // Parsea el texto pegado en el modo manual: un objeto suelto o un array (batch).
 export function parseAnalysisResults(text = "") {
   const cleaned = text.trim().replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
   if (!cleaned) return { results: [], errors: ["No hay nada para procesar."] };
   let parsed;
   try { parsed = JSON.parse(cleaned); }
-  catch { return { results: [], errors: ["El texto pegado no es JSON válido."] }; }
+  catch {
+    try { parsed = JSON.parse(repairPastedJson(cleaned)); }
+    catch { return { results: [], errors: ["El texto pegado no es JSON válido."] }; }
+  }
   const entries = Array.isArray(parsed) ? parsed : [parsed];
   const results = [];
   const errors = [];

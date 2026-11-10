@@ -18,11 +18,42 @@ function searchable(item = {}) {
 
 export function normalizeGarmentType(value, part = "") {
   if (GARMENT_TYPES.includes(value)) return value;
+  if (part === "wholebody") return "dress";
   if (part === "wholebody_up") return "jacket";
   if (part === "lowerbody") return "trousers";
   if (part === "shoes") return "shoes";
   if (part === "accessories_up") return "other";
   return "other";
+}
+
+// Sección canónica del catálogo según el tipo de prenda: abrigos, chaquetas,
+// sweaters y blazers van a Abrigos; blusas, remeras y camisas a Prendas
+// superiores; vestidos, enterizos y polleras a Vestidos y enterizos.
+const PART_BY_GARMENT_TYPE = {
+  jacket: "wholebody_up", coat: "wholebody_up", sweater: "wholebody_up",
+  top: "upperbody", blouse: "upperbody", shirt: "upperbody", tshirt: "upperbody",
+  dress: "wholebody", jumpsuit: "wholebody", skirt: "wholebody",
+  trousers: "lowerbody", jeans: "lowerbody", shorts: "lowerbody",
+  heels: "shoes", shoes: "shoes",
+  bag: "accessories_up", jewelry: "accessories_up", belt: "accessories_up",
+  scarf: "accessories_up", hat: "accessories_up",
+};
+
+export function partForGarmentType(garmentType, fallbackPart = "upperbody") {
+  return PART_BY_GARMENT_TYPE[garmentType] || fallbackPart;
+}
+
+// Qué cubre la prenda al armar un look: un vestido o enterizo es base completa,
+// una pollera cuenta como prenda inferior aunque viva en la sección wholebody.
+export function garmentCoverage(item = {}) {
+  const type = normalizeGarmentType(item.garmentType, item.part);
+  if (type === "dress" || type === "jumpsuit") return "full";
+  if (type === "skirt") return "bottom";
+  if (item.part === "upperbody") return "top";
+  if (item.part === "lowerbody") return "bottom";
+  if (item.part === "wholebody_up") return "outer";
+  if (item.part === "wholebody") return "full";
+  return "extra";
 }
 
 export function inferGarmentGender(item = {}) {

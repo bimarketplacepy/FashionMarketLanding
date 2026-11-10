@@ -1,81 +1,115 @@
 # Fashion Market — By Marketplace
 
-Landing del sector Moda de un retailer: intro cinematográfica (ex-AETHER) + landing editorial + catálogo público con fichas de producto + outfit builder + vestidor virtual con IA + panel de administración. SIN precios ni flujo de compra/pedidos (pedido explícito del usuario, julio 2026: se quitó todo lo relacionado a precio y compra).
+Tienda de moda de un retailer de Paraguay: landing editorial de temporada, catálogo público con fichas de producto, probador virtual con IA (ocho avatares fijos) y panel de administración. **Sin precios ni flujo de compra** (decisión del usuario, julio 2026). Todo el texto visible va en español; la moneda, si alguna vez se muestra, es guaraníes.
 
-## Rutas (wouter, julio 2026)
+## Estado actual (noviembre 2026)
 
-- `/` — landing editorial de temporada, sin controles de demo ni accesos administrativos.
-- `/catalogo` — colección pública separada del probador.
-- `/probador` — probador virtual con tres secciones: "Looks sugeridos", "Crear un look" y "Mi modelo".
-- `/outfit` — ruta histórica; redirige a `/probador?seccion=builder`.
-- `/admin` — panel con clave simple validada en el cliente (`VITE_ADMIN_KEY`, fallback `fw2026`, sessionStorage): editor de prendas `ItemViewer` (nombre/categoría/género/talles/descripción/colores/tags) + "Administrar catálogo" para importar. El editor y la importación NO son accesibles desde las vistas públicas.
+- **Temporada activa: SS26 — Primavera – Verano 2026.** 619 prendas activas (todas SS26). La colección FW26 (152 prendas) y 17 de SS26 están desactivadas (`active: false`): siguen en `library.json` para el admin pero no se muestran en la tienda ni en el probador.
+- Las 552 prendas importadas por lotes en octubre 2026 (17 marcas) se pasaron a `collection: "SS26"`, `season: "summer"` con `scripts/migrations/assign-ss26.mjs` (dry-run + backup).
+
+## Configuración del sitio — `artifacts/aether/data/site-config.json`
+
+Fuente única de la temporada y de lo que se publica. La lee el front en build (`src/site-config.js`) y los importadores en el servidor (`scripts/site-config.mjs`).
+
+- `activeSeason` / `seasonLabel` / `seasonShortLabel`: colección vigente y sus etiquetas. Ningún texto de temporada va hardcodeado.
+- `importDefaults`: `collection` y `season` que reciben las prendas nuevas (import por lotes, import por job).
+- `showPrices` (**false**): con el flag apagado ni la ficha, ni las sugerencias, ni el importador muestran precio; el campo `price` se conserva en `library.json` y `/api/catalog` no lo expone.
+- `promotions`: `{ id, title, text, startsAt, endsAt, collection }`. Una promo sólo se renderiza dentro de su ventana y si su colección tiene prendas activas. El "Winter Sale" quedó registrado con `endsAt` 2026-08-31: no se muestra nunca más.
+- Una sección/carrusel con 0 prendas no se renderiza y avisa en consola en desarrollo (`warnEmptySection`).
+- Para cambiar de temporada: editar este archivo, activar/desactivar colecciones desde `/admin` y publicar.
+
+## Rutas (wouter)
+
+- `/` — landing (`src/landing/HomePage.jsx`).
+- `/catalogo` — colección pública (`src/landing/CollectionPage.jsx`). `?tipo=<part>` filtra; `?producto=<id>` abre la ficha (`ProductSheet.jsx`, enlace compartible).
+- `/probador` — probador virtual (`src/landing/TryOnPage.jsx` → `virtual-tryon.jsx`). `?seccion=builder` abre "Crear un look". `/outfit` redirige ahí.
+- `/admin` — panel (`src/fashion/AdminPage.jsx`), cargado con `lazy()`: su código no entra en el bundle público.
+
+El catálogo viene **sólo** de `CatalogProvider` (`src/fashion/catalog-context.jsx`): `scope="public"` pide `GET /api/catalog` (prendas activas, campos públicos, ~0,5 MB) y el admin usa `scope="admin"` → `GET /api/import/wardrobe` (library.json completo). No hay capas de localStorage para ediciones: la fuente de verdad es el servidor.
+
+## Landing editorial (noviembre 2026)
+
+Paleta marfil `#F3F1EC` / tinta `#151515` / grises / acento terracota `#A4482A` (de la paleta SS26, oscurecido para AA). Tipografía: Instrument Serif (títulos) + Instrument Sans (interfaz), self-hosted con @fontsource (`font-display: swap`); Italiana sólo para el logo. Sin Three.js, sin Framer Motion (se quitó por peso): transiciones CSS con curva tipo spring. `prefers-reduced-motion` → sin blur, sin rotaciones, marquee quieto.
+
+- `src/landing/HomePage.jsx` compone: `HeroLooks` (la fila de la temporada: looks con profundidad, selector Conjuntos/Vestidos/Playa, panel con piezas y swatches, navegación con hover, click, flechas y swipe; en mobile scroll-snap y panel tipo bottom sheet), `Marquee` (mensajes reales de la tienda), `GarmentRack` (perchero 3D con modo foco), CTA al probador y `EditorialFooter` (wordmark gigante).
+- Looks: no hay fotos de modelos SS26, así que `src/landing/looks.js` arma conjuntos de 2 a 4 prendas reales por armonía de color (`armoniaColor` de `sugerencias.js`) y palabras compartidas del nombre (misma estampa/línea). Determinístico. El perchero toma 12 prendas "colgables" variadas.
+- **Fotos de looks en modelo (noviembre 2026)**: cada look se viste sobre uno de los avatares IA de mujer del probador con `scripts/generate-look-models.mjs` (Gemini, mismas prendas reales como referencia), se recorta el fondo con `scripts/cutout-look-models.py` (rembg `isnet-general-use`), Gemini ubica cada prenda para los puntos numerados y se optimiza a AVIF/WebP en `public/looks/`. Estado en `data/look-models.json` (`pendiente`/`aprobado`/`rechazado`); maestros en `data/look-models/` (fuera del deploy). `/api/landing` adjunta `model` sólo a looks **aprobados** cuyos `garmentIds` coinciden con el look actual: si cambia el catálogo y un look cambia de prendas, vuelve a mostrarse como prendas apiladas hasta regenerarlo (`--estado` marca DESACTUALIZADO). Si una familia tiene 3+ looks con foto se muestran sólo esos (`preferModelLooks`). La landing rotula "imágenes generadas con IA". Revisar cada foto contra sus prendas antes de `--aprobar` (Gemini a veces cambia el tiro de las bombachas de bikini o no devuelve imagen en trajes de baño: reintentar).
+- `GET /api/landing` (`scripts/landing-payload.mjs`): looks y perchero armados en el servidor con campos mínimos (~11 KB gzip). La landing no descarga el catálogo completo; `CatalogProvider` sólo pide `/api/catalog` cuando una vista lo usa.
+- `index.html` precarga `/api/landing` o `/api/catalog` según la ruta, y en build (`scripts/landing-preload-plugin.mjs`) agrega la precarga AVIF de las prendas del primer look (LCP). GTM se carga diferido (después de `load`, en idle); los page views quedan en `dataLayer` hasta que carga.
+- Ficha de look/prenda (`LookSheet.jsx`): con foto en modelo arranca en la foto completa con puntos numerados que llevan a cada prenda; miniaturas, imagen grande, descripción real, swatches con nombre de color (`color-names.js`, el más cercano al hex), piezas con checkbox y talle, "También te puede gustar".
+- "Tu selección" (`selection.jsx`, `SelectionDrawer.jsx`): botón flotante con contador, modal con talle/cantidad/quitar, "Descargar selección" (.txt) y consulta. Se guarda en localStorage (try/catch) con un resumen de cada prenda. **WhatsApp**: `contact.whatsapp` en `site-config.json` (hoy `595981203891`, número provisorio) y `contact.whatsappGreeting`. El enlace usa el formato `https://api.whatsapp.com/send/?phone=…&text=…&type=phone_number&app_absent=0` (`whatsappUrl()` en `src/site-config.js`): el footer manda el saludo solo y "Tu selección" lo completa con las piezas. Con `whatsapp: null` se ofrece "Consultar por email".
+- Colección y probador se cargan con `lazy()`.
+
+## Tienda Odoo 19 (noviembre 2026)
+
+La experiencia completa se embebe en la categoría web **Moda** de la tienda Odoo 19 (y subcategorías), con las prendas publicadas ahí. Guía: `reports/odoo19-moda-end-to-end.md`.
+
+- Widget: `src/embed/` (`<fm-moda>`, `<fm-probar>`, Shadow DOM, rutas por hash) → `vite.embed.config.ts` → `dist/public/embed/` (incluido en `pnpm run build`). Lo sirve el api-server en `/api/embed/*` con CORS.
+- `src/embed/base.js`: todo `fetch` a la API usa `engineFetch()` y toda imagen `engineUrl()`. Sin prefijo la app propia no cambia; **código nuevo que pida `/api/...` o pinte imágenes del motor tiene que usarlos** o se rompe dentro de Odoo.
+- Vínculo prenda ↔ producto: Referencia interna = id de la prenda. `scripts/odoo-sync.mjs` (API JSON-2, dry-run → `--aplicar` con backup; Secrets `ODOO_URL`, `ODOO_DB`, `ODOO_API_KEY`). Correrlo después de `optimize-images`.
+- Módulo Odoo: `odoo/website_fashion_market/` (fuera del deploy): campo `fm_experience` en la categoría, reemplazo de la grilla, botón en la ficha, proxy `/fm/api/{landing,catalog,tryon/*}`.
+- `/api/tryon/generate` tiene límite diario (`TRYON_MAX_PER_SESSION_DAY` 15, `TRYON_MAX_PER_IP_DAY` 60) en `api-server/src/tryon/limits.ts`. `FM_EMBED_ORIGINS` habilita el modo directo (sin módulo).
+
+## Admin y seguridad
+
+- Clave en `ADMIN_KEY` (Secrets en el deployment, `artifacts/aether/.env` en el workspace). **Sin prefijo `VITE_`** (nunca llega al bundle) y sin valor por defecto: sin la variable el panel queda cerrado.
+- `POST /api/admin/session` valida la clave (comparación en tiempo constante, 10 intentos fallidos por IP cada 15 min) y emite la cookie httpOnly firmada `fm_admin` (HMAC, 8 h, SameSite=Strict, Secure en deployment). `GET` consulta la sesión, `DELETE` cierra.
+- Exigen sesión: todo `/api/import/*` salvo `GET /api/import/wardrobe` y `GET /api/import/library/:file`, más `/api/batches` y `/api/garment-regeneration`. Implementado en `scripts/admin-auth.mjs`, montado como plugin de Vite y en el api-server.
+- Scripts de línea de comandos (`import-catalog`, `reclassify-parts`) se autentican con el header `X-Admin-Key` (leen `ADMIN_KEY` de env o `.env`, ver `scripts/cli-admin.mjs`).
+- Prioridad: **Secrets (`process.env.ADMIN_KEY`) gana sobre `artifacts/aether/.env`** (respaldo con el valor del viejo `VITE_ADMIN_KEY`). Un Secret nuevo llega a los procesos recién al reiniciar la app (Stop → Run); la contraseña es el valor del Secret.
+- `ADMIN_KEY` ya está cargada en Secrets del deployment (confirmado 2026-11-06).
+
+## Imágenes de prendas
+
+- Maestro: `data/imported/<id>-garment.png` (PNG 1024×1024 con transparencia). Lo usan importación, regeneración y limpieza de fondos. **No viaja al deployment.**
+- Web: `pnpm --filter @workspace/aether run optimize-images` genera en `public/garments/` AVIF + WebP (calidad ~80, alfa) en 400, 800 y 1024 px (el "1400" se limita al tamaño de la fuente, sin agrandar). El nombre lleva un hash del PNG (`<id>-garment.<hash>-<ancho>.webp`): regenerar una prenda cambia el nombre y no hay caché vieja.
+- En `library.json` se agrega `imageSet` (`src`, `hash`, `width`, `height`, `widths`, `formats`) sin tocar `image`/`thumbnail`. Reversible: `node scripts/optimize-garment-images.mjs --revert`.
+- **Correrlo después de cada importación, regeneración o limpieza de fondos.** `prebuild` corre `--verify` y el build falla si alguna prenda activa no tiene sus variantes.
+- Front: `src/fashion/GarmentImage.jsx` (`<picture>` con srcset AVIF/WebP, `sizes`, width/height explícitos, `loading="lazy"`, `decoding="async"`; `priority` → `fetchpriority="high"`).
+- Producción: el probador manda a Gemini la variante WebP más grande cuando no hay PNG (`readGarmentSource` en `outfit-api.mjs`), y `GET /api/import/library/:file` cae a esa variante.
+
+## Qué se excluye del deploy
+
+- `.replitignore` (formato .dockerignore; lo generó Replit, pero su documentación no lo describe: **confirmar el tamaño de la imagen en el primer publish**): `.local`, `.config/` (incluye la instalación global de Claude Code, ~323 MB), `data/imported/`, `data/look-models/`, `data/claude-inbox/`, `data/jobs/`, `data/garment-regeneration/`, `data/_backups/`, `fotos-ss26/`, `attached_assets/`.
+- Respaldos: la copia completa está en App Storage bajo `archivo/2026-11-06/` (3.103 archivos, 1.011 MB, verificada; `scripts/maintenance/archive-to-storage.mjs`): fotos crudas de los lotes, `imported-originals/` y `_dedup-2026-10-01*`. La copia local se borró el 2026-11-06 salvo los 5 lotes con prendas analizadas sin importar (37), que siguen en `.local/aether-archive/batches/` para poder terminarlos desde `/admin`. `imported-originals/` local quedó vacío: `regenerate-garments` usa la imagen actual como fuente y `dechroma` vuelve a respaldar al usarse. Las rutas salen de `scripts/private-paths.mjs` (`AETHER_PRIVATE_DATA` las redefine).
+- Producción sólo necesita `data/library.json`, `data/site-config.json`, `public/` (incluye `public/garments`) y el build.
+
+## Estado de la rama y pendientes (2026-11-06)
+
+- Todo el rediseño está en la rama `ss26-rediseno`, sin mergear ni publicar. Informe: `reports/informe-final.md`.
+- Pendientes y decisiones abiertas: `.agents/memory/pendientes-usuario.md` (WhatsApp definitivo, clave vieja en `.env`, 5 lotes con 37 prendas sin importar, reel de referencia, verificar `.replitignore` en el primer publish).
+- Memoria del proyecto (lecciones y contexto): `.agents/memory/MEMORY.md`.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+- `pnpm --filter @workspace/api-server run dev` — api-server (puerto 8080; en el workspace reenvía `/api/*` a Vite).
+- `pnpm --filter @workspace/aether run dev` — app (Vite, puerto 24696) con los plugins de backend.
+- `pnpm run typecheck` / `pnpm run build`. El build de aether y de mockup-sandbox exigen `PORT` y `BASE_PATH` en el entorno.
+- `pnpm --filter @workspace/aether run optimize-images` — variantes web de prendas (ver arriba).
+- `pnpm --filter @workspace/db run push` — schema de Postgres (tablas `tryon_*` del probador en producción).
+- Env: `DATABASE_URL`, `GEMINI_API_KEY` (también en el deployment: ahí la prueba virtual la genera el api-server), `ADMIN_KEY`.
 
-## Stack
+## Arquitectura
 
-- pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- `artifacts/aether/` — app web (Vite + React). `src/landing/` páginas públicas; `src/fashion/` componentes compartidos (ficha, probador, admin, importador por lotes); `scripts/*.mjs` backend como plugins de Vite (import-job, batch-import, outfit/probador, garment-regeneration, ipx, admin-auth).
+- En el deployment no corre Vite: se sirve el build estático + el api-server. Por eso `/api/tryon/*` está montado en las dos partes: `createTryonHandler({ root, env, store, resolveSession })`. En el workspace la persistencia es de archivos (`scripts/tryon-store-fs.mjs`, sin sesiones); en el deployment es Postgres (`api-server/src/tryon/pgStore.ts`) con sesión anónima por visitante (cookie httpOnly `fm_sid`, uuid v4, 30 días). El store de Postgres no sirve semilla: un visitante nuevo arranca sin avatar ni looks.
+- `api-server/src/tryon/index.ts` decide el modo (`REPLIT_DEPLOYMENT`/`NODE_ENV`, o forzado con `TRYON_MODE=local|proxy`). En deployment sirve `/api/catalog`, `GET /api/import/wardrobe` y `GET /api/import/library/:file` de sólo lectura; el resto del admin responde 401 sin sesión y 503 con sesión (el catálogo se carga en el workspace y se publica commiteado).
+- `data/library.json` lo escriben varios plugins: toda escritura pasa por `withLibraryLock` (`scripts/library-lock.mjs`). Activar/desactivar en bloque: `POST /api/import/wardrobe/active { ids, active }`.
+- El dominio raíz enruta `/api/*` al api-server y el resto al front, en el workspace y en producción: todo lo que tiene que funcionar publicado vive bajo `/api/`. ipx (imágenes responsive de `public/`) en `/api/_ipx`.
 
-## Where things live
+## Catálogo e importación
 
-- `artifacts/aether/` — la app web principal (Vite + React). A pesar del nombre, hoy es Fashion Market.
-  - `src/fashion/StandaloneApp.jsx` — fuente canónica de la landing, la colección y el probador. `FashionIntro.jsx`, `styles.css`, `virtual-tryon.jsx` y `virtual-tryon.css` contienen la UI sincronizada con el proyecto local.
-  - `src/fashion/AdminPage.jsx` e `ItemViewer.jsx` — panel privado y editor persistente. `FashionMarket.jsx`, `OutfitBuilderPage.jsx` y `ProductSheet.jsx` quedan como implementación histórica sin imports desde el entrypoint activo.
-  - `scripts/*.mjs` — backend como plugins de Vite: importación con IA (`import-job-api`), pruebas virtuales (`outfit-api`), regeneración aprobable de prendas (`garment-regeneration-api`) e imágenes responsive (`responsive-image-api`).
-  - `data/` — catálogo local (`library.json`, `outfits.json`) e imágenes generadas de looks. No commitear contenido sensible.
-  - `public/fashion/models/ai/` — biblioteca estática de ocho modelos IA ficticios, optimizada en WebP y versionada con la app.
-  - `.env` (en `artifacts/aether/`, gitignoreado) — `AI_PROVIDER=gemini`, `GEMINI_API_KEY`, modelos de visión/imagen.
-
-## Architecture decisions
-
-- El backend del vestidor corre como plugins del dev server de Vite (heredado del proyecto original), no en `artifacts/api-server`. Si se despliega a producción con `vite preview` los plugins de import/outfit no aplican en build estático — migrar a api-server llegado el caso.
-- El dominio raíz del workspace (`https://<repl>.replit.dev/` sin puerto) enruta por path: `/api/*` va al api-server (8080) y el resto al dev server de Aether (24696). `aetherProxy.ts` reenvía `/api/import/*`, `/api/tryon/*` y `/api/garment-regeneration/*` al servidor de Aether.
-- Escenas Three.js de AETHER se conservan en el repo pero no se montan; la intro es la única pieza que sobrevivió del sitio original.
-- `allowJs` habilitado en `artifacts/aether/tsconfig.json` porque el código portado es JSX sin tipos.
-
-## Product
-
-- Landing minimalista de temporada (paleta crema/beige, acento bordó) + probador virtual.
-- Catálogo FW2026 en español (julio 2026): `scripts/migrate-catalog-es.mjs` renombró las 247 prendas al español, unificó 24 duplicados (223 productos: remeras blancas iguales, botas left/right, jeans repetidos, etc.) y agregó `sizes` y `description` a cada item de `library.json` (outfits.json remapeado). El script NO es re-ejecutable (espera nombres en inglés). Las prendas importadas después reciben talles default en `persistImported`; ajustar desde /admin.
-- El retailer carga su catálogo (los clientes NO suben prendas): vía UI ("Administrar catálogo") o masivamente con `pnpm --filter @workspace/aether run import-catalog`, que lee imágenes de App Storage bajo `catalogo/` (subcarpetas libres), las procesa con IA y registra lo hecho en `data/catalog-manifest.json` (re-ejecutable; solo procesa lo nuevo). Flags: `--modeled` (foto modelada extra), `--solo-recorte` (sin IA de imagen), `--dir <ruta>` (carpeta local).
-- Importación SIN API (flujo Claude Code, preferido por el usuario para FW2026): `pnpm --filter @workspace/aether run claude-import pull` baja las fotos pendientes de App Storage (prefijo por defecto `FOTOS SELECCIONADAS FW2026/`, deduplicadas por artículo) a `data/claude-inbox/images/`; Claude analiza cada imagen con visión propia y escribe `data/claude-inbox/analysis/<key>.json` (mismo esquema que la detección de Gemini, ver cabecera de `scripts/claude-import.mjs`); `claude-import apply` recorta con sharp (misma lógica que `import-job-api.mjs`), agrega a `data/library.json` y marca `catalog-manifest.json` con `via: "claude-code"`. No usa la app ni requiere API key.
-- Cutouts con fondo liso (pedido del usuario: prendas sin persona ni fondo, estilo open-wardrobe): `python3 scripts/clean-garment-images.py [ids…]` en `artifacts/aether` procesa `data/imported/` con rembg local (`u2net_cloth_seg` sobre la foto completa por categoría + `u2net` para calzado/accesorios, scoring de solidez y fallbacks). Los originales quedan en `data/imported-originals/`. Correrlo después de cada `claude-import apply` pasándole los ids nuevos. Deps python: rembg, onnxruntime, scipy (modelos en `.local/share/.u2net/`).
-- El probador usa tres tabs explícitos: "Looks sugeridos", "Crear un look" y "Mi modelo". El catálogo público permanece separado y no obliga a elegir modelo.
-- En "Mi modelo" el usuario elige uno de ocho avatares IA predeterminados: cuatro de presentación femenina y cuatro masculina. Cada género incluye prototipos editoriales ficticios con rasgos norteamericanos diversos, europeos diversos, de Asia oriental y africanos diversos, junto con cuatro tonos de piel y complexiones distintas. Cambiar género, tono o avatar actualiza la vista previa al instante y no consume créditos del proveedor de IA.
-- La colección visual v2 usa un mismo estudio cálido, sonrisa natural, pose frontal segura, brazos separados del torso, manos visibles y vestuario neutro premium. Estas condiciones mejoran tanto la lectura visual del selector como la fidelidad al usar cada imagen como referencia para la prueba virtual.
-- Los modelos son identidades ficticias completas y cerradas. El cliente no sube rostro, no configura altura, proporciones, subtono, edad ni cabello, y el backend rechaza los endpoints históricos de foto/modelo personalizado con HTTP 410.
-- `shared/model-presets.mjs` es la fuente canónica para ids, género, etiquetas inclusivas, complexión fija e imágenes. No asociar apariencia con personalidad, nacionalidad, ocasión o tipo de prenda.
-- Género en el catálogo: cada item de `library.json` tiene `gender` (mujer/hombre/unisex; FW2026 es todo mujer — hombre solo tiene los básicos unisex hasta cargar colección masculina). El vestidor filtra grilla, sugerencias y builder por el género del perfil (`fitsGender` en virtual-tryon.jsx). El perfil (`/api/tryon/model-profile`) guarda `gender`.
-- Regeneración de prendas con la API (cuando haya cuota de imagen): `pnpm --filter @workspace/aether run regenerate-garments` — reconstrucción de producto con chroma key en pose neutra (mismo prompt del import), fuente en `data/imported-originals/`, avance en `data/garment-regen.json`, re-ejecutable; corta tras 3 errores de cuota seguidos. El formato de imagen de Gemini se corrigió a `generationConfig.imageConfig { aspectRatio: "1:1", imageSize: "1K" }` sobre v1beta (el viejo `responseFormat` con enums ASPECT_RATIO_* ya no existe).
-- Antes de generar un look, el usuario guarda un preset con `POST /api/tryon/model-profile`. Al generar la prueba, `outfit-api.mjs` adjunta la imagen WebP de ese avatar como primera referencia de identidad y después las prendas exactas. Así sólo se consume API para la fotografía final solicitada, no para explorar modelos.
-- Los scripts `generate-models.mjs`, `model-gen.mjs`, `model-prompt.mjs`, `model-avatar.js` y `watch-quota.sh` son utilidades históricas/offline; no forman parte del flujo público activo. Conservan valor para mantenimiento o futuras regeneraciones controladas, pero la UI y el runtime no los invocan.
+- Lotes (`/admin` → "Importar por carpetas", ZIP descomprimido en el navegador): análisis con IA o pegado manual de JSON, revisión, detección de duplicados por lote y color, aprobación. Entran con la colección/temporada de `importDefaults`.
+- CLI: `import-catalog` (App Storage `catalogo/`, flags `--modeled`, `--solo-recorte`, `--dir`, `--tag`, `--por-articulo`), `claude-import pull|apply` (sin API: Claude analiza las fotos), `regenerate-garments` (`--importadas`), `python3 scripts/clean-garment-images.py [ids…]` (rembg), `node scripts/dechroma-garment.mjs` (fondos croma pegados).
+- Después de cualquiera de esos: `optimize-images`.
+- Modelos del probador: ocho avatares IA ficticios fijos (`shared/model-presets.mjs`, `public/fashion/models/ai/`). El cliente no sube rostro; los endpoints históricos de modelo personalizado responden 410.
+- Género: `gender` mujer/hombre/unisex; el probador filtra por el del perfil.
 
 ## Gotchas
 
-- La generación de cada fotografía final del look requiere cuota de imagen del proveedor configurado. Explorar, filtrar y cambiar los ocho modelos predeterminados no realiza llamadas de IA.
-- El schema JSON para Gemini se sanea con `geminiSchema()` en `scripts/ai-provider.mjs` (sin `additionalProperties` ni type-arrays).
-- `scripts/free-port.mjs` corre antes de `vite dev` porque Replit puede dejar procesos huérfanos reteniendo el puerto.
-
-## User preferences
-
-_Populate as you build — explicit user instructions worth remembering across sessions._
-
-## Gotchas
-
-_Populate as you build — sharp edges, "always run X before Y" rules._
-
-## Pointers
-
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+- `removeChromaBackground()` mide distancia al croma exacto y falla con verdes apagados o croma equivocado: `node scripts/dechroma-garment.mjs --check` lista y rescata.
+- `ipx` pide `sharp@^0.32.6`; está forzado a `^0.35.3` con el override `ipx>sharp` en `pnpm-workspace.yaml`. No quitarlo.
+- `sharp` es dependencia explícita del api-server (esbuild lo externaliza).
+- `scripts/free-port.mjs` corre antes de los dev servers porque Replit puede dejar procesos huérfanos con el puerto tomado.
+- Cambios en `vite.config.ts` o `.env` reinician Vite solos; cambios en el api-server requieren reiniciar el workflow "API Server" (corre el bundle de `dist/`). Síntoma típico si no se reinicia: "no aparecen las prendas" (`/api/landing` y `/api/catalog` dan 404 vía 8080).
+- El schema JSON para Gemini se sanea con `geminiSchema()` en `scripts/ai-provider.mjs`.

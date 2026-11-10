@@ -1,0 +1,21 @@
+/* Estilos propios del widget embebido en Odoo. */
+:host { display: block; }
+.fm-root { font-family: "Instrument Sans Variable", "Instrument Sans", system-ui, sans-serif; }
+.fm-probar { display: grid; gap: 8px; margin: 20px 0; }
+.fm-probar .ed-pill { justify-self: start; }
+.fm-probar__note { margin: 0; font-size: 0.85rem; color: #5b5b5b; }
+
+/* Dentro de Odoo: el header de la tienda es sticky/fijo con z-index ~1030.
+   Los overlays del widget (fichas, "Tu selección", perchero en foco, probador)
+   van por encima, y los headers sticky propios se corren debajo del de Odoo
+   (--fm-top lo calcula fm-embed.jsx midiendo header#top). */
+:host .viewer-overlay { z-index: 2090; }
+:host .look-ready__backdrop { z-index: 2120; }
+:host .ed-drawer-backdrop, :host .ed-sheet-backdrop { z-index: 2080; }
+:host .ed-rack-focus { z-index: 2070; }
+:host .ed-selection-fab { z-index: 2050; }
+:host .ed-nav, :host .retail-subnav { top: var(--fm-top, 0px); }
+/* El header del probador es fixed en la app propia; dentro de Odoo pasa a
+   sticky debajo del header de la tienda. */
+:host .retail-wardrobe { padding-top: 0; }
+:host .wardrobe-topbar { position: sticky; top: var(--fm-top, 0px); }

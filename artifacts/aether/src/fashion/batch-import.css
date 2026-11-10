@@ -49,7 +49,7 @@
 
 .bi-paste { border: 1px solid #d8d1c6; background: #fbf8f2; padding: 15px; margin-bottom: 16px; display: flex; flex-direction: column; gap: 9px; }
 .bi-paste label { font-size: .76rem; color: #4c4a43; font-weight: 600; }
-.bi-paste textarea { border: 1px solid #c8c1b5; background: #fff; padding: 10px 11px; font: 500 .78rem/1.5 "JetBrains Mono", monospace; resize: vertical; }
+.bi-paste textarea { border: 1px solid #c8c1b5; background: #fff; padding: 10px 11px; font: 500 .78rem/1.5 ui-monospace, "SFMono-Regular", Menlo, monospace; resize: vertical; }
 
 .bi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
 

@@ -2,378 +2,131 @@
   "version": 1,
   "outfits": [
     {
-      "id": "look-8c800e19-8f14-4924-9e8e-7790b3544cf7",
-      "name": "Set leopardo satinado",
-      "occasion": "event",
-      "season": "autumn",
-      "climate": "mild",
-      "garmentIds": [
-        "import-8c11538e-3df0-4d43-aa0c-ccffbc1bfe57",
-        "import-3d6ae1aa-7ece-4e78-b5e7-99366c7d8dba",
-        "import-66c96b41-f56b-4e8b-88a7-092d90a90314"
-      ],
-      "reason": "Conjunto satinado a juego con armonía tonal gris; sandalias negras que estilizan sin competir con el estampado. Pensado para evento.",
-      "score": 94,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-4c80115d-ccdb-4d4b-bb8c-df375ce5b144",
-      "name": "Noche total black",
-      "occasion": "event",
-      "season": "winter",
-      "climate": "cold",
-      "garmentIds": [
-        "import-17aa166b-68f0-409f-9a91-848c2cfd533e",
-        "import-d6429106-7a61-4bf3-a77e-713a715dc3c4",
-        "import-c14bc350-f4b5-46cf-8b7c-28113db99f2e",
-        "import-ca2b0a16-5b19-459d-a307-5332798fcea8"
-      ],
-      "reason": "Base neutra versátil en negro con brillo de lentejuelas y tachas; siluetas equilibradas entre top recto y mini estructurada. Pensado para evento.",
-      "score": 92,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-9f5c18d6-0495-4846-b685-64ebb7c4922e",
-      "name": "Corset y satén chocolate",
-      "occasion": "event",
-      "season": "autumn",
-      "climate": "mild",
-      "garmentIds": [
-        "import-dc28fed5-4327-47b6-9b33-ee59d5175036",
-        "import-bf687a9f-b398-4399-a8f5-18fcf271c7ca",
-        "import-e65749e2-55bd-4834-9be8-127fdd1d1826",
-        "import-c5d47993-3023-4c28-b18c-b6506e5c471b"
-      ],
-      "reason": "Contraste marfil-chocolate con materiales compatibles en satén; el corset estructurado equilibra la maxi flowy. Pensado para evento.",
-      "score": 93,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-23fa2edb-4e44-4882-a35f-c4f5269f0b78",
-      "name": "Oficina argyle",
-      "occasion": "office",
-      "season": "winter",
-      "climate": "cold",
-      "garmentIds": [
-        "import-f7ec9b4b-1886-4640-b940-d1590be123f1",
-        "import-e4558826-15db-44b3-9d14-6c1aa5a3c1e6",
-        "import-c13d9050-68cf-4abb-b96e-b0f47a69ec3d"
-      ],
-      "reason": "Contraste controlado bordó-gris con texturas de invierno; sweater cropped sobre wide-leg mantiene proporciones. Pensado para oficina.",
-      "score": 90,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-0ea2101f-5c76-41a3-a416-abccdd3eac9e",
-      "name": "Brunch de domingo",
-      "occasion": "weekend",
-      "season": "autumn",
-      "climate": "mild",
-      "garmentIds": [
-        "import-3a1df6be-cc18-49a1-aded-00d42acda268",
-        "import-9dadc96e-4fc9-4a84-89c8-2be91c765a36",
-        "import-e6ad030b-8cb0-464f-8081-b90f238b7546",
-        "import-21e48dd8-49fe-4820-bb68-8765d7357edd"
-      ],
-      "reason": "Base neutra con denim oscuro y tejido a rayas; zapatillas de gamuza para un fin de semana relajado. Pensado para fin de semana.",
-      "score": 88,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-e49292d4-ddb1-485b-ab90-a6a5359de2e5",
-      "name": "Chocolate smart-casual",
-      "occasion": "smart-casual",
-      "season": "winter",
-      "climate": "mild",
-      "garmentIds": [
-        "import-4a28ee70-9551-474f-9549-834261382d8b",
-        "import-e1ace5c8-e8d8-4166-83a9-02d0346b7b29",
-        "import-23132552-4adb-4de3-845b-97bc19e9f55f",
-        "import-2a3d82f3-c434-4606-83cf-c32635502541"
-      ],
-      "reason": "Armonía tonal chocolate-negro; chiffon liviano sobre cuero sintético estructurado, mules satinadas al tono. Pensado para smart casual.",
-      "score": 91,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-e91cc144-4543-4694-8ae3-92930c2f49f8",
-      "name": "Sastrería plaid",
-      "occasion": "office",
-      "season": "autumn",
-      "climate": "mild",
-      "garmentIds": [
-        "import-1da8853f-2575-45b3-99e6-d7599f4f63b3",
-        "import-5a6be600-88a9-456c-9214-94859631ae5d",
-        "import-c8b00bba-bbcf-4320-859c-912413e540ba",
-        "import-553133d3-d640-430f-ae51-f283b171e56e"
-      ],
-      "reason": "Mini y blazer plaid a juego con top ribbed negro; capas físicamente posibles y siluetas equilibradas. Pensado para oficina.",
-      "score": 89,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-f9c2f29b-e4b7-4aba-bf3f-492c33f28695",
-      "name": "Denim y corderoy",
+      "id": "look-b4c17804-707b-4b81-9b9e-5a2446226d4f",
+      "name": "Chic Brown Blazer + Beige High-Waisted Pencil Skirt",
       "occasion": "casual",
       "season": "autumn",
       "climate": "mild",
       "garmentIds": [
-        "import-de10766f-838d-49cd-bfa9-18f5063caf26",
-        "import-9524ba9e-9c57-47ba-b9ad-bcacffa21972",
-        "import-48739846-44fe-44db-b5db-358a2efda8ee",
-        "import-99e7c19a-1efc-45ba-afa4-580e2380d43d"
+        "import-a8612364-96b1-4b65-b141-9bcbe9c75af2",
+        "import-16d591f5-e0f9-4164-93d4-54b955dc12af",
+        "import-c3f19e91-e83b-4ae1-9fd9-3de0f18fe990",
+        "import-a342cc06-ef49-4a59-8491-ec32a5c5716c"
       ],
-      "reason": "Paleta análoga crema-camel con denim índigo de contraste; texturas de temporada (ribbed, corderoy, denim). Pensado para casual.",
-      "score": 87,
+      "reason": "armonía tonal, siluetas equilibradas, textura continua. Pensado para casual.",
+      "score": 98,
       "source": "suggested",
       "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
+      "image": "/api/tryon/images/look-b4c17804-707b-4b81-9b9e-5a2446226d4f.png",
+      "status": "accepted",
+      "createdAt": "2026-08-04T12:15:53.449Z",
+      "updatedAt": "2026-08-04T12:16:15.060Z"
     },
     {
-      "id": "look-9cfef18b-783c-4638-b626-e9dcba00ab90",
-      "name": "Señora en bordó y camel",
-      "occasion": "smart-casual",
-      "season": "autumn",
-      "climate": "mild",
-      "garmentIds": [
-        "import-c765ad5f-2300-4940-9e98-b0a03974dc88",
-        "import-cab72c4b-8cd5-4c7b-b320-6541025f2104",
-        "import-d0d912a5-a550-45dd-896b-0d1075c924d4",
-        "import-0622118a-0ec8-4ef2-ae42-4b030f950879"
-      ],
-      "reason": "Contraste cálido bordó-camel; blusa de mangas globo sobre pantalón recto, mules crema que aligeran. Pensado para smart casual.",
-      "score": 88,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-ea98d075-4eda-4ea7-adb5-5ba943a17d73",
-      "name": "Utility urbano",
-      "occasion": "weekend",
-      "season": "autumn",
-      "climate": "rain",
-      "garmentIds": [
-        "import-7e78a906-b01f-44f2-b3a9-e01ba8c8c4bd",
-        "import-c7805f99-a781-4c21-9e83-8528ef139ee3",
-        "import-54fd7e90-e465-47df-981a-ecaca40d132b",
-        "import-0835a7b3-31f7-4512-87b2-fd42e73088ee"
-      ],
-      "reason": "Contraste oliva-negro con nylon técnico resistente a lluvia; volúmenes relajados con crop top que equilibra. Pensado para fin de semana.",
-      "score": 85,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-eef1c1d6-c4c7-4b41-90a9-59318660e25c",
-      "name": "Western de noche",
-      "occasion": "event",
-      "season": "winter",
-      "climate": "cold",
-      "garmentIds": [
-        "import-d5e274b1-9924-43dd-8316-538f3ae61f12",
-        "import-91bbd5b7-069d-4642-923e-94b483f9a78e",
-        "import-fe5edc46-8c47-40fc-91f3-8bf79d333f2d",
-        "import-0d32af8a-ccf3-4e18-a65f-ff125179859d"
-      ],
-      "reason": "Armonía tonal chocolate con denim negro; strass en el top y botas caña alta para la noche. Pensado para evento.",
-      "score": 90,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-ff27bb5b-14e9-4aaf-9d3d-2b9c04a052ca",
-      "name": "Oficina editorial",
-      "occasion": "office",
-      "season": "winter",
-      "climate": "cold",
-      "garmentIds": [
-        "import-6a7add5c-5bf1-4135-885e-c1607df8ff0c",
-        "import-79318a5a-de5b-4d1d-840b-63bc73f0633d",
-        "import-c13d9050-68cf-4abb-b96e-b0f47a69ec3d",
-        "import-17a7118e-93fb-4531-a8a2-6b60c1d6a407"
-      ],
-      "reason": "Marfil con vivos negros sobre plaid marrón; pañuelo de seda como acento de color. Pensado para oficina.",
-      "score": 89,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T12:13:12.787Z",
-      "updatedAt": "2026-07-29T12:13:12.787Z"
-    },
-    {
-      "id": "look-73c91aca-9b70-497e-8685-a9d91f8f0f1a",
-      "name": "White Crew Neck T-Shirt + Dark Wash Denim Jeans",
+      "id": "look-16f60acc-bbe4-4d7c-a095-8602997629bd",
+      "name": "Zebra wave knit sweater + Vaqueros denim de tiro alto",
       "occasion": "casual",
-      "season": "spring",
+      "season": "autumn",
       "climate": "mild",
       "garmentIds": [
-        "import-70b7c415-d1f6-447c-920b-6ef29e3263a6",
-        "import-9ebf7d97-f022-47d3-8219-8b3fa129c0cd",
-        "import-0835a7b3-31f7-4512-87b2-fd42e73088ee"
+        "import-38a7e20f-11aa-4ac6-9e48-1a3b5f60a0c0",
+        "import-b4071509-6e80-491e-aa11-00848617a890",
+        "import-fd0b2775-446c-4def-82e2-81558538f422",
+        "import-1c01e6b8-94a5-49dc-ade5-caae0c095bc7"
       ],
       "reason": "base neutra versátil, siluetas equilibradas, materiales compatibles. Pensado para casual.",
       "score": 98,
       "source": "suggested",
       "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T13:04:46.608Z",
-      "updatedAt": "2026-07-29T13:04:46.608Z"
+      "image": "/api/tryon/images/look-16f60acc-bbe4-4d7c-a095-8602997629bd.png",
+      "status": "accepted",
+      "createdAt": "2026-08-04T12:16:27.570Z",
+      "updatedAt": "2026-08-04T12:16:44.962Z"
     },
     {
-      "id": "look-5720ffc2-2b26-4e78-8178-3d06132aeee5",
-      "name": "White Base T-Shirt + Dark Wash Denim Jeans",
+      "id": "look-0499f61b-a68c-4dba-961c-8fa1e02a09d4",
+      "name": "Americana de cuadros gris + Classic blue denim jeans",
       "occasion": "casual",
       "season": "autumn",
       "climate": "mild",
       "garmentIds": [
-        "import-49534464-694e-4487-99fb-52795e330209",
-        "import-9ebf7d97-f022-47d3-8219-8b3fa129c0cd",
-        "import-f44f6426-6d75-4676-95d0-75d92e8a4ecc"
+        "import-167a1105-38ce-4ccb-baf7-5b647ed0a989",
+        "import-494d7a64-a64e-4f0e-8e34-36cd7091e762",
+        "import-dc2d43ee-1a2e-4ffe-a575-71efed6909bd",
+        "import-827039d0-f150-42ba-ba73-2f6836268a37"
       ],
       "reason": "base neutra versátil, siluetas equilibradas, materiales compatibles. Pensado para casual.",
       "score": 98,
       "source": "suggested",
       "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T17:20:36.715Z",
-      "updatedAt": "2026-07-29T17:22:18.625Z"
+      "image": "/api/tryon/images/look-0499f61b-a68c-4dba-961c-8fa1e02a09d4.png",
+      "status": "accepted",
+      "createdAt": "2026-08-04T15:31:15.929Z",
+      "updatedAt": "2026-08-04T15:32:10.725Z"
     },
     {
-      "id": "look-51e23c9a-331e-44a3-9884-eb95527b149b",
-      "name": "White Crewneck Tee + tan relaxed sweatpants",
+      "id": "look-01e521ac-db05-4bf8-87ee-0d35d3291db3",
+      "name": "Mi combinación",
       "occasion": "casual",
       "season": "autumn",
       "climate": "mild",
       "garmentIds": [
-        "import-70b7c415-d1f6-447c-920b-6ef29e3263a6",
-        "import-c16da2f8-4534-467f-9e34-49934fc61371",
-        "import-e6ad030b-8cb0-464f-8081-b90f238b7546"
+        "import-210f07e8-477a-46cb-b21c-2a34a4d24f67",
+        "import-52bdb5fb-7c94-4854-acdd-0d6c49c98be8",
+        "import-c3f19e91-e83b-4ae1-9fd9-3de0f18fe990",
+        "import-a2f9dff1-2ec8-4755-9358-8875a486367a",
+        "import-21b25f64-b51e-469d-ae18-43e597cf729c"
       ],
-      "reason": "base neutra versátil, siluetas equilibradas, textura continua. Pensado para casual.",
-      "score": 84,
-      "source": "suggested",
-      "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-29T17:31:47.252Z",
-      "updatedAt": "2026-07-29T17:31:47.252Z"
-    },
-    {
-      "id": "look-6c2535d2-4d0f-469e-b865-e6966d5c9d56",
-      "name": "Mi outfit",
-      "occasion": "casual",
-      "season": "all",
-      "climate": "mild",
-      "garmentIds": [
-        "import-c2a43768-472f-4ecb-a7fc-6bfbfa321b60",
-        "import-efbdbd43-b839-4905-8207-f906b088075a",
-        "import-bf687a9f-b398-4399-a8f5-18fcf271c7ca",
-        "import-e65749e2-55bd-4834-9be8-127fdd1d1826",
-        "import-8254961d-5b91-47f3-94cd-a174bbf4c836"
-      ],
-      "reason": "Outfit armado libremente en el builder.",
+      "reason": "Combinación creada libremente con prendas del catálogo seleccionado.",
       "score": 100,
       "source": "manual",
       "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-30T13:26:29.275Z",
-      "updatedAt": "2026-07-30T13:26:36.148Z"
+      "image": "/api/tryon/images/look-01e521ac-db05-4bf8-87ee-0d35d3291db3.png",
+      "status": "accepted",
+      "createdAt": "2026-08-04T16:45:50.542Z",
+      "updatedAt": "2026-08-04T16:46:06.530Z"
     },
     {
-      "id": "look-8484bb20-a625-44b0-8cbd-7b53c3634f88",
-      "name": "Camisaco utilitario oliva + Minipollera de cuero negra",
+      "id": "look-7205b7f0-3bf5-453a-81ba-340d12425548",
+      "name": "Lace-Trimmed Satin Camisole Top + Dark indigo high-waisted denim jeans",
       "occasion": "casual",
       "season": "autumn",
       "climate": "mild",
       "garmentIds": [
-        "import-92095aef-2410-4314-b40c-3250d16abe07",
-        "import-9bd2b6d3-f29b-42cf-9c7a-0ae6bacdec3e",
-        "import-43e96dd0-bb10-4c08-ac32-78a38ec3848a",
-        "import-670dc79b-fc3a-4de3-892b-5a7b32d25843"
+        "import-6c424f75-48fa-40ca-9e1c-8c9a0f0ef91b",
+        "import-de7941a9-4cd5-45f5-ba34-6aa425256c49",
+        "import-167a1105-38ce-4ccb-baf7-5b647ed0a989",
+        "import-823e3395-321a-4b66-8814-efb425863b2f"
       ],
       "reason": "base neutra versátil, siluetas equilibradas, materiales compatibles. Pensado para casual.",
       "score": 98,
       "source": "suggested",
       "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-30T19:55:52.027Z",
-      "updatedAt": "2026-07-30T19:55:52.027Z"
+      "image": "/api/tryon/images/look-7205b7f0-3bf5-453a-81ba-340d12425548.png",
+      "status": "accepted",
+      "createdAt": "2026-08-05T17:52:32.123Z",
+      "updatedAt": "2026-08-05T17:52:49.510Z"
     },
     {
-      "id": "look-45780480-099e-4d57-a605-e2a4a7e0af8a",
-      "name": "Mi outfit",
+      "id": "look-f27da1c0-debc-4596-a1f0-eb4562953b0a",
+      "name": "Mi combinación",
       "occasion": "casual",
-      "season": "all",
+      "season": "autumn",
       "climate": "mild",
       "garmentIds": [
-        "import-b9fbe1f0-f134-4c09-9c4c-8c352659fd32",
-        "import-278918fb-24ad-4291-8700-cb445e5cb1cb",
-        "import-e65749e2-55bd-4834-9be8-127fdd1d1826",
-        "import-8254961d-5b91-47f3-94cd-a174bbf4c836"
+        "import-9c2a1b4f-ea42-43c8-a68c-cb8517d9b760",
+        "import-956022dc-862e-4dd4-8b70-f60fd37180c5",
+        "import-407808da-cbcb-443d-8c89-a1dbf01bc0ba",
+        "import-70196b84-3094-41f9-a967-539373a50d4a"
       ],
-      "reason": "Outfit armado libremente en el builder.",
+      "reason": "Combinación creada libremente con prendas del catálogo seleccionado.",
       "score": 100,
       "source": "manual",
       "favorite": false,
-      "image": null,
-      "status": "planned",
-      "createdAt": "2026-07-30T19:55:15.096Z",
-      "updatedAt": "2026-07-31T13:15:21.996Z"
+      "image": "/api/tryon/images/look-f27da1c0-debc-4596-a1f0-eb4562953b0a.png",
+      "status": "accepted",
+      "createdAt": "2026-11-06T19:20:56.505Z",
+      "updatedAt": "2026-11-06T19:21:19.761Z"
     }
   ]
 }

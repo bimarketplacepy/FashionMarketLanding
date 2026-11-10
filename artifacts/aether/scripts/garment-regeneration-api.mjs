@@ -3,6 +3,7 @@ import { copyFile, mkdir, readFile, rename, rm, stat, writeFile } from "node:fs/
 import path from "node:path";
 import sharp from "sharp";
 import { createAIProvider } from "./ai-provider.mjs";
+import { withLibraryLock } from "./library-lock.mjs";
 
 const API_ROOT = "/api/garment-regeneration";
 
@@ -247,6 +248,7 @@ export function garmentRegenerationApi(options = {}) {
       if (await exists(current)) await copyFile(current, path.join(versionsDir, versionName));
       await copyFile(candidate, current);
       entry.versions = [...(entry.versions || []), { name: versionName, archivedAt: now, sourceRequestId: requestId }];
+      await withLibraryLock(async () => {
       const library = await loadLibrary();
       const record = library.find((value) => value.id === item.id);
       if (record) {
@@ -259,6 +261,7 @@ export function garmentRegenerationApi(options = {}) {
         record.regeneration = { status: "approved", requestId, approvedAt: now };
         await atomicJson(libraryFile, library);
       }
+      });
     }
     request.status = decision;
     request.updatedAt = now;

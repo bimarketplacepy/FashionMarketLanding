@@ -3,3 +3,23 @@
 
 # No need to store the pnpm store twice.
 .local
+
+# --- Fashion Market: material de trabajo que no hace falta en producción ---
+# Producción sirve el catálogo desde data/library.json + public/garments
+# (WebP/AVIF). Los PNG maestros, la bandeja de importación y los trabajos de
+# IA son sólo del workspace. Los respaldos (fotos crudas de lotes, originales,
+# deduplicación) ya viven en .local/aether-archive y en App Storage.
+artifacts/aether/data/imported/
+artifacts/aether/data/look-models/
+artifacts/aether/data/claude-inbox/
+artifacts/aether/data/jobs/
+artifacts/aether/data/garment-regeneration/
+artifacts/aether/data/_backups/
+artifacts/aether/fotos-ss26/
+attached_assets/
+# Configuración local del workspace: incluye la instalación global de Claude Code
+# (.config/npm/node_global, ~323 MB), que la app no usa en producción.
+.config/
+
+# Módulo de Odoo: se instala en Odoo, no viaja al deployment del motor
+odoo/

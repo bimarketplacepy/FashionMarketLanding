@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "entries": {
+    "import-e9e9bd25-1106-40a6-b83d-fcee23e85d51": {
+      "garmentId": "import-e9e9bd25-1106-40a6-b83d-fcee23e85d51",
+      "requests": [
+        {
+          "id": "garment-b4ac004d-6d8c-4e2a-8050-4aa6bd9a3f8c",
+          "type": "garment-regeneration",
+          "garmentId": "import-e9e9bd25-1106-40a6-b83d-fcee23e85d51",
+          "garmentName": "Blusa negra escote V con bordado a contraste",
+          "status": "processing",
+          "createdAt": "2026-10-01T12:19:38.084Z",
+          "updatedAt": "2026-10-01T12:19:38.085Z",
+          "instruction": "",
+          "prompt": "Use case: background-extraction\nAsset type: transparent retailer catalog garment PNG\nImage 1: authoritative reference for the exact existing garment.\n\nPrimary request: Reconstruct only the complete empty garment from Image 1 as a clean, straight-on product photograph. Remove any person, mannequin, hanger, supporting garment, prop, shadow and background. Keep one garment only, centered with generous even padding.\n\nGarment identity: Blusa negra escote V con bordado a contraste; category upperbody; primary color #19181d and secondary color #efece6; supported details: blusas, mixed, regular, medium.\n\nFidelity: preserve the exact silhouette, proportions, neckline, sleeves, hem, waistband, pockets, seams, panels, material grain, fabric weight, construction, closures, hardware, pattern, graphics and legible text visible in Image 1. Do not redesign, beautify, simplify or make the garment more symmetrical than the evidence supports. Prefer omission over inventing an unseen or uncertain detail.\n\nOutput preparation: perfectly flat solid chroma-key background chosen to contrast with the garment; no floor plane, gradient, texture, cast shadow, contact shadow or reflection. Crisp separable outline, no chroma color inside the garment, no cropping.\n\n\nAvoid: body, skin, hair, extra layer, mannequin, hanger, tag, invented logo or text, fake pocket, altered closure, duplicated sleeve, missing extremity, watermark, caption, border, halo or synthetic product redesign.",
+          "metadata": {
+            "id": "import-e9e9bd25-1106-40a6-b83d-fcee23e85d51",
+            "name": "Blusa negra escote V con bordado a contraste",
+            "part": "upperbody",
+            "garmentType": "blouse",
+            "color": "#19181d",
+            "secondaryColor": "#efece6",
+            "palette": [
+              "#19181d",
+              "#efece6"
+            ],
+            "tags": [
+              "blusas"
+            ],
+            "season": "all",
+            "material": "mixed",
+            "silhouette": "regular",
+            "weight": "medium",
+            "climates": [
+              "mild"
+            ],
+            "occasions": [
+              "casual"
+            ],
+            "image": "/api/import/library/import-e9e9bd25-1106-40a6-b83d-fcee23e85d51-garment.png",
+            "thumbnail": "/api/import/library/import-e9e9bd25-1106-40a6-b83d-fcee23e85d51-garment.png",
+            "modeledImage": null,
+            "importJobId": null,
+            "gender": "mujer",
+            "sizes": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ],
+            "description": "Blusa confeccionada en tela liviana de color negro, con cuello camisero y escote pronunciado en V. Presenta mangas tres cuartos abullonadas y un acabado decorativo con guardas onduladas a contraste en crema sobre el escote y las mangas.",
+            "price": null,
+            "importBatch": {
+              "id": "be4469ee-e190-4f0b-bf96-8ffd57b0bb06",
+              "name": "NAKED ZEBRA"
+            },
+            "importedAt": "2026-09-30T16:21:47.205Z",
+            "analysis": {
+              "archivo": null,
+              "nombre": "Blusa negra escote V con bordado a contraste",
+              "categoria": "tops",
+              "categoriaInterna": "upperbody",
+              "garmentType": "blouse",
+              "gender": "mujer",
+              "subcategoria": "Blusas",
+              "colores": [
+                "#19181d",
+                "#efece6"
+              ],
+              "descripcion": "Blusa confeccionada en tela liviana de color negro, con cuello camisero y escote pronunciado en V. Presenta mangas tres cuartos abullonadas y un acabado decorativo con guardas onduladas a contraste en crema sobre el escote y las mangas.",
+              "recorte": null,
+              "confianza": 0.95,
+              "prendaCompleta": true,
+              "prendaPrincipal": "Blusa negra con detalles a contraste",
+              "prendasSecundarias": [
+                "short negro con elástico",
+                "cartera de mano tejida",
+                "sandalias charchas negras",
+                "aros dorados"
+              ]
+            }
+          },
+          "references": {
+            "source": "data/imported/import-e9e9bd25-1106-40a6-b83d-fcee23e85d51-garment.png"
+          },
+          "targetPath": "data/garment-regeneration/candidates/import-e9e9bd25-1106-40a6-b83d-fcee23e85d51--garment-b4ac004d-6d8c-4e2a-8050-4aa6bd9a3f8c.png",
+          "candidateName": "import-e9e9bd25-1106-40a6-b83d-fcee23e85d51--garment-b4ac004d-6d8c-4e2a-8050-4aa6bd9a3f8c.png"
+        }
+      ],
+      "versions": [],
+      "originalName": "import-e9e9bd25-1106-40a6-b83d-fcee23e85d51.png",
+      "currentRequestId": "garment-b4ac004d-6d8c-4e2a-8050-4aa6bd9a3f8c",
+      "updatedAt": "2026-10-01T12:19:38.084Z"
+    },
+    "import-0c72f718-1459-464f-b767-d4c0876a269b": {
+      "garmentId": "import-0c72f718-1459-464f-b767-d4c0876a269b",
+      "requests": [
+        {
+          "id": "garment-26f1c93d-cf99-49de-9ade-f8ac58d15346",
+          "type": "garment-regeneration",
+          "garmentId": "import-0c72f718-1459-464f-b767-d4c0876a269b",
+          "garmentName": "Corpiño de bikini acanalado marrón",
+          "status": "failed",
+          "createdAt": "2026-10-01T12:19:45.397Z",
+          "updatedAt": "2026-10-01T12:19:54.779Z",
+          "instruction": "",
+          "prompt": "Use case: background-extraction\nAsset type: transparent retailer catalog garment PNG\nImage 1: authoritative reference for the exact existing garment.\n\nPrimary request: Reconstruct only the complete empty garment from Image 1 as a clean, straight-on product photograph. Remove any person, mannequin, hanger, supporting garment, prop, shadow and background. Keep one garment only, centered with generous even padding.\n\nGarment identity: Corpiño de bikini acanalado marrón; category upperbody; primary color #4d2e1d; supported details: trajes de baño, mixed, regular, medium.\n\nFidelity: preserve the exact silhouette, proportions, neckline, sleeves, hem, waistband, pockets, seams, panels, material grain, fabric weight, construction, closures, hardware, pattern, graphics and legible text visible in Image 1. Do not redesign, beautify, simplify or make the garment more symmetrical than the evidence supports. Prefer omission over inventing an unseen or uncertain detail.\n\nOutput preparation: perfectly flat solid chroma-key background chosen to contrast with the garment; no floor plane, gradient, texture, cast shadow, contact shadow or reflection. Crisp separable outline, no chroma color inside the garment, no cropping.\n\n\nAvoid: body, skin, hair, extra layer, mannequin, hanger, tag, invented logo or text, fake pocket, altered closure, duplicated sleeve, missing extremity, watermark, caption, border, halo or synthetic product redesign.",
+          "metadata": {
+            "id": "import-0c72f718-1459-464f-b767-d4c0876a269b",
+            "name": "Corpiño de bikini acanalado marrón",
+            "part": "upperbody",
+            "garmentType": "top",
+            "color": "#4d2e1d",
+            "secondaryColor": null,
+            "palette": [
+              "#4d2e1d"
+            ],
+            "tags": [
+              "trajes de baño"
+            ],
+            "season": "all",
+            "material": "mixed",
+            "silhouette": "regular",
+            "weight": "medium",
+            "climates": [
+              "mild"
+            ],
+            "occasions": [
+              "casual"
+            ],
+            "image": "/api/import/library/import-0c72f718-1459-464f-b767-d4c0876a269b-garment.png",
+            "thumbnail": "/api/import/library/import-0c72f718-1459-464f-b767-d4c0876a269b-garment.png",
+            "modeledImage": null,
+            "importJobId": null,
+            "gender": "mujer",
+            "sizes": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ],
+            "description": "Corpiño de bikini triangular confeccionado en tejido acanalado de tono marrón chocolate, con un elegante herraje dorado en el centro y breteles finos.",
+            "price": null,
+            "importBatch": {
+              "id": "833d26d5-db0d-4952-87fb-2d0afb326c3f",
+              "name": "core in fashion"
+            },
+            "importedAt": "2026-09-30T16:21:11.388Z",
+            "analysis": {
+              "archivo": null,
+              "nombre": "Corpiño de bikini acanalado marrón",
+              "categoria": "tops",
+              "categoriaInterna": "upperbody",
+              "garmentType": "top",
+              "gender": "mujer",
+              "subcategoria": "trajes de baño",
+              "colores": [
+                "#4d2e1d"
+              ],
+              "descripcion": "Corpiño de bikini triangular confeccionado en tejido acanalado de tono marrón chocolate, con un elegante herraje dorado en el centro y breteles finos.",
+              "recorte": null,
+              "confianza": 0.95,
+              "prendaCompleta": true,
+              "prendaPrincipal": "corpiño de bikini",
+              "prendasSecundarias": [
+                "bombacha de bikini",
+                "collar",
+                "aros",
+                "pulsera"
+              ]
+            }
+          },
+          "references": {
+            "source": "data/imported/import-0c72f718-1459-464f-b767-d4c0876a269b-garment.png"
+          },
+          "targetPath": "data/garment-regeneration/candidates/import-0c72f718-1459-464f-b767-d4c0876a269b--garment-26f1c93d-cf99-49de-9ade-f8ac58d15346.png",
+          "candidateName": "import-0c72f718-1459-464f-b767-d4c0876a269b--garment-26f1c93d-cf99-49de-9ade-f8ac58d15346.png",
+          "error": "Gemini no devolvió un fondo croma uniforme. Probá otra versión con una indicación más específica."
+        }
+      ],
+      "versions": [],
+      "originalName": "import-0c72f718-1459-464f-b767-d4c0876a269b.png",
+      "currentRequestId": "garment-26f1c93d-cf99-49de-9ade-f8ac58d15346",
+      "updatedAt": "2026-10-01T12:19:54.779Z"
+    }
+  }
+}

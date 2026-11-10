@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Fashion Market — By Marketplace</title>
     <meta name="description" content="Fashion Market — el sector de moda de Marketplace. Descubrí la nueva temporada." />
     <meta name="robots" content="index, follow" />
@@ -13,11 +13,39 @@
     <meta name="twitter:title" content="Fashion Market — By Marketplace" />
     <meta name="twitter:description" content="Fashion Market — el sector de moda de Marketplace. Descubrí la nueva temporada." />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Los datos de la vista se piden apenas llega el HTML, en paralelo con el JS. -->
+    <script>
+      (function () {
+        var path = location.pathname, href = path === "/" ? "/api/landing" : /^\/(catalogo|probador)/.test(path) ? "/api/catalog" : null;
+        if (!href) return;
+        var link = document.createElement("link");
+        link.rel = "preload"; link.as = "fetch"; link.crossOrigin = "anonymous"; link.href = href;
+        document.head.appendChild(link);
+      })();
+    </script>
+    <meta name="theme-color" content="#f3f1ec">
+    <!-- Google Tag Manager (diferido: se carga después del evento load, en un
+         momento ocioso, para no competir con el render inicial). -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      (function () {
+        function loadGtm() {
+          var s = document.createElement("script");
+          s.async = true; s.src = "https://www.googletagmanager.com/gtm.js?id=GTM-M5PPZD3X";
+          document.head.appendChild(s);
+        }
+        function schedule() { ("requestIdleCallback" in window) ? requestIdleCallback(loadGtm, { timeout: 3000 }) : setTimeout(loadGtm, 1500); }
+        if (document.readyState === "complete") schedule(); else window.addEventListener("load", schedule, { once: true });
+      })();
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5PPZD3X"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

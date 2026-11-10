@@ -1,10 +1,15 @@
 {
-  "mode": "photo",
+  "mode": "preset",
   "gender": "mujer",
   "complexion": "atletica",
-  "skinTone": "clara",
-  "preset": "blanca",
-  "custom": null,
-  "updatedAt": "2026-07-30T19:56:06.927Z",
-  "modelUrl": null
+  "skinTone": "media-calida",
+  "preset": "mujer-americana-calida",
+  "style": "castano-largo-24-28",
+  "hairColor": "castano",
+  "hairLength": "largo",
+  "hairTexture": "ondulado",
+  "ageRange": "24–28",
+  "modelUrl": "/fashion/models/ai/mujer-americana-calida.webp",
+  "appearance": "Rasgos norteamericanos diversos",
+  "updatedAt": "2026-11-06T19:20:26.817Z"
 }

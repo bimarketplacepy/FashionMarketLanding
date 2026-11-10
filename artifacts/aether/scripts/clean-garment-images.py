@@ -14,6 +14,7 @@
 #   - Fallbacks en cadena; si todo queda casi vacío se conserva el original.
 # Los originales se respaldan una única vez en data/imported-originals/.
 import io
+import os
 import json
 import shutil
 import sys
@@ -26,7 +27,8 @@ from scipy import ndimage
 
 ROOT = Path(__file__).resolve().parent.parent
 IMPORTED = ROOT / "data" / "imported"
-BACKUP = ROOT / "data" / "imported-originals"
+# Fuera del deploy (ver scripts/private-paths.mjs); AETHER_PRIVATE_DATA lo redefine.
+BACKUP = Path(os.environ.get("AETHER_PRIVATE_DATA", ROOT.parent.parent / ".local" / "aether-archive")) / "imported-originals"
 LIBRARY = ROOT / "data" / "library.json"
 PENDING = ROOT / "data" / "claude-inbox" / "pending.json"
 ANALYSIS = ROOT / "data" / "claude-inbox" / "analysis"

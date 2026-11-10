@@ -1,6 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check } from "@phosphor-icons/react";
 import { formatPriceGs } from "./format.js";
+import { SHOW_PRICES } from "../site-config.js";
+import { GarmentImage } from "./GarmentImage.jsx";
+import { engineFetch } from "../embed/base.js";
 
 // Outfits guardados, compartidos entre fichas (para el +1 de "aparecen juntas").
 let outfitsCache = null;
@@ -10,7 +13,7 @@ export function useSavedOutfits() {
   const [state, setState] = useState(() => ({ outfits: outfitsCache || [], ready: Boolean(outfitsCache) }));
   useEffect(() => {
     if (outfitsCache) return;
-    outfitsPromise ||= fetch("/api/tryon/outfits")
+    outfitsPromise ||= engineFetch("/api/tryon/outfits")
       .then((response) => (response.ok ? response.json() : { outfits: [] }))
       .then((collection) => { outfitsCache = collection.outfits || []; return outfitsCache; })
       .catch(() => { outfitsCache = []; return outfitsCache; });
@@ -47,7 +50,7 @@ export function SuggestionCarousel({ title, suggestions, ready = true, action = 
 
   useEffect(() => () => clearTimeout(addedTimer.current), []);
 
-  if (ready && suggestions.length < 4) return null;
+  if (ready && !suggestions.length) return null;
 
   const scrollBy = (direction) => {
     const track = trackRef.current;
@@ -84,12 +87,12 @@ export function SuggestionCarousel({ title, suggestions, ready = true, action = 
                 aria-label={action === "add" ? `Agregar ${item.name}` : `Ver ${item.name}`}
               >
                 <span className="sc-art">
-                  <img src={item.thumbnail || item.image} alt="" loading="lazy" />
+                  <GarmentImage item={item} sizes="160px" />
                   {addedId === item.id && <span className="sc-check"><Check size={20} weight="light" /></span>}
                 </span>
                 {deColeccion && <span className="sc-origin">De la colección</span>}
                 <span className="sc-name">{item.name}</span>
-                <span className="sc-price">{typeof item.price === "number" ? formatPriceGs(item.price) : ""}</span>
+                <span className="sc-price">{SHOW_PRICES && typeof item.price === "number" ? formatPriceGs(item.price) : ""}</span>
                 <span className="sc-action">{action === "add" ? "Agregar" : "Ver prenda"}</span>
               </button>
             ))}

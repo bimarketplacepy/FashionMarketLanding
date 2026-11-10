@@ -16,7 +16,7 @@ For each item:
 - classify garmentType using the most specific supplied enum. Reserve top for fashion tops; use tshirt, shirt, sweater or another specific type for neutral or men's upper garments;
 - classify gender as mujer, hombre, or unisex from the GARMENT, its cut, construction and product context. Do not copy the gender of the person wearing it merely because they are the model;
 - use mujer for fashion tops, blouses, dresses, skirts, high heels and clearly feminine bags or jewelry; use hombre for clearly masculine garments; use unisex only when the product is genuinely neutral or ambiguous;
-- suggest a concise specific name, primary hex color, optional genuinely distinct secondary hex color, and 1-4 useful lowercase detail tags;
+- suggest a concise specific name written in Spanish (Latin American retail catalog style, e.g. "Pollera corta de cuadros", "Blusa translúcida con fruncido"), primary hex color, optional genuinely distinct secondary hex color, and 1-4 useful lowercase detail tags;
 - infer the most plausible season, material, silhouette, visual weight, compatible climates and occasions only from visible evidence;
 - prefer conservative generic metadata when evidence is uncertain.
 

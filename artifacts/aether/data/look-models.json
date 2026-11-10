@@ -1,0 +1,1132 @@
+{
+  "version": 1,
+  "looks": {
+    "conjuntos-import-8e935c2a-520e-483e-ac41-7fb3be3bb109": {
+      "garmentIds": [
+        "import-8e935c2a-520e-483e-ac41-7fb3be3bb109",
+        "import-7e5ba420-468b-4844-8927-83c9fd65ee20",
+        "import-e3f63ef1-1538-43ba-9cf5-b519f59db0c3",
+        "import-3909a08f-1fe4-4c99-9e88-5e363baf9e65"
+      ],
+      "family": "conjuntos",
+      "preset": "mujer-africana-profunda",
+      "style": "castano-corto-29-34",
+      "model": "Zuri",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:31:47.810Z",
+      "hotspots": [
+        {
+          "garmentId": "import-8e935c2a-520e-483e-ac41-7fb3be3bb109",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.31
+        },
+        {
+          "garmentId": "import-7e5ba420-468b-4844-8927-83c9fd65ee20",
+          "visible": true,
+          "x": 0.43,
+          "y": 0.6
+        },
+        {
+          "garmentId": "import-e3f63ef1-1538-43ba-9cf5-b519f59db0c3",
+          "visible": true,
+          "x": 0.555,
+          "y": 0.94
+        },
+        {
+          "garmentId": "import-3909a08f-1fe4-4c99-9e88-5e363baf9e65",
+          "visible": true,
+          "x": 0.506,
+          "y": 0.065
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/conjuntos-import-8e935c2a-520e-483e-ac41-7fb3be3bb109",
+        "hash": "24cecffeb0",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "conjuntos-import-dabde868-e51a-484e-82df-b2b4c061e27f": {
+      "garmentIds": [
+        "import-dabde868-e51a-484e-82df-b2b4c061e27f",
+        "import-806f15d4-c955-49a3-aa32-4f0c63f07179",
+        "import-1f0388c7-3a10-4890-9b18-ffd7f9ab4c13",
+        "import-2be96fb5-3dd3-4e85-93e1-ec3c3ffe41c0"
+      ],
+      "family": "conjuntos",
+      "preset": "mujer-americana-calida",
+      "style": "castano-largo-24-28",
+      "model": "Maya",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:32:46.429Z",
+      "hotspots": [
+        {
+          "garmentId": "import-dabde868-e51a-484e-82df-b2b4c061e27f",
+          "visible": true,
+          "x": 0.515,
+          "y": 0.32
+        },
+        {
+          "garmentId": "import-806f15d4-c955-49a3-aa32-4f0c63f07179",
+          "visible": true,
+          "x": 0.505,
+          "y": 0.485
+        },
+        {
+          "garmentId": "import-1f0388c7-3a10-4890-9b18-ffd7f9ab4c13",
+          "visible": true,
+          "x": 0.535,
+          "y": 0.915
+        },
+        {
+          "garmentId": "import-2be96fb5-3dd3-4e85-93e1-ec3c3ffe41c0",
+          "visible": true,
+          "x": 0.33,
+          "y": 0.51
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/conjuntos-import-dabde868-e51a-484e-82df-b2b4c061e27f",
+        "hash": "1795c1ba44",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "conjuntos-import-6afe311d-0ac5-4910-9638-1c6020971b4d": {
+      "garmentIds": [
+        "import-6afe311d-0ac5-4910-9638-1c6020971b4d",
+        "import-675cc2c4-81ff-4462-96c1-cf23f7c18cf5",
+        "import-e0c8902d-6699-4bd7-9f51-57218796d4c9",
+        "import-44990860-d399-4a32-a581-0567fceb28a6"
+      ],
+      "family": "conjuntos",
+      "preset": "mujer-asiatica-dorada",
+      "style": "negro-largo-24-28",
+      "model": "Hana",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:32:46.501Z",
+      "hotspots": [
+        {
+          "garmentId": "import-6afe311d-0ac5-4910-9638-1c6020971b4d",
+          "visible": true,
+          "x": 0.495,
+          "y": 0.31
+        },
+        {
+          "garmentId": "import-675cc2c4-81ff-4462-96c1-cf23f7c18cf5",
+          "visible": true,
+          "x": 0.515,
+          "y": 0.65
+        },
+        {
+          "garmentId": "import-e0c8902d-6699-4bd7-9f51-57218796d4c9",
+          "visible": true,
+          "x": 0.562,
+          "y": 0.936
+        },
+        {
+          "garmentId": "import-44990860-d399-4a32-a581-0567fceb28a6",
+          "visible": true,
+          "x": 0.344,
+          "y": 0.517
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/conjuntos-import-6afe311d-0ac5-4910-9638-1c6020971b4d",
+        "hash": "dd424c4070",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "conjuntos-import-f3cae53c-184d-4521-9c98-f969935aa773": {
+      "garmentIds": [
+        "import-f3cae53c-184d-4521-9c98-f969935aa773",
+        "import-b1282171-1dac-4879-a45a-116d1f2f0901",
+        "import-02017f8e-1f97-46d2-aca0-8f5bd77c2d3a",
+        "import-134a0d40-4f2d-4708-ba2f-2985410d8591"
+      ],
+      "family": "conjuntos",
+      "preset": "mujer-europea-clara",
+      "style": "rubio-largo-24-28",
+      "model": "Elise",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:32:49.952Z",
+      "hotspots": [
+        {
+          "garmentId": "import-f3cae53c-184d-4521-9c98-f969935aa773",
+          "visible": true,
+          "x": 0.51,
+          "y": 0.32
+        },
+        {
+          "garmentId": "import-b1282171-1dac-4879-a45a-116d1f2f0901",
+          "visible": true,
+          "x": 0.44,
+          "y": 0.53
+        },
+        {
+          "garmentId": "import-02017f8e-1f97-46d2-aca0-8f5bd77c2d3a",
+          "visible": true,
+          "x": 0.715,
+          "y": 0.955
+        },
+        {
+          "garmentId": "import-134a0d40-4f2d-4708-ba2f-2985410d8591",
+          "visible": true,
+          "x": 0.668,
+          "y": 0.51
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/conjuntos-import-f3cae53c-184d-4521-9c98-f969935aa773",
+        "hash": "e8a8410d3c",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "conjuntos-import-e0f0cfd3-e990-4161-8414-ac6545b4b1e0": {
+      "garmentIds": [
+        "import-e0f0cfd3-e990-4161-8414-ac6545b4b1e0",
+        "import-583e9ad8-9512-40a8-97eb-bea72400b947",
+        "import-de1edf01-c958-4f12-9055-effe944b820d",
+        "import-251a54b2-4745-4c43-a75c-3422da0cc3c4"
+      ],
+      "family": "conjuntos",
+      "preset": "mujer-asiatica-dorada",
+      "style": "castano-medio-29-34",
+      "model": "Hana",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:32:57.765Z",
+      "hotspots": [
+        {
+          "garmentId": "import-e0f0cfd3-e990-4161-8414-ac6545b4b1e0",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.32
+        },
+        {
+          "garmentId": "import-583e9ad8-9512-40a8-97eb-bea72400b947",
+          "visible": true,
+          "x": 0.51,
+          "y": 0.65
+        },
+        {
+          "garmentId": "import-de1edf01-c958-4f12-9055-effe944b820d",
+          "visible": true,
+          "x": 0.45,
+          "y": 0.955
+        },
+        {
+          "garmentId": "import-251a54b2-4745-4c43-a75c-3422da0cc3c4",
+          "visible": true,
+          "x": 0.505,
+          "y": 0.105
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/conjuntos-import-e0f0cfd3-e990-4161-8414-ac6545b4b1e0",
+        "hash": "b65b5d8add",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "conjuntos-import-048b4c2d-b614-4463-b20a-a22a1c805b98": {
+      "garmentIds": [
+        "import-048b4c2d-b614-4463-b20a-a22a1c805b98",
+        "import-a2593d59-f109-4d2d-a281-a5d75e0a9443",
+        "import-25012e86-34fb-4ddf-a2f9-eb80eccbd0c7",
+        "import-efdccbea-13c4-488b-a5bf-ad63249d0a80"
+      ],
+      "family": "conjuntos",
+      "preset": "mujer-europea-clara",
+      "style": "castano-medio-29-34",
+      "model": "Elise",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:00.671Z",
+      "hotspots": [
+        {
+          "garmentId": "import-048b4c2d-b614-4463-b20a-a22a1c805b98",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.32
+        },
+        {
+          "garmentId": "import-a2593d59-f109-4d2d-a281-a5d75e0a9443",
+          "visible": true,
+          "x": 0.495,
+          "y": 0.49
+        },
+        {
+          "garmentId": "import-25012e86-34fb-4ddf-a2f9-eb80eccbd0c7",
+          "visible": true,
+          "x": 0.48,
+          "y": 0.945
+        },
+        {
+          "garmentId": "import-efdccbea-13c4-488b-a5bf-ad63249d0a80",
+          "visible": true,
+          "x": 0.505,
+          "y": 0.21
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/conjuntos-import-048b4c2d-b614-4463-b20a-a22a1c805b98",
+        "hash": "b0f4202fcf",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "conjuntos-import-167b54e6-7c69-4d5c-be28-3aa3edd9c3a9": {
+      "garmentIds": [
+        "import-167b54e6-7c69-4d5c-be28-3aa3edd9c3a9",
+        "import-37cac9ad-2ed5-4704-948c-21c2716cfb1b",
+        "import-a8d88f80-655a-473e-a3d7-7a036b3bcfcb",
+        "import-854d66b8-e7d1-4d10-b0a6-00fbbddeca0d"
+      ],
+      "family": "conjuntos",
+      "preset": "mujer-africana-profunda",
+      "style": "negro-medio-24-28",
+      "model": "Zuri",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:05.366Z",
+      "hotspots": [
+        {
+          "garmentId": "import-167b54e6-7c69-4d5c-be28-3aa3edd9c3a9",
+          "visible": true,
+          "x": 0.508,
+          "y": 0.285
+        },
+        {
+          "garmentId": "import-37cac9ad-2ed5-4704-948c-21c2716cfb1b",
+          "visible": true,
+          "x": 0.505,
+          "y": 0.48
+        },
+        {
+          "garmentId": "import-a8d88f80-655a-473e-a3d7-7a036b3bcfcb",
+          "visible": true,
+          "x": 0.55,
+          "y": 0.94
+        },
+        {
+          "garmentId": "import-854d66b8-e7d1-4d10-b0a6-00fbbddeca0d",
+          "visible": true,
+          "x": 0.452,
+          "y": 0.152
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/conjuntos-import-167b54e6-7c69-4d5c-be28-3aa3edd9c3a9",
+        "hash": "1b77e8d9d1",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "vestidos-import-025d7ed0-9c89-4999-8d41-403c192c3295": {
+      "garmentIds": [
+        "import-025d7ed0-9c89-4999-8d41-403c192c3295",
+        "import-a88f7329-7201-4760-aeb0-0913f2a08fbd",
+        "import-4c084291-68a8-4d2a-a8f5-bc05a95131f0"
+      ],
+      "family": "vestidos",
+      "preset": "mujer-americana-calida",
+      "style": "rubio-medio-29-34",
+      "model": "Maya",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:09.219Z",
+      "hotspots": [
+        {
+          "garmentId": "import-025d7ed0-9c89-4999-8d41-403c192c3295",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.55
+        },
+        {
+          "garmentId": "import-a88f7329-7201-4760-aeb0-0913f2a08fbd",
+          "visible": true,
+          "x": 0.605,
+          "y": 0.92
+        },
+        {
+          "garmentId": "import-4c084291-68a8-4d2a-a8f5-bc05a95131f0",
+          "visible": true,
+          "x": 0.495,
+          "y": 0.105
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/vestidos-import-025d7ed0-9c89-4999-8d41-403c192c3295",
+        "hash": "da093ac529",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "vestidos-import-b2995c3b-068b-4cb3-bb1c-697d6f538655": {
+      "garmentIds": [
+        "import-b2995c3b-068b-4cb3-bb1c-697d6f538655",
+        "import-0ea007f9-37c5-4329-989e-c32bfde1b848",
+        "import-ee86cf1c-7ca5-47a9-a05b-d7d1c0fc953b"
+      ],
+      "family": "vestidos",
+      "preset": "mujer-americana-calida",
+      "style": "castano-largo-24-28",
+      "model": "Maya",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:11.889Z",
+      "hotspots": [
+        {
+          "garmentId": "import-b2995c3b-068b-4cb3-bb1c-697d6f538655",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.52
+        },
+        {
+          "garmentId": "import-0ea007f9-37c5-4329-989e-c32bfde1b848",
+          "visible": true,
+          "x": 0.688,
+          "y": 0.925
+        },
+        {
+          "garmentId": "import-ee86cf1c-7ca5-47a9-a05b-d7d1c0fc953b",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.245
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/vestidos-import-b2995c3b-068b-4cb3-bb1c-697d6f538655",
+        "hash": "acc3313381",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "vestidos-import-c9a838f3-0ce3-4ce4-8263-c50d39eb1101": {
+      "garmentIds": [
+        "import-c9a838f3-0ce3-4ce4-8263-c50d39eb1101",
+        "import-0471e7ac-4e72-4e12-871c-448a5599cf71",
+        "import-f0831ebd-5f19-4dd8-b630-9827d7845855"
+      ],
+      "family": "vestidos",
+      "preset": "mujer-europea-clara",
+      "style": "rubio-largo-24-28",
+      "model": "Elise",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:16.020Z",
+      "hotspots": [
+        {
+          "garmentId": "import-c9a838f3-0ce3-4ce4-8263-c50d39eb1101",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.52
+        },
+        {
+          "garmentId": "import-0471e7ac-4e72-4e12-871c-448a5599cf71",
+          "visible": true,
+          "x": 0.557,
+          "y": 0.93
+        },
+        {
+          "garmentId": "import-f0831ebd-5f19-4dd8-b630-9827d7845855",
+          "visible": true,
+          "x": 0.505,
+          "y": 0.225
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/vestidos-import-c9a838f3-0ce3-4ce4-8263-c50d39eb1101",
+        "hash": "6104f6ca6c",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "vestidos-import-b64cab24-fa41-4e2a-858d-b0dd65d653a3": {
+      "garmentIds": [
+        "import-b64cab24-fa41-4e2a-858d-b0dd65d653a3",
+        "import-70196b84-3094-41f9-a967-539373a50d4a",
+        "import-fcb89c71-67a5-46d7-bb27-c5e4ea70e83e"
+      ],
+      "family": "vestidos",
+      "preset": "mujer-asiatica-dorada",
+      "style": "negro-largo-24-28",
+      "model": "Hana",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:17.715Z",
+      "hotspots": [
+        {
+          "garmentId": "import-b64cab24-fa41-4e2a-858d-b0dd65d653a3",
+          "visible": true,
+          "x": 0.49,
+          "y": 0.63
+        },
+        {
+          "garmentId": "import-70196b84-3094-41f9-a967-539373a50d4a",
+          "visible": true,
+          "x": 0.44,
+          "y": 0.94
+        },
+        {
+          "garmentId": "import-fcb89c71-67a5-46d7-bb27-c5e4ea70e83e",
+          "visible": true,
+          "x": 0.51,
+          "y": 0.405
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/vestidos-import-b64cab24-fa41-4e2a-858d-b0dd65d653a3",
+        "hash": "03990329ff",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "vestidos-import-5ee08be0-d1e5-4176-a92c-881b55e970c4": {
+      "garmentIds": [
+        "import-5ee08be0-d1e5-4176-a92c-881b55e970c4",
+        "import-2bdf8a0a-f106-474d-bec1-b2cbc0f5c305",
+        "import-d90676ce-b839-42f9-a70b-f3c344752fac"
+      ],
+      "family": "vestidos",
+      "preset": "mujer-africana-profunda",
+      "style": "castano-corto-29-34",
+      "model": "Zuri",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:22.986Z",
+      "hotspots": [
+        {
+          "garmentId": "import-5ee08be0-d1e5-4176-a92c-881b55e970c4",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.42
+        },
+        {
+          "garmentId": "import-2bdf8a0a-f106-474d-bec1-b2cbc0f5c305",
+          "visible": true,
+          "x": 0.605,
+          "y": 0.94
+        },
+        {
+          "garmentId": "import-d90676ce-b839-42f9-a70b-f3c344752fac",
+          "visible": true,
+          "x": 0.512,
+          "y": 0.235
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/vestidos-import-5ee08be0-d1e5-4176-a92c-881b55e970c4",
+        "hash": "7b2ddb4cfc",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "vestidos-import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663": {
+      "garmentIds": [
+        "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+        "import-cb828be9-ecef-42e3-bc2b-c99c918423ca",
+        "import-9e46aa09-b153-4b94-bae0-62eb7d370da6"
+      ],
+      "family": "vestidos",
+      "preset": "mujer-europea-clara",
+      "style": "castano-medio-29-34",
+      "model": "Elise",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:27.541Z",
+      "hotspots": [
+        {
+          "garmentId": "import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+          "visible": true,
+          "x": 0.515,
+          "y": 0.68
+        },
+        {
+          "garmentId": "import-cb828be9-ecef-42e3-bc2b-c99c918423ca",
+          "visible": true,
+          "x": 0.692,
+          "y": 0.938
+        },
+        {
+          "garmentId": "import-9e46aa09-b153-4b94-bae0-62eb7d370da6",
+          "visible": true,
+          "x": 0.49,
+          "y": 0.41
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/vestidos-import-0eb656c3-0f5b-4415-b6e6-5fd3ac0ec663",
+        "hash": "5667e0e142",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "vestidos-import-18cd9dfd-ef8d-45cc-bb15-593818179c20": {
+      "garmentIds": [
+        "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "import-4ec0ec1f-8f8b-4109-bcfa-7659799d2492",
+        "import-43613265-c096-436d-8c58-c2ba95e7196e"
+      ],
+      "family": "vestidos",
+      "preset": "mujer-asiatica-dorada",
+      "style": "castano-medio-29-34",
+      "model": "Hana",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:31.593Z",
+      "hotspots": [
+        {
+          "garmentId": "import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.42
+        },
+        {
+          "garmentId": "import-4ec0ec1f-8f8b-4109-bcfa-7659799d2492",
+          "visible": true,
+          "x": 0.545,
+          "y": 0.948
+        },
+        {
+          "garmentId": "import-43613265-c096-436d-8c58-c2ba95e7196e",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.095
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/vestidos-import-18cd9dfd-ef8d-45cc-bb15-593818179c20",
+        "hash": "71f57b3ae8",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "playa-import-953645ca-e35f-4120-9203-d74c852c3304": {
+      "garmentIds": [
+        "import-953645ca-e35f-4120-9203-d74c852c3304",
+        "import-de422e5a-2f3b-4d0a-95c4-0ca8b54f3b10",
+        "import-25405c9d-8b27-4fd1-90b0-e32e817b6161",
+        "import-3e6c71a0-9819-447f-a672-eca3fae3d584"
+      ],
+      "family": "playa",
+      "preset": "mujer-africana-profunda",
+      "style": "negro-medio-24-28",
+      "model": "Zuri",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:35.362Z",
+      "hotspots": [
+        {
+          "garmentId": "import-953645ca-e35f-4120-9203-d74c852c3304",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.27
+        },
+        {
+          "garmentId": "import-de422e5a-2f3b-4d0a-95c4-0ca8b54f3b10",
+          "visible": true,
+          "x": 0.52,
+          "y": 0.465
+        },
+        {
+          "garmentId": "import-25405c9d-8b27-4fd1-90b0-e32e817b6161",
+          "visible": true,
+          "x": 0.303,
+          "y": 0.935
+        },
+        {
+          "garmentId": "import-3e6c71a0-9819-447f-a672-eca3fae3d584",
+          "visible": true,
+          "x": 0.562,
+          "y": 0.147
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/playa-import-953645ca-e35f-4120-9203-d74c852c3304",
+        "hash": "8f07dae865",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "playa-import-3f745292-d4a2-4074-96dc-c849d72c41d2": {
+      "garmentIds": [
+        "import-3f745292-d4a2-4074-96dc-c849d72c41d2",
+        "import-dd6f8536-7bb7-40f5-a6dd-1f0bec9e37a6",
+        "import-24eaa8e1-c106-4881-a3db-a0033493bd1d",
+        "import-4b5d9e02-0365-4654-a26b-932a6b0e49ce"
+      ],
+      "family": "playa",
+      "preset": "mujer-americana-calida",
+      "style": "rubio-medio-29-34",
+      "model": "Maya",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:37.846Z",
+      "hotspots": [
+        {
+          "garmentId": "import-3f745292-d4a2-4074-96dc-c849d72c41d2",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.305
+        },
+        {
+          "garmentId": "import-dd6f8536-7bb7-40f5-a6dd-1f0bec9e37a6",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.48
+        },
+        {
+          "garmentId": "import-24eaa8e1-c106-4881-a3db-a0033493bd1d",
+          "visible": true,
+          "x": 0.536,
+          "y": 0.918
+        },
+        {
+          "garmentId": "import-4b5d9e02-0365-4654-a26b-932a6b0e49ce",
+          "visible": true,
+          "x": 0.564,
+          "y": 0.154
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/playa-import-3f745292-d4a2-4074-96dc-c849d72c41d2",
+        "hash": "81486472d2",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "playa-import-b19c19a1-49cf-4f96-b25a-abfcfa12e89e": {
+      "garmentIds": [
+        "import-b19c19a1-49cf-4f96-b25a-abfcfa12e89e",
+        "import-45c02ac4-f37f-4e43-9ef7-3baf9bd47e67",
+        "import-f226f9a4-ed47-4e89-9570-7db68fe3c430",
+        "import-2cbe1846-7faf-4b1b-87e6-2346887080fa"
+      ],
+      "family": "playa",
+      "preset": "mujer-americana-calida",
+      "style": "castano-largo-24-28",
+      "model": "Maya",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:43.760Z",
+      "hotspots": [
+        {
+          "garmentId": "import-b19c19a1-49cf-4f96-b25a-abfcfa12e89e",
+          "visible": true,
+          "x": 0.498,
+          "y": 0.287
+        },
+        {
+          "garmentId": "import-45c02ac4-f37f-4e43-9ef7-3baf9bd47e67",
+          "visible": true,
+          "x": 0.504,
+          "y": 0.476
+        },
+        {
+          "garmentId": "import-f226f9a4-ed47-4e89-9570-7db68fe3c430",
+          "visible": true,
+          "x": 0.536,
+          "y": 0.924
+        },
+        {
+          "garmentId": "import-2cbe1846-7faf-4b1b-87e6-2346887080fa",
+          "visible": true,
+          "x": 0.566,
+          "y": 0.168
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/playa-import-b19c19a1-49cf-4f96-b25a-abfcfa12e89e",
+        "hash": "16a79e476a",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "playa-import-06f61f76-d32f-44da-81e9-d7a9939542d3": {
+      "garmentIds": [
+        "import-06f61f76-d32f-44da-81e9-d7a9939542d3",
+        "import-0eb1cca0-da72-4311-bf67-14b567a40078",
+        "import-1112e968-dff1-4b8a-98af-db6303ed9f89",
+        "import-b073965e-2428-4192-820c-2cc4d68ae504"
+      ],
+      "family": "playa",
+      "preset": "mujer-europea-clara",
+      "style": "rubio-largo-24-28",
+      "model": "Elise",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:46.299Z",
+      "hotspots": [
+        {
+          "garmentId": "import-06f61f76-d32f-44da-81e9-d7a9939542d3",
+          "visible": true,
+          "x": 0.51,
+          "y": 0.31
+        },
+        {
+          "garmentId": "import-0eb1cca0-da72-4311-bf67-14b567a40078",
+          "visible": true,
+          "x": 0.495,
+          "y": 0.47
+        },
+        {
+          "garmentId": "import-1112e968-dff1-4b8a-98af-db6303ed9f89",
+          "visible": true,
+          "x": 0.612,
+          "y": 0.925
+        },
+        {
+          "garmentId": "import-b073965e-2428-4192-820c-2cc4d68ae504",
+          "visible": true,
+          "x": 0.548,
+          "y": 0.161
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/playa-import-06f61f76-d32f-44da-81e9-d7a9939542d3",
+        "hash": "304a75a8f4",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "playa-import-579d244a-77ce-4f0a-be19-b6d7a5124005": {
+      "garmentIds": [
+        "import-579d244a-77ce-4f0a-be19-b6d7a5124005",
+        "import-0d3f9ff1-7b69-4724-9e79-dd02dca71412",
+        "import-55cc2c76-e100-411c-a429-cb00a55bc8bc",
+        "import-b163caa9-4320-4c31-b5b0-eaa87e3764d1"
+      ],
+      "family": "playa",
+      "preset": "mujer-asiatica-dorada",
+      "style": "negro-largo-24-28",
+      "model": "Hana",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:40:13.616Z",
+      "hotspots": [
+        {
+          "garmentId": "import-579d244a-77ce-4f0a-be19-b6d7a5124005",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.315
+        },
+        {
+          "garmentId": "import-0d3f9ff1-7b69-4724-9e79-dd02dca71412",
+          "visible": true,
+          "x": 0.508,
+          "y": 0.485
+        },
+        {
+          "garmentId": "import-55cc2c76-e100-411c-a429-cb00a55bc8bc",
+          "visible": true,
+          "x": 0.448,
+          "y": 0.945
+        },
+        {
+          "garmentId": "import-b163caa9-4320-4c31-b5b0-eaa87e3764d1",
+          "visible": true,
+          "x": 0.505,
+          "y": 0.115
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/playa-import-579d244a-77ce-4f0a-be19-b6d7a5124005",
+        "hash": "3c17a2f070",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "playa-import-b6cb3bd0-c792-4b81-8676-0a25bf611f38": {
+      "garmentIds": [
+        "import-b6cb3bd0-c792-4b81-8676-0a25bf611f38",
+        "import-210c2abf-a429-4a1e-817f-4f6cedd6d044",
+        "import-cfe02ff2-714c-4edb-84a1-1af4f352a898",
+        "import-29297851-4f83-438c-8747-03f3f1245808"
+      ],
+      "family": "playa",
+      "preset": "mujer-africana-profunda",
+      "style": "castano-corto-29-34",
+      "model": "Zuri",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:33:54.438Z",
+      "hotspots": [
+        {
+          "garmentId": "import-b6cb3bd0-c792-4b81-8676-0a25bf611f38",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.285
+        },
+        {
+          "garmentId": "import-210c2abf-a429-4a1e-817f-4f6cedd6d044",
+          "visible": true,
+          "x": 0.5,
+          "y": 0.475
+        },
+        {
+          "garmentId": "import-cfe02ff2-714c-4edb-84a1-1af4f352a898",
+          "visible": true,
+          "x": 0.558,
+          "y": 0.94
+        },
+        {
+          "garmentId": "import-29297851-4f83-438c-8747-03f3f1245808",
+          "visible": true,
+          "x": 0.448,
+          "y": 0.152
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/playa-import-b6cb3bd0-c792-4b81-8676-0a25bf611f38",
+        "hash": "bc2e493e34",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    },
+    "playa-import-279d4d9d-c7c7-4a8a-956e-6fba3ab2b502": {
+      "garmentIds": [
+        "import-279d4d9d-c7c7-4a8a-956e-6fba3ab2b502",
+        "import-8c32f0d0-9aa1-4152-8bb2-ad081e9110ab",
+        "import-48dc0aed-b8d8-49e4-97b9-844127666990",
+        "import-c4b9bdac-9d33-4144-9735-8633ea061f68"
+      ],
+      "family": "playa",
+      "preset": "mujer-europea-clara",
+      "style": "castano-medio-29-34",
+      "model": "Elise",
+      "status": "aprobado",
+      "generatedAt": "2026-11-09T13:41:09.340Z",
+      "hotspots": [
+        {
+          "garmentId": "import-279d4d9d-c7c7-4a8a-956e-6fba3ab2b502",
+          "visible": true,
+          "x": 0.495,
+          "y": 0.285
+        },
+        {
+          "garmentId": "import-8c32f0d0-9aa1-4152-8bb2-ad081e9110ab",
+          "visible": true,
+          "x": 0.485,
+          "y": 0.48
+        },
+        {
+          "garmentId": "import-48dc0aed-b8d8-49e4-97b9-844127666990",
+          "visible": true,
+          "x": 0.695,
+          "y": 0.94
+        },
+        {
+          "garmentId": "import-c4b9bdac-9d33-4144-9735-8633ea061f68",
+          "visible": true,
+          "x": 0.54,
+          "y": 0.144
+        }
+      ],
+      "imageSet": {
+        "src": "/looks/playa-import-279d4d9d-c7c7-4a8a-956e-6fba3ab2b502",
+        "hash": "02d24ccebc",
+        "width": 848,
+        "height": 1264,
+        "widths": [
+          400,
+          800,
+          848
+        ],
+        "formats": [
+          "avif",
+          "webp"
+        ],
+        "cutout": true
+      }
+    }
+  }
+}

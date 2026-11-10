@@ -12,6 +12,7 @@
 // cada corrida procesa solo las imágenes nuevas (y reintenta las que fallaron).
 import { readFile, writeFile, readdir, stat, mkdir } from "node:fs/promises";
 import path from "node:path";
+import { adminHeaders } from "./cli-admin.mjs";
 
 const ARGS = process.argv.slice(2);
 const WITH_MODELED = ARGS.includes("--modeled");
@@ -21,8 +22,13 @@ const PAUSE_INDEX = ARGS.indexOf("--pausa");
 const PAUSE_MS = PAUSE_INDEX >= 0 ? Number(ARGS[PAUSE_INDEX + 1]) || 0 : 4000;
 const DIR_INDEX = ARGS.indexOf("--dir");
 const LOCAL_DIR = DIR_INDEX >= 0 ? ARGS[DIR_INDEX + 1] : null;
+// --tag <etiqueta>: se agrega a todas las prendas de la corrida (ej: temporada "ss26")
+const TAG_INDEX = ARGS.indexOf("--tag");
+const EXTRA_TAG = TAG_INDEX >= 0 ? (ARGS[TAG_INDEX + 1] || "").trim().toLowerCase() || null : null;
 const API = process.env.CATALOG_API_URL || `http://localhost:${process.env.PORT || 24696}`;
-const STORAGE_PREFIX = process.env.CATALOG_STORAGE_PREFIX || "catalogo/";
+// CATALOG_STORAGE_PREFIX="" importa desde la raíz del bucket (?? y no ||: la
+// cadena vacía es un prefijo válido, no un "sin valor").
+const STORAGE_PREFIX = process.env.CATALOG_STORAGE_PREFIX ?? "catalogo/";
 const MANIFEST = path.resolve(import.meta.dirname, "..", "data", "catalog-manifest.json");
 const IMAGE_EXT = /\.(png|jpe?g|webp)$/i;
 const POLL_MS = 4000;
@@ -36,7 +42,7 @@ const mimeFor = (name) =>
 async function api(pathname, options) {
   const response = await fetch(`${API}${pathname}`, {
     ...options,
-    headers: { "Content-Type": "application/json", ...(options?.headers || {}) },
+    headers: { "Content-Type": "application/json", ...adminHeaders(), ...(options?.headers || {}) },
   });
   const value = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(value.error || `${response.status} en ${pathname}`);
@@ -134,8 +140,9 @@ async function processImage(source) {
     const label = job.metadata?.name || job.id.slice(0, 8);
     process.stdout.write(`    · ${label}: recorte…`);
     const brand = brandOf(source.name);
-    if (brand) {
-      const tags = [brand, ...(job.metadata?.tags || [])].slice(0, 4);
+    if (brand || EXTRA_TAG) {
+      const fixed = [brand, EXTRA_TAG].filter(Boolean);
+      const tags = [...fixed, ...(job.metadata?.tags || [])].slice(0, fixed.length + 3);
       await api(`/api/import/jobs/${job.id}/metadata`, { method: "PATCH", body: JSON.stringify({ metadata: { tags } }) }).catch(() => {});
     }
     const cropSuffix = CROP_ONLY ? "?garment=skip" : "";

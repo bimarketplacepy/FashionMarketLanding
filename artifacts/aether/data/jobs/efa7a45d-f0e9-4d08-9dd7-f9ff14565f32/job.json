@@ -1,0 +1,84 @@
+{
+  "id": "efa7a45d-f0e9-4d08-9dd7-f9ff14565f32",
+  "status": "active",
+  "metadata": {
+    "name": "Black Lace-Up Strappy Sandals",
+    "part": "shoes",
+    "garmentType": "shoes",
+    "gender": "mujer",
+    "color": "#121113",
+    "secondaryColor": null,
+    "tags": [
+      "lace-up",
+      "strappy",
+      "flat",
+      "sandals"
+    ],
+    "season": "summer",
+    "material": "synthetic",
+    "silhouette": "regular",
+    "weight": "light",
+    "climates": [
+      "warm"
+    ],
+    "occasions": [
+      "casual",
+      "daywear"
+    ],
+    "boundingBox": {
+      "x": 308,
+      "y": 854,
+      "width": 390,
+      "height": 146
+    }
+  },
+  "stages": {
+    "crop": {
+      "status": "review",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": "/api/import/assets/efa7a45d-f0e9-4d08-9dd7-f9ff14565f32/crop.png",
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": "2026-08-03T19:50:01.444Z"
+    },
+    "garment": {
+      "status": "pending",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": null,
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": null
+    },
+    "modeled": {
+      "status": "pending",
+      "decision": null,
+      "attempts": 0,
+      "assetUrl": null,
+      "failedAssetUrl": null,
+      "cleanupPreviewUrl": null,
+      "cleanupTolerance": 46,
+      "cleanupDiagnostics": null,
+      "error": null,
+      "prompt": null,
+      "updatedAt": null
+    }
+  },
+  "createdAt": "2026-08-03T19:50:01.444Z",
+  "updatedAt": "2026-08-03T19:50:01.444Z",
+  "internal": {
+    "originalFile": "original.png",
+    "cropFile": "crop.png",
+    "originalMime": "image/png"
+  },
+  "originalAssetUrl": "/api/import/assets/efa7a45d-f0e9-4d08-9dd7-f9ff14565f32/original.png"
+}
