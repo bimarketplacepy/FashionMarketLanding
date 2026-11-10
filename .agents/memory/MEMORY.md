@@ -1,9 +1,9 @@
-- [Estado del rediseño SS26](proyecto-estado-ss26.md) — rama ss26-rediseno sin publicar; fases, métricas y pasos para publicar.
-- [Pendientes con el usuario](pendientes-usuario.md) — WhatsApp definitivo, clave vieja en .env, 5 lotes sin importar, reel, primer publish.
+- [Estado del rediseño SS26](proyecto-estado-ss26.md) — ya mergeado a main (PR #1); fases y métricas.
+- [Pendientes con el usuario](pendientes-usuario.md) — EMPEZAR ACÁ: validar Staging Odoo, PR staging→main sin mergear, precios en Odoo, WhatsApp definitivo.
 - [Clave del admin](admin-key-secrets.md) — ADMIN_KEY de Secrets gana sobre .env; un Secret nuevo exige reiniciar la app.
 - [Reiniciar workflows](reiniciar-workflows.md) — "no aparecen las prendas" = api-server viejo; rebuild + reinicio; no matar procesos por texto.
 - [Imágenes de prendas](imagenes-prendas.md) — correr optimize-images tras importar; prebuild verifica; <source> ocultos en GarmentImage.
 - [Respaldos en App Storage](respaldos-app-storage.md) — archivo/2026-11-06/ (1.011 MB); local sólo quedan 5 lotes pendientes.
 - [Preferencias del usuario](preferencias-usuario.md) — español, no inventar contenido, dry-run + backup, no borrar sin confirmar, fases con commit.
 - [Looks en modelo](looks-en-modelo.md) — looks de la landing sobre avatares IA (decisión 2026-11-09); generar → recortar → puntos → optimizar → revisar → aprobar.
-- [Integración Odoo 19](odoo-integracion.md) — experiencia embebida en la categoría Moda de Odoo; widget, módulo, sync; usar engineFetch/engineUrl.
+- [Integración Odoo 19](odoo-integracion.md) — rama staging-fashion-market (deploy actual); widget, módulo, sync sin precio 0; `embedded` oculta footer y redes.

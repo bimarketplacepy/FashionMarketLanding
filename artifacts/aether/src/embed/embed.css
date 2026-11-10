@@ -1,6 +1,29 @@
 /* Estilos propios del widget embebido en Odoo. */
 :host { display: block; }
-.fm-root { font-family: "Instrument Sans Variable", "Instrument Sans", system-ui, sans-serif; }
+
+/* Paleta y tipografías de la tienda. Las custom properties del documento (--mkt-*,
+   las del tema de Odoo) se heredan dentro del shadow root: la experiencia toma el
+   crema, la tinta, el terracota y las fuentes de la tienda, y sigue al tema si
+   cambia (ej. el de Navidad). Los valores fijos son los de la tienda hoy, por si
+   el tema deja de definir alguna. :host(x) gana sobre el :host de las hojas base. */
+:host(fm-moda), :host(fm-probar) {
+  --ed-ivory: var(--mkt-cream, #F6F1E9);
+  --ed-paper: var(--mkt-surface, #FFFFFF);
+  --ed-ink: var(--mkt-ink, #1A1614);
+  --ed-ink-soft: var(--mkt-ink-soft, #554C44);
+  --ed-accent: var(--mkt-terracotta, #B4543F);
+  --ed-serif: var(--mkt-font-display, "Cormorant Garamond", "Times New Roman", serif);
+  --ed-sans: var(--mkt-font-ui, "Jost", "Segoe UI", Arial, sans-serif);
+  --paper: var(--mkt-cream, #F6F1E9);
+  --ink: var(--mkt-ink, #1A1614);
+  --muted: var(--mkt-ink-soft, #554C44);
+  --accent: var(--mkt-terracotta, #B4543F);
+  font-family: var(--ed-sans);
+}
+/* El botón de la ficha no es una página: sin el fondo crema ni el alto de pantalla
+   que la hoja global le da a :host (sobraba un bloque vacío bajo el botón). */
+:host(fm-probar) { min-height: 0; min-width: 0; background: transparent; color: inherit; }
+.fm-root { font-family: var(--ed-sans); }
 .fm-probar { display: grid; gap: 8px; margin: 20px 0; }
 .fm-probar .ed-pill { justify-self: start; }
 .fm-probar__note { margin: 0; font-size: 0.85rem; color: #5b5b5b; }
@@ -19,3 +42,9 @@
    sticky debajo del header de la tienda. */
 :host .retail-wardrobe { padding-top: 0; }
 :host .wardrobe-topbar { position: sticky; top: var(--fm-top, 0px); }
+
+/* Colección dentro de Odoo: como la grilla de la tienda, máximo 3 por fila
+   (en pantallas angostas quedan las 2 columnas de la hoja base). */
+@media (min-width: 821px) {
+  :host .public-product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

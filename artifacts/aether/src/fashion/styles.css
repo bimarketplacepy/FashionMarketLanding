@@ -1317,3 +1317,10 @@ button { font: inherit; }
     box-shadow: inset 3px 0 0 var(--accent), -18px 0 50px rgba(25, 24, 22, .08);
   }
 }
+
+/* Colección dentro de Odoo: pestañas por subcategoría arriba del filtro por tipo,
+   y tarjetas de productos de la tienda (enlazan a su ficha). */
+.catalog-filters--collections { border-bottom: 0; padding-bottom: 1rem; margin-bottom: 0; }
+a.public-product-card { display: block; text-decoration: none; }
+a.public-product-card > div img { background: #fff; }
+.public-product-card small s { margin-right: 6px; opacity: .7; }

@@ -5,23 +5,29 @@
 //   node scripts/odoo-sync.mjs --aplicar       # backup del estado de Odoo + escribe
 //   node scripts/odoo-sync.mjs --aplicar --limite 5          # prueba con 5 prendas
 //   node scripts/odoo-sync.mjs --aplicar --imagenes          # re-sube imágenes
-//   node scripts/odoo-sync.mjs --categoria-raiz "Moda"       # nombre de la categoría padre
+//   node scripts/odoo-sync.mjs --categoria-raiz "Para la Reina"   # categoría padre existente
+//   node scripts/odoo-sync.mjs --aplicar --crear-subcategorias     # crea las hijas que falten
 //
 // Credenciales (Secrets o artifacts/aether/.env): ODOO_URL, ODOO_DB, ODOO_API_KEY.
 // Usa la API JSON-2 de Odoo 19 (POST /json/2/<modelo>/<método>, API key de un
 // usuario técnico con permisos de Ventas/Sitio web).
 //
 // Qué hace:
-// - Categorías web: la raíz ("Moda") con la experiencia activada (campo
-//   fm_experience del módulo website_fashion_market) y una hija por tipo de
-//   prenda, con los mismos nombres que la colección (catalog-types.js).
+// - Categorías web: la raíz con la experiencia activada (campo fm_experience
+//   del módulo website_fashion_market). Con --categoria-raiz se usa una
+//   categoría EXISTENTE de la tienda (en cualquier nivel); si no existe, error.
+//   Sólo la raíz por defecto ("Moda") se crea si falta. Hijas por tipo de
+//   prenda: se reusan las existentes (nombre sin mayúsculas/acentos); las que
+//   falten NO se crean salvo con --crear-subcategorias: esas prendas van a la raíz.
 // - Productos: el vínculo es la Referencia interna (default_code = id de la
 //   prenda). Crea las prendas activas que faltan, actualiza nombre/descripción/
 //   categoría/publicación de las que existen y despublica (nunca borra) las que
 //   el motor desactivó. Productos de Odoo sin default_code de library.json no se
-//   tocan. Precio: se crea en 0 y no se vuelve a tocar (showPrices: false en
-//   site-config.json); con "Evitar la venta de productos con precio cero" en
-//   Odoo la ficha muestra "Contactanos" en vez de precio y carrito.
+//   tocan. Precio: se vende con precio real cargado en Odoo. El producto se
+//   crea en 0 y SIN publicar, y el sync nunca toca el precio. Sólo se publica
+//   cuando tiene precio > 0; uno publicado en 0 se despublica (nunca se vende
+//   a 0). No se usa "Evitar la venta de productos con precio cero" (es de todo
+//   el sitio).
 // - Idempotente: una segunda corrida sin cambios en library.json da 0 cambios.
 import { readFileSync, mkdirSync, writeFileSync, readdirSync } from "node:fs";
 import path from "node:path";
@@ -45,6 +51,12 @@ const APPLY = flag("--aplicar");
 const REFRESH_IMAGES = flag("--imagenes");
 const LIMIT = Number(option("--limite", 0)) || 0;
 const ROOT_NAME = option("--categoria-raiz", "Moda");
+const ROOT_GIVEN = args.includes("--categoria-raiz");
+const CREATE_CHILDREN = flag("--crear-subcategorias");
+
+// Comparación de nombres de categoría: sin mayúsculas, acentos ni espacios dobles.
+const normName = (text) => String(text || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+  .toLowerCase().replace(/\s+/g, " ").trim();
 
 function readEnv(name) {
   if (process.env[name]) return process.env[name].trim();
@@ -134,12 +146,18 @@ async function ensureCategories(plan) {
   const hasFlag = Boolean(fields.fm_experience);
   if (!hasFlag) plan.warnings.push("El módulo website_fashion_market no está instalado: la categoría raíz se crea sin activar la experiencia.");
 
-  const [root] = await odoo("product.public.category", "search_read", {
-    domain: [["name", "=", ROOT_NAME], ["parent_id", "=", false]],
-    fields: ["id", "name", ...(hasFlag ? ["fm_experience"] : [])],
-    limit: 1,
+  const roots = await odoo("product.public.category", "search_read", {
+    domain: ROOT_GIVEN ? [["name", "=ilike", ROOT_NAME]] : [["name", "=", ROOT_NAME], ["parent_id", "=", false]],
+    fields: ["id", "name", "parent_id", ...(hasFlag ? ["fm_experience"] : [])],
     context: CONTEXT,
   });
+  if (roots.length > 1) {
+    throw new Error(`Hay ${roots.length} categorías llamadas "${ROOT_NAME}" (ids ${roots.map((r) => r.id).join(", ")}). Renombrá o usá un nombre único.`);
+  }
+  const [root] = roots;
+  if (!root && ROOT_GIVEN) {
+    throw new Error(`No existe la categoría "${ROOT_NAME}" en Odoo. El sync no crea categorías raíz nombradas: revisá el nombre exacto.`);
+  }
   const categories = { root: root?.id || null, byPart: {} };
   if (!root) plan.createCategories.push(ROOT_NAME);
   else if (hasFlag && !root.fm_experience) plan.enableExperience = root.id;
@@ -152,9 +170,10 @@ async function ensureCategories(plan) {
     })
     : [];
   for (const [part, label] of Object.entries(TYPE_LABEL)) {
-    const child = children.find((entry) => entry.name === label);
+    const child = children.find((entry) => normName(entry.name) === normName(label));
     if (child) categories.byPart[part] = child.id;
-    else plan.createCategories.push(`${ROOT_NAME} / ${label}`);
+    else if (CREATE_CHILDREN || !root) plan.createCategories.push(`${ROOT_NAME} / ${label}`);
+    else plan.toRoot.push(label);
   }
   return { categories, hasFlag };
 }
@@ -167,14 +186,14 @@ async function buildPlan() {
   const inactiveIds = new Set(library.filter((item) => item.active === false).map((item) => item.id));
   const allIds = [...new Set([...active.map((item) => item.id), ...(LIMIT ? [] : inactiveIds)])];
 
-  const plan = { create: [], update: [], unpublish: [], createCategories: [], enableExperience: null, warnings: [], season };
+  const plan = { create: [], update: [], unpublish: [], unpriced: [], toRoot: [], createCategories: [], enableExperience: null, warnings: [], season };
   const { categories, hasFlag } = await ensureCategories(plan);
 
   const existing = [];
   for (let index = 0; index < allIds.length; index += 200) {
     existing.push(...await odoo("product.template", "search_read", {
       domain: [["default_code", "in", allIds.slice(index, index + 200)]],
-      fields: ["id", "name", "default_code", "is_published", "public_categ_ids", "description_ecommerce", "active"],
+      fields: ["id", "name", "default_code", "is_published", "public_categ_ids", "description_ecommerce", "active", "list_price"],
       context: CONTEXT,
     }));
   }
@@ -186,16 +205,23 @@ async function buildPlan() {
 
   for (const item of active) {
     const record = byCode.get(item.id);
-    const categoryId = categories.byPart[item.part] || null;
-    const vals = { name: item.name, is_published: true };
+    // Sin hija para ese tipo (y sin --crear-subcategorias): a la raíz.
+    const categoryId = categories.byPart[item.part] || (plan.toRoot.length ? categories.root : null);
     const description = descriptionHtml(item);
     if (!record) {
-      plan.create.push({ item, categoryId, vals: { ...vals, default_code: item.id, type: "consu", sale_ok: true, list_price: 0, description_ecommerce: description } });
+      // Nace sin publicar: precio 0 hasta que el equipo cargue el real en Odoo.
+      plan.create.push({ item, categoryId, vals: { name: item.name, is_published: false, default_code: item.id, type: "consu", sale_ok: true, list_price: 0, description_ecommerce: description } });
+      plan.unpriced.push(item.id);
       continue;
     }
     const changes = {};
+    const priced = Number(record.list_price) > 0;
     if (record.name !== item.name) changes.name = item.name;
-    if (!record.is_published) changes.is_published = true;
+    if (priced && !record.is_published) changes.is_published = true;
+    if (!priced) {
+      plan.unpriced.push(item.id);
+      if (record.is_published) changes.is_published = false;  // nunca se vende a 0
+    }
     if (!record.active) changes.active = true;
     // Odoo normaliza el HTML al guardarlo: se compara el texto, no el marcado.
     if (description && plainText(record.description_ecommerce) !== plainText(description)) changes.description_ecommerce = description;
@@ -229,7 +255,7 @@ async function applyPlan({ plan, categories, existing, hasFlag }) {
     await odoo("product.public.category", "write", { ids: [plan.enableExperience], vals: { fm_experience: true }, context: CONTEXT });
   }
   for (const [part, label] of Object.entries(TYPE_LABEL)) {
-    if (categories.byPart[part]) continue;
+    if (categories.byPart[part] || plan.toRoot.includes(label)) continue;
     [categories.byPart[part]] = await odoo("product.public.category", "create", {
       vals_list: [{ name: label, parent_id: categories.root }],
       context: CONTEXT,
@@ -241,7 +267,7 @@ async function applyPlan({ plan, categories, existing, hasFlag }) {
     const slice = plan.create.slice(index, index + BATCH);
     const vals_list = [];
     for (const entry of slice) {
-      const categoryId = entry.categoryId || categories.byPart[entry.item.part];
+      const categoryId = entry.categoryId || categories.byPart[entry.item.part] || categories.root;
       const image = await imageBase64(entry.item);
       vals_list.push({
         ...entry.vals,
@@ -286,6 +312,8 @@ async function main() {
   console.log(`Productos a crear:       ${plan.create.length}`);
   console.log(`Productos a actualizar:  ${plan.update.length}`);
   console.log(`Productos a despublicar: ${plan.unpublish.length}`);
+  console.log(`Sin precio (quedan sin publicar hasta cargarlo en Odoo): ${plan.unpriced.length}`);
+  if (plan.toRoot.length) console.log(`Tipos sin subcategoría en "${ROOT_NAME}" (sus prendas van a la raíz; --crear-subcategorias las crea): ${plan.toRoot.join(", ")}`);
   for (const warning of plan.warnings) console.warn(`Aviso: ${warning}`);
   for (const entry of plan.create.slice(0, 10)) console.log(`  + ${entry.item.id}  ${entry.item.name}`);
   if (plan.create.length > 10) console.log(`  … y ${plan.create.length - 10} más`);

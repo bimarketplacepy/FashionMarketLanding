@@ -33,7 +33,11 @@ export function splitShadowCss(css: string): { shadow: string; fonts: string } {
     // shadow root el equivalente es :host. `body.viewer-open` y similares no se
     // tocan (los resuelve DOCUMENT_CSS en fm-embed.jsx).
     .replace(/:root\b/g, ":host")
-    .replace(/(^|[{},;\s])(html|body)(?=\s*[,{])/g, "$1:host");
+    .replace(/(^|[{},;\s])(html|body)(?=\s*[,{])/g, "$1:host")
+    // Tipografías fijas de la app (Georgia en el probador, Instrument Sans en
+    // etiquetas) → las variables, que dentro de Odoo son las de la tienda.
+    .replace(/Georgia\s*,\s*(?:"?Times New Roman"?\s*,\s*)?serif/g, "var(--ed-serif)")
+    .replace(/"?Instrument Sans Variable"?\s*,\s*(?:"?Helvetica Neue"?\s*,\s*Arial\s*,\s*)?sans-serif/g, "var(--ed-sans)");
   // Vite resolvió url(./x.woff2) relativo al CSS dentro de assets/; los .css
   // finales quedan un nivel arriba.
   const fixUrls = (text: string) => text.replace(/url\(\.\/(?!assets\/)/g, "url(./assets/");

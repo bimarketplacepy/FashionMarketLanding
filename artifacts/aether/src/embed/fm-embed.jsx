@@ -50,6 +50,10 @@ body.viewer-open { overflow: hidden; }
 @media (max-width: 860px) { body.viewer-lock { position: fixed; left: 0; right: 0; width: 100%; overflow: hidden; } }
 fm-moda { display: block; min-height: 70vh; }
 fm-moda:not(:defined) .fm-seo-list { display: block; }
+fm-tienda { display: none; }
+.fm-card-probar { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; font-size: .78rem; letter-spacing: .02em; color: var(--mkt-terracotta, #B4543F); text-decoration: none; border-bottom: 1px solid currentColor; line-height: 1.4; }
+.fm-card-probar::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.fm-card-probar:hover, .fm-card-probar:focus-visible { color: var(--mkt-ink, #1A1614); }
 `;
 
 function installDocumentAssets() {
@@ -63,9 +67,32 @@ function installDocumentAssets() {
   document.head.append(fonts, style);
 }
 
+// Grilla de Odoo de la categoría actual. Con `order` el módulo devuelve la grilla
+// estándar en vez de la experiencia; es el orden por defecto de la tienda
+// ("Más vendidos").
+const SHOP_GRID_ORDER = "sales_velocity desc, website_sequence asc";
+function shopGridUrl() {
+  const url = new URL(window.location.href);
+  url.hash = "";
+  url.search = "";
+  url.searchParams.set("order", SHOP_GRID_ORDER);
+  return url.pathname + url.search;
+}
+
+// Dentro de Odoo la colección es la grilla de la tienda.
+function ShopGridRedirect({ url }) {
+  const [, navigate] = useLocation();
+  useEffect(() => {
+    const grid = document.getElementById("o_wsale_container");
+    if (grid) { navigate("/", { replace: true }); grid.scrollIntoView({ block: "start" }); }
+    else window.location.replace(url);
+  }, [url, navigate]);
+  return <PageFallback />;
+}
+
 function readScope(element) {
   const node = element.querySelector("script.fm-scope[type='application/json']");
-  if (!node) return { allowed: null, productUrls: {}, categoryName: "" };
+  if (!node) return { allowed: null, productUrls: {}, categoryName: "", shopUrl: shopGridUrl() };
   try {
     const value = JSON.parse(node.textContent || "{}");
     const products = value.products && typeof value.products === "object" ? value.products : null;
@@ -73,9 +100,16 @@ function readScope(element) {
       allowed: products ? new Set(Object.keys(products)) : null,
       productUrls: products || {},
       categoryName: String(value.category || ""),
+      shopUrl: shopGridUrl(),
+      // Colección de la tienda: todos los productos publicados de la categoría, en
+      // el orden de Odoo, y sus subcategorías como colecciones.
+      shopItems: Array.isArray(value.items) ? value.items : null,
+      subcategories: Array.isArray(value.subcategories) ? value.subcategories : [],
+      activeSubcategory: Number.isInteger(value.active) ? value.active : null,
+      currency: value.currency && typeof value.currency === "object" ? value.currency : null,
     };
   } catch {
-    return { allowed: null, productUrls: {}, categoryName: "" };
+    return { allowed: null, productUrls: {}, categoryName: "", shopUrl: shopGridUrl() };
   }
 }
 
@@ -127,7 +161,7 @@ function EmbedApp({ host, scope, initialView }) {
           <ScrollToWidget host={host} />
           <Suspense fallback={<PageFallback />}>
             <Switch>
-              <Route path="/catalogo"><CollectionPage navigate={navigate} /></Route>
+              <Route path="/catalogo">{scope.shopItems ? <CollectionPage navigate={navigate} /> : <ShopGridRedirect url={scope.shopUrl} />}</Route>
               <Route path="/probador/builder"><TryOnPage navigate={navigate} initialSection="builder" /></Route>
               <Route path="/probador"><TryOnPage navigate={navigate} initialSection="suggestions" /></Route>
               <Route path="/outfit"><Redirect to="/probador/builder" replace /></Route>
@@ -158,12 +192,17 @@ function trackOdooHeader(host) {
 }
 
 class FmModa extends HTMLElement {
-  connectedCallback() {
-    if (this._root) return;
+  async connectedCallback() {
+    if (this._root || this._starting) return;
+    this._starting = true;
     this._untrack = trackOdooHeader(this);
     setEngineBase(this.dataset.base || "", this.dataset.assets || "");
     installDocumentAssets();
     const scope = readScope(this);
+    decorateShopCards(scope.productUrls, this.dataset.modaUrl || window.location.pathname);
+    await consumeProbarParam();
+    this._starting = false;
+    if (!this.isConnected) return;
     const view = ["catalogo", "probador"].includes(this.dataset.view) ? this.dataset.view : "home";
     this._root = createRoot(mountShadow(this));
     this._root.render(
@@ -182,21 +221,30 @@ class FmModa extends HTMLElement {
   }
 }
 
-// Botón de la ficha de producto de Odoo. Pide la prenda al catálogo público
-// recién al tocarlo (para saber su `part`) y la deja en el borrador del
-// probador, el mismo que usa "Agregar a mi outfit".
+// Las prendas del motor tienen id "import-<uuid>" (Referencia interna en Odoo).
+// Un producto propio de la tienda (otra referencia) no se puede probar.
+const GARMENT_ID = /^import-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const isEngineGarment = (id) => GARMENT_ID.test(String(id || ""));
+
+// Deja la prenda en el borrador del probador (el mismo que usa "Agregar a mi
+// outfit"). Pide el catálogo público para saber su `part`.
+async function preloadGarment(garmentId) {
+  try {
+    const { addToDraft } = await import("../fashion/outfit-draft.js");
+    const response = await engineFetch("/api/catalog");
+    const items = response.ok ? await response.json() : [];
+    const item = items.find((candidate) => candidate.id === garmentId);
+    if (item) addToDraft(item);
+  } catch { /* sin borrador: el probador abre igual */ }
+}
+
+// Botón de la ficha de producto de Odoo.
 function ProbarButton({ garmentId, modaUrl }) {
   const [busy, setBusy] = useState(false);
   const label = busy ? "Abriendo el probador…" : "Probalo en un modelo";
   const onClick = async () => {
     setBusy(true);
-    try {
-      const { addToDraft } = await import("../fashion/outfit-draft.js");
-      const response = await engineFetch("/api/catalog");
-      const items = response.ok ? await response.json() : [];
-      const item = items.find((candidate) => candidate.id === garmentId);
-      if (item) addToDraft(item);
-    } catch { /* sin borrador: el probador abre igual */ }
+    await preloadGarment(garmentId);
     window.location.href = `${modaUrl}#/probador/builder`;
   };
   return (
@@ -207,9 +255,49 @@ function ProbarButton({ garmentId, modaUrl }) {
   );
 }
 
+// Grilla de productos de Odoo: a las tarjetas de prendas del motor se les suma
+// "Probalo en un modelo" (link a la experiencia con ?fm_probar=<id>). Las
+// tarjetas son de Odoo (precio, carrito, favoritos, comparar): no se tocan.
+const lastSegment = (href) => {
+  try { return new URL(href, window.location.origin).pathname.split("/").filter(Boolean).pop() || ""; } catch { return ""; }
+};
+function decorateShopCards(productUrls, modaUrl) {
+  const bySlug = new Map(Object.entries(productUrls || {})
+    .filter(([code]) => isEngineGarment(code))
+    .map(([code, url]) => [lastSegment(url), code]));
+  if (!bySlug.size) return;
+  for (const card of document.querySelectorAll("form.oe_product_cart")) {
+    if (card.querySelector(".fm-card-probar")) continue;
+    const link = card.querySelector("a.oe_product_image_link, .o_wsale_products_item_title a");
+    const code = link && bySlug.get(lastSegment(link.getAttribute("href")));
+    if (!code) continue;
+    const target = card.querySelector(".o_wsale_product_information_text") || card.querySelector(".o_wsale_product_information");
+    if (!target) continue;
+    const chip = document.createElement("a");
+    chip.className = "fm-card-probar";
+    chip.href = `${modaUrl}?fm_probar=${encodeURIComponent(code)}`;
+    chip.textContent = "Probalo en un modelo";
+    target.append(chip);
+  }
+}
+
+// ?fm_probar=<id>: viene de una tarjeta de la grilla. Se carga la prenda en el
+// borrador, se limpia la URL y se abre el armador del probador.
+async function consumeProbarParam() {
+  const url = new URL(window.location.href);
+  const garmentId = url.searchParams.get("fm_probar");
+  if (!garmentId) return;
+  url.searchParams.delete("fm_probar");
+  if (isEngineGarment(garmentId)) {
+    await preloadGarment(garmentId);
+    url.hash = "#/probador/builder";
+  }
+  window.history.replaceState(window.history.state, "", url.pathname + url.search + url.hash);
+}
+
 class FmProbar extends HTMLElement {
   connectedCallback() {
-    if (this._root || !this.dataset.garment) return;
+    if (this._root || !isEngineGarment(this.dataset.garment)) return;
     setEngineBase(this.dataset.base || "", this.dataset.assets || "");
     installDocumentAssets();
     this._root = createRoot(mountShadow(this));
@@ -222,5 +310,15 @@ class FmProbar extends HTMLElement {
   }
 }
 
+// <fm-tienda data-moda-url="/shop/category/moda-1"> con un script.fm-scope: en las
+// subcategorías (grilla de Odoo) sólo suma "Probalo en un modelo" a las tarjetas.
+class FmTienda extends HTMLElement {
+  connectedCallback() {
+    installDocumentAssets();
+    decorateShopCards(readScope(this).productUrls, this.dataset.modaUrl || "/shop");
+  }
+}
+
 if (!customElements.get("fm-moda")) customElements.define("fm-moda", FmModa);
+if (!customElements.get("fm-tienda")) customElements.define("fm-tienda", FmTienda);
 if (!customElements.get("fm-probar")) customElements.define("fm-probar", FmProbar);

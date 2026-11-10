@@ -8,11 +8,25 @@ import { createContext, useContext } from "react";
 // prendas que tenemos" en esa categoría, y cada pieza enlaza a su producto.
 //
 // Fuera de Odoo no hay proveedor: `allowed` es null (sin filtro) y no hay URLs.
-const ScopeContext = createContext({ allowed: null, productUrls: {}, categoryName: "" });
+// `embedded`: true dentro de Odoo. Ahí el footer, las redes y el contacto son los de
+// la tienda: los footers de Fashion Market no se muestran.
+// `shopItems`/`subcategories`/`activeSubcategory`/`currency`: la colección de la
+// tienda (todos los productos de la categoría en el orden de Odoo). null fuera de Odoo.
+// `shopUrl`: la grilla de productos de Odoo de esta categoría (precio, carrito,
+// favoritos). Si el módulo no manda `items`, "la colección" es esa grilla.
+const ScopeContext = createContext({
+  allowed: null, productUrls: {}, categoryName: "", embedded: false,
+  shopItems: null, subcategories: [], activeSubcategory: null, currency: null, shopUrl: "",
+});
 
-export function ScopeProvider({ allowed, productUrls, categoryName, children }) {
+export function ScopeProvider({ allowed, productUrls, categoryName, shopItems, subcategories, activeSubcategory, currency, shopUrl, children }) {
+  const value = {
+    allowed: allowed || null, productUrls: productUrls || {}, categoryName: categoryName || "", embedded: true,
+    shopItems: shopItems || null, subcategories: subcategories || [], activeSubcategory: activeSubcategory ?? null, currency: currency || null,
+    shopUrl: shopUrl || "",
+  };
   return (
-    <ScopeContext.Provider value={{ allowed: allowed || null, productUrls: productUrls || {}, categoryName: categoryName || "" }}>
+    <ScopeContext.Provider value={value}>
       {children}
     </ScopeContext.Provider>
   );
@@ -36,4 +50,13 @@ export function scopeLanding(data, allowed) {
     ])),
     rack: (data.rack || []).filter((item) => allowed.has(item.id)),
   };
+}
+
+// Lleva a la grilla de Odoo: si ya está en la página (debajo de la experiencia)
+// baja hasta ella; si no, abre la grilla de la categoría.
+export function openShopGrid(shopUrl) {
+  const grid = typeof document !== "undefined" && document.getElementById("o_wsale_container");
+  if (grid) { grid.scrollIntoView({ behavior: "smooth", block: "start" }); return true; }
+  if (shopUrl) { window.location.assign(shopUrl); return true; }
+  return false;
 }

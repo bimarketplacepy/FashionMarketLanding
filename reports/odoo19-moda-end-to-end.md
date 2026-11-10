@@ -3,15 +3,16 @@
 > Reemplaza a `reports/plan-integracion-odoo.md` (borrador anterior, con decisiones abiertas que acá ya quedan resueltas).
 > Rama: `ss26-rediseno`. Fecha: 2026-11-10.
 
-## 1. Qué ve el cliente
+## 1. Qué ve el cliente (módulo 19.0.1.1.0, 2026-11-10)
 
 | Dónde entra | Qué ve |
 |---|---|
-| `/shop/category/moda-<id>` (la categoría padre de moda) | La experiencia completa de Fashion Market **con las prendas publicadas en esa categoría**: fila de looks sobre avatares IA con puntos numerados, perchero 3D, marquee, ficha de look/prenda, "Tu selección" con WhatsApp, colección con filtros y probador virtual (8 modelos IA, "Looks sugeridos", "Crear un look", "Mi modelo"). |
-| Una subcategoría (`Moda / Vestidos y enterizos`, etc.) | La misma experiencia, abierta en **Colección** y limitada a las prendas de esa subcategoría. |
-| La ficha de un producto de moda (`/shop/<producto>`) | Todo lo de Odoo + botón **"Probalo en un modelo"**: abre el probador de Moda con esa prenda ya cargada en "Crear un look". |
-| Búsqueda, filtros por atributo/precio, orden o paginación dentro de Moda | La grilla estándar de Odoo (para no perder las herramientas de la tienda). |
-| Cada pieza de una ficha de look o de prenda | Enlace **"Ver en la tienda"** a su producto de Odoo. |
+| `/shop/category/moda-<id>` (la categoría marcada con la experiencia) | **Arriba**, la experiencia de Fashion Market con las prendas publicadas ahí: looks sobre avatares IA, perchero, fichas, "Tu selección" y el acceso al probador. **Debajo**, la grilla de Odoo tal cual: 3 por fila (según el tema), precio, carrito, favoritos, comparar, filtros y barra lateral. "Colección" y "Ver toda la colección" bajan hasta la grilla. |
+| Una subcategoría (Bolsos, Ropa deportiva, etc.), una búsqueda, filtros, orden o la página 2 | Sólo la grilla de Odoo. |
+| Tarjeta de una prenda del probador (Referencia interna `import-<uuid>`) en cualquier grilla de esas categorías | Además del precio, carrito y favoritos, un enlace **"Probalo en un modelo"** que abre el probador con la prenda ya cargada (`?fm_probar=<id>`). |
+| La ficha de una prenda del probador | Todo lo de Odoo + botón **"Probalo en un modelo"**. Los productos propios de la tienda (otra referencia) ya no lo muestran. |
+
+Colores y tipografías: dentro de Odoo el widget usa las variables del tema de la tienda (`--mkt-cream`, `--mkt-ink`, `--mkt-terracotta`, `--mkt-font-display`, `--mkt-font-ui`), así que sigue al tema activo (hoy el de Navidad: marfil `#FBF7EF`, Instrument Serif + Arimo).
 
 Header, footer, menú, carrito, SEO y URLs siguen siendo de Odoo. La home de Odoo no se toca.
 
@@ -203,6 +204,29 @@ Limitaciones: muestra todas las prendas activas (sin filtro por categoría ni "V
 - **Navegador (Chromium)**: página que imita la salida del módulo con Bootstrap y header sticky, proxy `/fm` → motor. Verificado: looks en modelo, ficha de look con "Ver en la tienda" apuntando a cada producto, subcategoría filtrada, mobile 412 px, probador, botón de la ficha → probador con la prenda precargada, CSS hostil de la página sin efecto. Corregido en el camino: la ficha quedaba debajo del header de Odoo y el header del probador era `fixed`.
 - **API**: `/api/embed/*` sirve con CORS y rechaza `../`; preflight CORS sólo responde con credenciales al origen configurado.
 - **No probado todavía en un Odoo 19 real**: la instalación del módulo, el reemplazo de la grilla y el proxy dentro de Odoo. Es el primer paso de la verificación (Paso 7), en staging.
+
+## 9 bis. Actualización 2026-11-10 — grilla de la tienda y armonía visual
+
+Análisis sobre el Staging real (`marketplace-staging-261109-41612773.dev.odoo.com`):
+
+- **La categoría mostraba la colección propia (4 por fila, sin precio ni carrito)** y de las 52 prendas publicadas en Moda mujeres sólo se veían las 19 del motor: las 33 propias de la tienda (bras deportivos, leggings, jackets, bolsos) no aparecían.
+- **Las subcategorías mostraban las 52 prendas de la raíz** (Bolsos tiene 2). El módulo instalado en Staging no es el de este repo.
+- **"Probalo en un modelo" aparecía en productos sin prenda en el motor** (ej. Jacket deportivo): abría el probador vacío.
+- **6 prendas tenían un recuadro blanco** dentro del recorte (Top triángulo Perla, Top Positano, Culotte tiro bajo Acuarela, Culotte tiro alto Mosaico, Top Formentera, Top triángulo Saint-Tropez; las 2 primeras publicadas en Odoo).
+
+Hecho:
+
+| Parte | Cambio | Se activa con |
+|---|---|---|
+| Widget (motor) | "Colección" y la ruta `#/catalogo` → grilla de Odoo; tokens y fuentes del tema de la tienda; `fm-probar` sólo para `import-<uuid>`; `?fm_probar=<id>`; `<fm-tienda>` y enlaces en tarjetas | **Publish** en Replit + reiniciar "API Server". Con el módulo viejo ya mejora: las subcategorías y "Ver toda la colección" abren la grilla de Odoo. |
+| Módulo `website_fashion_market` 19.0.1.1.0 | La grilla de Odoo siempre; arriba `<fm-moda>` sólo en la raíz (página 1, sin filtros); `<fm-tienda>` en el resto; scope sólo con `import-%`; botón de ficha sólo para prendas del motor; se elimina la plantilla `fashion_category` | Copiar el módulo al repo de Odoo.sh **fusionando con lo que cambió el agente de Odoo** y actualizarlo en Staging. |
+| Imágenes | Recuadro blanco quitado de las 6 (relleno desde el borde + huecos blancos planos). Originales en `.local/aether-archive/fondos-recuadro-2026-11-10/`. 0 de 619 activas con recuadro. | Publish. En Odoo, reenviar la imagen de las 2 publicadas: `node scripts/odoo-sync.mjs --imagenes --aplicar` (dry-run primero). |
+
+Datos para revisar en Odoo (no se tocaron):
+
+- Precios de prueba absurdos en prendas del motor: Top triángulo Capri 10.030.000.000.000.016 ₲, Top triángulo Perla 5.676.741.464 ₲, Top triángulo Nácar 4.654.645.464 ₲, Culotte Capri 464.545.640 ₲, Top Positano 79.415.645 ₲ y varias en 100.000.000 ₲. El filtro de rango de precio queda inutilizable por eso.
+- En la raíz Moda mujeres hay vinchas navideñas, llaveros y accesorios de celular mezclados con la ropa.
+- La foto de Top Formentera tiene texto impreso ("sunday brunch ss26 / bikini rayas playa"), generado por la IA.
 
 ## 10. Pendientes del usuario
 
