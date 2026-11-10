@@ -1,11 +1,11 @@
 ---
 name: proyecto-estado-ss26
-description: Estado del rediseño SS26 (nov 2026) — rama, qué se hizo por fase, métricas y qué falta para publicar.
+description: Rediseño SS26 (nov 2026), ya en main — qué se hizo por fase y métricas.
 metadata:
   type: project
 ---
 
-Rediseño y estabilización hechos el 2026-11-06 en la rama **`ss26-rediseno`** (sale de `main` en `53043df`). **No está mergeada ni publicada.**
+Rediseño y estabilización hechos el 2026-11-06 en la rama **`ss26-rediseno`** (sale de `main` en `53043df`). **Mergeada a `main` (PR #1, `e977199`) y publicada.** El trabajo siguiente es la integración con Odoo (ver [[odoo-integracion]]).
 
 Fases (un commit por fase, ver `reports/informe-final.md`):
 0. Resguardo + métricas (`reports/metricas.md`).
@@ -18,4 +18,4 @@ Fases (un commit por fase, ver `reports/informe-final.md`):
 Métricas: bundle principal 548 → 241 kB; prenda 857 KB PNG → 54 KB WebP / 24 KB AVIF (800w); Lighthouse mobile (simulado, mediana) Perf 95, LCP 2,4 s, CLS 0,008, A11y 100; con throttling devtools antes 65 / 4,7 s → después 91 / 2,7 s.
 
 **Why:** el usuario pidió trabajo por fases con aceptación medible y un informe antes/después.
-**How to apply:** para publicar: merge de `ss26-rediseno` a `main`, publicar, reiniciar el workflow "API Server" (ver [[reiniciar-workflows]]) y revisar el tamaño de la imagen del deploy (`.replitignore` sin confirmar). Pendientes en [[pendientes-usuario]].
+**How to apply:** después de cada publish: reiniciar el workflow "API Server" (ver [[reiniciar-workflows]]) y revisar el tamaño de la imagen del deploy (`.replitignore` sin confirmar). Pendientes en [[pendientes-usuario]].

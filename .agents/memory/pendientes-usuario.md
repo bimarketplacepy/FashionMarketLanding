@@ -1,14 +1,24 @@
 ---
 name: pendientes-usuario
-description: Decisiones y tareas abiertas con el usuario tras el rediseño SS26 (nov 2026).
+description: Decisiones y tareas abiertas con el usuario (actualizado 2026-11-10, integración Odoo en Staging).
 metadata:
   type: project
 ---
 
-- **Publicar** `ss26-rediseno` (merge a `main` + reiniciar "API Server"). Primer publish: revisar si `.replitignore` se respeta (tamaño de imagen; estimado ~390 MB). Ver [[proyecto-estado-ss26]].
-- **WhatsApp provisorio**: `595981203891` con saludo "Hola, quisiera consultar…" (formato api.whatsapp.com) en `site-config.json` → `contact`. El usuario dijo "not yet": falta el número definitivo.
-- **Clave vieja en `artifacts/aether/.env`** (`ADMIN_KEY`, ex `VITE_ADMIN_KEY`): se le preguntó si borrarla para que sólo valga Secrets; sin respuesta. Ver [[admin-key-secrets]].
-- **5 lotes con 37 prendas sin importar** en `.local/aether-archive/batches/` (hay una 6ª carpeta, LOVE TREE, sin nada pendiente: se puede borrar con permiso) (ver [[respaldos-app-storage]]).
-- **Reels de referencia** (App Storage `reel/`): resueltos el 2026-11-09. El usuario eligió vestir los looks sobre los avatares IA (ver [[looks-en-modelo]]).
-- Aprobado por el usuario: sin intro "FASHION MARKET", selector Conjuntos/Vestidos/Playa, sin Framer Motion ni Lenis, GTM diferido, `.config/` fuera del deploy (es la instalación global de Claude Code).
-- **Odoo 19** (2026-11-10): confirmar hosting (Odoo.sh/on-prem → módulo; Online → modo directo), dominio `probador.<dominio>`, si ya hay productos cargados (Referencia interna) y límites diarios del probador. Instalar primero en staging. Ver [[odoo-integracion]].
+**Próximo paso (donde quedamos el 2026-11-10)**
+1. Validar Staging de Odoo ("Moda Mujeres"): `/api/embed/fm-embed.js` y `/api/landing` → 200; sin footer ni botones flotantes de Fashion Market; tabla del Paso 7 de `reports/odoo19-moda-end-to-end.md`.
+2. Abrir/confirmar el PR `staging-fashion-market` → main (el cuerpo: los 4 commits listados en [[odoo-integracion]] + "no mergear hasta validar Staging"; `gh` sin login: el usuario puede correr `! gh auth login`). **Mergear sólo cuando Staging esté validado.**
+3. `git push` de los 5 commits locales de `staging-fashion-market` si el usuario lo pide.
+
+**Del lado de Odoo (usuario)**
+- Cargar precios y publicar prendas: las 619 quedan ocultas sin precio (el sync ya no publica a precio 0).
+- Medir workers de Odoo durante un probador (20–60 s por generación, pasa por el proxy `/fm/`).
+- Pasar a producción después de Staging. Ver [[odoo-integracion]].
+
+**Otros abiertos**
+- **WhatsApp provisorio** `595981203891` en `site-config.json` → `contact` (también lo usan los botones flotantes). Falta el definitivo.
+- **Clave vieja en `artifacts/aether/.env`** (`ADMIN_KEY`): ¿borrarla para que sólo valga Secrets? Sin respuesta. Ver [[admin-key-secrets]].
+- **5 lotes con 37 prendas sin importar** en `.local/aether-archive/batches/` (LOVE TREE vacía: borrable con permiso). Ver [[respaldos-app-storage]].
+- **Límites del probador** (15/sesión, 60/IP por día): confirmar valores.
+
+**Resuelto**: rediseño SS26 mergeado a main (PR #1); reels → looks sobre avatares IA ([[looks-en-modelo]]); aprobados sin intro, selector Conjuntos/Vestidos/Playa, sin Framer Motion/Lenis, GTM diferido, `.config/` fuera del deploy.
