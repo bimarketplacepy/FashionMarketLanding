@@ -12,7 +12,7 @@ import { SocialFabs } from "./SocialFabs.jsx";
 import { LOOK_FAMILIES, pickRackItems, UPPER_PARTS } from "./looks.js";
 import { useCatalog } from "../fashion/catalog-context.jsx";
 import { engineFetch } from "../embed/base.js";
-import { scopeLanding, useScope } from "../embed/scope.jsx";
+import { openShopGrid, scopeLanding, useScope } from "../embed/scope.jsx";
 import "./landing.css";
 
 function familyLabel(id) {
@@ -57,7 +57,11 @@ function ScopedRack({ onOpenItem }) {
 }
 
 export function HomePage({ navigate }) {
-  const { allowed, embedded } = useScope();
+  const { allowed, embedded, shopUrl } = useScope();
+  // Dentro de Odoo la colección completa es la grilla de la tienda (precio, carrito, favoritos).
+  const openCollection = useCallback(() => {
+    if (!(embedded && openShopGrid(shopUrl))) navigate("/catalogo");
+  }, [embedded, shopUrl, navigate]);
   const { loading, data: rawData } = useLandingData();
   // En una categoría de Odoo: sólo looks y perchero con prendas de esa categoría.
   const data = useMemo(() => scopeLanding(rawData, allowed), [rawData, allowed]);
@@ -103,7 +107,7 @@ export function HomePage({ navigate }) {
       <header className="ed-nav">
         <button className="ed-brand" type="button" onClick={() => navigate("/")} aria-label="Fashion Market"><BrandLogo /></button>
         <nav aria-label="Navegación principal">
-          <button type="button" onClick={() => navigate("/catalogo")}>Colección</button>
+          <button type="button" onClick={openCollection}>Colección</button>
           <a className="ed-nav-optional" href="#perchero">Perchero</a>
           <button type="button" onClick={() => navigate("/probador")}>Probador</button>
         </nav>
@@ -131,7 +135,7 @@ export function HomePage({ navigate }) {
           <p className="ed-lede">Elegí uno de nuestros ocho modelos IA y mirá cómo se ve la combinación completa.</p>
           <div className="ed-tryon__actions">
             <button className="ed-pill ed-pill--solid" type="button" onClick={() => navigate("/probador")}>Abrí el probador <ArrowRight size={16} /></button>
-            <button className="ed-pill" type="button" onClick={() => navigate("/catalogo")}>Ver toda la colección</button>
+            <button className="ed-pill" type="button" onClick={openCollection}>Ver toda la colección</button>
           </div>
         </section>
       </main>

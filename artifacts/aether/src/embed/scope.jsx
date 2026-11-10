@@ -10,11 +10,13 @@ import { createContext, useContext } from "react";
 // Fuera de Odoo no hay proveedor: `allowed` es null (sin filtro) y no hay URLs.
 // `embedded`: true dentro de Odoo. Ahí el footer, las redes y el contacto son los de
 // la tienda: los footers de Fashion Market no se muestran.
-const ScopeContext = createContext({ allowed: null, productUrls: {}, categoryName: "", embedded: false });
+// `shopUrl`: la grilla de productos de Odoo de esta categoría (3 por fila, precio,
+// carrito, favoritos). Dentro de Odoo "la colección" es esa grilla, no la nuestra.
+const ScopeContext = createContext({ allowed: null, productUrls: {}, categoryName: "", embedded: false, shopUrl: "" });
 
-export function ScopeProvider({ allowed, productUrls, categoryName, children }) {
+export function ScopeProvider({ allowed, productUrls, categoryName, shopUrl, children }) {
   return (
-    <ScopeContext.Provider value={{ allowed: allowed || null, productUrls: productUrls || {}, categoryName: categoryName || "", embedded: true }}>
+    <ScopeContext.Provider value={{ allowed: allowed || null, productUrls: productUrls || {}, categoryName: categoryName || "", embedded: true, shopUrl: shopUrl || "" }}>
       {children}
     </ScopeContext.Provider>
   );
@@ -38,4 +40,13 @@ export function scopeLanding(data, allowed) {
     ])),
     rack: (data.rack || []).filter((item) => allowed.has(item.id)),
   };
+}
+
+// Lleva a la grilla de Odoo: si ya está en la página (debajo de la experiencia)
+// baja hasta ella; si no, abre la grilla de la categoría.
+export function openShopGrid(shopUrl) {
+  const grid = typeof document !== "undefined" && document.getElementById("o_wsale_container");
+  if (grid) { grid.scrollIntoView({ behavior: "smooth", block: "start" }); return true; }
+  if (shopUrl) { window.location.assign(shopUrl); return true; }
+  return false;
 }
