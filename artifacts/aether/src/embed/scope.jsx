@@ -10,11 +10,20 @@ import { createContext, useContext } from "react";
 // Fuera de Odoo no hay proveedor: `allowed` es null (sin filtro) y no hay URLs.
 // `embedded`: true dentro de Odoo. Ahí el footer, las redes y el contacto son los de
 // la tienda: los footers de Fashion Market no se muestran.
-const ScopeContext = createContext({ allowed: null, productUrls: {}, categoryName: "", embedded: false });
+// `shopItems`/`subcategories`/`activeSubcategory`/`currency`: la colección de la
+// tienda (todos los productos de la categoría en el orden de Odoo). null fuera de Odoo.
+const ScopeContext = createContext({
+  allowed: null, productUrls: {}, categoryName: "", embedded: false,
+  shopItems: null, subcategories: [], activeSubcategory: null, currency: null,
+});
 
-export function ScopeProvider({ allowed, productUrls, categoryName, children }) {
+export function ScopeProvider({ allowed, productUrls, categoryName, shopItems, subcategories, activeSubcategory, currency, children }) {
+  const value = {
+    allowed: allowed || null, productUrls: productUrls || {}, categoryName: categoryName || "", embedded: true,
+    shopItems: shopItems || null, subcategories: subcategories || [], activeSubcategory: activeSubcategory ?? null, currency: currency || null,
+  };
   return (
-    <ScopeContext.Provider value={{ allowed: allowed || null, productUrls: productUrls || {}, categoryName: categoryName || "", embedded: true }}>
+    <ScopeContext.Provider value={value}>
       {children}
     </ScopeContext.Provider>
   );

@@ -73,6 +73,12 @@ function readScope(element) {
       allowed: products ? new Set(Object.keys(products)) : null,
       productUrls: products || {},
       categoryName: String(value.category || ""),
+      // Colección de la tienda: todos los productos publicados de la categoría, en
+      // el orden de Odoo, y sus subcategorías como colecciones.
+      shopItems: Array.isArray(value.items) ? value.items : null,
+      subcategories: Array.isArray(value.subcategories) ? value.subcategories : [],
+      activeSubcategory: Number.isInteger(value.active) ? value.active : null,
+      currency: value.currency && typeof value.currency === "object" ? value.currency : null,
     };
   } catch {
     return { allowed: null, productUrls: {}, categoryName: "" };
