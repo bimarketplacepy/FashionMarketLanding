@@ -9,7 +9,7 @@ import { LookSheet } from "./LookSheet.jsx";
 import { Marquee } from "./Marquee.jsx";
 import { SelectionButton, SelectionDrawer } from "./SelectionDrawer.jsx";
 import { SocialFabs } from "./SocialFabs.jsx";
-import { LOOK_FAMILIES } from "./looks.js";
+import { LOOK_FAMILIES, pickRackItems, UPPER_PARTS } from "./looks.js";
 import { useCatalog } from "../fashion/catalog-context.jsx";
 import { engineFetch } from "../embed/base.js";
 import { scopeLanding, useScope } from "../embed/scope.jsx";
@@ -47,11 +47,13 @@ function preferModelLooks(looks) {
 
 // Dentro de Odoo el perchero curado (12 prendas fijas) puede quedar con menos de 4
 // prendas publicadas y desaparecer. Entonces se arma con las prendas publicadas en
-// la categoría (el catálogo ya viene filtrado por el alcance de Odoo). Se monta
+// la categoría (el catálogo ya viene filtrado por el alcance de Odoo), sólo parte
+// superior: nada de calzado ni accesorios colgados. Se monta
 // solo en ese caso: la web propia no pide el catálogo completo.
 function ScopedRack({ onOpenItem }) {
   const { items } = useCatalog();
-  return <GarmentRack items={items.slice(0, 12)} onOpenItem={onOpenItem} />;
+  const rack = useMemo(() => pickRackItems(items, 12, UPPER_PARTS), [items]);
+  return <GarmentRack items={rack} onOpenItem={onOpenItem} />;
 }
 
 export function HomePage({ navigate }) {
