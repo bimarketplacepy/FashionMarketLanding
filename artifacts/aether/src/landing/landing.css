@@ -127,7 +127,9 @@ button.ed-num:hover, .ed-num.is-active { background: var(--ed-ink); border-color
 .ed-sheet__stage--model figcaption { text-align: center; max-width: 36ch; line-height: 1.4; }
 .ed-sheet__piece:has(.ed-num) { justify-content: flex-start; }
 .ed-sheet__piece:has(.ed-num) .ed-check { flex: 1 1 auto; }
-.ed-mini-look--model { display: block; padding: 8px; }
+/* Doble clase: .ed-mini-look (grid de 3 filas) se declara más abajo y, con el mismo peso, le ganaba;
+   la foto del look quedaba en la primera fila (~40% del alto). */
+.ed-mini-look.ed-mini-look--model { display: block; padding: 8px; }
 .ed-mini-look--model img { object-position: 50% 100%; }
 .ed-row__nav { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 14px; }
 
