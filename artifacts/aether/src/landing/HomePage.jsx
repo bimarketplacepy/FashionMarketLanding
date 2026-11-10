@@ -10,6 +10,7 @@ import { Marquee } from "./Marquee.jsx";
 import { SelectionButton, SelectionDrawer } from "./SelectionDrawer.jsx";
 import { SocialFabs } from "./SocialFabs.jsx";
 import { LOOK_FAMILIES } from "./looks.js";
+import { useCatalog } from "../fashion/catalog-context.jsx";
 import { engineFetch } from "../embed/base.js";
 import { scopeLanding, useScope } from "../embed/scope.jsx";
 import "./landing.css";
@@ -42,6 +43,15 @@ function preferModelLooks(looks) {
     const withModel = list.filter((look) => look.model);
     return [family, withModel.length >= 3 ? withModel : list.map(({ model, ...look }) => look)];
   }));
+}
+
+// Dentro de Odoo el perchero curado (12 prendas fijas) puede quedar con menos de 4
+// prendas publicadas y desaparecer. Entonces se arma con las prendas publicadas en
+// la categoría (el catálogo ya viene filtrado por el alcance de Odoo). Se monta
+// solo en ese caso: la web propia no pide el catálogo completo.
+function ScopedRack({ onOpenItem }) {
+  const { items } = useCatalog();
+  return <GarmentRack items={items.slice(0, 12)} onOpenItem={onOpenItem} />;
 }
 
 export function HomePage({ navigate }) {
@@ -109,7 +119,9 @@ export function HomePage({ navigate }) {
           </section>
         ))}
 
-        {!loading && <GarmentRack items={rackItems} onOpenItem={openItem} />}
+        {!loading && (embedded && rackItems.length < 4
+          ? <ScopedRack onOpenItem={openItem} />
+          : <GarmentRack items={rackItems} onOpenItem={openItem} />)}
 
         <section className="ed-tryon" aria-labelledby="ed-tryon-title">
           <p className="ed-eyebrow">Probador virtual</p>
