@@ -8,6 +8,7 @@ import { SEASON_LABEL } from "../site-config.js";
 import { TYPES, TYPE_MAP, sortForCatalog } from "./catalog-types.js";
 import { SiteFooter } from "./SiteFooter.jsx";
 import { themeStyle } from "./theme.js";
+import { useScope } from "../embed/scope.jsx";
 import { SelectionButton, SelectionDrawer } from "./SelectionDrawer.jsx";
 import "./landing.css";
 import "../fashion/styles.css";
@@ -27,6 +28,7 @@ function useProductTrail() {
 
 export function CollectionPage({ navigate }) {
   const { items, loading, error } = useCatalog();
+  const { embedded } = useScope();
   const initialType = new URLSearchParams(window.location.search).get("tipo");
   const [activeType, setActiveType] = useState(TYPE_MAP[initialType] ? initialType : "all");
   const product = useProductTrail();
@@ -89,7 +91,7 @@ export function CollectionPage({ navigate }) {
           onBack={product.trail.length > 1 ? product.back : undefined}
         />
       )}
-      <SiteFooter tagline="Una selección para descubrir a tu ritmo." />
+      {!embedded && <SiteFooter tagline="Una selección para descubrir a tu ritmo." />}
       <SelectionButton />
       <SelectionDrawer />
     </div>

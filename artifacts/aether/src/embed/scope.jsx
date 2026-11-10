@@ -8,11 +8,13 @@ import { createContext, useContext } from "react";
 // prendas que tenemos" en esa categoría, y cada pieza enlaza a su producto.
 //
 // Fuera de Odoo no hay proveedor: `allowed` es null (sin filtro) y no hay URLs.
-const ScopeContext = createContext({ allowed: null, productUrls: {}, categoryName: "" });
+// `embedded`: true dentro de Odoo. Ahí el footer, las redes y el contacto son los de
+// la tienda: los footers de Fashion Market no se muestran.
+const ScopeContext = createContext({ allowed: null, productUrls: {}, categoryName: "", embedded: false });
 
 export function ScopeProvider({ allowed, productUrls, categoryName, children }) {
   return (
-    <ScopeContext.Provider value={{ allowed: allowed || null, productUrls: productUrls || {}, categoryName: categoryName || "" }}>
+    <ScopeContext.Provider value={{ allowed: allowed || null, productUrls: productUrls || {}, categoryName: categoryName || "", embedded: true }}>
       {children}
     </ScopeContext.Provider>
   );

@@ -44,7 +44,7 @@ function preferModelLooks(looks) {
 }
 
 export function HomePage({ navigate }) {
-  const { allowed } = useScope();
+  const { allowed, embedded } = useScope();
   const { loading, data: rawData } = useLandingData();
   // En una categoría de Odoo: sólo looks y perchero con prendas de esa categoría.
   const data = useMemo(() => scopeLanding(rawData, allowed), [rawData, allowed]);
@@ -120,7 +120,7 @@ export function HomePage({ navigate }) {
         </section>
       </main>
 
-      <EditorialFooter navigate={navigate} />
+      {!embedded && <EditorialFooter navigate={navigate} />}
       <SelectionButton />
       <SelectionDrawer />
       {sheet && <LookSheet sheet={sheet} onClose={closeSheet} onOpenRelated={openLook} />}
