@@ -13,7 +13,7 @@
 :host .look-ready__backdrop { z-index: 2120; }
 :host .ed-drawer-backdrop, :host .ed-sheet-backdrop { z-index: 2080; }
 :host .ed-rack-focus { z-index: 2070; }
-:host .ed-selection-fab { z-index: 2050; }
+:host .ed-selection-fab, :host .ed-social-fabs { z-index: 2050; }
 :host .ed-nav, :host .retail-subnav { top: var(--fm-top, 0px); }
 /* El header del probador es fixed en la app propia; dentro de Odoo pasa a
    sticky debajo del header de la tienda. */

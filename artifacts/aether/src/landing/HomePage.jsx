@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight } from "@phosphor-icons/react";
 import { BrandLogo } from "../fashion/BrandLogo.jsx";
 import { ACTIVE_SEASON, activePromotions, warnEmptySection } from "../site-config.js";
@@ -8,6 +8,7 @@ import { HeroLooks, lookLabel, orderedPieces } from "./HeroLooks.jsx";
 import { LookSheet } from "./LookSheet.jsx";
 import { Marquee } from "./Marquee.jsx";
 import { SelectionButton, SelectionDrawer } from "./SelectionDrawer.jsx";
+import { SocialFabs } from "./SocialFabs.jsx";
 import { LOOK_FAMILIES } from "./looks.js";
 import { engineFetch } from "../embed/base.js";
 import { scopeLanding, useScope } from "../embed/scope.jsx";
@@ -56,6 +57,7 @@ export function HomePage({ navigate }) {
   const rackItems = useMemo(() => data?.rack || [], [data]);
   const promotions = useMemo(() => activePromotions(data?.activeCollections || []), [data]);
   const [sheet, setSheet] = useState(null);
+  const mainRef = useRef(null);
 
   if (!loading) {
     warnEmptySection("La fila de la temporada", allLooks);
@@ -95,7 +97,7 @@ export function HomePage({ navigate }) {
         </nav>
       </header>
 
-      <main id="contenido">
+      <main id="contenido" ref={mainRef}>
         <HeroLooks looksByFamily={looksByFamily} onOpenLook={openLook} loading={loading} />
 
         <Marquee />
@@ -121,6 +123,7 @@ export function HomePage({ navigate }) {
       </main>
 
       <EditorialFooter navigate={navigate} />
+      <SocialFabs anchorRef={mainRef} />
       <SelectionButton />
       <SelectionDrawer />
       {sheet && <LookSheet sheet={sheet} onClose={closeSheet} onOpenRelated={openLook} />}
