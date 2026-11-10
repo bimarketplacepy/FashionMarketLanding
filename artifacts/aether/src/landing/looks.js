@@ -112,8 +112,12 @@ export function buildSeasonLooks(items, { limitPerFamily = 7 } = {}) {
 }
 
 // Prendas para colgar en el perchero: variedad de categorías "colgables".
-export function pickRackItems(items, count = 12) {
-  const hangable = items.filter((item) => ["upperbody", "wholebody", "wholebody_up", "lowerbody"].includes(item.part));
+export const HANGABLE_PARTS = ["upperbody", "wholebody", "wholebody_up", "lowerbody"];
+// Dentro de Odoo el perchero muestra sólo la parte superior (prendas superiores y abrigos).
+export const UPPER_PARTS = ["upperbody", "wholebody_up"];
+
+export function pickRackItems(items, count = 12, parts = HANGABLE_PARTS) {
+  const hangable = items.filter((item) => parts.includes(item.part));
   const byType = new Map();
   for (const item of [...hangable].sort((a, b) => stableHash(`rack-${a.id}`) - stableHash(`rack-${b.id}`))) {
     const key = item.garmentType || item.part;
