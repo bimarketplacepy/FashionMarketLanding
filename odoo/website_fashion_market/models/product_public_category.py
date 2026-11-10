@@ -6,10 +6,11 @@ class ProductPublicCategory(models.Model):
 
     fm_experience = fields.Boolean(
         string='Experiencia Fashion Market',
-        help='Al entrar en esta categoría (o en cualquiera de sus subcategorías) la tienda '
-             'muestra la experiencia de Fashion Market (looks en modelo, perchero, fichas, '
-             '"Tu selección" y probador virtual) con las prendas publicadas ahí, en lugar de '
-             'la grilla estándar. Las búsquedas y filtros siguen usando la grilla de Odoo.',
+        help='Al entrar en esta categoría la tienda muestra arriba de la grilla la experiencia '
+             'de Fashion Market (looks en modelo, perchero, fichas, "Tu selección" y probador '
+             'virtual) con las prendas publicadas ahí. La grilla de Odoo (precio, carrito, '
+             'favoritos) queda debajo; en las subcategorías se ve sólo la grilla, con '
+             '"Probalo en un modelo" en las tarjetas de las prendas del probador.',
     )
 
     def _fm_experience_root(self):

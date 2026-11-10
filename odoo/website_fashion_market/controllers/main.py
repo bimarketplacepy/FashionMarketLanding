@@ -21,8 +21,8 @@ RETURN_HEADERS = ('Content-Type', 'Cache-Control', 'ETag', 'Last-Modified')
 SESSION_COOKIE = 'fm_sid'
 SESSION_MAX_AGE = 30 * 24 * 60 * 60
 
-# Con cualquiera de estos parámetros la categoría vuelve a la grilla de Odoo
-# (búsqueda, filtros por atributo/etiqueta/precio, orden, paginación).
+# Con cualquiera de estos parámetros la categoría raíz muestra sólo la grilla de
+# Odoo, sin la experiencia arriba (búsqueda, filtros, orden, paginación).
 GRID_PARAMS = ('search', 'attribute_values', 'tags', 'min_price', 'max_price', 'order', 'page')
 
 
@@ -49,18 +49,32 @@ def _json_for_script(value):
 
 
 class FashionMarketShop(WebsiteSale):
+    """La grilla de Odoo se muestra siempre (precio, carrito, favoritos, comparar,
+    filtros, 3 por fila según el tema). En las categorías con la experiencia:
+
+    - la categoría raíz, en su primera página y sin filtros, suma arriba la
+      experiencia (looks en modelo, perchero, probador): <fm-moda>;
+    - en el resto (subcategorías, filtros, páginas siguientes) <fm-tienda> sólo
+      agrega "Probalo en un modelo" a las tarjetas de prendas del motor.
+    """
 
     @http.route()
     def shop(self, page=0, category=None, search='', min_price=0.0, max_price=0.0, tags='', **post):
-        if isinstance(category, models.BaseModel) and category and not self._fm_grid_requested(page, search, min_price, max_price, tags, post):
-            root = category.sudo()._fm_experience_root()
-            settings = fm_settings() if root else {}
-            if root and settings:
-                return self._fm_render(category, root, settings)
-            if root:
-                _logger.warning('Fashion Market: falta website_fashion_market.engine_url; se muestra la grilla estándar.')
-        return super().shop(page=page, category=category, search=search, min_price=min_price,
-                            max_price=max_price, tags=tags, **post)
+        response = super().shop(page=page, category=category, search=search, min_price=min_price,
+                                max_price=max_price, tags=tags, **post)
+        qcontext = getattr(response, 'qcontext', None)
+        if qcontext is None or not isinstance(category, models.BaseModel) or not category:
+            return response
+        root = category.sudo()._fm_experience_root()
+        if not root:
+            return response
+        settings = fm_settings()
+        if not settings:
+            _logger.warning('Fashion Market: falta website_fashion_market.engine_url; se muestra sólo la grilla.')
+            return response
+        full = category == root and not self._fm_grid_requested(page, search, min_price, max_price, tags, post)
+        qcontext.update(self._fm_values(category, root, settings, full))
+        return response
 
     def _fm_grid_requested(self, page, search, min_price, max_price, tags, post):
         args = request.httprequest.args
@@ -73,30 +87,26 @@ class FashionMarketShop(WebsiteSale):
             return True
         return any(args.get(name) for name in GRID_PARAMS)
 
-    def _fm_render(self, category, root, settings):
+    def _fm_values(self, category, root, settings, full):
         website = request.website
         # Sin sudo: las reglas de acceso del visitante (productos publicados) se aplican.
         domain = [
             ('public_categ_ids', 'child_of', category.id),
             ('is_published', '=', True),
             ('sale_ok', '=', True),
-            ('default_code', '!=', False),
+            ('default_code', '=like', 'import-%'),
         ] + website.website_domain()
         products = request.env['product.template'].search(domain, order='website_sequence, id')
         scope = {
             'category': category.name,
             'products': {product.default_code: product.website_url for product in products},
         }
-        values = {
-            'category': category,
-            'fm_root': root,
-            'main_object': category,
-            'products': products,
-            'fm_view': 'home' if category == root else 'catalogo',
-            'fm_scope_json': _json_for_script(scope),
+        return {
             'fm': settings,
+            'fm_full': full,
+            'fm_moda_url': '/shop/category/%s' % request.env['ir.http']._slug(root),
+            'fm_scope_json': _json_for_script(scope),
         }
-        return request.render('website_fashion_market.fashion_category', values)
 
 
 class FashionMarketProxy(http.Controller):
