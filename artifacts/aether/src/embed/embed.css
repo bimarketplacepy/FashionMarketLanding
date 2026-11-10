@@ -1,5 +1,8 @@
 /* Estilos propios del widget embebido en Odoo. */
 :host { display: block; }
+/* El botón de la ficha no es una página: sin el fondo crema ni el alto de pantalla
+   que la hoja global le da a :host (sobraba un bloque vacío bajo el botón). */
+:host(fm-probar) { min-height: 0; min-width: 0; background: transparent; color: inherit; }
 .fm-root { font-family: "Instrument Sans Variable", "Instrument Sans", system-ui, sans-serif; }
 .fm-probar { display: grid; gap: 8px; margin: 20px 0; }
 .fm-probar .ed-pill { justify-self: start; }
