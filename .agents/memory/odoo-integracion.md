@@ -21,5 +21,12 @@ El 2026-11-10 el usuario pidió llevar todas las funcionalidades a su ecommerce 
 - **PR `staging-fashion-market` → main: NO mergear** hasta validar Staging. `gh` no tiene sesión; el PR había que abrirlo a mano en https://github.com/bimarketplacepy/FashionMarketLanding/compare/main...staging-fashion-market?expand=1 (verificar si ya existe). Si se publica desde `main` sin este PR vuelven el footer dentro de Odoo y el sync viejo que publica a precio 0.
 - Staging de Odoo: categoría "Moda Mujeres" con la experiencia. Verificar `/api/embed/fm-embed.js` y `/api/landing` → 200, y Ctrl+F5 sin footer ni botones flotantes de Fashion Market.
 
+**Actualización 2026-11-10 (tarde)** — commits `73311fb`…`787615f`, detalle en la sección 9 bis de la guía:
+- Dentro de Odoo la colección es la **grilla nativa de Odoo** (3 por fila, precio, carrito, favoritos): el widget nunca muestra su propia colección ahí. Módulo 19.0.1.1.0: grilla siempre; `<fm-moda>` arriba sólo en la raíz (pág. 1 sin filtros); `<fm-tienda>` en el resto suma "Probalo en un modelo" a las tarjetas; `?fm_probar=<id>` precarga la prenda.
+- Prendas del motor en Odoo = Referencia interna `import-<uuid>`; los productos propios de la tienda no tienen probador.
+- Colores/fuentes: el widget toma `--mkt-*` del tema de la tienda (sigue al tema de Navidad).
+- **El módulo instalado en Staging NO es el de este repo** (lo mantiene el agente de Odoo en el repo de Odoo.sh): hay que fusionar 19.0.1.1.0 con sus cambios.
+- Staging: `https://marketplace-staging-261109-41612773.dev.odoo.com`, categoría Moda mujeres = id 161. Se puede probar el widget local sobre el Staging real interceptando `/api/embed/*` con Chromium (CDP `Fetch.enable`).
+
 **Why:** reescribir en QWeb duplicaría todo; el motor queda en un solo lugar.
 **How to apply:** código del front que haga fetch a `/api/...` o pinte imágenes del motor usa `engineFetch`/`engineUrl` (`src/embed/base.js`). Overlays nuevos: z-index > 1030 en `src/embed/embed.css`. Algo que sea de "la web propia" (footer, redes, contacto) se oculta con `embedded`. Tras publicar: reiniciar "API Server" (ver [[reiniciar-workflows]]). Pendientes en [[pendientes-usuario]].

@@ -10,7 +10,13 @@ metadata:
 2. Abrir/confirmar el PR `staging-fashion-market` → main (el cuerpo: los 4 commits listados en [[odoo-integracion]] + "no mergear hasta validar Staging"; `gh` sin login: el usuario puede correr `! gh auth login`). **Mergear sólo cuando Staging esté validado.**
 3. `git push` de los 5 commits locales de `staging-fashion-market` si el usuario lo pide.
 
+4. **Publish** en Replit + reiniciar "API Server" (lleva el widget nuevo y las 6 imágenes sin recuadro).
+5. Agente de Odoo: fusionar el módulo 19.0.1.1.0 (`odoo/website_fashion_market/`) con su versión y actualizarlo en Staging; reenviar imágenes con `odoo-sync.mjs --imagenes` (dry-run primero).
+6. `git push` falla por credenciales de GitHub vencidas (2026-11-10): reconectar desde el panel Git de Replit o `gh auth login`.
+
 **Del lado de Odoo (usuario)**
+- Precios de prueba absurdos (Top triángulo Capri 10.030.000.000.000.016 ₲, etc.; lista en la sección 9 bis de la guía) rompen el filtro de precio.
+- En Moda mujeres hay vinchas navideñas/llaveros mezclados con ropa; la foto de Top Formentera tiene texto impreso por la IA.
 - Cargar precios y publicar prendas: las 619 quedan ocultas sin precio (el sync ya no publica a precio 0).
 - Medir workers de Odoo durante un probador (20–60 s por generación, pasa por el proxy `/fm/`).
 - Pasar a producción después de Staging. Ver [[odoo-integracion]].
