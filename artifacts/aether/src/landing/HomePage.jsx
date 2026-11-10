@@ -57,11 +57,15 @@ function ScopedRack({ onOpenItem }) {
 }
 
 export function HomePage({ navigate }) {
-  const { allowed, embedded, shopUrl } = useScope();
+  const { allowed, embedded, shopUrl, shopItems } = useScope();
   // Dentro de Odoo la colección completa es la grilla de la tienda (precio, carrito, favoritos).
   const openCollection = useCallback(() => {
-    if (!(embedded && openShopGrid(shopUrl))) navigate("/catalogo");
-  }, [embedded, shopUrl, navigate]);
+    // Grilla de Odoo en la misma página → bajar hasta ella. Colección de la tienda
+    // mandada por el módulo (`items`) → la colección del widget. Si no, la grilla.
+    if (embedded && document.getElementById("o_wsale_container")) openShopGrid(shopUrl);
+    else if (embedded && !shopItems) { if (!openShopGrid(shopUrl)) navigate("/catalogo"); }
+    else navigate("/catalogo");
+  }, [embedded, shopUrl, shopItems, navigate]);
   const { loading, data: rawData } = useLandingData();
   // En una categoría de Odoo: sólo looks y perchero con prendas de esa categoría.
   const data = useMemo(() => scopeLanding(rawData, allowed), [rawData, allowed]);

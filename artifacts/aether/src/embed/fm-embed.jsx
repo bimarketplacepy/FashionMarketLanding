@@ -32,6 +32,7 @@ import "../index.css";
 import "../landing/landing.css";
 import "./embed.css";
 
+const CollectionPage = lazy(() => import("../landing/CollectionPage.jsx").then((module) => ({ default: module.CollectionPage })));
 const TryOnPage = lazy(() => import("../landing/TryOnPage.jsx").then((module) => ({ default: module.TryOnPage })));
 
 // fm-embed.css (estilos de la app, reescritos para :host) y fm-fonts.css
@@ -100,6 +101,12 @@ function readScope(element) {
       productUrls: products || {},
       categoryName: String(value.category || ""),
       shopUrl: shopGridUrl(),
+      // Colección de la tienda: todos los productos publicados de la categoría, en
+      // el orden de Odoo, y sus subcategorías como colecciones.
+      shopItems: Array.isArray(value.items) ? value.items : null,
+      subcategories: Array.isArray(value.subcategories) ? value.subcategories : [],
+      activeSubcategory: Number.isInteger(value.active) ? value.active : null,
+      currency: value.currency && typeof value.currency === "object" ? value.currency : null,
     };
   } catch {
     return { allowed: null, productUrls: {}, categoryName: "", shopUrl: shopGridUrl() };
@@ -154,7 +161,7 @@ function EmbedApp({ host, scope, initialView }) {
           <ScrollToWidget host={host} />
           <Suspense fallback={<PageFallback />}>
             <Switch>
-              <Route path="/catalogo"><ShopGridRedirect url={scope.shopUrl} /></Route>
+              <Route path="/catalogo">{scope.shopItems ? <CollectionPage navigate={navigate} /> : <ShopGridRedirect url={scope.shopUrl} />}</Route>
               <Route path="/probador/builder"><TryOnPage navigate={navigate} initialSection="builder" /></Route>
               <Route path="/probador"><TryOnPage navigate={navigate} initialSection="suggestions" /></Route>
               <Route path="/outfit"><Redirect to="/probador/builder" replace /></Route>
